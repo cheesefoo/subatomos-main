@@ -1,19 +1,19 @@
-<script lang='ts'>
+<script lang="ts">
 	import Header from '$lib/header/Header.svelte';
-	import '../app.css';
+	import "../app.scss";
 </script>
 
-<Header />
+<Header>
 
 <main>
-	<slot />
-</main>
+	<slot>
+</slot></main>
 
 <footer>
 	<p>:^)</p>
 </footer>
 
-<style lang='scss'>
+<style lang="scss">
 
 
   main {
@@ -43,3 +43,5 @@
     }
   }
 </style>
+</Header>
+<slot></slot>
