@@ -6,10 +6,11 @@ const config = {
 	// for more information about preprocessors
 	preprocess: preprocess({
 		scss: {
-			prependData:`@import 'src/lib/styles/_base.scss';
+			prependData: `@import 'src/lib/styles/_base.scss';
 			@import 'src/lib/styles/_variables.scss';`
 
-		}}),
+		}
+	}),
 
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html

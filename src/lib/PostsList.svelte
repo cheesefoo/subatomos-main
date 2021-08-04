@@ -1,12 +1,3 @@
-<ul class="pagination">
-    {#each pages as page}
-        <li>
-            <button class="{ page === currentPage ? 'active' : '' }" on:click="{() => changePage(page)}">
-                {page}
-            </button>
-        </li>
-    {/each}
-</ul>
 
 <script lang="ts">
     import { variables } from '$lib/variables';
@@ -60,6 +51,15 @@
         </li>
     {/each}
 </ul>
+<ul class="pagination">
+    {#each pages as page}
+        <li>
+            <button class="{ page === currentPage ? 'active' : '' }" on:click="{() => changePage(page)}">
+                {page}
+            </button>
+        </li>
+    {/each}
+</ul>
 
 <style lang="scss">
     .pagination,
@@ -70,8 +70,9 @@
     }
 
     .pagination {
+        font-family: keifont;
         display: flex;
-        margin-top: 40px;
+         margin-top: 40px;
 
         li {
             margin-right: 10px;
@@ -83,13 +84,14 @@
 
         button {
             padding: 10px 15px;
-            border: 1px solid #cccccc;
+            border: 1px solid $chromeblue;
+            background: $lightblue;
             cursor: pointer;
 
             &.active {
                 cursor: default;
-                background: #FF3E00;
-                color: #ffffff;
+                background: $salmon;
+                color: $ivory;
             }
         }
     }
