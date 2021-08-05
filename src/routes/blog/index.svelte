@@ -1,25 +1,18 @@
-<script context="module">
-	export function preload({ params, query }) {
-		return this.fetch(`blog.json`).then(r => r.json()).then(posts => {
-			return { posts };
-		});
+<script context='module'>
+
+	export async function load({ page, fetch, session, context }) {
+		const res = await fetch(`/blog.json`);
+		const posts = await res.json();
+		return { props: { posts:posts } };
+
 	}
 </script>
 
 <script>
+
 	export let posts;
+	console.log(posts)
 </script>
-
-<style>
-	ul {
-		margin: 0 0 1em 0;
-		line-height: 1.5;
-	}
-</style>
-
-<svelte:head>
-	<title>Blog</title>
-</svelte:head>
 
 <h1>Recent posts</h1>
 
@@ -32,3 +25,10 @@
 		<li><a rel='prefetch' href='blog/{post.slug}'>{post.title}</a></li>
 	{/each}
 </ul>
+
+<style>
+    ul {
+        margin: 0 0 1em 0;
+        line-height: 1.5;
+    }
+</style>

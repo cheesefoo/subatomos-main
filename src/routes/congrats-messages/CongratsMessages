@@ -1,0 +1,48 @@
+<!--
+<script context='module'>
+	export async function load({ fetch }) {
+		const res = await fetch('/congrats-messages');
+		const texts = await res.json();
+		if (res.ok) return { props: { texts: texts } };
+		return {
+			status: res.status,
+			error: new Error()
+		};
+	}
+</script>
+
+<script>
+	export let texts;
+</script>
+
+<main>
+	{#each texts as lorem}
+		<div class='box'>
+			{lorem}
+		</div>
+	{/each}
+</main>
+
+<style lang='scss'>
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box {
+        padding: 0.25rem;
+        margin: 1.5rem;
+        color: salmon;
+    }
+
+    .box:hover {
+        box-shadow: none;
+    }
+
+    img {
+        width: 15rem;
+        object-fit: contain;
+    }
+</style>
+-->

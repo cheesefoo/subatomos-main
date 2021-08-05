@@ -1,7 +1,42 @@
 import type { BaseTranslation } from 'typesafe-i18n'
 
 const en: BaseTranslation = {
-	// TODO: your translations go here
+	"1276": "Let's try something.",
+	"1277": "I have to go to sleep.",
+	"1280": "Today is June 18th and it is Muiriel's birthday!",
+	"1282": "Muiriel is 20 now.",
+	"1283": "The password is \"Muiriel\".",
+	"1284": "I will be back soon.",
+	"1286": "I'm at a loss for words.",
+	"1287": "This is never going to end.",
+	"1288": "I just don't know what to say.",
+	"1289": "That was an evil bunny.",
+	"1290": "I was in the mountains.",
+	"1291": "Is it a recent picture?",
+	"1292": "I don't know if I have the time.",
+	"1294": "Education in this world disappoints me.",
+	"1295": "You're in better shape than I am.",
+	"1296": "You are in my way.",
+	"1298": "This will cost €30.",
+	"1299": "I make €100 a day.",
+	"1300": "I may give up soon and just nap instead.",
+	"1301": "It's because you don't want to be alone.",
+	"1302": "That won't happen.",
+	"1303": "Sometimes he can be a strange guy.",
+	"1304": "I'll do my best not to disturb your studying.",
+	"1305": "I can only wonder if this is the same for everyone else.",
+	"1306": "I suppose it's different when you think about it over the long term.",
+	"1308": "I miss you.",
+	"1309": "I'll call them tomorrow when I come back.",
+	"1310": "I always liked mysterious characters more.",
+	"1311": "You should sleep.",
+	"1312": "I'm going to go.",
+	"1313": "I told them to send me another ticket.",
+	"1314": "You're so impatient with me.",
+	"1315": "I can't live that kind of life.",
+	"1316": "I once wanted to be an astrophysicist.",
+	"1317": "I never liked biology.",
+	"1318": "The last person I told my idea to thought I was nuts."
 }
 
 export default en

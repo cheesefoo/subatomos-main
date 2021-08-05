@@ -1,4 +1,6 @@
 import preprocess from 'svelte-preprocess';
+import path from 'path';
+import adapter from '@sveltejs/adapter-static';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -9,12 +11,29 @@ const config = {
 			prependData: `@import 'src/lib/styles/_base.scss';
 			@import 'src/lib/styles/_variables.scss';`
 
+
 		}
 	}),
 
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte'
+		adapter: adapter({
+			// default options are shown
+			pages: 'build',
+			assets: 'build',
+			fallback: null
+		}),
+		target: '#svelte',
+		vite: {
+			resolve: {
+				alias: {
+					// these are the aliases and paths to them
+					'$assets': path.resolve('./src/assets'),
+					'$images': path.resolve('./src/assets/images')
+				}
+			}
+		}
+
 	}
 };
 

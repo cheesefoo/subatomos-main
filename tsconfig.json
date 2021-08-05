@@ -24,7 +24,11 @@
 		"checkJs": true,
 		"paths": {
 			"$lib": ["src/lib"],
-			"$lib/*": ["src/lib/*"]
+			"$lib/*": ["src/lib/*"],
+			"$assets": ["src/assets"],
+			"$assets/*": ["src/assets/*"],
+			"$images": ["src/assets/images"],
+			"$images/*": ["src/assets/images/*"]
 		}
 	},
 	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte"]
