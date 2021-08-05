@@ -39,7 +39,6 @@
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.2.2",
 		"@lukeed/uuid": "^2.0.0",
-		"cookie": "^0.4.1",
-		"typesafe-i18n": "^2.36.0"
+		"cookie": "^0.4.1"
 	}
 }
