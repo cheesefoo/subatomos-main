@@ -1,4 +1,4 @@
 {
-  "adapter": "svelte",
-  "loadLocalesAsync": false
+	"adapter": "svelte",
+	"loadLocalesAsync": false
 }

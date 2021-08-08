@@ -39,6 +39,11 @@
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.2.2",
 		"@lukeed/uuid": "^2.0.0",
-		"cookie": "^0.4.1"
+		"@types/chart.js": "^2.9.34",
+		"@types/howler": "^2.2.3",
+		"chart.js": "^3.5.0",
+		"cookie": "^0.4.1",
+		"howler": "^2.2.3",
+		"typesafe-i18n": "^2.36.0"
 	}
 }

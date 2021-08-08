@@ -1,34 +1,28 @@
 @use 'variables';
 @mixin boxshadow($color) {
-  box-shadow: $color 1px 1px 0,
-  $color 2px 2px 0,
-  $color 3px 3px 0,
-  $color 4px 4px 0,
-  $color 5px 5px 0,
-  $color 6px 6px 0,
-  $color 7px 7px 0,
-  $color 8px 8px 0;
+	box-shadow: $color 1px 1px 0, $color 2px 2px 0, $color 3px 3px 0, $color 4px 4px 0,
+		$color 5px 5px 0, $color 6px 6px 0, $color 7px 7px 0, $color 8px 8px 0;
 }
 @mixin hideScrollbar {
-  // https://blogs.msdn.microsoft.com/kurlak/2013/11/03/hiding-vertical-scrollbars-with-pure-css-in-chrome-ie-6-firefox-opera-and-safari/
-  // There is a CSS rule that can hide scrollbars in Webkit-based browsers (Chrome and Safari).
-  &::-webkit-scrollbar {
-    width: 0 !important
-  }
-  // There is a CSS rule that can hide scrollbars in IE 10+.
-  -ms-overflow-style: none;
+	// https://blogs.msdn.microsoft.com/kurlak/2013/11/03/hiding-vertical-scrollbars-with-pure-css-in-chrome-ie-6-firefox-opera-and-safari/
+	// There is a CSS rule that can hide scrollbars in Webkit-based browsers (Chrome and Safari).
+	&::-webkit-scrollbar {
+		width: 0 !important;
+	}
+	// There is a CSS rule that can hide scrollbars in IE 10+.
+	-ms-overflow-style: none;
 
-  // Use -ms-autohiding-scrollbar if you wish to display on hover.
-  // -ms-overflow-style: -ms-autohiding-scrollbar;
+	// Use -ms-autohiding-scrollbar if you wish to display on hover.
+	// -ms-overflow-style: -ms-autohiding-scrollbar;
 
-  // There used to be a CSS rule that could hide scrollbars in Firefox, but it has since been deprecated.
-  scrollbar-width: none;
+	// There used to be a CSS rule that could hide scrollbars in Firefox, but it has since been deprecated.
+	scrollbar-width: none;
 }
-$font-stack:    kei, paybooc, Roboto, serif;
-$primary-color: #518DB9;
+$font-stack: kei, paybooc, Roboto, serif;
+$primary-color: #518db9;
 
-body{
-  font: 100% $font-stack;
-  color: $primary-color;
-  @include hideScrollbar
+body {
+	font: 100% $font-stack;
+	color: $primary-color;
+	@include hideScrollbar;
 }
