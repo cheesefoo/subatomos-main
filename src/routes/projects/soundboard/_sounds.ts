@@ -1,6 +1,6 @@
 import type { SubaSound } from '$lib/SubaSound';
 //directory with sounds
-const dir = '/src/assets/sound';
+const dir = '../static/assets/sound';
 
 const sounds: Array<SubaSound> = [
 	{ name: 'ahem', category: 'ahem', file: 'Ahem.mp3' },
@@ -29,7 +29,7 @@ const sounds: Array<SubaSound> = [
 	{ name: 'INNNN', category: 'inn', file: 'INNNN.mp3' },
 	{ name: 'itai itee itai', file: 'itai_itee_itai.mp3' },
 	{ name: 'jakajakajanjan', file: 'jakajakajanjan.mp3' },
-	{ name: 'kaiken', file: 'kaiken.mp3' },
+	{ name: 'kaio-ken', file: 'kaioken.mp3' },
 	{ name: 'KITAAAA', file: 'KITAAAA.mp3' },
 	{ name: 'koi', file: 'koi.mp3' },
 	{ name: 'kon x4', file: 'kon_x4.mp3' },

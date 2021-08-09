@@ -19,8 +19,8 @@ const config = {
 			resolve: {
 				alias: {
 					// these are the aliases and paths to them
-					$assets: path.resolve('./src/assets'),
-					$images: path.resolve('./src/assets/images')
+					$assets: path.resolve('static/assets'),
+					$images: path.resolve('static/assets/images')
 				}
 			}
 		}
