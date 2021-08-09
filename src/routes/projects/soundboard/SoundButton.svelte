@@ -1,6 +1,6 @@
-<script lang="ts">
+<script lang='ts'>
 	import Slider from './Slider.svelte';
-
+	import { fade } from 'svelte/transition';
 	import { Howl } from 'howler';
 
 	let muted = false;
@@ -18,7 +18,8 @@
 
 	export let isPlaying = false;
 
-	howl.on('play', () => {
+	howl.on('play', () =>
+	{
 		requestAnimationFrame(step);
 		isPlaying = true;
 	});
@@ -26,55 +27,65 @@
 
 	let currentTime;
 
-	function step() {
+	function step()
+	{
 		currentTime = howl.seek() || 0;
-		console.log(currentTime);
+
 
 		// If the sound is still playing, continue stepping.
-		if (howl.playing()) {
+		if (howl.playing())
+		{
 			requestAnimationFrame(step);
 		}
 	}
 </script>
 
-<div class="sound-button-container">
-	<div class="sound-button" title={name} on:click={() => howl.play()}>
-		{#if isPlaying}{/if}
+<div class='sound-button-container'>
+	<div class='sound-button' title={name} on:click={() => howl.play()}>
+		{#if currentTime>0}
+		{/if}
 
-		<Slider max={duration} min={0} step={duration / 200} current={currentTime} />
+			<div in:fade out:fade>
+				<Slider max={duration} min={0} step={duration / 200} current={currentTime} />
+			</div>
 
-		<span class="name">{name}</span>
+
+		<span class='name'>{name}</span>
 	</div>
 </div>
 
-<style lang="scss">
-	.sound-button-container {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-	}
+<style lang='scss'>
+  .sound-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
-	.sound-button {
-		cursor: pointer;
-		display: flex;
-		flex-direction: column;
-		flex-wrap: nowrap;
-		min-width: 0;
-		width: 50%;
-		height: 100%;
-		background-color: $ivory;
+  .sound-button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-width: 0;
+    width: 50%;
+    height: 100%;
+    background-color: $ivory;
 
-		margin: 0 0 0 8px;
-		vertical-align: middle;
-		justify-items: center;
-		text-align: center;
-		border: 2px solid $chromeblue;
-		border-radius: 5px;
-		@include boxshadow($chromeblue);
-	}
+    margin: 0 0 0 8px;
+    vertical-align: middle;
+    justify-items: center;
+    text-align: center;
+    border: 2px solid $chromeblue;
+    border-radius: 5px;
+    @include boxshadow($chromeblue);
+  }
 
-	.name {
-		flex: 1;
-		padding: 8px;
+  .name {
+    flex: 1;
+    padding: 8px;
+  }
+	.placeholder{
+		display:block;
+		height:8px;
 	}
 </style>
