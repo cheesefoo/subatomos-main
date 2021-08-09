@@ -1,5 +1,5 @@
 <script>
-	import Chart from 'chart.js/auto';
+	import Chart from 'chart.js/auto/auto.js';
 	import { onMount } from 'svelte';
 
 	const labelsHairstyle = ['Short', 'Long', 'Twintails', "Can't decide"];

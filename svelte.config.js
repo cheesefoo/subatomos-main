@@ -13,7 +13,12 @@ const config = {
 		}
 	}),
 
-	kit: {
+	kit: {		adapter: adapter({
+			// default options are shown
+			pages: 'build',
+			assets: 'build',
+			fallback: null
+		}),
 		target: '#svelte',
 		vite: {
 			resolve: {
