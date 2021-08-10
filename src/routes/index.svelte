@@ -1,6 +1,7 @@
 <script>
 	import PostsList from '$lib/components/PostsList.svelte';
 	import CategoryList from '$lib/components/CategoryList.svelte';
+
 	import cbimage from '$images/cbimage.png';
 </script>
 

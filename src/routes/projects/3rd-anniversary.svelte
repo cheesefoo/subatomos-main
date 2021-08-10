@@ -1,4 +1,5 @@
 <script context="module">
+	import CongratsMessageBox from '$lib/components/CongratsMessageBox.svelte';
 	export async function load({ fetch }) {
 		const res = await fetch('../congrats-messages');
 		const texts = await res.json();
@@ -21,16 +22,7 @@
 	</div>
 	<div class="messages-container">
 		{#each texts as { avatar, lastName, lorem }}
-			<div class="box">
-				<p>{lorem}</p>
-				<hr />
-				<h2>{lastName}</h2>
-				<div class="avatar">
-					<a href="https://twitter.com/subatomos">
-						<img src={avatar} alt={lastName} />
-					</a>
-				</div>
-			</div>
+			<CongratsMessageBox name={lastName} message={lorem} />
 		{/each}
 	</div>
 </main>
@@ -42,9 +34,11 @@
 		align-content: center;
 		justify-content: center;
 	}
+
 	hr {
 		border-top: 1px solid $chromeblue;
 	}
+
 	.messages-container {
 		display: flex;
 		flex-wrap: wrap;
@@ -54,14 +48,19 @@
 	}
 
 	.box {
-		padding: 0.25rem;
-		margin: 1.5rem;
-		max-width: 20%;
-		color: $salmon;
-		@include boxshadow($chromeblue);
+		@include responsive-bg-image(2, 1);
+		background-image: url('$images/subamodal-min.png');
+	}
 
-		&:hover {
-			@include boxshadow($salmon);
+	.box-inner {
+		display: block;
+		margin: {
+			left: auto;
+			right: auto;
+		}
+		h2,
+		p {
+			margin: 50px;
 		}
 	}
 

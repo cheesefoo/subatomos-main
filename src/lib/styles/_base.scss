@@ -1,7 +1,27 @@
 @use 'variables';
+@use 'sass:math';
 @mixin boxshadow($color) {
 	box-shadow: $color 1px 1px 0, $color 2px 2px 0, $color 3px 3px 0, $color 4px 4px 0,
 		$color 5px 5px 0, $color 6px 6px 0, $color 7px 7px 0, $color 8px 8px 0;
+}
+@mixin responsive-bg-image($image-width, $image-height) {
+	background-size: cover;
+	height: 0;
+	padding-bottom: percentage(math.div($image-height, $image-width));
+	display: block;
+	position: relative;
+}
+@mixin responsive-ratio($x, $y, $pseudo: false) {
+	$padding: unquote(($y / $x) * 100 + '%');
+	@if $pseudo {
+		&:before {
+			@include pseudo($pos: relative);
+			width: 100%;
+			padding-top: $padding;
+		}
+	} @else {
+		padding-top: $padding;
+	}
 }
 @mixin hideScrollbar {
 	// https://blogs.msdn.microsoft.com/kurlak/2013/11/03/hiding-vertical-scrollbars-with-pure-css-in-chrome-ie-6-firefox-opera-and-safari/
