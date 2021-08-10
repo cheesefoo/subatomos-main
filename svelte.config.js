@@ -13,7 +13,8 @@ const config = {
 		}
 	}),
 
-	kit: {		adapter: adapter({
+	kit: {
+		adapter: adapter({
 			// default options are shown
 			pages: 'build',
 			assets: 'build',

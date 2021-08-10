@@ -2,7 +2,7 @@
 	"name": "~TODO~",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "set NODE_ENV=development && svelte-kit dev",
+		"dev": "set NODE_ENV=development && svelte-kit dev -o",
 		"build": "svelte-kit build",
 		"preview": "svelte-kit preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",

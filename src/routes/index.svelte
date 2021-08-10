@@ -10,16 +10,17 @@
 </svelte:head>
 
 <div class="content">
-	<h1>coming s👀n!</h1>
-	<div class="img-container">
-		<img src={cbimage} alt="Oozora Subaru" />
-	</div>
-	<div class="cats-posts">
-		<CategoryList />
-		<div class="posts">
-			<PostsList />
-		</div>
-	</div>
+	<h1>Main page in development</h1>
+	<!--	<h1>coming s👀n!</h1>-->
+	<!--	<div class="img-container">-->
+	<!--		<img src={cbimage} alt="Oozora Subaru" />-->
+	<!--	</div>-->
+	<!--	<div class="cats-posts">-->
+	<!--		<CategoryList />-->
+	<!--		<div class="posts">-->
+	<!--			<PostsList />-->
+	<!--		</div>-->
+	<!--	</div>-->
 </div>
 
 <style lang="scss">
