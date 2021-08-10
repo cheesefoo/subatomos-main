@@ -1,12 +1,12 @@
 //@import '@fontsource/noto-sans';
 $kei-font-path: 'src/lib/fonts';
+$images: 'static/assets/images';
 
 @font-face {
 	// This is parsed as a normal function call that takes a quoted string.
 	src: url('../static/keifont.woff2') format('woff2');
 	font-family: 'keifont';
 	font-weight: 100 900;
-
 }
 
 $pure-white: #ffffff;
@@ -39,14 +39,16 @@ $font-mono: 'keifont' mono;
 body {
 	min-height: 100vh;
 	margin: 0;
-	background: $primary-color
-		repeating-linear-gradient(
-			to right,
-			$lightblue,
-			$lightblue 30px,
-			$lighterblue 20px,
-			$lighterblue 50px
-		);
+	//background: $primary-color
+	//	repeating-linear-gradient(
+	//		to right,
+	//		$lightblue,
+	//		$lightblue 30px,
+	//		$lighterblue 20px,
+	//		$lighterblue 50px
+	//	);
+	background: url('#{$images}/Sky.png') no-repeat center center fixed;
+	background-size: cover;
 }
 
 body::before {
@@ -90,7 +92,7 @@ a:hover {
 
 h1 {
 	font-size: 2rem;
-	margin-bottom: 0 0 1em 0;
+	margin-bottom: 1em;
 	text-align: center;
 }
 

@@ -1,8 +1,14 @@
-<script lang="ts">
+<script lang='ts'>
 	import Slider from './Slider.svelte';
 	import sounds from './_sounds';
 	import SoundButton from './SoundButton.svelte';
 
+	import Lazy from 'svelte-lazy';
+
+	const onload = (node) =>
+	{
+		console.log('on load');
+	};
 	let duration;
 	let muted = false;
 	let currentTime = 0;
@@ -20,12 +26,12 @@
 <!--	bind:paused={paused}-->
 <!--	bind:volume={volume}></audio>-->
 
-<div class="soundboard-container">
+<div class='soundboard-container'>
 	<h3>Ahem</h3>
-	<div class="soundboard">
+	<div class='soundboard'>
 		{#each soundList as sound}
 			{#if sound.category == 'ahem'}
-				<div class="sound-button">
+				<div class='sound-button'>
 					<SoundButton {...sound} />
 				</div>
 			{/if}
@@ -33,10 +39,10 @@
 	</div>
 
 	<h3>English</h3>
-	<div class="soundboard">
+	<div class='soundboard'>
 		{#each soundList as sound}
 			{#if sound.category == 'english'}
-				<div class="sound-button">
+				<div class='sound-button'>
 					<SoundButton {...sound} />
 				</div>
 			{/if}
@@ -44,17 +50,19 @@
 	</div>
 
 	<h3>Uncategorized</h3>
-	<div class="soundboard">
+	<div class='soundboard'>
 		{#each soundList as sound}
 			{#if sound.category == undefined}
-				<div class="sound-button">
-					<SoundButton {...sound} />
-				</div>
+				<Lazy height={300}>
+					<div class='sound-button'>
+						<SoundButton {...sound} />
+					</div>
+				</Lazy>
 			{/if}
 		{/each}
 	</div>
 </div>
-<div class="volume">
+<div class='volume'>
 	<Slider
 		max={1}
 		min={0}
@@ -64,22 +72,22 @@
 	/>
 </div>
 
-<style lang="scss">
-	.soundboard {
-		display: grid;
-		min-width: 480px;
-		width: 100%;
-		overflow: visible;
+<style lang='scss'>
+  .soundboard {
+    display: grid;
+    min-width: 480px;
+    width: 100%;
+    overflow: visible;
 
-		//justify-content: center;
-		grid-template-columns: repeat(3, 1fr);
+    //justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
 
-		column-gap: 1em;
-		row-gap: 1em;
-	}
+    column-gap: 1em;
+    row-gap: 1em;
+  }
 
-	.volume {
-		position: absolute;
-		right: 0;
-	}
+  .volume {
+    position: absolute;
+    right: 0;
+  }
 </style>
