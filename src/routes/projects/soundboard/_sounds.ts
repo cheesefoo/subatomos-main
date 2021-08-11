@@ -1,7 +1,8 @@
 import type { SubaSound } from '$lib/SubaSound';
 //directory with sounds
-const dir = '../static/assets/sound';
+import { dev } from '$app/env';
 
+const dir = dev ? '../static/assets/sound' : '/assets/sound';
 const sounds: Array<SubaSound> = [
 	{ name: 'ahem', category: 'ahem', file: 'Ahem.mp3' },
 	{ name: 'ahem 2', category: 'ahem', file: 'Ahem_2.mp3' },
@@ -67,7 +68,8 @@ const sounds: Array<SubaSound> = [
 	{ name: 'yawn', file: 'yawn.mp3' },
 	{ name: '(distant)yoisho', file: 'yoisho_distant.mp3' }
 ];
-sounds.forEach((sound) => {
+sounds.forEach((sound) =>
+{
 	sound.file = `${dir}/${sound.file}`;
 });
 export default sounds;
