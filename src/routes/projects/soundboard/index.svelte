@@ -48,6 +48,36 @@
 		{/each}
 	</div>
 
+	<h3>Shuba</h3>
+	<div class="soundboard">
+		{#each soundList as sound}
+			{#if sound.category == 'shuba'}
+				<div class="sound-button">
+					<SoundButton {...sound} />
+				</div>
+			{/if}
+		{/each}
+	</div>
+	<h3>Screams</h3>
+	<div class="soundboard">
+		{#each soundList as sound}
+			{#if sound.category == 'screams'}
+				<div class="sound-button">
+					<SoundButton {...sound} />
+				</div>
+			{/if}
+		{/each}
+	</div>
+	<h3>???</h3>
+	<div class="soundboard">
+		{#each soundList as sound}
+			{#if sound.category == '???'}
+				<div class="sound-button">
+					<SoundButton {...sound} />
+				</div>
+			{/if}
+		{/each}
+	</div>
 	<h3>Uncategorized</h3>
 	<div class="soundboard">
 		{#each soundList as sound}
