@@ -20,7 +20,11 @@ const sounds: Array<SubaSound> = [
 	{ name: 'battle cry', category: '???', file: 'battle_cry.mp3' },
 	{ name: 'war cry', category: '???', file: 'warcry.mp3' },
 	{ name: '???', category: '???', file: 'Duck_huh.mp3' },
-	{ name: 's̷̨̛̎̎h̵͙̞̋u̶̧͐͋̕ḃ̵̙̺̳̎͂͂̑ą̷̄͆͋̏s̶̛͓̉̇͌h̴̤̽̽͛͝ų̶̰̙̼́͗̓͊͝b̵̧̛̘̫̏̅̇̂́â̴̢̛̰̩̘̝͈͗̄̒͆s̶̜̃h̷͖͔̩̦̭̱͘u̵͎̼̖̔̓͂͘b̴͓͚̬̅̏̚ǎ̶̙͂́̅́', category: '???', file: 'parseltongue.mp3' },
+	{
+		name: 's̷̨̛̎̎h̵͙̞̋u̶̧͐͋̕ḃ̵̙̺̳̎͂͂̑ą̷̄͆͋̏s̶̛͓̉̇͌h̴̤̽̽͛͝ų̶̰̙̼́͗̓͊͝b̵̧̛̘̫̏̅̇̂́â̴̢̛̰̩̘̝͈͗̄̒͆s̶̜̃h̷͖͔̩̦̭̱͘u̵͎̼̖̔̓͂͘b̴͓͚̬̅̏̚ǎ̶̙͂́̅́',
+		category: '???',
+		file: 'parseltongue.mp3'
+	},
 	{ name: '?̶̢̣͙̲̫͎́́͊?̶̨̳͉̪͔͍͆̈́̀̾?̸̧͎̯͉̪̰̌̔̊͂̂͑ ft. Mio', category: '???', file: 'parseltongue_p1mio_crying.mp3' },
 
 	{ name: 'RIP pikmin', category: 'screams', file: 'ScreamPikmin.mp3' },

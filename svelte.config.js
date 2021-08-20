@@ -8,8 +8,10 @@ const config = {
 	// for more information about preprocessors
 	preprocess: preprocess({
 		scss: {
-			prependData: `@import 'src/lib/styles/_base.scss';
-			@import 'src/lib/styles/_variables.scss';`
+			prependData: `
+			@use 'src/lib/styles/variables' as *;
+			@use 'src/lib/styles/base' as *;
+			`
 		}
 	}),
 

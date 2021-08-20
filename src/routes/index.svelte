@@ -1,16 +1,14 @@
 <script>
-	import PostsList from '$lib/components/PostsList.svelte';
-	import CategoryList from '$lib/components/CategoryList.svelte';
-
-	import cbimage from '$images/cbimage.png';
+	import LL from '$lib/i18n/i18n-svelte';
 </script>
 
 <svelte:head>
-	<title>Subatomos - Oozora Subaru Fansite</title>
+	<title>{$LL.TITLE()}</title>
 </svelte:head>
 
 <div class="content">
-	<h1>Main page in development</h1>
+	<h1>{$LL.IN_DEV()}</h1>
+
 	<!--	<h1>coming s👀n!</h1>-->
 	<!--	<div class="img-container">-->
 	<!--		<img src={cbimage} alt="Oozora Subaru" />-->

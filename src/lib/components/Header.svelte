@@ -1,22 +1,27 @@
-<script lang="ts">
+<script>
 	import { page } from '$app/stores';
+	import LL, { locale, setLocale } from '$lib/i18n/i18n-svelte';
 </script>
 
 <header>
 	<nav>
 		<ul>
-			<li class:active={$page.path === '/'}><a sveltekit:prefetch href="/">Home</a></li>
+			<li class:active={$page.path === '/'}>
+				<a sveltekit:prefetch href="/">{$LL.HEADER.HOME()}</a>
+			</li>
 			<li class:active={$page.path.startsWith('/projects')}>
-				<a sveltekit:prefetch href="/projects">Projects</a>
+				<a sveltekit:prefetch href="/projects">{$LL.HEADER.PROJECTS()}</a>
 				<ul class="nav-dropdown">
 					<li class:active={$page.path.startsWith('/projects/ponds')}>
-						<a sveltekit:prefetch href="/projects/ponds">Subatomo Ponds</a>
+						<a sveltekit:prefetch href="/projects/ponds">{$LL.HEADER.PONDS()}</a>
 					</li>
 					<li class:active={$page.path.startsWith('/projects/soundboard')}>
-						<a sveltekit:prefetch href="/projects/soundboard">Soundboard</a>
+						<a sveltekit:prefetch href="/projects/soundboard">{$LL.HEADER.SOUNDBOARD()}</a>
 					</li>
 					<li class:active={$page.path.startsWith('/projects/3rd-anniversary')}>
-						<a sveltekit:prefetch href="/projects/3rd-anniversary">3rd Anniversary</a>
+						<a sveltekit:prefetch href="/projects/3rd-anniversary"
+							>{$LL.HEADER.THIRD_ANNIVERSARY()}</a
+						>
 					</li>
 					<li class:active={$page.path.startsWith("/projects/tbd'")}>
 						<a sveltekit:prefetch href="/projects/tbd">???</a>
@@ -24,7 +29,7 @@
 				</ul>
 			</li>
 			<li>
-				<a href="https://discord.gg/subatomos" target="_blank">
+				<a href="https://subatomos.com/discord" target="_blank">
 					<svg
 						fill="none"
 						height="55"
@@ -64,13 +69,39 @@
 			</li>
 		</ul>
 	</nav>
-
 	<div class="corner">
-		<!-- TODO put something else here? github link? -->
+		<ul>
+			<li>
+				<span
+					class="flag-icon"
+					class:flag-icon-us={$locale === 'en'}
+					class:flag-icon-jp={$locale === 'ja'}
+					id="lang-flag"
+				/>
+				<span id="lang-header-text">{$locale.toUpperCase()}</span>
+
+				<ul class="nav-dropdown">
+					<li>
+						<a class="dropdown-item selectLang" href="#" lang="EN" on:click={() => setLocale('en')}>
+							<div class=" flag-icon flag-icon-us" />
+							EN</a
+						>
+					</li>
+					<li>
+						<a class="dropdown-item selectLang" href="#" lang="JA" on:click={() => setLocale('ja')}>
+							<div class=" flag-icon flag-icon-jp" />
+							JA</a
+						>
+					</li>
+				</ul>
+			</li>
+		</ul>
 	</div>
 </header>
 
 <style lang="scss">
+	@import url(https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css);
+
 	header {
 		display: flex;
 		height: 10vh;
@@ -81,6 +112,13 @@
 		background-size: 100%;
 	}
 
+	.corner {
+		li {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
 	nav {
 		display: flex;
 		justify-content: center;
@@ -89,114 +127,121 @@
 		padding-left: 0;
 		margin-bottom: 0;
 		list-style: none;
+		flex: 0 1 80%;
+	}
 
+	ul {
+		position: relative;
+		padding: 0;
+		margin: 0;
+		height: 3em;
+		display: flex;
+		justify-content: center;
+		//align-items: center;
+		list-style: none;
+		background: var(--background);
+		background-size: contain;
+	}
+
+	li {
+		position: relative;
+		height: 100%;
+
+		span:nth-child(2) {
+			padding-top: 50%;
+			font-weight: 700;
+			color: $ivory;
+		}
+	}
+
+	li.active::before {
+		--size: 6px;
+		content: '';
+		width: 0;
+		height: 0;
+		position: absolute;
+		bottom: 0;
+		left: calc(50% - var(--size));
+		border: var(--size) solid transparent;
+		border-bottom: var(--size) solid $chromeblue;
+	}
+
+	li:hover {
 		ul {
-			position: relative;
-			padding: 0;
-			margin: 0;
-			height: 3em;
-			display: flex;
-			justify-content: center;
-			//align-items: center;
-			list-style: none;
-			background: var(--background);
-			background-size: contain;
-		}
+			/* Display the dropdown on hover */
+			left: 0; /* Bring back on-screen when needed */
+			height: 8em;
 
-		li {
-			position: relative;
-			height: 100%;
-		}
+			a {
+				/* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+			}
 
-		li.active::before {
-			--size: 6px;
-			content: '';
-			width: 0;
-			height: 0;
-			position: absolute;
-			bottom: 0;
-			left: calc(50% - var(--size));
-			border: var(--size) solid transparent;
-			border-bottom: var(--size) solid $chromeblue;
+			li a:hover {
+				/* Here we define the most explicit hover states--what happens when you hover each individual link. */
+				background: $lightblue;
+			}
 		}
 
 		a {
-			display: flex;
-			height: 100%;
-			align-items: center;
-			padding: 0 1em;
-			color: $ivory;
-			font-weight: 700;
+			/* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+			background: darken($lightblue, 10%);
+		}
+	}
 
-			text-transform: uppercase;
-			letter-spacing: 10%;
-			text-decoration: none;
-			transition: color 0.2s linear;
+	a {
+		display: flex;
+		height: 100%;
+		align-items: center;
+		padding: 0 1em;
+		color: $ivory;
+		font-weight: 700;
+
+		text-transform: uppercase;
+		letter-spacing: 10%;
+		text-decoration: none;
+		transition: color 0.2s linear;
+	}
+
+	a:hover {
+		color: $chromeblue;
+	}
+
+	svg {
+		width: 2em;
+		height: 3em;
+		display: block;
+		color: $ivory;
+		fill: $ivory;
+	}
+
+	svg:hover {
+		color: $chromeblue;
+		fill: $chromeblue;
+	}
+
+	path {
+		fill: var(--background);
+	}
+
+	.nav-dropdown {
+		z-index: 999;
+		background: rgba(
+			255,
+			255,
+			255,
+			0
+		); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+		list-style: none;
+		position: absolute;
+		left: -9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+		flex-direction: column;
+
+		li {
+			float: none;
 		}
 
-		a:hover {
-			color: $chromeblue;
-		}
-
-		svg {
-			width: 2em;
-			height: 3em;
-			display: block;
-			color: $ivory;
-			fill: $ivory;
-		}
-
-		svg:hover {
-			color: $chromeblue;
-			fill: $chromeblue;
-		}
-
-		path {
-			fill: var(--background);
-		}
-
-		li:hover {
-			ul {
-				/* Display the dropdown on hover */
-				left: 0; /* Bring back on-screen when needed */
-				height: 8em;
-
-				a {
-					/* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
-				}
-
-				li a:hover {
-					/* Here we define the most explicit hover states--what happens when you hover each individual link. */
-					background: $lightblue;
-				}
-			}
-
-			a {
-				/* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
-				background: darken($lightblue, 10%);
-			}
-		}
-
-		.nav-dropdown {
-			z-index: 999;
-			background: rgba(
-				255,
-				255,
-				255,
-				0
-			); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
-			list-style: none;
-			position: absolute;
-			left: -9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
-			flex-direction: column;
-
-			li {
-				float: none;
-			}
-
-			a {
-				white-space: nowrap; /* Stop text wrapping and creating multi-line dropdown items */
-			}
+		a {
+			white-space: nowrap; /* Stop text wrapping and creating multi-line dropdown items */
 		}
 	}
 </style>

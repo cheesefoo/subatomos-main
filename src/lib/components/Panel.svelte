@@ -1,6 +1,3 @@
-<script lang="ts">
-</script>
-
 <main>
 	<div class="inner-panel">
 		<div class="panel-content">
