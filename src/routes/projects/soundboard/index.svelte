@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Slider from './Slider.svelte';
 	import sounds from './_sounds';
+	import categories from './_categories';
 	import SoundButton from './SoundButton.svelte';
 
 	import Lazy from 'svelte-lazy';
@@ -15,6 +16,7 @@
 	let volume = 0.5;
 
 	export let soundList = sounds;
+	export let categoryList = categories;
 </script>
 
 <!--<audio-->
@@ -26,58 +28,20 @@
 <!--	bind:volume={volume}></audio>-->
 
 <div class="soundboard-container">
-	<h3>Ahem</h3>
-	<div class="soundboard">
-		{#each soundList as sound}
-			{#if sound.category == 'ahem'}
-				<div class="sound-button">
-					<SoundButton {...sound} />
-				</div>
-			{/if}
-		{/each}
-	</div>
-
-	<h3>English</h3>
-	<div class="soundboard">
-		{#each soundList as sound}
-			{#if sound.category == 'english'}
-				<div class="sound-button">
-					<SoundButton {...sound} />
-				</div>
-			{/if}
-		{/each}
-	</div>
-
-	<h3>Shuba</h3>
-	<div class="soundboard">
-		{#each soundList as sound}
-			{#if sound.category == 'shuba'}
-				<div class="sound-button">
-					<SoundButton {...sound} />
-				</div>
-			{/if}
-		{/each}
-	</div>
-	<h3>Screams</h3>
-	<div class="soundboard">
-		{#each soundList as sound}
-			{#if sound.category == 'screams'}
-				<div class="sound-button">
-					<SoundButton {...sound} />
-				</div>
-			{/if}
-		{/each}
-	</div>
-	<h3>???</h3>
-	<div class="soundboard">
-		{#each soundList as sound}
-			{#if sound.category == '???'}
-				<div class="sound-button">
-					<SoundButton {...sound} />
-				</div>
-			{/if}
-		{/each}
-	</div>
+	{#each categoryList as category}
+		<h3 style="text-transform: capitalize">{category}</h3>
+		<div class="soundboard">
+			{#each soundList as sound}
+				{#if sound.category == category}
+					<Lazy height={300}>
+						<div class="sound-button">
+							<SoundButton {...sound} />
+						</div>
+					</Lazy>
+				{/if}
+			{/each}
+		</div>
+	{/each}
 	<h3>Uncategorized</h3>
 	<div class="soundboard">
 		{#each soundList as sound}

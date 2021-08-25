@@ -10,6 +10,11 @@
 </script>
 
 <div class="box">
+	<div class="box-inner">
+		<h2>{name}</h2>
+		<hr />
+		<p>{message}</p>
+	</div>
 	<div class="bigstar">
 		<img src={bigstar} alt="Subaru Message Star" />
 	</div>
@@ -18,11 +23,6 @@
 	</div>
 	<div class="megaphone">
 		<img src={megaphone} alt="Subaru Message Star" />
-	</div>
-	<div class="box-inner">
-		<h2>{name}</h2>
-		<hr />
-		<p>{message}</p>
 	</div>
 </div>
 
@@ -34,15 +34,20 @@
 		border-image-repeat: stretch stretch;
 		border-style: solid;
 		border-image-source: url('$images/Window_resized.png');
+		background-color: $ivory;
+
 		position: relative;
-		min-height: 30vh;
+		min-height: 20vh;
 	}
+
 	.box-inner {
 		margin: 40px;
-
-		max-width: 60ch;
+		max-width: 40ch;
+		position: relative;
+		z-index: 1;
 		//overflow-wrap: break-word;
 	}
+
 	.megaphone {
 		position: absolute;
 		bottom: 0;
