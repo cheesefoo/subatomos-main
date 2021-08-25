@@ -1,7 +1,20 @@
 <script>
 	import { page } from '$app/stores';
 	import LL, { locale, setLocale } from '$lib/i18n/i18n-svelte';
+
+	export let height;
+
+	let lastY = 0;
+	let y;
+	let show = true;
+
+	export function handleScroll() {
+		show = y < lastY;
+		lastY = y;
+	}
 </script>
+
+<!--<svelte:window on:scroll={handleScroll} bind:scrollY={y} />-->
 
 <header>
 	<nav>
@@ -69,34 +82,32 @@
 			</li>
 		</ul>
 	</nav>
-	<div class="corner">
-		<ul>
-			<li>
-				<span
-					class="flag-icon"
-					class:flag-icon-us={$locale === 'en'}
-					class:flag-icon-jp={$locale === 'ja'}
-					id="lang-flag"
-				/>
-				<span id="lang-header-text">{$locale.toUpperCase()}</span>
+	<ul class="corner">
+		<li>
+			<span
+				class="flag-icon"
+				class:flag-icon-us={$locale === 'en'}
+				class:flag-icon-jp={$locale === 'ja'}
+				id="lang-flag"
+			/>
+			<span id="lang-header-text">{$locale.toUpperCase()}</span>
 
-				<ul class="nav-dropdown">
-					<li>
-						<a class="dropdown-item selectLang" href="#" lang="EN" on:click={() => setLocale('en')}>
-							<div class=" flag-icon flag-icon-us" />
-							EN</a
-						>
-					</li>
-					<li>
-						<a class="dropdown-item selectLang" href="#" lang="JA" on:click={() => setLocale('ja')}>
-							<div class=" flag-icon flag-icon-jp" />
-							JA</a
-						>
-					</li>
-				</ul>
-			</li>
-		</ul>
-	</div>
+			<ul class="nav-dropdown">
+				<li>
+					<a class="dropdown-item selectLang" href={'#'} lang="EN" on:click={() => setLocale('en')}>
+						<div class=" flag-icon flag-icon-us" />
+						EN</a
+					>
+				</li>
+				<li>
+					<a class="dropdown-item selectLang" href={'#'} lang="JA" on:click={() => setLocale('ja')}>
+						<div class=" flag-icon flag-icon-jp" />
+						JA</a
+					>
+				</li>
+			</ul>
+		</li>
+	</ul>
 </header>
 
 <style lang="scss">
@@ -104,7 +115,7 @@
 
 	header {
 		display: flex;
-		height: 10vh;
+		width: 100vw;
 		align-items: center;
 		justify-content: center;
 		border-radius: 18px;
@@ -113,9 +124,18 @@
 	}
 
 	.corner {
+		position: relative;
+		top: 8px;
+
 		li {
 			display: inline-block;
 			vertical-align: middle;
+
+			span:nth-child(2) {
+				padding-top: 25%;
+				font-weight: 700;
+				color: $ivory;
+			}
 		}
 	}
 
@@ -146,12 +166,6 @@
 	li {
 		position: relative;
 		height: 100%;
-
-		span:nth-child(2) {
-			padding-top: 50%;
-			font-weight: 700;
-			color: $ivory;
-		}
 	}
 
 	li.active::before {
@@ -200,10 +214,10 @@
 		letter-spacing: 10%;
 		text-decoration: none;
 		transition: color 0.2s linear;
-	}
 
-	a:hover {
-		color: $chromeblue;
+		&:hover {
+			color: $chromeblue;
+		}
 	}
 
 	svg {
@@ -212,11 +226,11 @@
 		display: block;
 		color: $ivory;
 		fill: $ivory;
-	}
 
-	svg:hover {
-		color: $chromeblue;
-		fill: $chromeblue;
+		&:hover {
+			color: $chromeblue;
+			fill: $chromeblue;
+		}
 	}
 
 	path {

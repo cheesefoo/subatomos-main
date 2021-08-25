@@ -9,7 +9,11 @@ const ja: BaseTranslation = {
 		PROJECTS: 'プロジェクト',
 		PONDS: 'スバ友池',
 		SOUNDBOARD: 'サウンドボード',
-		THIRD_ANNIVERSARY: '三周年記念'
+		THIRD_ANNIVERSARY: '3周年記念'
+	},
+	THIRD: {
+		TITLE: 'スバルの3周！',
+		CONGRATS: 'スバル、3周年おめでとう！！'
 	}
 };
 export default ja;

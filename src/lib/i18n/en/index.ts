@@ -10,6 +10,10 @@ const en: BaseTranslation = {
 		PONDS: 'SUBATOMO PONDS',
 		SOUNDBOARD: 'SOUNDBOARD',
 		THIRD_ANNIVERSARY: '3RD ANNIVERSARY'
+	},
+	THIRD: {
+		TITLE: "Subaru's 3rd anniversary!",
+		CONGRATS: 'Congratulations on your third anniversary, Subaru!!'
 	}
 };
 
