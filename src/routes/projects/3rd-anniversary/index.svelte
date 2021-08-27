@@ -1,4 +1,4 @@
-<script context="module">
+<script context="module" lang="ts">
 	import LL from '$lib/i18n/i18n-svelte';
 	import Lazy from 'svelte-lazy';
 	import { fly } from 'svelte/transition';
@@ -15,19 +15,19 @@
 		};
 	}
 
-	let innerHeight;
-	let y;
-	let showBackToTop = false;
-	$: showBackToTop = y > innerHeight + 60;
+	// let innerHeight;
+	// let y;
+	// let showBackToTop = false;
+	// $: showBackToTop = y > innerHeight + 60;
 </script>
 
 <script>
 	export let texts;
 </script>
 
-<svelte:window bind:innerHeight bind:scrollY={y} />
-{@debug innerHeight}
-{@debug y}
+<!--<svelte:window bind:innerHeight bind:scrollY={y} />-->
+<!--{@debug innerHeight}-->
+<!--{@debug y}-->
 <svelte:head>
 	<title>{$LL.THIRD.TITLE()}</title>
 </svelte:head>
@@ -65,14 +65,14 @@
 		{/each}
 	</div>
 
-	{#if showBackToTop}
-		<a
-			transition:fly={{ y: 200, duration: 2000 }}
-			href={'#'}
-			class="back-to-top-btn"
-			on:click={(y = 0)}>Back to top</a
-		>
-	{/if}
+	<!--{#if showBackToTop}-->
+	<!--	<a-->
+	<!--		transition:fly={{ y: 200, duration: 2000 }}-->
+	<!--		href={'#'}-->
+	<!--		class="back-to-top-btn"-->
+	<!--		on:click={(y = 0)}>Back to top</a-->
+	<!--	>-->
+	<!--{/if}-->
 </main>
 
 <style lang="scss">

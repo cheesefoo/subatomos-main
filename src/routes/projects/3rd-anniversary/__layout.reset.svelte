@@ -31,7 +31,7 @@
 	main {
 		min-height: 100vh;
 		margin: 0;
-		background: url(../../static/assets/images/Sky.png) no-repeat center center fixed;
+		background: url(../../../../static/assets/images/Sky.png) no-repeat center center fixed;
 		background-size: cover;
 
 		display: flex;
