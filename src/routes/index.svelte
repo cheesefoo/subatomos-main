@@ -1,5 +1,5 @@
 <script>
-	import LL from '$lib/i18n/i18n-svelte';
+	import LL from '$lib/../i18n/i18n-svelte';
 </script>
 
 <svelte:head>
@@ -31,7 +31,7 @@
 		align-content: center;
 	}
 
-	.img-container {
+/*	.img-container {
 		height: 50%;
 		width: 100%;
 
@@ -45,5 +45,5 @@
 		display: flex;
 		margin: 8px;
 		padding: 1.15rem;
-	}
+	}*/
 </style>

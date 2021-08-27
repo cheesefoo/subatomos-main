@@ -44,5 +44,5 @@ $primary-color: #518db9;
 body {
 	font: 100% $font-stack;
 	color: $primary-color;
-	@include hideScrollbar;
+	//@include hideScrollbar;
 }
