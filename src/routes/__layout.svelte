@@ -3,7 +3,7 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import Panel from '$lib/components/Panel.svelte';
 	import '../app.scss';
-	import { initI18n } from '$lib/i18n/i18n-svelte';
+	import { initI18n } from '$lib/../i18n/i18n-svelte';
 
 	export async function load({ page, fetch, session, context }) {
 		// detect locale of user (see https://github.com/ivanhofer/typesafe-i18n#locale-detection)
@@ -33,7 +33,7 @@
 	main {
 		min-height: 100vh;
 		margin: 0;
-		background: url(../../static/assets/images/Sky.png) no-repeat center center fixed;
+		background: url(/static/assets/images/Sky.png) no-repeat center center fixed;
 		background-size: cover;
 	}
 </style>

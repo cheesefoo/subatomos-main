@@ -41,12 +41,15 @@
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.5.0",
 		"@fortawesome/fontawesome-free": "^5.15.4",
+		"@fortawesome/free-brands-svg-icons": "^5.15.4",
+		"@fortawesome/free-solid-svg-icons": "^5.15.4",
 		"@lukeed/uuid": "^2.0.0",
 		"@types/chart.js": "^2.9.34",
 		"@types/howler": "^2.2.3",
 		"chart.js": "^3.5.1",
 		"cookie": "^0.4.1",
 		"howler": "^2.2.3",
+		"svelte-fa": "^2.2.1",
 		"typesafe-i18n": "^2.37.3"
 	}
 }

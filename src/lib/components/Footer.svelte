@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import LL, { locale, setLocale } from '$lib/i18n/i18n-svelte';
+	import LL, { locale, setLocale } from '$lib/../i18n/i18n-svelte';
 </script>
 
 <slot>
