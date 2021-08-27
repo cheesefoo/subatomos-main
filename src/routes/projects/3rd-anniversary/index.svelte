@@ -2,7 +2,7 @@
 	import LL from '$lib/i18n/i18n-svelte';
 	import Lazy from 'svelte-lazy';
 	import { fly } from 'svelte/transition';
-	import Credit from '$lib/components/credit.svelte';
+	import Credit from '$lib/components/Credit.svelte';
 	import CongratsMessageBox from '$lib/components/CongratsMessageBox.svelte';
 
 	export async function load({ fetch }) {
