@@ -2,16 +2,16 @@
 	import { page } from '$app/stores';
 	import LL, { locale, setLocale } from '$lib/i18n/i18n-svelte';
 
-	export let height;
-
-	let lastY = 0;
-	let y;
-	let show = true;
-
-	export function handleScroll() {
-		show = y < lastY;
-		lastY = y;
-	}
+	// export let height;
+	//
+	// let lastY = 0;
+	// let y;
+	// let show = true;
+	//
+	// export function handleScroll() {
+	// 	show = y < lastY;
+	// 	lastY = y;
+	// }
 </script>
 
 <!--<svelte:window on:scroll={handleScroll} bind:scrollY={y} />-->
@@ -94,13 +94,13 @@
 
 			<ul class="nav-dropdown">
 				<li>
-					<a class="dropdown-item selectLang" href={'#'} lang="EN" on:click={() => setLocale('en')}>
+					<a class="dropdown-item selectLang" href='#' lang="EN" on:click={() => setLocale('en')}>
 						<div class=" flag-icon flag-icon-us" />
 						EN</a
 					>
 				</li>
 				<li>
-					<a class="dropdown-item selectLang" href={'#'} lang="JA" on:click={() => setLocale('ja')}>
+					<a class="dropdown-item selectLang" href='#' lang="JA" on:click={() => setLocale('ja')}>
 						<div class=" flag-icon flag-icon-jp" />
 						JA</a
 					>
