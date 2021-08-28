@@ -33,13 +33,16 @@ const ja: BaseTranslation = {
 			TS: '太陽少女',
 			DMB: 'どぅーまいべすと！',
 			KR: 'Kirameki Rider',
-			NA: 'Natsu Aji!!',
-			ORCHESTRAL: 'Orchestral',
-			KENSETSU: 'Oozora Kensetsu Theme'
+			NA: '夏あじ！！！',
+			ORCHESTRAL: 'オーケストラの',
+			KENSETSU: '大空建設の社歌'
 		},
 		EDITING: '動画編集',
 		TRANSLATION: '翻訳',
-		DIRECTION: 'Direction',
+		DIRECTION: '演出',
+		STORYBOARD:'ストーリーボード',
+		LOGO_SUBA:'スバ友のロゴ',
+		LOGO_PROJ:'プロジェクトのロゴ',
 		THANKS: '次の方々に感謝を'
 	}
 };
