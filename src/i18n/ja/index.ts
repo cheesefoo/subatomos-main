@@ -15,6 +15,7 @@ const ja: BaseTranslation = {
 		TITLE: 'スバルの3周！',
 		CONGRATS: 'スバル、3周年おめでとう！！',
 		CREDITS: 'Credits',
+		MESSAGES: "Messages & Fanart",
 		ANIMATION: 'アニメーション',
 		A: {
 			ONE: 'Original Outfit',
@@ -28,9 +29,9 @@ const ja: BaseTranslation = {
 		M: {
 			DD: 'Daily Diary',
 			DrD: 'Dreaming Days',
-			KNM: 'Koi no Mahou',
-			TS: 'Taiyou Shoujo',
-			DMB: 'Do my Best!',
+			KNM: '恋の魔法',
+			TS: '太陽少女',
+			DMB: 'どぅーまいべすと！',
 			KR: 'Kirameki Rider',
 			NA: 'Natsu Aji!!',
 			ORCHESTRAL: 'Orchestral',
