@@ -16,6 +16,8 @@ const en: BaseTranslation = {
 		CONGRATS: 'Congratulations on your third anniversary, Subaru!',
 		CREDITS: 'Credits',
 		ANIMATION: 'Animation',
+		MESSAGES: "Messages & Fanart",
+
 		A: {
 			ONE: 'Original Outfit',
 			TWO: 'Sailor Outfit',

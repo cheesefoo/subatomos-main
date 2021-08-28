@@ -1,5 +1,4 @@
 <script context="module" lang="ts">
-	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import { initI18n } from '$lib/../i18n/i18n-svelte';
 
@@ -13,12 +12,9 @@
 </script>
 
 <main>
-	<Header />
-	<div class="content">
-		<slot />
-	</div>
-	<Footer />
+	<slot />
 </main>
+<Footer />
 
 <style lang="scss">
 	main {
@@ -38,8 +34,8 @@
 		justify-items: center;
 	}
 
-	.content {
-		min-width: max(50vw, 500px);
-		max-width: 90%;
-	}
+	//.content {
+	//	min-width: max(50vw, 500px);
+	//	max-width: 90%;
+	//}
 </style>

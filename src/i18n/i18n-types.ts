@@ -61,6 +61,10 @@ export type Translation = {
 		 * Animation
 		 */
 		'ANIMATION': string
+		/**
+		 * Messages & Fanart
+		 */
+		'MESSAGES': string
 		'A': {	
 			/**
 			 * Original Outfit
@@ -200,6 +204,10 @@ export type TranslationFunctions = {
 		 * Animation
 		 */
 		'ANIMATION': () => LocalizedString
+		/**
+		 * Messages & Fanart
+		 */
+		'MESSAGES': () => LocalizedString
 		'A': {	
 			/**
 			 * Original Outfit

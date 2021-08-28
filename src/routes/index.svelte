@@ -31,7 +31,7 @@
 		align-content: center;
 	}
 
-/*	.img-container {
+	/*	.img-container {
 		height: 50%;
 		width: 100%;
 
