@@ -1,14 +1,11 @@
 <script context='module' lang='ts'>
 	import LL from '$lib/../i18n/i18n-svelte';
-	import { crossfade, fade } from 'svelte/transition';
-	import { flip } from 'svelte/animate';
-	import Lazy from 'svelte-lazy';
-	import Credit from '$lib/components/Credit.svelte';
+	import { crossfade } from 'svelte/transition';
 	import CongratsMessageBox from '$lib/components/CongratsMessageBox.svelte';
-	import credits from './_credits';
 	import Fa from 'svelte-fa/src/fa.svelte';
 	import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 	import { quintOut } from 'svelte/easing';
+	import Saos from 'saos';
 
 	export async function load({ fetch })
 	{
@@ -20,8 +17,6 @@
 			error: new Error()
 		};
 	}
-
-	export let creditsList = credits;
 
 	// let innerHeight;
 	// let y;
@@ -50,13 +45,14 @@
 
 <script>
 	import LanguageSelect from '$lib/components/LanguageSelect.svelte';
+	import ThirdAnniversaryCredits from '$lib/components/ThirdAnniversaryCredits.svelte';
 
 	export let texts;
 
-	let fanartOnly = false;
+	let hideMessages = false;
 
 	function filterFanarts() {
-		fanartOnly = !fanartOnly;
+		hideMessages = !hideMessages;
 	}
 </script>
 
@@ -72,100 +68,80 @@
 	</a>
 </div>
 <div class='language-select'>
-<LanguageSelect/></div>
-<main>
-	<div>
-		<h3>{$LL.THIRD.CONGRATS()}</h3>
-		<div class='video-container'>
-			<iframe
-				allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-				allowfullscreen
-				frameborder='0'
-				height='720'
-				src='https://www.youtube.com/embed/pyH6z4zxWa8'
-				title='YouTube video player'
-				width='1280'
-			/>
-		</div>
-	</div>
-	<div class='msg-banner'>
-		<h1>{$LL.THIRD.MESSAGES()}</h1>
-		<div class='fanart-filter'>
-			<input type='checkbox' bind:checked={fanartOnly}>
-			Show/hide non-fanart
-		</div>
-	</div>
-	<div class='messages-container'>
-		{#each texts as { avatar, lastName, lorem, art, url }}
-			{#if (fanartOnly && art != undefined) || !fanartOnly}
-				<div transition:fade={{duration:1000}} class='message-box'>
-					{#if art != undefined}
-					<Lazy height={'80%'} fadeOption={{ delay: 200, duration: 1000 }}>
-						<CongratsMessageBox name={lastName} message={lorem} art={art} url={url} />
-					</Lazy>
-					{:else}
-						<Lazy height={'20vh'} fadeOption={{ delay: 200, duration: 1000 }}>
-							<CongratsMessageBox name={lastName} message={lorem} art={art} url={url} />
-						</Lazy>
-			{/if}
-				</div>
-			{/if}
-		{/each}
-
-	</div>
-	<!--{#if showBackToTop}-->
-	<!--	<a-->
-	<!--		transition:fly={{ y: 200, duration: 2000 }}-->
-	<!--		href={'#'}-->
-	<!--		class="back-to-top-btn"-->
-	<!--		on:click={(y = 0)}>Back to top</a-->
-	<!--	>-->
-	<!--{/if}-->
-</main>
-<div class='credits'>
-	<h3>{$LL.THIRD.CREDITS()}</h3>
-	<div class='credits-grid'>
-		<div class='credits-section'>
-			<h4>{$LL.THIRD.ANIMATION()}</h4>
-			<Credit desc={$LL.THIRD.A.ONE()} {...creditsList.eleos} />
-			<Credit desc={$LL.THIRD.A.TWO()} {...creditsList.ani} />
-			<Credit desc={$LL.THIRD.A.THREE()} {...creditsList.ray} />
-			<Credit desc={$LL.THIRD.A.FOUR()} {...creditsList.cryo} />
-			<Credit desc={$LL.THIRD.A.FIVE()} {...creditsList.alled} />
-			<Credit desc={$LL.THIRD.A.SIX()} {...creditsList.simon} />
-		</div>
-		<div>
-			<h4>Music</h4>
-			<Credit desc={$LL.THIRD.M.DD()} {...creditsList.wei} />
-			<Credit
-				desc='{$LL.THIRD.M.NA()}, {$LL.THIRD.M.KENSETSU()}, {$LL.THIRD.M.TS()}'
-				{...creditsList.jeremy}
-			/>
-			<Credit desc={$LL.THIRD.M.TS()} {...creditsList.vintage} />
-			<Credit
-				desc='{$LL.THIRD.M.DrD()}, {$LL.THIRD.M.KNM()}, {$LL.THIRD.M.KR()}'
-				{...creditsList.hko}
-			/>
-			<Credit desc={$LL.THIRD.M.DMB()} {...creditsList.light} />
-		</div>
-		<div>
-			<h4>{$LL.THIRD.EDITING()}</h4>
-			<Credit {...creditsList.cynic} />
-			<Credit {...creditsList.furo} />
-			<h4>{$LL.THIRD.TRANSLATION()}</h4>
-			<Credit {...creditsList.neil} />
-			<Credit {...creditsList.gundam} />
-			<Credit {...creditsList.vee} />
-		</div>
-	</div>
+	<LanguageSelect />
 </div>
+<main>
+	<div class='content'>
+		<h3>{$LL.THIRD.CONGRATS()}</h3>
+			<div class='video-container'>
+				<iframe
+					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+					allowfullscreen
+					frameborder='0'
+					height='720'
+					src='https://www.youtube.com/embed/pyH6z4zxWa8'
+					title='YouTube video player'
+					width='1280'
+				/>
+		</div>
+		<div class='msg-banner'>
+			<h1>{$LL.THIRD.MESSAGES()}</h1>
+			<div class='fanart-filter'>
+				<input type='checkbox' bind:checked={hideMessages}>
+				Show/hide non-fanart
+			</div>
+		</div>
+		<div class='messages-container'>
+			{#each texts as { avatar, lastName, lorem, art, url }}
+				{#if (hideMessages && art != undefined) || !hideMessages}
+					<Saos animation={"fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"}>
+
+
+						<div class='message-box'>
+							<!--				<div transition:fade={{duration:1000}} class='message-box'>-->
+							{#if art != undefined}
+								<CongratsMessageBox name={lastName} message={lorem} art={art} url={url} />
+
+							{:else}
+								<CongratsMessageBox name={lastName} message={lorem} art={art} url={url} />
+
+							{/if}
+						</div>
+					</Saos>
+				{/if}
+			{/each}
+
+		</div>
+		<!--{#if showBackToTop}-->
+		<!--	<a-->
+		<!--		transition:fly={{ y: 200, duration: 2000 }}-->
+		<!--		href={'#'}-->
+		<!--		class="back-to-top-btn"-->
+		<!--		on:click={(y = 0)}>Back to top</a-->
+		<!--	>-->
+		<!--{/if}-->
+	</div>
+</main>
+<ThirdAnniversaryCredits />
 
 <style lang='scss'>
+
+
   main {
+
+    background: url(/static/assets/images/Sky.png) no-repeat center center fixed;
+    background-size: cover;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-items: center;
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+  }
+
+  .content {
+    min-width: max(90vw, 500px);
+    max-width: 90%;
+		padding-top: 5em;
   }
 
   h3 {
@@ -179,20 +155,22 @@
     left: 3vw;
     top: 3vh;
   }
-	.language-select{
-		color:black;
-		position:absolute;
-		right:3vw;
-		top:3vh;
-		border: black solid;
-		border-width: 2px 2px 2px 2px;
-	}
+
+  .language-select {
+    color: black;
+    position: absolute;
+    right: 3vw;
+    top: 3vh;
+    border: black solid;
+    border-width: 2px 2px 2px 2px;
+  }
 
   .video-container {
     width: auto;
     max-width: 100%;
     margin: auto;
     text-align: center;
+		padding-bottom: 5em;
 
     iframe {
       width: 100%;
@@ -206,47 +184,25 @@
     text-align: end;
   }
 
-  .credits {
-    background-color: $ivory;
-    width: 100%;
-  }
-
-  .credits-grid {
-    display: grid;
-    grid-template-columns: 25% 25% 25%;
-    column-gap: 1em;
-    row-gap: 1em;
-  }
-
   .msg-banner {
+    padding-top: 2em;
     background-color: $lace;
   }
 
-  //.credits-section{
-  //	display:grid;
-  //  row-gap: 1em;
-  //
-  //}
+  .message-box {
+    width: 100%;
+    display: inline-block;
+  }
 
-  //.messages-container {
-  //  display: flex;
-  //  flex-wrap: wrap;
-  //  overflow: hidden;
-  //  max-width: 100%;
-  //  height: auto;
-  //}
   .messages-container {
-    display: grid;
-    padding-top: 5vh;
+    display: block;
+    column-count: 3;
+    padding: 1em 0 1em 0;
     min-width: 480px;
     width: 100%;
     overflow: visible;
+    box-sizing: border-box;
 
-    //justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
-
-    column-gap: 1em;
-    row-gap: 1em;
   }
 
   .back-to-top-btn {
@@ -254,4 +210,14 @@
     bottom: 1vh;
     left: 1vw;
   }
+
+  @keyframes -global-fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
 </style>

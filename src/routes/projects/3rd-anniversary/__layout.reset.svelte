@@ -12,30 +12,31 @@
 </script>
 
 <main>
+<!--	<div class='content'>-->
 	<slot />
+<!--	</div>-->
 </main>
 <Footer />
 
 <style lang="scss">
 	main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-items: center;
 		min-height: 100vh;
 		margin: 0;
-		background: url(/static/assets/images/Sky.png) no-repeat center center fixed;
-		background-size: cover;
-		display: flex;
+
 		overflow: hidden;
 		align-content: center;
 		align-items: center;
-		flex-wrap: wrap;
-		justify-content: space-around;
 		width: 100%;
 		padding-top: 0;
 		padding-bottom: 1rem;
-		justify-items: center;
 	}
 
 	//.content {
-	//	min-width: max(50vw, 500px);
+	//	min-width: max(90vw, 500px);
 	//	max-width: 90%;
 	//}
 </style>

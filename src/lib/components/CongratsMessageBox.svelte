@@ -1,9 +1,11 @@
 <script>
 	import bigstar from '$images/Star_bg_reszied.png';
-	import stars from '$images/AboutSubaruWindowmobile.png';
+	// import stars from '$images/AboutSubaruWindowmobile.png';
+	import stars from '$lib/components/StarsSVG.svelte';
 	import megaphone from '$images/megaphone_resized.png';
 	import Fa from 'svelte-fa';
 	import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+	import StarsSVG from '$lib/components/StarsSVG.svelte';
 
 	export let name;
 	export let message;
@@ -32,11 +34,11 @@
 		<img src={bigstar} alt='Subaru Message Star' />
 	</div>
 	<div class='stars'>
-		<img src={stars} alt='Subaru Message Star' />
+		<StarsSVG />
 	</div>
-	<div class='megaphone'>
-		<img src={megaphone} alt='Subaru Message Star' />
-	</div>
+<!--	<div class='megaphone'>-->
+<!--		<img src={megaphone} alt='Subaru Message Star' />-->
+<!--	</div>-->
 </div>
 
 <style lang='scss'>
@@ -50,7 +52,7 @@
     background-color: $ivory;
 
     position: relative;
-    min-height: 20vh;
+    min-height: 20%;
 		max-height:80%;
   }
 

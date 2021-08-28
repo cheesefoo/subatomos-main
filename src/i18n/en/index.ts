@@ -41,6 +41,9 @@ const en: BaseTranslation = {
 		EDITING: 'Editing',
 		TRANSLATION: 'Translation',
 		DIRECTION: 'Direction',
+		STORYBOARD:'Storyboard',
+		LOGO_SUBA:'Subatomo Logo',
+		LOGO_PROJ:'Project Logo',
 		THANKS: 'Special Thanks'
 	}
 };
