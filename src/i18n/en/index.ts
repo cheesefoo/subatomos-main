@@ -16,7 +16,7 @@ const en: BaseTranslation = {
 		CONGRATS: 'Congratulations on your third anniversary, Subaru!',
 		CREDITS: 'Credits',
 		ANIMATION: 'Animation',
-		MESSAGES: "Messages & Fanart",
+		MESSAGES: 'Messages & Fanart',
 
 		A: {
 			ONE: 'Original Outfit',
@@ -41,9 +41,9 @@ const en: BaseTranslation = {
 		EDITING: 'Editing',
 		TRANSLATION: 'Translation',
 		DIRECTION: 'Direction',
-		STORYBOARD:'Storyboard',
-		LOGO_SUBA:'Subatomo Logo',
-		LOGO_PROJ:'Project Logo',
+		STORYBOARD: 'Storyboard',
+		LOGO_SUBA: 'Subatomo Logo',
+		LOGO_PROJ: 'Project Logo',
 		THANKS: 'Special Thanks'
 	}
 };

@@ -1,26 +1,27 @@
 <script>
 	import { locale, setLocale } from '$lib/../i18n/i18n-svelte';
 </script>
-<ul class='corner'>
-	<li>
-			<span
-				class='flag-icon'
-				class:flag-icon-us={$locale === 'en'}
-				class:flag-icon-jp={$locale === 'ja'}
-				id='lang-flag'
-			/>
-		<span id='lang-header-text'>{$locale.toUpperCase()}</span>
 
-		<ul class='nav-dropdown'>
+<ul class="corner">
+	<li>
+		<span
+			class="flag-icon"
+			class:flag-icon-us={$locale === 'en'}
+			class:flag-icon-jp={$locale === 'ja'}
+			id="lang-flag"
+		/>
+		<span id="lang-header-text">{$locale.toUpperCase()}</span>
+
+		<ul class="nav-dropdown">
 			<li>
-				<a class='dropdown-item selectLang' href='#' lang='EN' on:click={() => setLocale('en')}>
-					<div class=' flag-icon flag-icon-us' />
+				<a class="dropdown-item selectLang" href="#" lang="EN" on:click={() => setLocale('en')}>
+					<div class=" flag-icon flag-icon-us" />
 					EN</a
 				>
 			</li>
 			<li>
-				<a class='dropdown-item selectLang' href='#' lang='JA' on:click={() => setLocale('ja')}>
-					<div class=' flag-icon flag-icon-jp' />
+				<a class="dropdown-item selectLang" href="#" lang="JA" on:click={() => setLocale('ja')}>
+					<div class=" flag-icon flag-icon-jp" />
 					JA</a
 				>
 			</li>
@@ -28,117 +29,116 @@
 	</li>
 </ul>
 
-<style lang='scss'>
-  .corner {
-    position: relative;
-    top: 16px;
+<style lang="scss">
+	.corner {
+		position: relative;
+		top: 16px;
 
-    li {
-      display: inline-block;
-      vertical-align: middle;
+		li {
+			display: inline-block;
+			vertical-align: middle;
 
-			span:nth-child(1){
-        padding-left: 1em;
-
-      }
-      span:nth-child(2) {
-        //padding-top: 25%;
+			span:nth-child(1) {
+				padding-left: 1em;
+			}
+			span:nth-child(2) {
+				//padding-top: 25%;
 				padding-right: 2em;
-        font-weight: 700;
-        color: $ivory;
-      }
-    }
-  }
+				font-weight: 700;
+				color: $ivory;
+			}
+		}
+	}
 
-  ul {
-    position: relative;
-    padding: 0;
-    margin: 0;
-    height: 3em;
-    display: flex;
-    justify-content: center;
-    //align-items: center;
-    list-style: none;
-    background: var(--background);
-    background-size: contain;
-  }
+	ul {
+		position: relative;
+		padding: 0;
+		margin: 0;
+		height: 3em;
+		display: flex;
+		justify-content: center;
+		//align-items: center;
+		list-style: none;
+		background: var(--background);
+		background-size: contain;
+	}
 
-  li {
-    position: relative;
-    height: 100%;
-  }
+	li {
+		position: relative;
+		height: 100%;
+	}
 
-  li.active::before {
-    --size: 10px;
-    content: '';
-    width: 0;
-    height: 0;
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - var(--size));
-    border: var(--size) solid transparent;
-    border-bottom: var(--size) solid $chromeblue;
-  }
+	li.active::before {
+		--size: 10px;
+		content: '';
+		width: 0;
+		height: 0;
+		position: absolute;
+		bottom: 0;
+		left: calc(50% - var(--size));
+		border: var(--size) solid transparent;
+		border-bottom: var(--size) solid $chromeblue;
+	}
 
-  li:hover {
-    ul {
-      /* Display the dropdown on hover */
-      left: 0; /* Bring back on-screen when needed */
-      height: 8em;
+	li:hover {
+		ul {
+			/* Display the dropdown on hover */
+			left: 0; /* Bring back on-screen when needed */
+			height: 8em;
 
-      a {
-        /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
-      }
+			a {
+				/* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+			}
 
-      li a:hover {
-        /* Here we define the most explicit hover states--what happens when you hover each individual link. */
-        background: $lightblue;
-      }
-    }
+			li a:hover {
+				/* Here we define the most explicit hover states--what happens when you hover each individual link. */
+				background: $lightblue;
+			}
+		}
 
-    a {
-      /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
-      background: darken($lightblue, 10%);
-    }
-  }
+		a {
+			/* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+			background: darken($lightblue, 10%);
+		}
+	}
 
-  a {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    padding: 0 1em;
-    color: $ivory;
-    font-weight: 700;
+	a {
+		display: flex;
+		height: 100%;
+		align-items: center;
+		padding: 0 1em;
+		color: $ivory;
+		font-weight: 700;
 
-    text-transform: uppercase;
-    letter-spacing: 10%;
-    text-decoration: none;
-    transition: color 0.2s linear;
+		text-transform: uppercase;
+		letter-spacing: 10%;
+		text-decoration: none;
+		transition: color 0.2s linear;
 
-    &:hover {
-      color: $chromeblue;
-    }
-  }
+		&:hover {
+			color: $chromeblue;
+		}
+	}
 
-  .nav-dropdown {
-    z-index: 999;
-    background: rgba(
-                    255,
-                    255,
-                    255,
-                    0
-    ); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
-    list-style: none;
-    position: absolute;
-    left: -9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
-    flex-direction: column;
+	.nav-dropdown {
+		z-index: 999;
+		background: rgba(
+			255,
+			255,
+			255,
+			0
+		); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+		list-style: none;
+		position: absolute;
+		left: -9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+		flex-direction: column;
 
-    li {
-      float: none;
-    }
+		li {
+			float: none;
+		}
 
-    a {
-      white-space: nowrap; /* Stop text wrapping and creating multi-line dropdown items */
-    }
-  }
+		a {
+			white-space: nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+		}
+	}
 </style>
