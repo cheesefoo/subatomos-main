@@ -4,13 +4,12 @@
 	import credits from './_credits';
 
 	export let creditsList = credits;
-
 </script>
 
-<div class='credits'>
+<div class="credits">
 	<h3>{$LL.THIRD.CREDITS()}</h3>
-	<div class='credits-grid'>
-		<div class='credits-section'>
+	<div class="credits-grid">
+		<div class="credits-section">
 			<h4>{$LL.THIRD.ANIMATION()}</h4>
 			<Credit desc={$LL.THIRD.A.ONE()} {...creditsList.eleos} />
 			<Credit desc={$LL.THIRD.A.TWO()} {...creditsList.ani} />
@@ -23,12 +22,12 @@
 			<h4>Music</h4>
 			<Credit desc={$LL.THIRD.M.DD()} {...creditsList.wei} />
 			<Credit
-				desc='{$LL.THIRD.M.NA()}, {$LL.THIRD.M.KENSETSU()}, {$LL.THIRD.M.TS()}'
+				desc="{$LL.THIRD.M.NA()}, {$LL.THIRD.M.KENSETSU()}, {$LL.THIRD.M.TS()}"
 				{...creditsList.jeremy}
 			/>
 			<Credit desc={$LL.THIRD.M.TS()} {...creditsList.vintage} />
 			<Credit
-				desc='{$LL.THIRD.M.DrD()}, {$LL.THIRD.M.KNM()}, {$LL.THIRD.M.KR()}'
+				desc="{$LL.THIRD.M.DrD()}, {$LL.THIRD.M.KNM()}, {$LL.THIRD.M.KR()}"
 				{...creditsList.hko}
 			/>
 			<Credit desc={$LL.THIRD.M.DMB()} {...creditsList.light} />
@@ -48,34 +47,31 @@
 			<Credit {...creditsList.venn} />
 			<Credit {...creditsList.fran} />
 			<Credit {...creditsList.udarash} />
-
 		</div>
 		<div>
-
 			<h4>{$LL.THIRD.THANKS()}</h4>
 			<Credit {...creditsList.ato} />
 			<Credit desc={$LL.THIRD.LOGO_SUBA()} {...creditsList.ano} />
 			<Credit desc={$LL.THIRD.LOGO_PROJ()} {...creditsList.ebi} />
-
 		</div>
 	</div>
 </div>
-<style lang='scss'>
 
-	h3, h4{
+<style lang="scss">
+	h3,
+	h4 {
 		text-align: center;
 	}
-  .credits {
-    background-color: $ivory;
-    width: 100%;
-  }
+	.credits {
+		background-color: $ivory;
+		width: 100%;
+	}
 
-  .credits-grid {
-    display: grid;
-    padding: 0 5% 0 5%;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    column-gap: 1em;
-    row-gap: 1em;
-  }
-
+	.credits-grid {
+		display: grid;
+		padding: 0 5% 0 5%;
+		grid-template-columns: 20% 20% 20% 20% 20%;
+		column-gap: 1em;
+		row-gap: 1em;
+	}
 </style>

@@ -12,18 +12,18 @@
 </script>
 
 <main>
-<!--	<div class='content'>-->
+	<!--	<div class='content'>-->
 	<slot />
-<!--	</div>-->
+	<!--	</div>-->
 </main>
 <Footer />
 
 <style lang="scss">
 	main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    justify-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		justify-items: center;
 		min-height: 100vh;
 		margin: 0;
 

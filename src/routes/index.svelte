@@ -1,11 +1,13 @@
 <script>
 	import LL from '$lib/../i18n/i18n-svelte';
+
+	let data;
 </script>
 
 <svelte:head>
 	<title>{$LL.TITLE()}</title>
 </svelte:head>
-
+<!--<div id="bm" />-->
 <div class="content">
 	<h1>{$LL.IN_DEV()}</h1>
 
@@ -31,6 +33,20 @@
 		align-content: center;
 	}
 
+	html,
+	body,
+	main {
+		background-color: #000;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	#bm {
+		width: 100%;
+		height: 100%;
+	}
 	/*	.img-container {
 		height: 50%;
 		width: 100%;

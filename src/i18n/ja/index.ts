@@ -15,7 +15,7 @@ const ja: BaseTranslation = {
 		TITLE: 'スバルの3周！',
 		CONGRATS: 'スバル、3周年おめでとう！！',
 		CREDITS: 'Credits',
-		MESSAGES: "Messages & Fanart",
+		MESSAGES: 'Messages & Fanart',
 		ANIMATION: 'アニメーション',
 		A: {
 			ONE: 'Original Outfit',
@@ -40,9 +40,9 @@ const ja: BaseTranslation = {
 		EDITING: '動画編集',
 		TRANSLATION: '翻訳',
 		DIRECTION: '演出',
-		STORYBOARD:'ストーリーボード',
-		LOGO_SUBA:'スバ友のロゴ',
-		LOGO_PROJ:'プロジェクトのロゴ',
+		STORYBOARD: 'ストーリーボード',
+		LOGO_SUBA: 'スバ友のロゴ',
+		LOGO_PROJ: 'プロジェクトのロゴ',
 		THANKS: '次の方々に感謝を'
 	}
 };
