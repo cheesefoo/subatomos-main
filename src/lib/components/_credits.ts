@@ -6,7 +6,13 @@ const credits = {
 	ani: { name: 'Ani.Minhton', url: 'https://twitter.com/Keru_nk', avatar: 'ani.jpg' },
 	ray: { name: 'Ray Yuri', url: 'https://twitter.com/mini_sting_ray', avatar: 'ray.jpg' },
 	cryo: { name: 'Cryovol', url: 'https://twitter.com/cryovol', avatar: 'cryo.jpg' },
-	alled: { name: 'Alled Thundes', url: 'https://twitter.com/AlledThundes', avatar: 'alled.jpg' },
+	alled: {
+		name: 'Alled Thundes',
+		url: 'https://twitter.com/AlledThundes',
+		avatar: 'alled.jpg',
+		url2: 'https://www.instagram.com/alled.thundes/',
+		sns2: 'ig'
+	},
 	simon: { name: 'Simon Beed', url: 'https://twitter.com/simonbeed', avatar: 'simon.jpg' },
 	light: { name: 'LightMask', url: 'https://twitter.com/simonbeed' },
 	jeremy: { name: 'Jeremy Robson', url: 'https://twitter.com/simonbeed' },

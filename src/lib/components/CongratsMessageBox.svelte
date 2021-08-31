@@ -1,11 +1,9 @@
 <script>
 	import bigstar from '$images/Star_bg_reszied.png';
 	// import stars from '$images/AboutSubaruWindowmobile.png';
-	import stars from '$lib/components/StarsSVG.svelte';
-	import megaphone from '$images/megaphone_resized.png';
+	import StarsSVG from '$lib/components/StarsSVG.svelte';
 	import Fa from 'svelte-fa';
 	import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-	import StarsSVG from '$lib/components/StarsSVG.svelte';
 
 	export let name;
 	export let message;
@@ -13,29 +11,31 @@
 	export let url = undefined;
 </script>
 
-<div class="box">
-	<div class="box-inner">
-		<span
-			>{#if url != undefined}
-				<Fa icon={faTwitter} />
+<div class='box'>
+	<div class='box-inner'>
+		<span>
+			{#if url != undefined}
+				<Fa icon={faTwitter} color='#1DA1F2' />
+				<a href={url}>{name}</a>
+				{:else}{name}
 			{/if}
-			<h2>{name}</h2></span
-		>
+
+		</span>
 		<hr />
 		<p>{message}</p>
 	</div>
 	{#if art != undefined}
 		<hr />
 
-		<div class="fanart">
+		<div class='fanart'>
 			<img src={art} />
 		</div>
 		<hr />
 	{/if}
-	<div class="bigstar">
-		<img src={bigstar} alt="Subaru Message Star" />
+	<div class='bigstar'>
+		<img src={bigstar} alt='Subaru Message Star' />
 	</div>
-	<div class="stars">
+	<div class='stars'>
 		<StarsSVG />
 	</div>
 	<!--	<div class='megaphone'>-->
@@ -43,53 +43,53 @@
 	<!--	</div>-->
 </div>
 
-<style lang="scss">
-	.box {
-		border-image-slice: 10 10 10 10;
-		border-image-width: 20px 20px 20px 20px;
-		border-image-outset: 0px 0px 0px 0px;
-		border-image-repeat: stretch stretch;
-		border-style: solid;
-		border-image-source: url('$images/Window_resized.png');
-		background-color: $ivory;
+<style lang='scss'>
+  .box {
+    border-image-slice: 10 10 10 10;
+    border-image-width: 20px 20px 20px 20px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: stretch stretch;
+    border-style: solid;
+    border-image-source: url('$images/Window_resized.png');
+    background-color: $ivory;
 
-		position: relative;
-		min-height: 20%;
-		max-height: 80%;
-	}
+    position: relative;
+    min-height: 20%;
+    max-height: 80%;
+  }
 
-	.box-inner {
-		margin: 40px;
-		max-width: 40ch;
-		position: relative;
-		z-index: 1;
-		//overflow-wrap: break-word;
-	}
+  .box-inner {
+    margin: 40px;
+    max-width: 40ch;
+    position: relative;
+    z-index: 1;
+    //overflow-wrap: break-word;
+  }
 
-	.fanart {
-		width: 100%;
-		height: auto;
-	}
+  .fanart {
+    width: 100%;
+    height: auto;
+  }
 
-	.megaphone {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-	}
+  .megaphone {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 
-	.stars {
-		position: absolute;
-		bottom: 0;
-		right: 0;
+  .stars {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 
-		img {
-			width: 10rem;
-		}
-	}
+    img {
+      width: 10rem;
+    }
+  }
 
-	.bigstar {
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
+  .bigstar {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 </style>
