@@ -3,8 +3,8 @@
 	import CongratsMessageBox from '$lib/components/CongratsMessageBox.svelte';
 	import Fa from 'svelte-fa/src/fa.svelte';
 	import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-	import { quintOut } from 'svelte/easing';
 	import Saos from 'saos';
+	import Logo from '$lib/components/Logo.svelte';
 
 	export async function load({ fetch }) {
 		const res = await fetch('/congrats-messages');
@@ -36,6 +36,8 @@
 <svelte:head>
 	<title>{$LL.THIRD.TITLE()}</title>
 </svelte:head>
+
+<Logo />
 <div class="back-btn">
 	<a sveltekit:prefetch href="/">
 		<Fa icon={faArrowLeft} />
@@ -70,12 +72,7 @@
 				{#if (hideMessages && art != undefined) || !hideMessages}
 					<Saos animation={'fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}>
 						<div class="message-box">
-							<!--				<div transition:fade={{duration:1000}} class='message-box'>-->
-							{#if art != undefined}
-								<CongratsMessageBox name={lastName} message={lorem} {art} {url} />
-							{:else}
-								<CongratsMessageBox name={lastName} message={lorem} {art} {url} />
-							{/if}
+							<CongratsMessageBox name={lastName} message={lorem} {art} {url} />
 						</div>
 					</Saos>
 				{/if}
@@ -102,10 +99,11 @@
 		justify-content: space-around;
 		justify-items: center;
 		display: flex;
+		overflow: hidden;
 	}
 
 	.content {
-		min-width: max(90vw, 500px);
+		min-width: 90vw;
 		max-width: 90%;
 		padding-top: 5em;
 	}
@@ -132,17 +130,37 @@
 	}
 
 	.video-container {
-		width: auto;
-		max-width: 100%;
-		margin: auto;
-		text-align: center;
-		padding-bottom: 5em;
+		//width: auto;
+		//max-width: 100%;
+		//height:auto;
+		//max-height:40%;
+		//
+		//margin: auto;
+		//text-align: center;
+		//padding-bottom: 5em;
 
-		iframe {
-			width: 100%;
-			max-width: 100%;
-			margin: auto;
-		}
+		position: relative;
+		padding-bottom: 56.25%;
+		padding-top: 30px;
+		height: 0;
+		overflow: hidden;
+		//iframe {
+		//  width: 100%;
+		//  height:auto;
+		//	min-height:30%;
+		//	max-height:40%;
+		//  max-width: 100%;
+		//  margin: auto;
+		//}
+	}
+	.video-container iframe,
+	.video-container object,
+	.video-container embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 	}
 
 	.fanart-filter {
@@ -164,7 +182,7 @@
 		display: block;
 		column-count: 3;
 		padding: 1em 0 1em 0;
-		min-width: 480px;
+		//min-width: 480px;
 		width: 100%;
 		overflow: visible;
 		box-sizing: border-box;
@@ -182,6 +200,12 @@
 		}
 		100% {
 			opacity: 1;
+		}
+	}
+
+	@media screen and (min-width: 320px) {
+		.messages-container {
+			//column-count: 1;
 		}
 	}
 </style>

@@ -74,4 +74,11 @@
 		column-gap: 1em;
 		row-gap: 1em;
 	}
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		.credits-grid {
+			padding: 0;
+			grid-template-columns: 50% 50%;
+			column-gap: 1.15em;
+		}
+	}
 </style>

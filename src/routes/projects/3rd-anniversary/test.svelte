@@ -1,14 +1,13 @@
-<script context='module' lang='ts'>
-	import LottiePlayer from '$lib/components/lottieplayer/LottiePlayer.svelte';
+<script context="module" lang="ts">
 	import { dev } from '$app/env';
+	import video from '/static/assets/Suba_Logo_60fps.webm';
+	import { fade } from 'svelte/transition';
 
-	export async function load({ fetch })
-	{
+	export async function load({ fetch }) {
 		const res = await fetch('/logo');
 		let data = await res.json();
 
-		if (res.ok)
-		{
+		if (res.ok) {
 			return { props: { anim: dev ? data.json : data.k } };
 		}
 		return {
@@ -31,32 +30,33 @@
 
 <script>
 	export let anim;
+	let finished = false;
+
+	function finish() {
+		finished = true;
+	}
 </script>
 
-<LottiePlayer
-	src={anim}
-	autoplay={true}
-	loop={true}
-	controls={true}
-	renderer='canvas'
-	background='transparent'
-	height={900}
-	width={1200}
-/>
+{#if !finished}
+	<div class="logo-container" out:fade={{ delay: 0, duration: 1000 }}>
+		<video src={video} autoplay playbackRate={2} on:ended={finish} />
+	</div>
+{/if}
+<!--<LottiePlayer-->
+<!--	src={anim}-->
+<!--	autoplay={true}-->
+<!--	loop={true}-->
+<!--	controls={true}-->
+<!--	renderer='canvas'-->
+<!--	background='transparent'-->
+<!--	height={900}-->
+<!--	width={1200}-->
 
+<!--/>-->
 <style>
-    html,
-    body,
-    main {
-        background-color: #000;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        overflow: hidden;
-    }
-
-    #bm {
-        width: 100%;
-        height: 100%;
-    }
+	.logo-container {
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+	}
 </style>

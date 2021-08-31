@@ -26,7 +26,6 @@
 		justify-items: center;
 		min-height: 100vh;
 		margin: 0;
-
 		overflow: hidden;
 		align-content: center;
 		align-items: center;
