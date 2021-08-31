@@ -53,6 +53,7 @@
 			<Credit {...creditsList.ato} />
 			<Credit desc={$LL.THIRD.LOGO_SUBA()} {...creditsList.ano} />
 			<Credit desc={$LL.THIRD.LOGO_PROJ()} {...creditsList.ebi} />
+			<Credit {...creditsList.ryu} />
 		</div>
 	</div>
 </div>

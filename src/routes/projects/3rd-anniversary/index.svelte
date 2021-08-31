@@ -37,7 +37,7 @@
 	<title>{$LL.THIRD.TITLE()}</title>
 </svelte:head>
 
-<Logo />
+<!--<Logo />-->
 <div class="back-btn">
 	<a sveltekit:prefetch href="/">
 		<Fa icon={faArrowLeft} />
@@ -176,6 +176,7 @@
 	.message-box {
 		width: 100%;
 		display: inline-block;
+		padding: 1em 0 1em 0;
 	}
 
 	.messages-container {

@@ -35,6 +35,7 @@
 		"svelte": "^3.42.3",
 		"svelte-check": "^2.2.5",
 		"svelte-lazy": "^1.0.10",
+		"svelte-lightbox": "^0.6.1",
 		"svelte-preprocess": "^4.8.0",
 		"tslib": "^2.3.1",
 		"typescript": "^4.3.5"
@@ -53,6 +54,7 @@
 		"cookie": "^0.4.1",
 		"howler": "^2.2.3",
 		"svelte-fa": "^2.2.1",
-		"typesafe-i18n": "^2.37.3"
+		"typesafe-i18n": "^2.37.3",
+		"yakuhanjp": "^3.4.1"
 	}
 }
