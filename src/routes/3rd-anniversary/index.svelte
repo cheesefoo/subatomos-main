@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-	import LL from '$lib/../i18n/i18n-svelte';
+	import LL from '/src/i18n/i18n-svelte';
 	import CongratsMessageBox from '$lib/components/CongratsMessageBox.svelte';
 	import Fa from 'svelte-fa/src/fa.svelte';
 	import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';

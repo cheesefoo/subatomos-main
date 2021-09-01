@@ -22,7 +22,7 @@
 
 	.inner-panel {
 		min-height: calc(50vh - 80px);
-		min-width: max(50vw, 500px);
+		min-width: max(80vw, 500px);
 		background-color: $ivory;
 		display: block;
 		max-width: 50%;
