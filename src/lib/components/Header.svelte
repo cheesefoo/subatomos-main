@@ -20,25 +20,20 @@
 <header>
 	<nav>
 		<ul>
-			<li class:active={$page.path === '/'}>
-				<a sveltekit:prefetch href="/">{$LL.HEADER.HOME()}</a>
-			</li>
-			<li class:active={$page.path.startsWith('/projects')}>
-				<a sveltekit:prefetch href="/projects">{$LL.HEADER.PROJECTS()}</a>
+			<li class:active={$page.path.startsWith('')}>
+				<a sveltekit:prefetch href="/">{$LL.HEADER.PROJECTS()}</a>
 				<ul class="nav-dropdown">
-					<li class:active={$page.path.startsWith('/projects/ponds')}>
-						<a sveltekit:prefetch href="/projects/ponds">{$LL.HEADER.PONDS()}</a>
+					<li class:active={$page.path.startsWith('/ponds')}>
+						<a sveltekit:prefetch href="/ponds">{$LL.HEADER.PONDS()}</a>
 					</li>
-					<li class:active={$page.path.startsWith('/projects/soundboard')}>
-						<a sveltekit:prefetch href="/projects/soundboard">{$LL.HEADER.SOUNDBOARD()}</a>
+					<li class:active={$page.path.startsWith('/soundboard')}>
+						<a sveltekit:prefetch href="/soundboard">{$LL.HEADER.SOUNDBOARD()}</a>
 					</li>
-					<li class:active={$page.path.startsWith('/projects/3rd-anniversary')}>
-						<a sveltekit:prefetch href="/projects/3rd-anniversary"
-							>{$LL.HEADER.THIRD_ANNIVERSARY()}</a
-						>
+					<li class:active={$page.path.startsWith('/3rd-anniversary')}>
+						<a sveltekit:prefetch href="/3rd-anniversary">{$LL.HEADER.THIRD_ANNIVERSARY()}</a>
 					</li>
-					<li class:active={$page.path.startsWith("/projects/tbd'")}>
-						<a sveltekit:prefetch href="/projects/tbd">???</a>
+					<li class:active={$page.path.startsWith("/tbd'")}>
+						<a sveltekit:prefetch href="/tbd">???</a>
 					</li>
 				</ul>
 			</li>

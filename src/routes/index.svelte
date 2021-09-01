@@ -1,65 +1,74 @@
-<script>
-	import LL from '$lib/../i18n/i18n-svelte';
+<script context='module'></script>
 
-	let data;
-</script>
+<main>
+	<h1>Subatomos Projects</h1>
+	<div class='content'>
+		<h1>2021</h1>
+		<div class='year21'>
 
-<svelte:head>
-	<title>{$LL.TITLE()}</title>
-</svelte:head>
-<!--<div id="bm" />-->
-<div class="content">
-	<h1>{$LL.IN_DEV()}</h1>
+			<div>
+				<h4>3rd anniversary</h4>
+				<a sveltekit:prefetch href='/3rd-anniversary'>
+					<img src='/static/assets/images/3rdanniversarylogo-transparent.png' />
+				</a>
+			</div>
+			<div>
+				<h4>1 Million Subscribers & Birthday</h4>
+				<a sveltekit:prefetch href='/ponds'>
+					<img src='/static/assets/images/subatomopondslogo.png' />
+				</a>
+			</div>
 
-	<!--	<h1>coming s👀n!</h1>-->
-	<!--	<div class="img-container">-->
-	<!--		<img src={cbimage} alt="Oozora Subaru" />-->
-	<!--	</div>-->
-	<!--	<div class="cats-posts">-->
-	<!--		<CategoryList />-->
-	<!--		<div class="posts">-->
-	<!--			<PostsList />-->
-	<!--		</div>-->
-	<!--	</div>-->
-</div>
+		</div>
 
-<style lang="scss">
-	.content {
-		display: flex;
-		margin: 8px;
-		padding: 1.15rem;
-		flex-direction: column;
-		justify-content: center;
-		align-content: center;
-	}
+		<h1>2020</h1>
+		<div class='year20'>
 
-	html,
-	body,
-	main {
-		background-color: #000;
-		width: 100%;
-		height: 100%;
-		margin: 0;
-		overflow: hidden;
-	}
+			<div>
+				<h4>2nd anniversary</h4>
+				<a href='https://twitter.com/SubatomoFan/status/1306244299995017217' target='_blank'>
+					<img src='/static/assets/images/2020anniversary.jpg' />
+				</a
+				>
+			</div>
+		</div>
+	</div>
+</main>
+<style lang='scss'>
+  .content {
+    display: flex;
+    //grid-template-columns: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    max-width: 100%;
 
-	#bm {
-		width: 100%;
-		height: 100%;
-	}
-	/*	.img-container {
-		height: 50%;
-		width: 100%;
+  }
 
-		img {
-			max-width: 100%;
-			height: auto;
-		}
-	}
+  .year21,.year20 {
+    display: flex;
+    padding: 0 1em;
 
-	.cats-posts {
-		display: flex;
-		margin: 8px;
-		padding: 1.15rem;
-	}*/
+  }
+
+  .year20 {
+		max-width:50%
+  }
+
+  h3, h4, a {
+    text-align: center;
+  }
+
+  h4 {
+    color: $salmon;
+  }
+
+
+  img {
+    //height: 100%;
+    width: 100%;
+		border: solid $chromeblue 1px;
+    //width:auto;
+  }
+
 </style>
