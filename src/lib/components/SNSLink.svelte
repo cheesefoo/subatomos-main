@@ -3,8 +3,8 @@
 	import { faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 	import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
-	export let icon;
-	export let url;
+	export let icon = 'twitter';
+	export let url = '#';
 </script>
 
 <span
