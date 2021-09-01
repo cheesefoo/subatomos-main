@@ -20,9 +20,10 @@
 <script>
 	import LanguageSelect from '$lib/components/LanguageSelect.svelte';
 	import ThirdAnniversaryCredits from '$lib/components/ThirdAnniversaryCredits.svelte';
+	import Logo from '$lib/components/Logo.svelte';
 
 	export let texts;
-	console.log(texts)
+
 	let hideMessages = false;
 
 	function filterFanarts() {
@@ -30,14 +31,12 @@
 	}
 </script>
 
-<!--<svelte:window bind:innerHeight bind:scrollY={y} />-->
-<!--{@debug innerHeight}-->
-<!--{@debug y}-->
+
 <svelte:head>
 	<title>{$LL.THIRD.TITLE()}</title>
 </svelte:head>
 
-<!--<Logo />-->
+<Logo />
 <div class='back-btn'>
 	<a sveltekit:prefetch href='/'>
 		<Fa icon={faArrowLeft} />
