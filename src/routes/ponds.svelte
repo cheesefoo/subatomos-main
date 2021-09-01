@@ -173,10 +173,21 @@
 	});
 </script>
 
-<div class="content">
+<main>
 	<h1>Subatomo Ponds</h1>
 	<h3>Birthday & 1 Million Subscriber Celebration Project</h3>
 	<a href="https://ponds.subatomos.com">Visit the site here!</a>
+	<div class="video-container">
+		<iframe
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+			allowfullscreen
+			frameborder="0"
+			height="720"
+			src="https://www.youtube.com/embed/YqRGwmk4fmw"
+			title="YouTube video player"
+			width="1280"
+		/>
+	</div>
 	<p>We surveyed users during their submissions. These are the results:</p>
 	<div class="charts">
 		<canvas id="hairstyle" />
@@ -188,12 +199,14 @@
 	<div class="charts-referer">
 		<canvas id="referer" />
 	</div>
-</div>
+</main>
 
 <style lang="scss">
-	.content {
+	main {
 		display: flex;
+
 		flex-direction: column;
+		justify-content: center;
 	}
 
 	h1,
@@ -224,5 +237,29 @@
 
 	canvas {
 		border: 0.15em solid $chromeblue;
+		padding: 1em;
 	}
+
+	.video-container {
+		align-self: center;
+	}
+	//.video-container {
+	//
+	//  position: relative;
+	//  padding-bottom: 56.25%;
+	//  padding-top: 30px;
+	//	max-width:80%;
+	//  height: 0;
+	//  overflow: hidden;
+	//
+	//  iframe,
+	//  object,
+	//  embed {
+	//    position: absolute;
+	//    top: 0;
+	//    left: 0;
+	//    width: 100%;
+	//    height: 100%;
+	//  }
+	//}
 </style>

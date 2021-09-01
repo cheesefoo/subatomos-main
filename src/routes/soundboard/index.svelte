@@ -33,7 +33,7 @@
 		<div class="soundboard">
 			{#each soundList as sound}
 				{#if sound.category == category}
-					<Lazy height={300}>
+					<Lazy height={46}>
 						<div class="sound-button">
 							<SoundButton {...sound} />
 						</div>
@@ -46,7 +46,7 @@
 	<div class="soundboard">
 		{#each soundList as sound}
 			{#if sound.category == undefined}
-				<Lazy height={300}>
+				<Lazy height={46}>
 					<div class="sound-button">
 						<SoundButton {...sound} />
 					</div>

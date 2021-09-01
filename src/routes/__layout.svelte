@@ -32,6 +32,8 @@
 	main {
 		min-height: 100vh;
 		margin: 0;
+		overflow: hidden;
+
 		background: url(/assets/images/Sky.png) no-repeat center center fixed;
 		background-size: cover;
 	}
