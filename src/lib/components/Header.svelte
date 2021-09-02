@@ -20,20 +20,20 @@
 <header>
 	<nav>
 		<ul>
-			<li class:active={$page.path.startsWith('')}>
+			<li class:active={$page.path.endsWith('')}>
 				<a sveltekit:prefetch href="/">{$LL.HEADER.PROJECTS()}</a>
 				<ul class="nav-dropdown">
-					<li class:active={$page.path.startsWith('/ponds')}>
-						<a sveltekit:prefetch href="/ponds">{$LL.HEADER.PONDS()}</a>
+					<li class:active={$page.path.endsWith('/ponds')}>
+						<a sveltekit:prefetch href="/projects/ponds">{$LL.HEADER.PONDS()}</a>
 					</li>
-					<li class:active={$page.path.startsWith('/soundboard')}>
+					<li class:active={$page.path.endsWith('/soundboard')}>
 						<a sveltekit:prefetch href="/soundboard">{$LL.HEADER.SOUNDBOARD()}</a>
 					</li>
-					<li class:active={$page.path.startsWith('/3rd-anniversary')}>
+					<li class:active={$page.path.endsWith('/3rd-anniversary')}>
 						<a sveltekit:prefetch href="/3rd-anniversary">{$LL.HEADER.THIRD_ANNIVERSARY()}</a>
 					</li>
-					<li class:active={$page.path.startsWith("/tbd'")}>
-						<a sveltekit:prefetch href="/tbd">???</a>
+					<li class:active={$page.path.endsWith("/tbd'")}>
+						<a sveltekit:prefetch href="/projects/tbd">???</a>
 					</li>
 				</ul>
 			</li>
