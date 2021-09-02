@@ -1,5 +1,14 @@
 <script>
 	import { locale, setLocale } from '$lib/../i18n/i18n-svelte';
+
+	// onMount(async () => {
+	// 	console.log($locale)
+	// 	if ($locale === undefined || $locale === "") {
+	// 		setLocale(detectLocale('en', ['en', 'ja'], navigatorDetector));
+	// 		await initI18n($locale);
+	// 	}
+	// 	// localeToSelect = $locale
+	// });
 </script>
 
 <ul class="corner">
@@ -10,7 +19,7 @@
 			class:flag-icon-jp={$locale === 'ja'}
 			id="lang-flag"
 		/>
-		<span id="lang-header-text">{$locale.toUpperCase()}</span>
+		<span id="lang-header-text">{$locale === 'en' ? 'EN' : '日本語'}</span>
 
 		<ul class="nav-dropdown">
 			<li>
@@ -22,7 +31,7 @@
 			<li>
 				<a class="dropdown-item selectLang" href="#" lang="JA" on:click={() => setLocale('ja')}>
 					<div class=" flag-icon flag-icon-jp" />
-					JA</a
+					日本語</a
 				>
 			</li>
 		</ul>
@@ -41,6 +50,7 @@
 			span:nth-child(1) {
 				padding-left: 1em;
 			}
+
 			span:nth-child(2) {
 				//padding-top: 25%;
 				padding-right: 2em;

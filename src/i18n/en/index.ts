@@ -3,7 +3,12 @@ import type { BaseTranslation } from 'typesafe-i18n';
 const en: BaseTranslation = {
 	STARTUP: 'app started (EN)',
 	TITLE: 'Subatomos - Oozora Subaru Fansite',
-	IN_DEV: 'Main page in development',
+	HOME: {
+		PROJECTS: 'Subatomos Projects',
+		THIRD_ANNIVERSARY: '3rd anniversary',
+		BIRTHDAY: '1 million subscribers & birthday',
+		SECOND_ANNIVERSARY: '2nd anniversary'
+	},
 	HEADER: {
 		HOME: 'HOME',
 		PROJECTS: 'PROJECTS',
