@@ -3,7 +3,12 @@ import type { BaseTranslation } from 'typesafe-i18n';
 const ja: BaseTranslation = {
 	STARTUP: 'app started (JA)',
 	TITLE: 'Subatomos - 大空スバルファンサイト',
-	IN_DEV: '開発中のメインページ',
+	HOME: {
+		PROJECTS: 'Subatomos プロジェクト',
+		THIRD_ANNIVERSARY: '3周年記念',
+		BIRTHDAY: '100万人登録者突破とお誕生日',
+		SECOND_ANNIVERSARY: '2周年記念'
+	},
 	HEADER: {
 		HOME: 'ホーム',
 		PROJECTS: 'プロジェクト',

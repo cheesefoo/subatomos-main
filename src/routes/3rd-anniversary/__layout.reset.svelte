@@ -1,14 +1,27 @@
-<script context="module" lang="ts">
+<script lang="ts">
 	import Footer from '$lib/components/Footer.svelte';
-	import { initI18n } from '/src/i18n/i18n-svelte';
+	import { initI18n, locale, setLocale } from '/src/i18n/i18n-svelte';
+	import { onMount } from 'svelte';
 
-	export async function load({ page, fetch, session, context }) {
-		// detect locale of user (see https://github.com/ivanhofer/typesafe-i18n#locale-detection)
+	import { detectLocale, localStorageDetector, navigatorDetector } from 'typesafe-i18n/detectors';
 
-		await initI18n('en');
+	onMount(async () => {
+		console.log($locale);
+		if ($locale === undefined || $locale === '') {
+			setLocale(detectLocale('en', ['en', 'ja'], localStorageDetector));
+			await initI18n($locale);
+			console.log($locale);
+		}
+		// localeToSelect = $locale
+	});
 
-		return {};
-	}
+	// export async function load({ page, fetch, session, context }) {
+	// 	// detect locale of user (see https://github.com/ivanhofer/typesafe-i18n#locale-detection)
+	//
+	// 		await initI18n('en');
+	//
+	// 	return {};
+	// }
 </script>
 
 <main>

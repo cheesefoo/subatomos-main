@@ -34,7 +34,7 @@ const credits = {
 		url2: 'https://www.youtube.com/channel/UCPl0vmZTxA6d1AkZifhELIw',
 		avatar: 'simon.jpg'
 	},
-	light: { name: 'LightMask', url: 'https://twitter.com/' },
+	light: { name: 'LightMask', url: 'https://twitter.com/Light_Mask_1905', avatar: 'lightmask.jpg' },
 	jeremy: { name: 'Jeremy Robson', url: 'https://twitter.com/' },
 	hko: { name: 'HKO', url: 'https://twitter.com/' },
 	vintage: {

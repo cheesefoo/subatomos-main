@@ -16,10 +16,24 @@ export type Translation = {
 	 * Subatomos - Oozora Subaru Fansite
 	 */
 	TITLE: string;
-	/**
-	 * Main page in development
-	 */
-	IN_DEV: string;
+	HOME: {
+		/**
+		 * Subatomos Projects
+		 */
+		PROJECTS: string;
+		/**
+		 * 3rd anniversary
+		 */
+		THIRD_ANNIVERSARY: string;
+		/**
+		 * 1 million subscribers & birthday
+		 */
+		BIRTHDAY: string;
+		/**
+		 * 2nd anniversary
+		 */
+		SECOND_ANNIVERSARY: string;
+	};
 	HEADER: {
 		/**
 		 * HOME
@@ -171,10 +185,24 @@ export type TranslationFunctions = {
 	 * Subatomos - Oozora Subaru Fansite
 	 */
 	TITLE: () => LocalizedString;
-	/**
-	 * Main page in development
-	 */
-	IN_DEV: () => LocalizedString;
+	HOME: {
+		/**
+		 * Subatomos Projects
+		 */
+		PROJECTS: () => LocalizedString;
+		/**
+		 * 3rd anniversary
+		 */
+		THIRD_ANNIVERSARY: () => LocalizedString;
+		/**
+		 * 1 million subscribers & birthday
+		 */
+		BIRTHDAY: () => LocalizedString;
+		/**
+		 * 2nd anniversary
+		 */
+		SECOND_ANNIVERSARY: () => LocalizedString;
+	};
 	HEADER: {
 		/**
 		 * HOME
