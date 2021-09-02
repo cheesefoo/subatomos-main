@@ -5,13 +5,22 @@
 	import subaru from '/static/assets/images/cbimage.png';
 	import Fa from 'svelte-fa';
 	import '../app.scss';
-	import Sakura from '../../node_modules/sakura-js/dist/sakura.js';
+	import Sakura from '$lib/components/sakura/sakura.js';
 	import { onMount } from 'svelte';
 
 	let twitterblue = '#1DA1F2';
 	let youtubered = '#FF0000';
 	let discordpurple = '#7289d9';
 	let discordblurple = '#5865F2';
+	import LL, { initI18n } from '/src/i18n/i18n-svelte';
+	export async function load({ page, fetch, session, context }) {
+		// detect locale of user (see https://github.com/ivanhofer/typesafe-i18n#locale-detection)
+
+		// const detectedLocale = detectLocale('en', ['en', 'ja'], navigatorDetector);
+		await initI18n('en');
+
+		return {};
+	}
 
 	onMount(() => {
 		var sakura = new Sakura('#main', {
@@ -38,6 +47,7 @@
 
 </script>
 <svelte:head>
+	<title>{$LL.TITLE()}</title>
 
 </svelte:head>
 <main id='main'>
@@ -94,9 +104,9 @@
 </main>
 
 <style lang='scss'>
-  @import '../../node_modules/sakura-js/dist/sakura.min.css';
+  @import '$lib/components/sakura/sakura.min.css';
 
-  main {
+  html, body, main {
     overflow: hidden;
     max-width: 100vw;
     max-height: 100vh;
@@ -151,8 +161,8 @@
 
   .subaru {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 5%;
+    bottom: 5%;
     object-fit: cover;
 
     img {
