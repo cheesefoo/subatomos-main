@@ -1,5 +1,6 @@
 <script lang="ts">
 	import SNSLink from '$lib/components/SNSLink.svelte';
+	import { media } from '$lib/stores/stores.ts';
 
 	export let name = undefined;
 
@@ -20,7 +21,14 @@
 		{#if url2 != undefined}
 			<SNSLink icon={sns2} url={url2} />
 		{/if}
-		{name}<br />
+		{#if $media.small}
+			<br />
+			<a href={url}>{name}</a>
+		{:else}
+			{name}
+		{/if}
+
+		<br />
 		<span>{desc}</span>
 	</div>
 </div>
@@ -30,6 +38,7 @@
 	div {
 		color: $chromeblue;
 	}
+
 	span {
 		font-weight: 400;
 		font-size: small;
@@ -47,5 +56,12 @@
 		height: $creditheight;
 		width: $creditheight;
 		clip-path: circle(50% at 50% 50%);
+	}
+
+	@media screen and (min-width: 320px) {
+		a {
+			color: $chromeblue;
+			font-size: 0.9em;
+		}
 	}
 </style>

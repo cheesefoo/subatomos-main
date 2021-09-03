@@ -1,5 +1,5 @@
 <script>
-	import LL from '$lib/../i18n/i18n-svelte';
+	import LL from '/src/i18n/i18n-svelte';
 	import Credit from '$lib/components/Credit.svelte';
 	import credits from './_credits';
 
@@ -54,6 +54,7 @@
 			<Credit desc={$LL.THIRD.LOGO_SUBA()} {...creditsList.ano} />
 			<Credit desc={$LL.THIRD.LOGO_PROJ()} {...creditsList.ebi} />
 			<Credit {...creditsList.ryu} />
+			<Credit {...creditsList.sakino} />
 		</div>
 	</div>
 </div>
@@ -75,11 +76,12 @@
 		column-gap: 1em;
 		row-gap: 1em;
 	}
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+	@media screen and (min-width: 320px) {
 		.credits-grid {
 			padding: 0;
 			grid-template-columns: 50% 50%;
-			column-gap: 1.15em;
+			column-gap: 1em;
 		}
 	}
 </style>

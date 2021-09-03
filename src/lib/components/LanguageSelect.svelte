@@ -1,4 +1,4 @@
-<script >
+<script>
 	import { locale, setLocale } from '/src/i18n/i18n-svelte';
 	import { browser } from '$app/env';
 	import { detectLocale, localStorageDetector } from 'typesafe-i18n/detectors';
@@ -12,8 +12,7 @@
 	// 	// localeToSelect = $locale
 	// });
 	if (browser) {
-		$: $locale && localStorage.setItem('lang', $locale)
-
+		$: $locale && localStorage.setItem('lang', $locale);
 	}
 </script>
 
@@ -45,8 +44,8 @@
 </ul>
 
 <style lang="scss">
-  //@import url(https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css);
-  @import url(/node_modules/flag-icon-css/css/flag-icon.min.css);
+	//@import url(https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css);
+	@import url(/node_modules/flag-icon-css/css/flag-icon.min.css);
 
 	.corner {
 		position: relative;
@@ -120,7 +119,10 @@
 			background: darken($lightblue, 10%);
 		}
 	}
-span, a {color:black}
+	span,
+	a {
+		color: black;
+	}
 	a {
 		display: flex;
 		height: 100%;

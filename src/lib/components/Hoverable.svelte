@@ -11,5 +11,5 @@
 </script>
 
 <div on:mouseenter={enter} on:mouseleave={leave}>
-	<slot {hovering}></slot>
+	<slot {hovering} />
 </div>

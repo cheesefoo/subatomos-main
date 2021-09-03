@@ -7,9 +7,9 @@ const en: BaseTranslation = {
 		PROJECTS: 'Subatomos Projects',
 		THIRD_ANNIVERSARY: '3rd anniversary',
 		BIRTHDAY: '1 million subscribers & birthday',
+		BIRTHDAY_SM: '1M subscribers & birthday',
 		SECOND_ANNIVERSARY: '2nd anniversary',
-		SOUNDBOARD: 'SOUNDBOARD',
-
+		SOUNDBOARD: 'SOUNDBOARD'
 	},
 	HEADER: {
 		HOME: 'HOME',
@@ -27,10 +27,10 @@ const en: BaseTranslation = {
 		FANART_ONLY: 'Show/hide only fanart',
 		A: {
 			ONE: 'Original Outfit',
-			TWO: 'Sailor Outfit',
+			TWO: 'School Uniform Style Idol',
 			THREE: 'Swimsuit',
 			FOUR: "New Year's Kimono",
-			FIVE: 'Idol Outfit',
+			FIVE: '3D LIVE Idol',
 			SIX: 'Girly Outfit'
 		},
 		MUSIC: 'Music',
