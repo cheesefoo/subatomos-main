@@ -77,7 +77,7 @@
 		row-gap: 1em;
 	}
 
-	@media screen and (min-width: 320px) {
+	@media screen and (max-width: 849px) {
 		.credits-grid {
 			padding: 0;
 			grid-template-columns: 50% 50%;
