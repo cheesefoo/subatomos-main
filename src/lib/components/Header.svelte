@@ -82,7 +82,6 @@
 </header>
 
 <style lang="scss">
-	@import url(https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css);
 
 	header {
 		display: flex;

@@ -5,10 +5,8 @@
 	import SoundButton from './SoundButton.svelte';
 
 	import Lazy from 'svelte-lazy';
+	import LL from '/src/i18n/i18n-svelte';
 
-	const onload = (node) => {
-		console.log('on load');
-	};
 	let duration;
 	let muted = false;
 	let currentTime = 0;
@@ -18,7 +16,9 @@
 	export let soundList = sounds;
 	export let categoryList = categories;
 </script>
-
+<svelte:head>
+	<title>{$LL.HEADER.SOUNDBOARD()}</title>
+</svelte:head>
 <!--<audio-->
 
 <!--	bind:duration={duration}-->

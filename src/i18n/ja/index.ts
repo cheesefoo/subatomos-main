@@ -7,7 +7,9 @@ const ja: BaseTranslation = {
 		PROJECTS: 'Subatomos プロジェクト',
 		THIRD_ANNIVERSARY: '3周年記念',
 		BIRTHDAY: '100万人登録者突破とお誕生日',
-		SECOND_ANNIVERSARY: '2周年記念'
+		SECOND_ANNIVERSARY: '2周年記念',
+		SOUNDBOARD: 'サウンドボード',
+
 	},
 	HEADER: {
 		HOME: 'ホーム',
@@ -17,18 +19,19 @@ const ja: BaseTranslation = {
 		THIRD_ANNIVERSARY: '3周年記念'
 	},
 	THIRD: {
-		TITLE: 'スバルの3周！',
+		TITLE: 'スバルの3周年！',
 		CONGRATS: 'スバル、3周年おめでとう！！',
-		CREDITS: 'Credits',
-		MESSAGES: 'Messages & Fanart',
+		CREDITS: 'クレジット',
+		MESSAGES: 'メッセージ＆ファンアート',
 		ANIMATION: 'アニメーション',
+		FANART_ONLY: 'ファンアート付きのみを表示する',
 		A: {
-			ONE: 'Original Outfit',
-			TWO: 'Sailor Outfit',
-			THREE: 'Swimsuit',
-			FOUR: "New Year's Kimono",
-			FIVE: 'Idol Outfit',
-			SIX: 'Girly Outfit'
+			ONE: '初期衣装',
+			TWO: 'アイドル衣装 ',
+			THREE: '水着（衣装）',
+			FOUR: "着物（衣装）",
+			FIVE: '3Dステージ衣装',
+			SIX: 'お嬢様衣装'
 		},
 		MUSIC: 'Music',
 		M: {
@@ -37,9 +40,9 @@ const ja: BaseTranslation = {
 			KNM: '恋の魔法',
 			TS: '太陽少女',
 			DMB: 'どぅーまいべすと！',
-			KR: 'Kirameki Rider',
+			KR: 'キラメキライダー',
 			NA: '夏あじ！！！',
-			ORCHESTRAL: 'オーケストラの',
+			ORCHESTRAL: 'オーケストラバージョン',
 			KENSETSU: '大空建設の社歌'
 		},
 		EDITING: '動画編集',

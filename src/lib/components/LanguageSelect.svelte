@@ -1,5 +1,7 @@
-<script>
-	import { locale, setLocale } from '$lib/../i18n/i18n-svelte';
+<script >
+	import { locale, setLocale } from '/src/i18n/i18n-svelte';
+	import { browser } from '$app/env';
+	import { detectLocale, localStorageDetector } from 'typesafe-i18n/detectors';
 
 	// onMount(async () => {
 	// 	console.log($locale)
@@ -9,6 +11,10 @@
 	// 	}
 	// 	// localeToSelect = $locale
 	// });
+	if (browser) {
+		$: $locale && localStorage.setItem('lang', $locale)
+
+	}
 </script>
 
 <ul class="corner">
@@ -24,13 +30,13 @@
 		<ul class="nav-dropdown">
 			<li>
 				<a class="dropdown-item selectLang" href="#" lang="EN" on:click={() => setLocale('en')}>
-					<div class=" flag-icon flag-icon-us" />
+					<div class="flag-icon flag-icon-us" />
 					EN</a
 				>
 			</li>
 			<li>
 				<a class="dropdown-item selectLang" href="#" lang="JA" on:click={() => setLocale('ja')}>
-					<div class=" flag-icon flag-icon-jp" />
+					<div class="flag-icon flag-icon-jp" />
 					日本語</a
 				>
 			</li>
@@ -39,6 +45,9 @@
 </ul>
 
 <style lang="scss">
+  //@import url(https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css);
+  @import url(/node_modules/flag-icon-css/css/flag-icon.min.css);
+
 	.corner {
 		position: relative;
 		top: 16px;
@@ -111,13 +120,12 @@
 			background: darken($lightblue, 10%);
 		}
 	}
-
+span, a {color:black}
 	a {
 		display: flex;
 		height: 100%;
 		align-items: center;
 		padding: 0 1em;
-		color: $ivory;
 		font-weight: 700;
 
 		text-transform: uppercase;

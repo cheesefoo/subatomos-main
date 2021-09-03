@@ -1,7 +1,5 @@
 <script>
 
-	import Hoverable from '$lib/components/Hoverable.svelte';
-
 	const carouselPhotos = [
 		'/static/assets/images/loadingduck/Timeline_1_0000.png',
 		'/static/assets/images/loadingduck/Timeline_1_0001.png',
@@ -19,23 +17,44 @@
 		index = (index + 1) % carouselPhotos.length;
 	};
 </script>
-<div>
-	<Hoverable let:hovering={hover}>
-	{#each [carouselPhotos[index]] as src (index)}
-		<img on:hover={next} {src} alt='' />
-	{/each}
-	</Hoverable>
+<div class='content'>
+	<div class='duck'></div>
+	<!--	<Hoverable let:hovering={hover}>
+		{#each [carouselPhotos[index]] as src (index)}
+			<img on:hover={next} {src} alt='' />
+		{/each}
+		</Hoverable>-->
+	<slot></slot>
 </div>
 
-<style>
-    div {
-				display:block;
-        background-color: black;
-    }
+<style lang='scss'>
 
-    img {
-        /*position: absolute;*/
-        display:block;
+  .content {
+    animation-play-state: paused;
+  }
 
+  .content:hover > .duck {
+    animation: sprite 0.8s steps(8) infinite;
+
+  }
+
+  /*transform: translate(-50%, -50%) scale(0.25);*/
+  .duck {
+    //position:absolute;
+    width: 50px;
+    height: 50px;
+    background: url('/static/assets/images/loadingduck/duck-sm.png');
+
+  }
+
+  /*img {*/
+  /*    !*position: absolute;*!*/
+  /*    display:block;*/
+
+  /*}*/
+  @keyframes sprite {
+    to {
+      background-position: -400px;
     }
+  }
 </style>
