@@ -220,7 +220,7 @@
 		}
 	}
 
-	@media screen and (min-width: 320px) {
+	@media screen and (max-width: 849px) {
 		.messages-container {
 			column-count: 1;
 		}

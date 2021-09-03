@@ -58,7 +58,7 @@
 		clip-path: circle(50% at 50% 50%);
 	}
 
-	@media screen and (min-width: 320px) {
+	@media screen and (max-width: 849px){
 		a {
 			color: $chromeblue;
 			font-size: 0.9em;

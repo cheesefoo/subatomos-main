@@ -260,7 +260,7 @@
 		}
 	}
 
-	@media screen and (min-width: 320px) {
+	@media screen and (max-width: 849px) {
 		.subaru-logo-group {
 			top: 5%;
 			left: 5%;
@@ -292,6 +292,7 @@
 			font-size: 1.3em;
 			//max-width:20ch;
 			word-break: keep-all;
+			text-shadow:1px 1px 1px yellow;
 		}
 
 		.subatomo-logo {
