@@ -7,9 +7,9 @@ const ja: BaseTranslation = {
 		PROJECTS: 'Subatomos プロジェクト',
 		THIRD_ANNIVERSARY: '3周年記念',
 		BIRTHDAY: '100万人登録者突破とお誕生日',
+		BIRTHDAY_SM: '100万人登録者突破とお誕生日',
 		SECOND_ANNIVERSARY: '2周年記念',
-		SOUNDBOARD: 'サウンドボード',
-
+		SOUNDBOARD: 'サウンドボード'
 	},
 	HEADER: {
 		HOME: 'ホーム',
@@ -29,7 +29,7 @@ const ja: BaseTranslation = {
 			ONE: '初期衣装',
 			TWO: 'アイドル衣装 ',
 			THREE: '水着（衣装）',
-			FOUR: "着物（衣装）",
+			FOUR: '着物（衣装）',
 			FIVE: '3Dステージ衣装',
 			SIX: 'お嬢様衣装'
 		},

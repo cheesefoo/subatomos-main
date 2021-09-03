@@ -16,6 +16,7 @@
 	export let soundList = sounds;
 	export let categoryList = categories;
 </script>
+
 <svelte:head>
 	<title>{$LL.HEADER.SOUNDBOARD()}</title>
 </svelte:head>

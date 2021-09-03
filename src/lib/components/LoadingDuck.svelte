@@ -1,5 +1,4 @@
 <script>
-
 	const carouselPhotos = [
 		'/static/assets/images/loadingduck/Timeline_1_0000.png',
 		'/static/assets/images/loadingduck/Timeline_1_0001.png',
@@ -17,44 +16,42 @@
 		index = (index + 1) % carouselPhotos.length;
 	};
 </script>
-<div class='content'>
-	<div class='duck'></div>
+
+<div class="content">
+	<div class="duck" />
 	<!--	<Hoverable let:hovering={hover}>
 		{#each [carouselPhotos[index]] as src (index)}
 			<img on:hover={next} {src} alt='' />
 		{/each}
 		</Hoverable>-->
-	<slot></slot>
+	<slot />
 </div>
 
-<style lang='scss'>
+<style lang="scss">
+	.content {
+		animation-play-state: paused;
+	}
 
-  .content {
-    animation-play-state: paused;
-  }
+	.content:hover > .duck {
+		animation: sprite 0.8s steps(8) infinite;
+	}
 
-  .content:hover > .duck {
-    animation: sprite 0.8s steps(8) infinite;
+	/*transform: translate(-50%, -50%) scale(0.25);*/
+	.duck {
+		//position:absolute;
+		width: 50px;
+		height: 50px;
+		background: url('/static/assets/images/loadingduck/duck-sm.png');
+	}
 
-  }
+	/*img {*/
+	/*    !*position: absolute;*!*/
+	/*    display:block;*/
 
-  /*transform: translate(-50%, -50%) scale(0.25);*/
-  .duck {
-    //position:absolute;
-    width: 50px;
-    height: 50px;
-    background: url('/static/assets/images/loadingduck/duck-sm.png');
-
-  }
-
-  /*img {*/
-  /*    !*position: absolute;*!*/
-  /*    display:block;*/
-
-  /*}*/
-  @keyframes sprite {
-    to {
-      background-position: -400px;
-    }
-  }
+	/*}*/
+	@keyframes sprite {
+		to {
+			background-position: -400px;
+		}
+	}
 </style>

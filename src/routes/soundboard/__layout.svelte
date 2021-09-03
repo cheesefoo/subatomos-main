@@ -1,4 +1,4 @@
-<script lang='ts'>
+<script lang="ts">
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import Panel from '$lib/components/Panel.svelte';
@@ -9,12 +9,10 @@
 	import { detectLocale, localStorageDetector } from 'typesafe-i18n/detectors';
 	import { onMount } from 'svelte';
 
-	export async function load({ page, fetch, session, context })
-	{
+	export async function load({ page, fetch, session, context }) {
 		// detect locale of user (see https://github.com/ivanhofer/typesafe-i18n#locale-detection)
 		let locale: Locales = 'en';
-		if (browser)
-		{
+		if (browser) {
 			setLocale(detectLocale('en', ['en', 'ja'], localStorageDetector));
 		}
 		await initI18n(locale);
@@ -22,14 +20,12 @@
 		return {};
 	}
 
-	onMount(async () =>
-	{
+	onMount(async () => {
 		const detectedLocale = detectLocale('en', ['en', 'ja'], localStorageDetector);
 		await initI18n(detectedLocale);
 		setLocale($locale);
 	});
-	if (browser)
-	{
+	if (browser) {
 		$: $locale && localStorage.setItem('lang', $locale);
 	}
 </script>
@@ -42,13 +38,13 @@
 	<Footer />
 </main>
 
-<style lang='scss'>
-  main {
-    min-height: 100vh;
-    margin: 0;
-    overflow: hidden;
+<style lang="scss">
+	main {
+		min-height: 100vh;
+		margin: 0;
+		overflow: hidden;
 
-    background: url(/assets/images/Sky.png) no-repeat center center fixed;
-    background-size: cover;
-  }
+		background: url(/assets/images/Sky.png) no-repeat center center fixed;
+		background-size: cover;
+	}
 </style>

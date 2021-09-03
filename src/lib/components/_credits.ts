@@ -72,10 +72,8 @@ const credits = {
 	ryu: { name: 'ryuryuryu²', url: 'https://twitter.com/subaru_is_cute', avatar: 'ryu.jpg' },
 	sakino: { name: 'さきの新月', url: 'https://twitter.com/sakino_shingetu', avatar: 'sakino.jpg' }
 };
-for (const [key, value] of Object.entries(credits))
-{
-	if (value.avatar)
-	{
+for (const [key, value] of Object.entries(credits)) {
+	if (value.avatar) {
 		value.avatar = `${dir}/${value.avatar}`;
 	}
 }

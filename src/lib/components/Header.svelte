@@ -82,7 +82,6 @@
 </header>
 
 <style lang="scss">
-
 	header {
 		display: flex;
 		width: 100vw;
