@@ -1,5 +1,3 @@
-import { dev } from '$app/env';
-
 // const dir = dev ? '/static/assets/images/credits' : '/assets/images/credits';
 const dir = '/assets/images/credits';
 const credits = {
@@ -71,10 +69,13 @@ const credits = {
 	ato: { name: 'AtofreakingB', url: 'https://twitter.com/AtofreakingB', avatar: 'ato.jpg' },
 	ano: { name: 'anodesign', url: 'https://twitter.com/anodesign', avatar: 'anodesign.jpg' },
 	ebi: { name: 'Ebiebibeam', url: 'https://twitter.com/ebiebibeam', avatar: 'ebiebibeam.jpg' },
-	ryu: { name: 'ryuryuryu²', url: 'https://twitter.com/subaru_is_cute', avatar: 'ryu.jpg' }
+	ryu: { name: 'ryuryuryu²', url: 'https://twitter.com/subaru_is_cute', avatar: 'ryu.jpg' },
+	sakino: { name: 'さきの新月', url: 'https://twitter.com/sakino_shingetu', avatar: 'sakino.jpg' }
 };
-for (const [key, value] of Object.entries(credits)) {
-	if (value.avatar) {
+for (const [key, value] of Object.entries(credits))
+{
+	if (value.avatar)
+	{
 		value.avatar = `${dir}/${value.avatar}`;
 	}
 }
