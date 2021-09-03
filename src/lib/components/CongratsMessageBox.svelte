@@ -17,10 +17,10 @@
 		let thumbnail;
 		if (src !== undefined) {
 			src = decodeURI(src);
-			if (src.endsWith('.png') || src.endsWith('.mp4')) {
-				thumbnail = src.slice(0, -4) + '.jpg';
+			if (src.endsWith('.png') || src.endsWith('.mp4') || src.endsWith('.jpg')) {
+				thumbnail = src.slice(0, -4) + '.webp';
 			} else if (src.endsWith('.jpeg')) {
-				thumbnail = src.slice(0, -5) + '.jpg';
+				thumbnail = src.slice(0, -5) + '.webp';
 			} else {
 				thumbnail = src;
 			}

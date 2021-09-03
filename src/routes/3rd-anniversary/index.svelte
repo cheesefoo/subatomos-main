@@ -107,7 +107,7 @@
 
 <style lang="scss">
 	main {
-		background: url(/static/assets/images/Sky.png) no-repeat center center fixed;
+		background: url(/static/assets/images/sky.webp) no-repeat center center fixed;
 		background-size: cover;
 		width: 100vw;
 		flex-wrap: wrap;
@@ -203,6 +203,10 @@
 		width: 100%;
 		overflow: visible;
 		box-sizing: border-box;
+		.message-box{
+			padding-top:2em;
+			padding-bottom: 0.8em;
+		}
 	}
 
 	.back-to-top-btn {
