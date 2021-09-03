@@ -1,6 +1,6 @@
 import { dev } from '$app/env';
 
-const dir = dev ? '../static/assets/images/fanart' : '/assets/images/fanart';
+const dir = dev ? '/assets/images/fanart' : '/assets/images/fanart';
 
 interface SubaFanart {
 	name: string;
@@ -211,7 +211,7 @@ let fanart: Array<SubaFanart> = [
 		src: 'shadownine_.png'
 	},
 	{
-		name: 'Josh ',
+		name: 'Josh',
 		message: 'Subaru is very, very cute idol who makes my day. Happy 3rd anniversary!',
 		src: 'josh.png'
 	},

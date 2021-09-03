@@ -1,4 +1,8 @@
-@use "/node_modules/yakuhanjp/dist/scss/yakuhanjp";
+//@use "/node_modules/yakuhanjp/dist/scss/yakuhanjp";
+@use "yakuhanjp/dist/scss/yakuhanjp" with (
+  $yakuhanjp-eot-use: false,
+  $yakuhanjp-cdn-use: true
+);
 
 //@import '@fontsource/noto-sans';
 $kei-font-path: 'src/lib/fonts';
@@ -8,7 +12,7 @@ $images: 'static/assets/images';
 	// This is parsed as a normal function call that takes a quoted string.
 	src: url('/static/keifont.woff2') format('woff2');
 	font-family: 'keifont';
-	font-weight: 100 900;
+	font-weight: 400 900;
 }
 
 $pure-white: #ffffff;
@@ -34,7 +38,8 @@ $column-margin-top: 4rem;
 $font-mono: 'keifont' mono;
 
 :root {
-	font-family: YakuHanJP, keifont, 'Hiragino Sans', sans-serif;
+	font-family: keifont, sans-serif;
+	//font-family: YakuHanJP, keifont, 'Hiragino Sans', sans-serif;
 	font-weight: 400;
 }
 

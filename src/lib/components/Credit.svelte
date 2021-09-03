@@ -10,6 +10,10 @@
 	export let url = undefined;
 	export let url2 = undefined;
 	export let desc = '';
+	let size = '';
+	if($media.small){
+		size='3x'
+	}
 </script>
 
 <div class="credit">
@@ -17,9 +21,9 @@
 		<img class="avatar" src={avatar} alt="avatar" />
 	{/if}
 	<div>
-		<SNSLink icon={sns} {url} />
+		<SNSLink icon={sns} url={url} {size}/>
 		{#if url2 != undefined}
-			<SNSLink icon={sns2} url={url2} />
+			<SNSLink icon={sns2} url={url2} {size} />
 		{/if}
 		{#if $media.small}
 			<br />
