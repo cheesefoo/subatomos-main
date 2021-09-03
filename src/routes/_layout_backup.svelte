@@ -34,7 +34,7 @@
 		margin: 0;
 		overflow: hidden;
 
-		background: url(/assets/images/Sky.png) no-repeat center center fixed;
+		background: url(/assets/images/sky.webp) no-repeat center center fixed;
 		background-size: cover;
 	}
 </style>

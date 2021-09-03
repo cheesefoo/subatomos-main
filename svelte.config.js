@@ -22,6 +22,7 @@ const config = {
 			fallback: null
 		}),
 		target: '#svelte',
+
 		vite: {
 			resolve: {
 				alias: {
