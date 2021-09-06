@@ -203,8 +203,8 @@
 		width: 100%;
 		overflow: visible;
 		box-sizing: border-box;
-		.message-box{
-			padding-top:2em;
+		.message-box {
+			padding-top: 2em;
 			padding-bottom: 0.8em;
 		}
 	}

@@ -5,7 +5,7 @@
 
 	export let icon = 'twitter';
 	export let url = '#';
-	export let size= ''
+	export let size = '';
 </script>
 
 <span
@@ -17,7 +17,7 @@
 		{:else if icon === 'ig'}
 			<Fa icon={faInstagram} fw color="purple" {size} />
 		{:else if icon === 'www'}
-			<Fa icon={faGlobe} fw  {size}/>
+			<Fa icon={faGlobe} fw {size} />
 		{/if}
 	</a>
 </span>

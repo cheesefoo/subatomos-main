@@ -10,7 +10,7 @@ const credits = {
 	},
 	ani: { name: 'Ani.Minhton', url: 'https://twitter.com/Keru_nk', avatar: 'ani.webp' },
 	ray: {
-		name: '深鰭レイ🦈',
+		name: 'Ray Yuri 深鰭レイ🦈',
 		url: 'https://twitter.com/mini_sting_ray',
 		sns2: 'yt',
 		url2: 'https://www.youtube.com/channel/UCos-gKprgYG0gxFrdkJaFKw',
@@ -32,9 +32,23 @@ const credits = {
 		url2: 'https://www.youtube.com/channel/UCPl0vmZTxA6d1AkZifhELIw',
 		avatar: 'simon.webp'
 	},
-	light: { name: 'LightMask', url: 'https://twitter.com/Light_Mask_1905', avatar: 'lightmask.webp' },
-	jeremy: { name: 'Jeremy Robson', url: 'https://twitter.com/' },
-	hko: { name: 'HKO', url: 'https://twitter.com/' },
+	light: {
+		name: 'LightMask',
+		url: 'https://twitter.com/Light_Mask_1905',
+		avatar: 'lightmask.webp'
+	},
+	jeremy: {
+		name: 'Jeremy Robson',
+		sns: 'yt',
+		url: 'https://www.youtube.com/c/JeremyRobson',
+		avatar: 'jeremy.webp'
+	},
+	hko: {
+		name: 'HKO',
+		url: 'https://youtube.com/channel/UCoUxJSKgXSYFPrxUCuYdHQw',
+		sns: 'yt',
+		avatar: 'hko.webp'
+	},
 	vintage: {
 		name: 'Vintagestep',
 		url: 'https://twitter.com/vintagestep',

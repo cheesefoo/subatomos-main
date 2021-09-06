@@ -4,7 +4,6 @@
 	import credits from './_credits';
 
 	export let creditsList = credits;
-
 </script>
 
 <div class="credits">
