@@ -11,8 +11,8 @@
 	export let url2 = undefined;
 	export let desc = '';
 	let size = '';
-	if($media.small){
-		size='3x'
+	if ($media.small) {
+		size = '3x';
 	}
 </script>
 
@@ -21,7 +21,7 @@
 		<img class="avatar" src={avatar} alt="avatar" />
 	{/if}
 	<div>
-		<SNSLink icon={sns} url={url} {size}/>
+		<SNSLink icon={sns} {url} {size} />
 		{#if url2 != undefined}
 			<SNSLink icon={sns2} url={url2} {size} />
 		{/if}
@@ -62,7 +62,7 @@
 		clip-path: circle(50% at 50% 50%);
 	}
 
-	@media screen and (max-width: 849px){
+	@media screen and (max-width: 849px) {
 		a {
 			color: $chromeblue;
 			font-size: 0.9em;

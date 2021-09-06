@@ -292,7 +292,7 @@
 			font-size: 1.3em;
 			//max-width:20ch;
 			word-break: keep-all;
-			text-shadow:1px 1px 1px yellow;
+			text-shadow: 1px 1px 1px yellow;
 		}
 
 		.subatomo-logo {
