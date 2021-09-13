@@ -20,16 +20,16 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 40px;
 
 		a {
 			font-weight: bold;
 		}
 	}
-
+	p{
+		font-size: 0.7em;
+	}
 	@media (min-width: 480px) {
 		footer {
-			padding: 40px 0;
 		}
 	}
 </style>

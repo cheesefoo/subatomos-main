@@ -53,7 +53,8 @@
 		display: grid;
 		width: 80%;
 		grid-template-columns: $creditheight 1fr;
-		border-bottom: solid black 0.1rem;
+		//border-bottom: solid black 0.1rem;
+		padding-bottom: 1rem;
 	}
 
 	img {

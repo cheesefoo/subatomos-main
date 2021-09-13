@@ -10,7 +10,7 @@ const credits = {
 	},
 	ani: { name: 'Ani.Minhton', url: 'https://twitter.com/Keru_nk', avatar: 'ani.webp' },
 	ray: {
-		name: 'Ray Yuri 深鰭レイ🦈',
+		name: 'Ray Yuri',
 		url: 'https://twitter.com/mini_sting_ray',
 		sns2: 'yt',
 		url2: 'https://www.youtube.com/channel/UCos-gKprgYG0gxFrdkJaFKw',
@@ -54,7 +54,7 @@ const credits = {
 		url: 'https://twitter.com/vintagestep',
 		avatar: 'vintagestep.webp'
 	},
-	wei: { name: 'Wei Lee', url: 'https://twitter.com/SakuraBot30001', avatar: 'weilee.webp' },
+	wei: { name: 'Wei Lee', url: 'https://twitter.com/SakuraBot30001', avatar: 'weilee.webp',url2:'https://www.youtube.com/channel/UCAg1YEexI2i9kTCCRR1X3zA', sns2:'yt' },
 	cynic: {
 		name: 'TheCynicClinic',
 		url: 'https://twitter.com/cynicclinic_yt',

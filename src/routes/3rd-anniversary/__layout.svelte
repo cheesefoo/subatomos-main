@@ -44,8 +44,8 @@
 	<!--	<div class='content'>-->
 	<slot />
 	<!--	</div>-->
+	<Footer />
 </main>
-<Footer />
 
 <style lang="scss">
 	main {
@@ -60,7 +60,7 @@
 		align-items: center;
 		width: 100%;
 		padding-top: 0;
-		padding-bottom: 1rem;
+		//padding-bottom: 1rem;
 	}
 
 	//.content {
