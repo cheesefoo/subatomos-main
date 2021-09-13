@@ -94,9 +94,9 @@
 		display: block;
 		height: 8px;
 	}
-  @media screen and (max-width: 849px) {
-		.sound-button{
-			width:100%;
+	@media screen and (max-width: 849px) {
+		.sound-button {
+			width: 100%;
 		}
-  }
+	}
 </style>

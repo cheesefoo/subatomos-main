@@ -14,6 +14,19 @@ $images: 'static/assets/images';
 	font-family: 'keifont';
 	font-weight: 400 900;
 }
+@font-face {
+	// This is parsed as a normal function call that takes a quoted string.
+	src: url('/static/KleeOne-Regular.woff2') format('woff2');
+	font-family: 'klee';
+	font-weight: normal;
+
+}
+@font-face {
+	// This is parsed as a normal function call that takes a quoted string.
+	src: url('/static/KleeOne-SemiBold.woff2') format('woff2');
+	font-family: 'klee';
+	font-weight: bold;
+}
 
 $pure-white: #ffffff;
 $primary-color: #b9c6d2;
@@ -38,7 +51,8 @@ $column-margin-top: 4rem;
 $font-mono: 'keifont' mono;
 
 :root {
-	font-family: keifont, sans-serif;
+	font-family: klee, sans-serif;
+	//font-family: keifont, sans-serif;
 	//font-family: YakuHanJP, keifont, 'Hiragino Sans', sans-serif;
 	font-weight: 400;
 }

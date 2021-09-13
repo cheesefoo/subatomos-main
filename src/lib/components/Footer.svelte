@@ -25,7 +25,7 @@
 			font-weight: bold;
 		}
 	}
-	p{
+	p {
 		font-size: 0.7em;
 	}
 	@media (min-width: 480px) {
