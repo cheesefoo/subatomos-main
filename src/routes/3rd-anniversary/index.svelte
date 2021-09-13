@@ -104,14 +104,14 @@
 		<!--{/if}-->
 	</div>
 
-</main>
-<ThirdAnniversaryCredits />
+	<ThirdAnniversaryCredits />
 
+</main>
 
 <style lang='scss'>
   main {
-    background: url(/static/assets/images/sky.webp) no-repeat center center fixed;
-    background-size: cover;
+    //background: url(/static/assets/images/sky.webp) no-repeat center center fixed;
+    //background-size: cover;
     width: 100vw;
     flex-wrap: wrap;
     justify-content: space-around;
