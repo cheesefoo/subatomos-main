@@ -236,7 +236,7 @@ let fanart: Array<SubaFanart> = [
 		src: 'はぬけアヒージョ @hawahaetoru .png'
 	},
 	{
-		name: 'めおぷん(Twitter @meopen429)',
+		name: 'めおぷん @meopen429',
 		url: 'https://twitter.com/meopen429)',
 		message:
 			'スバルちゃん3周年おめでとう！！スバルちゃんの明るく弾む笑い声にいつもいっぱい元気をもらっています。前向きにレッスンに取り組む姿、リスナーを楽しませるために色んな企画を考えてくれるところに憧れています。これからもお体に気をつけて活動頑張って下さい！応援してます！',

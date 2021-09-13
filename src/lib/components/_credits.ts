@@ -54,7 +54,13 @@ const credits = {
 		url: 'https://twitter.com/vintagestep',
 		avatar: 'vintagestep.webp'
 	},
-	wei: { name: 'Wei Lee', url: 'https://twitter.com/SakuraBot30001', avatar: 'weilee.webp',url2:'https://www.youtube.com/channel/UCAg1YEexI2i9kTCCRR1X3zA', sns2:'yt' },
+	wei: {
+		name: 'Wei Lee',
+		url: 'https://twitter.com/SakuraBot30001',
+		avatar: 'weilee.webp',
+		url2: 'https://www.youtube.com/channel/UCAg1YEexI2i9kTCCRR1X3zA',
+		sns2: 'yt'
+	},
 	cynic: {
 		name: 'TheCynicClinic',
 		url: 'https://twitter.com/cynicclinic_yt',
