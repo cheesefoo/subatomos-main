@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang='ts'>
 	import Slider from './Slider.svelte';
 	import sounds from './_sounds';
 	import categories from './_categories';
@@ -28,14 +28,14 @@
 <!--	bind:paused={paused}-->
 <!--	bind:volume={volume}></audio>-->
 
-<div class="soundboard-container">
+<div class='soundboard-container'>
 	{#each categoryList as category}
-		<h3 style="text-transform: capitalize">{category}</h3>
-		<div class="soundboard">
+		<h3 style='text-transform: capitalize'>{category}</h3>
+		<div class='soundboard'>
 			{#each soundList as sound}
 				{#if sound.category == category}
 					<Lazy height={46}>
-						<div class="sound-button">
+						<div class='sound-button'>
 							<SoundButton {...sound} />
 						</div>
 					</Lazy>
@@ -44,11 +44,11 @@
 		</div>
 	{/each}
 	<h3>Uncategorized</h3>
-	<div class="soundboard">
+	<div class='soundboard'>
 		{#each soundList as sound}
 			{#if sound.category == undefined}
 				<Lazy height={46}>
-					<div class="sound-button">
+					<div class='sound-button'>
 						<SoundButton {...sound} />
 					</div>
 				</Lazy>
@@ -56,7 +56,7 @@
 		{/each}
 	</div>
 </div>
-<div class="volume">
+<div class='volume'>
 	<Slider
 		max={1}
 		min={0}
@@ -66,22 +66,31 @@
 	/>
 </div>
 
-<style lang="scss">
-	.soundboard {
-		display: grid;
-		min-width: 480px;
-		width: 100%;
-		overflow: visible;
+<style lang='scss'>
+  .soundboard {
+    display: grid;
+    min-width: 480px;
+    width: 100%;
+    overflow: visible;
 
-		//justify-content: center;
-		grid-template-columns: repeat(3, 1fr);
+    //justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
 
-		column-gap: 1em;
-		row-gap: 1em;
-	}
+    column-gap: 1em;
+    row-gap: 1em;
+  }
 
-	.volume {
-		position: absolute;
-		right: 0;
-	}
+  .volume {
+    position: absolute;
+    right: 0;
+  }
+
+  @media screen and (max-width: 849px) {
+    .soundboard {
+      min-width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap:1em;
+
+    }
+  }
 </style>
