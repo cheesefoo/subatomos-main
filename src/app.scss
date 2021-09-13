@@ -1,10 +1,3 @@
-//@use "/node_modules/yakuhanjp/dist/scss/yakuhanjp";
-@use "yakuhanjp/dist/scss/yakuhanjp" with (
-  $yakuhanjp-eot-use: false,
-  $yakuhanjp-cdn-use: true
-);
-
-//@import '@fontsource/noto-sans';
 $kei-font-path: 'src/lib/fonts';
 $images: 'static/assets/images';
 
@@ -19,7 +12,6 @@ $images: 'static/assets/images';
 	src: url('/static/KleeOne-Regular.woff2') format('woff2');
 	font-family: 'klee';
 	font-weight: normal;
-
 }
 @font-face {
 	// This is parsed as a normal function call that takes a quoted string.

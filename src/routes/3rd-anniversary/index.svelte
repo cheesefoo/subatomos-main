@@ -18,7 +18,7 @@
 </script>
 
 <script>
-	import LanguageSelect from '$lib/components/LanguageSelect.svelte';
+	import LanguageSelect from '$lib/components/LanguageSelect3rdAnniversary.svelte';
 	import ThirdAnniversaryCredits from '$lib/components/ThirdAnniversaryCredits.svelte';
 	import Logo from '$lib/components/Logo.svelte';
 
