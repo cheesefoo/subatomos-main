@@ -1,5 +1,5 @@
 {
-	"name": "~TODO~",
+	"name": "subatomos",
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "set NODE_ENV=development && svelte-kit dev -o",
@@ -55,7 +55,6 @@
 		"cookie": "^0.4.1",
 		"howler": "^2.2.3",
 		"svelte-fa": "^2.2.1",
-		"typesafe-i18n": "^2.37.3",
-		"yakuhanjp": "^3.4.1"
+		"typesafe-i18n": "^2.37.3"
 	}
 }
