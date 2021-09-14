@@ -15,7 +15,7 @@
 	export let url = undefined;
 	export let yellow: boolean = true;
 
-	let size = '1.5x';
+	let size = '0.9x';
 	if ($media.small) {
 		size = '3x';
 	}
@@ -117,7 +117,7 @@
 			background-image: url('/static/assets/images/namebanner.webp'),
 				url(/static/assets/images/Star_bg_yellow.png);
 			background-position: 0 20px, right top;
-			background-size: 100% 4em, auto auto;
+			background-size: 100% 2.5em, 40% auto;
 		}
 
 		&.pink {
@@ -125,13 +125,13 @@
 			background-image: url('/static/assets/images/namebanner.webp'),
 				url(/static/assets/images/Star_bg_pink.png);
 			background-position: 0 20px, right top;
-			background-size: 100% 4em, auto auto;
+			background-size: 100% 2.5em, 40% auto;
 		}
 	}
 
 	$hrmargin: 4ch;
 	.box-inner {
-		margin: 3ch $hrmargin 0 $hrmargin;
+		margin: 1.6ch $hrmargin 0 $hrmargin;
 		max-width: 40ch;
 		position: relative;
 		z-index: 1;
@@ -148,9 +148,11 @@
 		}
 
 		span {
-			font-size: 2em;
+			font-size: 1.7rem;
 			font-weight: bold;
-
+			text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
 			&.yellow {
 				color: #a3504d;
 			}
@@ -161,7 +163,9 @@
 		}
 
 		p {
-			padding: 1.5em 0;
+      font-family: setofont, sans-serif;
+
+      padding: 1.5em 0;
 			color: #51b1c4;
 		}
 	}
@@ -174,7 +178,7 @@
 	}
 
 	.fanart {
-		padding-bottom: 1em;
+		padding-bottom: 2em;
 	}
 
 	.stars {
