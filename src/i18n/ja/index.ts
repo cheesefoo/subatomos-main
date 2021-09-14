@@ -33,7 +33,7 @@ const ja: BaseTranslation = {
 			FIVE: '3Dステージ衣装',
 			SIX: 'お嬢様衣装'
 		},
-		MUSIC: 'Music',
+		MUSIC: 'ＢＧＭ',
 		M: {
 			DD: 'Daily Diary',
 			DrD: 'Dreaming Days',

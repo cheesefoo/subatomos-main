@@ -50,7 +50,7 @@ const messages = [
 			'まずは3周年本当におめでとう！！！3周年経った今でもスバルちゃんの全部が大好きです！！まだまだこれからも色々な活躍楽しみにしてんで！！！ これからも1スバ友としてよろしくね！！！'
 	},
 	{
-		name: 'Claudio Bizama (@Claxle)',
+		name: 'Claudio Bizama @Claxle',
 		message:
 			'Congratulations Subaru!!! 🎉🎉🎉 You have really become an idol after all these years. I hope we can see more of you dancing, singing and being happy! Continue doing your best!! 🥳🥳🥳'
 	},
