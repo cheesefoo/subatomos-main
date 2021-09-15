@@ -155,9 +155,9 @@
 		}
 
 		span {
-			font-size: 1.7rem;
+			font-size: 1.6rem;
 			font-family: '851CHIKARA-DZUYOKU_kanaA_004', sans-serif;
-			font-weight: bold;
+			font-weight: normal;
 			text-overflow: ellipsis;
 			overflow: hidden;
 			white-space: nowrap;
