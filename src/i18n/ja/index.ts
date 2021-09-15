@@ -4,6 +4,8 @@ const ja: BaseTranslation = {
 	STARTUP: 'app started (JA)',
 	TITLE: 'Subatomos - 大空スバルファンサイト',
 	HOME: {
+		META_DESC:
+			'A website by overseas fans showcasing community projects celebrating Oozora Subaru!',
 		PROJECTS: 'Subatomos プロジェクト',
 		THIRD_ANNIVERSARY: '3周年記念',
 		BIRTHDAY: '100万人登録者突破とお誕生日',
@@ -19,6 +21,9 @@ const ja: BaseTranslation = {
 		THIRD_ANNIVERSARY: '3周年記念'
 	},
 	THIRD: {
+		META_DESC:
+			"Subatomos' project to celebrate Subaru's 3rd debut anniversary! Featuring an animated video with remixes and cover songs created by the community.",
+
 		TITLE: 'スバルの3周年！',
 		CONGRATS: 'スバル、3周年おめでとう！！',
 		CREDITS: 'クレジット',
@@ -52,6 +57,17 @@ const ja: BaseTranslation = {
 		LOGO_SUBA: 'スバ友のロゴ',
 		LOGO_PROJ: 'プロジェクトのロゴ',
 		THANKS: '次の方々に感謝を'
+	},
+	PONDS: {
+		META_DESC:
+			"Subatomos' project to celebrate Subaru's birthday & 1M subscribers milestone, with over 2000 duck submissions from fans!",
+		TITLE: 'スバ友池',
+		SUBTITLE: '1 million subscribers & birthday project',
+		VISIT: 'Visit the site here!',
+		GRAPHS: 'We surveyed users during their submissions. These are the results:'
+	},
+	SOUNDBOARD: {
+		SUGGEST: '音声を追加するためにはこちらまでご連絡ください'
 	}
 };
 export default ja;

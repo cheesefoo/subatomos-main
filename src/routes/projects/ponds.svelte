@@ -184,10 +184,15 @@
 	}
 </script>
 
+<svelte:head>
+	<title>{$LL.PONDS.TITLE()}</title>
+
+	<meta name="description" content={$LL.HOME.META_DESC()} />
+</svelte:head>
 <main>
 	<h1>{$LL.HEADER.PONDS()}</h1>
-	<h3>{$LL.HOME.BIRTHDAY()}</h3>
-	<a href="https://ponds.subatomos.com">Visit the site here!</a>
+	<h3>{$LL.PONDS.SUBTITLE()}</h3>
+	<a href="https://ponds.subatomos.com">{$LL.PONDS.VISIT()}</a>
 	<div class="video-container">
 		{#if $locale === 'ja'}
 			<iframe
@@ -211,7 +216,7 @@
 			/>
 		{/if}
 	</div>
-	<p>We surveyed users during their submissions. These are the results:</p>
+	<p>{$LL.PONDS.GRAPHS()}</p>
 	<div class="charts">
 		<canvas id="hairstyle" />
 		<canvas id="submissions" />

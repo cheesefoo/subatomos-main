@@ -6,6 +6,7 @@
 
 	import Lazy from 'svelte-lazy';
 	import LL from '/src/i18n/i18n-svelte';
+	import SNSLink from '$lib/components/SNSLink.svelte';
 
 	let duration;
 	let muted = false;
@@ -29,6 +30,12 @@
 <!--	bind:volume={volume}></audio>-->
 
 <div class="soundboard-container">
+	<h4>
+		{$LL.SOUNDBOARD.SUGGEST()}
+		<SNSLink icon="github" url="https://github.com/cheesefoo/subatomos-main" />
+		<SNSLink icon="discord" url="https://discord.gg/subatomos" />
+		<SNSLink icon="twitter" url="https://twitter.com/subatomos" />
+	</h4>
 	{#each categoryList as category}
 		<h3 style="text-transform: capitalize">{category}</h3>
 		<div class="soundboard">

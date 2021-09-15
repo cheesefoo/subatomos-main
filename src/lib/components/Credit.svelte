@@ -12,7 +12,10 @@
 	export let desc = '';
 	let size = '';
 	if ($media.small) {
-		size = '3x';
+		size = '2x';
+	}
+	if ($media.tablet) {
+		size = '2x';
 	}
 </script>
 
@@ -25,7 +28,7 @@
 		{#if url2 != undefined}
 			<SNSLink icon={sns2} url={url2} {size} />
 		{/if}
-		{#if $media.small}
+		{#if $media.small || $media.tablet}
 			<br />
 			<a href={url}>{name}</a>
 		{:else}
@@ -45,7 +48,7 @@
 
 	span {
 		font-weight: 400;
-		font-size: small;
+		font-size: 1em;
 		color: #902b29;
 	}
 
@@ -67,6 +70,12 @@
 		a {
 			color: $chromeblue;
 			font-size: 0.9em;
+		}
+	}
+
+	@media screen and (min-width: 850px) and (max-width: 1024px) {
+		a {
+			font-size: 1.4rem;
 		}
 	}
 </style>
