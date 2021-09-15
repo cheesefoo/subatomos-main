@@ -89,6 +89,13 @@
 </div>
 
 <style lang="scss">
+  @font-face {
+    // This is parsed as a normal function call that takes a quoted string.
+    src: url('/static/851CHIKARA-DZUYOKU_kanaA_004.woff2') format('woff2');
+    font-family: '851CHIKARA-DZUYOKU_kanaA_004';
+    font-weight: normal bold;
+  }
+
 	.box-border {
 		border: white solid 0.5em;
 		border-radius: 1em;
@@ -131,7 +138,7 @@
 
 	$hrmargin: 4ch;
 	.box-inner {
-		margin: 1.6ch $hrmargin 0 $hrmargin;
+		margin: 2.7ch $hrmargin 0 $hrmargin;
 		max-width: 40ch;
 		position: relative;
 		z-index: 1;
@@ -149,6 +156,7 @@
 
 		span {
 			font-size: 1.7rem;
+			font-family: '851CHIKARA-DZUYOKU_kanaA_004', sans-serif;
 			font-weight: bold;
 			text-overflow: ellipsis;
 			overflow: hidden;

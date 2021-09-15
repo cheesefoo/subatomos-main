@@ -241,9 +241,9 @@
   }
 
   .logo-container-static {
-    position: absolute;
+/*    position: absolute;
     left: 1%;
-    top: 10%;
+    top: 10%;*/
 
     img {
       width: 30%;
@@ -274,9 +274,9 @@
   }
 
   .video-frame {
-    position: absolute;
+/*    position: absolute;
     top: 3%;
-    right: 0%;
+    right: 0%;*/
     background: url("/static/assets/images/videoframe.webp") no-repeat;
     background-size: contain;
 
@@ -288,10 +288,11 @@
   }
 
   .video-container {
-    position: absolute;
+/*    position: absolute;
+		right: 5%;
+    top: 22%;*/
     border: solid white 4px;
-    right: 5%;
-    top: 22%;
+
     box-shadow: 5px 5px 5px rgb(0 0 0 / 0.4);
 
     //position: relative;
