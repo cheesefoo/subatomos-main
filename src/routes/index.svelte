@@ -130,7 +130,7 @@
 		</div>
 	</div>
 	<div class='subaru'>
-		<img src={subaru} alt='oozora subaru' />
+		<img src={subaru} alt='oozora subaru' style='opacity:0' />
 	</div>
 </main>
 
@@ -145,10 +145,19 @@
     max-width: 100vw;
     max-height: 100vh;
   }
-
+main{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2em;
+  box-sizing: border-box;
+  min-height:100vh;
+}
   .subaru-logo-group {
     display: flex;
-    position: absolute;
     top: 5%;
     left: 10%;
   }
@@ -174,7 +183,6 @@
   }
 
   .nav {
-    position: absolute;
     left: 15%;
     top: 40%;
   }
@@ -225,7 +233,6 @@
   }
 
   .subatomo-logo-group {
-    position: absolute;
     bottom: 5%;
     left: 5%;
     //overflow:hidden;
@@ -245,6 +252,8 @@
     bottom: 0;
     object-fit: cover;
     overflow: hidden;
+    background-size: 100% auto;
+    background: url("/static/assets/images/subaru3rd_outfit_long_full_1080.png") no-repeat bottom center;
 
     img {
       width: 40vw;
