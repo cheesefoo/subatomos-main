@@ -186,6 +186,8 @@
       //object-fit: scale-down;
 
       margin-top: -3%;
+      //box-shadow: 5px 5px 5px rgb(0 0 0 / 0.4);
+
     }
   }
 
@@ -195,7 +197,9 @@
     top: 10%;
 
     img {
-      width: 70%
+      width: 70%;
+      //box-shadow: 5px 5px 5px rgb(0 0 0 / 0.4);
+
     }
   }
 
@@ -225,6 +229,8 @@
     border: solid white 4px;
     right: 5%;
     top: 25%;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 0.4);
+
     //position: relative;
     //padding-bottom: 56.25%;
     //padding-top: 30px;
