@@ -9,7 +9,7 @@
 		html5:false
 	});
 	export let paused: boolean;
-	$: img = paused ? 'background-image: url(\'/static/assets/images/volume_mute.png\')' : 'background-image: url(\'/static/assets/images/volume.png\')';
+	$: img = paused ? "background-image: url(/static/assets/images/volume_mute.png)" : "background-image: url(/static/assets/images/volume.png)";
 	$: if (paused)
 	{
 		howl.pause();
