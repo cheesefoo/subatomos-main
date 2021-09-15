@@ -10,6 +10,7 @@
 	import messagebanner from '/static/assets/images/border_messages.webp';
 	import bottomseparator from '/static/assets/images/bottom_credits.webp';
 	import videoframe from '/static/assets/images/videoframe.webp';
+	import metaimg from '/static/assets/images/3rdanniversarylogo.png';
 
 	export async function load({ fetch })
 	{
@@ -91,8 +92,27 @@
 </script>
 
 <svelte:head>
-	<title>{$LL.THIRD.TITLE()}</title>
-	<meta name='description' content={$LL.THIRD.META_DESC()} />
+	<!-- Primary Meta Tags -->
+	<title>Oozora Subaru, congratulations on your 3rd anniversary!</title>
+	<meta name="title" content="Oozora Subaru, congratulations on your 3rd anniversary!">
+	<meta name="description" content="スバル3周年おめでとう！！！
+We made a video for you to celebrate!!!">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://subatomos.com/3rd-anniversary">
+	<meta property="og:title" content="Oozora Subaru, congratulations on your 3rd anniversary!">
+	<meta property="og:description" content="スバル3周年おめでとう！！！
+We made a video for you to celebrate!!!">
+	<meta property="og:image" content={metaimg}>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://subatomos.com/3rd-anniversary">
+	<meta property="twitter:title" content="Oozora Subaru, congratulations on your 3rd anniversary!">
+	<meta property="twitter:description" content="スバル3周年おめでとう！！！
+We made a video for you to celebrate!!!">
+	<meta property="twitter:image" content={metaimg}>
 </svelte:head>
 <svelte:window bind:innerHeight bind:scrollY={y} />
 
@@ -227,6 +247,8 @@
     width: 100vw;
     height: 100vh;
 
+    padding:3em;
+
   }
 
   .separator {
@@ -250,11 +272,11 @@
   }
 
   .logo-container-static {
-
+    text-align:center;
     flex: 1 1 40%;
 
     img {
-      width: 100%;
+      width: 80%;
 
     }
   }
@@ -282,9 +304,10 @@
 
   .video-frame {
     background: url(/static/assets/images/videoframe.webp) no-repeat;
-    background-size: contain;
+    background-size: auto 95%;
     flex: 1 1 60%;
     position: relative;
+    background-position: center;
 
     img {
       width: 100%;
@@ -292,10 +315,16 @@
   }
 
   .video-container {
+
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: 10%;
-    zoom: 0.8;
+    width: 45vw;
+    height: calc(40vw*0.6);
+		iframe{
+			width:100%;
+			height:100%;
+		}
   }
 
   .msg-banner-container {
