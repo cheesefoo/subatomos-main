@@ -6,7 +6,7 @@
 	const howl = new Howl({
 		src: oozoraken,
 		loop: true,
-		html5:true
+		html5:false
 	});
 	export let paused: boolean;
 	$: img = paused ? 'background-image: url(\'/static/assets/images/volume_mute.png\')' : 'background-image: url(\'/static/assets/images/volume.png\')';
