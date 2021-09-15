@@ -44,7 +44,6 @@
 	<!--	<div class='content'>-->
 	<slot />
 	<!--	</div>-->
-	<Footer />
 </main>
 
 <style lang="scss">

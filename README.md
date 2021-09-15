@@ -1,38 +1,14 @@
-# create-svelte
+# Subatomos website
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+the source code for [subatomos.com](https://subatomos.com)
 
-## Creating a project
+the code for the ponds is in a [different repository](https://github.com/cheesefoo/subatomo-ponds), but if you go blind don't blame me
 
-If you're seeing this, you've probably already done this step. Congrats!
+# Adding to the Soundboard
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+provide a .mp3, short description for the button, category if applicable. source is nice to have but not required
 
-# create a new project in my-app
-npm init svelte@next my-app
-```
+github:
+`/src/routes/soundboard/_sounds.ts ` & `/static/assets/sound/`
 
-> Note: the `@next` is temporary
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
-
-```bash
-npm run build
-```
-
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+or just [twitter](https://twitter.com/home)

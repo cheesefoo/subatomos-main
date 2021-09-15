@@ -1,6 +1,12 @@
 <script lang="ts">
 	import Fa from 'svelte-fa/src/fa.svelte';
-	import { faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+	import {
+		faDiscord,
+		faGithub,
+		faInstagram,
+		faTwitter,
+		faYoutube
+	} from '@fortawesome/free-brands-svg-icons';
 	import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 	export let icon = 'twitter';
@@ -16,6 +22,10 @@
 			<Fa icon={faYoutube} fw color="red" {size} />
 		{:else if icon === 'ig'}
 			<Fa icon={faInstagram} fw color="purple" {size} />
+		{:else if icon === 'github'}
+			<Fa icon={faGithub} fw color="#171515" {size} />
+		{:else if icon === 'discord'}
+			<Fa icon={faDiscord} {size} color="#5865F2" />
 		{:else if icon === 'www'}
 			<Fa icon={faGlobe} fw {size} />
 		{/if}

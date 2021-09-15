@@ -7,7 +7,7 @@
 	import { media } from '$lib/stores/stores.ts';
 
 	const dir = dev ? '/assets/images/fanart/' : '/assets/images/fanart/';
-	const thumbsDir = dir + 'thumbs/';
+	const thumbsDir = $media.small ? dir + 'thumbs/mobile/' : dir + 'thumbs/';
 
 	export let name: string;
 	export let message;
@@ -17,7 +17,7 @@
 
 	let size = '0.9x';
 	if ($media.small) {
-		size = '3x';
+		size = '0.9x';
 	}
 
 	function getThumbnail() {
@@ -151,8 +151,9 @@
 			font-size: 1.7rem;
 			font-weight: bold;
 			text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: nowrap;
+			overflow: hidden;
+			white-space: nowrap;
+
 			&.yellow {
 				color: #a3504d;
 			}
@@ -163,9 +164,9 @@
 		}
 
 		p {
-      font-family: setofont, sans-serif;
-
-      padding: 1.5em 0;
+			font-family: setofont, sans-serif;
+			font-size: 1em;
+			padding: 1.5em 0;
 			color: #51b1c4;
 		}
 	}
@@ -187,5 +188,8 @@
 		right: -3.5ch;
 		top: -4ch;
 		zoom: 0.5;
+	}
+
+	@media screen and (max-width: 849px) {
 	}
 </style>

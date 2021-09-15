@@ -2,37 +2,37 @@ $kei-font-path: 'src/lib/fonts';
 $images: 'static/assets/images';
 
 @font-face {
-  // This is parsed as a normal function call that takes a quoted string.
-  src: url('/static/keifont.woff2') format('woff2');
-  font-family: 'keifont';
-  font-weight: 400 900;
+	// This is parsed as a normal function call that takes a quoted string.
+	src: url('/static/keifont.woff2') format('woff2');
+	font-family: 'keifont';
+	font-weight: 400 900;
 }
 
 @font-face {
-  // This is parsed as a normal function call that takes a quoted string.
-  src: url('/static/KleeOne-Regular.woff2') format('woff2');
-  font-family: 'klee';
-  font-weight: normal;
+	// This is parsed as a normal function call that takes a quoted string.
+	src: url('/static/KleeOne-Regular.woff2') format('woff2');
+	font-family: 'klee';
+	font-weight: normal;
 }
 
 @font-face {
-  // This is parsed as a normal function call that takes a quoted string.
-  src: url('/static/KleeOne-SemiBold.woff2') format('woff2');
-  font-family: 'klee';
-  font-weight: bold;
+	// This is parsed as a normal function call that takes a quoted string.
+	src: url('/static/KleeOne-SemiBold.woff2') format('woff2');
+	font-family: 'klee';
+	font-weight: bold;
 }
 
 @font-face {
-  // This is parsed as a normal function call that takes a quoted string.
-  src: url('/static/KFhimaji.woff2') format('woff2');
-  font-family: 'KFhimaji';
-  font-weight: normal bold;
+	// This is parsed as a normal function call that takes a quoted string.
+	src: url('/static/KFhimaji.woff2') format('woff2');
+	font-family: 'KFhimaji';
+	font-weight: normal bold;
 }
 @font-face {
-  // This is parsed as a normal function call that takes a quoted string.
-  src: url('/static/setofont.woff2') format('woff2');
-  font-family: 'setofont';
-  font-weight: normal bold;
+	// This is parsed as a normal function call that takes a quoted string.
+	src: url('/static/setofont.woff2') format('woff2');
+	font-family: 'setofont';
+	font-weight: normal bold;
 }
 
 $pure-white: #ffffff;
@@ -58,99 +58,99 @@ $column-margin-top: 4rem;
 $font-mono: 'keifont' mono;
 
 :root {
-  font-family: klee, sans-serif;
-  //font-family: keifont, sans-serif;
-  //font-family: YakuHanJP, keifont, 'Hiragino Sans', sans-serif;
-  font-weight: 400;
+	font-family: klee, sans-serif;
+	//font-family: keifont, sans-serif;
+	//font-family: YakuHanJP, keifont, 'Hiragino Sans', sans-serif;
+	font-weight: 400;
 }
 
 body {
-  min-height: 100vh;
-  margin: 0;
-  //background: $primary-color
-  //	repeating-linear-gradient(
-  //		to right,
-  //		$lightblue,
-  //		$lightblue 30px,
-  //		$lighterblue 20px,
-  //		$lighterblue 50px
-  //	);
-  //background: url('../static/assets/images/Sky.png') no-repeat center center fixed;
-  //background-size: cover;
+	min-height: 100vh;
+	margin: 0;
+	//background: $primary-color
+	//	repeating-linear-gradient(
+	//		to right,
+	//		$lightblue,
+	//		$lightblue 30px,
+	//		$lighterblue 20px,
+	//		$lighterblue 50px
+	//	);
+	//background: url('../static/assets/images/Sky.png') no-repeat center center fixed;
+	//background-size: cover;
 }
 
 body::before {
-  content: '';
-  width: 80vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 10vw;
-  z-index: -1;
-  background: radial-gradient(50% 50% at 50% 50%, $pure-white 0%, rgba(255, 255, 255, 0) 100%);
-  opacity: 0.05;
+	content: '';
+	width: 80vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 10vw;
+	z-index: -1;
+	background: radial-gradient(50% 50% at 50% 50%, $pure-white 0%, rgba(255, 255, 255, 0) 100%);
+	opacity: 0.05;
 }
 
 #svelte {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 h1,
 h2,
 h3,
 p {
-  font-weight: 400;
-  color: $heading-color;
+	font-weight: 400;
+	color: $heading-color;
 }
 
 p {
-  line-height: 1.5;
+	line-height: 1.5;
 }
 
 a {
-  color: $accent-color;
-  text-decoration: none;
+	color: $accent-color;
+	text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 h1 {
-  font-size: 2rem;
-  margin-bottom: 1em;
-  text-align: center;
+	font-size: 2rem;
+	margin-bottom: 1em;
+	text-align: center;
 }
 
 h2 {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 
 pre {
-  font-size: 16px;
-  font-family: $font-mono;
-  background-color: rgba(255, 255, 255, 0.45);
-  border-radius: 3px;
-  box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
-  padding: 0.5em;
-  overflow-x: auto;
-  color: $text-color;
+	font-size: 16px;
+	font-family: $font-mono;
+	background-color: rgba(255, 255, 255, 0.45);
+	border-radius: 3px;
+	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
+	padding: 0.5em;
+	overflow-x: auto;
+	color: $text-color;
 }
 
 input,
 button {
-  font-size: inherit;
-  font-family: inherit;
+	font-size: inherit;
+	font-family: inherit;
 }
 
 button:focus:not(:focus-visible) {
-  outline: none;
+	outline: none;
 }
 
 @media (min-width: 1024px) {
-  h1 {
-    font-size: 2.4rem;
-  }
+	h1 {
+		font-size: 2.4rem;
+	}
 }

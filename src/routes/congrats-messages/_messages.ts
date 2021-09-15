@@ -1001,6 +1001,46 @@ const messages = [
 		name: '百合音',
 		message:
 			'スバルちゃん、3周年おめでとう…！！！ いつも本当に元気をもらっています。 辛い時も苦しい時も、スバルちゃんのお陰で頑張って生きていこうと思えました。 性格も声も、スバルちゃんの全てが大好きです！！これからもアヒー女として応援してます！！ スバルちゃんは私の最高のアイドルです！！'
+	},
+	{
+		name: 'Tyler',
+		message:
+			'Hello Subaru-Chan! It doesn’t feel real that it’s been 3 years. Your streams make me incredibly happy and make me laugh a lot, especially SMOK. You are very inspirational. ( ^ω^ ) Congratulations on 3 years!'
+	},
+	{
+		name: 'ごっちゃん',
+		message:
+			'すばーう三周年おめでとう！！！！ スバルの普段は幼馴染。でも、本気出すとアイドルなところめっちゃ好きです。 とっても努力家で3Dライブを見ても他のメンバーより振りが抜きん出てたり、苦手という歌もレッスンにちゃんとかよってて(ニガテ、嫌いなことを努力で乗り越えるのはカッコいい😭)特にシンシアリー、アカシア、blessingは何度もリピしてます。もちろん下手なんて事はないし、上手いし何より気持ちがのってるというかとにかく良い！！ 初の3Dライブ楽しみにしてるる！！ぶっちゃけ、甘く見てたけどVARKめっちゃよかった。またいつかVRやって欲しい！'
+	},
+	{
+		name: '@paste89314',
+		message:
+			'スバゥ！3周年本当におめでとう！ スバゥのことを知れば知るほど深みにハマってどんどん抜け出せなくなります！ 明るく振る舞えるその性格、センシティブなことを知らない純粋さ、何者にも怖気づかないその勇気と行動力、そしてそのリスナーへの愛と笑顔！全部ひっくるめて大好きです！これからも応援してます！'
+	},
+	{
+		name: '@ghost_pantsu',
+		message:
+			'Dear Subaru, every since I found you in Hololive, my life has changed for the better, you have made me smile whenever I am feeling sad. I always come to your stream whenever I can and you always will make me laugh even though I do not understand Japanese. Whenever clips of you come out, I will always watch as soon as possible, and of course it makes me laugh. No matter what happens, you will always be my favorite. Thank you, for everything you have done and everything you will do in the future<3'
+	},
+	{
+		name: 'Kenney (ケニー)',
+		message:
+			"Congratulations on your 3rd Anniversary! I'm a fan from Canada. Over the past few years, your bright and cheerful streams have always brought a smile to my face. More and more, I start to feel that I'm glad to be your fan. I hope you continue to have fun and share your genki energy with the world. ありがとうございます."
+	},
+	{
+		name: 'Disciple of Shuba, @novafan7891',
+		message:
+			"Subaru thank you so much for all the hard work you put into entertaining all of us Subatomos. You brighten up the days of thousands of people and we are so grateful for you. You have been a radiating sun of positivity and happiness. I can't express in words how grateful I am everytime you make me laugh or smile or just feel warm from any amount of positivity you bring to me. Thank you so much"
+	},
+	{
+		name: '@jahnathand',
+		message:
+			"Thank you for all of your hard work! Every time I watch your streams I always have a great time. I may not be able to watch every stream but I still support you no matter what. Please keep up the hard work and keep putting smiles on mine and other Subatomo's faces."
+	},
+	{
+		name: 'Novie',
+		message:
+			"Dear Oozora Subaru-chan,  no one else could ever fill your role in Hololive! You are my most favorite Holomember! Absolutely the Sun of Hololive! I have known your channel for more than a year and I'm so happy I got to see you come so far! I can't wait to see what next year holds for us, Subatomo.  ♡ ホロライブ3年目おめでとうございます! ♡"
 	}
 ];
 export default messages;
