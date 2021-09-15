@@ -261,11 +261,11 @@ let fanart: Array<SubaFanart> = [
 		message:
 			'スバルの映画を最初に見たのは”ib”です。今は隠しているのが残念ですが，その時のスバルちゃんの反応がとても良かったです。当時の悔しい、泣いていてもまた挑戦するという。とてもよく覚えています。 あなたの素直さが好き，記念に描いたものなので、気に入ってもらえたら嬉しいです。 三周年おめでとうございます！これからもよろしくお願いします！！',
 		src: '鬼武羅alzon @benson70030.png'
-	},	{
+	},
+	{
 		name: 'innoalvin',
 		url: 'https://twitter.com/innoalvin',
-		message:
-			'Subaru in Autumn Style!',
+		message: 'Subaru in Autumn Style!',
 		src: 'innoalvin @innoalvin.jpeg'
 	}
 ];

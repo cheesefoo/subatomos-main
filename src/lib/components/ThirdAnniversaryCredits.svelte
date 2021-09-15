@@ -73,7 +73,6 @@
 		{/if}
 	</div>
 	<Footer />
-
 </div>
 
 <style lang="scss">
@@ -83,7 +82,7 @@
 	}
 
 	.credits {
-    background-color:#f1bd65;;
+		background-color: #f1bd65;
 		width: 100%;
 	}
 
