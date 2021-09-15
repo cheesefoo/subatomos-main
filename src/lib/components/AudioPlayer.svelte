@@ -5,7 +5,8 @@
 
 	const howl = new Howl({
 		src: oozoraken,
-		loop: true
+		loop: true,
+		html5:true
 	});
 	export let paused: boolean;
 	$: img = paused ? 'background-image: url(\'/static/assets/images/volume_mute.png\')' : 'background-image: url(\'/static/assets/images/volume.png\')';
@@ -24,7 +25,7 @@
 	}
 </script>
 
-<div class:playing={!paused} style='{img}' on:click={togglePause}>
+<div style='{img}' on:click={togglePause}>
 
 
 </div>
@@ -38,10 +39,6 @@
         cursor: pointer;
     }
 
-    audio {
-    }
 
-    .playing {
-        color: #ff3e00;
-    }
+
 </style>

@@ -71,7 +71,7 @@
 				allowfullscreen
 				frameborder='0'
 				height='480'
-				src='https://www.youtube.com/embed/pyH6z4zxWa8'
+				src='https://www.youtube.com/embed/IQ5dSwqSv3s'
 				title='YouTube video player'
 				width='852'
 			/>
@@ -185,7 +185,7 @@
     img:last-child {
       //object-fit: scale-down;
 
-      margin-top: -3%;
+      margin-top: -2em;
       //box-shadow: 5px 5px 5px rgb(0 0 0 / 0.4);
 
     }
@@ -197,7 +197,7 @@
     top: 10%;
 
     img {
-      width: 70%;
+      width: 30%;
       //box-shadow: 5px 5px 5px rgb(0 0 0 / 0.4);
 
     }
@@ -228,7 +228,7 @@
     position: absolute;
     border: solid white 4px;
     right: 5%;
-    top: 25%;
+    top: 28%;
     box-shadow: 5px 5px 5px rgb(0 0 0 / 0.4);
 
     //position: relative;
@@ -256,8 +256,8 @@
     bottom: 2em;
 
     h1 {
-      padding-top: 1em;
-      margin-bottom: 0;
+      padding-top: 2em;
+      margin-bottom: -0.5em;
       color: white;
 
     }
@@ -278,7 +278,7 @@
     align-self: end;
     text-align: end;
 
-    padding: 2ch 10ch 10ch 0;
+    padding: 0 8ch 0 0;
 
     label {
       color: white;
