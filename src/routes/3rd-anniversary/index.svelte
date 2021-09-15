@@ -78,56 +78,55 @@
 
 	</div>
 	<div class='separator'>
+		<div class='msg-banner-container'>
+
+			<h1>{$LL.THIRD.MESSAGES()}</h1>
+			<div class='fanart-filter'>
+				<label
+				><input type='checkbox' bind:checked={hideMessages} /> {$LL.THIRD.FANART_ONLY()}</label
+				>
+			</div>
+		</div>
 		<img src={separator} alt='separator'>
 		<img src={messagebanner} alt='messages banner'>
 	</div>
-	<div class='msg-banner'>
-	</div>
-	<div class='msg-banner-container'>
 
-		<h1>{$LL.THIRD.MESSAGES()}</h1>
-		<div class='fanart-filter'>
-			<label
-			><input type='checkbox' bind:checked={hideMessages} /> {$LL.THIRD.FANART_ONLY()}</label
-			>
-		</div>
-	</div>
-<!--	<div class='content-bg'>-->
-		<div class='content'>
-			<!--		<h3>{$LL.THIRD.CONGRATS()}</h3>-->
+	<!--	<div class='content-bg'>-->
+	<div class='content'>
+		<!--		<h3>{$LL.THIRD.CONGRATS()}</h3>-->
 
 
-			<div class='messages-container'>
-				{#each texts as { name, url, message, src }, i}
-					{#if (hideMessages && src !== undefined) || !hideMessages}
-						<Saos
-							once={true}
-							bottom={160}
-							animation={'fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}
-						>
-							<div class='message-box'>
-								{#if src === undefined}
-									{#if (i + 1) % 2 === 0}
-										<CongratsMessageBox {name} {message} yellow={true} />
-									{:else}
-										<CongratsMessageBox {name} {message} yellow={false} />
-									{/if}
-								{:else if (i + 1) % 2 === 0}
-									<CongratsMessageBox {name} {message} {src} {url} yellow={true} />
+		<div class='messages-container'>
+			{#each texts as { name, url, message, src }, i}
+				{#if (hideMessages && src !== undefined) || !hideMessages}
+					<Saos
+						once={true}
+						bottom={160}
+						animation={'fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}
+					>
+						<div class='message-box'>
+							{#if src === undefined}
+								{#if (i + 1) % 2 === 0}
+									<CongratsMessageBox {name} {message} yellow={true} />
 								{:else}
-									<CongratsMessageBox {name} {message} {src} {url} yellow={false} />
+									<CongratsMessageBox {name} {message} yellow={false} />
 								{/if}
-							</div>
-						</Saos>
-					{/if}
-				{/each}
-			</div>
-			<!--{#if showBackToTop}-->
-
-			<!--{/if}-->
-
+							{:else if (i + 1) % 2 === 0}
+								<CongratsMessageBox {name} {message} {src} {url} yellow={true} />
+							{:else}
+								<CongratsMessageBox {name} {message} {src} {url} yellow={false} />
+							{/if}
+						</div>
+					</Saos>
+				{/if}
+			{/each}
 		</div>
-<!--	</div>-->
+		<!--{#if showBackToTop}-->
+
+		<!--{/if}-->
+
+	</div>
+	<!--	</div>-->
 	<!--	<div class='back-to-top-btn'>
 		<a
 			transition:fly={{ y: 200, duration: 2000 }}
@@ -162,13 +161,10 @@
 
   .top {
     display: block;
-
     background: #373c62 url(/static/assets/images/top_bg.webp) no-repeat;
     background-size: 100%;
     width: 100vw;
     height: 100vh;
-
-
   }
 
   .separator {
@@ -179,13 +175,14 @@
 
     img {
       object-fit: cover;
-
+      width: 100%;
     }
-		img:last-child{
+
+    img:last-child {
       //object-fit: scale-down;
 
-      margin-top:-3%;
-		}
+      margin-top: -3%;
+    }
   }
 
   .logo-container-static {
@@ -242,10 +239,11 @@
   }
 
   .msg-banner-container {
-    //background: #373c62 url(/static/assets/images/border_messages.webp) no-repeat;
-    //background-size: cover;
+
     width: 100%;
     height: 20vh;
+    position: absolute;
+    bottom: 2em;
 
     h1 {
       padding-top: 1em;
@@ -254,13 +252,15 @@
 
     }
   }
-  .msg-banner{
-		position:relative;
-		top:0;
-width:100%;
-		img{
-object-fit: contain;
-		}
+
+  .msg-banner {
+    position: relative;
+    top: 0;
+    width: 100%;
+
+    img {
+      object-fit: contain;
+    }
   }
 
 
@@ -268,7 +268,7 @@ object-fit: contain;
     align-self: end;
     text-align: end;
 
-    padding: 0 10ch 10ch 0;
+    padding: 2ch 10ch 10ch 0;
 
     label {
       color: white;
