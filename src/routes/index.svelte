@@ -4,7 +4,7 @@
 	import third from '/static/assets/images/3rdanniversarylogo-transparent-sm.png';
 	import second from '/static/assets/images/second-sm.png';
 	import subatomo from '/static/assets/images/subatomo-wh.png';
-	import subaru from '/static/assets/images/cbimage.png';
+	import subaru from '/static/assets/images/subaru3rd_outfit_long_full_1080.png';
 	import megaphone from '/static/assets/images/megaphone_resized.svg';
 	import Fa from 'svelte-fa';
 	import Sakura from '$lib/components/sakura/sakura.js';
@@ -242,7 +242,7 @@
   .subaru {
     position: absolute;
     right: 5%;
-    bottom: 5%;
+    bottom: 0;
     object-fit: cover;
     overflow: hidden;
 

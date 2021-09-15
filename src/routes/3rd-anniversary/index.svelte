@@ -26,6 +26,7 @@
 	import LanguageSelect from '$lib/components/LanguageSelect3rdAnniversary.svelte';
 	import ThirdAnniversaryCredits from '$lib/components/ThirdAnniversaryCredits.svelte';
 	import Logo from '$lib/components/Logo.svelte';
+	import AudioPlayer from '$lib/components/AudioPlayer.svelte';
 
 	export let texts;
 
@@ -138,8 +139,11 @@
 	{#if showBackToTop}
 		<a class='back-to-top-btn'
 			 href={'#'}
-			 on:click={(y = 0)}>Back to top</a
-		>{/if}
+			 on:click={(y = 0)}>Back to top</a		>
+	{/if}
+	<div class='music-btn'>
+		<AudioPlayer/>
+	</div>
 	<div class='bottomseparator'>
 		<img src={bottomseparator} alt='bottomseparator'>
 	</div>
@@ -331,6 +335,14 @@
     background: white;
     padding: 1em;
     border-radius: 1em;
+  }
+
+	.music-btn {
+    text-align: center;
+    bottom: 50%;
+    position: fixed;
+    bottom: 4em;
+    left: 1em;
   }
 
   @keyframes -global-fade-in {
