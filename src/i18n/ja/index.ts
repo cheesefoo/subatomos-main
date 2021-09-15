@@ -1,6 +1,6 @@
-import type { BaseTranslation } from 'typesafe-i18n';
+import type { Translation } from '../i18n-types';
 
-const ja: BaseTranslation = {
+const ja: Translation = {
 	STARTUP: 'app started (JA)',
 	TITLE: 'Subatomos - 大空スバルファンサイト',
 	HOME: {
