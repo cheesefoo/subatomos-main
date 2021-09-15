@@ -252,8 +252,8 @@ main{
     bottom: 0;
     object-fit: cover;
     overflow: hidden;
-    background-size: 100% auto;
     background: url("/static/assets/images/subaru3rd_outfit_long_full_1080.png") no-repeat bottom center;
+    background-size: contain;
 
     img {
       width: 40vw;
