@@ -4,10 +4,10 @@
 	import Fa from 'svelte-fa';
 	import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 	import Saos from 'saos';
-	import { fly } from 'svelte/transition';
 
 	import logoStatic from '/static/assets/images/logo.webp';
 	import separator from '/static/assets/images/separator.webp';
+	import messagebanner from '/static/assets/images/border_messages.webp';
 	import bottomseparator from '/static/assets/images/bottom_credits.webp';
 
 	export async function load({ fetch })
@@ -79,8 +79,12 @@
 	</div>
 	<div class='separator'>
 		<img src={separator} alt='separator'>
+		<img src={messagebanner} alt='messages banner'>
 	</div>
 	<div class='msg-banner'>
+	</div>
+	<div class='msg-banner-container'>
+
 		<h1>{$LL.THIRD.MESSAGES()}</h1>
 		<div class='fanart-filter'>
 			<label
@@ -88,52 +92,55 @@
 			>
 		</div>
 	</div>
-	<div class='content'>
-		<!--		<h3>{$LL.THIRD.CONGRATS()}</h3>-->
+<!--	<div class='content-bg'>-->
+		<div class='content'>
+			<!--		<h3>{$LL.THIRD.CONGRATS()}</h3>-->
 
 
-		<div class='messages-container'>
-			{#each texts as { name, url, message, src }, i}
-				{#if (hideMessages && src !== undefined) || !hideMessages}
-					<Saos
-						once={true}
-						bottom={160}
-						animation={'fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}
-					>
-						<div class='message-box'>
-							{#if src === undefined}
-								{#if (i + 1) % 2 === 0}
-									<CongratsMessageBox {name} {message} yellow={true} />
+			<div class='messages-container'>
+				{#each texts as { name, url, message, src }, i}
+					{#if (hideMessages && src !== undefined) || !hideMessages}
+						<Saos
+							once={true}
+							bottom={160}
+							animation={'fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}
+						>
+							<div class='message-box'>
+								{#if src === undefined}
+									{#if (i + 1) % 2 === 0}
+										<CongratsMessageBox {name} {message} yellow={true} />
+									{:else}
+										<CongratsMessageBox {name} {message} yellow={false} />
+									{/if}
+								{:else if (i + 1) % 2 === 0}
+									<CongratsMessageBox {name} {message} {src} {url} yellow={true} />
 								{:else}
-									<CongratsMessageBox {name} {message} yellow={false} />
+									<CongratsMessageBox {name} {message} {src} {url} yellow={false} />
 								{/if}
-							{:else if (i + 1) % 2 === 0}
-								<CongratsMessageBox {name} {message} {src} {url} yellow={true} />
-							{:else}
-								<CongratsMessageBox {name} {message} {src} {url} yellow={false} />
-							{/if}
-						</div>
-					</Saos>
-				{/if}
-			{/each}
+							</div>
+						</Saos>
+					{/if}
+				{/each}
+			</div>
+			<!--{#if showBackToTop}-->
+
+			<!--{/if}-->
+
 		</div>
-		<!--{#if showBackToTop}-->
-
-		<!--{/if}-->
-
-	</div>
-<!--	<div class='back-to-top-btn'>
-	<a
-		transition:fly={{ y: 200, duration: 2000 }}
-		href={'#'}
-		class='back-to-top-btn'
-		on:click={(y = 0)}>Back to top</a
-	>
-</div>-->
-	<a class='back-to-top-btn'
-		 href={'#'}
-		 on:click={(y = 0)}>Back to top</a
-	>
+<!--	</div>-->
+	<!--	<div class='back-to-top-btn'>
+		<a
+			transition:fly={{ y: 200, duration: 2000 }}
+			href={'#'}
+			class='back-to-top-btn'
+			on:click={(y = 0)}>Back to top</a
+		>
+	</div>-->
+	{#if showBackToTop}
+		<a class='back-to-top-btn'
+			 href={'#'}
+			 on:click={(y = 0)}>Back to top</a
+		>{/if}
 	<div class='bottomseparator'>
 		<img src={bottomseparator} alt='bottomseparator'>
 	</div>
@@ -142,6 +149,7 @@
 
 <style lang='scss'>
   main {
+
     background: url(/static/assets/images/bgseamless.webp) no-repeat center center fixed;
     background-size: cover;
     width: 100vw;
@@ -166,11 +174,18 @@
   .separator {
     position: relative;
     bottom: 0;
-    width: 100%;
+    //width: 100%;
+    margin-top: -1em;
 
     img {
       object-fit: cover;
+
     }
+		img:last-child{
+      //object-fit: scale-down;
+
+      margin-top:-3%;
+		}
   }
 
   .logo-container-static {
@@ -226,11 +241,10 @@
     //}
   }
 
-
-  .msg-banner {
-    background: #373c62 url(/static/assets/images/border_messages.webp) no-repeat;
-    background-size: cover;
-    width: 100vw;
+  .msg-banner-container {
+    //background: #373c62 url(/static/assets/images/border_messages.webp) no-repeat;
+    //background-size: cover;
+    width: 100%;
     height: 20vh;
 
     h1 {
@@ -240,6 +254,15 @@
 
     }
   }
+  .msg-banner{
+		position:relative;
+		top:0;
+width:100%;
+		img{
+object-fit: contain;
+		}
+  }
+
 
   .fanart-filter {
     align-self: end;
@@ -253,7 +276,14 @@
   }
 
 
+  .content-bg {
+    background: url(/static/assets/images/bgseamless.webp) no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+  }
+
   .content {
+
     min-width: 90vw;
     max-width: 90%;
     padding-top: 5em;
@@ -293,12 +323,14 @@
   }
 
   .back-to-top-btn {
-    //position: sticky;
-    //bottom: 1%;
-    //left: 1%;
     text-align: center;
-    position: relative;
-		bottom:50%;
+    bottom: 50%;
+    position: fixed;
+    bottom: 4em;
+    right: 1em;
+    background: white;
+    padding: 1em;
+    border-radius: 1em;
   }
 
   @keyframes -global-fade-in {
