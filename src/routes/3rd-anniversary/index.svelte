@@ -9,6 +9,7 @@
 	import separator from '/static/assets/images/separator.webp';
 	import messagebanner from '/static/assets/images/border_messages.webp';
 	import bottomseparator from '/static/assets/images/bottom_credits.webp';
+	import videoframe from '/static/assets/images/videoframe.webp';
 
 	export async function load({ fetch })
 	{
@@ -27,6 +28,7 @@
 	import ThirdAnniversaryCredits from '$lib/components/ThirdAnniversaryCredits.svelte';
 	import Logo from '$lib/components/Logo.svelte';
 	import AudioPlayer from '$lib/components/AudioPlayer.svelte';
+	import { onMount } from 'svelte';
 
 	export let texts;
 
@@ -40,13 +42,58 @@
 	let y;
 	let showBackToTop = false;
 	$: showBackToTop = y > innerHeight + 60;
+
+
+	/*onMount(  () => {
+
+		// 2. This code loads the IFrame Player API code asynchronously.
+		var tag = document.createElement('script');
+		tag.src = "https://www.youtube.com/iframe_api";
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+		// 3. This function creates an <iframe> (and YouTube player)
+		//    after the API code downloads.
+		var player;
+		function onYouTubeIframeAPIReady() {
+			player = new YT.Player('player', {
+				height: '480',
+				width: '852',
+				videoId: 'IQ5dSwqSv3s',
+				events: {
+					'onReady': onPlayerReady,
+					'onStateChange': onPlayerStateChange
+				}
+			});
+		}
+
+		// 4. The API will call this function when the video player is ready.
+		function onPlayerReady(event) {
+			alert("Video Ready!");
+			event.target.playVideo(); // You can omit this to prevent the video starting as soon as it loads.
+		}
+
+		// 5. The API calls this function when the player's state changes.
+		//    The function indicates that when playing a video (state=1),
+		//    the player should play for six seconds and then stop.
+		var done = false;
+		function onPlayerStateChange(event) {
+			if (event.data == YT.PlayerState.PLAYING && !done) {
+				setTimeout(stopVideo, 6000);
+				done = true;
+			}
+		}
+		function stopVideo() {
+			player.stopVideo();
+		}
+	});
+*/
+
 </script>
 
 <svelte:head>
 	<title>{$LL.THIRD.TITLE()}</title>
 	<meta name='description' content={$LL.THIRD.META_DESC()} />
 </svelte:head>
-
 <svelte:window bind:innerHeight bind:scrollY={y} />
 
 <Logo />
@@ -65,18 +112,20 @@
 		<div class='logo-container-static'>
 			<img src={logoStatic} alt='Subatomos 3rd Anniversary Project'>
 		</div>
-		<div class='video-container'>
-			<iframe
-				allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-				allowfullscreen
-				frameborder='0'
-				height='480'
-				src='https://www.youtube.com/embed/IQ5dSwqSv3s'
-				title='YouTube video player'
-				width='852'
-			/>
+		<div class='video-frame'>
+			<img src={videoframe} alt='video frame' style='opacity:0'>
+			<div class='video-container'>
+				<iframe
+					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+					allowfullscreen
+					frameborder='0'
+					height='480'
+					src='https://www.youtube.com/embed/IQ5dSwqSv3s'
+					title='YouTube video player'
+					width='852'
+				/>
+			</div>
 		</div>
-
 	</div>
 	<div class='separator'>
 		<div class='msg-banner-container'>
@@ -139,10 +188,10 @@
 	{#if showBackToTop}
 		<a class='back-to-top-btn'
 			 href={'#'}
-			 on:click={(y = 0)}>Back to top</a		>
+			 on:click={(y = 0)}>Back to top</a>
 	{/if}
 	<div class='music-btn'>
-		<AudioPlayer/>
+		<AudioPlayer />
 	</div>
 	<div class='bottomseparator'>
 		<img src={bottomseparator} alt='bottomseparator'>
@@ -224,11 +273,25 @@
     border-width: 2px 2px 2px 2px;
   }
 
+  .video-frame {
+    position: absolute;
+    top: 3%;
+    right: 0%;
+    background: url("/static/assets/images/videoframe.webp") no-repeat;
+    background-size: contain;
+
+
+    img {
+      width: 80vw;
+      height: 85vh;
+    }
+  }
+
   .video-container {
     position: absolute;
     border: solid white 4px;
     right: 5%;
-    top: 28%;
+    top: 22%;
     box-shadow: 5px 5px 5px rgb(0 0 0 / 0.4);
 
     //position: relative;
@@ -343,7 +406,7 @@
     border-radius: 1em;
   }
 
-	.music-btn {
+  .music-btn {
     text-align: center;
     bottom: 50%;
     position: fixed;
