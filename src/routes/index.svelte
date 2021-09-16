@@ -286,6 +286,7 @@
     bottom: 5%;
     left: 5%;
     //overflow:hidden;
+		z-index: 204;
   }
 
   .subatomo-logo {
@@ -339,6 +340,7 @@
       bottom: 5%;
       left: 5%;
       z-index: 10000;
+      margin-top:2em;
     }
     .subaru-logo {
       width: 100%;
@@ -372,6 +374,7 @@
       height: 75vh;
       width: 100vw;
       z-index: 100;
+			margin-top:30vh;
     }
     .nav {
 
