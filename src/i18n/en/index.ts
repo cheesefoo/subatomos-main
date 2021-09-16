@@ -30,6 +30,7 @@ const en: BaseTranslation = {
 		ANIMATION: 'Animation',
 		MESSAGES: 'Messages & Fanart',
 		FANART_ONLY: 'Show/hide only fanart',
+		BACK_TO_TOP: 'Back to top',
 		A: {
 			ONE: 'Original Outfit',
 			TWO: 'School Uniform Style Idol',

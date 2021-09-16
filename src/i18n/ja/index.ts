@@ -30,6 +30,7 @@ const ja: Translation = {
 		MESSAGES: 'メッセージ＆ファンアート',
 		ANIMATION: 'アニメーション',
 		FANART_ONLY: 'ファンアート付きのみを表示する',
+		BACK_TO_TOP: 'トップに戻る',
 		A: {
 			ONE: '初期衣装',
 			TWO: 'アイドル衣装 ',
