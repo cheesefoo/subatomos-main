@@ -322,7 +322,11 @@ We made a video for you to celebrate!!!'
   }*/
 
 	.arrow{
+    //position: relative;
 
+    //text-align: center;
+    //flex: 1 1 100%;
+    //flex: 1 1 20%;
     animation: bounce 2s infinite;
 
     img {

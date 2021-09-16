@@ -107,6 +107,15 @@
 			</a>
 		</div>
 	</div>
+	<style>
+    #main.active .subaru-logo {
+        opacity: 0;
+        left:100vw;
+    }
+    #main.active .nav {
+        max-height: 100vh;
+    }
+</style>
 	<div class='nav'>
 		<!--	<div class='nav' class:active={dropdownActive} on:click={onHamburger}>-->
 		<div class='third'>
@@ -321,6 +330,8 @@
     }
     .subaru-logo {
       width: 100%;
+      position:relative;
+			transition:0.5s;
 
       img {
         object-fit: contain;
@@ -380,10 +391,10 @@
     .active {
       max-height: 100vh !important;
     }
-    main.active .subaru-logo {
+    #main.active .subaru-logo {
       opacity: 0;
     }
-    main.active .nav {
+    #main.active .nav {
       max-height: 100vh;
     }
     h4 {
