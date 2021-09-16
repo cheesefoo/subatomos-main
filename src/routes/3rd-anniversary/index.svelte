@@ -7,7 +7,8 @@
 
 	import logoStatic from '/static/assets/images/logo.png';
 	import separator from '/static/assets/images/separator.webp';
-	import messagebanner from '/static/assets/images/border_messages.webp';
+	import messagebanner from '/static/assets/images/border_messages.png';
+	import messagebannermobile from '/static/assets/images/border_messages_mobile.png';
 	import bottomseparator from '/static/assets/images/bottom_credits.webp';
 	import videoframe from '/static/assets/images/videoframe.png';
 	import metaimg from '/static/assets/images/3rdanniversarylogo.png';
@@ -30,6 +31,7 @@
 	import Logo from '$lib/components/Logo.svelte';
 	import AudioPlayer from '$lib/components/AudioPlayer.svelte';
 	import { onMount } from 'svelte';
+	import { media } from '$lib/stores/stores';
 
 	export let texts;
 
@@ -87,7 +89,7 @@
 		}
 	});
 */
-	function backToTop(){
+	function backToTop() {
 
 		document.body.scrollIntoView();
 	}
@@ -162,15 +164,19 @@ We made a video for you to celebrate!!!'
 	</div>
 	<div class='separator'>
 		<div class='msg-banner-container'>
-			<h1>{$LL.THIRD.MESSAGES()}</h1>
-			<div class='fanart-filter'>
-				<label
-				><input type='checkbox' bind:checked={hideMessages} /> {$LL.THIRD.FANART_ONLY()}</label
-				>
-			</div>
+			<div class='fanart-filter-area' on:click={filterFanarts}></div>
+			<!--<h1>{$LL.THIRD.MESSAGES()}</h1>
+			<div class='fanart-filter' >
+				<label><input type='checkbox' bind:checked={hideMessages} /> {$LL.THIRD.FANART_ONLY()}</label>
+			</div>-->
 		</div>
 		<img src={separator} alt='separator' />
-		<img src={messagebanner} alt='messages banner' />
+		{#if $media.small}
+			<img src={messagebannermobile} alt='messages banner' class:filtered={hideMessages} />
+
+		{:else}
+			<img src={messagebanner} alt='messages banner' class:filtered={hideMessages} />
+		{/if}
 	</div>
 
 	<!--	<div class='content-bg'>-->
@@ -354,6 +360,16 @@ We made a video for you to celebrate!!!'
     }
   }
 
+  .fanart-filter-area {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    width: 10vw;
+    height: 7vh;
+    cursor: pointer;
+    z-index: 9999;
+  }
+
   .fanart-filter {
     align-self: end;
     text-align: end;
@@ -363,6 +379,10 @@ We made a video for you to celebrate!!!'
     label {
       color: white;
     }
+  }
+
+  .filtered {
+    filter: invert(100%);
   }
 
   .content-bg {
@@ -442,22 +462,6 @@ We made a video for you to celebrate!!!'
       column-count: 1;
     }
 
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 */
-      height: 0;
-
-      iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-    }
-    .msg-banner {
-      margin-top: 20%;
-    }
   }
 
   @media screen and (min-width: 850px) and (max-width: 1024px) {

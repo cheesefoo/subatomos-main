@@ -5,7 +5,7 @@ const credits = {
 		name: 'Eleos',
 		url: 'https://twitter.com/3L30S',
 		sns2: 'yt',
-		url2: 'https://www.youtube.com/c/D0Nimations/featured',
+		url2: 'https://www.youtube.com/c/D0Nimations',
 		avatar: 'eleos.webp'
 	},
 	ani: { name: 'Ani.Minhton', url: 'https://twitter.com/Keru_nk', avatar: 'ani.webp' },
