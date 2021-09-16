@@ -128,7 +128,7 @@ We made a video for you to celebrate!!!"
 		content="スバル3周年おめでとう！！！
 We made a video for you to celebrate!!!"
 	/>
-	<meta property="twitter:image" content="/assets/images/3rdanniversarylogo.jpg" />
+	<meta property="twitter:image" content="https://subatomos.com/3rd-anniversary/meta.jpg" />
 </svelte:head>
 <svelte:window bind:innerHeight bind:scrollY={y} />
 
