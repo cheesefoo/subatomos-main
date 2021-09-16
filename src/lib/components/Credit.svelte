@@ -71,6 +71,9 @@
 			color: $chromeblue;
 			font-size: 0.9em;
 		}
+    .credit{
+      width:95%;
+    }
 	}
 
 	@media screen and (min-width: 850px) and (max-width: 1024px) {

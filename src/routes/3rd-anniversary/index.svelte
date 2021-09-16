@@ -138,9 +138,11 @@ We made a video for you to celebrate!!!'
 		<Fa icon={faArrowLeft} />
 	</a>
 </div>
+<!--
 <div class='language-select'>
 	<LanguageSelect />
 </div>
+-->
 
 <main>
 	<div class='top'>
@@ -382,7 +384,7 @@ We made a video for you to celebrate!!!'
   }
 
   .filtered {
-    filter: invert(100%);
+    filter: invert(10%);
   }
 
   .content-bg {
@@ -457,10 +459,62 @@ We made a video for you to celebrate!!!'
     }
   }
 
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+  }
+
   @media screen and (max-width: 849px) {
+
+    .top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      background: #373c62 url(/static/assets/images/top_bg.webp) no-repeat;
+      background-size: cover;
+      width: 100vw;
+      height: auto;
+      //height: 80vh;
+      padding: 1em;
+      align-content: flex-start;
+      padding-top:6vh;
+    }
+
+    .logo-container-static {
+      text-align: center;
+      flex: 1 1 100%;
+    }
+
+    .video-frame{
+      flex:1 1 100%;
+      margin-top:-10vh;
+    }
+
+
+    .video-container {
+      position: absolute;
+      bottom: 12%;
+      left: 12%;
+      width: 65vw;
+      height: 40vw;
+    }
     .messages-container {
       column-count: 1;
     }
+
+		.content{
+			padding-top:0;
+		}
+		.music-btn{
+      text-align: center;
+      bottom: 50%;
+      position: fixed;
+      top: 1em;
+      right: 1em;
+      zoom: 0.5;
+		}
 
   }
 

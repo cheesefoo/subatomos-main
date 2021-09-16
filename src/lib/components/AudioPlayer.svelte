@@ -46,4 +46,16 @@
 		background-size: contain;
 		cursor: pointer;
 	}
+
+  @media screen and (max-width: 849px) {
+      div  {
+          width: 30vw;
+          height: 10vh;
+          background-repeat: no-repeat;
+          background-size: contain;
+          cursor: pointer;
+          background-position: left bottom;
+      }
+	}
+
 </style>
