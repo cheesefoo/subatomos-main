@@ -36,10 +36,10 @@
 	)
 </script>
 
-<div style={img} on:click={togglePause} />
+<div class='volume' style={img} on:click={togglePause} />
 
 <style>
-	div {
+	.volume {
 		width: 5vw;
 		height: 5vh;
 		background-repeat: no-repeat;
@@ -48,13 +48,14 @@
 	}
 
   @media screen and (max-width: 849px) {
-      div  {
+      .volume  {
           width: 30vw;
           height: 10vh;
           background-repeat: no-repeat;
           background-size: contain;
           cursor: pointer;
           background-position: left bottom;
+          float: right;
       }
 	}
 

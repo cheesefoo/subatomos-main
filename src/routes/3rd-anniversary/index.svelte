@@ -150,6 +150,11 @@ We made a video for you to celebrate!!!'
 	<div class='top'>
 		<div class='logo-container-static'>
 			<img src={logoStatic} alt='Subatomos 3rd Anniversary Project' />
+			{#if !$media.small}
+				<div class='arrow'>
+					<img src={arrow} alt='scroll down'>
+				</div>
+			{/if}
 		</div>
 		<div class='video-frame'>
 			<img src={videoframe} alt='video frame' style='opacity:0' />
@@ -165,11 +170,7 @@ We made a video for you to celebrate!!!'
 				/>
 			</div>
 		</div>
-		{#if !$media.small}
-			<div class='arrow'>
-				<img src={arrow} alt='scroll down'>
-			</div>
-		{/if}
+
 	</div>
 	<div class='separator'>
 		<div class='msg-banner-container'>
@@ -233,6 +234,8 @@ We made a video for you to celebrate!!!'
 	{#if showBackToTop}
 		<a class='back-to-top-btn' href={'#'} on:click={backToTop}>{$LL.THIRD.BACK_TO_TOP()}</a>
 	{/if}
+
+
 	<div class='music-btn'>
 		<AudioPlayer />
 	</div>
@@ -312,27 +315,28 @@ We made a video for you to celebrate!!!'
     top: 3vh;
   }
 
-/*  .language-select {
-    color: black;
-    position: absolute;
-    right: 3vw;
-    top: 3vh;
-    border: black solid;
-    border-width: 2px 2px 2px 2px;
-  }*/
+  /*  .language-select {
+			color: black;
+			position: absolute;
+			right: 3vw;
+			top: 3vh;
+			border: black solid;
+			border-width: 2px 2px 2px 2px;
+		}*/
 
-	.arrow{
+  .arrow {
     //position: relative;
 
     //text-align: center;
     //flex: 1 1 100%;
     //flex: 1 1 20%;
     animation: bounce 2s infinite;
+    margin-top: 10vh;
 
     img {
       width: 100%;
     }
-	}
+  }
 
   .video-frame {
     background: url(/static/assets/images/videoframe.webp) no-repeat;
@@ -492,6 +496,15 @@ We made a video for you to celebrate!!!'
   }
 
   @media screen and (max-width: 849px) {
+    .fanart-filter-area {
+      position: absolute;
+      right: 5%;
+      bottom: -10%;
+      width: 15vw;
+      height: 5vh;
+      cursor: pointer;
+      z-index: 9999;
+    }
 
     .top {
       display: flex;
@@ -538,8 +551,11 @@ We made a video for you to celebrate!!!'
       bottom: 50%;
       position: fixed;
       top: 1em;
-      right: 1em;
-      zoom: 0.5;
+      right: 1em !important;
+      zoom: .5;
+      height: 10vh;
+      right: initial;
+      text-align: right;
     }
 
   }

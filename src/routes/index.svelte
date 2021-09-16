@@ -99,7 +99,7 @@
 		<div class='subaru-socials'>
 			<a href='https://www.youtube.com/channel/UCvzGlP9oQwU--Y0r9id_jnA' target='_blank'>
 				<Hoverable let:hovering={active}>
-					<Fa icon={faYoutube} size={sizeSuba} color={youtubered} fw pulse={active} />
+					<Fa icon={faYoutube} size={sizeSuba} color={youtubered} fw   />
 				</Hoverable>
 			</a>
 			<a href='https://twitter.com/oozorasubaru' target='_blank'>
@@ -108,13 +108,25 @@
 		</div>
 	</div>
 	<style>
-    #main.active .subaru-logo {
-        opacity: 0;
-        left:100vw;
-    }
+      .subaru-logo{position:relative; transition:0.5s;}
+
+      #main.active .subaru-logo {
+          opacity: 0;
+          left:100vw;
+      }
+
     #main.active .nav {
         max-height: 100vh;
     }
+
+      #main.active .subaru-logo-group {
+          position:relative;
+          opacity:0;
+          transition:0.5s;
+      }
+      #main.active .subaru-logo-group {
+          left: 100vw;
+      }
 </style>
 	<div class='nav'>
 		<!--	<div class='nav' class:active={dropdownActive} on:click={onHamburger}>-->
