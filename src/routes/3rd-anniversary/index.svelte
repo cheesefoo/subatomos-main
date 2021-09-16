@@ -1,18 +1,19 @@
-<script context="module" lang="ts">
+<script context='module' lang='ts'>
 	import LL from '/src/i18n/i18n-svelte';
 	import CongratsMessageBox from '$lib/components/CongratsMessageBox.svelte';
 	import Fa from 'svelte-fa';
 	import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 	import Saos from 'saos';
 
-	import logoStatic from '/static/assets/images/logo.webp';
+	import logoStatic from '/static/assets/images/logo.png';
 	import separator from '/static/assets/images/separator.webp';
 	import messagebanner from '/static/assets/images/border_messages.webp';
 	import bottomseparator from '/static/assets/images/bottom_credits.webp';
-	import videoframe from '/static/assets/images/videoframe.webp';
+	import videoframe from '/static/assets/images/videoframe.png';
 	import metaimg from '/static/assets/images/3rdanniversarylogo.png';
 
-	export async function load({ fetch }) {
+	export async function load({ fetch })
+	{
 		const res = await fetch('/congrats-messages');
 		const texts = await res.json();
 		if (res.ok) return { props: { texts: texts } };
@@ -38,9 +39,9 @@
 		hideMessages = !hideMessages;
 	}
 
-	let innerHeight;
-	let y;
-	let showBackToTop = false;
+	let innerHeight = 0;
+	let y = 0;
+	let showBackToTop;
 	$: showBackToTop = y > innerHeight + 60;
 
 	/*onMount(  () => {
@@ -86,93 +87,97 @@
 		}
 	});
 */
+	function backToTop(){
+
+		document.body.scrollIntoView();
+	}
 </script>
 
 <svelte:head>
 	<!-- Primary Meta Tags -->
-	<title>Oozora Subaru, congratulations on your 3rd anniversary!</title>
-	<meta name="title" content="Oozora Subaru, congratulations on your 3rd anniversary!" />
+	<title>{$LL.THIRD.TITLE()}</title>
+	<meta name='title' content='Oozora Subaru, congratulations on your 3rd anniversary!' />
 	<meta
-		name="description"
-		content="スバル3周年おめでとう！！！
-We made a video for you to celebrate!!!"
+		name='description'
+		content='スバル3周年おめでとう！！！
+We made a video for you to celebrate!!!'
 	/>
 
 	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://subatomos.com/3rd-anniversary" />
-	<meta property="og:title" content="Oozora Subaru, congratulations on your 3rd anniversary!" />
+	<meta property='og:type' content='website' />
+	<meta property='og:url' content='https://subatomos.com/3rd-anniversary' />
+	<meta property='og:title' content='Oozora Subaru, congratulations on your 3rd anniversary!' />
 	<meta
-		property="og:description"
-		content="スバル3周年おめでとう！！！
-We made a video for you to celebrate!!!"
+		property='og:description'
+		content='スバル3周年おめでとう！！！
+We made a video for you to celebrate!!!'
 	/>
-	<meta property="og:image" content={metaimg} />
+	<meta property='og:image' content={metaimg} />
 
 	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://subatomos.com/3rd-anniversary" />
+	<meta property='twitter:card' content='summary_large_image' />
+	<meta property='twitter:url' content='https://subatomos.com/3rd-anniversary' />
 	<meta
-		property="twitter:title"
-		content="Oozora Subaru, congratulations on your 3rd anniversary!"
+		property='twitter:title'
+		content='Oozora Subaru, congratulations on your 3rd anniversary!'
 	/>
 	<meta
-		property="twitter:description"
-		content="スバル3周年おめでとう！！！
-We made a video for you to celebrate!!!"
+		property='twitter:description'
+		content='スバル3周年おめでとう！！！
+We made a video for you to celebrate!!!'
 	/>
-	<meta property="twitter:image" content={metaimg} />
+	<meta property='twitter:image' content={metaimg} />
 </svelte:head>
 <svelte:window bind:innerHeight bind:scrollY={y} />
 
 <Logo />
-<div class="back-btn">
-	<a sveltekit:prefetch href="/">
+<div class='back-btn'>
+	<a sveltekit:prefetch href='/'>
 		<Fa icon={faArrowLeft} />
 	</a>
 </div>
-<div class="language-select">
+<div class='language-select'>
 	<LanguageSelect />
 </div>
 
 <main>
-	<div class="top">
-		<div class="logo-container-static">
-			<img src={logoStatic} alt="Subatomos 3rd Anniversary Project" />
+	<div class='top'>
+		<div class='logo-container-static'>
+			<img src={logoStatic} alt='Subatomos 3rd Anniversary Project' />
 		</div>
-		<div class="video-frame">
-			<img src={videoframe} alt="video frame" style="opacity:0" />
-			<div class="video-container">
+		<div class='video-frame'>
+			<img src={videoframe} alt='video frame' style='opacity:0' />
+			<div class='video-container'>
 				<iframe
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
 					allowfullscreen
-					frameborder="0"
-					height="480"
-					src="https://www.youtube.com/embed/IQ5dSwqSv3s"
-					title="YouTube video player"
-					width="852"
+					frameborder='0'
+					height='480'
+					src='https://www.youtube.com/embed/IQ5dSwqSv3s'
+					title='YouTube video player'
+					width='852'
 				/>
 			</div>
 		</div>
 	</div>
-	<div class="separator">
-		<div class="msg-banner-container">
+	<div class='separator'>
+		<div class='msg-banner-container'>
 			<h1>{$LL.THIRD.MESSAGES()}</h1>
-			<div class="fanart-filter">
+			<div class='fanart-filter'>
 				<label
-					><input type="checkbox" bind:checked={hideMessages} /> {$LL.THIRD.FANART_ONLY()}</label
+				><input type='checkbox' bind:checked={hideMessages} /> {$LL.THIRD.FANART_ONLY()}</label
 				>
 			</div>
 		</div>
-		<img src={separator} alt="separator" />
-		<img src={messagebanner} alt="messages banner" />
+		<img src={separator} alt='separator' />
+		<img src={messagebanner} alt='messages banner' />
 	</div>
 
 	<!--	<div class='content-bg'>-->
-	<div class="content">
+	<div class='content'>
 		<!--		<h3>{$LL.THIRD.CONGRATS()}</h3>-->
 
-		<div class="messages-container">
+		<div class='messages-container'>
 			{#each texts as { name, url, message, src }, i}
 				{#if (hideMessages && src !== undefined) || !hideMessages}
 					<Saos
@@ -180,7 +185,7 @@ We made a video for you to celebrate!!!"
 						bottom={160}
 						animation={'fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}
 					>
-						<div class="message-box">
+						<div class='message-box'>
 							{#if src === undefined}
 								{#if (i + 1) % 2 === 0}
 									<CongratsMessageBox {name} {message} yellow={true} />
@@ -211,252 +216,253 @@ We made a video for you to celebrate!!!"
 		>
 	</div>-->
 	{#if showBackToTop}
-		<a class="back-to-top-btn" href={'#'} on:click={(y = 0)}>Back to top</a>
+		<a class='back-to-top-btn' href={'#'} on:click={backToTop}>{$LL.THIRD.BACK_TO_TOP()}</a>
 	{/if}
-	<div class="music-btn">
+	<div class='music-btn'>
 		<AudioPlayer />
 	</div>
-	<div class="bottomseparator">
-		<img src={bottomseparator} alt="bottomseparator" />
+	<div class='bottomseparator'>
+		<img src={bottomseparator} alt='bottomseparator' />
 	</div>
 	<ThirdAnniversaryCredits />
 </main>
 
-<style lang="scss">
-	main {
-		background: url(/static/assets/images/bgseamless.webp) no-repeat center center fixed;
-		background-size: cover;
-		width: 100vw;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		justify-items: center;
-		display: flex;
-		overflow: hidden;
-	}
+<style lang='scss'>
+  main {
+    background: url(/static/assets/images/bgseamless.webp) no-repeat center center fixed;
+    background-size: cover;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-items: center;
+    display: flex;
+    overflow: hidden;
+  }
 
-	.top * {
-		box-sizing: border-box;
-	}
+  .top * {
+    box-sizing: border-box;
+  }
 
-	.top {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		align-items: flex-start;
-		padding-top: 10vh;
-		background: #373c62 url(/static/assets/images/top_bg.webp) no-repeat;
-		background-size: 100%;
-		width: 100vw;
-		height: 100vh;
+  .top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 10vh;
+    background: #373c62 url(/static/assets/images/top_bg.webp) no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
 
-		padding: 3em;
-	}
+    padding: 3em;
+  }
 
-	.separator {
-		position: relative;
-		bottom: 0;
-		//width: 100%;
-		margin-top: -1em;
+  .separator {
+    position: relative;
+    bottom: 0;
+    //width: 100%;
+    margin-top: -1em;
 
-		img {
-			object-fit: cover;
-			width: 100%;
-		}
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
 
-		img:last-child {
-			//object-fit: scale-down;
+    img:last-child {
+      //object-fit: scale-down;
 
-			margin-top: -2em;
-			//box-shadow: 5px 5px 5px rgb(0 0 0 / 0.4);
-		}
-	}
+      margin-top: -2em;
+      //box-shadow: 5px 5px 5px rgb(0 0 0 / 0.4);
+    }
+  }
 
-	.logo-container-static {
-		text-align: center;
-		flex: 1 1 40%;
+  .logo-container-static {
+    text-align: center;
+    flex: 1 1 40%;
 
-		img {
-			width: 80%;
-		}
-	}
+    img {
+      width: 80%;
+    }
+  }
 
-	h3 {
-		text-align: center;
-	}
+  h3 {
+    text-align: center;
+  }
 
-	.back-btn {
-		font-size: 3em;
-		color: black;
-		position: absolute;
-		left: 3vw;
-		top: 3vh;
-	}
+  .back-btn {
+    font-size: 3em;
+    color: black;
+    position: absolute;
+    left: 3vw;
+    top: 3vh;
+  }
 
-	.language-select {
-		color: black;
-		position: absolute;
-		right: 3vw;
-		top: 3vh;
-		border: black solid;
-		border-width: 2px 2px 2px 2px;
-	}
+  .language-select {
+    color: black;
+    position: absolute;
+    right: 3vw;
+    top: 3vh;
+    border: black solid;
+    border-width: 2px 2px 2px 2px;
+  }
 
-	.video-frame {
-		background: url(/static/assets/images/videoframe.webp) no-repeat;
-		background-size: auto 95%;
-		flex: 1 1 60%;
-		position: relative;
-		background-position: center;
+  .video-frame {
+    background: url(/static/assets/images/videoframe.webp) no-repeat;
+    background-size: auto 95%;
+    flex: 1 1 60%;
+    position: relative;
+    background-position: center;
 
-		img {
-			width: 100%;
-		}
-	}
+    img {
+      width: 100%;
+    }
+  }
 
-	.video-container {
-		position: absolute;
-		bottom: 12%;
-		left: 12%;
-		width: 40vw;
-		height: 24vw;
-		iframe {
-			width: 100%;
-			height: 100%;
-		}
-	}
+  .video-container {
+    position: absolute;
+    bottom: 12%;
+    left: 12%;
+    width: 40vw;
+    height: 24vw;
 
-	.msg-banner-container {
-		width: 100%;
-		height: 20vh;
-		position: absolute;
-		bottom: 2em;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
 
-		h1 {
-			padding-top: 2em;
-			margin-bottom: -0.5em;
-			color: white;
-		}
-	}
+  .msg-banner-container {
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    bottom: 2em;
 
-	.msg-banner {
-		position: relative;
-		top: 0;
-		width: 100%;
+    h1 {
+      padding-top: 2em;
+      margin-bottom: -0.5em;
+      color: white;
+    }
+  }
 
-		img {
-			object-fit: contain;
-		}
-	}
+  .msg-banner {
+    position: relative;
+    top: 0;
+    width: 100%;
 
-	.fanart-filter {
-		align-self: end;
-		text-align: end;
+    img {
+      object-fit: contain;
+    }
+  }
 
-		padding: 0 8ch 0 0;
+  .fanart-filter {
+    align-self: end;
+    text-align: end;
 
-		label {
-			color: white;
-		}
-	}
+    padding: 0 8ch 0 0;
 
-	.content-bg {
-		background: url(/static/assets/images/bgseamless.webp) no-repeat center center fixed;
-		background-size: cover;
-		width: 100%;
-	}
+    label {
+      color: white;
+    }
+  }
 
-	.content {
-		min-width: 90vw;
-		max-width: 90%;
-		padding-top: 5em;
-	}
+  .content-bg {
+    background: url(/static/assets/images/bgseamless.webp) no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+  }
 
-	.message-box {
-		width: 100%;
-		display: inline-block;
-		padding: 1em 0 1em 0;
-	}
+  .content {
+    min-width: 90vw;
+    max-width: 90%;
+    padding-top: 5em;
+  }
 
-	.messages-container {
-		display: block;
-		column-count: 3;
-		padding: 1em 0 1em 0;
-		//min-width: 480px;
-		width: 100%;
-		overflow: visible;
-		box-sizing: border-box;
+  .message-box {
+    width: 100%;
+    display: inline-block;
+    padding: 1em 0 1em 0;
+  }
 
-		.message-box {
-			padding-top: 2em;
-			padding-bottom: 0.8em;
-		}
-	}
+  .messages-container {
+    display: block;
+    column-count: 3;
+    padding: 1em 0 1em 0;
+    //min-width: 480px;
+    width: 100%;
+    overflow: visible;
+    box-sizing: border-box;
 
-	.bottomseparator {
-		//position: relative;
-		//width:100%;
+    .message-box {
+      padding-top: 2em;
+      padding-bottom: 0.8em;
+    }
+  }
 
-		img {
-			//object-fit: contain;
-			width: 100%;
-			height: 100%;
-		}
-	}
+  .bottomseparator {
+    //position: relative;
+    //width:100%;
 
-	.back-to-top-btn {
-		text-align: center;
-		bottom: 50%;
-		position: fixed;
-		bottom: 4em;
-		right: 1em;
-		background: white;
-		padding: 1em;
-		border-radius: 1em;
-	}
+    img {
+      //object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
 
-	.music-btn {
-		text-align: center;
-		bottom: 50%;
-		position: fixed;
-		bottom: 4em;
-		left: 1em;
-	}
+  .back-to-top-btn {
+    text-align: center;
+    bottom: 50%;
+    position: fixed;
+    bottom: 4em;
+    right: 1em;
+    background: white;
+    padding: 1em;
+    border-radius: 1em;
+  }
 
-	@keyframes -global-fade-in {
-		0% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
-	}
+  .music-btn {
+    text-align: center;
+    bottom: 50%;
+    position: fixed;
+    bottom: 4em;
+    left: 1em;
+  }
 
-	@media screen and (max-width: 849px) {
-		.messages-container {
-			column-count: 1;
-		}
+  @keyframes -global-fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
-		.video-container {
-			position: relative;
-			padding-bottom: 56.25%; /* 16:9 */
-			height: 0;
+  @media screen and (max-width: 849px) {
+    .messages-container {
+      column-count: 1;
+    }
 
-			iframe {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-			}
-		}
-		.msg-banner {
-			margin-top: 20%;
-		}
-	}
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
 
-	@media screen and (min-width: 850px) and (max-width: 1024px) {
-		.messages-container {
-			column-count: 2;
-		}
-	}
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .msg-banner {
+      margin-top: 20%;
+    }
+  }
+
+  @media screen and (min-width: 850px) and (max-width: 1024px) {
+    .messages-container {
+      column-count: 2;
+    }
+  }
 </style>
