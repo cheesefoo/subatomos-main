@@ -115,7 +115,7 @@ let fanart: Array<SubaFanart> = [
 	},
 	{
 		name: 'てんてん',
-		url: 'https://twitter.com/akaneten10.',
+		url: 'https://twitter.com/akaneten10',
 		message:
 			'スバルちゃん3周年おめでとうございます！スバルちゃんのトークが本当に面白くていつもたくさん笑わせてもらっています！これからも楽しい配信を楽しみにしてます！！',
 		src: 'てんてん @akaneten10.png'
