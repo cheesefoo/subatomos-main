@@ -131,7 +131,7 @@ We made a video for you to celebrate!!!"
 </svelte:head>
 <svelte:window bind:innerHeight bind:scrollY={y} />
 
-<Logo />
+<!--<Logo />-->
 <div class="back-btn">
 	<a sveltekit:prefetch href="/">
 		<Fa icon={faArrowLeft} />
