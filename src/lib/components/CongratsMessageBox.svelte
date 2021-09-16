@@ -138,7 +138,7 @@
 
 	$hrmargin: 4ch;
 	.box-inner {
-		margin: 2.7ch $hrmargin 0 $hrmargin;
+		margin: 2.9ch $hrmargin 0 $hrmargin;
 		max-width: 40ch;
 		position: relative;
 		z-index: 1;
@@ -163,11 +163,11 @@
 			white-space: nowrap;
 
 			&.yellow {
-				color: #a3504d;
+				color: #E07F79;
 			}
 
 			&.pink {
-				color: #f9d633;
+				color: #FFD4A0;
 			}
 		}
 
