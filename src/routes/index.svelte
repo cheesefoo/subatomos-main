@@ -25,6 +25,13 @@
 		// 	await initI18n($locale);
 		// 	console.log($locale);
 		// }
+		window.$('.nav').on('click', function(target) {
+			console.log(target);
+			if (window.$(target.target).hasClass('nav')) {
+				window.$('#main').toggleClass('active');
+			}
+		});
+
 		var sakura = new Sakura('.subaru', {
 			colors: [
 				{
@@ -62,14 +69,20 @@
 		dropdownActive = !dropdownActive;
 	}
 
-	onMount(async () => {
-		jQuery('.nav').on('click', function(target) {
-			if (document.querySelector(target.currentTarget).hasClass('nav')) {
-				jQuery('.nav').toggleClass('active');
-			}
-		});
-
-	});
+	/*
+		onMount(async () => {
+			/!*		jQuery('.nav').on('click', function(target) {
+						if (document.querySelector(target.currentTarget).hasClass('nav')) {
+							jQuery('.nav').toggleClass('active');
+						}
+					});*!/
+	/!*		window.$('.nav').on('click', function(target) {
+				console.log(target);
+				if (window.$(target.target).hasClass('nav')) {
+					window.$('.nav').toggleClass('active');
+				}
+			});*!/
+		});*/
 </script>
 
 <svelte:head>
@@ -293,11 +306,18 @@
   }
 
   @media screen and (max-width: 849px) {
+
+
+
+
     .subaru-logo-group {
       top: 1em;
       left: 1em;
       flex-direction: column;
-      z-index: 200;
+      z-index: 203;
+      bottom: 5%;
+      left: 5%;
+      z-index: 10000;
     }
     .subaru-logo {
       width: 100%;
@@ -315,11 +335,11 @@
       flex-direction: row;
       justify-content: flex-start;
       position: fixed;
-      z-index: 202;
+      z-index: 210;
       left: 1em;
-      zoom: 0.5;
+      zoom: .4;
       top: 1em;
-      width:50vw;
+      width: 50vw;
     }
     .subaru {
       max-height: 60%;
@@ -331,23 +351,18 @@
       z-index: 100;
     }
     .nav {
-      left: 5%;
-      top: 45%;
-      left: 5%;
-      /* top: 45%; /
-			position: fixed;
-			top: 0;
-			left: 0;
-			padding: 10px 20px;
-			/ height: 3em; */
-      width: 100%;
+
+      top: 0;
+      left: 0;
+      width: 100vw;
       box-sizing: border-box;
       background-color: #4c413d;
       overflow: hidden;
       max-height: 3em;
-      transition: 0.5s;
+      transition: .5s;
       z-index: 200;
-
+      position: fixed;
+      height: auto;
 
 
     }
@@ -359,14 +374,20 @@
       border-bottom: 5px solid #e0dacd;
       width: 40px;
       margin-left: 80vw;
-    }   .nav.active {
+      margin-top: 1em;
+    }
 
-          max-height: 90vh;
-        }
-
+    .active {
+      max-height: 100vh !important;
+    }
+    main.active .subaru-logo {
+      opacity: 0;
+    }
+    main.active .nav {
+      max-height: 100vh;
+    }
     h4 {
       font-size: 1.3em;
-      //max-width:20ch;
       word-break: keep-all;
       color: #e0dacd;
     }
