@@ -12,6 +12,9 @@
 	import bottomseparator from '/static/assets/images/bottom_credits.webp';
 	import videoframe from '/static/assets/images/videoframe.png';
 	import metaimg from '/static/assets/images/3rdanniversarylogo.jpg';
+	import metatwi from '/static/assets/images/meta.jpg';
+
+	import { baseURL } from '$lib/variables.ts'
 
 	import arrow from '/static/assets/images/scrolldown.png';
 
@@ -33,6 +36,7 @@
 	import AudioPlayer from '$lib/components/AudioPlayer.svelte';
 	import { onMount } from 'svelte';
 	import { media } from '$lib/stores/stores';
+	import TwitterSEO from '$lib/components/TwitterSEO.svelte';
 
 	export let texts;
 
@@ -47,49 +51,6 @@
 	let showBackToTop;
 	$: showBackToTop = y > innerHeight + 60;
 
-	/*onMount(  () => {
-
-		// 2. This code loads the IFrame Player API code asynchronously.
-		var tag = document.createElement('script');
-		tag.src = "https://www.youtube.com/iframe_api";
-		var firstScriptTag = document.getElementsByTagName('script')[0];
-		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-		// 3. This function creates an <iframe> (and YouTube player)
-		//    after the API code downloads.
-		var player;
-		function onYouTubeIframeAPIReady() {
-			player = new YT.Player('player', {
-				height: '480',
-				width: '852',
-				videoId: 'IQ5dSwqSv3s',
-				events: {
-					'onReady': onPlayerReady,
-					'onStateChange': onPlayerStateChange
-				}
-			});
-		}
-
-		// 4. The API will call this function when the video player is ready.
-		function onPlayerReady(event) {
-			alert("Video Ready!");
-			event.target.playVideo(); // You can omit this to prevent the video starting as soon as it loads.
-		}
-
-		// 5. The API calls this function when the player's state changes.
-		//    The function indicates that when playing a video (state=1),
-		//    the player should play for six seconds and then stop.
-		var done = false;
-		function onPlayerStateChange(event) {
-			if (event.data == YT.PlayerState.PLAYING && !done) {
-				setTimeout(stopVideo, 6000);
-				done = true;
-			}
-		}
-		function stopVideo() {
-			player.stopVideo();
-		}
-	});
-*/
 	function backToTop() {
 		document.body.scrollIntoView();
 	}
@@ -116,7 +77,6 @@ We made a video for you to celebrate!!!"
 	/>
 	<meta property="og:image" content={metaimg} />
 
-	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:url" content="https://subatomos.com/3rd-anniversary" />
 	<meta
@@ -128,8 +88,9 @@ We made a video for you to celebrate!!!"
 		content="スバル3周年おめでとう！！！
 We made a video for you to celebrate!!!"
 	/>
-	<meta property="twitter:image" content="https://subatomos.com/3rd-anniversary/meta.jpg" />
+	<meta property="twitter:image" content={`${baseURL}${metatwi}`}/>
 </svelte:head>
+<!--<TwitterSEO />-->
 <svelte:window bind:innerHeight bind:scrollY={y} />
 
 <!--<Logo />-->

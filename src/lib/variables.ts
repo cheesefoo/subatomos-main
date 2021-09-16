@@ -1,3 +1,1 @@
-export const variables = {
-	apiURL: import.meta.env.VITE_WP_API
-};
+export const	baseURL = import.meta.env.VITE_BASE_URL
