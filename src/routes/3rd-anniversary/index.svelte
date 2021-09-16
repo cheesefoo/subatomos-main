@@ -12,6 +12,7 @@
 	import bottomseparator from '/static/assets/images/bottom_credits.webp';
 	import videoframe from '/static/assets/images/videoframe.png';
 	import metaimg from '/static/assets/images/3rdanniversarylogo.png';
+	import arrow from '/static/assets/images/scrolldown.png';
 
 	export async function load({ fetch })
 	{
@@ -93,6 +94,7 @@
 
 		document.body.scrollIntoView();
 	}
+
 </script>
 
 <svelte:head>
@@ -163,6 +165,11 @@ We made a video for you to celebrate!!!'
 				/>
 			</div>
 		</div>
+		{#if !$media.small}
+			<div class='arrow'>
+				<img src={arrow} alt='scroll down'>
+			</div>
+		{/if}
 	</div>
 	<div class='separator'>
 		<div class='msg-banner-container'>
@@ -305,14 +312,23 @@ We made a video for you to celebrate!!!'
     top: 3vh;
   }
 
-  .language-select {
+/*  .language-select {
     color: black;
     position: absolute;
     right: 3vw;
     top: 3vh;
     border: black solid;
     border-width: 2px 2px 2px 2px;
-  }
+  }*/
+
+	.arrow{
+
+    animation: bounce 2s infinite;
+
+    img {
+      width: 100%;
+    }
+	}
 
   .video-frame {
     background: url(/static/assets/images/videoframe.webp) no-repeat;
@@ -460,9 +476,15 @@ We made a video for you to celebrate!!!'
   }
 
   @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-    40% {transform: translateY(-30px);}
-    60% {transform: translateY(-15px);}
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
   }
 
   @media screen and (max-width: 849px) {
@@ -479,7 +501,7 @@ We made a video for you to celebrate!!!'
       //height: 80vh;
       padding: 1em;
       align-content: flex-start;
-      padding-top:6vh;
+      padding-top: 6vh;
     }
 
     .logo-container-static {
@@ -487,9 +509,9 @@ We made a video for you to celebrate!!!'
       flex: 1 1 100%;
     }
 
-    .video-frame{
-      flex:1 1 100%;
-      margin-top:-10vh;
+    .video-frame {
+      flex: 1 1 100%;
+      margin-top: -10vh;
     }
 
 
@@ -504,17 +526,17 @@ We made a video for you to celebrate!!!'
       column-count: 1;
     }
 
-		.content{
-			padding-top:0;
-		}
-		.music-btn{
+    .content {
+      padding-top: 0;
+    }
+    .music-btn {
       text-align: center;
       bottom: 50%;
       position: fixed;
       top: 1em;
       right: 1em;
       zoom: 0.5;
-		}
+    }
 
   }
 
