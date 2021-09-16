@@ -341,7 +341,7 @@
       bottom: 5%;
       left: 5%;
       z-index: 10000;
-      margin-top:2em;
+      margin-top: 2vh;
     }
     .subaru-logo {
       width: 100%;
@@ -368,6 +368,7 @@
       width: 50vw;
     }
     .subaru {
+
       max-height: 60%;
       z-index: -1;
       overflow-x: hidden;
@@ -375,10 +376,9 @@
       height: 75vh;
       width: 100vw;
       z-index: 100;
-			margin-top:30vh;
-
-      position:fixed;
-      bottom:0 !important;
+      margin-top: 30vh;
+      position: fixed;
+      bottom: -5vh!important;
     }
     .nav {
 

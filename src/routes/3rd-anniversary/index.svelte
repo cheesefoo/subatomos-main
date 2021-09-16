@@ -170,7 +170,6 @@ We made a video for you to celebrate!!!'
 				/>
 			</div>
 		</div>
-
 	</div>
 	<div class='separator'>
 		<div class='msg-banner-container'>

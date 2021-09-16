@@ -19,26 +19,20 @@
 
 	export let paused: boolean = true;
 	$: img = paused ? mut : vol;
-	$: if (paused)
-	{
-		howl.mute(true);
-	}
-	$: if (!paused)
-	{
-		howl.mute(false);
-	}
 
+	$:
+	{
+		paused ? howl.pause() : howl.play();
+	}
 	function togglePause()
 	{
 		paused = !paused;
 	}
 
-	onMount(async () =>
+	onMount(() =>
 		{
-			if (!paused)
-			{
-				howl.play();
-			}
+
+			howl.load();
 		}
 	);
 </script>
