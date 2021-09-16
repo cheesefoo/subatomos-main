@@ -56,39 +56,54 @@
 		sizeSuba = '6x';
 		sizeSubatomo = '4x';
 	}
+	let dropdownActive;
+
+	function onHamburger() {
+		dropdownActive = !dropdownActive;
+	}
+
+	onMount(async () => {
+		jQuery('.nav').on('click', function(target) {
+			if (document.querySelector(target.currentTarget).hasClass('nav')) {
+				jQuery('.nav').toggleClass('active');
+			}
+		});
+
+	});
 </script>
 
 <svelte:head>
 	<title>{$LL.TITLE()}</title>
 
-	<meta name="description" content={$LL.HOME.META_DESC()} />
+	<meta name='description' content={$LL.HOME.META_DESC()} />
 </svelte:head>
 
-<main id="main">
-	<div class="subaru-logo-group">
-		<div class="subaru-logo">
-			<img src={official} alt="oozora subaru" />
+<main id='main'>
+	<div class='subaru-logo-group'>
+		<div class='subaru-logo'>
+			<img src={official} alt='oozora subaru' />
 		</div>
-		<div class="subaru-socials">
-			<a href="https://www.youtube.com/channel/UCvzGlP9oQwU--Y0r9id_jnA" target="_blank">
+		<div class='subaru-socials'>
+			<a href='https://www.youtube.com/channel/UCvzGlP9oQwU--Y0r9id_jnA' target='_blank'>
 				<Hoverable let:hovering={active}>
 					<Fa icon={faYoutube} size={sizeSuba} color={youtubered} fw pulse={active} />
 				</Hoverable>
 			</a>
-			<a href="https://twitter.com/oozorasubaru" target="_blank">
+			<a href='https://twitter.com/oozorasubaru' target='_blank'>
 				<Fa icon={faTwitter} size={sizeSuba} color={twitterblue} fw />
 			</a>
 		</div>
 	</div>
-	<div class="nav">
-		<div class="third">
-			<img src={third} alt="3rd anniversary" />
+	<div class='nav'>
+		<!--	<div class='nav' class:active={dropdownActive} on:click={onHamburger}>-->
+		<div class='third'>
+			<img src={third} alt='3rd anniversary' />
 
-			<a sveltekit:prefetch href="/3rd-anniversary"><h4>{$LL.HOME.THIRD_ANNIVERSARY()}</h4></a>
+			<a sveltekit:prefetch href='/3rd-anniversary'><h4>{$LL.HOME.THIRD_ANNIVERSARY()}</h4></a>
 		</div>
-		<div class="ponds">
-			<div class="loading-duck" />
-			<a sveltekit:prefetch href="/projects/ponds">
+		<div class='ponds'>
+			<div class='loading-duck' />
+			<a sveltekit:prefetch href='/projects/ponds'>
 				{#if $media.small || $media.tablet}
 					<h4>{$LL.HOME.BIRTHDAY_SM()}</h4>
 				{:else}
@@ -99,290 +114,334 @@
 
 			<!--				<h4>1 Million Subscribers & Birthday</h4></a>-->
 		</div>
-		<div class="second">
-			<img src={second} alt="2nd anniversary" />
+		<div class='second'>
+			<img src={second} alt='2nd anniversary' />
 
-			<a href="https://twitter.com/SubatomoFan/status/1306244299995017217" target="_blank">
+			<a href='https://twitter.com/SubatomoFan/status/1306244299995017217' target='_blank'>
 				<h4>{$LL.HOME.SECOND_ANNIVERSARY()}</h4>
 			</a>
 		</div>
-		<div class="soundboard">
-			<img src={megaphone} alt="soundboard" />
+		<div class='soundboard'>
+			<img src={megaphone} alt='soundboard' />
 
-			<a sveltekit:prefetch href="/soundboard"><h4>{$LL.HOME.SOUNDBOARD()}</h4></a>
+			<a sveltekit:prefetch href='/soundboard'><h4>{$LL.HOME.SOUNDBOARD()}</h4></a>
 		</div>
 	</div>
-	<div class="subatomo-logo-group">
-		<div class="subatomo-logo">
-			<img src={subatomo} alt="oozora subaru" />
+	<div class='subatomo-logo-group'>
+		<div class='subatomo-logo'>
+			<img src={subatomo} alt='oozora subaru' />
 		</div>
-		<div class="subatomo-socials">
-			<a href="https://discord.gg/subatomos" target="_blank">
+		<div class='subatomo-socials'>
+			<a href='https://discord.gg/subatomos' target='_blank'>
 				<Fa icon={faDiscord} size={sizeSubatomo} color={discordblurple} />
 			</a>
-			<a href="https://www.youtube.com/channel/UCHs7wgimVZHIp5sfNUkQTHA" target="_blank">
+			<a href='https://www.youtube.com/channel/UCHs7wgimVZHIp5sfNUkQTHA' target='_blank'>
 				<Fa icon={faYoutube} size={sizeSubatomo} color={youtubered} />
 			</a>
-			<a href="https://twitter.com/subatomos" target="_blank">
+			<a href='https://twitter.com/subatomos' target='_blank'>
 				<Fa icon={faTwitter} size={sizeSubatomo} color={twitterblue} />
 			</a>
 		</div>
 	</div>
-	<div class="subaru">
-		<img src={subaru} alt="oozora subaru" style="opacity:0" />
+	<div class='subaru'>
+		<img src={subaru} alt='oozora subaru' style='opacity:0' />
 	</div>
 </main>
 
 <!--<LanguageSelect/>-->
-<style lang="scss">
-	@import '$lib/components/sakura/sakura.min.css';
+<style lang='scss'>
+  @import '$lib/components/sakura/sakura.min.css';
 
-	html,
-	body,
-	main {
-		overflow: hidden;
-		max-width: 100vw;
-		max-height: 100vh;
-	}
-	main {
-		display: flex;
-		flex-wrap: nowrap;
-		flex-direction: column;
-		align-content: center;
-		align-items: flex-start;
-		justify-content: space-between;
-		padding: 2em;
-		box-sizing: border-box;
-		min-height: 100vh;
-	}
-	.subaru-logo-group {
-		display: flex;
-		top: 5%;
-		left: 10%;
-	}
+  html,
+  body,
+  main {
+    overflow: hidden;
+    max-width: 100vw;
+    max-height: 100vh;
+  }
 
-	.subaru-logo {
-		object-fit: cover;
+  main {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2em;
+    box-sizing: border-box;
+    min-height: 100vh;
+  }
 
-		img {
-			height: 30vh;
-			aspect-ratio: 845/386;
-		}
-	}
+  .subaru-logo-group {
+    display: flex;
+    top: 5%;
+    left: 10%;
+  }
 
-	.subaru-socials {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
+  .subaru-logo {
+    object-fit: cover;
 
-	h4 {
-		font-weight: 900;
-		font-size: 24px;
-	}
+    img {
+      height: 30vh;
+      aspect-ratio: 845/386;
+    }
+  }
 
-	.nav {
-		left: 15%;
-		top: 40%;
-	}
+  .subaru-socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-	.third,
-	.ponds,
-	.second,
-	.soundboard {
-		//display: block;
-		//position: relative;
+  h4 {
+    font-weight: 900;
+    font-size: 24px;
+  }
 
-		img {
-			position: absolute;
-		}
+  .nav {
+    left: 15%;
+    top: 40%;
+  }
 
-		a {
-			position: relative;
-			top: 1em;
-			left: 4em;
-		}
-	}
+  .third,
+  .ponds,
+  .second,
+  .soundboard {
+    //display: block;
+    //position: relative;
 
-	.ponds {
-		animation-play-state: paused;
+    img {
+      position: absolute;
+    }
 
-		div {
-			position: absolute;
-		}
-	}
+    a {
+      position: relative;
+      top: 1em;
+      left: 4em;
+    }
+  }
 
-	.soundboard img,
-	.second img {
-		width: 50px;
-		height: 50px;
-	}
+  .ponds {
+    animation-play-state: paused;
 
-	.ponds:hover > .loading-duck {
-		animation: sprite 0.8s steps(8) infinite;
-	}
+    div {
+      position: absolute;
+    }
+  }
 
-	/*transform: translate(-50%, -50%) scale(0.25);*/
-	.loading-duck {
-		//position:absolute;
-		width: 50px;
-		height: 50px;
-		background: url('/static/assets/images/loadingduck/duck-sm.png');
-		//transform: translate(0, 35%);
-	}
+  .soundboard img,
+  .second img {
+    width: 50px;
+    height: 50px;
+  }
 
-	.subatomo-logo-group {
-		bottom: 5%;
-		left: 5%;
-		//overflow:hidden;
-	}
+  .ponds:hover > .loading-duck {
+    animation: sprite 0.8s steps(8) infinite;
+  }
 
-	.subatomo-logo {
-		object-fit: cover;
+  /*transform: translate(-50%, -50%) scale(0.25);*/
+  .loading-duck {
+    //position:absolute;
+    width: 50px;
+    height: 50px;
+    background: url('/static/assets/images/loadingduck/duck-sm.png');
+    //transform: translate(0, 35%);
+  }
 
-		img {
-			width: 20vw;
-		}
-	}
+  .subatomo-logo-group {
+    bottom: 5%;
+    left: 5%;
+    //overflow:hidden;
+  }
 
-	.subaru {
-		position: absolute;
-		right: 5%;
-		bottom: 0;
-		object-fit: cover;
-		overflow: hidden;
-		background: url('/static/assets/images/subaru3rd_outfit_long_full_1080.png') no-repeat bottom
-			center;
-		background-size: contain;
+  .subatomo-logo {
+    object-fit: cover;
 
-		img {
-			width: 40vw;
-			height: 100vh;
-		}
-	}
+    img {
+      width: 20vw;
+    }
+  }
 
-	//a {
-	//  &.grow {
-	//    transition: all .2s ease-in-out;
-	//
-	//    &:hover {
-	//      transform: scale(1.5);
-	//    }
-	//  }
-	//}
-	@keyframes sprite {
-		to {
-			background-position: -400px;
-		}
-	}
+  .subaru {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    object-fit: cover;
+    overflow: hidden;
+    background: url('/static/assets/images/subaru3rd_outfit_long_full_1080.png') no-repeat bottom center;
+    background-size: contain;
 
-	@media screen and (max-width: 849px) {
-		.subaru-logo-group {
-			top: 1em;
-			left: 1em;
-			flex-direction: column;
-		}
-		.subaru-logo {
-			width: 100%;
+    img {
+      width: 40vw;
+      height: 100vh;
+    }
+  }
 
-			img {
-				object-fit: contain;
-				width: 100%;
-				//aspect-ratio: 2.19;
-				//aspect-ratio: 845/386;
-			}
-		}
+  //a {
+  //  &.grow {
+  //    transition: all .2s ease-in-out;
+  //
+  //    &:hover {
+  //      transform: scale(1.5);
+  //    }
+  //  }
+  //}
+  @keyframes sprite {
+    to {
+      background-position: -400px;
+    }
+  }
 
-		.subaru-socials {
-			display: flex;
-			flex-direction: row;
-			justify-content: flex-start;
-		}
-		.subaru {
-			max-height: 60%;
-			z-index: -1;
-		}
-		.nav {
-			left: 5%;
-			top: 45%;
-		}
-		h4 {
-			font-size: 1.3em;
-			//max-width:20ch;
-			word-break: keep-all;
-		}
+  @media screen and (max-width: 849px) {
+    .subaru-logo-group {
+      top: 1em;
+      left: 1em;
+      flex-direction: column;
+      z-index: 200;
+    }
+    .subaru-logo {
+      width: 100%;
 
-		.subatomo-logo {
-			object-fit: cover;
+      img {
+        object-fit: contain;
+        width: 100%;
+        //aspect-ratio: 2.19;
+        //aspect-ratio: 845/386;
+      }
+    }
 
-			img {
-				width: 50vw;
-			}
-		}
-		.subatomo-socials {
-			display: flex;
-			justify-content: flex-start;
-			flex-basis: fit-content;
+    .subaru-socials {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      position: fixed;
+      z-index: 202;
+      left: 1em;
+      zoom: 0.5;
+      top: 1em;
+      width:50vw;
+    }
+    .subaru {
+      max-height: 60%;
+      z-index: -1;
+      overflow-x: hidden;
+      max-height: 100vh;
+      height: 75vh;
+      width: 100vw;
+      z-index: 100;
+    }
+    .nav {
+      left: 5%;
+      top: 45%;
+      left: 5%;
+      /* top: 45%; /
+			position: fixed;
+			top: 0;
+			left: 0;
+			padding: 10px 20px;
+			/ height: 3em; */
+      width: 100%;
+      box-sizing: border-box;
+      background-color: #4c413d;
+      overflow: hidden;
+      max-height: 3em;
+      transition: 0.5s;
+      z-index: 200;
 
-			a {
-				flex-grow: 2;
-			}
-		}
-	}
 
-	@media screen and (min-width: 850px) and (max-width: 1024px) {
-		.subaru-logo-group {
-			top: 1em;
-			left: 1em;
-			flex-direction: column;
-		}
-		.subaru-logo {
-			width: 100%;
 
-			img {
-				object-fit: contain;
-				width: 100%;
-				//aspect-ratio: 2.19;
-				//aspect-ratio: 845/386;
-			}
-		}
+    }
+    .nav:before {
+      content: "";
+      display: block;
+      height: 0.6em;
+      border-top: 5px solid #e0dacd;
+      border-bottom: 5px solid #e0dacd;
+      width: 40px;
+      margin-left: 80vw;
+    }   .nav.active {
 
-		.subaru-socials {
-			display: flex;
-			flex-direction: row;
-			justify-content: flex-start;
-		}
-		.subaru {
-			max-height: 60%;
-			z-index: -1;
-		}
-		.nav {
-			left: 5%;
-			top: 45%;
-		}
+          max-height: 90vh;
+        }
 
-		h4 {
-			font-weight: 900;
-			font-size: 2.4em;
-			word-break: keep-all;
-			text-shadow: 1px 1px 1px yellow;
-		}
+    h4 {
+      font-size: 1.3em;
+      //max-width:20ch;
+      word-break: keep-all;
+      color: #e0dacd;
+    }
 
-		.subatomo-logo {
-			object-fit: cover;
+    .subatomo-logo {
+      object-fit: cover;
 
-			img {
-				width: 50vw;
-			}
-		}
-		.subatomo-socials {
-			display: flex;
-			justify-content: flex-start;
-			flex-basis: fit-content;
+      img {
+        width: 50vw;
+      }
+    }
+    .subatomo-socials {
+      display: flex;
+      justify-content: flex-start;
+      flex-basis: fit-content;
 
-			a {
-				flex-grow: 2;
-			}
-		}
-	}
+      a {
+        flex-grow: 2;
+      }
+    }
+  }
+
+  @media screen and (min-width: 850px) and (max-width: 1024px) {
+    .subaru-logo-group {
+      top: 1em;
+      left: 1em;
+      flex-direction: column;
+    }
+    .subaru-logo {
+      width: 100%;
+
+      img {
+        object-fit: contain;
+        width: 100%;
+        //aspect-ratio: 2.19;
+        //aspect-ratio: 845/386;
+      }
+    }
+
+    .subaru-socials {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+    .subaru {
+      max-height: 60%;
+      z-index: -1;
+    }
+    .nav {
+      left: 5%;
+      top: 45%;
+    }
+
+    h4 {
+      font-weight: 900;
+      font-size: 2.4em;
+      word-break: keep-all;
+      text-shadow: 1px 1px 1px yellow;
+    }
+
+    .subatomo-logo {
+      object-fit: cover;
+
+      img {
+        width: 50vw;
+      }
+    }
+    .subatomo-socials {
+      display: flex;
+      justify-content: flex-start;
+      flex-basis: fit-content;
+
+      a {
+        flex-grow: 2;
+      }
+    }
+  }
 </style>
