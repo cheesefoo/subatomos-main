@@ -1,4 +1,4 @@
-<script lang='ts'>
+<script lang="ts">
 	import { Howl } from 'howler';
 	import oozoraken from '/static/assets/sound/oozora_kensetsu_by_jeremy_robson.mp3';
 	import { dev } from '$app/env';
@@ -20,44 +20,38 @@
 	export let paused: boolean = true;
 	$: img = paused ? mut : vol;
 
-	$:
-	{
+	$: {
 		paused ? howl.pause() : howl.play();
 	}
-	function togglePause()
-	{
+	function togglePause() {
 		paused = !paused;
 	}
 
-	onMount(() =>
-		{
-
-			howl.load();
-		}
-	);
+	onMount(() => {
+		howl.load();
+	});
 </script>
 
-<div class='volume' style={img} on:click={togglePause} />
+<div class="volume" style={img} on:click={togglePause} />
 
 <style>
-    .volume {
-        width: 5vw;
-        height: 5vh;
-        background-repeat: no-repeat;
-        background-size: contain;
-        cursor: pointer;
-    }
+	.volume {
+		width: 5vw;
+		height: 5vh;
+		background-repeat: no-repeat;
+		background-size: contain;
+		cursor: pointer;
+	}
 
-    @media screen and (max-width: 849px) {
-        .volume {
-            width: 30vw;
-            height: 10vh;
-            background-repeat: no-repeat;
-            background-size: contain;
-            cursor: pointer;
-            background-position: left bottom;
-            float: right;
-        }
-    }
-
+	@media screen and (max-width: 849px) {
+		.volume {
+			width: 30vw;
+			height: 10vh;
+			background-repeat: no-repeat;
+			background-size: contain;
+			cursor: pointer;
+			background-position: left bottom;
+			float: right;
+		}
+	}
 </style>
