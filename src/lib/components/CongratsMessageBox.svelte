@@ -89,10 +89,16 @@
 </div>
 
 <style lang="scss">
-	@font-face {
+/*	@font-face {
 		// This is parsed as a normal function call that takes a quoted string.
 		src: url('/static/851CHIKARA-DZUYOKU_kanaA_004.woff2') format('woff2');
 		font-family: '851CHIKARA-DZUYOKU_kanaA_004';
+		font-weight: normal bold;
+	}*/
+	@font-face {
+		// This is parsed as a normal function call that takes a quoted string.
+		src: url('/static/Corporate-Logo-Bold-ver2.woff2') format('woff2');
+		font-family: 'Corporate-Logo-Bold-ver2';
 		font-weight: normal bold;
 	}
 
@@ -138,7 +144,7 @@
 
 	$hrmargin: 4ch;
 	.box-inner {
-		margin: 2.9ch $hrmargin 0 $hrmargin;
+		margin: 2.5ch $hrmargin 0 $hrmargin;
 		max-width: 40ch;
 		position: relative;
 		z-index: 1;
@@ -156,7 +162,7 @@
 
 		span {
 			font-size: 1.5rem;
-			font-family: '851CHIKARA-DZUYOKU_kanaA_004', sans-serif;
+			font-family: 'Corporate-Logo-Bold-ver2', sans-serif;
 			font-weight: normal;
 			text-overflow: ellipsis;
 			overflow: hidden;
