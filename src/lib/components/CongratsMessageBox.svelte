@@ -96,6 +96,8 @@
 		font-weight: normal bold;
 	}
 
+
+
 	.box-border {
 		border: white solid 0.5em;
 		border-radius: 1em;
