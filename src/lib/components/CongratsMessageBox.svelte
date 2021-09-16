@@ -96,8 +96,6 @@
 		font-weight: normal bold;
 	}
 
-
-
 	.box-border {
 		border: white solid 0.5em;
 		border-radius: 1em;
@@ -157,7 +155,7 @@
 		}
 
 		span {
-			font-size: 1.6rem;
+			font-size: 1.5rem;
 			font-family: '851CHIKARA-DZUYOKU_kanaA_004', sans-serif;
 			font-weight: normal;
 			text-overflow: ellipsis;
@@ -169,7 +167,7 @@
 			}
 
 			&.pink {
-				color: #43638a;
+				color: #f9d633;
 			}
 		}
 

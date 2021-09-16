@@ -1,24 +1,28 @@
 const messages = [
 	{
 		name: '@OhmPittayapat',
-		message: 'Subaru you are a really incredible person, past events has shown that you never give up and always laugh and smile even in the events of hardship. That is the reason I am a subatomo, you are living embodiment of HOPE.'
+		message:
+			'Subaru you are a really incredible person, past events has shown that you never give up and always laugh and smile even in the events of hardship. That is the reason I am a subatomo, you are living embodiment of HOPE.'
 	},
 	{
 		name: 'iaceo',
-		message: 'Congratulations on your third anniversary! I look forward to future streams with you and hopefully we get to make up for these missed opportunities many times in the years to come. Thank you for everything Subaru, see you again next stream~'
+		message:
+			'Congratulations on your third anniversary! I look forward to future streams with you and hopefully we get to make up for these missed opportunities many times in the years to come. Thank you for everything Subaru, see you again next stream~'
 	},
 	{
 		name: 'AnZuPann',
-		message: 'Congratulations on your 3rd anniversary Subaru ! It’s ok postponing the live. Don’t feel upset. I always receive positive energy from u and now is my turn. Cheer up my No.1 idol! GanBaDe ASoRe !!!'
+		message:
+			'Congratulations on your 3rd anniversary Subaru ! It’s ok postponing the live. Don’t feel upset. I always receive positive energy from u and now is my turn. Cheer up my No.1 idol! GanBaDe ASoRe !!!'
 	},
 	{
 		name: 'kagai-Disasterniki',
-		message: 'Cheers on your 3rd Anniversary and to many memeable and memorable moments to come. I enjoyed and needed the wholesome content and interaction from your streams. The Teetee, funny, and meme moments, whether playing or interacting with other girls. I only knew Subaru as the duck meme, but now as an Idol streamer. Congrats on 3 years'
+		message:
+			'Cheers on your 3rd Anniversary and to many memeable and memorable moments to come. I enjoyed and needed the wholesome content and interaction from your streams. The Teetee, funny, and meme moments, whether playing or interacting with other girls. I only knew Subaru as the duck meme, but now as an Idol streamer. Congrats on 3 years'
 	},
 	{
 		name: 'CrimsonBelvedere',
 		message:
-			'Congrats on your anniversary Subaru! I love watching your content, it\'s peak japanese Manzai, and you are a perfect Tsukkomi, especially when you collaborate as OKFAMS and other Hololive members. Hope to have many more hilarious moments in years to come.'
+			"Congrats on your anniversary Subaru! I love watching your content, it's peak japanese Manzai, and you are a perfect Tsukkomi, especially when you collaborate as OKFAMS and other Hololive members. Hope to have many more hilarious moments in years to come."
 	},
 	{
 		name: 'Jamie Bastian',
@@ -38,7 +42,7 @@ const messages = [
 	{
 		name: 'Bumi',
 		message:
-			'Omedetouuu subaruu~ This year has been so much fun. Although some streams are hard to make it to considering the time difference, catching your streams and live events have really been the best. Thank you for all your hard work. I would really like to see more of idol subaru, your performance at cinderella switch blew me away. I can\' t wait to see what more things you have coming. What a great year for hololive its been~ Thank you Subaru <3'
+			"Omedetouuu subaruu~ This year has been so much fun. Although some streams are hard to make it to considering the time difference, catching your streams and live events have really been the best. Thank you for all your hard work. I would really like to see more of idol subaru, your performance at cinderella switch blew me away. I can' t wait to see what more things you have coming. What a great year for hololive its been~ Thank you Subaru <3"
 	},
 	{
 		name: 'Kana',
@@ -48,7 +52,7 @@ const messages = [
 	{
 		name: 'Thunderwing',
 		message:
-			'Hi Subaru. Three years already. Looking back on where it all began, no one would\'ve thought things would end up as big as it is today. Despite all the struggle, the time where you were down and the moments where things went wrong, you\'ve persevered against all odds, and for that, I want to say \'I am so proud of you\' and especially \'Thank you\', for all the smiles you\'ve brought to our faces even when we thought we couldn\'t. I hope we\'ll have more and more of these fun moments together. Otsubaru~'
+			"Hi Subaru. Three years already. Looking back on where it all began, no one would've thought things would end up as big as it is today. Despite all the struggle, the time where you were down and the moments where things went wrong, you've persevered against all odds, and for that, I want to say 'I am so proud of you' and especially 'Thank you', for all the smiles you've brought to our faces even when we thought we couldn't. I hope we'll have more and more of these fun moments together. Otsubaru~"
 	},
 	{
 		name: '@anosenose98',
@@ -88,12 +92,12 @@ const messages = [
 	{
 		name: '@WhiteTaping',
 		message:
-			'Happy 3rd anniversary Subaru!! I wanted to thank you for all the laughs and good times you\'ve given to me this past year, you\'ve helped me through a lot, keep being amazing Subaru!! '
+			"Happy 3rd anniversary Subaru!! I wanted to thank you for all the laughs and good times you've given to me this past year, you've helped me through a lot, keep being amazing Subaru!! "
 	},
 	{
 		name: '@wenska_',
 		message:
-			'Congrats on having 3rd anniversary, Subaru!! You\'ve inspired us all of your fans from your wacky streaming, being a tsukkomi, determined at playing games, and doing your very best! We Subatomos love you! Looking forward to having us with you next year! ３周年おめでとうございます！！これからもよろしくぅ！！'
+			"Congrats on having 3rd anniversary, Subaru!! You've inspired us all of your fans from your wacky streaming, being a tsukkomi, determined at playing games, and doing your very best! We Subatomos love you! Looking forward to having us with you next year! ３周年おめでとうございます！！これからもよろしくぅ！！"
 	},
 	{
 		name: 'スバルモ@subarumodayo',
@@ -122,7 +126,7 @@ const messages = [
 	{
 		name: 'SpiderNevi',
 		message:
-			'Hi Subaru! I want to say that there are a lot of points that I like about you!  You\'re always fresh and positive and I feel my day brightens up every time I watch your stream! I like your enthusiasm in every stream and I also like to see your reaction when you\'re playing a game, be it your laughter, screams, or sadness. You\'re a really interesting person to watch!  Happy 3rd anniversary Subaru! I hope you stay healthy and happy!'
+			"Hi Subaru! I want to say that there are a lot of points that I like about you!  You're always fresh and positive and I feel my day brightens up every time I watch your stream! I like your enthusiasm in every stream and I also like to see your reaction when you're playing a game, be it your laughter, screams, or sadness. You're a really interesting person to watch!  Happy 3rd anniversary Subaru! I hope you stay healthy and happy!"
 	},
 	{
 		name: 'リュシンダイ',
@@ -147,12 +151,12 @@ const messages = [
 	{
 		name: 'Dalton ',
 		message:
-			'Subaru, you are my favorite holomem without question, and really the reason I started watching vtubers at all. Thank you so much for everything you\'ve brought to hololive and keep being a great person, officer Subaru!'
+			"Subaru, you are my favorite holomem without question, and really the reason I started watching vtubers at all. Thank you so much for everything you've brought to hololive and keep being a great person, officer Subaru!"
 	},
 	{
 		name: 'Pedro Lucas',
 		message:
-			'Hello,Subaru-Chan! Happy 3rd Anniversary! I just want to say that you mean a lot to me,and that this past year since i\'ve know you was the best year of my life. You really are someone special that brings joy to everyone. Thank you for always being such a bright light of positivity and everything that is good,you have a special place in my heart,i love you! Also,you\'re a really cute and great idol,don\'t let anyone tell you otherwise.'
+			"Hello,Subaru-Chan! Happy 3rd Anniversary! I just want to say that you mean a lot to me,and that this past year since i've know you was the best year of my life. You really are someone special that brings joy to everyone. Thank you for always being such a bright light of positivity and everything that is good,you have a special place in my heart,i love you! Also,you're a really cute and great idol,don't let anyone tell you otherwise."
 	},
 	{
 		name: 'naomi',
@@ -177,7 +181,7 @@ const messages = [
 	{
 		name: 'Ly (@HeyKDHR)',
 		message:
-			'Subaru!! Happy 3rd Anniversary. Thank you for always giving us fun streams and giving effort to translate the weekly OhaSuba. It\'s really fun and enjoyable to watch Subaru having fun on her stream too. Take some breaks and have a good rest too sometimes. Looking forward to the 4th year. Goodluck! '
+			"Subaru!! Happy 3rd Anniversary. Thank you for always giving us fun streams and giving effort to translate the weekly OhaSuba. It's really fun and enjoyable to watch Subaru having fun on her stream too. Take some breaks and have a good rest too sometimes. Looking forward to the 4th year. Goodluck! "
 	},
 	{
 		name: 'Tolga',
@@ -197,7 +201,7 @@ const messages = [
 	{
 		name: '@Vintagestep',
 		message:
-			'Hi Subaru!! It\'s been a year since I met you and I\'m very grateful because your positivity is contagious! This year was rough but I always have a stream to look forward to. I really enjoy your streams, you\'re so bright, funny and cute and I\'m sure that I\'m not the only one having a big smile and laughing a lot while watching you. Also, I love your singing! You just keep getting better and better, it encourages me to keep making music and hopefully making people happy sharing it with them.'
+			"Hi Subaru!! It's been a year since I met you and I'm very grateful because your positivity is contagious! This year was rough but I always have a stream to look forward to. I really enjoy your streams, you're so bright, funny and cute and I'm sure that I'm not the only one having a big smile and laughing a lot while watching you. Also, I love your singing! You just keep getting better and better, it encourages me to keep making music and hopefully making people happy sharing it with them."
 	},
 	{
 		name: 'カズりん',
@@ -213,12 +217,12 @@ const messages = [
 	{
 		name: 'Aishアイシ',
 		message:
-			'Subaru-chan! ３周年おめでとうございます！ I love Subaru-chan, she is just so 元気 and very 面白い. At first watching your 生放送 is very difficult because I can only understand a fragment of what you are saying but because of that it became an inspiration of mine to learn 日本語 so that when I watch your stream I can fully enjoy it. It\'s already been a year and a half becoming a スバ友, and I\'m hoping that you will still continue to stream for years to come. スバル大好きだよ！スバルは僕にとって一番アイドルだよ！今までありがとうございました！'
+			"Subaru-chan! ３周年おめでとうございます！ I love Subaru-chan, she is just so 元気 and very 面白い. At first watching your 生放送 is very difficult because I can only understand a fragment of what you are saying but because of that it became an inspiration of mine to learn 日本語 so that when I watch your stream I can fully enjoy it. It's already been a year and a half becoming a スバ友, and I'm hoping that you will still continue to stream for years to come. スバル大好きだよ！スバルは僕にとって一番アイドルだよ！今までありがとうございました！"
 	},
 	{
 		name: 'Ross Gresola',
 		message:
-			'First and foremost, Happy 3rd debut Anniversary to the most beautiful, wonderful, bright, energetic Idol in the world. Thank you for always making me happy every time I see you stream, At first I didn\'t really have a favorite holomem. But Subaru is the one that grew on me, because Subaru is super cute and I love her laugh and her voice. I will continue supporting Subaru as long as I can.'
+			"First and foremost, Happy 3rd debut Anniversary to the most beautiful, wonderful, bright, energetic Idol in the world. Thank you for always making me happy every time I see you stream, At first I didn't really have a favorite holomem. But Subaru is the one that grew on me, because Subaru is super cute and I love her laugh and her voice. I will continue supporting Subaru as long as I can."
 	},
 	{
 		name: 'Zach',
@@ -261,7 +265,7 @@ const messages = [
 	{
 		name: 'PoPoLoco',
 		message:
-			'I only started watching Hololive & vtubers 3 months ago. After discovering hololive, I kept on watching Hololive videos because Subaru-chan\'s content is always energetic and it always makes me laugh a lot. I also watched some past clips including your journey before becoming a hololive member. The story makes me realize that I need to work hard to overcome the obstacles given in life. Thank you for all your content, I will keep on supporting you as an idol even though i was few years late. '
+			"I only started watching Hololive & vtubers 3 months ago. After discovering hololive, I kept on watching Hololive videos because Subaru-chan's content is always energetic and it always makes me laugh a lot. I also watched some past clips including your journey before becoming a hololive member. The story makes me realize that I need to work hard to overcome the obstacles given in life. Thank you for all your content, I will keep on supporting you as an idol even though i was few years late. "
 	},
 	{
 		name: '@JakeKViti',
@@ -301,22 +305,22 @@ const messages = [
 	{
 		name: '@Ky_Cals',
 		message:
-			'Hello Subaruーsan! Congrats on your 3rd anniversary! It has been a great joy to watch your streams and being able to watch you play games and tell funny stories. I\'m not good at long messages so I just want to say, thank you for being very cool and I wish you the best for the future!'
+			"Hello Subaruーsan! Congrats on your 3rd anniversary! It has been a great joy to watch your streams and being able to watch you play games and tell funny stories. I'm not good at long messages so I just want to say, thank you for being very cool and I wish you the best for the future!"
 	},
 	{
 		name: 'Excess',
 		message:
-			'Hi, Subaru!! Congratulations on your 3rd Anniversary! We\'re all so happy you\'ve been around for three whole years, and can\'t wait to see what else you\'ll do!!'
+			"Hi, Subaru!! Congratulations on your 3rd Anniversary! We're all so happy you've been around for three whole years, and can't wait to see what else you'll do!!"
 	},
 	{
 		name: 'Stealter',
 		message:
-			'Happy 3rd Anniversary SUBARU!!!! Thank you for always making me laugh with whatever you do. You stream anything and make it really interesting and amusing without getting anyone bored. I always try to watch your streams even though I don\'t understand japanese or when I\'m working. I hope you\'ll believe in yourself more and gain more confidence, anything you make will make us happy, we\'ll always be ready to support you.   HAPPY 3RD ANNIVERSARY AGAIN AND TO MANY MORE TO COME!!!!'
+			"Happy 3rd Anniversary SUBARU!!!! Thank you for always making me laugh with whatever you do. You stream anything and make it really interesting and amusing without getting anyone bored. I always try to watch your streams even though I don't understand japanese or when I'm working. I hope you'll believe in yourself more and gain more confidence, anything you make will make us happy, we'll always be ready to support you.   HAPPY 3RD ANNIVERSARY AGAIN AND TO MANY MORE TO COME!!!!"
 	},
 	{
 		name: '@Gurrengun',
 		message:
-			'Congratulations on your 3rd Anniversary Subaru! You came really far in your idol career and we are all really proud of you! I can\'t wait to see more of your dancing, singing and having more fun times together!'
+			"Congratulations on your 3rd Anniversary Subaru! You came really far in your idol career and we are all really proud of you! I can't wait to see more of your dancing, singing and having more fun times together!"
 	},
 	{
 		name: '@TEBA_saki0127',
@@ -336,7 +340,7 @@ const messages = [
 	{
 		name: '@extremepsycho5',
 		message:
-			'Congratulations Shuba on your 3rd Anniversary! I haven\'t been watching for a long time but I like watching your streams..I hope you stay for a long time and I look forward for more of your streams'
+			"Congratulations Shuba on your 3rd Anniversary! I haven't been watching for a long time but I like watching your streams..I hope you stay for a long time and I look forward for more of your streams"
 	},
 	{
 		name: '@superakiraman',
@@ -357,12 +361,12 @@ const messages = [
 	{
 		name: '@amnotred',
 		message:
-			'Congratulations, Subaru for reaching your 3rd year in Hololive! It\'s been a rough year gotta admit, but ever since I have fallen into this giant hole, every day has been filled with laughter and joy. Thank you <3 '
+			"Congratulations, Subaru for reaching your 3rd year in Hololive! It's been a rough year gotta admit, but ever since I have fallen into this giant hole, every day has been filled with laughter and joy. Thank you <3 "
 	},
 	{
 		name: 'M1gula5',
 		message:
-			'Subaru, you are my favorite vtuber period. I can\'t tell you the amount of times you\'ve made me smile because of how adorable you are. You have the perfect personality that makes you  so lovable!'
+			"Subaru, you are my favorite vtuber period. I can't tell you the amount of times you've made me smile because of how adorable you are. You have the perfect personality that makes you  so lovable!"
 	},
 	{
 		name: ' John L',
@@ -387,7 +391,7 @@ const messages = [
 	{
 		name: '@GhostGio08',
 		message:
-			'Thank you Oozora Subaru for the best contents and congratulations for your 3rd Anniversary!!  Keep \'em coming and stay frosty👊😎'
+			"Thank you Oozora Subaru for the best contents and congratulations for your 3rd Anniversary!!  Keep 'em coming and stay frosty👊😎"
 	},
 	{
 		name: 'Aika',
@@ -429,7 +433,7 @@ const messages = [
 	{
 		name: '@Irine_Chemist',
 		message:
-			'Congrats for your 3rd anniversary Subaru-chan!!!  I\'ve just started to watch and support you this June after watching some of your videos, and immediately fell in love. I cried so hard when I saw you crying at the 2nd anniversary because you didn\'t have a 3d concert. I\'m really glad you have a concert this year!!! Even though people making memes of you being a duck or anything else, in my eyes from the start, you have been always an idol. I really like your singing. Please have more confidence!!!'
+			"Congrats for your 3rd anniversary Subaru-chan!!!  I've just started to watch and support you this June after watching some of your videos, and immediately fell in love. I cried so hard when I saw you crying at the 2nd anniversary because you didn't have a 3d concert. I'm really glad you have a concert this year!!! Even though people making memes of you being a duck or anything else, in my eyes from the start, you have been always an idol. I really like your singing. Please have more confidence!!!"
 	},
 	{
 		name: 'クロクマほっと',
@@ -482,7 +486,7 @@ const messages = [
 	{
 		name: 'Xcalibur',
 		message:
-			'Happy 3rd anniversary to my all time favorite idol Subaru🎉❤😊 I found about you and hololive only some months ago. But you gave me so much fun and memorable moments. Let\'s have a wonderful anniversary with everyone Subaru chan💞'
+			"Happy 3rd anniversary to my all time favorite idol Subaru🎉❤😊 I found about you and hololive only some months ago. But you gave me so much fun and memorable moments. Let's have a wonderful anniversary with everyone Subaru chan💞"
 	},
 	{
 		name: 'ゼッド海外ニキ　@yosoro120462',
@@ -517,7 +521,7 @@ const messages = [
 	{
 		name: 'Smile17',
 		message:
-			'Congratulations on your 3rd anniversary Subaru!!! 🎉🎉🎉  I\'m so glad that through you, I became more interested in knowing about Hololive and Vtubers, so thank you!! I love how energetic you always are. Your streams never fail to make me laugh 😆 I especially love Ohasuba and your singing streams. Your singing is really beautiful and your stories are always interesting. ☀️ May you continue to do what you love in your 4th year! Don\'t push yourself too much and always take care of your health. 🐣'
+			"Congratulations on your 3rd anniversary Subaru!!! 🎉🎉🎉  I'm so glad that through you, I became more interested in knowing about Hololive and Vtubers, so thank you!! I love how energetic you always are. Your streams never fail to make me laugh 😆 I especially love Ohasuba and your singing streams. Your singing is really beautiful and your stories are always interesting. ☀️ May you continue to do what you love in your 4th year! Don't push yourself too much and always take care of your health. 🐣"
 	},
 	{
 		name: '@Phrophetsam',
@@ -570,7 +574,7 @@ const messages = [
 	{
 		name: 'Wzky',
 		message:
-			'To the best girl, Subaru. Congratulations on three years of Hololive! Thank you for the great times throughout the years, especially these recent ones which have been hard for everyone. You\'ve helped us to laugh, to cry, and to ultimately enjoy our days more, so really, from the deepest points of our hearts, thank you!'
+			"To the best girl, Subaru. Congratulations on three years of Hololive! Thank you for the great times throughout the years, especially these recent ones which have been hard for everyone. You've helped us to laugh, to cry, and to ultimately enjoy our days more, so really, from the deepest points of our hearts, thank you!"
 	},
 	{
 		name: 'クレイバー',
@@ -590,12 +594,12 @@ const messages = [
 	{
 		name: 'Ava',
 		message:
-			'Congratulations on your third anniversary! It\'s been quite a ride, hasn\'t it? We\'ll be with you until the very end!'
+			"Congratulations on your third anniversary! It's been quite a ride, hasn't it? We'll be with you until the very end!"
 	},
 	{
-		name: 'Ragin\' Canadian',
+		name: "Ragin' Canadian",
 		message:
-			'Subaru, Happy anniversary! I am so proud of you, and I am so happy to be a fan with all the other Subatomos. Your voice is so enchanting, and your enthusiasm makes each stream something special. I\'m happy your hard work has paid off - here\'s to your greater success in the future!'
+			"Subaru, Happy anniversary! I am so proud of you, and I am so happy to be a fan with all the other Subatomos. Your voice is so enchanting, and your enthusiasm makes each stream something special. I'm happy your hard work has paid off - here's to your greater success in the future!"
 	},
 	{
 		name: 'Kenshin',
@@ -618,17 +622,17 @@ const messages = [
 	{
 		name: 'Rehan',
 		message:
-			'Happy 3rd anniversary, Subaru!  Thank you for always working hard!  One year ago, I found you and I really wanted to support you since then.  From now on, I\'ll keep always supporting you!  I love you! '
+			"Happy 3rd anniversary, Subaru!  Thank you for always working hard!  One year ago, I found you and I really wanted to support you since then.  From now on, I'll keep always supporting you!  I love you! "
 	},
 	{
 		name: 'k1ngz27',
 		message:
-			'Happy third anniversary Subaru! You were the one who piqued my interest when I first discovered Hololive and I\'ve watched you ever since then. I wish you a great third anniversary and I hope you keep making all of us smile!'
+			"Happy third anniversary Subaru! You were the one who piqued my interest when I first discovered Hololive and I've watched you ever since then. I wish you a great third anniversary and I hope you keep making all of us smile!"
 	},
 	{
 		name: 'colash',
 		message:
-			'Congratulations on your 3rd anniversary Subaru!!! It\'s been a year since I started watching your videos, since then my days have become more enjoyable, your passion spread to me and to overcome my daily obstacles became easier. Seeing you working so hard made me want to give my best too. I will keep suporting you until the end, you deserve the best and I hope you achieve all you propose. To me you are the brightest idol! Thank you for everything you do to entertain us. Love, from Spain.'
+			"Congratulations on your 3rd anniversary Subaru!!! It's been a year since I started watching your videos, since then my days have become more enjoyable, your passion spread to me and to overcome my daily obstacles became easier. Seeing you working so hard made me want to give my best too. I will keep suporting you until the end, you deserve the best and I hope you achieve all you propose. To me you are the brightest idol! Thank you for everything you do to entertain us. Love, from Spain."
 	},
 	{
 		name: 'khang',
@@ -677,12 +681,12 @@ const messages = [
 	{
 		name: 'Robert',
 		message:
-			'Happy anniversary Subaru!!!! Ever since this pandemic started you and your streams have made me smile through these tough times. Even though I don\'t know any japanese, I still love to hear you sing. You are my number one idol! Please keep doing your best!'
+			"Happy anniversary Subaru!!!! Ever since this pandemic started you and your streams have made me smile through these tough times. Even though I don't know any japanese, I still love to hear you sing. You are my number one idol! Please keep doing your best!"
 	},
 	{
 		name: 'Edward Lee',
 		message:
-			'Thank you Subaru for helping me through 2020.. Your humor, wit, and charm helped me get through those dark days! I\'ll be forever grateful...'
+			"Thank you Subaru for helping me through 2020.. Your humor, wit, and charm helped me get through those dark days! I'll be forever grateful..."
 	},
 	{
 		name: 'オクトパスプライム',
@@ -696,7 +700,7 @@ const messages = [
 	{
 		name: 'Chairo',
 		message:
-			'Congratulations on your third anniversary Subaru! I absolutely love you and your content, your streams always make my day. It\'s always so fun to sit and watch you play games and do other random yet interesting streams. I will always watch and support you!'
+			"Congratulations on your third anniversary Subaru! I absolutely love you and your content, your streams always make my day. It's always so fun to sit and watch you play games and do other random yet interesting streams. I will always watch and support you!"
 	},
 	{
 		name: 'Alyssa',
@@ -731,7 +735,7 @@ const messages = [
 	{
 		name: 'Hollow San',
 		message:
-			'Subaru congratulations on your 3 year anniversary! You\'ve achieved so much in these past 3 years, as a Suba-tomo it\'s been an absolute joy to experience your upbeat personality every stream. Thank you for always being a shining beacon of happiness to your fans!'
+			"Subaru congratulations on your 3 year anniversary! You've achieved so much in these past 3 years, as a Suba-tomo it's been an absolute joy to experience your upbeat personality every stream. Thank you for always being a shining beacon of happiness to your fans!"
 	},
 	{
 		name: 'しぎる',
@@ -741,7 +745,7 @@ const messages = [
 	{
 		name: 'Hario0',
 		message:
-			'Hope you have a great anniversary! You always bring happiness on your streams so I hope we can share some of that happiness with you. I\'m still new at drawing so I\'ll post fanart next year. Congratulations!'
+			"Hope you have a great anniversary! You always bring happiness on your streams so I hope we can share some of that happiness with you. I'm still new at drawing so I'll post fanart next year. Congratulations!"
 	},
 	{
 		name: 'Jesse',
@@ -767,7 +771,7 @@ const messages = [
 	{
 		name: 'Broke Sternum ',
 		message:
-			'Thank you for all the streams you do, I enjoy all the ones I\'m able watch even if I cant understand them! Keep doing what you\'re doing at your own pace and make sure to stay healthy while at it! I will keep continuing to support you for as long as I\'m able to!'
+			"Thank you for all the streams you do, I enjoy all the ones I'm able watch even if I cant understand them! Keep doing what you're doing at your own pace and make sure to stay healthy while at it! I will keep continuing to support you for as long as I'm able to!"
 	},
 	{
 		name: 'もの',
@@ -777,7 +781,7 @@ const messages = [
 	{
 		name: '@CyCanLive',
 		message:
-			'Happy 3rd anniversary！ホロライブでデビューから3年間の活動！Filled with unstoppable fun and energy packed streams and other things！今後からこそまた皆で楽しく時間を過ごして行こう！I\'ll be continuing to support you with all my best！最高のアイドルのスバルちゃん大好き！Lastly thank you so much for everything in the last 3 years！'
+			"Happy 3rd anniversary！ホロライブでデビューから3年間の活動！Filled with unstoppable fun and energy packed streams and other things！今後からこそまた皆で楽しく時間を過ごして行こう！I'll be continuing to support you with all my best！最高のアイドルのスバルちゃん大好き！Lastly thank you so much for everything in the last 3 years！"
 	},
 	{
 		name: 'jack',
@@ -791,17 +795,17 @@ const messages = [
 	{
 		name: 'Cainiam',
 		message:
-			'Congrats for your 3 years of streaming ! You\'re a very inspiring person, stay as you are ! Lots of love from Belgium'
+			"Congrats for your 3 years of streaming ! You're a very inspiring person, stay as you are ! Lots of love from Belgium"
 	},
 	{
 		name: 'jahynchan',
 		message:
-			'Congrats on your 3rd year anniversary Subaru! You\'ve come such a long way. As a subatomo, I\'m very proud of you and appreciate all of the hard work you\'ve done. Please continue to be the Subaru we all love in the coming years! '
+			"Congrats on your 3rd year anniversary Subaru! You've come such a long way. As a subatomo, I'm very proud of you and appreciate all of the hard work you've done. Please continue to be the Subaru we all love in the coming years! "
 	},
 	{
 		name: 'Seth Abernathy ',
 		message:
-			'I am so happy with all of the hard work you put into your streams and outside stuff Subaru, here\'s to another year of success! '
+			"I am so happy with all of the hard work you put into your streams and outside stuff Subaru, here's to another year of success! "
 	},
 	{
 		name: 'Tyler',
@@ -816,7 +820,7 @@ const messages = [
 	{
 		name: 'Liron Kabizon/Senator Pancakes',
 		message:
-			'HAPPY 3RD ANNIVERSARY SUBARU!  You\'re the best, no matter if it\'s as a duck or an Idol!  Your duck side is amazing because you\'re funny! Your Idol side is amazing because your voice is beautiful!'
+			"HAPPY 3RD ANNIVERSARY SUBARU!  You're the best, no matter if it's as a duck or an Idol!  Your duck side is amazing because you're funny! Your Idol side is amazing because your voice is beautiful!"
 	},
 	{
 		name: '共喰い大好きジルバード',
@@ -826,27 +830,27 @@ const messages = [
 	{
 		name: 'Lazarus06',
 		message:
-			'Your streams are awesome! You\'re one of my favorites in Hololive. Congrats on reaching 1 million subscribers. Hope you\'ll continue streaming and other related activities but do keep yourself healthy and take a break sometimes if you\'re unwell.'
+			"Your streams are awesome! You're one of my favorites in Hololive. Congrats on reaching 1 million subscribers. Hope you'll continue streaming and other related activities but do keep yourself healthy and take a break sometimes if you're unwell."
 	},
 	{
 		name: '@RP_Exoduce',
 		message:
-			'Hello Subaru, congratulations on 3rd Anniversary! Subaru you always find a way to put a smile on my face no matter the situation and for that I\'m very thankful to you! Your hell streams are some of the funniest I\'ve seen in my life! I\'m very thankful that once in a while you would sing for us, trust me when I say that we can feel and know that you are doing your best for us every time. We love you just the way you are and we will still love you in the future even if you change! CONGRATULATIONS!'
+			"Hello Subaru, congratulations on 3rd Anniversary! Subaru you always find a way to put a smile on my face no matter the situation and for that I'm very thankful to you! Your hell streams are some of the funniest I've seen in my life! I'm very thankful that once in a while you would sing for us, trust me when I say that we can feel and know that you are doing your best for us every time. We love you just the way you are and we will still love you in the future even if you change! CONGRATULATIONS!"
 	},
 	{
 		name: '@AchlysJekyll',
 		message:
-			'Hi Subaru! Happy anniversary! I\'m a new fan, However I\'m happy to be in the community. Thanks for everything you do! Your positive energy is amazing. As an introvert I truly admire you, And your hard work. I\'m not much, But I\'ll definitely do my best to contribute even a little bit to make your anniversary nice. Happy anniversary! Love from new Subatomo!'
+			"Hi Subaru! Happy anniversary! I'm a new fan, However I'm happy to be in the community. Thanks for everything you do! Your positive energy is amazing. As an introvert I truly admire you, And your hard work. I'm not much, But I'll definitely do my best to contribute even a little bit to make your anniversary nice. Happy anniversary! Love from new Subatomo!"
 	},
 	{
 		name: 'Donne',
 		message:
-			'Accidentally seeing one of your videos is something I don\'t regret. Watching you is one of the best things I\'ve done. Your cheerful, great and positive personality helped me a lot. Your voice gives off a calm and nostalgic vibe. You influenced my life so much that I hope someday I can repay you but I\'m still dependent so the only thing I can offer right now is moral support. Let me start with this. Happy 3rd Anniversary Subaru! I hope you\'ll be more successful in the future. Suki desu!'
+			"Accidentally seeing one of your videos is something I don't regret. Watching you is one of the best things I've done. Your cheerful, great and positive personality helped me a lot. Your voice gives off a calm and nostalgic vibe. You influenced my life so much that I hope someday I can repay you but I'm still dependent so the only thing I can offer right now is moral support. Let me start with this. Happy 3rd Anniversary Subaru! I hope you'll be more successful in the future. Suki desu!"
 	},
 	{
 		name: 'Leinad ',
 		message:
-			'Congrats on your 3rd anniversary, Subaru!  It\'s been a year and a half since I first encountered your channel, and all this time you have inspired me to keep going and do my best in every single aspect of my life! I hope you continue this good and adorable energy you have to the end of time.  From the bottom of my heart, thank you for everything, Subaru. ❤'
+			"Congrats on your 3rd anniversary, Subaru!  It's been a year and a half since I first encountered your channel, and all this time you have inspired me to keep going and do my best in every single aspect of my life! I hope you continue this good and adorable energy you have to the end of time.  From the bottom of my heart, thank you for everything, Subaru. ❤"
 	},
 	{
 		name: 'MuntakimHK',
@@ -861,7 +865,7 @@ const messages = [
 	{
 		name: '@eN_eM_',
 		message:
-			'Happy anniversary Subaru!!! Since I found your channel last year, you\'ve constantly made my day better even at its worst! I wish you more success to come in the future!!'
+			"Happy anniversary Subaru!!! Since I found your channel last year, you've constantly made my day better even at its worst! I wish you more success to come in the future!!"
 	},
 	{
 		name: '@KineticPhylum',
@@ -882,7 +886,7 @@ const messages = [
 	{
 		name: 'shrimp',
 		message:
-			'Hi Subaru! Congrats on your 3rd anniversary! It\'s been so fun watching you grow as an idol and entertainer and you never fail to bring a smile to my face. Your energy is contagious and seeing you happy about something makes me excited too. Thank you for all the content and I hope to see even greater things from you in the future!'
+			"Hi Subaru! Congrats on your 3rd anniversary! It's been so fun watching you grow as an idol and entertainer and you never fail to bring a smile to my face. Your energy is contagious and seeing you happy about something makes me excited too. Thank you for all the content and I hope to see even greater things from you in the future!"
 	},
 	{
 		name: '若本の自転車',
@@ -897,7 +901,7 @@ const messages = [
 	{
 		name: '@_Linkling',
 		message:
-			'Congratulations on your third anniversary Subaru! Even though I only started to watch Hololive in early 2020, I always loved your positive attitude and amazing amounts of energy you have. When I saw you live in the 2nd fes and bloom it only reaffirmed my thoughts that you are a great entertainer and a really cute and amazing idol. Never change how you are because that\'s the most special thing about you. I\'ll continue to support you forever. With love, a really big fan <3.'
+			"Congratulations on your third anniversary Subaru! Even though I only started to watch Hololive in early 2020, I always loved your positive attitude and amazing amounts of energy you have. When I saw you live in the 2nd fes and bloom it only reaffirmed my thoughts that you are a great entertainer and a really cute and amazing idol. Never change how you are because that's the most special thing about you. I'll continue to support you forever. With love, a really big fan <3."
 	},
 	{
 		name: 'Marimarr',
@@ -907,7 +911,7 @@ const messages = [
 	{
 		name: 'Will',
 		message:
-			'I\'m really glad I found Subaru. I wish you the best, I hope you have good health and a good internet connection for the coming year.'
+			"I'm really glad I found Subaru. I wish you the best, I hope you have good health and a good internet connection for the coming year."
 	},
 	{
 		name: 'あーつ',
@@ -922,12 +926,12 @@ const messages = [
 	{
 		name: '@aro_tama',
 		message:
-			'Congrats on your 3rd anniversary, Subaru! I first found out about you late 2018, and I\'ve enjoyed your contents since then. One that makes you the most special to me is the fact that you work so, so hard. All the stories of  your rather rough childhood, and all the unfortunate happenings, yet here you are, still doing your best, and I respect you a lot for that. You really are the sun of Hololive. Once again, congratulations! Here\'s to another exciting year~'
+			"Congrats on your 3rd anniversary, Subaru! I first found out about you late 2018, and I've enjoyed your contents since then. One that makes you the most special to me is the fact that you work so, so hard. All the stories of  your rather rough childhood, and all the unfortunate happenings, yet here you are, still doing your best, and I respect you a lot for that. You really are the sun of Hololive. Once again, congratulations! Here's to another exciting year~"
 	},
 	{
 		name: 'Lily',
 		message:
-			'Thank you for all the laughs Subaru, it is very fun. I really appreciate Subaru\'s effort in learning English. Congratulations Subaru on the 3rd Anniversary!!! Have fun!!! '
+			"Thank you for all the laughs Subaru, it is very fun. I really appreciate Subaru's effort in learning English. Congratulations Subaru on the 3rd Anniversary!!! Have fun!!! "
 	},
 	{
 		name: 'ぽていと',
@@ -947,7 +951,7 @@ const messages = [
 	{
 		name: 'Cerealweb',
 		message:
-			'Subaru, I\'ve been grateful since the day I saw one of your streams. You make lots of people happy: friends, family and us total strangers. As a follower I really admire all the dedication and effort you put in your work. You always came up with interesting and really fun ideas for us to enjoy with you and other holo members as well. It\'s been already 3 years, time flies away when you are making precious memories! We will support you until the end of time, happy 3rd anniversary Subaru!'
+			"Subaru, I've been grateful since the day I saw one of your streams. You make lots of people happy: friends, family and us total strangers. As a follower I really admire all the dedication and effort you put in your work. You always came up with interesting and really fun ideas for us to enjoy with you and other holo members as well. It's been already 3 years, time flies away when you are making precious memories! We will support you until the end of time, happy 3rd anniversary Subaru!"
 	},
 	{
 		name: '@marudecinco',
@@ -996,7 +1000,7 @@ const messages = [
 	{
 		name: 'TheBronyGames',
 		message:
-			'Having been a follower for a long time, I can hardly find any content creator out there at all who has consistently brought me more smiles than you have. It\'s crazy to think 3 years has already passed, but I can only wish that things can keep going from here. Whether you\'re catching more criminals and bringing them to justice, or just vibing to who knows what next, may you have another great 3+ years to come, you beautiful duck~'
+			"Having been a follower for a long time, I can hardly find any content creator out there at all who has consistently brought me more smiles than you have. It's crazy to think 3 years has already passed, but I can only wish that things can keep going from here. Whether you're catching more criminals and bringing them to justice, or just vibing to who knows what next, may you have another great 3+ years to come, you beautiful duck~"
 	},
 	{
 		name: 'ぽぽぽドラゴン',
@@ -1011,7 +1015,7 @@ const messages = [
 	{
 		name: 'lolikeller',
 		message:
-			'Congratulations on your 3rd anniversary! I am watching your streams since 2 years already(because I thought you are cute) but wasn\'t really involved with the Subatomo community until last year. Because of covid-19 your streams & personality became more and more interesting to me. I owe you one for your streams and all the funny moments that happened during your streams. Additionally I want to wish you the best for your future and lots of fun with Subatomo and all Holomem! Never give up o(≧▽≦)o '
+			"Congratulations on your 3rd anniversary! I am watching your streams since 2 years already(because I thought you are cute) but wasn't really involved with the Subatomo community until last year. Because of covid-19 your streams & personality became more and more interesting to me. I owe you one for your streams and all the funny moments that happened during your streams. Additionally I want to wish you the best for your future and lots of fun with Subatomo and all Holomem! Never give up o(≧▽≦)o "
 	},
 	{
 		name: '百合音',
@@ -1041,22 +1045,22 @@ const messages = [
 	{
 		name: 'Kenney (ケニー)',
 		message:
-			'Congratulations on your 3rd Anniversary! I\'m a fan from Canada. Over the past few years, your bright and cheerful streams have always brought a smile to my face. More and more, I start to feel that I\'m glad to be your fan. I hope you continue to have fun and share your genki energy with the world. ありがとうございます.'
+			"Congratulations on your 3rd Anniversary! I'm a fan from Canada. Over the past few years, your bright and cheerful streams have always brought a smile to my face. More and more, I start to feel that I'm glad to be your fan. I hope you continue to have fun and share your genki energy with the world. ありがとうございます."
 	},
 	{
 		name: 'Disciple of Shuba, @novafan7891',
 		message:
-			'Subaru thank you so much for all the hard work you put into entertaining all of us Subatomos. You brighten up the days of thousands of people and we are so grateful for you. You have been a radiating sun of positivity and happiness. I can\'t express in words how grateful I am everytime you make me laugh or smile or just feel warm from any amount of positivity you bring to me. Thank you so much'
+			"Subaru thank you so much for all the hard work you put into entertaining all of us Subatomos. You brighten up the days of thousands of people and we are so grateful for you. You have been a radiating sun of positivity and happiness. I can't express in words how grateful I am everytime you make me laugh or smile or just feel warm from any amount of positivity you bring to me. Thank you so much"
 	},
 	{
 		name: '@jahnathand',
 		message:
-			'Thank you for all of your hard work! Every time I watch your streams I always have a great time. I may not be able to watch every stream but I still support you no matter what. Please keep up the hard work and keep putting smiles on mine and other Subatomo\'s faces.'
+			"Thank you for all of your hard work! Every time I watch your streams I always have a great time. I may not be able to watch every stream but I still support you no matter what. Please keep up the hard work and keep putting smiles on mine and other Subatomo's faces."
 	},
 	{
 		name: 'Novie',
 		message:
-			'Dear Oozora Subaru-chan,  no one else could ever fill your role in Hololive! You are my most favorite Holomember! Absolutely the Sun of Hololive! I have known your channel for more than a year and I\'m so happy I got to see you come so far! I can\'t wait to see what next year holds for us, Subatomo.  ♡ ホロライブ3年目おめでとうございます! ♡'
+			"Dear Oozora Subaru-chan,  no one else could ever fill your role in Hololive! You are my most favorite Holomember! Absolutely the Sun of Hololive! I have known your channel for more than a year and I'm so happy I got to see you come so far! I can't wait to see what next year holds for us, Subatomo.  ♡ ホロライブ3年目おめでとうございます! ♡"
 	}
 ];
 export default messages;

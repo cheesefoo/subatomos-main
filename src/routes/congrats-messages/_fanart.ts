@@ -267,6 +267,12 @@ let fanart: Array<SubaFanart> = [
 		url: 'https://twitter.com/innoalvin',
 		message: 'Subaru in Autumn Style!',
 		src: 'innoalvin @innoalvin.jpeg'
+	},
+	{
+		name: 'Khoa Phan',
+		url: 'https://twitter.com/khoaphan96',
+		message: 'Mayhem in the duck city. Happy 3rd anniversary dear Oozora Subaru the best duck.',
+		src: 'Khoa Phan @khoaphan96.jpg'
 	}
 ];
 // fanart.forEach((f) =>

@@ -76,12 +76,12 @@
 </div>
 
 <style lang="scss">
-  @font-face {
-    // This is parsed as a normal function call that takes a quoted string.
-    src: url('/static/851Gkktt_005.woff2') format('woff2');
-    font-family: '851Gkktt_005';
-    font-weight: normal bold;
-  }
+	@font-face {
+		// This is parsed as a normal function call that takes a quoted string.
+		src: url('/static/851Gkktt_005.woff2') format('woff2');
+		font-family: '851Gkktt_005';
+		font-weight: normal bold;
+	}
 
 	h3,
 	h4 {
