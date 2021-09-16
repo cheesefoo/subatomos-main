@@ -286,7 +286,8 @@
     bottom: 5%;
     left: 5%;
     //overflow:hidden;
-		z-index: 204;
+
+    z-index:10000;
   }
 
   .subatomo-logo {
@@ -375,6 +376,9 @@
       width: 100vw;
       z-index: 100;
 			margin-top:30vh;
+
+      position:fixed;
+      bottom:0 !important;
     }
     .nav {
 
