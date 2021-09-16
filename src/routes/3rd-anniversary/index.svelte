@@ -12,6 +12,7 @@
 	import bottomseparator from '/static/assets/images/bottom_credits.webp';
 	import videoframe from '/static/assets/images/videoframe.png';
 	import metaimg from '/static/assets/images/3rdanniversarylogo.png';
+
 	import arrow from '/static/assets/images/scrolldown.png';
 
 	export async function load({ fetch }) {
@@ -127,7 +128,7 @@ We made a video for you to celebrate!!!"
 		content="スバル3周年おめでとう！！！
 We made a video for you to celebrate!!!"
 	/>
-	<meta property="twitter:image" content={metaimg} />
+	<meta property="twitter:image" content="https://subatomos.com/3rd-anniversary/meta.png" />
 </svelte:head>
 <svelte:window bind:innerHeight bind:scrollY={y} />
 
