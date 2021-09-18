@@ -8,7 +8,7 @@ const credits = {
 		url2: 'https://www.youtube.com/c/D0Nimations',
 		avatar: 'eleos.webp'
 	},
-	ani: { name: 'Ani.Minhton', url: 'https://twitter.com/Keru_nk', avatar: 'ani.webp' },
+	ani: { name: 'Ani.Minhtion', url: 'https://twitter.com/Keru_nk', avatar: 'ani.webp' },
 	ray: {
 		name: 'Ray Yuri',
 		url: 'https://twitter.com/mini_sting_ray',
