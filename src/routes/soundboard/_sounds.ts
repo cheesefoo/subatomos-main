@@ -18,6 +18,7 @@ const sounds: Array<SubaSound> = [
 	{ name: 'assemble', category: 'english', file: 'assemble.mp3' },
 	{ name: 'baka baka baka', file: 'bakabakabaka.mp3' },
 	{ name: 'battle cry', category: '???', file: 'battle_cry.mp3' },
+	{ name: 'BURD', category: 'english', file: 'birdburd.mp3' },
 	{ name: 'war cry', category: '???', file: 'warcry.mp3' },
 	{ name: '???', category: '???', file: 'Duck_huh.mp3' },
 	{
@@ -42,6 +43,7 @@ const sounds: Array<SubaSound> = [
 	{ name: 'come on Epona!', category: 'english', file: 'COME_ON_EPONA.mp3' },
 
 	{ name: 'cough_1', file: 'cough_1.mp3' },
+	{ name: 'continue game?no', file:"dqgamexit.mp3"}
 	{ name: 'engine sound', file: 'engine_sound.mp3' },
 	{ name: '(evil) shuba', file: 'evil_shuba.mp3' },
 	{ name: 'gara gara gara ft. Mio', file: 'garagaragaramio_chuckle.mp3' },
@@ -52,6 +54,8 @@ const sounds: Array<SubaSound> = [
 	{ name: 'hi honey', category: 'english', file: 'hi_honey.mp3' },
 	{ name: 'hiyaaa', file: 'hiyaaa.mp3' },
 	{ name: 'humming bgm', file: 'humming_bgm.mp3' },
+	{ name: 'i am not donald duck anymore 📱', file: 'iamnotdonaldduckanymore.mp3' },
+	{ name: 'im a winner', file: 'imawinner.mp3' },
 	{ name: 'uwaa', category: 'screams', file: 'uwaa.mp3' },
 
 	{ name: 'I love cabbage x3', file: 'i_love_cabbage_x3.mp3' },
@@ -61,6 +65,7 @@ const sounds: Array<SubaSound> = [
 	{ name: 'jakajakajanjan', file: 'jakajakajanjan.mp3' },
 	{ name: 'Japanglish', category: 'english', file: 'japanglish.mp3' },
 	{ name: 'just do it!', category: 'english', file: 'JUST_DO_IT_COME_ON.mp3' },
+	{ name: 'just like subaru', category: 'shuba', file: 'justlikesubaru.mp3' },
 
 	{ name: 'kaio-ken', file: 'kaioken.mp3' },
 	{ name: 'tickling Choco', file: 'tickles_Choco.mp3' },
@@ -85,7 +90,13 @@ const sounds: Array<SubaSound> = [
 	{ name: 'ora x3 shuba x3', file: 'ora_x3_shuba_x3.mp3' },
 	{ name: 'oshiri puri puri', file: 'oshiri_puri_puri.mp3' },
 	{ name: 'oyasumi asmr', file: 'oyasumi_asmr.mp3' },
+	{ name: 'otsubaru goodmorningbababa', file: 'otsubarugoodmorninggoodbabababa.mp3' },
+	{ name: 'please go hotwing', category:'english', file: 'pleasegohotwing.mp3' },
+	{ name: 'duck rolled', category:'english', file: 'rickroll.mp3' },
+	{ name: 'tonguetwister', category:'english', file: 'tonguetwister.mp3' },
+	{ name: 'subaru is a cat', file: 'subaruisacat.mp3' },
 	{ name: 'prr', file: 'prr.mp3' },
+	{ name: 'uwaaa', file: 'uwaaa.mp3' },
 	{ name: 'quackquack', file: 'quackquack.mp3' },
 	{ name: 'satifaction', category: 'english', file: 'satifaction.mp3' },
 	{ name: 'scream baka', file: 'scream_baka.mp3' },
