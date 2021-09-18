@@ -7,6 +7,8 @@
 	import Lazy from 'svelte-lazy';
 	import LL from '/src/i18n/i18n-svelte';
 	import SNSLink from '$lib/components/SNSLink.svelte';
+	import { baseURL } from '$lib/variables.ts'
+	import metatwi from '/static/assets/images/soundboardthumb.jpg';
 
 	let duration;
 	let muted = false;
@@ -19,7 +21,31 @@
 </script>
 
 <svelte:head>
-	<title>{$LL.HEADER.SOUNDBOARD()}</title>
+	<!-- Primary Meta Tags -->
+<title>Oozora Subaru Soundboard -
+	大空スバル サウンドボード</title>
+	<meta name="title" content="Oozora Subaru Soundboard -
+	大空スバル サウンドボード">
+	<meta name="description" content="duck noises on demand
+	アヒルの鳴き声オンデマンド">
+	
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://subatomos.com/soundboard/">
+	<meta property="og:title" content="Oozora Subaru Soundboard -
+	大空スバル サウンドボード">
+	<meta property="og:description" content="duck noises on demand
+	アヒルの鳴き声オンデマンド">
+	<meta property="og:image" content={metatwi}>
+	
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://subatomos.com/soundboard/">
+	<meta property="twitter:title" content="Oozora Subaru Soundboard -
+	大空スバル サウンドボード">
+	<meta property="twitter:description" content="duck noises on demand
+	アヒルの鳴き声オンデマンド">
+	<meta property="twitter:image" content={`${baseURL}${metatwi}`}>
 </svelte:head>
 <!--<audio-->
 
