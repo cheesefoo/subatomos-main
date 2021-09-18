@@ -43,7 +43,7 @@ const sounds: Array<SubaSound> = [
 	{ name: 'come on Epona!', category: 'english', file: 'COME_ON_EPONA.mp3' },
 
 	{ name: 'cough_1', file: 'cough_1.mp3' },
-	{ name: 'continue game?no', file:"dqgamexit.mp3"},
+	{ name: 'continue game?no', file:"dqgameexit.mp3"},
 	{ name: 'engine sound', file: 'engine_sound.mp3' },
 	{ name: '(evil) shuba', file: 'evil_shuba.mp3' },
 	{ name: 'gara gara gara ft. Mio', file: 'garagaragaramio_chuckle.mp3' },
