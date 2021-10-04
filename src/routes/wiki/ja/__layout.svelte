@@ -5,17 +5,16 @@
 	import '/src/app.scss';
 	import { initI18n, locale, setLocale } from '/src/i18n/i18n-svelte';
 	import type { Locales } from '$i18n/i18n-types';
-
 	import { browser } from '$app/env';
 	import { detectLocale, localStorageDetector } from 'typesafe-i18n/detectors';
 	import { onMount } from 'svelte';
+	import { Breadcrumb, BreadcrumbItem } from '$lib/components/Breadcrumb';
 
 	export async function load({ page, fetch, session, context }) {
 		// detect locale of user (see https://github.com/ivanhofer/typesafe-i18n#locale-detection)
 		let locale: Locales = 'en';
 		if (browser) {
 			setLocale(detectLocale('en', ['en', 'ja'], localStorageDetector));
-			console.log('browser');
 		}
 		await initI18n(locale);
 
@@ -33,7 +32,7 @@
 </script>
 
 <main>
-	<Header lang={true} />
+	<Header />
 	<Panel>
 		<slot />
 	</Panel>

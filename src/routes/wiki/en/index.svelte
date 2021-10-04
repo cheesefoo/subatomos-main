@@ -11,8 +11,8 @@
 		});
 
 		try {
-			const posts = await api.posts.browse({ limit: 10, include: 'tags' });
-			const tags = await api.tags.browse({ limit: 10, visibility: 'public' });
+			const posts = await api.posts.browse({ limit: 10, include: 'tags', filter: 'tag:-hash-ja' });
+			const tags = await api.tags.browse({ limit: 10, filter: 'visibility:public' });
 
 			return {
 				props: {
@@ -39,9 +39,9 @@
 
 <h3>Categories</h3>
 {#each tags as tag}
-	<li><a href="/wiki/categories/{tag.slug}">{tag.name}</a></li>
+	<li><a href="/wiki/en/categories/{tag.slug}">{tag.name}</a></li>
 {/each}
 <h3>recent updates</h3>
 {#each posts as post}
-	<li><a href="/wiki/posts/{post.slug}">{post.title}</a></li>
+	<li><a href="/wiki/en/posts/{post.slug}">{post.title}</a></li>
 {/each}
