@@ -47,7 +47,7 @@
 
 	import { goto } from '$app/navigation';
 	function routeToPage(route, replaceState) {
-		goto(`/${route}`, { replaceState })
+		goto(`/${route}`, { replaceState });
 	}
 	function goBack(defaultRoute = '/wiki/ja/') {
 		const ref = document.referrer;
@@ -59,7 +59,7 @@
 	<link rel="alternate" href="https://subatomos.com/wiki/ja/{slug}" hreflang="ja" />
 </svelte:head>
 
-<h2 ><a href='..'>←</a></h2>
+<h2><a href="..">←</a></h2>
 <!--<Breadcrumb noTrailingSlash skeleton count={3} />-->
 
 <h1>{post.title}</h1>
