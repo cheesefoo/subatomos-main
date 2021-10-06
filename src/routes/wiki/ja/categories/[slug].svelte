@@ -18,20 +18,23 @@
 			const tag: Tag = await api.tags.read({ slug }, { formats: ['html'] });
 			const posts = await api.posts.browse({ limit: 10, filter: `tag:hash-ja+tag:${slug}` });
 
-			return { props: { posts: posts, tag: tag } };
+			return { props: { posts: posts, slug: slug, tag: tag } };
 		} catch (err) {
 			console.log(err);
 		}
 	}
 </script>
-
 <script lang="ts">
 	import { Tag } from '@tryghost/content-api';
 
 	export let posts;
+	export let slug;
 	export let tag: Tag;
 </script>
 
+<svelte:head>
+	<link rel="alternate" href="https://subatomos.com/wiki/ja/categories/{slug}" hreflang="ja" />
+</svelte:head>
 <h1>{tag.name}</h1>
 
 {#each posts as post}

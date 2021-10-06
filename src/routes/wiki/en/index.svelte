@@ -11,11 +11,13 @@
 		});
 
 		try {
+			const page = await api.pages.read({slug:'oozora-subaru'},{ formats: ['html'],});
 			const posts = await api.posts.browse({ limit: 10, include: 'tags', filter: 'tag:-hash-ja' });
 			const tags = await api.tags.browse({ limit: 10, filter: 'visibility:public' });
 
 			return {
 				props: {
+					page: page,
 					posts: posts,
 					tags: tags
 				}
@@ -30,12 +32,20 @@
 		}
 	}
 </script>
-
 <script>
+	export let page;
 	export let posts;
 	export let tags;
 	let promise = Promise.resolve([]);
 </script>
+
+<svelte:head>
+	<link rel="alternate" href="https://subatomos.com/wiki/ja/" hreflang="ja" />
+	<link rel="alternate" href="https://subatomos.com/wiki/en/" hreflang="en" />
+</svelte:head>
+
+{@html page.html}
+
 
 <h3>Categories</h3>
 {#each tags as tag}
@@ -45,3 +55,21 @@
 {#each posts as post}
 	<li><a href="/wiki/en/posts/{post.slug}">{post.title}</a></li>
 {/each}
+
+<style lang='scss'>
+
+  :global(h2) {
+    font-family: keifont, sans-serif;
+    font-size: 2em;
+    font-weight: bolder;
+  }
+  :global(p), :global(a), :global(li), :global(ul){
+    font-family: keifont, sans-serif;
+    font-weight: 100;
+  }
+
+  :global(h3) {
+    font-family: keifont, sans-serif;
+    font-size: 1.5em;
+  }
+</style>
