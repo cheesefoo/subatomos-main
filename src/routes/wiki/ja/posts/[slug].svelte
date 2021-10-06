@@ -27,7 +27,6 @@
 		}
 	}
 </script>
-
 <script>
 	import Breadcrumb from '$lib/components/Breadcrumb/Breadcrumb.svelte';
 
