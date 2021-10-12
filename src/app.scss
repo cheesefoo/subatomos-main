@@ -10,27 +10,27 @@ $images: 'static/assets/images';
 
 @font-face {
 	// This is parsed as a normal function call that takes a quoted string.
-	src: url('/static/KleeOne-Regular.woff2') format('woff2');
+	src: url('/KleeOne-Regular.woff2') format('woff2');
 	font-family: 'klee';
 	font-weight: normal;
 }
 
 @font-face {
 	// This is parsed as a normal function call that takes a quoted string.
-	src: url('/static/KleeOne-SemiBold.woff2') format('woff2');
+	src: url('/KleeOne-SemiBold.woff2') format('woff2');
 	font-family: 'klee';
 	font-weight: bold;
 }
 
 @font-face {
 	// This is parsed as a normal function call that takes a quoted string.
-	src: url('/static/KFhimaji.woff2') format('woff2');
+	src: url('/KFhimaji.woff2') format('woff2');
 	font-family: 'KFhimaji';
 	font-weight: normal bold;
 }
 @font-face {
 	// This is parsed as a normal function call that takes a quoted string.
-	src: url('/static/setofont.woff2') format('woff2');
+	src: url('/setofont.woff2') format('woff2');
 	font-family: 'setofont';
 	font-weight: normal bold;
 }

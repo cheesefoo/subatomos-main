@@ -14,7 +14,7 @@
 	import metaimg from '/static/assets/images/3rdanniversarylogo.jpg';
 	import metatwi from '/static/assets/images/meta.jpg';
 
-	import { baseURL } from '$lib/variables.ts'
+	import { baseURL } from '$lib/variables.ts';
 
 	import arrow from '/static/assets/images/scrolldown.png';
 
@@ -88,7 +88,7 @@ We made a video for you to celebrate!!!"
 		content="スバル3周年おめでとう！！！
 We made a video for you to celebrate!!!"
 	/>
-	<meta property="twitter:image" content={`${baseURL}${metatwi}`}/>
+	<meta property="twitter:image" content={`${baseURL}${metatwi}`} />
 </svelte:head>
 <!--<TwitterSEO />-->
 <svelte:window bind:innerHeight bind:scrollY={y} />
