@@ -66,7 +66,40 @@ const sounds: Array<SubaSound> = [
 	{ name: 'Japanglish', category: 'english', file: 'japanglish.mp3' },
 	{ name: 'just do it!', category: 'english', file: 'JUST_DO_IT_COME_ON.mp3' },
 	{ name: 'just like subaru', category: 'shuba', file: 'justlikesubaru.mp3' },
-
+	{ name: 'mimimi', file: 'cicada.mp3' },
+	{ name: 'scream 1',category: 'screams', file: 'explosion_scream_1.mp3' },
+	{
+		name: 'scream 2', category: 'screams',
+		file: 'explosion_scream_2.mp3'
+	},
+	{ name: 'IYAAA', file: 'IYYAAAA.mp3' },
+	{ name: 'MIKOCHI', file: 'MIKOCHI.mp3' },
+	{
+		name: 'nice okay!',
+		category: 'english',
+		file: 'nice_okay_EEEEEE.mp3'
+	},
+	{ name: 'subaru is not a duck', category: 'english', file: 'not_a_duck.mp3' },
+	{
+		name: 'omg',
+		category: 'english',
+		file: 'omg.mp3'
+	},
+	{
+		name: 'peko-chan!',
+		file: 'peko_chan.mp3'
+	},
+	{ name: 'sugee', file: 'sugee.mp3' },
+	{ name: 'fun!', file: 'tanoshii.mp3' },
+	{
+		name: 'uhaha!',
+		file: 'uhaha.mp3'
+	},
+	{
+		name: 'umaiiiii',
+		file: 'umaiiiii.mp3'
+	},
+	{ name: 'wont forgive', file: 'wont_forgive.mp3' },
 	{ name: 'kaio-ken', file: 'kaioken.mp3' },
 	{ name: 'tickling Choco', file: 'tickles_Choco.mp3' },
 	{ name: 'KITAAAA', file: 'KITAAAA.mp3' },

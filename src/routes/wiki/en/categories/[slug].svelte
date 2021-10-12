@@ -42,20 +42,23 @@
 {#each posts as post}
 	<li><a href="/wiki/en/posts/{post.slug}">{post.title}</a></li>
 {/each}
-<style lang='scss'>
 
-  :global(h2) {
-    font-family: keifont, sans-serif;
-    font-size: 2em;
-    font-weight: bolder;
-  }
-  :global(p), :global(a), :global(li), :global(ul){
-    font-family: keifont, sans-serif;
-    font-weight: 100;
-  }
+<style lang="scss">
+	:global(h2) {
+		font-family: keifont, sans-serif;
+		font-size: 2em;
+		font-weight: bolder;
+	}
+	:global(p),
+	:global(a),
+	:global(li),
+	:global(ul) {
+		font-family: keifont, sans-serif;
+		font-weight: 100;
+	}
 
-  :global(h3) {
-    font-family: keifont, sans-serif;
-    font-size: 1.5em;
-  }
+	:global(h3) {
+		font-family: keifont, sans-serif;
+		font-size: 1.5em;
+	}
 </style>
