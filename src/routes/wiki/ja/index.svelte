@@ -46,11 +46,11 @@
 		}
 	}
 </script>
+
 <svelte:head>
 	<link rel="alternate" href="https://subatomos.com/wiki/ja/" hreflang="ja" />
 	<link rel="alternate" href="https://subatomos.com/wiki/en/" hreflang="en" />
 </svelte:head>
-
 
 <h3>カテゴリー</h3>
 {#each tags as tag}

@@ -11,7 +11,7 @@
 		});
 
 		try {
-			const page = await api.pages.read({slug:'oozora-subaru'},{ formats: ['html'],});
+			const page = await api.pages.read({ slug: 'oozora-subaru' }, { formats: ['html'] });
 			const posts = await api.posts.browse({ limit: 10, include: 'tags', filter: 'tag:-hash-ja' });
 			const tags = await api.tags.browse({ limit: 10, filter: 'visibility:public' });
 
@@ -32,6 +32,7 @@
 		}
 	}
 </script>
+
 <script>
 	export let page;
 	export let posts;
@@ -44,8 +45,9 @@
 	<link rel="alternate" href="https://subatomos.com/wiki/en/" hreflang="en" />
 </svelte:head>
 
-{@html page.html}
-
+<div class="content">
+	{@html page.html}
+</div>
 
 <h3>Categories</h3>
 {#each tags as tag}
@@ -56,20 +58,25 @@
 	<li><a href="/wiki/en/posts/{post.slug}">{post.title}</a></li>
 {/each}
 
-<style lang='scss'>
+<style lang="scss">
+	.content {
+		padding: 0 10% 0 4em;
+	}
+	:global(h2) {
+		font-family: keifont, sans-serif;
+		font-size: 2em;
+		font-weight: bolder;
+	}
+	:global(p),
+	:global(a),
+	:global(li),
+	:global(ul) {
+		font-family: keifont, sans-serif;
+		font-weight: 100;
+	}
 
-  :global(h2) {
-    font-family: keifont, sans-serif;
-    font-size: 2em;
-    font-weight: bolder;
-  }
-  :global(p), :global(a), :global(li), :global(ul){
-    font-family: keifont, sans-serif;
-    font-weight: 100;
-  }
-
-  :global(h3) {
-    font-family: keifont, sans-serif;
-    font-size: 1.5em;
-  }
+	:global(h3) {
+		font-family: keifont, sans-serif;
+		font-size: 1.5em;
+	}
 </style>

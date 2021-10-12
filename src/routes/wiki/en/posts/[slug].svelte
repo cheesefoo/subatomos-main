@@ -18,14 +18,15 @@
 
 			let tags = post.tags;
 			return { props: { post: post, slug: slug, tags: tags } };
-
 		} catch (err) {
 			console.log(err);
 		}
 	}
 </script>
+
 <script>
 	import Breadcrumb from '$lib/components/Breadcrumb/Breadcrumb.svelte';
+
 	export let slug;
 
 	export let post;
@@ -38,26 +39,46 @@
 
 <h2><a href="..">←</a></h2>
 <h1>{post.title}</h1>
-{@html post.html}
-
+<div class="content">
+	{@html post.html}
+</div>
 <a href="/wiki/en/categories/">Categories</a> :
 {#each tags as tag}
 	<a href="/wiki/en/categories/{tag.slug}">{tag.name}</a>
 {/each}
-<style lang='scss'>
 
-  :global(h2) {
-    font-family: keifont, sans-serif;
-    font-size: 2em;
-    font-weight: bolder;
-  }
-  :global(p), :global(a), :global(li), :global(ul){
-    font-family: keifont, sans-serif;
-    font-weight: 100;
-  }
+<style lang="scss">
+	.content {
+		padding: 0 10% 0 4em;
+	}
 
-  :global(h3) {
-    font-family: keifont, sans-serif;
-    font-size: 1.5em;
-  }
+	:global(strong) {
+		font-weight: bolder;
+		color: $salmon;
+	}
+
+	:global(h1),
+	:global(h2),
+	:global(h3) {
+		font-family: keifont, sans-serif;
+		font-size: 2em;
+		color: $salmon;
+	}
+
+	:global(h1) {
+		font-size: 2.5em;
+	}
+
+	:global(p),
+	:global(a),
+	:global(li),
+	:global(ul) {
+		font-family: keifont, sans-serif;
+		font-weight: normal;
+	}
+
+	:global(h3) {
+		font-size: 1.5em;
+		color: $salmon;
+	}
 </style>

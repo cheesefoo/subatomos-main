@@ -24,6 +24,7 @@
 		}
 	}
 </script>
+
 <script lang="ts">
 	import { Tag } from '@tryghost/content-api';
 
