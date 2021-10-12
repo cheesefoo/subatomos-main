@@ -43,6 +43,7 @@
 <svelte:head>
 	<link rel="alternate" href="https://subatomos.com/wiki/ja/" hreflang="ja" />
 	<link rel="alternate" href="https://subatomos.com/wiki/en/" hreflang="en" />
+	<title>Oozora Subaru Fan Wiki</title>
 </svelte:head>
 
 <div class="content">
