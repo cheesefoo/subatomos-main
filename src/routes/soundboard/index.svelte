@@ -26,7 +26,7 @@
 	<meta
 		name="title"
 		content="Oozora Subaru Soundboard -
-	大空スバル サウンドボード"
+	大空スバル ボタン"
 	/>
 	<meta
 		name="description"
@@ -40,7 +40,7 @@
 	<meta
 		property="og:title"
 		content="Oozora Subaru Soundboard -
-	大空スバル サウンドボード"
+	大空スバル ボタン"
 	/>
 	<meta
 		property="og:description"
@@ -55,7 +55,7 @@
 	<meta
 		property="twitter:title"
 		content="Oozora Subaru Soundboard -
-	大空スバル サウンドボード"
+	大空スバル ボタン"
 	/>
 	<meta
 		property="twitter:description"
