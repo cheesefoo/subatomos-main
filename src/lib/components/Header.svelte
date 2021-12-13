@@ -22,7 +22,7 @@
 	<nav>
 		<ul>
 			<li class:active={$page.path.endsWith('')}>
-				<a sveltekit:prefetch href="/">{$LL.HEADER.PROJECTS()}</a>
+				<a sveltekit:prefetch href="https://subatomos.com">{$LL.HEADER.PROJECTS()}</a>
 				<ul class="nav-dropdown">
 					<li>
 						<a sveltekit:prefetch href="/wiki/{$locale}">WIKI</a>
@@ -37,9 +37,9 @@
 						<a sveltekit:prefetch href="/soundboard">{$LL.HEADER.SOUNDBOARD()}</a>
 					</li>
 
-					<li class:active={$page.path.endsWith("/tbd'")}>
-						<a sveltekit:prefetch href="/projects/tbd">???</a>
-					</li>
+<!--					<li class:active={$page.path.endsWith("/tbd'")}>-->
+<!--						<a sveltekit:prefetch href="/projects/tbd">???</a>-->
+<!--					</li>-->
 				</ul>
 			</li>
 			<li>
