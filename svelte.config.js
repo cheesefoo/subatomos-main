@@ -22,7 +22,9 @@ const config = {
 			fallback: null
 		}),
 		target: '#svelte',
-
+		prerender: {
+			onError: 'continue'
+		},
 		vite: {
 			resolve: {
 				alias: {
