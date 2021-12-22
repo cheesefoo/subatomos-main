@@ -67,9 +67,10 @@ const sounds: Array<SubaSound> = [
 	{ name: 'just do it!', category: 'english', file: 'JUST_DO_IT_COME_ON.mp3' },
 	{ name: 'just like subaru', category: 'shuba', file: 'justlikesubaru.mp3' },
 	{ name: 'mimimi', file: 'cicada.mp3' },
-	{ name: 'scream 1',category: 'screams', file: 'explosion_scream_1.mp3' },
+	{ name: 'scream 1', category: 'screams', file: 'explosion_scream_1.mp3' },
 	{
-		name: 'scream 2', category: 'screams',
+		name: 'scream 2',
+		category: 'screams',
 		file: 'explosion_scream_2.mp3'
 	},
 	{ name: 'IYAAA', file: 'IYYAAAA.mp3' },
