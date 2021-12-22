@@ -135,6 +135,9 @@
 	</style>
 	<div class="nav" on:click={onHamburger}>
 		<!--	<div class='nav' class:active={dropdownActive} on:click={onHamburger}>-->
+		<div class="wiki">
+			<a sveltekit:prefetch href="/wiki/en"><h4>WIKI (WIP)</h4></a>
+		</div>
 		<div class="third">
 			<img src={third} alt="3rd anniversary" />
 
