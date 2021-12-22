@@ -20,12 +20,12 @@
 </script>
 
 <div class="credit">
-	{#if avatar != undefined}
+	{#if avatar !== undefined}
 		<img class="avatar" src={avatar} alt="avatar" />
 	{/if}
 	<div>
 		<SNSLink icon={sns} {url} {size} />
-		{#if url2 != undefined}
+		{#if url2 !== undefined}
 			<SNSLink icon={sns2} url={url2} {size} />
 		{/if}
 		{#if $media.small || $media.tablet}

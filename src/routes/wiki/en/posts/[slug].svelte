@@ -2,6 +2,7 @@
 	import GhostContentAPI from '@tryghost/content-api';
 
 	import { ghostAPI, ghostURL } from '$lib/variables';
+	import Breadcrumb from '$lib/components/Breadcrumb/Breadcrumb.svelte';
 
 	/**
 	 * @type {import('@sveltejs/kit').Load}
@@ -25,7 +26,7 @@
 </script>
 
 <script>
-	import Breadcrumb from '$lib/components/Breadcrumb/Breadcrumb.svelte';
+	import WikiPage from '$lib/components/WikiPage.svelte';
 
 	export let slug;
 
@@ -40,13 +41,28 @@
 <h2><a href="..">←</a></h2>
 <h1>{post.title}</h1>
 <div class="content">
-	{@html post.html}
+	<!--
+	<main>
+
+		<button use:tooltip={tooltipProps}>
+			Hover me
+		</button>
+		<button use:popover={tooltipProps}>
+			Hover me for popover
+		</button>
+	</main>
+-->
+
+	<WikiPage html={post.html} />
+
+	<!--{@html post.html}-->
 </div>
 <a href="/wiki/en/categories/">Categories</a> :
 {#each tags as tag}
 	<a href="/wiki/en/categories/{tag.slug}">{tag.name}</a>
 {/each}
 
+<!--
 <style lang="scss">
 	.content {
 		padding: 0 10% 0 4em;
@@ -82,3 +98,4 @@
 		color: $salmon;
 	}
 </style>
+-->
