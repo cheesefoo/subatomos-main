@@ -33,10 +33,10 @@
 	export let tags;
 	let promise = Promise.resolve([]);
 </script>
+
 <svelte:head>
 	<link rel="alternate" href="https://subatomos.com/wiki/en/categories" hreflang="en" />
 	<title>Categories - Oozora Subaru Fan Wiki</title>
-
 </svelte:head>
 <h1>Categories</h1>
 {#each tags as tag}

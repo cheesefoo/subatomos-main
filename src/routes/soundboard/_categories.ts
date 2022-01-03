@@ -1,2 +1,10 @@
-const categories: Array<string> = ['ahem', 'english', 'shuba', 'screams', '???'];
+const categories: Array<string> = [
+	'ahem',
+	'english',
+	'shuba',
+	'screams',
+	'ASMR',
+	'imitations',
+	'???'
+];
 export default categories;

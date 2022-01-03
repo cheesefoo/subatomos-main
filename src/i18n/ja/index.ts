@@ -70,11 +70,11 @@ const ja: Translation = {
 	SOUNDBOARD: {
 		SUGGEST: '音声を追加するためにはこちらまでご連絡ください'
 	},
-	WIKI:{
-		CATEGORIES: "カテゴリー",
-		GROUPS: "コンビ、ユニット関連",
-		RECENT_POSTS: "最近のアップデート",
-		JOKES: "jokes/memes"
+	WIKI: {
+		CATEGORIES: 'カテゴリー',
+		GROUPS: 'コンビ、ユニット関連',
+		RECENT_POSTS: '最近のアップデート',
+		JOKES: 'jokes/memes'
 	}
 };
 export default ja;
