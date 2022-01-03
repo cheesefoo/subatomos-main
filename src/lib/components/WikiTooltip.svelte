@@ -4,15 +4,7 @@
 
 <!--{#if hoverText!==undefined}-->
 <i>{hoverText}</i>
-<!--{/if}-->
-<style lang="scss">
-  i {
-    color: #1da1f2;
-		padding: .15rem;
-    background: #ff3e00aa;
-    border-radius: .5rem;
-  }
-</style>
+
 <!--
 
 <script>
@@ -37,3 +29,13 @@ export let text;
 
 </style>
 -->
+
+<!--{/if}-->
+<style lang="scss">
+	i {
+		color: #1da1f2;
+		padding: 0.15rem;
+		background: #ff3e00aa;
+		border-radius: 0.5rem;
+	}
+</style>

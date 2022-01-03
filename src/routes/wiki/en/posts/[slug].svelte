@@ -92,7 +92,7 @@
 	:global(ul) {
 		// padding: 0.5em 0;
 		li {
-					padding: 0.5em;
+			padding: 0.5em;
 			ul {
 				padding-inline-start: 3em;
 				li {
