@@ -35,7 +35,6 @@
 <svelte:head>
 	<link rel="alternate" href="https://subatomos.com/wiki/en/categories/{slug}" hreflang="en" />
 	<title>{tag.name} - Categories - Oozora Subaru Fan Wiki</title>
-
 </svelte:head>
 
 <h2><a href="..">←</a></h2>

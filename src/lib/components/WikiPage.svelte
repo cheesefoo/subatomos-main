@@ -1,5 +1,4 @@
 <script lang="ts">
-
 	import { afterUpdate, onMount } from 'svelte';
 	import TooltipLoader from '$lib/components/TooltipLoader.svelte';
 
@@ -32,14 +31,12 @@
 
 		for (const link of localLinks) {
 			let slug = link.getAttribute('href');
-			if(slug.length ===2)
-			{
+			if (slug.length === 2) {
 				continue;
 			}
 			slug = slug.substring(2);
 			ReplaceLink(link, slug, link.innerHTML);
 			console.log(slug);
-
 		}
 	});
 	function ReplaceLink(target, slug, text) {
@@ -52,6 +49,7 @@
 		target.remove();
 	}
 </script>
+
 <!--aaaaa<a href="./mama" class="excerpt s-kNIkJTWxH42b" aria-expanded="false">a playful role-play</a>aaaaa-->
 
 <div>

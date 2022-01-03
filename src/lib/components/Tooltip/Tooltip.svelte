@@ -1,19 +1,25 @@
 <!--adapted from https://github.com/Kapsonfire-DE/svelte-ktippy-->
-<svelte:options accessors={true}/>
+<svelte:options accessors={true} />
+
 <script>
-	import tippy, {followCursor as pFollowCursor, sticky as pSticky, animateFill as pAnimateFill, inlinePositioning as pInlinePositioning} from "tippy.js";
-	import {onMount as _onMount, onDestroy as _onDestroy} from "svelte";
-	import "tippy.js/dist/tippy.css";
-	import "tippy.js/dist/backdrop.css";
-	import "tippy.js/animations/shift-away.css";
-	export let duration = [300,250];
+	import tippy, {
+		followCursor as pFollowCursor,
+		sticky as pSticky,
+		animateFill as pAnimateFill,
+		inlinePositioning as pInlinePositioning
+	} from 'tippy.js';
+	import { onMount as _onMount, onDestroy as _onDestroy } from 'svelte';
+	import 'tippy.js/dist/tippy.css';
+	import 'tippy.js/dist/backdrop.css';
+	import 'tippy.js/animations/shift-away.css';
+	export let duration = [300, 250];
 	export let delay = null;
 	export let inlinePositioning = true;
 	export let component;
 	export let props = {};
 	export let sticky = false;
 	export let anchorNode;
-	export let placement = 'top'
+	export let placement = 'top';
 	export let appendTo = anchorNode;
 	export let followCursor = false;
 	export let maxWidth = 'calc(100vw - 10px)';
@@ -48,7 +54,7 @@
 		// `null` when interactive: true, otherwise "describedby"
 		content: 'auto',
 		// matches `interactive` boolean
-		expanded: 'auto',
+		expanded: 'auto'
 	};
 	let tooltipNode;
 	let instance = null;
@@ -104,31 +110,28 @@
 				strategy: 'fixed'
 			}
 		});
-/*		if(anchorNode.hasAttribute('id')) {
+		/*		if(anchorNode.hasAttribute('id')) {
 			let id = anchorNode.getAttribute('id');
 			$tippyStore[id] = instance;
 		}*/
 	});
-
-
 </script>
 
 <div bind:this={tooltipNode}>
-	<svelte:component this={component} {...{anchorNode, ...props}}/>
+	<svelte:component this={component} {...{ anchorNode, ...props }} />
 </div>
 
-
 <style>
-    :global(.tippy-box) {
-        background-color: transparent;
-        backdrop-filter: blur(4px);
-        color: #fff;
-        padding: 0;
-        margin: 0;
-    }
+	:global(.tippy-box) {
+		background-color: transparent;
+		backdrop-filter: blur(4px);
+		color: #fff;
+		padding: 0;
+		margin: 0;
+	}
 
-    :global(.tippy-content) {
-        padding: 0;
-        margin: 0;
-    }
+	:global(.tippy-content) {
+		padding: 0;
+		margin: 0;
+	}
 </style>
