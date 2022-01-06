@@ -13,6 +13,7 @@
 			let res = await fetch(url);
 			let json = await res.json();
 			// let json = await res.text();
+			console.log(url)
 			let values = json.values;
 			let [q, data] = reformatData(values);
 
