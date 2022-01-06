@@ -50,10 +50,10 @@
 	<title>{post.title} - Oozora Subaru Fan Wiki</title>
 </svelte:head>
 
-<h2><a href="..">←</a></h2>
+<h2><a href="/wiki/en/categories/">←</a></h2>
 <h1>{post.title}</h1>
 <div class="content">
-	<WikiPage html={post.html}/>
+	<WikiPage html={post.html} />
 </div>
 <a href="/wiki/en/categories/">Categories</a> :
 {#each tags as tag}
