@@ -11,7 +11,9 @@
 		"format": "prettier --write --plugin-search-dir=. .",
 		"typesafe-i18n-generator": "typesafe-i18n"
 	},
- "engines" : { "node" : ">=16.13.0" } ,
+	"engines": {
+		"node": ">=16.13.0"
+	},
 	"devDependencies": {
 		"@carbon/charts": "^0.54.2",
 		"@carbon/charts-svelte": "^0.54.2",

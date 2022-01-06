@@ -1,5 +1,6 @@
 <script lang="ts" context="module">
-	let api_key = process.env.google_sheets_api;
+	import { sheetsAPI } from '$lib/variables';
+	let api_key = sheetsAPI
 	let spreadsheet_id = '1nC5NU5JTO6nHEJDK-inUgL46aXEXUGJiKiVfEcmBALI';
 	// let spreadsheet_id = '1NMn_qg1nO9h9gVLGULcXGXHhngmhGOICIOtS47j4h5E';
 	let tab_name = 'stats';
@@ -21,6 +22,7 @@
 			// let json = await res.text();
 			let values = json.values;
 
+			console.log(values);
 			let [q, data] = reformatData(values);
 			// console.log(data[30]);
 
@@ -71,6 +73,7 @@
 	import '@carbon/charts/styles.min.css';
 	import WordCloud from './WordCloud.svelte';
 	import w from './wordcloud.png';
+	import Lazy from 'svelte-lazy';
 	export let allData;
 	export let questions;
 	let c = allData[2].map((x) => {
@@ -97,6 +100,64 @@
 	let countries = [{ name: 'Country', children: c }];
 	let barWidth = $media.small ? 12 : 24;
 	let graphHeight = $media.small ? '600px' : '400px';
+	let costumeByAge = [{"group":"Original", "name":"13-17", "value":22},
+		{"group":"Original", "name":"18-24", "value":41},
+		{"group":"Original", "name":"25-34", "value":22},
+		{"group":"Original", "name":"35-44", "value":4},
+		{"group":"Sailor", "name":"13-17", "value":18},
+		{"group":"Sailor", "name":"18-24", "value":62},
+		{"group":"Sailor", "name":"25-34", "value":42},
+		{"group":"Sailor", "name":"35-44", "value":8},
+		{"group":"Girly", "name":"13-17", "value":12},
+		{"group":"Girly", "name":"18-24", "value":53},
+		{"group":"Girly", "name":"25-34", "value":32},
+		{"group":"Girly", "name":"35-44", "value":2},
+		{"group":"Kimono", "name":"13-17", "value":5},
+		{"group":"Kimono", "name":"18-24", "value":29},
+		{"group":"Kimono", "name":"25-34", "value":15},
+		{"group":"Kimono", "name":"35-44", "value":2},
+		{"group":"Kimono", "name":"45-54", "value":1},
+		{"group":"Swimsuit", "name":"13-17", "value":2},
+		{"group":"Swimsuit", "name":"18-24", "value":11},
+		{"group":"Swimsuit", "name":"25-34", "value":3},
+		{"group":"Idol", "name":"13-17", "value":5},
+		{"group":"Idol", "name":"18-24", "value":8},
+		{"group":"Idol", "name":"25-34", "value":5}]
+	let hairByAge=[{"group":"Short", "name":"13-17", "value":25},
+		{"group":"Short", "name":"18-24", "value":88},
+		{"group":"Short", "name":"25-34", "value":63},
+		{"group":"Short", "name":"35-44", "value":8},
+		{"group":"Long", "name":"13-17", "value":8},
+		{"group":"Long", "name":"18-24", "value":41},
+		{"group":"Long", "name":"25-34", "value":19},
+		{"group":"Long", "name":"35-44", "value":2},
+		{"group":"Long", "name":"45-54", "value":1},
+		{"group":"Twintail", "name":"13-17", "value":1},
+		{"group":"Twintail", "name":"18-24", "value":6},
+		{"group":"Twintail", "name":"25-34", "value":4},
+		{"group":"Can't Decide", "name":"13-17", "value":30},
+		{"group":"Can't Decide", "name":"18-24", "value":69},
+		{"group":"Can't Decide", "name":"25-34", "value":33},
+		{"group":"Can't Decide", "name":"35-44", "value":6}];
+	let voteByAge = [
+		{ group: 'Girl', name: '13-17', value: 37 },
+		{ group: 'Girl', name: '18-24', value: 102 },
+		{ group: 'Girl', name: '25-34', value: 60 },
+		{ group: 'Girl', name: '35-44', value: 7 },
+		{ group: 'Girl', name: '45-54', value: 1 },
+		{ group: 'Duck', name: '13-17', value: 17 },
+		{ group: 'Duck', name: '18-24', value: 59 },
+		{ group: 'Duck', name: '25-34', value: 38 },
+		{ group: 'Duck', name: '35-44', value: 5 },
+		{ group: 'Abstain', name: '13-17', value: 10 },
+		{ group: 'Abstain', name: '18-24', value: 43 },
+		{ group: 'Abstain', name: '25-34', value: 21 },
+		{ group: 'Abstain', name: '35-44', value: 4 }
+	];
+	let ahijoByAge=[{"group":"Ahijo", "name":"13-17", "value":18},
+		{"group":"Ahijo", "name":"18-24", "value":70},
+		{"group":"Ahijo", "name":"25-34", "value":35},
+		{"group":"Ahijo", "name":"35-44", "value":3}]
 </script>
 
 <!--<svelte:head>-->
@@ -105,117 +166,128 @@
 
 <div>
 	<h1>Subatomo EN Fan Server End of 2021 Survey</h1>
-	<BarChartSimple
-		data={allData[0]}
-		options={{
-			title: questions[0],
-			height: graphHeight,
-			axes: {
-				left: { mapsTo: 'group', scaleType: 'labels' },
-				bottom: { mapsTo: 'value', domain: [0, 200] }
-			},
-			legend: { enabled: false }
-		}}
-	/>
+	<div class="sbs">
+		<DonutChart
+			data={allData[0].map((x) => {
+				return { group: x.group, value: +x.value };
+			})}
+			options={{
+				title: questions[0],
+				height: graphHeight,
+				resizable: true,
+				pie: {
+					valueMapsTo: 'value'
+				},
+				donut: {
+					center: {},
+					alignment: 'center'
+				},
+				legend: { alignment: 'center', truncation: { type: 'none' } }
+			}}
+		/>
+		<DonutChart
+			data={allData[1].map((x) => {
+				return { group: x.group, value: +x.value };
+			})}
+			options={{
+				title: questions[1],
+				height: graphHeight,
+				resizable: true,
+				pie: {
+					valueMapsTo: 'value'
+				},
+				donut: {
+					center: {},
+					alignment: 'center'
+				},
+				legend: { alignment: 'center', truncation: { type: 'none' } }
+			}}
+		/>
+	</div>
+
 	<hr />
-
-	<BarChartSimple
-		data={allData[1]}
-		options={{
-			title: questions[1],
-			height: graphHeight,
-			axes: {
-				left: { mapsTo: 'group', scaleType: 'labels' },
-				bottom: { mapsTo: 'value', domain: [0, 400] }
-			},
-			legend: { enabled: false }
-		}}
-	/>
-	<hr />
-
-	<BarChartSimple
-		data={allData[3]}
-		options={{
-			title: questions[3],
-			height: graphHeight,
-			legend: { truncation: { type: 'none' } },
-			bars: { width: barWidth, maxWidth: barWidth },
-
-			axes: {
-				left: { mapsTo: 'value', domain: [0, 350] },
-				bottom: {
-					mapsTo: 'group',
-					ticks: { rotation: 'none' },
-					truncation: {
-						type: 'mid_line',
-						threshold: 8,
-						numCharacter: 18
+	<div class="sbs">
+		<Lazy height={graphHeight} placeholder="loading...">
+			<DonutChart
+				data={allData[3].map((x) => {
+					return { group: x.group, value: +x.value };
+				})}
+				options={{
+					title: questions[3],
+					height: graphHeight,
+					resizable: true,
+					pie: {
+						valueMapsTo: 'value'
 					},
-					scaleType: 'labels'
-				}
-			}
-		}}
-	/>
-	<hr />
-
-	<BarChartSimple
-		data={allData[4]}
-		options={{
-			title: questions[4],
-			height: graphHeight,
-			bars: { width: barWidth, maxWidth: barWidth },
-
-			axes: {
-				left: { mapsTo: 'value', domain: [0, 150] },
-				bottom: {
-					mapsTo: 'group',
-					ticks: { rotation: 'none' },
-					truncation: {
-						type: 'start',
-						threshold: 8,
-						numCharacter: 18
+					donut: {
+						center: {},
+						alignment: 'center'
 					},
-					scaleType: 'labels'
-				}
-			},
-			legend: { truncation: { type: 'none' } }
-		}}
-	/>
-	<hr />
+					legend: { alignment: 'center', truncation: { type: 'none' } }
+				}}
+			/>
+		</Lazy>
 
-	<TreemapChart
-		data={countries}
-		options={{
-			title: questions[2],
-			height: '400px'
-		}}
-	/>
-	<hr />
-
-	<BarChartSimple
-		data={allData[5]}
-		options={{
-			title: questions[5],
-			height: graphHeight,
-			legend: { truncation: { type: 'none' } },
-			bars: { width: barWidth, maxWidth: barWidth },
-
-			axes: {
-				left: { mapsTo: 'value', domain: [0, 120] },
-				bottom: {
-					mapsTo: 'group',
-					ticks: {
-						rotation: 'none'
+		<Lazy height={graphHeight} placeholder="loading...">
+			<DonutChart
+				data={allData[4].map((x) => {
+					return { group: x.group, value: +x.value };
+				})}
+				options={{
+					title: questions[4],
+					height: graphHeight,
+					resizable: true,
+					pie: {
+						valueMapsTo: 'value'
 					},
-					truncation: { type: 'middle' },
-					scaleType: 'labels'
+					donut: {
+						center: {},
+						alignment: 'center'
+					},
+					legend: { alignment: 'center', truncation: { type: 'none' } }
+				}}
+			/>
+		</Lazy>
+	</div>
+	<hr />
+
+	<Lazy height={400}>
+		<TreemapChart
+			data={countries}
+			options={{
+				title: questions[2],
+				height: '400px'
+			}}
+		/>
+	</Lazy>
+	<hr />
+
+	<Lazy height={graphHeight} placeholder="loading..."
+		><BarChartSimple
+			data={allData[5]}
+			options={{
+				title: questions[5],
+				height: graphHeight,
+				legend: { truncation: { type: 'none' } },
+				bars: { width: barWidth, maxWidth: barWidth },
+
+				axes: {
+					left: { mapsTo: 'value', domain: [0, 120] },
+					bottom: {
+						mapsTo: 'group',
+						ticks: {
+							rotation: 'none'
+						},
+						truncation: { type: 'middle' },
+						scaleType: 'labels'
+					}
 				}
-			}
-		}}
-	/>
+			}}
+		/>
+	</Lazy>
 	<hr />
 	<!--{#if media.small}-->
-	<!--	<BarChartSimple-->
+	<!--	<Lazy height={graphHeight} placeholder='loading...'><BarChartSimple-->
 	<!--		data={allData[6]}-->
 	<!--		options={{-->
 	<!--			title: questions[6],-->
@@ -229,256 +301,402 @@
 	<!--		}}-->
 	<!--	/>-->
 	<!--{:else}-->
-	<BarChartSimple
-		data={allData[6]}
-		options={{
-			title: questions[6],
-			height: '900px',
-			bars: { width: barWidth, maxWidth: barWidth },
+	<Lazy height={900} placeholder="loading..."
+		><BarChartSimple
+			data={allData[6]}
+			options={{
+				title: questions[6],
+				height: '900px',
+				bars: { width: barWidth, maxWidth: barWidth },
 
-			legend: { enabled: false },
-			axes: {
-				left: { mapsTo: 'value', domain: [0, 75] },
-				bottom: { mapsTo: 'group', scaleType: 'labels' }
-			}
-		}}
-	/>
-	<!--{/if}-->
-	<!--grid: { x: { alignWithAxisTicks: true }, y: { alignWithAxisTicks: true } },-->
+				legend: { enabled: false },
+				axes: {
+					left: { mapsTo: 'value', domain: [0, 75] },
+					bottom: { mapsTo: 'group', scaleType: 'labels' }
+				}
+			}}
+		/>
+		<!--{/if}-->
+		<!--grid: { x: { alignWithAxisTicks: true }, y: { alignWithAxisTicks: true } },-->
+	</Lazy>
 	<hr />
+	<!--Rank 3?-->
+	<Lazy height={2000} placeholder="loading..."
+		><BarChartSimple
+			data={ranked}
+			options={{
+				title: 'Rank your top 3 (Legend is clickable)',
+				height: '2000px',
 
-	<BarChartSimple
-		data={ranked}
-		options={{
-			title: 'Rank your top 3 (Legend is clickable)',
-			height: '2000px',
+				bars: { width: barWidth, maxWidth: barWidth },
 
-			bars: { width: barWidth, maxWidth: barWidth },
-
-			axes: {
-				left: {
-					mapsTo: 'key',
-					scaleType: 'labels',
-					truncation: {
-						threshold: 8,
-						numCharacter: 10
-					}
-				},
-				bottom: { mapsTo: 'value', stacked: true }
-			}
-		}}
-	/>
-	<hr />
-	<BarChartSimple
-		data={allData[10]}
-		options={{
-			title: questions[10],
-			height: graphHeight,
-			legend: { truncation: { type: 'none' } },
-			bars: { width: barWidth, maxWidth: barWidth },
-
-			axes: {
-				left: { mapsTo: 'group', scaleType: 'labels' },
-				bottom: { mapsTo: 'value', domain: [0, 75] }
-			}
-		}}
-	/>
+				axes: {
+					left: {
+						mapsTo: 'key',
+						scaleType: 'labels',
+						truncation: {
+							threshold: 8,
+							numCharacter: 10
+						}
+					},
+					bottom: { mapsTo: 'value', stacked: true }
+				}
+			}}
+		/>
+	</Lazy>
 	<hr />
 	<!--	Merch?-->
-	<BarChartSimple
-		data={allData[11]}
-		options={{
-			title: questions[11],
-			height: graphHeight,
-			legend: { truncation: { type: 'none' } },
-			bars: { width: barWidth, maxWidth: barWidth },
-
-			axes: {
-				left: { mapsTo: 'group', scaleType: 'labels' },
-				bottom: { mapsTo: 'value', domain: [0, 350] }
-			}
-		}}
-	/>
+	<Lazy height={graphHeight} placeholder="loading...">
+		<DonutChart
+			data={allData[10].map((x) => {
+				return { group: x.group, value: +x.value };
+			})}
+			options={{
+				title: questions[10],
+				height: graphHeight,
+				resizable: true,
+				pie: {
+					valueMapsTo: 'value'
+				},
+				donut: {
+					center: {},
+					alignment: 'center'
+				},
+				legend: { alignment: 'center', truncation: { type: 'none' } }
+			}}
+		/>
+	</Lazy>
 	<hr />
 	<!--	Started to watch?-->
-	<BarChartSimple
-		data={allData[12]}
-		options={{
-			title: questions[12],
-			height: graphHeight,
-			legend: { truncation: { type: 'none' } },
-			bars: { width: barWidth, maxWidth: barWidth },
+	<Lazy height={graphHeight} placeholder="loading..."
+		><BarChartSimple
+			data={allData[11]}
+			options={{
+				title: questions[11],
+				height: graphHeight,
+				legend: { truncation: { type: 'none' } },
+				bars: { width: barWidth, maxWidth: barWidth },
 
-			axes: {
-				left: { mapsTo: 'group', scaleType: 'labels' },
-				bottom: { mapsTo: 'value', domain: [0, 350] }
-			}
-		}}
-	/>
+				axes: {
+					left: { mapsTo: 'group', scaleType: 'labels' },
+					bottom: { mapsTo: 'value', domain: [0, 350] }
+				}
+			}}
+		/>
+	</Lazy>
 	<hr />
-	<BarChartSimple
-		data={allData[13]}
-		options={{
-			title: questions[13],
-			height: graphHeight,
-			legend: { truncation: { type: 'none' } },
-			bars: { width: barWidth, maxWidth: barWidth },
+	<div class="sbs">
+		<!--	Best Hairstyle?-->
 
-			axes: {
-				left: { mapsTo: 'group', scaleType: 'labels' },
-				bottom: { mapsTo: 'value', domain: [0, 150] }
-			}
-		}}
-	/>
+		<Lazy height={graphHeight} placeholder="loading...">
+			<DonutChart
+				data={allData[14].map((x) => {
+					return { group: x.group, value: +x.value };
+				})}
+				options={{
+					title: questions[14],
+					height: graphHeight,
+					resizable: true,
+					pie: {
+						valueMapsTo: 'value'
+					},
+					donut: {
+						center: {},
+						alignment: 'center'
+					},
+					legend: { alignment: 'center', truncation: { type: 'none' } }
+				}}
+			/>
+		</Lazy>
+		<Lazy height={graphHeight} placeholder="loading...">
+			<BarChartSimple
+				data={hairByAge}
+				options={{
+					title: 'Best Hairstyle? Breakdown by Age',
+					height: graphHeight,
+
+					legend: { truncation: { type: 'none' } },
+					bars: { width: barWidth, maxWidth: barWidth },
+
+					axes: {
+						left: { mapsTo: 'name', scaleType: 'labels' },
+						bottom: { mapsTo: 'value', domain: [0, 250] }
+					}
+				}}
+			/>
+		</Lazy>
+	</div>
 	<hr />
-	<BarChartSimple
-		data={allData[14]}
-		options={{
-			title: questions[14],
-			height: graphHeight,
-			legend: { truncation: { type: 'none' } },
-			bars: { width: barWidth, maxWidth: barWidth },
+	<div class='sbs'>
+		<!--	Girl or Duck?-->
+		<Lazy height={graphHeight} placeholder="loading...">
+			<DonutChart
+				data={allData[15].map((x) => {
+					return { group: x.group, value: +x.value };
+				})}
+				options={{
+					title: questions[15],
+					height: graphHeight,
+					resizable: true,
+					pie: {
+						valueMapsTo: 'value'
+					},
+					donut: {
+						center: {},
+						alignment: 'center'
+					},
+					legend: { alignment: 'center', truncation: { type: 'none' } }
+				}}
+			/>
+		</Lazy>
+		<!--	Girl or Duck Age breakdown -->
+		<Lazy height={graphHeight} placeholder="loading...">
+			<BarChartSimple
+				data={voteByAge}
+				options={{
+					title: 'Girl or Duck? Breakdown by Age',
+					height: graphHeight,
 
-			axes: {
-				left: { mapsTo: 'group', scaleType: 'labels' },
-				bottom: { mapsTo: 'value', domain: [0, 200] }
-			}
-		}}
-	/>
+					legend: { truncation: { type: 'none' } },
+					bars: { width: barWidth, maxWidth: barWidth },
+
+					axes: {
+						left: { mapsTo: 'name', scaleType: 'labels' },
+						bottom: { mapsTo: 'value', domain: [0, 250] }
+					}
+				}}
+			/>
+		</Lazy>
+	</div>
+	<hr/>
+	<div class="sbs">
+		<!--	Favorite Costume?-->
+		<Lazy height={graphHeight} placeholder="loading...">
+			<DonutChart
+				data={allData[13].map((x) => {
+					return { group: x.group, value: +x.value };
+				})}
+				options={{
+					title: questions[13],
+					height: graphHeight,
+					resizable: true,
+					pie: {
+						valueMapsTo: 'value'
+					},
+					donut: {
+						center: {},
+						alignment: 'center'
+					},
+					legend: { alignment: 'center', truncation: { type: 'none' } }
+				}}
+			/>
+		</Lazy>
+		<!--	Costume Age breakdown -->
+		<Lazy height={graphHeight} placeholder="loading...">
+			<BarChartSimple
+				data={costumeByAge}
+				options={{
+					title: 'Favorite Outfit Breakdown by Age',
+					height: graphHeight,
+
+					legend: { truncation: { type: 'none' } },
+					bars: { width: barWidth, maxWidth: barWidth },
+
+					axes: {
+						left: { mapsTo: 'name', scaleType: 'labels' },
+						bottom: { mapsTo: 'value', domain: [0, 100] }
+					}
+				}}
+			/>
+		</Lazy>
+	</div>
 	<hr />
-	<BarChartSimple
-		data={allData[15]}
-		options={{
-			title: questions[15],
-			height: graphHeight,
-			legend: { truncation: { type: 'none' } },
-			bars: { width: barWidth, maxWidth: barWidth },
+	<!--	Ahijo?-->
+	<div class="sbs">
 
-			axes: {
-				left: { mapsTo: 'group', scaleType: 'labels' },
-				bottom: { mapsTo: 'value', domain: [0, 250] }
-			}
-		}}
-	/>
+<!--Ahijo-->
+		<Lazy height={graphHeight} placeholder="loading...">
+			<DonutChart
+				data={allData[16].map((x) => {
+					return { group: x.group, value: +x.value };
+				})}
+				options={{
+					title: questions[16],
+					height: graphHeight,
+					resizable: true,
+					pie: {
+						valueMapsTo: 'value'
+					},
+					donut: {
+						center: {},
+						alignment: 'center'
+					},
+					legend: { alignment: 'center', truncation: { type: 'none' } }
+				}}
+			/>
+		</Lazy>
+		<!--	Is Subaru Favorite?-->
+		<Lazy height={graphHeight} placeholder="loading...">
+			<DonutChart
+				data={allData[12].map((x) => {
+					return { group: x.group, value: +x.value };
+				})}
+				options={{
+					title: questions[12],
+					height: graphHeight,
+					resizable: true,
+					pie: {
+						valueMapsTo: 'value'
+					},
+					donut: {
+						center: {},
+						alignment: 'center'
+					},
+					legend: { alignment: 'center', truncation: { type: 'none' } }
+				}}
+			/>
+		</Lazy>
+<!--		Ahijo by age-->
+		<Lazy height={graphHeight} placeholder="loading...">
+			<BarChartSimple
+				data={ahijoByAge}
+				options={{
+					title: 'Ahijo Breakdown by Age',
+					height: graphHeight,
+
+					legend: { truncation: { type: 'none' } },
+					bars: { width: barWidth, maxWidth: barWidth },
+
+					axes: {
+						left: { mapsTo: 'name', scaleType: 'labels' },
+						bottom: { mapsTo: 'value', domain: [0, 100] }
+					}
+				}}
+			/>
+		</Lazy>
+		<div style="display:flex;flex-direction: column;text-align: center">
+			<h3>People who said "No" to "Is Subaru Your Favorite?" and "Yes" to "Are you Ahijo?"</h3>
+			<strong style="font-size:10em">5</strong>
+		</div>
+	</div>
+
 	<hr />
-	<BarChartSimple
-		data={allData[16]}
-		options={{
-			title: questions[16],
-			height: graphHeight,
-			legend: { truncation: { type: 'none' } },
-			bars: { width: barWidth, maxWidth: barWidth },
 
-			axes: {
-				left: { mapsTo: 'group', scaleType: 'labels' },
-				bottom: { mapsTo: 'value', domain: [0, 250] }
-			}
-		}}
-	/>
+	<Lazy height={graphHeight} placeholder="loading...">
+		<BarChartSimple
+			data={allData[17]}
+			options={{
+				title: questions[17],
+				height: graphHeight,
+
+				legend: { truncation: { type: 'none' } },
+				bars: { width: barWidth, maxWidth: barWidth },
+
+				axes: {
+					left: { mapsTo: 'group', scaleType: 'labels' },
+					bottom: { mapsTo: 'value', domain: [0, 250] }
+				}
+			}}
+		/>
+	</Lazy>
 	<hr />
-	<BarChartSimple
-		data={allData[17]}
-		options={{
-			title: questions[17],
-			height: graphHeight,
+	<Lazy height={graphHeight} placeholder="loading..."
+		><BarChartSimple
+			data={allData[18]}
+			options={{
+				title: questions[18],
+				height: graphHeight,
 
-			legend: { truncation: { type: 'none' } },
-			bars: { width: barWidth, maxWidth: barWidth },
+				legend: { truncation: { type: 'none' } },
+				bars: { width: barWidth, maxWidth: barWidth },
 
-			axes: {
-				left: { mapsTo: 'group', scaleType: 'labels' },
-				bottom: { mapsTo: 'value', domain: [0, 250] }
-			}
-		}}
-	/>
+				axes: {
+					left: { mapsTo: 'group', scaleType: 'labels' },
+					bottom: { mapsTo: 'value', domain: [0, 225] }
+				}
+			}}
+		/>
+	</Lazy>
 	<hr />
-	<BarChartSimple
-		data={allData[18]}
-		options={{
-			title: questions[18],
-			height: graphHeight,
+	<Lazy height={graphHeight} placeholder="loading..."
+		><BarChartSimple
+			data={allData[19]}
+			options={{
+				title: questions[19],
+				height: graphHeight,
 
-			legend: { truncation: { type: 'none' } },
-			bars: { width: barWidth, maxWidth: barWidth },
+				legend: { truncation: { type: 'none' } },
+				bars: { width: barWidth, maxWidth: barWidth },
 
-			axes: {
-				left: { mapsTo: 'group', scaleType: 'labels' },
-				bottom: { mapsTo: 'value', domain: [0, 225] }
-			}
-		}}
-	/>
+				axes: {
+					left: { mapsTo: 'group', scaleType: 'labels' },
+					bottom: { mapsTo: 'value', domain: [0, 130] }
+				}
+			}}
+		/>
+	</Lazy>
 	<hr />
-	<BarChartSimple
-		data={allData[19]}
-		options={{
-			title: questions[19],
-			height: graphHeight,
+	<Lazy height={graphHeight} placeholder="loading..."
+		><BarChartSimple
+			data={allData[20]}
+			options={{
+				title: questions[20],
+				height: graphHeight,
 
-			legend: { truncation: { type: 'none' } },
-			bars: { width: barWidth, maxWidth: barWidth },
+				legend: { truncation: { type: 'none' } },
+				bars: { width: barWidth, maxWidth: barWidth },
 
-			axes: {
-				left: { mapsTo: 'group', scaleType: 'labels' },
-				bottom: { mapsTo: 'value', domain: [0, 130] }
-			}
-		}}
-	/>
+				axes: {
+					left: { mapsTo: 'group', scaleType: 'labels' },
+					bottom: { mapsTo: 'value', domain: [0, 150] }
+				}
+			}}
+		/>
+	</Lazy>
 	<hr />
-	<BarChartSimple
-		data={allData[20]}
-		options={{
-			title: questions[20],
-			height: graphHeight,
+	<Lazy height={graphHeight} placeholder="loading..."
+		><BarChartSimple
+			data={allData[21]}
+			options={{
+				title: questions[21],
+				height: graphHeight,
 
-			legend: { truncation: { type: 'none' } },
-			bars: { width: barWidth, maxWidth: barWidth },
+				legend: { truncation: { type: 'none' } },
+				bars: { width: barWidth, maxWidth: barWidth },
 
-			axes: {
-				left: { mapsTo: 'group', scaleType: 'labels' },
-				bottom: { mapsTo: 'value', domain: [0, 150] }
-			}
-		}}
-	/>
+				axes: {
+					left: { mapsTo: 'group', scaleType: 'labels' },
+					bottom: { mapsTo: 'value', domain: [0, 150] }
+				}
+			}}
+		/>
+	</Lazy>
 	<hr />
-	<BarChartSimple
-		data={allData[21]}
-		options={{
-			title: questions[21],
-			height: graphHeight,
+	<Lazy height={1200} placeholder="loading..."
+		><BarChartSimple
+			data={allData[22]}
+			options={{
+				title: questions[22],
+				height: '1200px',
 
-			legend: { truncation: { type: 'none' } },
-			bars: { width: barWidth, maxWidth: barWidth },
+				legend: { truncation: { type: 'none' } },
 
-			axes: {
-				left: { mapsTo: 'group', scaleType: 'labels' },
-				bottom: { mapsTo: 'value', domain: [0, 150] }
-			}
-		}}
-	/>
-	<hr />
-	<BarChartSimple
-		data={allData[22]}
-		options={{
-			title: questions[22],
-			height: '1200px',
+				resizable: true,
+				bars: { width: barWidth, maxWidth: barWidth },
 
-			legend: { truncation: { type: 'none' } },
-
-			resizable: true,
-			bars: { width: barWidth, maxWidth: barWidth },
-
-			axes: {
-				left: { mapsTo: 'group', scaleType: 'labels' },
-				bottom: { mapsTo: 'value', domain: [0, 100] }
-			}
-		}}
-	/>
+				axes: {
+					left: { mapsTo: 'group', scaleType: 'labels' },
+					bottom: { mapsTo: 'value', domain: [0, 100] }
+				}
+			}}
+		/>
+	</Lazy>
 	<hr />
 	<div class="cloud">
 		<h3>What would you like Subaru to play in the future? (optional)</h3>
 		{#if $media.small}
 			<Lightbox clickToClose imagePreset="fullscreen">
-				<img width='600' alt="wordcloud" src={w} />
+				<img width="600" alt="wordcloud" src={w} />
 			</Lightbox>
 		{:else}
 			<WordCloud />
@@ -720,7 +938,6 @@
 </div>
 
 <style lang="scss">
-	div,
 	.cloud {
 		display: flex;
 		flex-direction: column;
@@ -733,15 +950,23 @@
 		margin: 4em 0;
 	}
 	.server,
+	.sbs,
 	.mods {
 		display: grid;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 4em;
+	}
+	.sbs-3 {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
 		gap: 4em;
 	}
 	//:global(.server > div){
 	// margin:4em;
 	//}
 	:global(.bx--cc--title p.title),
+	:global(p),
+	:global(text),
 	:global(.bx--cc--axes g.axis g.tick text) {
 		font-family: klee, serif;
 	}
@@ -761,6 +986,7 @@
 			gap: 1em;
 		}
 		:global(.bx--cc--title p.title),
+		:global(p),
 		:global(.bx--cc--axes g.axis g.tick text) {
 			font-family: klee, serif;
 		}
