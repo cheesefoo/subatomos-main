@@ -4,7 +4,7 @@
 
 	export let html = undefined;
 	let slug = html.replace(/<a href="\.\/(.+?)">.+?<\/a>/g, '<Tooltip/>');
-	export async function load({ page, fetch, session, context }) {
+	export async function load() {
 		{
 			console.log(html);
 			slug = html.replace(/(<a href="\.\/)(.+?)(">.+?<\/a>)/g, `<Tooltip/>`);

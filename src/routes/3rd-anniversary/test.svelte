@@ -1,3 +1,4 @@
+<!--
 <script context="module" lang="ts">
 	import { dev } from '$app/env';
 	import video from '/static/assets/Suba_Logo_60fps.webm';
@@ -42,17 +43,17 @@
 		<video src={video} autoplay playbackRate={2} on:ended={finish} />
 	</div>
 {/if}
-<!--<LottiePlayer-->
-<!--	src={anim}-->
-<!--	autoplay={true}-->
-<!--	loop={true}-->
-<!--	controls={true}-->
-<!--	renderer='canvas'-->
-<!--	background='transparent'-->
-<!--	height={900}-->
-<!--	width={1200}-->
+&lt;!&ndash;<LottiePlayer&ndash;&gt;
+&lt;!&ndash;	src={anim}&ndash;&gt;
+&lt;!&ndash;	autoplay={true}&ndash;&gt;
+&lt;!&ndash;	loop={true}&ndash;&gt;
+&lt;!&ndash;	controls={true}&ndash;&gt;
+&lt;!&ndash;	renderer='canvas'&ndash;&gt;
+&lt;!&ndash;	background='transparent'&ndash;&gt;
+&lt;!&ndash;	height={900}&ndash;&gt;
+&lt;!&ndash;	width={1200}&ndash;&gt;
 
-<!--/>-->
+&lt;!&ndash;/>&ndash;&gt;
 <style>
 	.logo-container {
 		width: 100vw;
@@ -60,3 +61,4 @@
 		overflow: hidden;
 	}
 </style>
+-->

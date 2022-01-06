@@ -4,7 +4,7 @@
 	import { detectLocale } from '/src/i18n/i18n-util';
 	import { navigatorDetector } from 'typesafe-i18n/detectors';
 
-	export async function load({ page, fetch, session, context }) {
+	export async function load() {
 		// detect locale of user (see https://github.com/ivanhofer/typesafe-i18n#locale-detection)
 
 		// const detectedLocale = detectLocale(navigatorDetector);
