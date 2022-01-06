@@ -31,7 +31,9 @@
 						<a sveltekit:prefetch href="/3rd-anniversary">{$LL.HEADER.THIRD_ANNIVERSARY()}</a>
 					</li>
 					<li class:active={$page.url.pathname.endsWith('/ponds')}>
-						<a sveltekit:prefetch href="https://subatomos.com/projects/ponds">{$LL.HEADER.PONDS()}</a>
+						<a sveltekit:prefetch href="https://subatomos.com/projects/ponds"
+							>{$LL.HEADER.PONDS()}</a
+						>
 					</li>
 					<li class:active={$page.url.pathname.endsWith('/soundboard')}>
 						<a sveltekit:prefetch href="/soundboard">{$LL.HEADER.SOUNDBOARD()}</a>
