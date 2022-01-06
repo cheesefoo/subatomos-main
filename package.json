@@ -17,6 +17,7 @@
 	"devDependencies": {
 		"@carbon/charts": "^0.54.2",
 		"@carbon/charts-svelte": "^0.54.2",
+		"@sveltejs/adapter-cloudflare": "^1.0.0-next.6",
 		"@sveltejs/adapter-static": "next",
 		"@sveltejs/kit": "next",
 		"@tryghost/content-api": "^1.5.16",
