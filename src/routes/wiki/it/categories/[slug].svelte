@@ -6,14 +6,14 @@
 	/**
 	 * @type {import('@sveltejs/kit').Load}
 	 */
-	export async function load({ page, fetch, session, context }) {
+	export async function load({params, fetch, session, context }) {
 		const api = new GhostContentAPI({
 			url: `${ghostURL}`,
 			key: `${ghostAPI}`,
 			version: 'v3'
 		});
 		try {
-			let slug = page.params.slug;
+			let slug = params.slug;
 
 			const tag: Tag = await api.tags.read({ slug }, { formats: ['html'] });
 			const posts = await api.posts.browse({ limit: 10, filter: `tag:hash-it` });

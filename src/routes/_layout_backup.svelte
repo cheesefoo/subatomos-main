@@ -4,7 +4,7 @@
 	import Panel from '$lib/components/Panel.svelte';
 	import '../app.scss';
 	import { initI18n } from '/src/i18n/i18n-svelte';
-	export async function load({ page, fetch, session, context }) {
+	export async function load({ fetch, session, context }) {
 		// detect locale of user (see https://github.com/ivanhofer/typesafe-i18n#locale-detection)
 
 		// const detectedLocale = detectLocale('en', ['en', 'ja'], navigatorDetector);
