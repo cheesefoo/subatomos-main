@@ -1,16 +1,9 @@
 <script lang="ts" context="module">
 	import { sheetsAPI } from '$lib/variables';
-	let api_key = sheetsAPI
 	let spreadsheet_id = '1nC5NU5JTO6nHEJDK-inUgL46aXEXUGJiKiVfEcmBALI';
 	// let spreadsheet_id = '1NMn_qg1nO9h9gVLGULcXGXHhngmhGOICIOtS47j4h5E';
 	let tab_name = 'stats';
-	let url =
-		'https://sheets.googleapis.com/v4/spreadsheets/' +
-		spreadsheet_id +
-		'/values/' +
-		tab_name +
-		'?alt=json&key=' +
-		api_key;
+	let url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheet_id}/values/${tab_name}?alt=json&key=${sheetsAPI}`;
 
 	/**
 	 * @type {import('@sveltejs/kit').Load}
@@ -21,10 +14,7 @@
 			let json = await res.json();
 			// let json = await res.text();
 			let values = json.values;
-
-			console.log(values);
 			let [q, data] = reformatData(values);
-			// console.log(data[30]);
 
 			return { props: { allData: data, questions: q } };
 		} catch (err) {
