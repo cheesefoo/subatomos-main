@@ -276,21 +276,21 @@
 		/>
 	</Lazy>
 	<hr />
-	<!--{#if media.small}-->
-	<!--	<Lazy height={graphHeight} placeholder='loading...'><BarChartSimple-->
-	<!--		data={allData[6]}-->
-	<!--		options={{-->
-	<!--			title: questions[6],-->
-	<!--			height: '900px',			bars: { width: barWidth, maxWidth: barWidth },-->
-
-	<!--			legend: { enabled: false },-->
-	<!--			axes: {-->
-	<!--				left: { mapsTo: 'group', scaleType: 'labels' },-->
-	<!--				bottom: { mapsTo: 'value', domain: [0, 75] }-->
-	<!--			}-->
-	<!--		}}-->
-	<!--	/>-->
-	<!--{:else}-->
+	{#if $media.small}
+		<Lazy height={900} placeholder='loading...'><BarChartSimple
+			data={allData[6]}
+			options={{
+				title: questions[6],
+				height: '900px',
+				bars: { width: barWidth, maxWidth: barWidth },
+				legend: { enabled: false },
+				axes: {
+					left: { mapsTo: 'group', scaleType: 'labels' },
+					bottom: { mapsTo: 'value', domain: [0, 75] }
+				}
+			}}
+		/></Lazy>
+	{:else}
 	<Lazy height={900} placeholder="loading..."
 		><BarChartSimple
 			data={allData[6]}
@@ -305,10 +305,10 @@
 					bottom: { mapsTo: 'group', scaleType: 'labels' }
 				}
 			}}
-		/>
-		<!--{/if}-->
+		/>	</Lazy>
+		{/if}
 		<!--grid: { x: { alignWithAxisTicks: true }, y: { alignWithAxisTicks: true } },-->
-	</Lazy>
+
 	<hr />
 	<!--Rank 3?-->
 	<Lazy height={2000} placeholder="loading..."
@@ -969,7 +969,7 @@
 			justify-content: center;
 			margin: 0;
 		}
-		.server,
+		.server,.sbs, .sbs-3,
 		.mods {
 			display: grid;
 			grid-template-columns: repeat(1, minmax(0, 1fr));
