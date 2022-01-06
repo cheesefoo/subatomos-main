@@ -30,6 +30,7 @@
 <script>
 	import Breadcrumb from '$lib/components/Breadcrumb/Breadcrumb.svelte';
 	import { onMount } from 'svelte';
+	import WikiPage from '$lib/components/WikiPage.svelte';
 
 	export let slug;
 
@@ -52,7 +53,7 @@
 <h2><a href="..">←</a></h2>
 <h1>{post.title}</h1>
 <div class="content">
-	{@html post.html}
+	<WikiPage html={post.html}/>
 </div>
 <a href="/wiki/en/categories/">Categories</a> :
 {#each tags as tag}
