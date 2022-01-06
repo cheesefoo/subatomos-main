@@ -66,15 +66,11 @@
 
 <script lang="ts">
 	import { media } from '$lib/stores/stores';
-
+	import { Lightbox } from 'svelte-lightbox';
 	import { BarChartSimple, DonutChart, TreemapChart } from '@carbon/charts-svelte';
 	import '@carbon/charts/styles.min.css';
-
-
-	// import 'carbon-components/css/carbon-components.min.css';
-
 	import WordCloud from './WordCloud.svelte';
-
+	import w from './wordcloud.png';
 	export let allData;
 	export let questions;
 	let c = allData[2].map((x) => {
@@ -99,6 +95,8 @@
 	};
 	let ranked = r();
 	let countries = [{ name: 'Country', children: c }];
+	let barWidth = $media.small ? 12 : 24;
+	let graphHeight = $media.small ? '600px' : '400px';
 </script>
 
 <!--<svelte:head>-->
@@ -111,7 +109,7 @@
 		data={allData[0]}
 		options={{
 			title: questions[0],
-			height: '400px',
+			height: graphHeight,
 			axes: {
 				left: { mapsTo: 'group', scaleType: 'labels' },
 				bottom: { mapsTo: 'value', domain: [0, 200] }
@@ -125,7 +123,7 @@
 		data={allData[1]}
 		options={{
 			title: questions[1],
-			height: '400px',
+			height: graphHeight,
 			axes: {
 				left: { mapsTo: 'group', scaleType: 'labels' },
 				bottom: { mapsTo: 'value', domain: [0, 400] }
@@ -139,8 +137,9 @@
 		data={allData[3]}
 		options={{
 			title: questions[3],
-			height: '400px',
+			height: graphHeight,
 			legend: { truncation: { type: 'none' } },
+			bars: { width: barWidth, maxWidth: barWidth },
 
 			axes: {
 				left: { mapsTo: 'value', domain: [0, 350] },
@@ -163,7 +162,9 @@
 		data={allData[4]}
 		options={{
 			title: questions[4],
-			height: '400px',
+			height: graphHeight,
+			bars: { width: barWidth, maxWidth: barWidth },
+
 			axes: {
 				left: { mapsTo: 'value', domain: [0, 150] },
 				bottom: {
@@ -195,8 +196,10 @@
 		data={allData[5]}
 		options={{
 			title: questions[5],
-			height: '400px',
+			height: graphHeight,
 			legend: { truncation: { type: 'none' } },
+			bars: { width: barWidth, maxWidth: barWidth },
+
 			axes: {
 				left: { mapsTo: 'value', domain: [0, 120] },
 				bottom: {
@@ -211,33 +214,36 @@
 		}}
 	/>
 	<hr />
-	{#if media.small}
-		<BarChartSimple
-			data={allData[6]}
-			options={{
-				title: questions[6],
-				height: '900px',
-				legend: { enabled: false },
-				axes: {
-					left: { mapsTo: 'group', scaleType: 'labels' },
-					bottom: { mapsTo: 'value', domain: [0, 75] }
-				}
-			}}
-		/>
-	{:else}
-		<BarChartSimple
-			data={allData[6]}
-			options={{
-				title: questions[6],
-				height: '900px',
-				legend: { enabled: false },
-				axes: {
-					left: { mapsTo: 'value', domain: [0, 75] },
-					bottom: { mapsTo: 'group', scaleType: 'labels' }
-				}
-			}}
-		/>
-	{/if}
+	<!--{#if media.small}-->
+	<!--	<BarChartSimple-->
+	<!--		data={allData[6]}-->
+	<!--		options={{-->
+	<!--			title: questions[6],-->
+	<!--			height: '900px',			bars: { width: barWidth, maxWidth: barWidth },-->
+
+	<!--			legend: { enabled: false },-->
+	<!--			axes: {-->
+	<!--				left: { mapsTo: 'group', scaleType: 'labels' },-->
+	<!--				bottom: { mapsTo: 'value', domain: [0, 75] }-->
+	<!--			}-->
+	<!--		}}-->
+	<!--	/>-->
+	<!--{:else}-->
+	<BarChartSimple
+		data={allData[6]}
+		options={{
+			title: questions[6],
+			height: '900px',
+			bars: { width: barWidth, maxWidth: barWidth },
+
+			legend: { enabled: false },
+			axes: {
+				left: { mapsTo: 'value', domain: [0, 75] },
+				bottom: { mapsTo: 'group', scaleType: 'labels' }
+			}
+		}}
+	/>
+	<!--{/if}-->
 	<!--grid: { x: { alignWithAxisTicks: true }, y: { alignWithAxisTicks: true } },-->
 	<hr />
 
@@ -247,7 +253,7 @@
 			title: 'Rank your top 3 (Legend is clickable)',
 			height: '2000px',
 
-			bars: { width: 24, maxWidth: 24 },
+			bars: { width: barWidth, maxWidth: barWidth },
 
 			axes: {
 				left: {
@@ -267,9 +273,9 @@
 		data={allData[10]}
 		options={{
 			title: questions[10],
-			height: '400px',
+			height: graphHeight,
 			legend: { truncation: { type: 'none' } },
-			bars: { width: 24, maxWidth: 24 },
+			bars: { width: barWidth, maxWidth: barWidth },
 
 			axes: {
 				left: { mapsTo: 'group', scaleType: 'labels' },
@@ -283,9 +289,9 @@
 		data={allData[11]}
 		options={{
 			title: questions[11],
-			height: '400px',
+			height: graphHeight,
 			legend: { truncation: { type: 'none' } },
-			bars: { width: 24, maxWidth: 24 },
+			bars: { width: barWidth, maxWidth: barWidth },
 
 			axes: {
 				left: { mapsTo: 'group', scaleType: 'labels' },
@@ -299,9 +305,9 @@
 		data={allData[12]}
 		options={{
 			title: questions[12],
-			height: '400px',
+			height: graphHeight,
 			legend: { truncation: { type: 'none' } },
-			bars: { width: 24, maxWidth: 24 },
+			bars: { width: barWidth, maxWidth: barWidth },
 
 			axes: {
 				left: { mapsTo: 'group', scaleType: 'labels' },
@@ -314,9 +320,9 @@
 		data={allData[13]}
 		options={{
 			title: questions[13],
-			height: '400px',
+			height: graphHeight,
 			legend: { truncation: { type: 'none' } },
-			bars: { width: 24, maxWidth: 24 },
+			bars: { width: barWidth, maxWidth: barWidth },
 
 			axes: {
 				left: { mapsTo: 'group', scaleType: 'labels' },
@@ -329,9 +335,9 @@
 		data={allData[14]}
 		options={{
 			title: questions[14],
-			height: '400px',
+			height: graphHeight,
 			legend: { truncation: { type: 'none' } },
-			bars: { width: 24, maxWidth: 24 },
+			bars: { width: barWidth, maxWidth: barWidth },
 
 			axes: {
 				left: { mapsTo: 'group', scaleType: 'labels' },
@@ -344,9 +350,9 @@
 		data={allData[15]}
 		options={{
 			title: questions[15],
-			height: '400px',
+			height: graphHeight,
 			legend: { truncation: { type: 'none' } },
-			bars: { width: 24, maxWidth: 24 },
+			bars: { width: barWidth, maxWidth: barWidth },
 
 			axes: {
 				left: { mapsTo: 'group', scaleType: 'labels' },
@@ -359,9 +365,9 @@
 		data={allData[16]}
 		options={{
 			title: questions[16],
-			height: '400px',
+			height: graphHeight,
 			legend: { truncation: { type: 'none' } },
-			bars: { width: 24, maxWidth: 24 },
+			bars: { width: barWidth, maxWidth: barWidth },
 
 			axes: {
 				left: { mapsTo: 'group', scaleType: 'labels' },
@@ -374,10 +380,10 @@
 		data={allData[17]}
 		options={{
 			title: questions[17],
-			height: '400px',
+			height: graphHeight,
 
 			legend: { truncation: { type: 'none' } },
-			bars: { width: 24, maxWidth: 24 },
+			bars: { width: barWidth, maxWidth: barWidth },
 
 			axes: {
 				left: { mapsTo: 'group', scaleType: 'labels' },
@@ -390,10 +396,10 @@
 		data={allData[18]}
 		options={{
 			title: questions[18],
-			height: '400px',
+			height: graphHeight,
 
 			legend: { truncation: { type: 'none' } },
-			bars: { width: 24, maxWidth: 24 },
+			bars: { width: barWidth, maxWidth: barWidth },
 
 			axes: {
 				left: { mapsTo: 'group', scaleType: 'labels' },
@@ -406,10 +412,10 @@
 		data={allData[19]}
 		options={{
 			title: questions[19],
-			height: '400px',
+			height: graphHeight,
 
 			legend: { truncation: { type: 'none' } },
-			bars: { width: 24, maxWidth: 24 },
+			bars: { width: barWidth, maxWidth: barWidth },
 
 			axes: {
 				left: { mapsTo: 'group', scaleType: 'labels' },
@@ -422,10 +428,10 @@
 		data={allData[20]}
 		options={{
 			title: questions[20],
-			height: '400px',
+			height: graphHeight,
 
 			legend: { truncation: { type: 'none' } },
-			bars: { width: 24, maxWidth: 24 },
+			bars: { width: barWidth, maxWidth: barWidth },
 
 			axes: {
 				left: { mapsTo: 'group', scaleType: 'labels' },
@@ -438,10 +444,10 @@
 		data={allData[21]}
 		options={{
 			title: questions[21],
-			height: '400px',
+			height: graphHeight,
 
 			legend: { truncation: { type: 'none' } },
-			bars: { width: 24, maxWidth: 24 },
+			bars: { width: barWidth, maxWidth: barWidth },
 
 			axes: {
 				left: { mapsTo: 'group', scaleType: 'labels' },
@@ -454,30 +460,36 @@
 		data={allData[22]}
 		options={{
 			title: questions[22],
-			height: '400px',
+			height: '1200px',
 
 			legend: { truncation: { type: 'none' } },
 
 			resizable: true,
-			bars: { width: 24, maxWidth: 24 },
+			bars: { width: barWidth, maxWidth: barWidth },
 
 			axes: {
-				left: { mapsTo: 'value', domain: [0, 100] },
-				bottom: { mapsTo: 'group', scaleType: 'labels' }
+				left: { mapsTo: 'group', scaleType: 'labels' },
+				bottom: { mapsTo: 'value', domain: [0, 100] }
 			}
 		}}
 	/>
 	<hr />
-	<div class='cloud'>
-	<h3>What would you like Subaru to play in the future? (optional)</h3>
-	<WordCloud />
+	<div class="cloud">
+		<h3>What would you like Subaru to play in the future? (optional)</h3>
+		{#if $media.small}
+			<Lightbox clickToClose imagePreset="fullscreen">
+				<img width='600' alt="wordcloud" src={w} />
+			</Lightbox>
+		{:else}
+			<WordCloud />
+		{/if}
 	</div>
 	<div class="server">
 		<DonutChart
 			data={c1}
 			options={{
 				title: questions[23],
-				height: '400px',
+				height: graphHeight,
 				resizable: true,
 				pie: {
 					valueMapsTo: 'count'
@@ -492,7 +504,7 @@
 			})}
 			options={{
 				title: questions[24],
-				height: '400px',
+				height: graphHeight,
 
 				donut: { alignment: 'center' },
 				resizable: true,
@@ -508,7 +520,7 @@
 			})}
 			options={{
 				title: questions[25],
-				height: '400px',
+				height: graphHeight,
 
 				donut: { alignment: 'center' },
 				resizable: true,
@@ -524,7 +536,7 @@
 			})}
 			options={{
 				title: questions[26],
-				height: '400px',
+				height: graphHeight,
 				donut: { alignment: 'center' },
 				resizable: true,
 				pie: {
@@ -539,7 +551,7 @@
 			})}
 			options={{
 				title: questions[27],
-				height: '400px',
+				height: graphHeight,
 
 				donut: { alignment: 'center' },
 				resizable: true,
@@ -556,7 +568,7 @@
 			})}
 			options={{
 				title: questions[28],
-				height: '400px',
+				height: graphHeight,
 				donut: { alignment: 'center' },
 				resizable: true,
 				pie: {
@@ -571,7 +583,7 @@
 			})}
 			options={{
 				title: questions[29],
-				height: '400px',
+				height: graphHeight,
 
 				donut: { alignment: 'center' },
 				resizable: true,
@@ -590,14 +602,17 @@
 			})}
 			options={{
 				title: questions[30],
-				height: '400px',
+				height: graphHeight,
 				resizable: true,
 				pie: {
 					valueMapsTo: 'value'
 				},
-				donut: { center: {
-      label: "Ato"
-    },alignment: 'center' },
+				donut: {
+					center: {
+						label: 'Ato'
+					},
+					alignment: 'center'
+				},
 				legend: { alignment: 'center', truncation: { type: 'none' } }
 			}}
 		/>
@@ -607,14 +622,17 @@
 			})}
 			options={{
 				title: questions[31],
-				height: '400px',
+				height: graphHeight,
 				resizable: true,
 				pie: {
 					valueMapsTo: 'value'
 				},
-				donut: { center: {
-      label: "Ato🤔"
-    },alignment: 'center' },
+				donut: {
+					center: {
+						label: 'Ato🤔'
+					},
+					alignment: 'center'
+				},
 				legend: { alignment: 'center', truncation: { type: 'none' } }
 			}}
 		/>
@@ -624,30 +642,37 @@
 			})}
 			options={{
 				title: questions[32],
-				height: '400px',
+				height: graphHeight,
 				resizable: true,
 				pie: {
 					valueMapsTo: 'value'
 				},
-				donut: { center: {
-      label: "Ato"
-    },  alignment: 'center' },
+				donut: {
+					center: {
+						label: 'Ato'
+					},
+					alignment: 'center'
+				},
 				legend: { alignment: 'center', truncation: { type: 'none' } }
 			}}
-		/>	<DonutChart
+		/>
+		<DonutChart
 			data={allData[33].map((x) => {
 				return { group: x.group, value: +x.value };
 			})}
 			options={{
 				title: questions[33],
-				height: '400px',
+				height: graphHeight,
 				resizable: true,
 				pie: {
 					valueMapsTo: 'value'
 				},
-				donut: { center: {
-      label: "Allu🤔"
-    },  alignment: 'center' },
+				donut: {
+					center: {
+						label: 'Allu🤔'
+					},
+					alignment: 'center'
+				},
 				legend: { alignment: 'center', truncation: { type: 'none' } }
 			}}
 		/>
@@ -657,14 +682,17 @@
 			})}
 			options={{
 				title: questions[34],
-				height: '400px',
+				height: graphHeight,
 				resizable: true,
 				pie: {
 					valueMapsTo: 'value'
 				},
-				donut: {  center: {
-      label: "Allu"
-    }, alignment: 'center' },
+				donut: {
+					center: {
+						label: 'Allu'
+					},
+					alignment: 'center'
+				},
 				legend: { alignment: 'center', truncation: { type: 'none' } }
 			}}
 		/>
@@ -674,24 +702,26 @@
 			})}
 			options={{
 				title: questions[35],
-				height: '400px',
+				height: graphHeight,
 				resizable: true,
 				pie: {
 					valueMapsTo: 'value'
 				},
-				donut: {    center: {
-      label: "Ato"
-    }, alignment: 'center' },
+				donut: {
+					center: {
+						label: 'Ato'
+					},
+					alignment: 'center'
+				},
 				legend: { alignment: 'center', truncation: { type: 'none' } }
 			}}
 		/>
-
-
 	</div>
 </div>
 
 <style lang="scss">
-	div,.cloud {
+	div,
+	.cloud {
 		display: flex;
 		flex-direction: column;
 		align-content: center;
@@ -724,7 +754,12 @@
 			justify-content: center;
 			margin: 0;
 		}
-
+		.server,
+		.mods {
+			display: grid;
+			grid-template-columns: repeat(1, minmax(0, 1fr));
+			gap: 1em;
+		}
 		:global(.bx--cc--title p.title),
 		:global(.bx--cc--axes g.axis g.tick text) {
 			font-family: klee, serif;

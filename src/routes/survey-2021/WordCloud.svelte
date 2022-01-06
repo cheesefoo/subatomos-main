@@ -1,588 +1,417 @@
 <script>
 </script>
 
-<svg width="960" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg"
-	><g /><g transform="translate(480,300)scale(1.0041841268539429,1.0041841268539429)"
-		><text
-			text-anchor="middle"
-			transform="translate(-197,60)rotate(0)"
-			style="font-size: 100px; font-family: Keifont; fill: rgb(222, 158, 214);">Yakuza</text
-		><text
-			text-anchor="middle"
-			transform="translate(-166,126)"
-			style="font-size: 66px; font-family: Keifont; fill: rgb(82, 84, 163);">FFX</text
-		><text
-			text-anchor="middle"
-			transform="translate(-182,-94)rotate(0)"
-			style="font-size: 66px; font-family: Keifont; fill: rgb(107, 110, 207);">Mother 3</text
-		><text
-			text-anchor="middle"
-			transform="translate(196,145)"
-			style="font-size: 54px; font-family: Keifont; fill: rgb(156, 158, 222);">FF9</text
-		><text
-			text-anchor="middle"
-			transform="translate(-82,-149)"
-			style="font-size: 54px; font-family: Keifont; fill: rgb(99, 121, 57);">Dark Souls</text
-		><text
-			text-anchor="middle"
-			transform="translate(-41,-196)rotate(0)"
-			style="font-size: 54px; font-family: Keifont; fill: rgb(140, 162, 82);">Deltarune</text
-		><text
-			text-anchor="middle"
-			transform="translate(22,105)"
-			style="font-size: 54px; font-family: Keifont; fill: rgb(181, 207, 107);">Valorant</text
-		><text
-			text-anchor="middle"
-			transform="translate(193,52)rotate(0)"
-			style="font-size: 38px; font-family: Keifont; fill: rgb(140, 109, 49);">Half Life</text
-		><text
-			text-anchor="middle"
-			transform="translate(254,17)rotate(0)"
-			style="font-size: 38px; font-family: Keifont; fill: rgb(189, 158, 57);">Terraria</text
-		><text
-			text-anchor="middle"
-			transform="translate(280,86)rotate(0)"
-			style="font-size: 38px; font-family: Keifont; fill: rgb(231, 186, 82);">Assetto Corsa</text
-		><text
-			text-anchor="middle"
-			transform="translate(54,-100)rotate(0)"
-			style="font-size: 54px; font-family: Keifont; fill: rgb(231, 203, 148);">Omori</text
-		><text
-			text-anchor="middle"
-			transform="translate(170,-149)"
-			style="font-size: 38px; font-family: Keifont; fill: rgb(132, 60, 57);">Half-Life 2</text
-		><text
-			text-anchor="middle"
-			transform="translate(125,-240)rotate(0)"
-			style="font-size: 38px; font-family: Keifont; fill: rgb(173, 73, 74);">Kingdom Hearts</text
-		><text
-			text-anchor="middle"
-			transform="translate(-291,-148)"
-			style="font-size: 38px; font-family: Keifont; fill: rgb(214, 97, 107);">Portal</text
-		><text
-			text-anchor="middle"
-			transform="translate(350,146)rotate(0)"
-			style="font-size: 38px; font-family: Keifont; fill: rgb(231, 150, 156);">Jump King</text
-		><text
-			text-anchor="middle"
-			transform="translate(244,-108)"
-			style="font-size: 38px; font-family: Keifont; fill: rgb(165, 81, 148);">Titanfall 2</text
-		><text
-			text-anchor="middle"
-			transform="translate(269,-190)rotate(0)"
-			style="font-size: 38px; font-family: Keifont; fill: rgb(206, 109, 189);"
-			>Metal Gear Rising</text
-		><text
-			text-anchor="middle"
-			transform="translate(-151,-242)rotate(0)"
-			style="font-size: 38px; font-family: Keifont; fill: rgb(222, 158, 214);">Bloodborne</text
-		><text
-			text-anchor="middle"
-			transform="translate(-301,-195)rotate(0)"
-			style="font-size: 38px; font-family: Keifont; fill: rgb(57, 59, 121);">Subnautica</text
-		><text
-			text-anchor="middle"
-			transform="translate(53,13)rotate(0)"
-			style="font-size: 38px; font-family: Keifont; fill: rgb(82, 84, 163);">FFXIV</text
-		><text
-			text-anchor="middle"
-			transform="translate(-174,75)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(107, 110, 207);">Minecraft</text
-		><text
-			text-anchor="middle"
-			transform="translate(23,63)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(156, 158, 222);">Walking Dead</text
-		><text
-			text-anchor="middle"
-			transform="translate(-99,-4)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(99, 121, 57);"
-			>Pokemon Mystery Dungeon</text
-		><text
-			text-anchor="middle"
-			transform="translate(19,25)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(140, 162, 82);">Xeno series</text
-		><text
-			text-anchor="middle"
-			transform="translate(65,53)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(181, 207, 107);">Custom Robo</text
-		><text
-			text-anchor="middle"
-			transform="translate(-70,125)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(206, 219, 156);">Fatal frame</text
-		><text
-			text-anchor="middle"
-			transform="translate(-64,-14)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(140, 109, 49);">Rust</text
-		><text
-			text-anchor="middle"
-			transform="translate(55,-89)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(189, 158, 57);">Ghost Trick</text
-		><text
-			text-anchor="middle"
-			transform="translate(91,136)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(231, 186, 82);"
-			>Big Brain Academy</text
-		><text
-			text-anchor="middle"
-			transform="translate(-127,-77)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(231, 203, 148);">Civilization vi</text
-		><text
-			text-anchor="middle"
-			transform="translate(-184,136)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(132, 60, 57);">Hades</text
-		><text
-			text-anchor="middle"
-			transform="translate(140,7)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(173, 73, 74);">Metal Slug</text
-		><text
-			text-anchor="middle"
-			transform="translate(-123,71)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(214, 97, 107);">Kontra</text
-		><text
-			text-anchor="middle"
-			transform="translate(-313,-179)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(231, 150, 156);"
-			>Pokemon Legends Arceus</text
-		><text
-			text-anchor="middle"
-			transform="translate(-237,74)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(123, 65, 115);">Starbound</text
-		><text
-			text-anchor="middle"
-			transform="translate(-161,-137)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(165, 81, 148);">HITMAN</text
-		><text
-			text-anchor="middle"
-			transform="translate(16,42)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(206, 109, 189);">Metro 2033</text
-		><text
-			text-anchor="middle"
-			transform="translate(204,99)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(222, 158, 214);"
-			>Xenoblade Chronicles</text
-		><text
-			text-anchor="middle"
-			transform="translate(246,-92)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(57, 59, 121);">Dynasty Warriors</text
-		><text
-			text-anchor="middle"
-			transform="translate(88,117)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(82, 84, 163);"
-			>Cookie Run Kingdom</text
-		><text
-			text-anchor="middle"
-			transform="translate(-244,-136)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(107, 110, 207);">osu!</text
-		><text
-			text-anchor="middle"
-			transform="translate(295,112)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(156, 158, 222);">Monster Hunter</text
-		><text
-			text-anchor="middle"
-			transform="translate(252,-11)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(99, 121, 57);">Horror Games</text
-		><text
-			text-anchor="middle"
-			transform="translate(109,62)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(140, 162, 82);">Asetto Corsa</text
-		><text
-			text-anchor="middle"
-			transform="translate(-104,136)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(181, 207, 107);"
-			>Valkyria Chronicles</text
-		><text
-			text-anchor="middle"
-			transform="translate(304,29)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(206, 219, 156);">The Walking</text
-		><text
-			text-anchor="middle"
-			transform="translate(-54,115)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(140, 109, 49);">Heavy Rain</text
-		><text
-			text-anchor="middle"
-			transform="translate(37,196)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(189, 158, 57);">Alien Insolation</text
-		><text
-			text-anchor="middle"
-			transform="translate(71,26)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(231, 186, 82);">Eroge</text
-		><text
-			text-anchor="middle"
-			transform="translate(51,-137)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(231, 203, 148);"
-			>Metal Gear Solid</text
-		><text
-			text-anchor="middle"
-			transform="translate(140,-77)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(132, 60, 57);">Smol Ame</text
-		><text
-			text-anchor="middle"
-			transform="translate(153,200)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(173, 73, 74);"
-			>Five Nights at Freddy's</text
-		><text
-			text-anchor="middle"
-			transform="translate(223,-133)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(214, 97, 107);">Okami</text
-		><text
-			text-anchor="middle"
-			transform="translate(-311,85)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(231, 150, 156);"
-			>Bioshock - Alien Isolation</text
-		><text
-			text-anchor="middle"
-			transform="translate(-280,97)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(123, 65, 115);"
-			>Trails in the Sky</text
-		><text
-			text-anchor="middle"
-			transform="translate(110,-137)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(165, 81, 148);">Ys 8</text
-		><text
-			text-anchor="middle"
-			transform="translate(281,-79)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(206, 109, 189);">Zero Escape</text
-		><text
-			text-anchor="middle"
-			transform="translate(-22,-230)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(222, 158, 214);">Summer Pocket</text
-		><text
-			text-anchor="middle"
-			transform="translate(-39,-82)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(57, 59, 121);">Sonic</text
-		><text
-			text-anchor="middle"
-			transform="translate(360,98)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(82, 84, 163);"
-			>Gundam Battle Operation Code F</text
-		><text
-			text-anchor="middle"
-			transform="translate(131,-223)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(107, 110, 207);">Rock Band</text
-		><text
-			text-anchor="middle"
-			transform="translate(-75,-273)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(156, 158, 222);">Team Fortress 2</text
-		><text
-			text-anchor="middle"
-			transform="translate(6,206)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(99, 121, 57);">Streets of Rage</text
-		><text
-			text-anchor="middle"
-			transform="translate(61,-274)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(140, 162, 82);"
-			>Mario Tennis Aces</text
-		><text
-			text-anchor="middle"
-			transform="translate(-86,-97)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(181, 207, 107);">Halo</text
-		><text
-			text-anchor="middle"
-			transform="translate(142,17)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(206, 219, 156);">Gravity Daze</text
-		><text
-			text-anchor="middle"
-			transform="translate(-99,-135)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(140, 109, 49);">Witcher 3</text
-		><text
-			text-anchor="middle"
-			transform="translate(142,210)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(189, 158, 57);">Yakuza Kiwami 2</text
-		><text
-			text-anchor="middle"
-			transform="translate(-264,136)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(231, 186, 82);"
-			>Assassins Creed 3</text
-		><text
-			text-anchor="middle"
-			transform="translate(298,-49)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(231, 203, 148);">Dragon Quest 5</text
-		><text
-			text-anchor="middle"
-			transform="translate(-93,212)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(132, 60, 57);"
-			>Night in the Woods</text
-		><text
-			text-anchor="middle"
-			transform="translate(-346,74)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(173, 73, 74);">Overcooked 2</text
-		><text
-			text-anchor="middle"
-			transform="translate(318,-34)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(214, 97, 107);"
-			>Escape From Tarkov</text
-		><text
-			text-anchor="middle"
-			transform="translate(338,-159)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(231, 150, 156);"
-			>Zelda: Skyward Sword</text
-		><text
-			text-anchor="middle"
-			transform="translate(51,-76)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(123, 65, 115);">Gothic</text
-		><text
-			text-anchor="middle"
-			transform="translate(-215,-8)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(165, 81, 148);">Soma</text
-		><text
-			text-anchor="middle"
-			transform="translate(262,201)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(206, 109, 189);">Forza Horizon 5</text
-		><text
-			text-anchor="middle"
-			transform="translate(171,-96)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(222, 158, 214);">Visage</text
-		><text
-			text-anchor="middle"
-			transform="translate(-282,-230)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(57, 59, 121);">Apex Legends</text
-		><text
-			text-anchor="middle"
-			transform="translate(-292,124)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(82, 84, 163);"
-			>The Great Ace Attorney</text
-		><text
-			text-anchor="middle"
-			transform="translate(-268,109)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(107, 110, 207);">Until Dawn</text
-		><text
-			text-anchor="middle"
-			transform="translate(-393,-129)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(156, 158, 222);"
-			>Elder Scrolls V: Skyrim</text
-		><text
-			text-anchor="middle"
-			transform="translate(308,40)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(99, 121, 57);">Metal Gear</text
-		><text
-			text-anchor="middle"
-			transform="translate(-6,-284)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(140, 162, 82);"
-			>GBA Magical Vacation</text
-		><text
-			text-anchor="middle"
-			transform="translate(-259,-79)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(181, 207, 107);">Arknights</text
-		><text
-			text-anchor="middle"
-			transform="translate(-155,-285)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(206, 219, 156);"
-			>Kirby's Return to Dream Land</text
-		><text
-			text-anchor="middle"
-			transform="translate(7,126)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(140, 109, 49);">Idolmaster</text
-		><text
-			text-anchor="middle"
-			transform="translate(216,-228)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(231, 186, 82);"
-			>Metal Gear Solid 3</text
-		><text
-			text-anchor="middle"
-			transform="translate(-158,200)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(231, 203, 148);"
-			>Ghost of Tsushima</text
-		><text
-			text-anchor="middle"
-			transform="translate(-232,211)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(173, 73, 74);"
-			>Fire Emblem: Three Houses</text
-		><text
-			text-anchor="middle"
-			transform="translate(179,-271)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(214, 97, 107);">Persona 5 Royal</text
-		><text
-			text-anchor="middle"
-			transform="translate(209,-78)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(231, 150, 156);">Kenshi</text
-		><text
-			text-anchor="middle"
-			transform="translate(333,55)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(123, 65, 115);"
-			>Neverwinter Nights</text
-		><text
-			text-anchor="middle"
-			transform="translate(-267,-12)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(165, 81, 148);">GTA</text
-		><text
-			text-anchor="middle"
-			transform="translate(-349,109)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(206, 109, 189);">Spider-man</text
-		><text
-			text-anchor="middle"
-			transform="translate(-9,136)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(222, 158, 214);">God of war</text
-		><text
-			text-anchor="middle"
-			transform="translate(287,171)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(57, 59, 121);">Sleeping Dogs</text
-		><text
-			text-anchor="middle"
-			transform="translate(302,-64)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(82, 84, 163);">Fire Emblem</text
-		><text
-			text-anchor="middle"
-			transform="translate(-370,-117)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(107, 110, 207);">Halo Infinite</text
-		><text
-			text-anchor="middle"
-			transform="translate(304,-20)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(156, 158, 222);">Resident Evil 4</text
-		><text
-			text-anchor="middle"
-			transform="translate(-263,200)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(99, 121, 57);">Deep Rock Galatic</text
-		><text
-			text-anchor="middle"
-			transform="translate(-359,95)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(140, 162, 82);">Vermintide</text
-		><text
-			text-anchor="middle"
-			transform="translate(366,-144)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(181, 207, 107);"
-			>Dark Messiah (Might and Magic)</text
-		><text
-			text-anchor="middle"
-			transform="translate(-387,141)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(206, 219, 156);">Dead Space</text
-		><text
-			text-anchor="middle"
-			transform="translate(-381,-24)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(140, 109, 49);">Mass Effect</text
-		><text
-			text-anchor="middle"
-			transform="translate(88,-288)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(189, 158, 57);">Zeno Clash</text
-		><text
-			text-anchor="middle"
-			transform="translate(-376,-96)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(231, 186, 82);">Assassin's Creed</text
-		><text
-			text-anchor="middle"
-			transform="translate(280,157)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(231, 203, 148);">FF7 Remake</text
-		><text
-			text-anchor="middle"
-			transform="translate(177,-282)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(132, 60, 57);">City builders</text
-		><text
-			text-anchor="middle"
-			transform="translate(-384,-48)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(173, 73, 74);">Ace Attorney</text
-		><text
-			text-anchor="middle"
-			transform="translate(-393,-35)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(214, 97, 107);">Cross Code</text
-		><text
-			text-anchor="middle"
-			transform="translate(-381,-266)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(231, 150, 156);"
-			>Paper Mario: The Origami King</text
-		><text
-			text-anchor="middle"
-			transform="translate(82,70)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(123, 65, 115);">Doom</text
-		><text
-			text-anchor="middle"
-			transform="translate(328,184)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(165, 81, 148);"
-			>Super Mario Bros. 3</text
-		><text
-			text-anchor="middle"
-			transform="translate(388,-8)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(206, 109, 189);"
-			>Diablo II: Resurrected</text
-		><text
-			text-anchor="middle"
-			transform="translate(372,5)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(222, 158, 214);">Super People</text
-		><text
-			text-anchor="middle"
-			transform="translate(-384,-64)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(57, 59, 121);">Forza Horizon</text
-		><text
-			text-anchor="middle"
-			transform="translate(251,213)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(82, 84, 163);">Stardew Valley</text
-		><text
-			text-anchor="middle"
-			transform="translate(-388,-86)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(107, 110, 207);">Super Seducer</text
-		><text
-			text-anchor="middle"
-			transform="translate(-414,-150)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(156, 158, 222);"
-			>Untitled Goose Game</text
-		><text
-			text-anchor="middle"
-			transform="translate(-411,3)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(99, 121, 57);">Duck Game</text
-		><text
-			text-anchor="middle"
-			transform="translate(-405,47)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(140, 162, 82);">Tales of Arise</text
-		><text
-			text-anchor="middle"
-			transform="translate(353,-95)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(181, 207, 107);"
-			>Sausage Legend 2</text
-		><text
-			text-anchor="middle"
-			transform="translate(68,126)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(206, 219, 156);">OUTLAST</text
-		><text
-			text-anchor="middle"
-			transform="translate(367,-79)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(140, 109, 49);">Genshin Impact</text
-		><text
-			text-anchor="middle"
-			transform="translate(-35,195)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(189, 158, 57);">Skyrim</text
-		><text
-			text-anchor="middle"
-			transform="translate(-349,200)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(231, 186, 82);">Wolfenstein</text
-		><text
-			text-anchor="middle"
-			transform="translate(-41,246)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(231, 203, 148);"
-			>Pokémon Mystery Dungeon</text
-		><text
-			text-anchor="middle"
-			transform="translate(119,221)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(132, 60, 57);">Crab game</text
-		><text
-			text-anchor="middle"
-			transform="translate(396,167)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(173, 73, 74);"
-			>Kerbal Space Program</text
-		><text
-			text-anchor="middle"
-			transform="translate(-68,222)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(214, 97, 107);">Warioware</text
-		><text
-			text-anchor="middle"
-			transform="translate(-392,-106)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(231, 150, 156);"
-			>Europa Universalis IV</text
-		><text
-			text-anchor="middle"
-			transform="translate(-168,149)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(165, 81, 148);">Sekiro</text
-		><text
-			text-anchor="middle"
-			transform="translate(-45,-23)"
-			style="font-size: 83px; font-family: Keifont; fill: rgb(57, 59, 121);">Hollow Knight</text
-		><text
-			text-anchor="middle"
-			transform="translate(-359,-251)rotate(0)"
-			style="font-size: 10px; font-family: Keifont; fill: rgb(189, 158, 57);"
-			>VA-11 HALL-A: Cyberpunk Barten</text
-		><text
-			text-anchor="middle"
-			transform="translate(-88,184)rotate(0)"
-			style="font-size: 54px; font-family: Keifont; fill: rgb(206, 219, 156);"
-			>Zelda: Twilight Princess</text
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600"
+	><g text-anchor="middle"
+		><text
+			transform="matrix(1.00418 0 0 1.00418 282 360)"
+			style="font-size:100px;font-family:Keifont;fill:#de9ed6">Yakuza</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 313 427)"
+			style="font-size:66px;font-family:Keifont;fill:#5254a3">FFX</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 297 206)"
+			style="font-size:66px;font-family:Keifont;fill:#6b6ecf">Mother 3</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 677 446)"
+			style="font-size:54px;font-family:Keifont;fill:#9c9ede">FF9</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 398 150)"
+			style="font-size:54px;font-family:Keifont;fill:#637939">Dark Souls</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 439 103)"
+			style="font-size:54px;font-family:Keifont;fill:#8ca252">Deltarune</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 502 405)"
+			style="font-size:54px;font-family:Keifont;fill:#b5cf6b">Valorant</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 674 352)"
+			style="font-size:38px;font-family:Keifont;fill:#8c6d31">Half Life</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 735 317)"
+			style="font-size:38px;font-family:Keifont;fill:#bd9e39">Terraria</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 761 386)"
+			style="font-size:38px;font-family:Keifont;fill:#e7ba52">Assetto Corsa</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 534 200)"
+			style="font-size:54px;font-family:Keifont;fill:#e7cb94">Omori</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 651 150)"
+			style="font-size:38px;font-family:Keifont;fill:#843c39">Half-Life 2</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 606 59)"
+			style="font-size:38px;font-family:Keifont;fill:#ad494a">Kingdom Hearts</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 188 151)"
+			style="font-size:38px;font-family:Keifont;fill:#d6616b">Portal</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 831 447)"
+			style="font-size:38px;font-family:Keifont;fill:#e7969c">Jump King</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 725 192)"
+			style="font-size:38px;font-family:Keifont;fill:#a55194">Titanfall 2</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 750 109)"
+			style="font-size:38px;font-family:Keifont;fill:#ce6dbd">Metal Gear Rising</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 328 57)"
+			style="font-size:38px;font-family:Keifont;fill:#de9ed6">Bloodborne</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 178 104)"
+			style="font-size:38px;font-family:Keifont;fill:#393b79">Subnautica</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 533 313)"
+			style="font-size:38px;font-family:Keifont;fill:#5254a3">FFXIV</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 305 375)"
+			style="font-size:10px;font-family:Keifont;fill:#6b6ecf">Minecraft</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 503 363)"
+			style="font-size:10px;font-family:Keifont;fill:#9c9ede">Walking Dead</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 381 296)"
+			style="font-size:10px;font-family:Keifont;fill:#637939">Pokemon Mystery Dungeon</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 499 325)"
+			style="font-size:10px;font-family:Keifont;fill:#8ca252">Xeno series</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 545 353)"
+			style="font-size:10px;font-family:Keifont;fill:#b5cf6b">Custom Robo</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 410 426)"
+			style="font-size:10px;font-family:Keifont;fill:#cedb9c">Fatal frame</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 416 286)"
+			style="font-size:10px;font-family:Keifont;fill:#8c6d31">Rust</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 535 211)"
+			style="font-size:10px;font-family:Keifont;fill:#bd9e39">Ghost Trick</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 571 437)"
+			style="font-size:10px;font-family:Keifont;fill:#e7ba52">Big Brain Academy</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 352 223)"
+			style="font-size:10px;font-family:Keifont;fill:#e7cb94">Civilization vi</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 295 437)"
+			style="font-size:10px;font-family:Keifont;fill:#843c39">Hades</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 621 307)"
+			style="font-size:10px;font-family:Keifont;fill:#ad494a">Metal Slug</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 356 371)"
+			style="font-size:10px;font-family:Keifont;fill:#d6616b">Kontra</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 166 120)"
+			style="font-size:10px;font-family:Keifont;fill:#e7969c">Pokemon Legends Arceus</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 242 374)"
+			style="font-size:10px;font-family:Keifont;fill:#7b4173">Starbound</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 318 162)"
+			style="font-size:10px;font-family:Keifont;fill:#a55194">HITMAN</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 496 342)"
+			style="font-size:10px;font-family:Keifont;fill:#ce6dbd">Metro 2033</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 685 399)"
+			style="font-size:10px;font-family:Keifont;fill:#de9ed6">Xenoblade Chronicles</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 727 208)"
+			style="font-size:10px;font-family:Keifont;fill:#393b79">Dynasty Warriors</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 568 417)"
+			style="font-size:10px;font-family:Keifont;fill:#5254a3">Cookie Run Kingdom</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 235 163)"
+			style="font-size:10px;font-family:Keifont;fill:#6b6ecf">osu!</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 776 412)"
+			style="font-size:10px;font-family:Keifont;fill:#9c9ede">Monster Hunter</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 733 289)"
+			style="font-size:10px;font-family:Keifont;fill:#637939">Horror Games</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 589 362)"
+			style="font-size:10px;font-family:Keifont;fill:#8ca252">Asetto Corsa</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 376 437)"
+			style="font-size:10px;font-family:Keifont;fill:#b5cf6b">Valkyria Chronicles</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 785 329)"
+			style="font-size:10px;font-family:Keifont;fill:#cedb9c">The Walking</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 426 415)"
+			style="font-size:10px;font-family:Keifont;fill:#8c6d31">Heavy Rain</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 517 497)"
+			style="font-size:10px;font-family:Keifont;fill:#bd9e39">Alien Insolation</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 551 326)"
+			style="font-size:10px;font-family:Keifont;fill:#e7ba52">Eroge</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 531 162)"
+			style="font-size:10px;font-family:Keifont;fill:#e7cb94">Metal Gear Solid</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 621 223)"
+			style="font-size:10px;font-family:Keifont;fill:#843c39">Smol Ame</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 634 501)"
+			style="font-size:10px;font-family:Keifont;fill:#ad494a">Five Nights at Freddy&apos;s</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 704 166)"
+			style="font-size:10px;font-family:Keifont;fill:#d6616b">Okami</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 168 385)"
+			style="font-size:10px;font-family:Keifont;fill:#e7969c">Bioshock - Alien Isolation</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 199 397)"
+			style="font-size:10px;font-family:Keifont;fill:#7b4173">Trails in the Sky</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 590 162)"
+			style="font-size:10px;font-family:Keifont;fill:#a55194">Ys 8</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 762 221)"
+			style="font-size:10px;font-family:Keifont;fill:#ce6dbd">Zero Escape</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 458 69)"
+			style="font-size:10px;font-family:Keifont;fill:#de9ed6">Summer Pocket</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 441 218)"
+			style="font-size:10px;font-family:Keifont;fill:#393b79">Sonic</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 842 398)"
+			style="font-size:10px;font-family:Keifont;fill:#5254a3">Gundam Battle Operation Code F</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 612 76)"
+			style="font-size:10px;font-family:Keifont;fill:#6b6ecf">Rock Band</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 405 26)"
+			style="font-size:10px;font-family:Keifont;fill:#9c9ede">Team Fortress 2</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 486 507)"
+			style="font-size:10px;font-family:Keifont;fill:#637939">Streets of Rage</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 541 25)"
+			style="font-size:10px;font-family:Keifont;fill:#8ca252">Mario Tennis Aces</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 394 203)"
+			style="font-size:10px;font-family:Keifont;fill:#b5cf6b">Halo</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 623 317)"
+			style="font-size:10px;font-family:Keifont;fill:#cedb9c">Gravity Daze</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 381 164)"
+			style="font-size:10px;font-family:Keifont;fill:#8c6d31">Witcher 3</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 623 511)"
+			style="font-size:10px;font-family:Keifont;fill:#bd9e39">Yakuza Kiwami 2</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 215 437)"
+			style="font-size:10px;font-family:Keifont;fill:#e7ba52">Assassins Creed 3</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 779 251)"
+			style="font-size:10px;font-family:Keifont;fill:#e7cb94">Dragon Quest 5</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 387 513)"
+			style="font-size:10px;font-family:Keifont;fill:#843c39">Night in the Woods</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 133 374)"
+			style="font-size:10px;font-family:Keifont;fill:#ad494a">Overcooked 2</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 799 266)"
+			style="font-size:10px;font-family:Keifont;fill:#d6616b">Escape From Tarkov</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 819 140)"
+			style="font-size:10px;font-family:Keifont;fill:#e7969c">Zelda: Skyward Sword</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 531 224)"
+			style="font-size:10px;font-family:Keifont;fill:#7b4173">Gothic</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 264 292)"
+			style="font-size:10px;font-family:Keifont;fill:#a55194">Soma</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 743 502)"
+			style="font-size:10px;font-family:Keifont;fill:#ce6dbd">Forza Horizon 5</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 652 204)"
+			style="font-size:10px;font-family:Keifont;fill:#de9ed6">Visage</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 197 69)"
+			style="font-size:10px;font-family:Keifont;fill:#393b79">Apex Legends</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 187 425)"
+			style="font-size:10px;font-family:Keifont;fill:#5254a3">The Great Ace Attorney</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 211 409)"
+			style="font-size:10px;font-family:Keifont;fill:#6b6ecf">Until Dawn</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 85 170)"
+			style="font-size:10px;font-family:Keifont;fill:#9c9ede">Elder Scrolls V: Skyrim</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 789 340)"
+			style="font-size:10px;font-family:Keifont;fill:#637939">Metal Gear</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 474 15)"
+			style="font-size:10px;font-family:Keifont;fill:#8ca252">GBA Magical Vacation</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 220 221)"
+			style="font-size:10px;font-family:Keifont;fill:#b5cf6b">Arknights</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 324 14)"
+			style="font-size:10px;font-family:Keifont;fill:#cedb9c"
+			>Kirby&apos;s Return to Dream Land</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 487 427)"
+			style="font-size:10px;font-family:Keifont;fill:#8c6d31">Idolmaster</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 697 71)"
+			style="font-size:10px;font-family:Keifont;fill:#e7ba52">Metal Gear Solid 3</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 321 501)"
+			style="font-size:10px;font-family:Keifont;fill:#e7cb94">Ghost of Tsushima</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 247 512)"
+			style="font-size:10px;font-family:Keifont;fill:#ad494a">Fire Emblem: Three Houses</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 660 28)"
+			style="font-size:10px;font-family:Keifont;fill:#d6616b">Persona 5 Royal</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 690 222)"
+			style="font-size:10px;font-family:Keifont;fill:#e7969c">Kenshi</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 814 355)"
+			style="font-size:10px;font-family:Keifont;fill:#7b4173">Neverwinter Nights</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 212 288)"
+			style="font-size:10px;font-family:Keifont;fill:#a55194">GTA</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 130 409)"
+			style="font-size:10px;font-family:Keifont;fill:#ce6dbd">Spider-man</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 471 437)"
+			style="font-size:10px;font-family:Keifont;fill:#de9ed6">God of war</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 768 472)"
+			style="font-size:10px;font-family:Keifont;fill:#393b79">Sleeping Dogs</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 783 236)"
+			style="font-size:10px;font-family:Keifont;fill:#5254a3">Fire Emblem</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 108 183)"
+			style="font-size:10px;font-family:Keifont;fill:#6b6ecf">Halo Infinite</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 785 280)"
+			style="font-size:10px;font-family:Keifont;fill:#9c9ede">Resident Evil 4</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 216 501)"
+			style="font-size:10px;font-family:Keifont;fill:#637939">Deep Rock Galatic</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 119 395)"
+			style="font-size:10px;font-family:Keifont;fill:#8ca252">Vermintide</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 848 155)"
+			style="font-size:10px;font-family:Keifont;fill:#b5cf6b">Dark Messiah (Might and Magic)</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 91 442)"
+			style="font-size:10px;font-family:Keifont;fill:#cedb9c">Dead Space</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 97 276)"
+			style="font-size:10px;font-family:Keifont;fill:#8c6d31">Mass Effect</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 568 11)"
+			style="font-size:10px;font-family:Keifont;fill:#bd9e39">Zeno Clash</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 102 204)"
+			style="font-size:10px;font-family:Keifont;fill:#e7ba52">Assassin&apos;s Creed</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 761 458)"
+			style="font-size:10px;font-family:Keifont;fill:#e7cb94">FF7 Remake</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 658 17)"
+			style="font-size:10px;font-family:Keifont;fill:#843c39">City builders</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 94 252)"
+			style="font-size:10px;font-family:Keifont;fill:#ad494a">Ace Attorney</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 85 265)"
+			style="font-size:10px;font-family:Keifont;fill:#d6616b">Cross Code</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 97 33)"
+			style="font-size:10px;font-family:Keifont;fill:#e7969c">Paper Mario: The Origami King</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 562 370)"
+			style="font-size:10px;font-family:Keifont;fill:#7b4173">Doom</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 809 485)"
+			style="font-size:10px;font-family:Keifont;fill:#a55194">Super Mario Bros. 3</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 870 292)"
+			style="font-size:10px;font-family:Keifont;fill:#ce6dbd">Diablo II: Resurrected</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 854 305)"
+			style="font-size:10px;font-family:Keifont;fill:#de9ed6">Super People</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 94 236)"
+			style="font-size:10px;font-family:Keifont;fill:#393b79">Forza Horizon</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 732 514)"
+			style="font-size:10px;font-family:Keifont;fill:#5254a3">Stardew Valley</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 90 214)"
+			style="font-size:10px;font-family:Keifont;fill:#6b6ecf">Super Seducer</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 64 149)"
+			style="font-size:10px;font-family:Keifont;fill:#9c9ede">Untitled Goose Game</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 67 303)"
+			style="font-size:10px;font-family:Keifont;fill:#637939">Duck Game</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 73 347)"
+			style="font-size:10px;font-family:Keifont;fill:#8ca252">Tales of Arise</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 834 205)"
+			style="font-size:10px;font-family:Keifont;fill:#b5cf6b">Sausage Legend 2</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 548 427)"
+			style="font-size:10px;font-family:Keifont;fill:#cedb9c">OUTLAST</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 849 221)"
+			style="font-size:10px;font-family:Keifont;fill:#8c6d31">Genshin Impact</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 445 496)"
+			style="font-size:10px;font-family:Keifont;fill:#bd9e39">Skyrim</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 130 501)"
+			style="font-size:10px;font-family:Keifont;fill:#e7ba52">Wolfenstein</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 439 547)"
+			style="font-size:10px;font-family:Keifont;fill:#e7cb94">Pokémon Mystery Dungeon</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 599 522)"
+			style="font-size:10px;font-family:Keifont;fill:#843c39">Crab game</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 878 468)"
+			style="font-size:10px;font-family:Keifont;fill:#ad494a">Kerbal Space Program</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 412 523)"
+			style="font-size:10px;font-family:Keifont;fill:#d6616b">Warioware</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 86 194)"
+			style="font-size:10px;font-family:Keifont;fill:#e7969c">Europa Universalis IV</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 311 450)"
+			style="font-size:10px;font-family:Keifont;fill:#a55194">Sekiro</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 435 277)"
+			style="font-size:83px;font-family:Keifont;fill:#393b79">Hollow Knight</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 119 48)"
+			style="font-size:10px;font-family:Keifont;fill:#bd9e39">VA-11 HALL-A: Cyberpunk Barten</text
+		><text
+			transform="matrix(1.00418 0 0 1.00418 392 485)"
+			style="font-size:54px;font-family:Keifont;fill:#cedb9c">Zelda: Twilight Princess</text
 		></g
 	></svg
 >
