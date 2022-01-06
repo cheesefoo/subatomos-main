@@ -1,5 +1,5 @@
 <script lang="ts" context="module">
-	let api_key = 'AIzaSyDeaPqQGbRx835yfl-H7PeK3mgHEoy-_2U';
+	let api_key = process.env.google_sheets_api;
 	let spreadsheet_id = '1nC5NU5JTO6nHEJDK-inUgL46aXEXUGJiKiVfEcmBALI';
 	// let spreadsheet_id = '1NMn_qg1nO9h9gVLGULcXGXHhngmhGOICIOtS47j4h5E';
 	let tab_name = 'stats';
