@@ -157,6 +157,7 @@
 
 <div>
 	<h1>Subatomo EN Fan Server End of 2021 Survey</h1>
+<!--	age, gender-->
 	<div class="sbs">
 		<DonutChart
 			data={allData[0].map((x) => {
@@ -195,9 +196,10 @@
 			}}
 		/>
 	</div>
-
+<!--language level-->
 	<hr />
 	<div class="sbs">
+<!--		eng-->
 		<Lazy height={graphHeight} placeholder="loading...">
 			<DonutChart
 				data={allData[3].map((x) => {
@@ -218,7 +220,7 @@
 				}}
 			/>
 		</Lazy>
-
+<!--jp-->
 		<Lazy height={graphHeight} placeholder="loading...">
 			<DonutChart
 				data={allData[4].map((x) => {
@@ -242,6 +244,7 @@
 	</div>
 	<hr />
 
+<!--	where are you from?-->
 	<Lazy height={graphHeight}>
 		<TreemapChart
 			data={countries}
@@ -252,7 +255,7 @@
 		/>
 	</Lazy>
 	<hr />
-
+<!--when did you start -->
 	<Lazy height={graphHeight} placeholder="loading..."
 		><BarChartSimple
 			data={allData[5]}
@@ -277,21 +280,22 @@
 		/>
 	</Lazy>
 	<hr />
-	<!--{#if media.small}-->
-	<!--	<Lazy height={graphHeight} placeholder='loading...'><BarChartSimple-->
-	<!--		data={allData[6]}-->
-	<!--		options={{toolbar:"none",-->
-	<!--			title: questions[6],-->
-	<!--			height: '900px',			bars: { width: barWidth, maxWidth: barWidth },-->
+<!--	rabbithole-->
+	{#if $media.small}
+		<Lazy height={graphHeight} placeholder='loading...'><BarChartSimple
+			data={allData[6]}
+			options={{toolbar:"none",
+				title: questions[6],
+				height: '900px',			bars: { width: barWidth, maxWidth: barWidth },
 
-	<!--			legend: { enabled: false },-->
-	<!--			axes: {-->
-	<!--				left: { mapsTo: 'group', scaleType: 'labels' },-->
-	<!--				bottom: { mapsTo: 'value', domain: [0, 75] }-->
-	<!--			}-->
-	<!--		}}-->
-	<!--	/>-->
-	<!--{:else}-->
+				legend: { enabled: false },
+				axes: {
+					left: { mapsTo: 'group', scaleType: 'labels' },
+					bottom: { mapsTo: 'value', domain: [0, 75] }
+				}
+			}}
+		/></Lazy>
+	{:else}
 	<Lazy height={900} placeholder="loading..."
 		><BarChartSimple
 			data={allData[6]}
@@ -306,10 +310,10 @@
 					bottom: { mapsTo: 'group', scaleType: 'labels' }
 				}
 			}}
-		/>
-		<!--{/if}-->
+		/>	</Lazy>
+		{/if}
 		<!--grid: { x: { alignWithAxisTicks: true }, y: { alignWithAxisTicks: true } },-->
-	</Lazy>
+
 	<hr />
 	<!--Rank 3?-->
 	<Lazy height={2000} placeholder="loading..."
@@ -687,7 +691,7 @@
 		<h3>What would you like Subaru to play in the future? (optional)</h3>
 		{#if $media.small}
 			<Lightbox clickToClose imagePreset="fullscreen">
-				<img width="600" alt="wordcloud" src={w} />
+				<img width="300" alt="wordcloud" src={w} />
 			</Lightbox>
 		{:else}
 			<WordCloud />
@@ -970,7 +974,7 @@
 			justify-content: center;
 			margin: 0;
 		}
-		.server,
+		.server,.sbs,.sbs-3,
 		.mods {
 			display: grid;
 			grid-template-columns: repeat(1, minmax(0, 1fr));
