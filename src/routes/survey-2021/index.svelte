@@ -13,7 +13,7 @@
 			let res = await fetch(url);
 			let json = await res.json();
 			// let json = await res.text();
-			console.log(url)
+			// console.log(url)
 			let values = json.values;
 			let [q, data] = reformatData(values);
 
@@ -68,7 +68,7 @@
 	export let allData;
 	export let questions;
 	let c = allData[2].map((x) => {
-		return { name: x.group, value: x.value };
+		return {name:x.group, children:[{ name: x.group, value: x.value }]};
 	});
 	let c1 = allData[23].map((x) => {
 		return { group: x.group, count: +x.value };
@@ -88,7 +88,7 @@
 		return rank;
 	};
 	let ranked = r();
-	let countries = [{ name: 'Country', children: c }];
+	let countries = c;
 	let barWidth = $media.small ? 12 : 24;
 	let graphHeight = $media.small ? '600px' : '400px';
 	let costumeByAge = [{"group":"Original", "name":"13-17", "value":22},
@@ -162,7 +162,7 @@
 			data={allData[0].map((x) => {
 				return { group: x.group, value: +x.value };
 			})}
-			options={{
+			options={{toolbar:"none",
 				title: questions[0],
 				height: graphHeight,
 				resizable: true,
@@ -180,7 +180,7 @@
 			data={allData[1].map((x) => {
 				return { group: x.group, value: +x.value };
 			})}
-			options={{
+			options={{toolbar:"none",
 				title: questions[1],
 				height: graphHeight,
 				resizable: true,
@@ -203,7 +203,7 @@
 				data={allData[3].map((x) => {
 					return { group: x.group, value: +x.value };
 				})}
-				options={{
+				options={{toolbar:"none",
 					title: questions[3],
 					height: graphHeight,
 					resizable: true,
@@ -224,7 +224,7 @@
 				data={allData[4].map((x) => {
 					return { group: x.group, value: +x.value };
 				})}
-				options={{
+				options={{toolbar:"none",
 					title: questions[4],
 					height: graphHeight,
 					resizable: true,
@@ -242,12 +242,12 @@
 	</div>
 	<hr />
 
-	<Lazy height={400}>
+	<Lazy height={graphHeight}>
 		<TreemapChart
 			data={countries}
-			options={{
+			options={{toolbar:"none",
 				title: questions[2],
-				height: '400px'
+				height: graphHeight
 			}}
 		/>
 	</Lazy>
@@ -256,7 +256,7 @@
 	<Lazy height={graphHeight} placeholder="loading..."
 		><BarChartSimple
 			data={allData[5]}
-			options={{
+			options={{toolbar:"none",
 				title: questions[5],
 				height: graphHeight,
 				legend: { truncation: { type: 'none' } },
@@ -280,7 +280,7 @@
 	<!--{#if media.small}-->
 	<!--	<Lazy height={graphHeight} placeholder='loading...'><BarChartSimple-->
 	<!--		data={allData[6]}-->
-	<!--		options={{-->
+	<!--		options={{toolbar:"none",-->
 	<!--			title: questions[6],-->
 	<!--			height: '900px',			bars: { width: barWidth, maxWidth: barWidth },-->
 
@@ -295,7 +295,7 @@
 	<Lazy height={900} placeholder="loading..."
 		><BarChartSimple
 			data={allData[6]}
-			options={{
+			options={{toolbar:"none",
 				title: questions[6],
 				height: '900px',
 				bars: { width: barWidth, maxWidth: barWidth },
@@ -315,7 +315,7 @@
 	<Lazy height={2000} placeholder="loading..."
 		><BarChartSimple
 			data={ranked}
-			options={{
+			options={{toolbar:"none",
 				title: 'Rank your top 3 (Legend is clickable)',
 				height: '2000px',
 
@@ -342,7 +342,7 @@
 			data={allData[10].map((x) => {
 				return { group: x.group, value: +x.value };
 			})}
-			options={{
+			options={{toolbar:"none",
 				title: questions[10],
 				height: graphHeight,
 				resizable: true,
@@ -362,7 +362,7 @@
 	<Lazy height={graphHeight} placeholder="loading..."
 		><BarChartSimple
 			data={allData[11]}
-			options={{
+			options={{toolbar:"none",
 				title: questions[11],
 				height: graphHeight,
 				legend: { truncation: { type: 'none' } },
@@ -384,7 +384,7 @@
 				data={allData[14].map((x) => {
 					return { group: x.group, value: +x.value };
 				})}
-				options={{
+				options={{toolbar:"none",
 					title: questions[14],
 					height: graphHeight,
 					resizable: true,
@@ -402,7 +402,7 @@
 		<Lazy height={graphHeight} placeholder="loading...">
 			<BarChartSimple
 				data={hairByAge}
-				options={{
+				options={{toolbar:"none",
 					title: 'Best Hairstyle? Breakdown by Age',
 					height: graphHeight,
 
@@ -425,7 +425,7 @@
 				data={allData[15].map((x) => {
 					return { group: x.group, value: +x.value };
 				})}
-				options={{
+				options={{toolbar:"none",
 					title: questions[15],
 					height: graphHeight,
 					resizable: true,
@@ -444,7 +444,7 @@
 		<Lazy height={graphHeight} placeholder="loading...">
 			<BarChartSimple
 				data={voteByAge}
-				options={{
+				options={{toolbar:"none",
 					title: 'Girl or Duck? Breakdown by Age',
 					height: graphHeight,
 
@@ -467,7 +467,7 @@
 				data={allData[13].map((x) => {
 					return { group: x.group, value: +x.value };
 				})}
-				options={{
+				options={{toolbar:"none",
 					title: questions[13],
 					height: graphHeight,
 					resizable: true,
@@ -486,7 +486,7 @@
 		<Lazy height={graphHeight} placeholder="loading...">
 			<BarChartSimple
 				data={costumeByAge}
-				options={{
+				options={{toolbar:"none",
 					title: 'Favorite Outfit Breakdown by Age',
 					height: graphHeight,
 
@@ -511,7 +511,7 @@
 				data={allData[16].map((x) => {
 					return { group: x.group, value: +x.value };
 				})}
-				options={{
+				options={{toolbar:"none",
 					title: questions[16],
 					height: graphHeight,
 					resizable: true,
@@ -532,7 +532,7 @@
 				data={allData[12].map((x) => {
 					return { group: x.group, value: +x.value };
 				})}
-				options={{
+				options={{toolbar:"none",
 					title: questions[12],
 					height: graphHeight,
 					resizable: true,
@@ -551,7 +551,7 @@
 		<Lazy height={graphHeight} placeholder="loading...">
 			<BarChartSimple
 				data={ahijoByAge}
-				options={{
+				options={{toolbar:"none",
 					title: 'Ahijo Breakdown by Age',
 					height: graphHeight,
 
@@ -576,7 +576,7 @@
 	<Lazy height={graphHeight} placeholder="loading...">
 		<BarChartSimple
 			data={allData[17]}
-			options={{
+			options={{toolbar:"none",
 				title: questions[17],
 				height: graphHeight,
 
@@ -594,7 +594,7 @@
 	<Lazy height={graphHeight} placeholder="loading..."
 		><BarChartSimple
 			data={allData[18]}
-			options={{
+			options={{toolbar:"none",
 				title: questions[18],
 				height: graphHeight,
 
@@ -612,7 +612,7 @@
 	<Lazy height={graphHeight} placeholder="loading..."
 		><BarChartSimple
 			data={allData[19]}
-			options={{
+			options={{toolbar:"none",
 				title: questions[19],
 				height: graphHeight,
 
@@ -630,7 +630,7 @@
 	<Lazy height={graphHeight} placeholder="loading..."
 		><BarChartSimple
 			data={allData[20]}
-			options={{
+			options={{toolbar:"none",
 				title: questions[20],
 				height: graphHeight,
 
@@ -648,7 +648,7 @@
 	<Lazy height={graphHeight} placeholder="loading..."
 		><BarChartSimple
 			data={allData[21]}
-			options={{
+			options={{toolbar:"none",
 				title: questions[21],
 				height: graphHeight,
 
@@ -666,7 +666,7 @@
 	<Lazy height={1200} placeholder="loading..."
 		><BarChartSimple
 			data={allData[22]}
-			options={{
+			options={{toolbar:"none",
 				title: questions[22],
 				height: '1200px',
 
@@ -696,7 +696,7 @@
 	<div class="server">
 		<DonutChart
 			data={c1}
-			options={{
+			options={{toolbar:"none",
 				title: questions[23],
 				height: graphHeight,
 				resizable: true,
@@ -711,7 +711,7 @@
 			data={allData[24].map((x) => {
 				return { group: x.group, value: +x.value };
 			})}
-			options={{
+			options={{toolbar:"none",
 				title: questions[24],
 				height: graphHeight,
 
@@ -727,7 +727,7 @@
 			data={allData[25].map((x) => {
 				return { group: x.group, value: +x.value };
 			})}
-			options={{
+			options={{toolbar:"none",
 				title: questions[25],
 				height: graphHeight,
 
@@ -743,7 +743,7 @@
 			data={allData[26].map((x) => {
 				return { group: x.group, value: +x.value };
 			})}
-			options={{
+			options={{toolbar:"none",
 				title: questions[26],
 				height: graphHeight,
 				donut: { alignment: 'center' },
@@ -758,7 +758,7 @@
 			data={allData[27].map((x) => {
 				return { group: x.group, value: +x.value };
 			})}
-			options={{
+			options={{toolbar:"none",
 				title: questions[27],
 				height: graphHeight,
 
@@ -775,7 +775,7 @@
 			data={allData[28].map((x) => {
 				return { group: x.group, value: +x.value };
 			})}
-			options={{
+			options={{toolbar:"none",
 				title: questions[28],
 				height: graphHeight,
 				donut: { alignment: 'center' },
@@ -790,7 +790,7 @@
 			data={allData[29].map((x) => {
 				return { group: x.group, value: +x.value };
 			})}
-			options={{
+			options={{toolbar:"none",
 				title: questions[29],
 				height: graphHeight,
 
@@ -809,7 +809,7 @@
 			data={allData[30].map((x) => {
 				return { group: x.group, value: +x.value };
 			})}
-			options={{
+			options={{toolbar:"none",
 				title: questions[30],
 				height: graphHeight,
 				resizable: true,
@@ -829,7 +829,7 @@
 			data={allData[31].map((x) => {
 				return { group: x.group, value: +x.value };
 			})}
-			options={{
+			options={{toolbar:"none",
 				title: questions[31],
 				height: graphHeight,
 				resizable: true,
@@ -849,7 +849,7 @@
 			data={allData[32].map((x) => {
 				return { group: x.group, value: +x.value };
 			})}
-			options={{
+			options={{toolbar:"none",
 				title: questions[32],
 				height: graphHeight,
 				resizable: true,
@@ -869,7 +869,7 @@
 			data={allData[33].map((x) => {
 				return { group: x.group, value: +x.value };
 			})}
-			options={{
+			options={{toolbar:"none",
 				title: questions[33],
 				height: graphHeight,
 				resizable: true,
@@ -889,7 +889,7 @@
 			data={allData[34].map((x) => {
 				return { group: x.group, value: +x.value };
 			})}
-			options={{
+			options={{toolbar:"none",
 				title: questions[34],
 				height: graphHeight,
 				resizable: true,
@@ -909,7 +909,7 @@
 			data={allData[35].map((x) => {
 				return { group: x.group, value: +x.value };
 			})}
-			options={{
+			options={{toolbar:"none",
 				title: questions[35],
 				height: graphHeight,
 				resizable: true,
