@@ -38,7 +38,7 @@
 	<!--{@debug res}-->
 	{#if res.props.excerpt.length < 480}
 		<a
-			href="./{slug}"
+			href="../{slug}"
 			class="excerpt"
 			use:tooltip={{ component: WikiTooltip, props: { hoverText: res.props.excerpt } }}
 		>
