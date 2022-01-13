@@ -31,6 +31,7 @@
 	import Breadcrumb from '$lib/components/Breadcrumb/Breadcrumb.svelte';
 	import { onMount } from 'svelte';
 	import WikiPage from '$lib/components/WikiPage.svelte';
+	import BackButton from '$lib/components/BackButton.svelte';
 
 	export let slug;
 
@@ -50,7 +51,7 @@
 	<title>{post.title} - Oozora Subaru Fan Wiki</title>
 </svelte:head>
 
-<h2><a href="/wiki/en/categories/">←</a></h2>
+<BackButton/>
 <h1>{post.title}</h1>
 <div class="content">
 	<WikiPage html={post.html} />
