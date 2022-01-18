@@ -51,7 +51,7 @@
 	<title>{post.title} - Oozora Subaru Fan Wiki</title>
 </svelte:head>
 
-<BackButton/>
+<BackButton />
 <h1>{post.title}</h1>
 <div class="content">
 	<WikiPage html={post.html} />

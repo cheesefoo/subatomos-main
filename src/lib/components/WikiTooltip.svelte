@@ -37,6 +37,6 @@ export let text;
 		padding: 0.15rem;
 		background: #f9e1ba;
 		border-radius: 0.5rem;
-		border: 1px solid black
+		border: 1px solid black;
 	}
 </style>
