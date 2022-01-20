@@ -54,7 +54,7 @@ const sounds: Array<SubaSound> = [
 	{ name: 'hi honey', category: 'english', file: 'hi_honey.mp3' },
 	{ name: 'hiyaaa', file: 'hiyaaa.mp3' },
 	{ name: 'humming bgm', file: 'humming_bgm.mp3' },
-	{ name: 'i am not donald duck anymore', category: 'asmr', file: 'iamnotdonaldduckanymore.mp3' },
+	{ name: 'i am not donald duck anymore', category: 'ASMR', file: 'iamnotdonaldduckanymore.mp3' },
 	{ name: 'im a winner', file: 'imawinner.mp3' },
 	{ name: 'uwaa', category: 'screams', file: 'uwaa.mp3' },
 
@@ -129,7 +129,7 @@ const sounds: Array<SubaSound> = [
 	{ name: 'ora x3', file: 'ora_x3.mp3' },
 	{ name: 'ora x3 shuba x3', file: 'ora_x3_shuba_x3.mp3' },
 	{ name: 'oshiri puri puri', file: 'oshiri_puri_puri.mp3' },
-	{ name: 'oyasumi', category: 'asmr', file: 'oyasumi_asmr.mp3' },
+	{ name: 'oyasumi', category: 'ASMR', file: 'oyasumi_asmr.mp3' },
 	{ name: 'otsubaru goodmorningbababa', file: 'otsubarugoodmorninggoodbabababa.mp3' },
 	{ name: 'please go hotwing', category: 'english', file: 'pleasegohotwing.mp3' },
 	{ name: 'duck rolled', category: 'english', file: 'rickroll.mp3' },
