@@ -9,9 +9,8 @@ specifiers:
   '@fortawesome/free-solid-svg-icons': ^5.15.4
   '@lottiefiles/svelte-lottie-player': ^0.2.0
   '@lukeed/uuid': ^2.0.0
-  '@sveltejs/adapter-cloudflare': ^1.0.0-next.8
-  '@sveltejs/adapter-static': next
-  '@sveltejs/kit': next
+  '@sveltejs/adapter-static': 1.0.0-next.26
+  '@sveltejs/kit': 1.0.0-next.230
   '@tryghost/content-api': ^1.5.16
   '@tryghost/helpers': ^1.1.54
   '@types/chart.js': ^2.9.35
@@ -49,7 +48,6 @@ specifiers:
   svelte-lightbox: ^0.6.1
   svelte-media: ^0.1.5
   svelte-preprocess: ^4.10.2
-  svelte-table: ^0.3.3
   tailwindcss: ^3.0.15
   tippy.js: ^6.3.7
   tslib: ^2.3.1
@@ -70,16 +68,14 @@ dependencies:
   cookie: 0.4.1
   howler: 2.2.3
   svelte-fa: 2.4.0
-  svelte-table: 0.3.3
   tippy.js: 6.3.7
   typesafe-i18n: 2.59.0_typescript@4.5.4
 
 devDependencies:
   '@carbon/charts': 0.54.7_d3@7.3.0
   '@carbon/charts-svelte': 0.54.7_d3@7.3.0+svelte@3.46.2
-  '@sveltejs/adapter-cloudflare': 1.0.0-next.8
   '@sveltejs/adapter-static': 1.0.0-next.26
-  '@sveltejs/kit': 1.0.0-next.234_sass@1.49.0+svelte@3.46.2
+  '@sveltejs/kit': 1.0.0-next.230_sass@1.49.0+svelte@3.46.2
   '@tryghost/content-api': 1.5.16
   '@tryghost/helpers': 1.1.54
   '@types/cookie': 0.4.1
@@ -430,20 +426,14 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /@sveltejs/adapter-cloudflare/1.0.0-next.8:
-    resolution: {integrity: sha512-uje8eUfP1xrMEdKczvjl0rpu7WTZZrZCBTgH2sTSYYiAqpCevsmJNZ9Lgh5U5a4BYBYGVvAcYdh8nzoddxOZkw==}
-    dependencies:
-      esbuild: 0.13.15
-    dev: true
-
   /@sveltejs/adapter-static/1.0.0-next.26:
     resolution: {integrity: sha512-LXR0HkPygZ+m9wJhFqbYWbJ0jquhgUK6vL/8AwnqbAZGGtQFloMpf49WOANk7MiLBeY6L97W5jPLSxHiDW3T0Q==}
     dependencies:
       tiny-glob: 0.2.9
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.234_sass@1.49.0+svelte@3.46.2:
-    resolution: {integrity: sha512-vnXLkk4GakytCM+TxFVVXfvJaXq/vY6AWpaUAKr1ZsQD2LSKteoaBlca1qI7fCRwccaPSkI+DOc+bNdgGiBBSQ==}
+  /@sveltejs/kit/1.0.0-next.230_sass@1.49.0+svelte@3.46.2:
+    resolution: {integrity: sha512-97i5KK7oDqgzm8rSQTqXsscTt1ajkjlamidaxtADL183NiYWi1kqkOt+mskYU+RverGUuHTNl/8yg5p5ZEZm1A==}
     engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
@@ -3696,10 +3686,6 @@ packages:
       svelte: 3.46.2
       typescript: 4.5.4
     dev: true
-
-  /svelte-table/0.3.3:
-    resolution: {integrity: sha512-ts8Z47T3JwRsYQ6t56zMOj8A063pPFi9NIUPw4VwBqVEk6DNLhXCs8uMwXz+2zVqPHocBCd7jPDfmWTXKvCwXA==}
-    dev: false
 
   /svelte/3.46.2:
     resolution: {integrity: sha512-RXSAtYNefe01Sb1lXtZ2I+gzn3t/h/59hoaRNeRrm8IkMIu6BSiAkbpi41xb+C44x54YKnbk9+dtfs3pM4hECA==}
