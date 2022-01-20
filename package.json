@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "set NODE_ENV=development && svelte-kit dev -o",
-		"build": "pnpm upgrade && svelte-kit build",
+		"build": "npm upgrade && svelte-kit build",
 		"preview": "svelte-kit preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
