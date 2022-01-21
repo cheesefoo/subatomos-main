@@ -1,5 +1,5 @@
 <script>
-	import Chart from 'chart.js/auto/auto.js';
+	// import Chart from 'chart.js/auto/auto.js';
 	import { onMount } from 'svelte';
 	import LL, { locale } from '/src/i18n/i18n-svelte';
 	import { media } from '$lib/stores/stores';
@@ -170,12 +170,12 @@
 		configReferer.options.maintainAspectRatio = false;
 		configCountry.options.maintainAspectRatio = false;
 	}
-	onMount(() => {
+/*	onMount(() => {
 		const hairstyle = new Chart(document.getElementById('hairstyle'), configHairstyle);
 		const submissions = new Chart(document.getElementById('submissions'), configSubmissions);
 		const loc = new Chart(document.getElementById('loc'), configCountry);
 		const referer = new Chart(document.getElementById('referer'), configReferer);
-	});
+	});*/
 	let yt = 'https://www.youtube.com/embed/YqRGwmk4fmw';
 	if ($locale == 'en') {
 		yt = 'https://www.youtube.com/embed/YqRGwmk4fmw';
@@ -216,7 +216,7 @@
 			/>
 		{/if}
 	</div>
-	<p>{$LL.PONDS.GRAPHS()}</p>
+<!--	<p>{$LL.PONDS.GRAPHS()}</p>
 	<div class="charts">
 		<canvas id="hairstyle" />
 		<canvas id="submissions" />
@@ -226,7 +226,7 @@
 	</div>
 	<div class="charts-referer">
 		<canvas id="referer" />
-	</div>
+	</div>-->
 </main>
 
 <style lang="scss">
