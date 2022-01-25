@@ -33,9 +33,10 @@ export let text;
 <!--{/if}-->
 <style lang="scss">
 	i {
-		color: #1da1f2;
+		color: #000000;
 		padding: 0.15rem;
-		background: #ff3e00aa;
+		background: #f9e1ba;
 		border-radius: 0.5rem;
+		border: 1px solid black;
 	}
 </style>
