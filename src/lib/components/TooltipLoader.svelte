@@ -6,12 +6,13 @@
 	import { tooltip } from '$lib/components/Tooltip';
 	// import { tooltip, popover } from 'svelte-ktippy'
 	import WikiTooltip from '$lib/components/WikiTooltip.svelte';
+	import { dev } from '$app/env';
 
 	export let slug;
 	export let text;
 	let excerpt;
 
-	onMount(getExcerpt);
+	// onMount(getExcerpt);
 	async function getExcerpt() {
 		const api = new GhostContentAPI({
 			url: `${ghostURL}`,
@@ -25,7 +26,9 @@
 
 			return { props: { excerpt: txt } };
 		} catch (err) {
-			console.log(err);
+			if (dev) {
+				console.log(err);
+			}
 		}
 	}
 
@@ -33,7 +36,7 @@
 </script>
 
 {#await getExcerpt()}
-	<a href="./{slug}">{text}</a>
+	<a href="../{slug}">{text}</a>
 {:then res}
 	<!--{@debug res}-->
 	{#if res.props.excerpt.length < 480}
