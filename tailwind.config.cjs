@@ -26,11 +26,14 @@ const config = {
 			colors: {
 				'regal-blue': '#243c5a'
 
-			}
+			},
+			fontSize: { 'xxs': '0.7em' },
+
 		}
 	},
 
-	plugins: []
+	plugins: [
+		require('@tailwindcss/aspect-ratio')]
 };
 
 module.exports = config;
