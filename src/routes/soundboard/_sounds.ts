@@ -75,6 +75,7 @@ const sounds: Array<SubaSound> = [
 	},
 	{ name: 'IYAAA', file: 'IYYAAAA.mp3' },
 	{ name: 'MIKOCHI', file: 'MIKOCHI.mp3' },
+	{ name: 'MENTAL PHYSICAL HATHAWAY', category:'english', file: 'mental_physical_hathaway.mp3' },
 	{ name: 'Kamehameha', category: 'imitations', file: 'kamehameha.mp3' },
 	{ name: 'achu achu', category: 'imitations', file: 'achu_achu.mp3' },
 	{ name: 'SubaKoro Kamehameha', category: 'imitations', file: 'subakoro_kamehameha.mp3' },
