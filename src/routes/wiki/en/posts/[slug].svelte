@@ -60,7 +60,7 @@
 	}}
 	twitter={{
     handle: '@subatomos',
-    cardType: 'summary_large_image'
+    cardType: 'summary'
   }} />
 
 
