@@ -53,79 +53,87 @@
 	title={`${post.title} - Oozora Subaru Fan Wiki`}
 	description={post.excerpt}
 	canonical={`https://subatomos.com/wiki/en/posts/${slug}`}
-	openGraph.images=[{post.feature_image}]/>
+	openGraph={{
+		images:[{
+			url:post.feature_image
+		}]
+	}}
+	twitter={{
+    handle: '@subatomos',
+    cardType: 'summary_large_image'
+  }} />
 
 
-	<BackButton />
-	<h1>{post.title}</h1>
-	<div class='content'>
-		<WikiPage html={post.html} />
-	</div>
-	<a href='/wiki/en/categories/'>Categories</a> :
-	{#each tags as tag}
-		<a href='/wiki/en/categories/{tag.slug}'>{tag.name}</a>
-	{/each}
+<BackButton />
+<h1>{post.title}</h1>
+<div class='content'>
+	<WikiPage html={post.html} />
+</div>
+<a href='/wiki/en/categories/'>Categories</a> :
+{#each tags as tag}
+	<a href='/wiki/en/categories/{tag.slug}'>{tag.name}</a>
+{/each}
 
-	<style lang='scss'>
-    :global(.content) sc {
-      padding: 0 10% 0 4em;
-    }
+<style lang='scss'>
+  :global(.content) sc {
+    padding: 0 10% 0 4em;
+  }
 
-    :global(strong) {
-      font-weight: bolder;
-      color: $salmon;
-    }
+  :global(strong) {
+    font-weight: bolder;
+    color: $salmon;
+  }
 
-    :global(h1),
-    :global(h2),
-    :global(h3) {
-      font-family: keifont, sans-serif;
-      font-size: 2em;
-      color: $salmon;
-    }
+  :global(h1),
+  :global(h2),
+  :global(h3) {
+    font-family: keifont, sans-serif;
+    font-size: 2em;
+    color: $salmon;
+  }
 
-    :global(h1) {
-      font-size: 2.5em;
-    }
+  :global(h1) {
+    font-size: 2.5em;
+  }
 
-    :global(p),
-    :global(a),
-    :global(li),
-    :global(ul) {
-      font-family: keifont, sans-serif;
-      font-weight: normal;
-      // padding: 0.5em 0;
-    }
+  :global(p),
+  :global(a),
+  :global(li),
+  :global(ul) {
+    font-family: keifont, sans-serif;
+    font-weight: normal;
+    // padding: 0.5em 0;
+  }
 
-    :global(ul) {
-      // padding: 0.5em 0;
-      li {
-        padding: 0.5em;
+  :global(ul) {
+    // padding: 0.5em 0;
+    li {
+      padding: 0.5em;
 
-        ul {
-          padding-inline-start: 3em;
+      ul {
+        padding-inline-start: 3em;
 
-          li {
-          }
+        li {
         }
       }
     }
+  }
 
-    :global(h3) {
-      font-size: 1.5em;
-      color: $salmon;
+  :global(h3) {
+    font-size: 1.5em;
+    color: $salmon;
+  }
+
+  :global(figcaption) {
+    font-size: 0.75em;
+
+    :global(a) {
     }
+  }
 
-    :global(figcaption) {
-      font-size: 0.75em;
-
-      :global(a) {
-      }
+  @media screen and (min-width: 849px) and (max-width: 1024px) {
+    :global(.content) {
+      padding: 0 1em 0 1em;
     }
-
-    @media screen and (min-width: 849px) and (max-width: 1024px) {
-      :global(.content) {
-        padding: 0 1em 0 1em;
-      }
-    }
-	</style>
+  }
+</style>
