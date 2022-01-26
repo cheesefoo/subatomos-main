@@ -25,15 +25,19 @@ const config = {
 		extend: {
 			colors: {
 				'regal-blue': '#243c5a'
-
 			},
-			fontSize: { 'xxs': '0.7em' },
+			gridTemplateColumns: {
+				'16': 'repeat(16, minmax(0, 1fr))',
+				'18': 'repeat(18, minmax(0, 1fr))'
+			},
+			fontSize: {
+				'xxs': ['0.7rem','1rem'],
+			}
 
 		}
 	},
 
-	plugins: [
-		require('@tailwindcss/aspect-ratio')]
+	plugins: [require('@tailwindcss/aspect-ratio')]
 };
 
 module.exports = config;

@@ -1,8 +1,9 @@
 <script lang='ts'>
+	import HoloLink from '$lib/components/HoloLink.svelte';
 	import '/src/tw.scss';
+
 	import { locale } from '/src/i18n/i18n-svelte';
 
-	import HoloLink from '$lib/components/HoloLink.svelte';
 	/*
 		let gens = [...new Set(hololive.map((x) => x.details?.group))];
 		let byGen = [];
