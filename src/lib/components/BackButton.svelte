@@ -10,4 +10,4 @@
 	}
 </script>
 
-<h2><a href="#" on:click={goBack}>←</a></h2>
+<h2><a href="/wiki/en" >←</a></h2>
