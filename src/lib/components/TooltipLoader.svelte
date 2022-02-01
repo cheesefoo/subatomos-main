@@ -11,7 +11,7 @@
 	export let slug;
 	export let text;
 	let excerpt;
-	let url = (dev? 'http://localhost:3000' : baseURL) + '/wiki/en/posts';
+	let url = (dev? 'http://localhost:3000' : baseURL) + 'wiki/en/posts';
 
 	// onMount(getExcerpt);
 	async function getExcerpt() {
