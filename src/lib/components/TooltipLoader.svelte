@@ -1,6 +1,6 @@
 <script lang="ts">
 	import GhostContentAPI from '@tryghost/content-api';
-	import { ghostAPI, ghostURL } from '$lib/variables';
+	import { baseURL, ghostAPI, ghostURL } from '$lib/variables';
 	import { onMount } from 'svelte';
 	// import { tooltip } from '$lib/components/tt.js'
 	import { tooltip } from '$lib/components/Tooltip';
@@ -11,6 +11,7 @@
 	export let slug;
 	export let text;
 	let excerpt;
+	let url = (dev? 'http://localhost:3000' : baseURL) + '/wiki/en/posts';
 
 	// onMount(getExcerpt);
 	async function getExcerpt() {
@@ -36,12 +37,12 @@
 </script>
 
 {#await getExcerpt()}
-	<a href="../{slug}">{text}</a>
+	<a href="{url}/{slug}">{text}</a>
 {:then res}
 	<!--{@debug res}-->
 	{#if res.props.excerpt.length < 480}
 		<a
-			href="../{slug}"
+			href="{url}/{slug}"
 			class="excerpt"
 			use:tooltip={{ component: WikiTooltip, props: { hoverText: res.props.excerpt } }}
 		>
@@ -50,7 +51,7 @@
 		<!--		<WikiTooltip slug={slug} text={text} hoverText={res.props.excerpt}/>-->
 	{/if}
 {:catch err}
-	<a href="../{slug}">{text}</a>
+	<a href="{url}/{slug}">{text}</a>
 {/await}
 
 <style>
