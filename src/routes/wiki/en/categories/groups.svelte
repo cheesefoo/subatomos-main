@@ -103,6 +103,24 @@
 				</tr>
 				</tbody>
 			</table>
+			<table class='border-collapse table-fixed w-full lg:col-span-3 text-sm grayscale'>
+				<thead class='border-b text-lg p-4 pl-8 pb-3 text-sky text-center grayscale'>
+				常MOS
+				</thead>
+				<tbody class='bg-white'>
+				<tr>
+					<td>
+						<a class='flex flex-col lg:flex-row text-xs'>
+							<HoloLink en='Tokoyami Towa' jp='常闇トワ' width='6' text='xs' grayscale={false} />
+
+							<HoloLink en='Ookami Mio' jp='大神ミオ' width='6' text='xs'  />
+							<HoloLink en='Nekomata Okayu' jp='猫又おかゆ' width='6' text='xs'  />
+							<HoloLink en='Oozora Subaru' jp='大空スバル' width='6' text='xs'   />
+						</a>
+					</td>
+				</tr>
+				</tbody>
+			</table>
 
 			<table class='border-collapse table-fixed w-full lg:col-span-3 text-sm grayscale'>
 				<thead class='border-b text-lg p-4 pl-8 pb-3 text-sky text-center grayscale'>
