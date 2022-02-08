@@ -36,7 +36,7 @@ const config = {
 				"process.env.NODE_ENV": JSON.stringify("production")
 			})],*/
 			optimizeDeps: {
-				include: ['@carbon/charts']
+				include: ['@carbon/charts', 'fuzzy']
 			},
 			ssr: {
 				noExternal: [production && '@carbon/charts'].filter(Boolean)
