@@ -35,8 +35,7 @@ const config = {
 				"process.env.NODE_ENV": JSON.stringify("production")
 			})],*/
 			optimizeDeps: {
-				include: ['fuzzy']
-				// include: ['@carbon/charts']
+				include: ['fuzzy','@carbon/charts']
 			},
 
 			build: {
