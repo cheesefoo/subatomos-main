@@ -63,7 +63,7 @@
 	import { BarChartSimple, DonutChart, TreemapChart } from '@carbon/charts-svelte';
 	import '@carbon/charts/styles.min.css';
 	import WordCloud from './WordCloud.svelte';
-	import w from './wordcloud.png';
+	import w from '../../../static/assets/images/survey/wordcloud.png';
 	import Lazy from 'svelte-lazy';
 	export let allData;
 	export let questions;

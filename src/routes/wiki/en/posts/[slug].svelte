@@ -36,6 +36,7 @@
 	import WikiPage from '$lib/components/WikiPage.svelte';
 	import BackButton from '$lib/components/BackButton.svelte';
 	import { MetaTags } from 'svelte-meta-tags';
+	import WikiSearch from '$lib/components/WikiSearch.svelte';
 
 	export let slug;
 
@@ -62,9 +63,15 @@
     handle: '@subatomos',
     cardType: 'summary'
   }} />
+<div class='wiki-top'>
+	<div class='back-btn'>
+		<BackButton />
+	</div>
+	<div class='search'>
+		<WikiSearch />
+	</div>
+</div>
 
-
-<BackButton />
 <h1>{post.title}</h1>
 <div class='content'>
 	<WikiPage html={post.html} />
@@ -75,6 +82,16 @@
 {/each}
 
 <style lang='scss'>
+	.wiki-top
+  {
+		display:flex;
+		justify-content: space-between;
+		padding-right:10%;
+	}
+  .search {
+    width: 30%;
+  }
+
   :global(.content) sc {
     padding: 0 10% 0 4em;
   }

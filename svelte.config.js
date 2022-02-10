@@ -27,7 +27,6 @@ const config = {
 			assets: 'build',
 			fallback: null
 		}),
-		target: '#svelte',
 		prerender: {
 			onError: 'continue'
 		},
@@ -36,11 +35,16 @@ const config = {
 				"process.env.NODE_ENV": JSON.stringify("production")
 			})],*/
 			optimizeDeps: {
-				include: ['@carbon/charts', 'fuzzy']
+				include: ['fuzzy']
+				// include: ['@carbon/charts']
 			},
-			ssr: {
-				noExternal: [production && '@carbon/charts'].filter(Boolean)
+
+			build: {
+				commonjsOptions: {},
 			},
+/*			ssr: {
+				noExternal: [production && '@carbon/charts' && "fuzzy"].filter(Boolean)
+			},*/
 			resolve: {
 				alias: {
 					// these are the aliases and paths to them
