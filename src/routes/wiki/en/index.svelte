@@ -68,7 +68,7 @@
 	<title>Oozora Subaru Fan Wiki</title>
 </svelte:head>
 
-<div class='content p-4 text-sm lg:text-lg lg:p-24'>
+<div class='content p-4 text-sm lg:text-lg lg:p-24 break-words'>
 	<div class='intro'>
 		<span>turn a hat wearing duck into a shrimp dish drowned in olive oil</span>
 		<p class='pt-8 pb-8'>
@@ -160,6 +160,9 @@
 	</div>
 </div>
 <style lang='scss'>
+	body{
+		word-wrap: break-word;
+	}
 blockquote{
 	font-family: klee, sans-serif;
 	font-weight: 900;
