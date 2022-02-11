@@ -11,7 +11,7 @@
 	export let slug;
 	export let text;
 	let excerpt;
-	let url = (dev? 'http://localhost:3000' : baseURL) + '/wiki/en/posts';
+	export let url = (dev? 'http://localhost:3000' : baseURL) + '/wiki/en/posts';
 
 	// onMount(getExcerpt);
 	async function getExcerpt() {
@@ -54,8 +54,14 @@
 	<a href="{url}/{slug}">{text}</a>
 {/await}
 
-<style>
+<style lang='scss'>
+	a{
+
+    @apply font-extrabold;
+		font-family: keifont, sans-serif;
+	}
 	.excerpt {
-		color: #1da1f2;
+		color: $sky;
+
 	}
 </style>

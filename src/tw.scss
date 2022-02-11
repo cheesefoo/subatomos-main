@@ -7,10 +7,14 @@
 @tailwind utilities;
 
 @layer base {
+    body{
+        font-family: keifont, sans-serif;
+    }
     h1,
     h2,
     h3,
     h4 {
         @apply font-bold;
+        color: sky;
     }
 }

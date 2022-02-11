@@ -29,7 +29,11 @@
 			});
 
 			// console.log(data);
-			return data;
+			return data.sort((a, b) =>
+			{
+				let titleA = a.title, titleB = b.title;
+				return titleA < titleB ? -1 : titleA > titleB ? 1 : 0;
+			});
 		} catch (err)
 		{
 			console.error(err);
@@ -55,9 +59,11 @@
 {:then data}
 	<!--{JSON.stringify(res.props.data)}-->
 	<!--{JSON.stringify(res)}-->
-	<Typeahead label='' placeholder='Search...' limit={8} {data} {extract} on:select={onSelect} let:result let:index let:value>
+	<Typeahead label='' placeholder='Search...' limit={8} {data} {extract} on:select={onSelect} let:result let:index
+						 let:value>
 		<svelte:fragment slot='no-results'>
-			No results found for <mark>{value}</mark>
+			No results found for
+			<mark>{value}</mark>
 		</svelte:fragment>
 		<div style='color: cadetblue; font-weight: bold;'>
 			{@html result.string}
@@ -72,6 +78,10 @@
 <style>
     :global([role="listbox"]) {
         margin: 0;
+    }
+
+    :global([data-svelte-search] input) {
+        border-color: #444444
     }
 
     :global(mark) {
