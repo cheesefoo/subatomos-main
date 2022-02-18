@@ -1,21 +1,21 @@
 <script  >
 	import Plyr from 'plyr';
 	import plyr from 'plyr/src/sass/plyr.scss'
-
 	import { onMount } from 'svelte';
 	// Change "{}" to your options:
 	// https://github.com/sampotts/plyr/#options
 	export let id;
+	export let src;
 	export let options = {};
-	onMount( () => {
-		 new Plyr('#player', options);
+	export let type = "audio/mp3";
+	onMount(_=> {
+		new Plyr('#player', options);
 	});
 
 	// Expose player so it can be used from the console
 	// window.player = player;
 
 </script>
-<div class='container'>
-	<div id='player' data-plyr-provider='youtube' data-plyr-embed-id={id}></div>
-</div>
-<!-- Plyr resources and browser polyfills are specified in the pen settings -->
+<audio id="player" controls>
+	<source {src} {type} />
+</audio>

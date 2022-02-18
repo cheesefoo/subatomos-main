@@ -13,7 +13,7 @@
 	let w = `w-${width}`;
 	let txt = `text-${text}`;
 
-	import '/src/tw.scss';
+	import '/src/routes/wiki/tw.scss';
 </script>
 <td class='border-b border-slate-100  text-slate-500'>
 	<!--<td class='border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400'>-->
