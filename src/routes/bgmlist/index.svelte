@@ -3,9 +3,11 @@
 	import TooltipLoader from '$lib/components/TooltipLoader.svelte';
 	import '../wiki/tw.scss';
 	import { Audio, Player, Youtube } from '@vime/svelte';
+	import { dev } from '$app/env';
+	const dir = dev ? '../static/assets/sound' : '/assets/sound';
 
-	let catbgm = 'static/assets/sound/kashikoi_nekodesukedo_nanika_mondai_de_motsu.mp3';
-	let kensetsu = 'static/assets/sound/bgm_noloop.mp3';
+	let catbgm = `${dir}/kashikoi_nekodesukedo_nanika_mondai_de_motsu.mp3`;
+	let kensetsu = `${dir}/bgm_noloop.mp3`;
 
 	let controls = false;
 
