@@ -1,17 +1,13 @@
-<script lang='ts'>
+<script lang='ts'>  import TooltipLoader from '$lib/components/TooltipLoader.svelte';
+import '../wiki/tw.scss';
+import { dev } from '$app/env';
+import Youtube from '$lib/components/YouTube.svelte';
 
-	import TooltipLoader from '$lib/components/TooltipLoader.svelte';
-	import '../wiki/tw.scss';
-	import { Audio, Player, Youtube } from '@vime/svelte';
-	import { dev } from '$app/env';
-	const dir = dev ? '../static/assets/sound' : '/assets/sound';
-
-	let catbgm = `${dir}/kashikoi_nekodesukedo_nanika_mondai_de_motsu.mp3`;
-	let kensetsu = `${dir}/bgm_noloop.mp3`;
-
-	let controls = false;
-
-	let options = {};
+const dir = dev ? '../static/assets/sound' : '/assets/sound';
+let catbgm = `${dir}/kashikoi_nekodesukedo_nanika_mondai_de_motsu.mp3`;
+let kensetsu = `${dir}/bgm_noloop.mp3`;
+let controls = false;
+let options = {};
 </script>
 <!--<svelte:head>
 	<link
@@ -19,10 +15,8 @@
 		href='https://cdn.jsdelivr.net/npm/@vime/core@^5/themes/default.css'
 	/>
 </svelte:head>-->
-
 <div class='overflow-x-auto text-xxs break-words lg:text-base'>
 	<table class='table-auto border border-sky border-collapse '>
-
 		<tr>
 			<th>Song</th>
 			<th>EN/Romaji</th>
@@ -39,9 +33,7 @@
 				winner</a>, link is a mirror
 			</td>
 			<td>
-				<Player controls>
-					<Youtube videoId='BsmGeNIW8K4' />
-				</Player>
+				<Youtube videoId='BsmGeNIW8K4' />
 			</td>
 		</tr>
 		<tr>
@@ -50,22 +42,16 @@
 			<td>Freshly Debuted Subaru 10min opening BGM</td>
 			<td></td>
 			<td>
-				<Player controls>
-					<Youtube videoId='O8q0q8SnXrY' />
-
-				</Player>
+				<Youtube videoId='O8q0q8SnXrY' />
 			</td>
 		</tr>
-
 		<tr>
 			<td>Morning</td>
 			<td></td>
 			<td></td>
 			<td></td>
 			<td>
-				<Player controls>
-					<Youtube videoId='2KzkWWkPSpU' />
-				</Player>
+				<Youtube videoId='2KzkWWkPSpU' />
 			</td>
 		</tr>
 		<tr>
@@ -74,9 +60,7 @@
 			<td></td>
 			<td>Also used by Choco, Maimoto</td>
 			<td>
-				<Player controls>
-					<Youtube videoId='5bu1RjFN2yY' />
-				</Player>
+				<Youtube videoId='5bu1RjFN2yY' />
 			</td>
 		</tr>
 		<tr>
@@ -85,9 +69,7 @@
 			<td></td>
 			<td></td>
 			<td>
-				<Player controls>
-					<Youtube videoId='j72rz_MZxrs' />
-				</Player>
+				<Youtube videoId='j72rz_MZxrs' />
 			</td>
 		</tr>
 		<tr>
@@ -96,9 +78,7 @@
 			<td></td>
 			<td></td>
 			<td>
-				<Player controls>
-					<Youtube videoId='pLp68Hdeo9w' />
-				</Player>
+				<Youtube videoId='pLp68Hdeo9w' />
 			</td>
 		</tr>
 		<tr>
@@ -107,9 +87,7 @@
 			<td>Minecraft (old)</td>
 			<td></td>
 			<td>
-				<Player controls>
-					<Youtube videoId='u_ZpaqpWJek' />
-				</Player>
+				<Youtube videoId='u_ZpaqpWJek' />
 			</td>
 		</tr>
 		<tr>
@@ -118,9 +96,7 @@
 			<td>Freetalk, SC Reading</td>
 			<td></td>
 			<td>
-				<Player controls>
-					<Youtube videoId='h6VdSjyUbbo' />
-				</Player>
+				<Youtube videoId='h6VdSjyUbbo' />
 			</td>
 		</tr>
 		<tr>
@@ -129,9 +105,7 @@
 			<td>Freetalk (old)</td>
 			<td></td>
 			<td>
-				<Player controls>
-					<Youtube videoId='R97YidHjmA4' />
-				</Player>
+				<Youtube videoId='R97YidHjmA4' />
 			</td>
 		</tr>
 		<tr>
@@ -140,9 +114,7 @@
 			<td>Freetalk (old)</td>
 			<td></td>
 			<td>
-				<Player controls>
-					<Youtube videoId='q-tTJlz79_c' />
-				</Player>
+				<Youtube videoId='q-tTJlz79_c' />
 			</td>
 		</tr>
 		<tr>
@@ -151,9 +123,7 @@
 			<td>Freetalk (old)</td>
 			<td></td>
 			<td>
-				<Player controls>
-					<Youtube videoId='GyayG1SKz9g' />
-				</Player>
+				<Youtube videoId='GyayG1SKz9g' />
 			</td>
 		</tr>
 		<tr>
@@ -164,9 +134,7 @@
 			</td>
 			<td></td>
 			<td>
-				<Player controls>
-					<Youtube videoId='wm04SLJIz8g' />
-				</Player>
+				<Youtube videoId='wm04SLJIz8g' />
 			</td>
 		</tr>
 		<tr>
@@ -177,10 +145,7 @@
 			</td>
 			<td></td>
 			<td>
-
-				<Player controls>
-					<Youtube videoId='vxMIQiE2Cig' />
-				</Player>
+				<Youtube videoId='vxMIQiE2Cig' />
 			</td>
 		</tr>
 		<tr>
@@ -189,9 +154,7 @@
 			<td>SC Reading (old)</td>
 			<td></td>
 			<td>
-				<Player controls>
-					<Youtube videoId='wSL_jf2Qv3M' />
-				</Player>
+				<Youtube videoId='wSL_jf2Qv3M' />
 			</td>
 		</tr>
 		<tr>
@@ -200,9 +163,7 @@
 			<td>Freechat, SC reading (old)</td>
 			<td></td>
 			<td>
-				<Player controls>
-					<Youtube videoId='rWduBA8LWgo' />
-				</Player>
+				<Youtube videoId='rWduBA8LWgo' />
 			</td>
 		</tr>
 		<tr>
@@ -211,9 +172,7 @@
 			<td>Freechat, SC reading (old)</td>
 			<td></td>
 			<td>
-				<Player controls>
-					<Youtube videoId='FbZoJpRm0H4' />
-				</Player>
+				<Youtube videoId='FbZoJpRm0H4' />
 			</td>
 		</tr>
 		<tr>
@@ -222,9 +181,7 @@
 			<td>Seasonal, SC reading (seasonal)</td>
 			<td></td>
 			<td>
-				<Player controls>
-					<Youtube videoId='b0dESbWkNYA' />
-				</Player>
+				<Youtube videoId='b0dESbWkNYA' />
 			</td>
 		</tr>
 		<tr>
@@ -233,9 +190,7 @@
 			<td>Sushi Making</td>
 			<td></td>
 			<td>
-				<Player controls>
-					<Youtube videoId='F7vc1S5LSTA' />
-				</Player>
+				<Youtube videoId='F7vc1S5LSTA' />
 			</td>
 		</tr>
 		<tr>
@@ -244,9 +199,7 @@
 			<td>Sushi Making</td>
 			<td>Mensore is Okinawan for "Welcome"</td>
 			<td>
-				<Player controls>
-					<Youtube videoId='acz2aXbj9Ak' />
-				</Player>
+				<Youtube videoId='acz2aXbj9Ak' />
 			</td>
 		</tr>
 		<tr>
@@ -255,9 +208,7 @@
 			<td>Ending</td>
 			<td>From old CPU</td>
 			<td>
-				<Player controls>
-					<Youtube videoId='9tfveBEakSo' />
-				</Player>
+				<Youtube videoId='9tfveBEakSo' />
 			</td>
 		</tr>
 		<tr>
@@ -266,9 +217,7 @@
 			<td>Ending (old)</td>
 			<td>Kimagure Cooking BGM</td>
 			<td>
-				<Player controls>
-					<Youtube videoId='TEQ4s6Yv4jc' />
-				</Player>
+				<Youtube videoId='TEQ4s6Yv4jc' />
 			</td>
 		</tr>
 		<tr>
@@ -277,9 +226,7 @@
 			<td>Ending</td>
 			<td></td>
 			<td>
-				<Player controls>
-					<Youtube videoId='rxhSCYsQaKQ' />
-				</Player>
+				<Youtube videoId='rxhSCYsQaKQ' />
 			</td>
 		</tr>
 		<tr>
@@ -288,9 +235,7 @@
 			<td>Space Food Eating</td>
 			<td></td>
 			<td>
-				<Player controls>
-					<Youtube videoId='2pf6wDKBvVk' />
-				</Player>
+				<Youtube videoId='2pf6wDKBvVk' />
 			</td>
 		</tr>
 		<tr>
@@ -299,9 +244,7 @@
 			<td>I want to get closer to ○○-senpai</td>
 			<td></td>
 			<td>
-				<Player controls>
-					<Youtube videoId='xN9AHUrFnYo' />
-				</Player>
+				<Youtube videoId='xN9AHUrFnYo' />
 			</td>
 		</tr>
 		<tr>
@@ -310,9 +253,7 @@
 			<td></td>
 			<td>Occasionally used for emo moments</td>
 			<td>
-				<Player controls>
-					<Youtube videoId='nF3ZmSDjm2E' />
-				</Player>
+				<Youtube videoId='nF3ZmSDjm2E' />
 			</td>
 		</tr>
 		<tr>
@@ -321,9 +262,7 @@
 			<td>Game Shop Maruyama OP</td>
 			<td></td>
 			<td>
-				<Player controls>
-					<Youtube videoId='KpTHaisL2zA' />
-				</Player>
+				<Youtube videoId='KpTHaisL2zA' />
 			</td>
 		</tr>
 		<tr>
@@ -331,13 +270,11 @@
 			<td>A Smart Cat, But Are There Any Issues?</td>
 			<td>Various, Minecraft</td>
 			<td>Deleted from DOVA</td>
-			<Player controls>
-				<Audio>
-					<source data-src={catbgm} type='audio/mp3' />
-				</Audio>
-
-			</Player>
-
+			<td>
+				<audio controls>
+					<source src={catbgm} type='audio/mp3' />
+				</audio>
+			</td>
 		</tr>
 		<tr>
 			<td>大空建設の社歌</td>
@@ -349,14 +286,10 @@
 				audio is a clean version ripped from streams
 			</td>
 			<td>
-				<Player controls>
-					<Audio>
-						<source data-src={kensetsu} type='audio/mp3' />
-					</Audio>
-
-				</Player>
+				<audio controls>
+					<source src={kensetsu} type='audio/mp3' />
+				</audio>
 			</td>
-
 		</tr>
 	</table>
 </div>
