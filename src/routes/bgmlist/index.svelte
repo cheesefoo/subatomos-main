@@ -2,6 +2,7 @@
 import '../wiki/tw.scss';
 import { dev } from '$app/env';
 import Youtube from '$lib/components/YouTube.svelte';
+import { MetaTags } from 'svelte-meta-tags';
 
 const dir = dev ? '../static/assets/sound' : '/assets/sound';
 let catbgm = `${dir}/kashikoi_nekodesukedo_nanika_mondai_de_motsu.mp3`;
@@ -15,6 +16,11 @@ let options = {};
 		href='https://cdn.jsdelivr.net/npm/@vime/core@^5/themes/default.css'
 	/>
 </svelte:head>-->
+<MetaTags
+	title='Oozora Subaru BGM List 大空スバル　使用BGM'
+	description='List of BGM used in streams with links'
+	canonical={`https://subatomos.com/bgmlist`}
+  />
 <div class='overflow-x-auto text-xxs break-words lg:text-base'>
 	<table class='table-auto border border-sky border-collapse '>
 		<tr>
