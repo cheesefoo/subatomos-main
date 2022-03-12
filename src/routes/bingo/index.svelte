@@ -41,61 +41,6 @@
 	{/each}
 </div>
 <style>
-    /*    .board {
-						display: flex;
-						flex-direction: column;
-						justify-content: center;
-						align-items: center;
-						align-content: stretch;
-						background-color: transparent;
-						border-radius: 20px;
-						border: 20px dotted bisque;
-				}*/
- 
-    .row {
-        display: flex;
-        width: 100%;
-        height: auto;
-        flex-flow: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        align-content: stretch;
-    }
 
-    .emoji-container {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        text-align: center;
-        width: 3vmax;
-        height: 3vmax;
-        margin: 2vmax;
-    }
 
-    .emoji {
-        z-index: 1;
-        cursor: pointer;
-        border: 5px solid bisque;
-        margin: 0px;
-        line-height: 1.1;
-        width: 5vmax;
-        height: 5vmax;
-        min-width: 5vmax;
-        min-height: 5vmax;
-        font-size: 5vmax;
-    }
-
-    .dot {
-        position: absolute;
-        z-index: 2000;
-        border-radius: 100%;
-        background-color: bisque;
-        border: 5px solid blue;
-        opacity: 0.5;
-        width: 5vmax;
-        height: 5vmax;
-    }
 </style>
