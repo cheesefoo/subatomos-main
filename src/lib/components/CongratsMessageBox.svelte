@@ -89,7 +89,7 @@
 </div>
 
 <style lang="scss">
-/*	@font-face {
+	/*	@font-face {
 		// This is parsed as a normal function call that takes a quoted string.
 		src: url('/static/851CHIKARA-DZUYOKU_kanaA_004.woff2') format('woff2');
 		font-family: '851CHIKARA-DZUYOKU_kanaA_004';
@@ -169,11 +169,11 @@
 			white-space: nowrap;
 
 			&.yellow {
-				color: #E07F79;
+				color: #e07f79;
 			}
 
 			&.pink {
-				color: #FFD4A0;
+				color: #ffd4a0;
 			}
 		}
 

@@ -1,0 +1,62 @@
+<script lang="ts" context="module">
+	import GhostContentAPI, { GhostAPI } from '@tryghost/content-api';
+
+	import { ghostAPI, ghostURL } from '$lib/variables';
+
+	export async function load({ fetch, session, context }) {
+		const api: GhostAPI = new GhostContentAPI({
+			url: `${ghostURL}`,
+			key: `${ghostAPI}`,
+			version: 'v3'
+		});
+
+		try {
+			const posts = await api.posts.browse({ limit: 10, include: 'tags', filter: 'tag:hash-ja' });
+			const tags = await api.tags.browse({ limit: 10, filter: 'visibility:public' });
+
+			return {
+				props: {
+					posts: posts,
+					tags: tags
+				}
+			};
+		} catch (err) {
+			console.log(err);
+
+			return {
+				status: 503,
+				error: new Error(`Coldbooting`)
+			};
+		}
+	}
+</script>
+
+<script>
+	export let posts;
+	export let tags;
+	let promise = Promise.resolve([]);
+
+	function localizedTag(tag) {
+		if (tag.description == null) {
+			return tag.name;
+		}
+		let langs = tag.description.split(':');
+		if (langs[0] === 'ja') {
+			return langs[1];
+		}
+	}
+</script>
+
+<svelte:head>
+	<link rel="alternate" href="https://subatomos.com/wiki/ja/" hreflang="ja" />
+	<link rel="alternate" href="https://subatomos.com/wiki/en/" hreflang="en" />
+</svelte:head>
+
+<h3>カテゴリー</h3>
+{#each tags as tag}
+	<li><a href="/wiki/ja/categories/{tag.slug}">{localizedTag(tag)}</a></li>
+{/each}
+<h3>最近のアップデート</h3>
+{#each posts as post}
+	<li><a href="/wiki/ja/posts/{post.slug}">{post.title}</a></li>
+{/each}

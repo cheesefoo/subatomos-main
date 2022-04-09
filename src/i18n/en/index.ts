@@ -69,6 +69,12 @@ const en: BaseTranslation = {
 	},
 	SOUNDBOARD: {
 		SUGGEST: 'To suggest a sound to add, please contact us in any of these places:'
+	},
+	WIKI: {
+		CATEGORIES: 'Categories',
+		RECENT_POSTS: 'Recently Updated',
+		JOKES: 'Recurring jokes/memes',
+		GROUPS: 'Groups'
 	}
 };
 export default en;

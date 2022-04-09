@@ -1,0 +1,108 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "subatomos",
+      "version": "0.0.1",
+      "scripts": {
+        "dev": "set NODE_ENV=development && svelte-kit dev -o",
+        "build": "npm upgrade && svelte-kit build",
+        "preview": "svelte-kit preview",
+        "check": "svelte-check --tsconfig ./tsconfig.json",
+        "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+        "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+        "format": "prettier --write --plugin-search-dir=. .",
+        "typesafe-i18n-generator": "typesafe-i18n"
+      },
+      "engines": {
+        "node": ">=16.13.0"
+      },
+      "devDependencies": {
+        "@carbon/charts": "^0.54.2",
+        "@carbon/charts-svelte": "^0.54.2",
+        "@sveltejs/adapter-cloudflare": "^1.0.0-next.6",
+        "@sveltejs/adapter-static": "next",
+        "@sveltejs/kit": "next",
+        "@tryghost/content-api": "^1.5.16",
+        "@tryghost/helpers": "^1.1.54",
+        "@types/cookie": "^0.4.1",
+        "@types/d3": "7.1.0",
+        "@types/faker": "^5.5.9",
+        "@typescript-eslint/eslint-plugin": "^4.33.0",
+        "@typescript-eslint/parser": "^4.33.0",
+        "autoprefixer": "^10.4.1",
+        "carbon-preprocess-svelte": "^0.6.0",
+        "cssnano": "^5.0.14",
+        "d3": "^7.2.1",
+        "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-svelte3": "^3.3.0",
+        "faker": "^5.5.3",
+        "flag-icon-css": "^3.5.0",
+        "lottie-web": "^5.8.1",
+        "nth-check": "^2.0.1",
+        "postcss": "^8.4.5",
+        "postcss-load-config": "^3.1.1",
+        "prettier": "~2.3.2",
+        "prettier-plugin-svelte": "^2.5.1",
+        "saos": "^1.2.0",
+        "sass": "^1.46.0",
+        "svelte": "^3.44.3",
+        "svelte-check": "^2.2.11",
+        "svelte-lazy": "^1.0.12",
+        "svelte-lightbox": "^0.6.1",
+        "svelte-media": "^0.1.5",
+        "svelte-preprocess": "^4.10.1",
+        "tslib": "^2.3.1",
+        "typescript": "^4.5.4"
+      },
+      "type": "module",
+      "dependencies": {
+        "@fontsource/fira-mono": "^4.5.0",
+        "@fortawesome/fontawesome-free": "^5.15.4",
+        "@fortawesome/free-brands-svg-icons": "^5.15.4",
+        "@fortawesome/free-solid-svg-icons": "^5.15.4",
+        "@lottiefiles/svelte-lottie-player": "^0.2.0",
+        "@lukeed/uuid": "^2.0.0",
+        "@types/chart.js": "^2.9.35",
+        "@types/howler": "^2.2.4",
+        "@types/tryghost__content-api": "^1.3.9",
+        "chart.js": "^3.7.0",
+        "cookie": "^0.4.1",
+        "howler": "^2.2.3",
+        "svelte-fa": "^2.4.0",
+        "tippy.js": "^6.3.7",
+        "typesafe-i18n": "^2.57.5"
+      }
+    },
+    "prefix": "M:\\JetBrains Projects\\WebstormProjects\\subatomos-main"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": true,
+    "storeDir": "M:\\.pnpm-store\\v3",
+    "virtualStoreDir": "M:\\JetBrains Projects\\WebstormProjects\\subatomos-main\\node_modules\\.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "M:\\JetBrains Projects\\WebstormProjects\\subatomos-main",
+    "stage": "resolution_started"
+  },
+  "4 warn pnpm": {
+    "message": "Moving @carbon/charts that was installed by a different package manager to \"node_modules/.ignored",
+    "prefix": "M:\\JetBrains Projects\\WebstormProjects\\subatomos-main"
+  },
+  "5 error pnpm": {
+    "errno": -4048,
+    "code": "EPERM",
+    "syscall": "rename",
+    "path": "M:\\JetBrains Projects\\WebstormProjects\\subatomos-main\\node_modules\\@carbon\\charts",
+    "dest": "M:\\JetBrains Projects\\WebstormProjects\\subatomos-main\\node_modules\\.ignored\\@carbon\\charts",
+    "err": {
+      "name": "pnpm",
+      "message": "EPERM: operation not permitted, rename 'M:\\JetBrains Projects\\WebstormProjects\\subatomos-main\\node_modules\\@carbon\\charts' -> 'M:\\JetBrains Projects\\WebstormProjects\\subatomos-main\\node_modules\\.ignored\\@carbon\\charts'",
+      "code": "EPERM",
+      "stack": "pnpm: EPERM: operation not permitted, rename 'M:\\JetBrains Projects\\WebstormProjects\\subatomos-main\\node_modules\\@carbon\\charts' -> 'M:\\JetBrains Projects\\WebstormProjects\\subatomos-main\\node_modules\\.ignored\\@carbon\\charts'"
+    }
+  }
+}

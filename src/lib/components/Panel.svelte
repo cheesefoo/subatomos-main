@@ -22,7 +22,7 @@
 
 	.inner-panel {
 		min-height: calc(50vh - 80px);
-		min-width: max(80vw, 500px);
+		min-width: max(70vw, 500px);
 		background-color: $ivory;
 		display: block;
 		max-width: 50%;
@@ -43,7 +43,7 @@
 			padding: 1em 0;
 		}
 		.inner-panel {
-			min-width: max(92%, 350px);
+			min-width: max(99%, 350px);
 			max-width: 0;
 		}
 	}

@@ -1,19 +1,24 @@
 <!-- saved from url=(0054)https://hololive.wiki/wiki/Oozora_Subaru?action=render -->
-<html
-	><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /></head><body
-		><div class="mw-parser-output">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+	<body>
+		<div class="mw-parser-output">
 			<table class="infobox" style="width:22em;width:305px;">
-				<tbody
-					><tr
-						><th
+				<tbody>
+					<tr>
+						<th
 							colspan="2"
 							style="text-align: center; font-size: 125%; font-weight: bold; background-color: rgb(189, 231, 23); color: rgb(0, 0, 0); --darkreader-inline-bgcolor:#97b912; --darkreader-inline-color:#e8e6e3;"
 							data-darkreader-inline-bgcolor=""
-							data-darkreader-inline-color="">Oozora Subaru</th
-						></tr
-					><tr
-						><td colspan="2" style="text-align:center"
-							><div id="tabber-498743" class="tabber">
+							data-darkreader-inline-color=""
+							>Oozora Subaru
+						</th>
+					</tr>
+					<tr>
+						<td colspan="2" style="text-align:center">
+							<div id="tabber-498743" class="tabber">
 								<section class="tabber__section">
 									<article class="tabber__panel" title="Main  ">
 										<p>
@@ -208,19 +213,32 @@
 									</article>
 								</section>
 							</div>
-							<div>"Sup? I'm Oozora Subaru!"</div></td
-						></tr
-					><tr
-						><th
+							<div>"Sup? I'm Oozora Subaru!"</div>
+						</td>
+					</tr>
+					<tr>
+						<th
 							colspan="2"
 							style="text-align: center; background-color: rgb(224, 255, 44); color: rgb(0, 0, 0); --darkreader-inline-bgcolor:#9eb200; --darkreader-inline-color:#e8e6e3;"
 							data-darkreader-inline-bgcolor=""
-							data-darkreader-inline-color="">Details</th
-						></tr
-					><tr><th scope="row" style="width:100px;">Japanese Name</th><td>大空スバル</td></tr><tr
-						><th scope="row" style="width:100px;">English Name</th><td>Oozora Subaru</td></tr
-					><tr><th scope="row" style="width:100px;">Chinese Name</th><td>大空昴</td></tr><tr
-						><th scope="row" style="width:100px;"
+							data-darkreader-inline-color=""
+							>Details
+						</th>
+					</tr>
+					<tr>
+						<th scope="row" style="width:100px;">Japanese Name</th>
+						<td>大空スバル</td>
+					</tr>
+					<tr>
+						<th scope="row" style="width:100px;">English Name</th>
+						<td>Oozora Subaru</td>
+					</tr>
+					<tr>
+						<th scope="row" style="width:100px;">Chinese Name</th>
+						<td>大空昴</td>
+					</tr>
+					<tr>
+						<th scope="row" style="width:100px;"
 							><a
 								href="https://hololive.wiki/wiki/List_of_Debut_Anniversaries"
 								title="List of Debut Anniversaries"
@@ -229,23 +247,28 @@
 									data-darkreader-inline-color="">Debut Date</span
 								></a
 							></th
-						><td>September 16, 2018 (YouTube)</td></tr
-					><tr
-						><th scope="row" style="width:100px;">Member of</th><td
+						>
+						<td>September 16, 2018 (YouTube)</td>
+					</tr>
+					<tr>
+						<th scope="row" style="width:100px;">Member of</th>
+						<td
 							><a
 								href="https://hololive.wiki/wiki/Hololive_2nd_Generation"
 								title="Hololive 2nd Generation">hololive 2nd Gen</a
 							></td
-						></tr
-					><tr
-						><th scope="row" style="width:100px;"
+						>
+					</tr>
+					<tr>
+						<th scope="row" style="width:100px;"
 							><a href="https://hololive.wiki/wiki/Oozora_Subaru?action=render#Fans"
 								><span
 									style="color: rgb(0, 0, 0); --darkreader-inline-color:#e8e6e3;"
 									data-darkreader-inline-color="">Fan Name</span
 								></a
 							></th
-						><td
+						>
+						<td
 							>Suba-tomo (スバ友) / Subafriends<sup
 								id="cite_ref-official-profile_11-0"
 								class="reference"
@@ -254,9 +277,11 @@
 									>[11]</a
 								></sup
 							></td
-						></tr
-					><tr
-						><th scope="row" style="width:100px;">Emoji /<br />Oshi Mark</th><td
+						>
+					</tr>
+					<tr>
+						<th scope="row" style="width:100px;">Emoji /<br />Oshi Mark</th>
+						<td
 							>🚑 <a href="https://hololive.wiki/wiki/File:Twemoji12_1f691.svg" class="image"
 								><img
 									alt="Twemoji12 1f691.svg"
@@ -267,16 +292,19 @@
 									srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Twemoji12_1f691.svg/24px-Twemoji12_1f691.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Twemoji12_1f691.svg/32px-Twemoji12_1f691.svg.png 2x"
 								/></a
 							></td
-						></tr
-					><tr
-						><th
+						>
+					</tr>
+					<tr>
+						<th
 							colspan="2"
 							style="text-align: center; background-color: rgb(224, 255, 44); color: rgb(0, 0, 0); --darkreader-inline-bgcolor:#9eb200; --darkreader-inline-color:#e8e6e3;"
 							data-darkreader-inline-bgcolor=""
-							data-darkreader-inline-color="">Official Media</th
-						></tr
-					><tr
-						><th scope="row" style="width:100px;"
+							data-darkreader-inline-color=""
+							>Official Media
+						</th>
+					</tr>
+					<tr>
+						<th scope="row" style="width:100px;"
 							><a
 								href="https://en.wikipedia.org/wiki/YouTube"
 								class="extiw"
@@ -286,7 +314,8 @@
 									data-darkreader-inline-color="">YouTube</span
 								></a
 							></th
-						><td
+						>
+						<td
 							><a
 								rel="nofollow"
 								class="external text"
@@ -306,9 +335,11 @@
 									srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Twemoji12_2714.svg/18px-Twemoji12_2714.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Twemoji12_2714.svg/24px-Twemoji12_2714.svg.png 2x"
 								/></a
 							></td
-						></tr
-					><tr
-						><th scope="row" style="width:100px;">Website</th><td
+						>
+					</tr>
+					<tr>
+						<th scope="row" style="width:100px;">Website</th>
+						<td
 							><a
 								rel="nofollow"
 								class="external text"
@@ -328,9 +359,10 @@
 								class="external text"
 								href="https://www.hololive.tv/portfolio/items/336385">hololive.tv (JP)</a
 							></td
-						></tr
-					><tr
-						><th scope="row" style="width:100px;"
+						>
+					</tr>
+					<tr>
+						<th scope="row" style="width:100px;"
 							><a
 								href="https://en.wikipedia.org/wiki/Twitter"
 								class="extiw"
@@ -340,21 +372,25 @@
 									data-darkreader-inline-color="">Twitter</span
 								></a
 							></th
-						><td
+						>
+						<td
 							><a rel="nofollow" class="external text" href="https://twitter.com/oozorasubaru"
 								>@oozorasubaru</a
 							></td
-						></tr
-					><tr
-						><th scope="row" style="width:100px;">Marshmallow</th><td
+						>
+					</tr>
+					<tr>
+						<th scope="row" style="width:100px;">Marshmallow</th>
+						<td
 							><a
 								rel="nofollow"
 								class="external text"
 								href="https://marshmallow-qa.com/oozorasubaru">@oozorasubaru</a
 							></td
-						></tr
-					><tr
-						><th scope="row" style="width:100px;"
+						>
+					</tr>
+					<tr>
+						<th scope="row" style="width:100px;"
 							><a
 								href="https://en.wikipedia.org/wiki/Instagram"
 								class="extiw"
@@ -364,19 +400,23 @@
 									data-darkreader-inline-color="">Instagram</span
 								></a
 							></th
-						><td
+						>
+						<td
 							><a rel="nofollow" class="external text" href="https://instagram.com/oozorasubaru"
 								>oozorasubaru</a
 							></td
-						></tr
-					><tr
-						><th scope="row" style="width:100px;">TwitCasting</th><td
+						>
+					</tr>
+					<tr>
+						<th scope="row" style="width:100px;">TwitCasting</th>
+						<td
 							><a rel="nofollow" class="external text" href="https://twitcasting.tv/oozorasubaru"
 								>oozorasubaru</a
 							></td
-						></tr
-					><tr
-						><th scope="row" style="width:100px;"
+						>
+					</tr>
+					<tr>
+						<th scope="row" style="width:100px;"
 							><a
 								href="https://en.wikipedia.org/wiki/Bilibili"
 								class="extiw"
@@ -386,20 +426,24 @@
 									data-darkreader-inline-color="">bilibili</span
 								></a
 							></th
-						><td
+						>
+						<td
 							><a rel="nofollow" class="external text" href="https://space.bilibili.com/389859190/"
 								>大空昴Official</a
 							></td
-						></tr
-					><tr
-						><th
+						>
+					</tr>
+					<tr>
+						<th
 							colspan="2"
 							style="text-align: center; background-color: rgb(224, 255, 44); color: rgb(0, 0, 0); --darkreader-inline-bgcolor:#9eb200; --darkreader-inline-color:#e8e6e3;"
 							data-darkreader-inline-bgcolor=""
-							data-darkreader-inline-color="">Personal</th
-						></tr
-					><tr
-						><th scope="row" style="width:100px;"
+							data-darkreader-inline-color=""
+							>Personal
+						</th>
+					</tr>
+					<tr>
+						<th scope="row" style="width:100px;"
 							><a href="https://hololive.wiki/wiki/List_of_Birthdays" title="List of Birthdays"
 								><span
 									style="cursor: help; color: rgb(0, 0, 0); --darkreader-inline-color:#e8e6e3;"
@@ -407,83 +451,103 @@
 									data-darkreader-inline-color="">Birthday</span
 								></a
 							></th
-						><td>July 02</td></tr
-					><tr
-						><th scope="row" style="width:100px;">Age</th><td
+						>
+						<td>July 02</td>
+					</tr>
+					<tr>
+						<th scope="row" style="width:100px;">Age</th>
+						<td
 							>17.2 years old<sup id="cite_ref-12" class="reference"
 								><a href="https://hololive.wiki/wiki/Oozora_Subaru?action=render#cite_note-12"
 									>[12]</a
 								></sup
 							></td
-						></tr
-					><tr
-						><th scope="row" style="width:100px;"
+						>
+					</tr>
+					<tr>
+						<th scope="row" style="width:100px;"
 							><span
 								style="cursor:help;"
 								title="Height information are from the official Hololive website or through their first stream."
 								>Height</span
 							></th
-						><td>154cm</td></tr
-					><tr
-						><th
+						>
+						<td>154cm</td>
+					</tr>
+					<tr>
+						<th
 							colspan="2"
 							style="text-align: center; background-color: rgb(224, 255, 44); color: rgb(0, 0, 0); --darkreader-inline-bgcolor:#9eb200; --darkreader-inline-color:#e8e6e3;"
 							data-darkreader-inline-bgcolor=""
-							data-darkreader-inline-color="">Hashtags</th
-						></tr
-					><tr
-						><th scope="row" style="width:100px;">General</th><td
+							data-darkreader-inline-color=""
+							>Hashtags
+						</th>
+					</tr>
+					<tr>
+						<th scope="row" style="width:100px;">General</th>
+						<td
 							><a
 								rel="nofollow"
 								class="external text"
 								href="https://twitter.com/hashtag/%E5%A4%A7%E7%A9%BA%E3%82%B9%E3%83%90%E3%83%AB"
 								>#大空スバル</a
 							></td
-						></tr
-					><tr
-						><th scope="row" style="width:100px;">Stream Talk</th><td
+						>
+					</tr>
+					<tr>
+						<th scope="row" style="width:100px;">Stream Talk</th>
+						<td
 							><a
 								rel="nofollow"
 								class="external text"
 								href="https://twitter.com/hashtag/%E7%94%9F%E3%82%B9%E3%83%90%E3%83%AB">#生スバル</a
 							></td
-						></tr
-					><tr
-						><th scope="row" style="width:100px;">Fans</th><td
+						>
+					</tr>
+					<tr>
+						<th scope="row" style="width:100px;">Fans</th>
+						<td
 							><a
 								rel="nofollow"
 								class="external text"
 								href="https://twitter.com/hashtag/%E3%82%B9%E3%83%90%E5%8F%8B">#スバ友</a
 							></td
-						></tr
-					><tr
-						><th scope="row" style="width:100px;">Fanart</th><td
+						>
+					</tr>
+					<tr>
+						<th scope="row" style="width:100px;">Fanart</th>
+						<td
 							><a
 								rel="nofollow"
 								class="external text"
 								href="https://twitter.com/hashtag/%E3%83%97%E3%83%AD%E3%83%86%E3%82%A4%E3%83%B3%E3%82%B6%E3%82%B9%E3%83%90%E3%83%AB"
 								>#プロテインザスバル</a
 							></td
-						></tr
-					><tr
-						><th scope="row" style="width:100px;">Video Clips</th><td
+						>
+					</tr>
+					<tr>
+						<th scope="row" style="width:100px;">Video Clips</th>
+						<td
 							><a
 								rel="nofollow"
 								class="external text"
 								href="https://twitter.com/hashtag/%E3%81%8D%E3%82%8A%E3%81%AC%E3%81%8D%E3%82%B9%E3%83%90%E3%83%AB"
 								>#きりぬきスバル</a
 							></td
-						></tr
-					><tr
-						><th
+						>
+					</tr>
+					<tr>
+						<th
 							colspan="2"
 							style="text-align: center; background-color: rgb(224, 255, 44); color: rgb(0, 0, 0); --darkreader-inline-bgcolor:#9eb200; --darkreader-inline-color:#e8e6e3;"
 							data-darkreader-inline-bgcolor=""
-							data-darkreader-inline-color="">Signature</th
-						></tr
-					><tr
-						><td colspan="2" style="text-align:center"
-							><div class="center">
+							data-darkreader-inline-color=""
+							>Signature
+						</th>
+					</tr>
+					<tr>
+						<td colspan="2" style="text-align:center">
+							<div class="center">
 								<div class="floatnone">
 									<a
 										href="https://hololive.wiki/wiki/File:Oozora_Subaru_-_Signature.png"
@@ -498,17 +562,17 @@
 										/></a
 									>
 								</div>
-							</div></td
-						></tr
-					></tbody
-				>
+							</div>
+						</td>
+					</tr>
+				</tbody>
 			</table>
 			<p><br /></p>
 			<table class="toc" width="450px" style="text-align:center;">
-				<tbody
-					><tr>
-						<td valign="center" width="180px" rowspan="2" style="background-color:;"
-							><div class="center">
+				<tbody>
+					<tr>
+						<td valign="center" width="180px" rowspan="2" style="background-color:;">
+							<div class="center">
 								<div class="floatnone">
 									<a
 										href="https://hololive.wiki/wiki/File:Channel_Logo_-_Oozora_Subaru_01.png"
@@ -525,8 +589,8 @@
 								</div>
 							</div>
 						</td>
-						<td colspan="2"><b>Contents:</b> </td></tr
-					>
+						<td colspan="2"><b>Contents:</b></td>
+					</tr>
 					<tr>
 						<td valign="top" style="text-align:left;">
 							<dl>
@@ -590,8 +654,8 @@
 									>
 								</dd>
 							</dl>
-						</td></tr
-					>
+						</td>
+					</tr>
 				</tbody>
 			</table>
 			<p><br /></p>
@@ -855,49 +919,47 @@
 			</ul>
 			<h2><span class="mw-headline" id="Streamer_Information">Streamer Information</span></h2>
 			<table class="wikitable" align="center" width="100%" style="text-align:center;">
-				<tbody
-					><tr>
+				<tbody>
+					<tr>
 						<th
 							colspan="4"
 							style="background-color: rgb(189, 231, 23); color: rgb(0, 0, 0); --darkreader-inline-bgcolor:#97b912; --darkreader-inline-color:#e8e6e3;"
 							data-darkreader-inline-bgcolor=""
 							data-darkreader-inline-color=""
 							>Streamer Side
-						</th></tr
-					>
+						</th>
+					</tr>
 					<tr>
-						<th width="80px">Scene </th>
-						<th width="230px">Lines </th>
-						<th width="230px">Romaji </th>
-						<th>Meaning / Notes </th></tr
-					>
+						<th width="80px">Scene</th>
+						<th width="230px">Lines</th>
+						<th width="230px">Romaji</th>
+						<th>Meaning / Notes</th>
+					</tr>
 					<tr>
-						<th rowspan="1">Greetings </th>
-						<td>あじまる！ </td>
-						<td>Ajimaru! </td>
-						<td style="text-align:left;">Shortened term for “Hajimaru”. </td></tr
-					>
+						<th rowspan="1">Greetings</th>
+						<td>あじまる！</td>
+						<td>Ajimaru!</td>
+						<td style="text-align:left;">Shortened term for “Hajimaru”.</td>
+					</tr>
 
 					<tr>
-						<th rowspan="1">Introduction </th>
-						<td>ちわっす, ホロライブの二期生, 大空スバル </td>
-						<td>Chiwassu, hororaibu ni-kisei no Oozora Subaru! </td>
-						<td style="text-align:left;"
-							>Hi! The second generation of Hololive, Oozora Subaru!
-						</td></tr
-					>
+						<th rowspan="1">Introduction</th>
+						<td>ちわっす, ホロライブの二期生, 大空スバル</td>
+						<td>Chiwassu, hororaibu ni-kisei no Oozora Subaru!</td>
+						<td style="text-align:left;">Hi! The second generation of Hololive, Oozora Subaru! </td>
+					</tr>
 
 					<tr>
-						<th rowspan="1">Farewell </th>
-						<td>おつヴァル, bye-bye, ending </td>
-						<td>Otsubaru </td>
+						<th rowspan="1">Farewell</th>
+						<td>おつヴァル, bye-bye, ending</td>
+						<td>Otsubaru</td>
 						<td style="text-align:left;"
 							>She always makes her avatar big when thanking SC and saying goodbye to the viewers.
 							Otsubaru is a joke about Valhalla (ヴァルハラ) from Marvel Cinematic Universe between
 							Subaru and her viewers. At first, she used Otsuvara (おつヴァラ) then changed it
 							Otsuvaru which has similar sound to Otsubaru.
-						</td></tr
-					>
+						</td>
+					</tr>
 
 					<tr>
 						<th
@@ -906,39 +968,39 @@
 							data-darkreader-inline-bgcolor=""
 							data-darkreader-inline-color=""
 							>Viewer Side
-						</th></tr
-					>
+						</th>
+					</tr>
 					<tr>
-						<th>Scene </th>
-						<th>Lines </th>
-						<th>Romaji </th>
-						<th>Meaning / Notes </th></tr
-					>
+						<th>Scene</th>
+						<th>Lines</th>
+						<th>Romaji</th>
+						<th>Meaning / Notes</th>
+					</tr>
 					<tr>
-						<th rowspan="1">Waiting </th>
+						<th rowspan="1">Waiting</th>
 						<td />
 						<td />
-						<td style="text-align:left;" /></tr
-					>
+						<td style="text-align:left;" />
+					</tr>
 
 					<tr>
-						<th rowspan="1">Greetings </th>
-						<td>あじまる<br />あじ<br />あじじ </td>
-						<td>Ajimaru<br />Aji<br />Ajiji </td>
-						<td style="text-align:left;">See streamer side greetings notes. </td></tr
-					>
+						<th rowspan="1">Greetings</th>
+						<td>あじまる<br />あじ<br />あじじ</td>
+						<td>Ajimaru<br />Aji<br />Ajiji</td>
+						<td style="text-align:left;">See streamer side greetings notes.</td>
+					</tr>
 
 					<tr>
-						<th rowspan="1">Farewell </th>
-						<td>おつヴァル </td>
-						<td>Otsubaru </td>
-						<td style="text-align:left;">See streamer side farewell notes. </td></tr
-					>
+						<th rowspan="1">Farewell</th>
+						<td>おつヴァル</td>
+						<td>Otsubaru</td>
+						<td style="text-align:left;">See streamer side farewell notes.</td>
+					</tr>
 				</tbody>
 			</table>
 			<table class="wikitable" width="100%" align="center" style="text-align:center;">
-				<tbody
-					><tr>
+				<tbody>
+					<tr>
 						<th
 							colspan="2"
 							style="background-color: rgb(189, 231, 23); color: rgb(0, 0, 0); --darkreader-inline-bgcolor:#97b912; --darkreader-inline-color:#e8e6e3;"
@@ -966,8 +1028,8 @@
 									data-darkreader-inline-color="">Membership Perks</span
 								></a
 							>
-						</th></tr
-					>
+						</th>
+					</tr>
 					<tr>
 						<th
 							width="485px"
@@ -981,11 +1043,11 @@
 							data-darkreader-inline-bgcolor=""
 							data-darkreader-inline-color=""
 							>Perk Levels
-						</th></tr
-					>
+						</th>
+					</tr>
 					<tr>
-						<td valign="center" rowspan="2"
-							><div class="center">
+						<td valign="center" rowspan="2">
+							<div class="center">
 								<div class="floatnone">
 									<a
 										href="https://hololive.wiki/wiki/File:Oozora_Subaru_-_Membership_Perks.png"
@@ -1002,8 +1064,8 @@
 								</div>
 							</div>
 						</td>
-						<th height="20px"><b><br /></b> </th></tr
-					>
+						<th height="20px"><b><br /></b></th>
+					</tr>
 					<tr>
 						<td valign="top">
 							<ul>
@@ -1013,8 +1075,8 @@
 								</li>
 								<li>Members-only wallpapers<br />Wallpapers released every month</li>
 							</ul>
-						</td></tr
-					>
+						</td>
+					</tr>
 				</tbody>
 			</table>
 			<h2><span class="mw-headline" id="Trivia">Trivia</span></h2>
@@ -1073,7 +1135,9 @@
 					Subaru loves western movies and studied English so she can join overseas forums to talk
 					about movies. She likes movies in the Marvel Cinematic Universe, particularly The Avengers
 					and Iron Man.
-					<ul><li>Her favorite Avenger is Hawkeye.</li></ul>
+					<ul>
+						<li>Her favorite Avenger is Hawkeye.</li>
+					</ul>
 				</li>
 				<li>
 					Is one of the Hololive Production VTubers with a verified YouTube channel. Other verified
@@ -1093,8 +1157,8 @@
 				data-darkreader-inline-border-bottom=""
 				data-darkreader-inline-border-left=""
 			>
-				<tbody
-					><tr>
+				<tbody>
+					<tr>
 						<td width="60px" height="60px"
 							><a
 								href="https://hololive.wiki/wiki/File:Logo_-_hololive_(Textless).png"
@@ -1109,9 +1173,9 @@
 								/></a
 							>
 						</td>
-						<td><i>No speculations and rumors, just fun facts!</i> </td></tr
-					></tbody
-				>
+						<td><i>No speculations and rumors, just fun facts!</i></td>
+					</tr>
+				</tbody>
 			</table>
 			<h2><span class="mw-headline" id="Media">Media</span></h2>
 			<h3><span class="mw-headline" id="Image_Gallery">Image Gallery</span></h3>
@@ -2415,56 +2479,59 @@
 					<article class="tabber__panel" title="With hololive ">
 						<p class="mw-empty-elt" />
 						<table width="100%" align="center" style="text-align:center;">
-							<tbody
-								><tr>
-									<td
-										><iframe
+							<tbody>
+								<tr>
+									<td>
+										<iframe
 											width="320"
 											height="240"
 											src="./Oozora_Subaru_files/68KV7JnrvDo.html"
 											frameborder="0"
 											allowfullscreen=""
-										/><br /><b
+										/>
+										<br /><b
 											><a
 												href="https://hololive.wiki/wiki/Shiny_Smily_Story"
 												title="Shiny Smily Story">Shiny Smily Story</a
 											></b
 										>
 									</td>
-									<td
-										><iframe
+									<td>
+										<iframe
 											width="320"
 											height="240"
 											src="./Oozora_Subaru_files/rDSIUPkuM7U.html"
 											frameborder="0"
 											allowfullscreen=""
-										/><br /><b
+										/>
+										<br /><b
 											><a href="https://hololive.wiki/wiki/Kirameki_Rider" title="Kirameki Rider"
 												>Kirameki Rider</a
 											> [hololive 1st fes. "Nonstop Story"]</b
 										>
-									</td></tr
-								></tbody
-							>
+									</td>
+								</tr>
+							</tbody>
 						</table>
 						<p class="mw-empty-elt" />
 					</article>
 					<article class="tabber__panel" title="Collaboration ">
 						<p class="mw-empty-elt" />
 						<table width="100%" align="center" style="text-align:center;">
-							<tbody
-								><tr>
-									<td
-										><iframe
+							<tbody>
+								<tr>
+									<td>
+										<iframe
 											width="640"
 											height="480"
 											src="./Oozora_Subaru_files/3QJD9iekpDQ.html"
 											frameborder="0"
 											allowfullscreen=""
-										/><br /><b>Curry Meshi Is a Miracle</b>
-									</td></tr
-								></tbody
-							>
+										/>
+										<br /><b>Curry Meshi Is a Miracle</b>
+									</td>
+								</tr>
+							</tbody>
 						</table>
 						<p class="mw-empty-elt" />
 					</article>
@@ -2478,21 +2545,21 @@
 				align="center"
 				style="text-align:center;"
 			>
-				<tbody
-					><tr>
+				<tbody>
+					<tr>
 						<td
 							style="background-color: rgb(189, 231, 23); color: rgb(0, 0, 0); --darkreader-inline-bgcolor:#97b912; --darkreader-inline-color:#e8e6e3;"
 							data-darkreader-inline-bgcolor=""
 							data-darkreader-inline-color=""
 							><b>Singles</b>
 						</td>
-						<th width="69px" /></tr
-					>
+						<th width="69px" />
+					</tr>
 					<tr>
 						<td colspan="2" style="text-align:center;">
 							<table class="wikitable" width="100%" align="center" style="text-align:center;">
-								<tbody
-									><tr>
+								<tbody>
+									<tr>
 										<th
 											colspan="3"
 											height="20px"
@@ -2508,11 +2575,11 @@
 													data-darkreader-inline-color="">太陽少女 (Taiyou Shoujyo)</span
 												></a
 											>
-										</th></tr
-									>
+										</th>
+									</tr>
 									<tr>
-										<td width="190px" rowspan="5"
-											><div class="center">
+										<td width="190px" rowspan="5">
+											<div class="center">
 												<div class="floatnone">
 													<a
 														href="https://hololive.wiki/wiki/File:Album_Cover_Art_-_Taiyou_Shoujo.png"
@@ -2529,10 +2596,12 @@
 												</div>
 											</div>
 										</td>
-										<th height="20px" width="140px">Release Date </th>
-										<td>July 2, 2021 </td></tr
-									>
-									<tr> <th colspan="2" height="20px">Track List </th></tr>
+										<th height="20px" width="140px">Release Date</th>
+										<td>July 2, 2021</td>
+									</tr>
+									<tr>
+										<th colspan="2" height="20px">Track List</th>
+									</tr>
 									<tr>
 										<td colspan="2" valign="top" style="text-align:left;">
 											<div style="height:100px; overflow-y:scroll;font-size:10pt;">
@@ -2547,9 +2616,11 @@
 													<li>太陽少女 (Instrumental)</li>
 												</ol>
 											</div>
-										</td></tr
-									>
-									<tr> <th colspan="2" height="20px">External links </th></tr>
+										</td>
+									</tr>
+									<tr>
+										<th colspan="2" height="20px">External links</th>
+									</tr>
 									<tr>
 										<td colspan="2" height="30px"
 											><a
@@ -2557,13 +2628,13 @@
 												class="external text"
 												href="https://subaru.streamlink.to/TaiyouShoujyo">Digital Release</a
 											>
-										</td></tr
-									></tbody
-								>
+										</td>
+									</tr>
+								</tbody>
 							</table>
-						</td></tr
-					></tbody
-				>
+						</td>
+					</tr>
+				</tbody>
 			</table>
 			<table
 				class="mw-collapsible mw-collapsed wikitable"
@@ -2571,21 +2642,21 @@
 				align="center"
 				style="text-align:center;"
 			>
-				<tbody
-					><tr>
+				<tbody>
+					<tr>
 						<td
 							style="background-color: rgb(189, 231, 23); color: rgb(0, 0, 0); --darkreader-inline-bgcolor:#97b912; --darkreader-inline-color:#e8e6e3;"
 							data-darkreader-inline-bgcolor=""
 							data-darkreader-inline-color=""
 							><b>Collab Singles</b>
 						</td>
-						<th width="69px" /></tr
-					>
+						<th width="69px" />
+					</tr>
 					<tr>
 						<td colspan="2" style="text-align:center;">
 							<table class="wikitable" width="100%" align="center" style="text-align:center;">
-								<tbody
-									><tr>
+								<tbody>
+									<tr>
 										<th
 											colspan="3"
 											height="20px"
@@ -2600,11 +2671,11 @@
 													data-darkreader-inline-color="">Shiny Smily Story</span
 												></a
 											>
-										</th></tr
-									>
+										</th>
+									</tr>
 									<tr>
-										<td width="190px" rowspan="5"
-											><div class="center">
+										<td width="190px" rowspan="5">
+											<div class="center">
 												<div class="floatnone">
 													<a
 														href="https://hololive.wiki/wiki/File:Album_Cover_Art_-_Shiny_Smily_Story.jpg"
@@ -2621,10 +2692,12 @@
 												</div>
 											</div>
 										</td>
-										<th height="20px" width="140px">Release Date </th>
-										<td>September 16, 2019 </td></tr
-									>
-									<tr> <th colspan="2" height="20px">Track List </th></tr>
+										<th height="20px" width="140px">Release Date</th>
+										<td>September 16, 2019</td>
+									</tr>
+									<tr>
+										<th colspan="2" height="20px">Track List</th>
+									</tr>
 									<tr>
 										<td colspan="2" valign="top" style="text-align:left;">
 											<div style="height:100px; overflow-y:scroll;font-size:10pt;">
@@ -2638,9 +2711,11 @@
 													<li>Shiny Smily Story (Instrumental)</li>
 												</ol>
 											</div>
-										</td></tr
-									>
-									<tr> <th colspan="2" height="20px">External links </th></tr>
+										</td>
+									</tr>
+									<tr>
+										<th colspan="2" height="20px">External links</th>
+									</tr>
 									<tr>
 										<td colspan="2" height="30px"
 											><a
@@ -2648,13 +2723,13 @@
 												class="external text"
 												href="https://hip.streamlink.to/ShinySmilyStory">Digital Release</a
 											>
-										</td></tr
-									></tbody
-								>
+										</td>
+									</tr>
+								</tbody>
 							</table>
 							<table class="wikitable" width="100%" align="center" style="text-align:center;">
-								<tbody
-									><tr>
+								<tbody>
+									<tr>
 										<th
 											colspan="3"
 											height="20px"
@@ -2662,11 +2737,11 @@
 											data-darkreader-inline-bgcolor=""
 											data-darkreader-inline-color=""
 											>Hacha-Mecha ミラクル (Hacha-Mecha Miracle)
-										</th></tr
-									>
+										</th>
+									</tr>
 									<tr>
-										<td width="190px" rowspan="5"
-											><div class="center">
+										<td width="190px" rowspan="5">
+											<div class="center">
 												<div class="floatnone">
 													<a
 														href="https://hololive.wiki/wiki/File:Album_Cover_Art_-_Hacha-Mecha_Miracle.jpg"
@@ -2683,10 +2758,12 @@
 												</div>
 											</div>
 										</td>
-										<th height="20px" width="140px">Release Date </th>
-										<td>December 18, 2020 </td></tr
-									>
-									<tr> <th colspan="2" height="20px">Track List </th></tr>
+										<th height="20px" width="140px">Release Date</th>
+										<td>December 18, 2020</td>
+									</tr>
+									<tr>
+										<th colspan="2" height="20px">Track List</th>
+									</tr>
 									<tr>
 										<td colspan="2" valign="top" style="text-align:left;">
 											<div style="height:100px; overflow-y:scroll;font-size:10pt;">
@@ -2695,21 +2772,23 @@
 													<li>Hacha-Mecha ミラクル - Instrumental</li>
 												</ol>
 											</div>
-										</td></tr
-									>
-									<tr> <th colspan="2" height="20px">External links </th></tr>
+										</td>
+									</tr>
+									<tr>
+										<th colspan="2" height="20px">External links</th>
+									</tr>
 									<tr>
 										<td colspan="2" height="30px"
 											><a rel="nofollow" class="external text" href="https://streamlink.to/hacha"
 												>Digital Release</a
 											>
-										</td></tr
-									></tbody
-								>
+										</td>
+									</tr>
+								</tbody>
 							</table>
 							<table class="wikitable" width="100%" align="center" style="text-align:center;">
-								<tbody
-									><tr>
+								<tbody>
+									<tr>
 										<th
 											colspan="3"
 											height="20px"
@@ -2724,11 +2803,11 @@
 													data-darkreader-inline-color="">DAILY DIARY</span
 												></a
 											>)
-										</th></tr
-									>
+										</th>
+									</tr>
 									<tr>
-										<td width="190px" rowspan="5"
-											><div class="center">
+										<td width="190px" rowspan="5">
+											<div class="center">
 												<div class="floatnone">
 													<a
 														href="https://hololive.wiki/wiki/File:Album_Cover_Art_-_DAILY_DIARY.png"
@@ -2745,10 +2824,12 @@
 												</div>
 											</div>
 										</td>
-										<th height="20px" width="140px">Release Date </th>
-										<td>January 21, 2021 </td></tr
-									>
-									<tr> <th colspan="2" height="20px">Track List </th></tr>
+										<th height="20px" width="140px">Release Date</th>
+										<td>January 21, 2021</td>
+									</tr>
+									<tr>
+										<th colspan="2" height="20px">Track List</th>
+									</tr>
 									<tr>
 										<td colspan="2" valign="top" style="text-align:left;">
 											<div style="height:100px; overflow-y:scroll;font-size:10pt;">
@@ -2761,9 +2842,11 @@
 													<li>でいり〜だいあり〜！ (Instrumental)</li>
 												</ol>
 											</div>
-										</td></tr
-									>
-									<tr> <th colspan="2" height="20px">External links </th></tr>
+										</td>
+									</tr>
+									<tr>
+										<th colspan="2" height="20px">External links</th>
+									</tr>
 									<tr>
 										<td colspan="2" height="30px"
 											><a
@@ -2776,13 +2859,13 @@
 												class="external text"
 												href="https://www.youtube.com/watch?v=trKQ_PG4Z98">Music Video</a
 											>
-										</td></tr
-									></tbody
-								>
+										</td>
+									</tr>
+								</tbody>
 							</table>
 							<table class="wikitable" width="100%" align="center" style="text-align:center;">
-								<tbody
-									><tr>
+								<tbody>
+									<tr>
 										<th
 											colspan="3"
 											height="20px"
@@ -2795,11 +2878,11 @@
 													data-darkreader-inline-color="">Dreaming Days</span
 												></a
 											>
-										</th></tr
-									>
+										</th>
+									</tr>
 									<tr>
-										<td width="190px" rowspan="5"
-											><div class="center">
+										<td width="190px" rowspan="5">
+											<div class="center">
 												<div class="floatnone">
 													<a
 														href="https://hololive.wiki/wiki/File:Album_Cover_Art_-_Dreaming_Days.jpg"
@@ -2816,10 +2899,12 @@
 												</div>
 											</div>
 										</td>
-										<th height="20px" width="140px">Release Date </th>
-										<td>February 11, 2021 </td></tr
-									>
-									<tr> <th colspan="2" height="20px">Track List </th></tr>
+										<th height="20px" width="140px">Release Date</th>
+										<td>February 11, 2021</td>
+									</tr>
+									<tr>
+										<th colspan="2" height="20px">Track List</th>
+									</tr>
 									<tr>
 										<td colspan="2" valign="top" style="text-align:left;">
 											<div style="height:100px; overflow-y:scroll;font-size:10pt;">
@@ -2832,9 +2917,11 @@
 													<li>Dreaming Days (Instrumental)</li>
 												</ol>
 											</div>
-										</td></tr
-									>
-									<tr> <th colspan="2" height="20px">External links </th></tr>
+										</td>
+									</tr>
+									<tr>
+										<th colspan="2" height="20px">External links</th>
+									</tr>
 									<tr>
 										<td colspan="2" height="30px"
 											><a
@@ -2847,13 +2934,13 @@
 												class="external text"
 												href="https://www.youtube.com/watch?v=vyUYybXWtak">Music Video</a
 											>
-										</td></tr
-									></tbody
-								>
+										</td>
+									</tr>
+								</tbody>
 							</table>
-						</td></tr
-					></tbody
-				>
+						</td>
+					</tr>
+				</tbody>
 			</table>
 			<table
 				class="mw-collapsible mw-collapsed wikitable"
@@ -2861,21 +2948,21 @@
 				align="center"
 				style="text-align:center;"
 			>
-				<tbody
-					><tr>
+				<tbody>
+					<tr>
 						<td
 							style="background-color: rgb(189, 231, 23); color: rgb(0, 0, 0); --darkreader-inline-bgcolor:#97b912; --darkreader-inline-color:#e8e6e3;"
 							data-darkreader-inline-bgcolor=""
 							data-darkreader-inline-color=""
 							><b>Collab Albums</b>
 						</td>
-						<th width="69px" /></tr
-					>
+						<th width="69px" />
+					</tr>
 					<tr>
 						<td colspan="2" style="text-align:center;">
 							<table class="wikitable" width="100%" align="center" style="text-align:center;">
-								<tbody
-									><tr>
+								<tbody>
+									<tr>
 										<th
 											colspan="3"
 											height="20px"
@@ -2888,11 +2975,11 @@
 													data-darkreader-inline-color="">Bouquet</span
 												></a
 											>
-										</th></tr
-									>
+										</th>
+									</tr>
 									<tr>
-										<td width="190px" rowspan="5"
-											><div class="center">
+										<td width="190px" rowspan="5">
+											<div class="center">
 												<div class="floatnone">
 													<a
 														href="https://hololive.wiki/wiki/File:Album_Cover_Art_-_Bouquet.jpg"
@@ -2909,10 +2996,12 @@
 												</div>
 											</div>
 										</td>
-										<th height="20px" width="140px">Release Date </th>
-										<td>April 21, 2021 </td></tr
-									>
-									<tr> <th colspan="2" height="20px">Track List </th></tr>
+										<th height="20px" width="140px">Release Date</th>
+										<td>April 21, 2021</td>
+									</tr>
+									<tr>
+										<th colspan="2" height="20px">Track List</th>
+									</tr>
 									<tr>
 										<td colspan="2" valign="top" style="text-align:left;">
 											<div style="height:100px; overflow-y:scroll;font-size:10pt;">
@@ -2984,9 +3073,11 @@
 													</li>
 												</ol>
 											</div>
-										</td></tr
-									>
-									<tr> <th colspan="2" height="20px">External links </th></tr>
+										</td>
+									</tr>
+									<tr>
+										<th colspan="2" height="20px">External links</th>
+									</tr>
 									<tr>
 										<td colspan="2" height="30px"
 											><a
@@ -2994,13 +3085,13 @@
 												class="external text"
 												href="https://hip.streamlink.to/BouquetCD">Digital Release</a
 											>
-										</td></tr
-									></tbody
-								>
+										</td>
+									</tr>
+								</tbody>
 							</table>
-						</td></tr
-					></tbody
-				>
+						</td>
+					</tr>
+				</tbody>
 			</table>
 			<h4><span class="mw-headline" id="Cover_Songs">Cover Songs</span></h4>
 			<p>The following are a list of songs covered by Subaru.</p>
@@ -3010,29 +3101,29 @@
 				align="center"
 				style="text-align:center;"
 			>
-				<tbody
-					><tr>
+				<tbody>
+					<tr>
 						<td
 							style="background-color: rgb(189, 231, 23); color: rgb(0, 0, 0); --darkreader-inline-bgcolor:#97b912; --darkreader-inline-color:#e8e6e3;"
 							data-darkreader-inline-bgcolor=""
 							data-darkreader-inline-color=""
 							><b>Solo Covers</b>
 						</td>
-						<th width="69px" /></tr
-					>
+						<th width="69px" />
+					</tr>
 					<tr>
 						<td colspan="2" style="text-align:center;">
 							<table class="wikitable" align="center" width="100%" style="text-align:center;">
-								<tbody
-									><tr>
+								<tbody>
+									<tr>
 										<th
 											colspan="4"
 											style="background-color: rgb(224, 255, 44); color: rgb(0, 0, 0); --darkreader-inline-bgcolor:#9eb200; --darkreader-inline-color:#e8e6e3;"
 											data-darkreader-inline-bgcolor=""
 											data-darkreader-inline-color=""
 											>どぅーまいべすと！ (Do My Best!)
-										</th></tr
-									>
+										</th>
+									</tr>
 									<tr>
 										<td colspan="4"
 											><a
@@ -3041,11 +3132,11 @@
 												href="https://www.youtube.com/watch?v=qrZtEACCwIU"
 												>https://www.youtube.com/watch?v=qrZtEACCwIU</a
 											>
-										</td></tr
-									>
+										</td>
+									</tr>
 
 									<tr>
-										<th width="16%">Mixing </th>
+										<th width="16%">Mixing</th>
 										<td width="34%"
 											><a
 												rel="nofollow"
@@ -3053,18 +3144,18 @@
 												href="https://www.youtube.com/channel/UCSCmu_VjL4RR7rBjrvSAwSg">ぴろぱる</a
 											>
 										</td>
-										<th width="16%">Video Editing </th>
+										<th width="16%">Video Editing</th>
 										<td width="34%"
 											><a
 												rel="nofollow"
 												class="external text"
 												href="https://www.youtube.com/channel/UCb4yOOre8TnVXnTisBWlITQ">2mk</a
 											>
-										</td></tr
-									>
+										</td>
+									</tr>
 
 									<tr>
-										<th width="16%">Original Link/s </th>
+										<th width="16%">Original Link/s</th>
 										<td colspan="3"
 											><a
 												href="https://www.nicovideo.jp/watch/sm33960351"
@@ -3102,8 +3193,8 @@
 												class="external text"
 												href="https://www.youtube.com/watch?v=CC_2gvC8rJQ">YouTube</a
 											>
-										</td></tr
-									>
+										</td>
+									</tr>
 
 									<tr>
 										<th
@@ -3112,8 +3203,8 @@
 											data-darkreader-inline-bgcolor=""
 											data-darkreader-inline-color=""
 											>恋の魔法 (Koi no Mahou)
-										</th></tr
-									>
+										</th>
+									</tr>
 									<tr>
 										<td colspan="4"
 											><a
@@ -3122,11 +3213,11 @@
 												href="https://www.youtube.com/watch?v=t-Y-UnC2HQo"
 												>https://www.youtube.com/watch?v=t-Y-UnC2HQo</a
 											>
-										</td></tr
-									>
+										</td>
+									</tr>
 
 									<tr>
-										<th width="16%">Mixing </th>
+										<th width="16%">Mixing</th>
 										<td width="34%"
 											><a
 												rel="nofollow"
@@ -3134,18 +3225,18 @@
 												href="https://www.youtube.com/channel/UCSCmu_VjL4RR7rBjrvSAwSg">ぴろぱる</a
 											>
 										</td>
-										<th width="16%">Video Editing </th>
+										<th width="16%">Video Editing</th>
 										<td width="34%"
 											><a
 												rel="nofollow"
 												class="external text"
 												href="https://www.youtube.com/channel/UCb4yOOre8TnVXnTisBWlITQ">2mk</a
 											>
-										</td></tr
-									>
+										</td>
+									</tr>
 
 									<tr>
-										<th width="16%">Original Link/s </th>
+										<th width="16%">Original Link/s</th>
 										<td colspan="3"
 											><a
 												href="https://www.youtube.com/watch?v=d0rwL3hLBjs"
@@ -3165,13 +3256,13 @@
 												class="external text"
 												href="https://www.youtube.com/watch?v=d0rwL3hLBjs">YouTube</a
 											>
-										</td></tr
-									>
+										</td>
+									</tr>
 								</tbody>
 							</table>
-						</td></tr
-					></tbody
-				>
+						</td>
+					</tr>
+				</tbody>
 			</table>
 			<table
 				class="mw-collapsible mw-collapsed wikitable"
@@ -3179,29 +3270,29 @@
 				align="center"
 				style="text-align:center;"
 			>
-				<tbody
-					><tr>
+				<tbody>
+					<tr>
 						<td
 							style="background-color: rgb(189, 231, 23); color: rgb(0, 0, 0); --darkreader-inline-bgcolor:#97b912; --darkreader-inline-color:#e8e6e3;"
 							data-darkreader-inline-bgcolor=""
 							data-darkreader-inline-color=""
 							><b>Collab Covers</b>
 						</td>
-						<th width="69px" /></tr
-					>
+						<th width="69px" />
+					</tr>
 					<tr>
 						<td colspan="2" style="text-align:center;">
 							<table class="wikitable" align="center" width="100%" style="text-align:center;">
-								<tbody
-									><tr>
+								<tbody>
+									<tr>
 										<th
 											colspan="4"
 											style="background-color: rgb(224, 255, 44); color: rgb(0, 0, 0); --darkreader-inline-bgcolor:#9eb200; --darkreader-inline-color:#e8e6e3;"
 											data-darkreader-inline-bgcolor=""
 											data-darkreader-inline-color=""
 											>お願いマッスル (Onegai Muscle)
-										</th></tr
-									>
+										</th>
+									</tr>
 									<tr>
 										<td colspan="4"
 											><a
@@ -3210,11 +3301,11 @@
 												href="https://www.youtube.com/watch?v=O-SXhtYjprc"
 												>https://www.youtube.com/watch?v=O-SXhtYjprc</a
 											>
-										</td></tr
-									>
+										</td>
+									</tr>
 
 									<tr>
-										<th width="16%">Sung by </th>
+										<th width="16%">Sung by</th>
 										<td colspan="3"
 											><a href="https://hololive.wiki/wiki/Tokino_Sora" title="Tokino Sora"
 												>Tokino Sora</a
@@ -3243,22 +3334,22 @@
 												class="mw-redirect"
 												title="Yuujin - A">Yuujin - A</a
 											>
-										</td></tr
-									>
+										</td>
+									</tr>
 
 									<tr>
-										<th width="16%">Mixing </th>
+										<th width="16%">Mixing</th>
 										<td width="34%"
 											><a rel="nofollow" class="external text" href="https://twitter.com/kijibato8"
 												>キジバト</a
 											>
 										</td>
-										<th width="16%">Video Editing </th>
-										<td width="34%">N/A </td></tr
-									>
+										<th width="16%">Video Editing</th>
+										<td width="34%">N/A</td>
+									</tr>
 
 									<tr>
-										<th width="16%">Original Link/s </th>
+										<th width="16%">Original Link/s</th>
 										<td colspan="3"
 											><a
 												href="https://www.youtube.com/watch?v=ULjbIMvP6A0"
@@ -3278,8 +3369,8 @@
 												class="external text"
 												href="https://www.youtube.com/watch?v=ULjbIMvP6A0">YouTube</a
 											>
-										</td></tr
-									>
+										</td>
+									</tr>
 
 									<tr>
 										<th
@@ -3288,8 +3379,8 @@
 											data-darkreader-inline-bgcolor=""
 											data-darkreader-inline-color=""
 											>blessing
-										</th></tr
-									>
+										</th>
+									</tr>
 									<tr>
 										<td colspan="4"
 											><a
@@ -3298,22 +3389,22 @@
 												href="https://www.youtube.com/watch?v=G9SWOk2J6aw"
 												>https://www.youtube.com/watch?v=G9SWOk2J6aw</a
 											>
-										</td></tr
-									>
+										</td>
+									</tr>
 
 									<tr>
-										<th width="16%">Sung by </th>
+										<th width="16%">Sung by</th>
 										<td colspan="3"
 											>Tokino Sora, Roboco, <a
 												href="https://hololive.wiki/wiki/Yozora_Mel"
 												title="Yozora Mel">Yozora Mel</a
 											>, Oozora Subaru, Sakura Miko,
 											<a href="https://hololive.wiki/wiki/AZKi" title="AZKi">AZKi</a>
-										</td></tr
-									>
+										</td>
+									</tr>
 
 									<tr>
-										<th width="16%">Instrumental </th>
+										<th width="16%">Instrumental</th>
 										<td width="34%"
 											><a
 												rel="nofollow"
@@ -3321,16 +3412,16 @@
 												href="https://twitter.com/ORYO_FAULHEIT">ORYO</a
 											>
 										</td>
-										<th width="16%">Illustration </th>
+										<th width="16%">Illustration</th>
 										<td width="34%"
 											><a rel="nofollow" class="external text" href="https://twitter.com/remrn23"
 												>Rem</a
 											>
-										</td></tr
-									>
+										</td>
+									</tr>
 
 									<tr>
-										<th width="16%">Mixing </th>
+										<th width="16%">Mixing</th>
 										<td width="34%"
 											><a
 												rel="nofollow"
@@ -3338,16 +3429,16 @@
 												href="https://twitter.com/akatibitintin">赤ティン</a
 											>
 										</td>
-										<th width="16%">Video Editing </th>
+										<th width="16%">Video Editing</th>
 										<td width="34%"
 											><a rel="nofollow" class="external text" href="https://twitter.com/RONRICO_VR"
 												>RONRICO</a
 											>
-										</td></tr
-									>
+										</td>
+									</tr>
 
 									<tr>
-										<th width="16%">Original Link/s </th>
+										<th width="16%">Original Link/s</th>
 										<td colspan="3"
 											><a
 												href="https://www.nicovideo.jp/watch/sm23304692"
@@ -3385,8 +3476,8 @@
 												class="external text"
 												href="https://www.youtube.com/watch?v=E4tIHBx7bqc">YouTube</a
 											>
-										</td></tr
-									>
+										</td>
+									</tr>
 
 									<tr>
 										<th
@@ -3395,8 +3486,8 @@
 											data-darkreader-inline-bgcolor=""
 											data-darkreader-inline-color=""
 											>おちゃめ機能 (Ochame Kinou)
-										</th></tr
-									>
+										</th>
+									</tr>
 									<tr>
 										<td colspan="4"
 											><a
@@ -3405,11 +3496,11 @@
 												href="https://www.youtube.com/watch?v=9kQ2GtvDV3s"
 												>https://www.youtube.com/watch?v=9kQ2GtvDV3s</a
 											>
-										</td></tr
-									>
+										</td>
+									</tr>
 
 									<tr>
-										<th width="16%">Sung by </th>
+										<th width="16%">Sung by</th>
 										<td colspan="3"
 											><a
 												href="https://hololive.wiki/wiki/Hololive_0th_Generation"
@@ -3431,18 +3522,18 @@
 												href="https://hololive.wiki/wiki/Hololive_4th_Generation"
 												title="Hololive 4th Generation">Hololive 4th Generation</a
 											> (besides Coco)
-										</td></tr
-									>
+										</td>
+									</tr>
 
 									<tr>
-										<th width="16%">Mixing </th>
-										<td width="34%">キジバト </td>
-										<th width="16%">Video Editing </th>
-										<td width="34%">N/A </td></tr
-									>
+										<th width="16%">Mixing</th>
+										<td width="34%">キジバト</td>
+										<th width="16%">Video Editing</th>
+										<td width="34%">N/A</td>
+									</tr>
 
 									<tr>
-										<th width="16%">Original Link/s </th>
+										<th width="16%">Original Link/s</th>
 										<td colspan="3"
 											><a
 												href="https://www.nicovideo.jp/watch/sm10684314"
@@ -3462,8 +3553,8 @@
 												class="external text"
 												href="https://www.nicovideo.jp/watch/sm10684314">NicoNico</a
 											>
-										</td></tr
-									>
+										</td>
+									</tr>
 
 									<tr>
 										<th
@@ -3472,8 +3563,8 @@
 											data-darkreader-inline-bgcolor=""
 											data-darkreader-inline-color=""
 											>adrenaline!!!
-										</th></tr
-									>
+										</th>
+									</tr>
 									<tr>
 										<td colspan="4"
 											><a
@@ -3482,50 +3573,50 @@
 												href="https://www.youtube.com/watch?v=bbYReCtSBbk"
 												>https://www.youtube.com/watch?v=bbYReCtSBbk</a
 											>
-										</td></tr
-									>
+										</td>
+									</tr>
 
 									<tr>
-										<th width="16%">Sung by </th>
+										<th width="16%">Sung by</th>
 										<td colspan="3"
 											><a href="https://hololive.wiki/wiki/Shigure_Ui" title="Shigure Ui"
 												>Shigure Ui</a
 											>, Oozora Subaru
-										</td></tr
-									>
+										</td>
+									</tr>
 
 									<tr>
-										<th width="16%">Instrumental </th>
+										<th width="16%">Instrumental</th>
 										<td width="34%"
 											><a rel="nofollow" class="external text" href="https://twitter.com/hamu_lr"
 												>ハム</a
 											>
 										</td>
-										<th width="16%">Illustration </th>
+										<th width="16%">Illustration</th>
 										<td width="34%"
 											><a href="https://hololive.wiki/wiki/Shigure_Ui" title="Shigure Ui"
 												>Shigure Ui</a
 											>
-										</td></tr
-									>
+										</td>
+									</tr>
 
 									<tr>
-										<th width="16%">Mixing </th>
+										<th width="16%">Mixing</th>
 										<td width="34%"
 											><a rel="nofollow" class="external text" href="https://twitter.com/hamu_lr"
 												>ハム</a
 											>
 										</td>
-										<th width="16%">Video Editing </th>
+										<th width="16%">Video Editing</th>
 										<td width="34%"
 											><a rel="nofollow" class="external text" href="https://twitter.com/Lon_comb"
 												>ろくんし</a
 											>
-										</td></tr
-									>
+										</td>
+									</tr>
 
 									<tr>
-										<th width="16%">Original Link/s </th>
+										<th width="16%">Original Link/s</th>
 										<td colspan="3"
 											><a
 												href="https://www.youtube.com/watch?v=kZgnkq2HTqY"
@@ -3545,13 +3636,13 @@
 												class="external text"
 												href="https://www.youtube.com/watch?v=kZgnkq2HTqY">YouTube</a
 											>
-										</td></tr
-									>
+										</td>
+									</tr>
 								</tbody>
 							</table>
-						</td></tr
-					></tbody
-				>
+						</td>
+					</tr>
+				</tbody>
 			</table>
 			<h2><span class="mw-headline" id="References">References</span></h2>
 			<div
@@ -4125,978 +4216,6 @@
 				</li>
 			</ul>
 			<p><br /></p>
-			<div
-				role="navigation"
-				class="navbox"
-				aria-labelledby="Hololive_Production"
-				style="padding:3px"
-			>
-				<table
-					class="nowraplinks mw-collapsible autocollapse navbox-inner"
-					style="border-spacing: 0px; background: transparent; color: inherit; --darkreader-inline-bgimage: initial; --darkreader-inline-bgcolor:transparent; --darkreader-inline-color: inherit;"
-					data-darkreader-inline-bgimage=""
-					data-darkreader-inline-bgcolor=""
-					data-darkreader-inline-color=""
-				>
-					<tbody
-						><tr
-							><th
-								scope="col"
-								class="navbox-title"
-								colspan="2"
-								style="background-color: rgb(204, 242, 255); --darkreader-inline-bgcolor:#003d52;"
-								data-darkreader-inline-bgcolor=""
-								><div class="plainlinks hlist navbar mini">
-									<ul>
-										<li class="nv-view">
-											<a
-												href="https://hololive.wiki/wiki/Template:Navbox_Holo"
-												title="Template:Navbox Holo"
-												><abbr
-													title="View this template"
-													style="background: none transparent; border: none; box-shadow: none; padding: 0px; --darkreader-inline-bgimage:none; --darkreader-inline-bgcolor:transparent; --darkreader-inline-border-top: initial; --darkreader-inline-border-right: initial; --darkreader-inline-border-bottom: initial; --darkreader-inline-border-left: initial; --darkreader-inline-boxshadow:none;"
-													data-darkreader-inline-bgimage=""
-													data-darkreader-inline-bgcolor=""
-													data-darkreader-inline-border-top=""
-													data-darkreader-inline-border-right=""
-													data-darkreader-inline-border-bottom=""
-													data-darkreader-inline-border-left=""
-													data-darkreader-inline-boxshadow="">v</abbr
-												></a
-											>
-										</li>
-										<li class="nv-talk">
-											<a
-												href="https://hololive.wiki/w/index.php?title=Template_talk:Navbox_Holo&amp;action=edit&amp;redlink=1"
-												class="new"
-												title="Template talk:Navbox Holo (page does not exist)"
-												><abbr
-													title="Discuss this template"
-													style="background: none transparent; border: none; box-shadow: none; padding: 0px; --darkreader-inline-bgimage:none; --darkreader-inline-bgcolor:transparent; --darkreader-inline-border-top: initial; --darkreader-inline-border-right: initial; --darkreader-inline-border-bottom: initial; --darkreader-inline-border-left: initial; --darkreader-inline-boxshadow:none;"
-													data-darkreader-inline-bgimage=""
-													data-darkreader-inline-bgcolor=""
-													data-darkreader-inline-border-top=""
-													data-darkreader-inline-border-right=""
-													data-darkreader-inline-border-bottom=""
-													data-darkreader-inline-border-left=""
-													data-darkreader-inline-boxshadow="">t</abbr
-												></a
-											>
-										</li>
-										<li class="nv-edit">
-											<a
-												rel="nofollow"
-												class="external text"
-												href="https://hololive.wiki/w/index.php?title=Template:Navbox_Holo&amp;action=edit"
-												><abbr
-													title="Edit this template"
-													style="background: none transparent; border: none; box-shadow: none; padding: 0px; --darkreader-inline-bgimage:none; --darkreader-inline-bgcolor:transparent; --darkreader-inline-border-top: initial; --darkreader-inline-border-right: initial; --darkreader-inline-border-bottom: initial; --darkreader-inline-border-left: initial; --darkreader-inline-boxshadow:none;"
-													data-darkreader-inline-bgimage=""
-													data-darkreader-inline-bgcolor=""
-													data-darkreader-inline-border-top=""
-													data-darkreader-inline-border-right=""
-													data-darkreader-inline-border-bottom=""
-													data-darkreader-inline-border-left=""
-													data-darkreader-inline-boxshadow="">e</abbr
-												></a
-											>
-										</li>
-									</ul>
-								</div>
-								<div id="Hololive_Production" style="font-size:114%;margin:0 4em">
-									Hololive Production
-								</div></th
-							></tr
-						><tr
-							><th
-								scope="row"
-								class="navbox-group"
-								style="width: 1%; background-color: rgb(221, 246, 255); --darkreader-inline-bgcolor:#003447;"
-								data-darkreader-inline-bgcolor=""
-								><a href="https://hololive.wiki/wiki/Hololive" title="Hololive">Hololive</a></th
-							><td
-								class="navbox-list navbox-odd"
-								style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-								><div style="padding:0em 0.25em" />
-								<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
-									<tbody
-										><tr
-											><th
-												scope="row"
-												class="navbox-group"
-												style="padding-left: 0px; padding-right: 0px; background-color: rgb(230, 249, 255); width: 10%; --darkreader-inline-bgcolor:#003242;"
-												data-darkreader-inline-bgcolor=""
-												><div style="padding:0em 0.75em;">
-													<a
-														href="https://hololive.wiki/wiki/Hololive_0th_Generation"
-														title="Hololive 0th Generation"
-														><span
-															style="color: rgb(0, 0, 0); --darkreader-inline-color:#e8e6e3;"
-															data-darkreader-inline-color="">Generation 0</span
-														></a
-													>
-												</div></th
-											><td
-												class="navbox-list navbox-odd"
-												style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-												><div style="padding:0em 0.25em">
-													<a href="https://hololive.wiki/wiki/Tokino_Sora" title="Tokino Sora"
-														>🐻💿Tokino Sora</a
-													>
-													• <a href="https://hololive.wiki/wiki/Roboco" title="Roboco">🤖Roboco</a>
-													•
-													<a href="https://hololive.wiki/wiki/Sakura_Miko" title="Sakura Miko"
-														>🌸Sakura Miko</a
-													>
-													•
-													<a
-														href="https://hololive.wiki/wiki/Hoshimachi_Suisei"
-														title="Hoshimachi Suisei">☄️Hoshimachi Suisei</a
-													>
-												</div></td
-											></tr
-										><tr
-											><th
-												scope="row"
-												class="navbox-group"
-												style="padding-left: 0px; padding-right: 0px; background-color: rgb(230, 249, 255); width: 10%; --darkreader-inline-bgcolor:#003242;"
-												data-darkreader-inline-bgcolor=""
-												><div style="padding:0em 0.75em;">
-													<a href="https://hololive.wiki/wiki/INoNaKa_Music" title="INoNaKa Music"
-														><span
-															style="color: rgb(0, 0, 0); --darkreader-inline-color:#e8e6e3;"
-															data-darkreader-inline-color="">INoNaKa Music</span
-														></a
-													>
-												</div></th
-											><td
-												class="navbox-list navbox-even"
-												style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-												><div style="padding:0em 0.25em">
-													<a href="https://hololive.wiki/wiki/AZKi" title="AZKi">⚒️AZKi</a>
-												</div></td
-											></tr
-										><tr
-											><th
-												scope="row"
-												class="navbox-group"
-												style="padding-left: 0px; padding-right: 0px; background-color: rgb(230, 249, 255); width: 10%; --darkreader-inline-bgcolor:#003242;"
-												data-darkreader-inline-bgcolor=""
-												><div style="padding:0em 0.75em;">
-													<a
-														href="https://hololive.wiki/wiki/Hololive_1st_Generation"
-														title="Hololive 1st Generation"
-														><span
-															style="color: rgb(0, 0, 0); --darkreader-inline-color:#e8e6e3;"
-															data-darkreader-inline-color="">1st Generation</span
-														></a
-													>
-												</div></th
-											><td
-												class="navbox-list navbox-odd"
-												style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-												><div style="padding:0em 0.25em">
-													<a href="https://hololive.wiki/wiki/Yozora_Mel" title="Yozora Mel"
-														>🌟Yozora Mel</a
-													>
-													•
-													<a
-														href="https://hololive.wiki/wiki/Shirakami_Fubuki"
-														title="Shirakami Fubuki">🌽Shirakami Fubuki</a
-													>
-													•
-													<a
-														href="https://hololive.wiki/wiki/Natsuiro_Matsuri"
-														title="Natsuiro Matsuri">🏮Natsuiro Matsuri</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Aki_Rosenthal" title="Aki Rosenthal"
-														>🍎Aki Rosenthal</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Akai_Haato" title="Akai Haato"
-														>❣️Akai Haato</a
-													>
-												</div></td
-											></tr
-										><tr
-											><th
-												scope="row"
-												class="navbox-group"
-												style="padding-left: 0px; padding-right: 0px; background-color: rgb(230, 249, 255); width: 10%; --darkreader-inline-bgcolor:#003242;"
-												data-darkreader-inline-bgcolor=""
-												><div style="padding:0em 0.75em;">
-													<a
-														href="https://hololive.wiki/wiki/Hololive_2nd_Generation"
-														title="Hololive 2nd Generation"
-														><span
-															style="color: rgb(0, 0, 0); --darkreader-inline-color:#e8e6e3;"
-															data-darkreader-inline-color="">2nd Generation</span
-														></a
-													>
-												</div></th
-											><td
-												class="navbox-list navbox-even"
-												style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-												><div style="padding:0em 0.25em">
-													<a href="https://hololive.wiki/wiki/Minato_Aqua" title="Minato Aqua"
-														>⚓️Minato Aqua</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Murasaki_Shion" title="Murasaki Shion"
-														>🌙Murasaki Shion</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Nakiri_Ayame" title="Nakiri Ayame"
-														>😈Nakiri Ayame</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Yuzuki_Choco" title="Yuzuki Choco"
-														>💋Yuzuki Choco</a
-													>
-													• <a class="mw-selflink selflink">🚑Oozora Subaru</a>
-												</div></td
-											></tr
-										><tr
-											><th
-												scope="row"
-												class="navbox-group"
-												style="padding-left: 0px; padding-right: 0px; background-color: rgb(230, 249, 255); width: 10%; --darkreader-inline-bgcolor:#003242;"
-												data-darkreader-inline-bgcolor=""
-												><div style="padding:0em 0.75em;">
-													<a
-														href="https://hololive.wiki/wiki/Hololive_Gamers"
-														title="Hololive Gamers"
-														><span
-															style="color: rgb(0, 0, 0); --darkreader-inline-color:#e8e6e3;"
-															data-darkreader-inline-color="">Hololive Gamers</span
-														></a
-													>
-												</div></th
-											><td
-												class="navbox-list navbox-odd"
-												style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-												><div style="padding:0em 0.25em">
-													<a
-														href="https://hololive.wiki/wiki/Shirakami_Fubuki"
-														title="Shirakami Fubuki">🌽Shirakami Fubuki</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Ookami_Mio" title="Ookami Mio"
-														>🌲Ookami Mio</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Nekomata_Okayu" title="Nekomata Okayu"
-														>🍙Nekomata Okayu</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Inugami_Korone" title="Inugami Korone"
-														>🥐Inugami Korone</a
-													>
-												</div></td
-											></tr
-										><tr
-											><th
-												scope="row"
-												class="navbox-group"
-												style="padding-left: 0px; padding-right: 0px; background-color: rgb(230, 249, 255); width: 10%; --darkreader-inline-bgcolor:#003242;"
-												data-darkreader-inline-bgcolor=""
-												><div style="padding:0em 0.75em;">
-													<a
-														href="https://hololive.wiki/wiki/Hololive_3rd_Generation"
-														title="Hololive 3rd Generation"
-														><span
-															style="color: rgb(0, 0, 0); --darkreader-inline-color:#e8e6e3;"
-															data-darkreader-inline-color=""
-															>3rd Generation:<br />Hololive Fantasy</span
-														></a
-													>
-												</div></th
-											><td
-												class="navbox-list navbox-even"
-												style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-												><div style="padding:0em 0.25em">
-													<a href="https://hololive.wiki/wiki/Usada_Pekora" title="Usada Pekora"
-														>👯Usada Pekora</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Uruha_Rushia" title="Uruha Rushia"
-														>🦋Uruha Rushia</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Shiranui_Flare" title="Shiranui Flare"
-														>🔥Shiranui Flare</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Shirogane_Noel" title="Shirogane Noel"
-														>⚔️Shirogane Noel</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Houshou_Marine" title="Houshou Marine"
-														>🏴‍☠️Houshou Marine</a
-													>
-												</div></td
-											></tr
-										><tr
-											><th
-												scope="row"
-												class="navbox-group"
-												style="padding-left: 0px; padding-right: 0px; background-color: rgb(230, 249, 255); width: 10%; --darkreader-inline-bgcolor:#003242;"
-												data-darkreader-inline-bgcolor=""
-												><div style="padding:0em 0.75em;">
-													<a
-														href="https://hololive.wiki/wiki/Hololive_4th_Generation"
-														title="Hololive 4th Generation"
-														><span
-															style="color: rgb(0, 0, 0); --darkreader-inline-color:#e8e6e3;"
-															data-darkreader-inline-color="">4th Generation</span
-														></a
-													>
-												</div></th
-											><td
-												class="navbox-list navbox-odd"
-												style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-												><div style="padding:0em 0.25em">
-													<a href="https://hololive.wiki/wiki/Amane_Kanata" title="Amane Kanata"
-														>💫Amane Kanata</a
-													>
-													•
-													<a
-														href="https://hololive.wiki/wiki/Tsunomaki_Watame"
-														title="Tsunomaki Watame">🐏Tsunomaki Watame</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Tokoyami_Towa" title="Tokoyami Towa"
-														>👾Tokoyami Towa</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Himemori_Luna" title="Himemori Luna"
-														>🍬Himemori Luna</a
-													>
-												</div></td
-											></tr
-										><tr
-											><th
-												scope="row"
-												class="navbox-group"
-												style="padding-left: 0px; padding-right: 0px; background-color: rgb(230, 249, 255); width: 10%; --darkreader-inline-bgcolor:#003242;"
-												data-darkreader-inline-bgcolor=""
-												><div style="padding:0em 0.75em;">
-													<a
-														href="https://hololive.wiki/wiki/Hololive_5th_Generation"
-														title="Hololive 5th Generation"
-														><span
-															style="color: rgb(0, 0, 0); --darkreader-inline-color:#e8e6e3;"
-															data-darkreader-inline-color="">5th Generation</span
-														></a
-													>
-												</div></th
-											><td
-												class="navbox-list navbox-even"
-												style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-												><div style="padding:0em 0.25em">
-													<a href="https://hololive.wiki/wiki/Yukihana_Lamy" title="Yukihana Lamy"
-														>☃️Yukihana Lamy</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Momosuzu_Nene" title="Momosuzu Nene"
-														>🥟Momosuzu Nene</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Shishiro_Botan" title="Shishiro Botan"
-														>♌Shishiro Botan</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Omaru_Polka" title="Omaru Polka"
-														>🎪Omaru Polka</a
-													>
-												</div></td
-											></tr
-										></tbody
-									>
-								</table>
-								<div /></td
-							></tr
-						><tr
-							><th
-								scope="row"
-								class="navbox-group"
-								style="width: 1%; background-color: rgb(221, 246, 255); --darkreader-inline-bgcolor:#003447;"
-								data-darkreader-inline-bgcolor=""
-								><a href="https://hololive.wiki/wiki/Holostars" title="Holostars">Holostars</a></th
-							><td
-								class="navbox-list navbox-odd"
-								style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-								><div style="padding:0em 0.25em" />
-								<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
-									<tbody
-										><tr
-											><th
-												scope="row"
-												class="navbox-group"
-												style="padding-left: 0px; padding-right: 0px; background-color: rgb(230, 249, 255); width: 10%; --darkreader-inline-bgcolor:#003242;"
-												data-darkreader-inline-bgcolor=""
-												><div style="padding:0em 0.75em;">
-													<a
-														href="https://hololive.wiki/wiki/Holostars_1st_Generation"
-														title="Holostars 1st Generation"
-														><span
-															style="color: rgb(0, 0, 0); --darkreader-inline-color:#e8e6e3;"
-															data-darkreader-inline-color="">1st Generation</span
-														></a
-													>
-												</div></th
-											><td
-												class="navbox-list navbox-odd"
-												style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-												><div style="padding:0em 0.25em">
-													<a
-														href="https://hololive.wiki/wiki/Hanasaki_Miyabi"
-														title="Hanasaki Miyabi">🌺Hanasaki Miyabi</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Kanade_Izuru" title="Kanade Izuru"
-														>🎸Kanade Izuru</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Arurandeisu" title="Arurandeisu"
-														>🍕Arurandeisu</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Rikkaroid" title="Rikkaroid"
-														>⚙️Rikkaroid</a
-													>
-												</div></td
-											></tr
-										><tr
-											><th
-												scope="row"
-												class="navbox-group"
-												style="padding-left: 0px; padding-right: 0px; background-color: rgb(230, 249, 255); width: 10%; --darkreader-inline-bgcolor:#003242;"
-												data-darkreader-inline-bgcolor=""
-												><div style="padding:0em 0.75em;">
-													<a
-														href="https://hololive.wiki/wiki/Holostars_2nd_Generation"
-														title="Holostars 2nd Generation"
-														><span
-															style="color: rgb(0, 0, 0); --darkreader-inline-color:#e8e6e3;"
-															data-darkreader-inline-color="">2nd Generation:<br />SunTempo</span
-														></a
-													>
-												</div></th
-											><td
-												class="navbox-list navbox-even"
-												style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-												><div style="padding:0em 0.25em">
-													<a href="https://hololive.wiki/wiki/Astel_Leda" title="Astel Leda"
-														>🎭Astel Leda</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Kishido_Temma" title="Kishido Temma"
-														>🦔💨Kishido Temma</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Yukoku_Roberu" title="Yukoku Roberu"
-														>🍷Yukoku Roberu</a
-													>
-												</div></td
-											></tr
-										><tr
-											><th
-												scope="row"
-												class="navbox-group"
-												style="padding-left: 0px; padding-right: 0px; background-color: rgb(230, 249, 255); width: 10%; --darkreader-inline-bgcolor:#003242;"
-												data-darkreader-inline-bgcolor=""
-												><div style="padding:0em 0.75em;">
-													<a
-														href="https://hololive.wiki/wiki/Holostars_3rd_Generation"
-														title="Holostars 3rd Generation"
-														><span
-															style="color: rgb(0, 0, 0); --darkreader-inline-color:#e8e6e3;"
-															data-darkreader-inline-color="">3rd Generation:<br />MaFia</span
-														></a
-													>
-												</div></th
-											><td
-												class="navbox-list navbox-odd"
-												style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-												><div style="padding:0em 0.25em">
-													<a href="https://hololive.wiki/wiki/Kageyama_Shien" title="Kageyama Shien"
-														>🟣Kageyama Shien</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Aragami_Oga" title="Aragami Oga"
-														>🐃Aragami Oga</a
-													>
-												</div></td
-											></tr
-										></tbody
-									>
-								</table>
-								<div /></td
-							></tr
-						><tr
-							><th
-								scope="row"
-								class="navbox-group"
-								style="width: 1%; background-color: rgb(221, 246, 255); --darkreader-inline-bgcolor:#003447;"
-								data-darkreader-inline-bgcolor=""
-								><a href="https://hololive.wiki/wiki/Hololive_Indonesia" title="Hololive Indonesia"
-									>Hololive ID</a
-								></th
-							><td
-								class="navbox-list navbox-odd"
-								style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-								><div style="padding:0em 0.25em" />
-								<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
-									<tbody
-										><tr
-											><th
-												scope="row"
-												class="navbox-group"
-												style="padding-left: 0px; padding-right: 0px; background-color: rgb(230, 249, 255); width: 10%; --darkreader-inline-bgcolor:#003242;"
-												data-darkreader-inline-bgcolor=""
-												><div style="padding:0em 0.75em;">
-													<a
-														href="https://hololive.wiki/wiki/Hololive_Indonesia_1st_Generation"
-														title="Hololive Indonesia 1st Generation"
-														><span
-															style="color: rgb(0, 0, 0); --darkreader-inline-color:#e8e6e3;"
-															data-darkreader-inline-color="">1st Generation</span
-														></a
-													>
-												</div></th
-											><td
-												class="navbox-list navbox-even"
-												style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-												><div style="padding:0em 0.25em">
-													<a href="https://hololive.wiki/wiki/Ayunda_Risu" title="Ayunda Risu"
-														>🐿️Ayunda Risu</a
-													>
-													•
-													<a
-														href="https://hololive.wiki/wiki/Moona_Hoshinova"
-														title="Moona Hoshinova">🔮Moona Hoshinova</a
-													>
-													•
-													<a
-														href="https://hololive.wiki/wiki/Airani_Iofifteen"
-														title="Airani Iofifteen">🎨Airani Iofifteen</a
-													>
-												</div></td
-											></tr
-										><tr
-											><th
-												scope="row"
-												class="navbox-group"
-												style="padding-left: 0px; padding-right: 0px; background-color: rgb(230, 249, 255); width: 10%; --darkreader-inline-bgcolor:#003242;"
-												data-darkreader-inline-bgcolor=""
-												><div style="padding:0em 0.75em;">
-													<a
-														href="https://hololive.wiki/wiki/Hololive_Indonesia_2nd_Generation"
-														title="Hololive Indonesia 2nd Generation"
-														><span
-															style="color: rgb(0, 0, 0); --darkreader-inline-color:#e8e6e3;"
-															data-darkreader-inline-color="">2nd Generation</span
-														></a
-													>
-												</div></th
-											><td
-												class="navbox-list navbox-odd"
-												style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-												><div style="padding:0em 0.25em">
-													<a href="https://hololive.wiki/wiki/Kureiji_Ollie" title="Kureiji Ollie"
-														>🧟‍♀️Kureiji Ollie</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Anya_Melfissa" title="Anya Melfissa"
-														>🍂Anya Melfissa</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Pavolia_Reine" title="Pavolia Reine"
-														>🦚Pavolia Reine</a
-													>
-												</div></td
-											></tr
-										></tbody
-									>
-								</table>
-								<div /></td
-							></tr
-						><tr
-							><th
-								scope="row"
-								class="navbox-group"
-								style="width: 1%; background-color: rgb(221, 246, 255); --darkreader-inline-bgcolor:#003447;"
-								data-darkreader-inline-bgcolor=""
-								><a href="https://hololive.wiki/wiki/Hololive_English" title="Hololive English"
-									>Hololive EN</a
-								></th
-							><td
-								class="navbox-list navbox-odd"
-								style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-								><div style="padding:0em 0.25em" />
-								<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
-									<tbody
-										><tr
-											><th
-												scope="row"
-												class="navbox-group"
-												style="padding-left: 0px; padding-right: 0px; background-color: rgb(230, 249, 255); width: 10%; --darkreader-inline-bgcolor:#003242;"
-												data-darkreader-inline-bgcolor=""
-												><div style="padding:0em 0.75em;">
-													<a
-														href="https://hololive.wiki/wiki/Hololive_English_-Myth-"
-														title="Hololive English -Myth-"
-														><span
-															style="color: rgb(0, 0, 0); --darkreader-inline-color:#e8e6e3;"
-															data-darkreader-inline-color="">-Myth-</span
-														></a
-													>
-												</div></th
-											><td
-												class="navbox-list navbox-even"
-												style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-												><div style="padding:0em 0.25em">
-													<a href="https://hololive.wiki/wiki/Mori_Calliope" title="Mori Calliope"
-														>💀Mori Calliope</a
-													>
-													•
-													<a
-														href="https://hololive.wiki/wiki/Takanashi_Kiara"
-														title="Takanashi Kiara">🐔Takanashi Kiara</a
-													>
-													•
-													<a
-														href="https://hololive.wiki/wiki/Ninomae_Ina%27nis"
-														title="Ninomae Ina&#39;nis">🐙Ninomae Ina'nis</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Gawr_Gura" title="Gawr Gura"
-														>🔱Gawr Gura</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Watson_Amelia" title="Watson Amelia"
-														>🔎Watson Amelia</a
-													>
-												</div></td
-											></tr
-										><tr
-											><th
-												scope="row"
-												class="navbox-group"
-												style="padding-left: 0px; padding-right: 0px; background-color: rgb(230, 249, 255); width: 10%; --darkreader-inline-bgcolor:#003242;"
-												data-darkreader-inline-bgcolor=""
-												><div style="padding:0em 0.75em;">
-													<a
-														href="https://hololive.wiki/wiki/Hololive_English_Project:_HOPE"
-														title="Hololive English Project: HOPE"
-														><span
-															style="color: rgb(0, 0, 0); --darkreader-inline-color:#e8e6e3;"
-															data-darkreader-inline-color="">Project: HOPE</span
-														></a
-													>
-												</div></th
-											><td
-												class="navbox-list navbox-odd"
-												style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-												><div style="padding:0em 0.25em">
-													<a href="https://hololive.wiki/wiki/IRyS" title="IRyS">💎IRyS</a>
-												</div></td
-											></tr
-										><tr
-											><th
-												scope="row"
-												class="navbox-group"
-												style="padding-left: 0px; padding-right: 0px; background-color: rgb(230, 249, 255); width: 10%; --darkreader-inline-bgcolor:#003242;"
-												data-darkreader-inline-bgcolor=""
-												><div style="padding:0em 0.75em;">
-													<a
-														href="https://hololive.wiki/wiki/Hololive_English_-Council-"
-														title="Hololive English -Council-"
-														><span
-															style="color: rgb(0, 0, 0); --darkreader-inline-color:#e8e6e3;"
-															data-darkreader-inline-color="">-Council-</span
-														></a
-													>
-												</div></th
-											><td
-												class="navbox-list navbox-even"
-												style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-												><div style="padding:0em 0.25em">
-													<a href="https://hololive.wiki/wiki/Tsukumo_Sana" title="Tsukumo Sana"
-														>🪐Tsukumo Sana</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Ceres_Fauna" title="Ceres Fauna"
-														>🌿Ceres Fauna</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Ouro_Kronii" title="Ouro Kronii"
-														>⌛Ouro Kronii</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Nanashi_Mumei" title="Nanashi Mumei"
-														>🦉Nanashi Mumei</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Hakos_Baelz" title="Hakos Baelz"
-														>🎲Hakos Baelz</a
-													>
-												</div></td
-											></tr
-										></tbody
-									>
-								</table>
-								<div /></td
-							></tr
-						><tr
-							><th
-								scope="row"
-								class="navbox-group"
-								style="width: 1%; background-color: rgb(221, 246, 255); --darkreader-inline-bgcolor:#003447;"
-								data-darkreader-inline-bgcolor="">Others</th
-							><td
-								class="navbox-list navbox-odd"
-								style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-								><div style="padding:0em 0.25em" />
-								<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
-									<tbody
-										><tr
-											><th
-												scope="row"
-												class="navbox-group"
-												style="padding-left: 0px; padding-right: 0px; background-color: rgb(230, 249, 255); width: 10%; --darkreader-inline-bgcolor:#003242;"
-												data-darkreader-inline-bgcolor=""
-												><div style="padding:0em 0.75em;">
-													<span
-														style="color: rgb(0, 0, 0); --darkreader-inline-color:#e8e6e3;"
-														data-darkreader-inline-color="">Office Staff</span
-													>
-												</div></th
-											><td
-												class="navbox-list navbox-odd"
-												style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-												><div style="padding:0em 0.25em">
-													<a href="https://hololive.wiki/wiki/YAGOO" title="YAGOO">YAGOO</a> •
-													<a href="https://hololive.wiki/wiki/Y%C5%ABjin_A" title="Yūjin A"
-														>👓Yūjin A</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Daidou_Shinove" title="Daidou Shinove"
-														>Daidou Shinove</a
-													>
-													• <a href="https://hololive.wiki/wiki/Enma" title="Enma">Enma</a> •
-													<a href="https://hololive.wiki/wiki/Jenma" title="Jenma">Jenma</a>
-													• <a href="https://hololive.wiki/wiki/J-chad" title="J-chad">J-chad</a> •
-													<a href="https://hololive.wiki/wiki/Omega%CE%B1" title="Omegaα">Omegaα</a>
-												</div></td
-											></tr
-										><tr
-											><th
-												scope="row"
-												class="navbox-group"
-												style="padding-left: 0px; padding-right: 0px; background-color: rgb(230, 249, 255); width: 10%; --darkreader-inline-bgcolor:#003242;"
-												data-darkreader-inline-bgcolor=""
-												><div style="padding:0em 0.75em;">
-													<span
-														style="color: rgb(0, 0, 0); --darkreader-inline-color:#e8e6e3;"
-														data-darkreader-inline-color="">Hololive Affiliated</span
-													>
-												</div></th
-											><td
-												class="navbox-list navbox-even"
-												style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-												><div style="padding:0em 0.25em">
-													<a href="https://hololive.wiki/wiki/Ayamy" title="Ayamy">Ayamy</a> •
-													<a href="https://hololive.wiki/wiki/Nagishiro_Mito" title="Nagishiro Mito"
-														>Nagishiro Mito</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Rariemonn" title="Rariemonn"
-														>rariemonn</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Kagura_Nana" title="Kagura Nana"
-														>🌶️Kagura Nana</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Shigure_Ui" title="Shigure Ui"
-														>🌂Shigure Ui</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Yatsurugi" title="Yatsurugi"
-														>Yatsurugi</a
-													>
-													• <a href="https://hololive.wiki/wiki/Lack" title="Lack">lack</a> •
-													<a href="https://hololive.wiki/wiki/Rurudo" title="Rurudo">rurudo</a>
-													•
-													<a href="https://hololive.wiki/wiki/Nishizawa_5mm" title="Nishizawa 5mm"
-														>Nishizawa 5mm</a
-													>
-													• <a href="https://hololive.wiki/wiki/Tomari" title="Tomari">Tomari</a> •
-													<a href="https://hololive.wiki/wiki/Klaeia" title="Klaeia">🍀klaeia</a>
-													•
-													<a href="https://hololive.wiki/wiki/Pochimaru" title="Pochimaru"
-														>Pochimaru</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Aoi_Nabi" title="Aoi Nabi"
-														>🦋Aoi Nabi</a
-													>
-												</div></td
-											></tr
-										></tbody
-									>
-								</table>
-								<div /></td
-							></tr
-						><tr
-							><th
-								scope="row"
-								class="navbox-group"
-								style="width: 1%; background-color: rgb(221, 246, 255); --darkreader-inline-bgcolor:#003447;"
-								data-darkreader-inline-bgcolor="">Former Members</th
-							><td
-								class="navbox-list navbox-odd"
-								style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-								><div style="padding:0em 0.25em" />
-								<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
-									<tbody
-										><tr
-											><th
-												scope="row"
-												class="navbox-group"
-												style="padding-left: 0px; padding-right: 0px; background-color: rgb(230, 249, 255); width: 10%; --darkreader-inline-bgcolor:#003242;"
-												data-darkreader-inline-bgcolor=""
-												><div style="padding:0em 0.75em;">
-													<span
-														style="color: rgb(0, 0, 0); --darkreader-inline-color:#e8e6e3;"
-														data-darkreader-inline-color="">Hololive</span
-													>
-												</div></th
-											><td
-												class="navbox-list navbox-odd"
-												style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-												><div style="padding:0em 0.25em">
-													<a href="https://hololive.wiki/wiki/Hitomi_Chris" title="Hitomi Chris"
-														>🌰Hitomi Chris</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Mano_Aloe" title="Mano Aloe"
-														>👅Mano Aloe</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Kiryu_Coco" title="Kiryu Coco"
-														>🐉Kiryu Coco</a
-													>
-												</div></td
-											></tr
-										><tr
-											><th
-												scope="row"
-												class="navbox-group"
-												style="padding-left: 0px; padding-right: 0px; background-color: rgb(230, 249, 255); width: 10%; --darkreader-inline-bgcolor:#003242;"
-												data-darkreader-inline-bgcolor=""
-												><div style="padding:0em 0.75em;">
-													<span
-														style="color: rgb(0, 0, 0); --darkreader-inline-color:#e8e6e3;"
-														data-darkreader-inline-color="">Holostars</span
-													>
-												</div></th
-											><td
-												class="navbox-list navbox-even"
-												style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-												><div style="padding:0em 0.25em">
-													<a
-														href="https://hololive.wiki/wiki/Yakushiji_Suzaku"
-														title="Yakushiji Suzaku">💊Yakushiji Suzaku</a
-													>
-													•
-													<a
-														href="https://hololive.wiki/wiki/Tsukishita_Kaoru"
-														title="Tsukishita Kaoru">💅Tsukishita Kaoru</a
-													>
-													•
-													<a href="https://hololive.wiki/wiki/Kagami_Kira" title="Kagami Kira"
-														>💙Kagami Kira</a
-													>
-												</div></td
-											></tr
-										><tr
-											><th
-												scope="row"
-												class="navbox-group"
-												style="padding-left: 0px; padding-right: 0px; background-color: rgb(230, 249, 255); width: 10%; --darkreader-inline-bgcolor:#003242;"
-												data-darkreader-inline-bgcolor=""
-												><div style="padding:0em 0.75em;">
-													<a href="https://hololive.wiki/wiki/Hololive_China" title="Hololive China"
-														><span
-															style="color: rgb(0, 0, 0); --darkreader-inline-color:#e8e6e3;"
-															data-darkreader-inline-color="">Hololive China</span
-														></a
-													>
-												</div></th
-											><td
-												class="navbox-list navbox-odd"
-												style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"
-												><div style="padding:0em 0.25em">
-													<a href="https://hololive.wiki/wiki/Civia" title="Civia">🦄🌙Civia</a> •
-													<a href="https://hololive.wiki/wiki/Artia" title="Artia">❄️Artia</a>
-													•
-													<a href="https://hololive.wiki/wiki/Spade_Echo" title="Spade Echo"
-														>🍑Spade Echo</a
-													>
-													• <a href="https://hololive.wiki/wiki/Doris" title="Doris">🐟Doris</a> •
-													<a href="https://hololive.wiki/wiki/Yogiri" title="Yogiri">🍼🎸Yogiri</a>
-													•
-													<a href="https://hololive.wiki/wiki/Rosalyn" title="Rosalyn">📖Rosalyn</a>
-												</div></td
-											></tr
-										></tbody
-									>
-								</table>
-								<div /></td
-							></tr
-						></tbody
-					>
-				</table>
-			</div>
-			<!--
-	NewPP limit report
-	Parsed by mw10
-	Cached time: 20210914004633
-	Cache expiry: 86400
-	Dynamic content: false
-	Complications: []
-	CPU time usage: 0.419 seconds
-	Real time usage: 1.547 seconds
-	Preprocessor visited node count: 4840/1000000
-	Post‐expand include size: 125081/2097152 bytes
-	Template argument size: 18951/2097152 bytes
-	Highest expansion depth: 11/40
-	Expensive parser function count: 0/99
-	Unstrip recursion depth: 1/20
-	Unstrip post‐expand size: 68936/5000000 bytes
-	Lua time usage: 0.033/5.000 seconds
-	Lua memory usage: 1445951/52428800 bytes
-	-->
-			<!--
-	Transclusion expansion time report (%,ms,calls,template)
-	100.00% 1143.789      1 -total
-	 17.00%  194.396      1 Template:Navbox_Holo
-	 16.64%  190.326      7 Template:Navbox
-	 14.35%  164.165      1 Template:Infobox_VTuber
-	 13.25%  151.549      1 Template:Infobox
-	 11.29%  129.175      6 Template:Music_Cover_Box
-		5.30%   60.621      6 Template:Music_Album_Box
-		4.63%   52.961      6 Template:Navbox_subgroup
-		3.77%   43.078      3 Template:NicoNico
-		3.11%   35.611      1 Template:Streaming_Information_Box
-	-->
-
-			<!-- Saved in parser cache with key hololivewiki:pcache:idhash:107-1!canonical and timestamp 20210914004632 and revision id 27668. Serialized with JSON.
-	 -->
-		</div></body
-	></html
->
+		</div>
+	</body>
+</html>

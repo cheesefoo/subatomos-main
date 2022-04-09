@@ -790,7 +790,7 @@ const messages = [
 	},
 	{
 		name: '@Mジロ(雛)@スバ友(アヒージョ)',
-		url:'https://twitter.com/poichocolate',
+		url: 'https://twitter.com/poichocolate',
 		message:
 			'3周年おめでとうございます！まだスバルちゃんを推し始めて1年も経ってない若輩者ですが、このスバルちゃんへの気持ちは負けません！これからも沢山応援していきますので楽しい配信をお願いします！'
 	},
