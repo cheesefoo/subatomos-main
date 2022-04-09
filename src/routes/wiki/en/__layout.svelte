@@ -2,7 +2,7 @@
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import Panel from '$lib/components/Panel.svelte';
-	import '/src/app.scss';
+	// import '/src/app.scss';
 	import { initI18n, locale, setLocale } from '/src/i18n/i18n-svelte';
 	import type { Locales } from '$i18n/i18n-types';
 	import { browser } from '$app/env';
