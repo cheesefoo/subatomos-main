@@ -1,5 +1,5 @@
 <script lang="ts" context="module">
-	import GhostContentAPI, { Tag, Tags } from '@tryghost/content-api';
+	import GhostContentAPI from '@tryghost/content-api';
 
 	import { ghostAPI, ghostURL } from '$lib/variables';
 
@@ -14,7 +14,7 @@
 		});
 		try {
 			let slug = params.slug;
-			const tag: Tag = await api.tags.read({ slug }, { formats: ['html'] });
+			const tag = await api.tags.read({ slug }, { formats: ['html'] });
 			const posts = await api.posts.browse({ limit: 10, filter: `tag:-hash-ja+tag:${slug}` });
 
 			return { props: { posts: posts, slug: slug, tag: tag } };

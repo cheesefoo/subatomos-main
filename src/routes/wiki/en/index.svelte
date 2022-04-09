@@ -169,11 +169,9 @@
 	</div>
 </div>
 <style lang='scss'>
-  body, html {
-    word-wrap: break-word;
-  }
 
-  h1, h2, h3, {
+
+  h1, h3, {
     font-weight: 400;
     color: $headingcolor;
 
@@ -183,15 +181,8 @@
     color: $tundora
   }
 
-  a {
-    color: $accent-color;
-    text-decoration: none;
 
-    :hover {
-      text-decoration: underline;
 
-    }
-  }
 
 
   blockquote {
