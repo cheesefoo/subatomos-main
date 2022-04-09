@@ -36,10 +36,10 @@
 
 <pre>{message}</pre>
 
-{#if dev && error.frame}
+{#if error.frame}
 	<pre>{error.frame}</pre>
 {/if}
-{#if dev && error.stack}
+{#if  error.stack}
 	<pre>{error.stack}</pre>
 {/if}
 
