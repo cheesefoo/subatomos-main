@@ -9,8 +9,10 @@
 	import { browser } from '$app/env';
 	import { detectLocale, localStorageDetector } from 'typesafe-i18n/detectors';
 	import { onMount } from 'svelte';
-
-	export async function load({ page, fetch, session, context }) {
+	/**
+	 * @type {import('@sveltejs/kit').Load}
+	 */
+	export async function load({ fetch, session, context }) {
 		// detect locale of user (see https://github.com/ivanhofer/typesafe-i18n#locale-detection)
 		let locale: Locales = 'en';
 		if (browser) {
@@ -33,7 +35,7 @@
 </script>
 
 <main>
-	<Header />
+	<Header lang={true} />
 	<Panel>
 		<slot />
 	</Panel>

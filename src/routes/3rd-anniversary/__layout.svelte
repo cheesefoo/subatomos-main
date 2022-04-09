@@ -18,7 +18,7 @@
 			// localeToSelect = $locale
 		});*/
 
-	export async function load({ page, fetch, session, context }) {
+	export async function load() {
 		// detect locale of user (see https://github.com/ivanhofer/typesafe-i18n#locale-detection)
 		let locale: Locales = 'en';
 		if (browser) {

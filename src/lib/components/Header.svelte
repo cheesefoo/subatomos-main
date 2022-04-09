@@ -1,8 +1,9 @@
 <script>
 	import { page } from '$app/stores';
-	import LL from '$lib/../i18n/i18n-svelte';
+	import LL, { locale } from '/src/i18n/i18n-svelte';
 	import LanguageSelect from '$lib/components/LanguageSelect.svelte';
 
+	export let lang = false;
 	// export let height;
 	//
 	// let lastY = 0;
@@ -20,21 +21,27 @@
 <header>
 	<nav>
 		<ul>
-			<li class:active={$page.path.endsWith('')}>
-				<a sveltekit:prefetch href="/">{$LL.HEADER.PROJECTS()}</a>
+			<li class:active={$page.url.pathname.endsWith('')}>
+				<a sveltekit:prefetch href="https://subatomos.com">{$LL.HEADER.PROJECTS()}</a>
 				<ul class="nav-dropdown">
-					<li class:active={$page.path.endsWith('/ponds')}>
-						<a sveltekit:prefetch href="/projects/ponds">{$LL.HEADER.PONDS()}</a>
+					<li>
+						<a sveltekit:prefetch href="/wiki/{$locale}">WIKI</a>
 					</li>
-					<li class:active={$page.path.endsWith('/soundboard')}>
-						<a sveltekit:prefetch href="/soundboard">{$LL.HEADER.SOUNDBOARD()}</a>
-					</li>
-					<li class:active={$page.path.endsWith('/3rd-anniversary')}>
+					<li class:active={$page.url.pathname.endsWith('/3rd-anniversary')}>
 						<a sveltekit:prefetch href="/3rd-anniversary">{$LL.HEADER.THIRD_ANNIVERSARY()}</a>
 					</li>
-					<li class:active={$page.path.endsWith("/tbd'")}>
-						<a sveltekit:prefetch href="/projects/tbd">???</a>
+					<li class:active={$page.url.pathname.endsWith('/ponds')}>
+						<a sveltekit:prefetch href="https://subatomos.com/projects/ponds"
+							>{$LL.HEADER.PONDS()}</a
+						>
 					</li>
+					<li class:active={$page.url.pathname.endsWith('/soundboard')}>
+						<a sveltekit:prefetch href="/soundboard">{$LL.HEADER.SOUNDBOARD()}</a>
+					</li>
+
+					<!--					<li class:active={$page.url.pathname.endsWith("/tbd'")}>-->
+					<!--						<a sveltekit:prefetch href="/projects/tbd">???</a>-->
+					<!--					</li>-->
 				</ul>
 			</li>
 			<li>
@@ -78,9 +85,11 @@
 			</li>
 		</ul>
 	</nav>
-	<div class="language-select">
-		<LanguageSelect />
-	</div>
+	{#if lang}
+		<div class="language-select">
+			<LanguageSelect />
+		</div>
+	{/if}
 </header>
 
 <style lang="scss">

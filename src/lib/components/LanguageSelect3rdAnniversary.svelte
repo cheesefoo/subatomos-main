@@ -43,8 +43,7 @@
 </ul>
 
 <style lang="scss">
-	//@import url(https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css);
-	@import url(/node_modules/flag-icon-css/css/flag-icon.min.css);
+	@import url(/node_modules/flag-icons/css/flag-icons.min.css);
 
 	.corner {
 		position: relative;
