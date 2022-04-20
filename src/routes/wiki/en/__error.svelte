@@ -36,12 +36,12 @@
 
 <pre>{message}</pre>
 
-{#if error.frame}
+<!--{#if error.frame}-->
 	<pre>{error.frame}</pre>
-{/if}
-{#if  error.stack}
+<!--{/if}-->
+<!--{#if  error.stack}-->
 	<pre>{error.stack}</pre>
-{/if}
+<!--{/if}-->
 
 <style>
 	h1,
