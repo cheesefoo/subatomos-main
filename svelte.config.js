@@ -38,7 +38,12 @@ const config = {
 			optimizeDeps: {
 				include: ['fuzzy','@carbon/charts']
 			},
-
+			server: {
+				fs: {
+					// Allow serving files from one level up to the project root
+					allow: ['static']
+				}
+			},
 			build: {
 				commonjsOptions: {},
 			},
