@@ -43,6 +43,24 @@ let options = {};
 			</td>
 		</tr>
 		<tr>
+			<td>You and Me</td>
+			<td></td>
+			<td>Freetalk (current)</td>
+			<td></td>
+			<td>
+				<Youtube videoId='gkvz6l1W0g8' />
+			</td>
+		</tr>
+		<tr>
+			<td>3:03 PM</td>
+			<td></td>
+			<td>Marshmallow Q&A 20220420</td>
+			<td></td>
+			<td>
+				<Youtube videoId='xxpg9_2on3I' />
+			</td>
+		</tr>
+		<tr>
 			<td>3stages ファミコン8bit</td>
 			<td>3stages Famicom8bit</td>
 			<td>Freshly Debuted Subaru 10min opening BGM</td>
