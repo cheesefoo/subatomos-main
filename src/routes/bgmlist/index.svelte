@@ -10,17 +10,16 @@ let kensetsu = `${dir}/bgm_noloop.mp3`;
 let controls = false;
 let options = {};
 </script>
-<!--<svelte:head>
-	<link
-		rel='stylesheet'
-		href='https://cdn.jsdelivr.net/npm/@vime/core@^5/themes/default.css'
-	/>
-</svelte:head>-->
+<svelte:head>
+	<link rel='preconnect' href='https://fonts.gstatic.com' />
+	<link rel='preconnect' href='https://static.cloudflareinsights.com' />
+	<link rel='preconnect' href='https://yt3.ggpht.com' />
+</svelte:head>
 <MetaTags
 	title='Oozora Subaru BGM List 大空スバル　使用BGM'
 	description='List of BGM used in streams with links'
 	canonical={`https://subatomos.com/bgmlist`}
-  />
+/>
 <div class='overflow-x-auto text-xxs break-words lg:text-base'>
 	<table class='table-auto border border-sky border-collapse '>
 		<tr>
