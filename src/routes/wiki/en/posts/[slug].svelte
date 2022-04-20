@@ -92,6 +92,11 @@
     width: 30%;
   }
 
+	:global(a){
+    color: #ff3e00;
+    text-decoration: none;
+	}
+
   :global(.content) sc {
     padding: 0 10% 0 4em;
   }
