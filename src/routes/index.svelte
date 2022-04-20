@@ -1,5 +1,7 @@
 <script>
-	import { faDiscord, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+	import pkg from '@fortawesome/free-brands-svg-icons';
+	const { faYoutube, faTwitter, faDiscord } = pkg;
+
 	import official from '/static/assets/images/subaru-logo-official.png';
 	import third from '/static/assets/images/3rdanniversarylogo-transparent-sm.png';
 	import second from '/static/assets/images/second-sm.png';
