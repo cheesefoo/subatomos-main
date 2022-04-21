@@ -19,7 +19,7 @@
 		const api = new GhostContentAPI({
 			url: `${ghostURL}`,
 			key: `${ghostAPI}`,
-			version: 'v3'
+			version: 'v3.0'
 		});
 		try
 		{

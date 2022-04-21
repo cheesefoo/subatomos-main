@@ -11,7 +11,7 @@
 		const api = new GhostContentAPI({
 			url: `${ghostURL}`,
 			key: `${ghostAPI}`,
-			version: 'v3'
+			version: 'v3.0'
 		});
 		try
 		{
@@ -91,6 +91,9 @@
   .search {
     width: 30%;
   }
+	.content {
+		padding: 0 20% 0 20%;
+	}
 
 	:global(a){
     color: #ff3e00;

@@ -1,17 +1,12 @@
 <script lang='ts'>
 	import Fa from 'svelte-fa/src/fa.svelte';
-	import pkg from '@fortawesome/free-brands-svg-icons';
+	import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
+	import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
+	import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
+	import { faYoutube } from '@fortawesome/free-brands-svg-icons/faYoutube';
+	import { faDiscord } from '@fortawesome/free-brands-svg-icons/faDiscord';
 
-	const {
-		faDiscord,
-		faGithub,
-		faInstagram,
-		faTwitter,
-		faYoutube
-	} = pkg;
-	import pkg2 from '@fortawesome/free-solid-svg-icons';
-
-	const { faGlobe } = pkg2;
+	import { faGlobe } from '@fortawesome/free-solid-svg-icons/faGlobe';
 
 	export let icon = 'twitter';
 	export let url = '#';

@@ -1,5 +1,5 @@
 <script lang='ts' context='module'>
-	import GhostContentAPI, { GhostAPI } from '@tryghost/content-api';
+	import GhostContentAPI from '@tryghost/content-api';
 
 	import { ghostAPI, ghostURL } from '$lib/variables';
 
@@ -7,10 +7,10 @@
 
 	export async function load({ fetch, session, context })
 	{
-		const api: GhostAPI = new GhostContentAPI({
+		const api = new GhostContentAPI({
 			url: `${ghostURL}`,
 			key: `${ghostAPI}`,
-			version: 'v3'
+			version: 'v3.0'
 		});
 
 		try
