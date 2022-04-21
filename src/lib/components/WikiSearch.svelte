@@ -1,6 +1,6 @@
 <script lang='ts'>
 
-	import GhostContentAPI, { GhostAPI } from '@tryghost/content-api';
+	import GhostContentAPI from '@tryghost/content-api';
 	import { baseURL, ghostAPI, ghostURL } from '$lib/variables';
 	import Typeahead from 'svelte-typeahead';
 	import { goto } from '$app/navigation';
@@ -11,10 +11,10 @@
 
 	async function load()
 	{
-		const api: GhostAPI = new GhostContentAPI({
+		const api = new GhostContentAPI({
 			url: `${ghostURL}`,
 			key: `${ghostAPI}`,
-			version: 'v3'
+			version: 'v3.0'
 		});
 
 		try
