@@ -37,6 +37,7 @@
 <pre>{message}</pre>
 
 <!--{#if error.frame}-->
+<pre>{error}</pre>
 	<pre>{error.frame}</pre>
 <!--{/if}-->
 <!--{#if  error.stack}-->
