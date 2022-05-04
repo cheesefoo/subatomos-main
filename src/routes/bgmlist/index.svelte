@@ -60,6 +60,15 @@ let options = {};
 			</td>
 		</tr>
 		<tr>
+			<td>決断の時</td>
+			<td>Decision Time</td>
+			<td>Typically used with the flames of hell background</td>
+			<td></td>
+			<td>
+				<Youtube videoId='B-dKcH1B0-8' />
+			</td>
+		</tr>
+		<tr>
 			<td>3stages ファミコン8bit</td>
 			<td>3stages Famicom8bit</td>
 			<td>Freshly Debuted Subaru 10min opening BGM</td>
