@@ -1,8 +1,11 @@
 <script context="module" lang="ts">
 	import LL from '/src/i18n/i18n-svelte';
 	import CongratsMessageBox from '$lib/components/CongratsMessageBox.svelte';
-	import Fa from 'svelte-fa';
-	import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+	import Fa from 'svelte-fa/src/fa.svelte';
+
+	import { faArrowLeft } from '@fortawesome/free-solid-svg-icons/faArrowLeft';
+
+
 	import Saos from 'saos';
 
 	import logoStatic from '/static/assets/images/logo.png';
