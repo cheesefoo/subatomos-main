@@ -75,12 +75,14 @@ const sounds: Array<SubaSound> = [
 	},
 	{ name: 'IYAAA', file: 'IYYAAAA.mp3' },
 	{ name: 'MIKOCHI', file: 'MIKOCHI.mp3' },
-	{ name: 'MENTAL PHYSICAL HATHAWAY', category:'english', file: 'mental_physical_hathaway.mp3' },
+	{ name: 'MENTAL PHYSICAL HATHAWAY', category: 'english', file: 'mental_physical_hathaway.mp3' },
 	{ name: 'Kamehameha', category: 'imitations', file: 'kamehameha.mp3' },
 	{ name: 'achu achu', category: 'imitations', file: 'achu_achu.mp3' },
 	{ name: 'SubaKoro Kamehameha', category: 'imitations', file: 'subakoro_kamehameha.mp3' },
 	{ name: 'nyahello', category: 'imitations', file: 'nyahello.mp3' },
 	{ name: 'konpeko 2', category: 'imitations', file: 'konpeko2.mp3' },
+	{ name: 'KAKAROT!!!', category: 'imitations', file: 'kkrt.mp3' },
+	{ name: 'hehehe...he...🧅', category: 'imitations', file: 'hehehe...he...mp3' },
 	{
 		name: 'nice okay!',
 		category: 'english',
@@ -97,6 +99,8 @@ const sounds: Array<SubaSound> = [
 		file: 'peko_chan.mp3'
 	},
 	{ name: 'sugee', file: 'sugee.mp3' },
+	{ name: 'love confession', file: 'love_confession.mp3' },
+	{ name: 'subaru is the cutest hehehe', file: 'subaru_is_the_cutest_hehehehehe.mp3' },
 	{ name: 'fun!', file: 'tanoshii.mp3' },
 	{
 		name: 'uhaha!',
@@ -110,6 +114,7 @@ const sounds: Array<SubaSound> = [
 	{ name: 'kaio-ken', category: 'imitations', file: 'kaioken.mp3' },
 	{ name: 'tickling Choco', file: 'tickles_Choco.mp3' },
 	{ name: 'KITAAAA', file: 'KITAAAA.mp3' },
+	{ name: 'King of Ducks?', jp:"アヒルの王になるか。。。", file: 'shouldibecomethekingofducks.mp3' },
 	{ name: 'koi', file: 'koi.mp3' },
 	{ name: 'kon x4', file: 'kon_x4.mp3' },
 	{ name: 'konpeko', category: 'imitations', file: 'Konpeko.mp3' },
