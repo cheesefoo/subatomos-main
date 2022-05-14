@@ -12,7 +12,8 @@
 <div class='yt'>
 	<Youtube videoId='j69l0KUkltw' />
 </div>
-{#if $media.mobile}
+{#if $media.small}
+
 
 	<Tabs>
 		<TabList>
@@ -120,7 +121,9 @@
 			</p>
 		</TabPanel>
 	</Tabs>
+
 {:else }
+
 	<!--	<iframe src='https://www.youtube.com/embed/j69l0KUkltw' align='middle' allowfullscreen></iframe>-->
 
 	<table>
