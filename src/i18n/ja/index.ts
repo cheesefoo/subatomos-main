@@ -9,6 +9,7 @@ const ja: Translation = {
 		PROJECTS: 'Subatomos プロジェクト',
 		THIRD_ANNIVERSARY: '3周年記念',
 		BIRTHDAY: '100万人登録者突破とお誕生日',
+		BIRTHDAY22: '2022お誕生日',
 		BIRTHDAY_SM: '100万人登録者突破とお誕生日',
 		SECOND_ANNIVERSARY: '2周年記念',
 		SOUNDBOARD: 'サウンドボード'

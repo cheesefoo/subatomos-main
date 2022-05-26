@@ -17,7 +17,7 @@
 		? 'background-image: url(/static/assets/images/volume_mute.png)'
 		: 'background-image: url(/assets/images/volume_mute.png)';
 
-	export let paused: boolean = true;
+	export let paused = true;
 	$: img = paused ? mut : vol;
 
 	$: {

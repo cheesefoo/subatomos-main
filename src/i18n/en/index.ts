@@ -8,8 +8,9 @@ const en: BaseTranslation = {
 			'A website by overseas fans showcasing community projects celebrating Oozora Subaru!',
 		PROJECTS: 'Subatomos Projects',
 		THIRD_ANNIVERSARY: '3rd anniversary',
-		BIRTHDAY: '1 million subscribers & birthday',
-		BIRTHDAY_SM: '1M subscribers & birthday',
+		BIRTHDAY: '1 million subscribers & birthday 2021',
+		BIRTHDAY22: 'Birthday 2022',
+		BIRTHDAY_SM: '1M subs & bday \'21',
 		SECOND_ANNIVERSARY: '2nd anniversary',
 		SOUNDBOARD: 'Soundboard'
 	},

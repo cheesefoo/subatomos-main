@@ -13,7 +13,7 @@
 	export let message;
 	export let src = undefined;
 	export let url = undefined;
-	export let yellow: boolean = true;
+	export let yellow = true;
 
 	let size = '0.9x';
 	if ($media.small) {
