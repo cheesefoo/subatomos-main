@@ -141,6 +141,11 @@
 		<div class="wiki">
 			<a sveltekit:prefetch href="/wiki/en"><h4>WIKI (WIP)</h4></a>
 		</div>
+		<div class='bday22'>
+
+			<a sveltekit:prefetch href="/birthday2022"><h4>{$LL.HOME.BIRTHDAY22()}</h4></a>
+
+		</div>
 		<div class="third">
 			<img src={third} alt="3rd anniversary" />
 

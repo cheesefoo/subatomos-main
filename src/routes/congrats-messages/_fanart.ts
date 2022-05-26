@@ -9,7 +9,7 @@ interface SubaFanart {
 	src: string;
 }
 
-let fanart: Array<SubaFanart> = [
+const fanart: Array<SubaFanart> = [
 	{
 		name: 'kirome_toru_2',
 		url: 'https://twitter.com/kirome_toru_2',
