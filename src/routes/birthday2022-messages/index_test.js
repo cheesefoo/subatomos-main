@@ -1,4 +1,8 @@
 import faker from 'faker';
+import { Birthday22Msg } from '$lib/Birthday22Msg.js';
+
+
+
 
 const generateLorem = () =>
 	[...Array(50)].map(() => {
@@ -12,17 +16,10 @@ const generateLorem = () =>
 			faker.datatype.number(10) > 1
 				? undefined
 				: `https://avatars.dicebear.com/api/human/${name}.svg`;
-		let lat = faker.datatype.number(100)
-		let long = faker.datatype.number(100)
+		let lat = faker.datatype.number(100);
+		let long = faker.datatype.number(100);
 
-		return {
-			name: name,
-			message:lorem,
-			pic: pic,
-			art: art,
-			lat: lat,
-			long: long
-		};
+		return new Birthday22Msg(name, lorem, pic, art, lat, long);
 	});
 
 export async function get() {

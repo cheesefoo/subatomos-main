@@ -26,6 +26,7 @@
 
 
 	import 'ol/src/css';
+	import { Birthday22Msg } from '../../lib/Birthday22Msg';
 
 	let pictureIcon = 'static/assets/images/holos/oozora_subaru_thumb.png';
 	let msgOnlyIcon = 'static/assets/images/holos/yuzuki_choco_thumb.png';
@@ -56,11 +57,11 @@
 			let iconFeatures = [];
 			for (let i = 0; i < texts.length; i++)
 			{
-				let text = texts[i];
-				let name = text.name;
-				let msg = text.message;
-				let art = text.fanart;
-				let pic = text.picture;
+				let message :Birthday22Msg = texts[i];
+				let name = message.name;
+				let msg = message.text;
+				let art = message.fanart;
+				let pic = message.picture;
 
 				//Set the map icon
 				let iconType = msgOnlyIcon;
@@ -78,7 +79,7 @@
 						iconType = pictureIcon;
 					}
 				}
-				let loc = new Point(fromLonLat([text.long, text.lat]));
+				let loc = new Point(fromLonLat([message.long, message.lat]));
 				///
 
 				const iconFeature = new Feature({
@@ -115,15 +116,12 @@
 			map.addLayer(pictureLayer);
 
 			//Popup
-			const overlayContainerElement = document.querySelector('.overlay-container');
+
 			const overlayLayer = new Overlay({
 				element: overlayContainerElement
 			});
 			map.addOverlay(overlayLayer);
-			const overlayName = document.getElementById('name');
-			const overlayMsg = document.getElementById('message');
-			const overlayPic = document.getElementById('picture');
-			const overlayFanart = document.getElementById('fanart');
+
 
 
 			map.on('click', function(e)
@@ -141,22 +139,22 @@
 						let pic = feature.get('picture');
 						if (pic !== undefined)
 						{
-							overlayPic.style.display='block';
+							overlayPic.style.display = 'block';
 							overlayPic.src = pic;
 						} else
 						{
-							overlayPic.style.display='hidden';
+							overlayPic.style.display = 'hidden';
 							overlayPic.src = pic;
 						}
 						let art = feature.get('fanart');
 						if (art !== undefined)
 						{
-							overlayFanart.style.display='block';
+							overlayFanart.style.display = 'block';
 							overlayFanart.src = art;
 
 						} else
 						{
-							overlayFanart.style.display='hidden';
+							overlayFanart.style.display = 'hidden';
 							overlayFanart.src = art;
 						}
 					},
