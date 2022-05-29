@@ -4,7 +4,7 @@ import adapter from '@sveltejs/adapter-static';
 import { optimizeImports } from 'carbon-preprocess-svelte';
 // import cloudflare from '@sveltejs/adapter-cloudflare';
 const production = process.env.NODE_ENV === 'production';
-
+import { isoImport } from 'vite-plugin-iso-import'
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
@@ -35,6 +35,7 @@ const config = {
 			/*			plugins:[    replace({
 				"process.env.NODE_ENV": JSON.stringify("production")
 			})],*/
+			// plugins: [isoImport()],
 			optimizeDeps: {
 				include: ['fuzzy','@carbon/charts']
 			},
