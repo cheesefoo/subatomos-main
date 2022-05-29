@@ -1,3 +1,4 @@
+<!--
 <script>
 	import Map from '../../lib/components/Map.svelte'
 	import MapMarker from '../../lib/components/MapMarker.svelte';
@@ -10,4 +11,4 @@
 	<MapMarker lat={28.3378} lon={-81.3966} label="Svelte 30 Nutritional Consultants"/>
 	<MapMarker lat={40.6483} lon={-74.0237} label="Svelte Brands LLC"/>
 	<MapMarker lat={40.6986} lon={-74.4100} label="Svelte Medical Systems"/>
-</Map>
+</Map>-->
