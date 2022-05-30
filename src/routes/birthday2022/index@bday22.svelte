@@ -112,31 +112,33 @@
 </style>-->
 
 <script>
-	import { Map } from 'maplibre-gl';
 	import 'maplibre-gl/dist/maplibre-gl.css';
-	import { onMount } from 'svelte';
-
-	onMount(() => {
-		var map = new Map({
-			container: 'map', // container id
-			style: 'https://api.maptiler.com/maps/88a6d569-375b-4462-9822-28efe9b4d495/style.json?key=ckEbtTT6c4cfnEt7nJl6', // style URL
-			// style: 'https://demotiles.maplibre.org/style.json', // style URL
-			center: [0, 0], // starting position [lng, lat]
-			zoom: 1 // starting zoom
-		});
-	});
+	import MapLibre from '$lib/components/MapLibre.svelte';
+	/*	onMount(() => {
+			setRTLTextPlugin('https://cdn.maptiler.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.3/mapbox-gl-rtl-text.js');
+			var map = new Map({
+				container: 'map', // container id
+				style: 'https://api.maptiler.com/maps/88a6d569-375b-4462-9822-28efe9b4d495/style.json?key=ckEbtTT6c4cfnEt7nJl6',
+				center: [-107.72301, 27.66863],
+				zoom: 2.97
+	/!*			style: 'https://api.maptiler.com/maps/88a6d569-375b-4462-9822-28efe9b4d495/style.json?key=ckEbtTT6c4cfnEt7nJl6', // style URL
+				// style: 'https://demotiles.maplibre.org/style.json', // style URL
+				center: [0, 0], // starting position [lng, lat]
+				zoom: 1 // starting zoom*!/
+			});
+		});*/
 </script>
 <div class='top'>
 	<h3>hbd subaru</h3>
 	<div>&lt;insert video here&gt;</div>
 </div>
-<div id='map'></div>
-
+<!--<div id='map'></div>-->
+<MapLibre />
 <style lang='scss'>
-  .top  {
+  .top {
     display: flex;
     text-align: center;
-		justify-content: center;
+    justify-content: center;
   }
 
   #map {
