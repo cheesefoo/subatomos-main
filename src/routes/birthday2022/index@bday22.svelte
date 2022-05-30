@@ -1,3 +1,4 @@
+<!--
 <script>
 	// import 'leaflet/dist/leaflet.css';
 
@@ -62,7 +63,7 @@
 
 </script>
 
-<!--<svelte:window on:resize={resizeMap} />-->
+&lt;!&ndash;<svelte:window on:resize={resizeMap} />&ndash;&gt;
 <div class='top'>
 	 insert youtube video here
 </div>
@@ -71,7 +72,7 @@
 	<svelte:component this={LeafletContainer} bind:map view={initialView} zoom={4} height='65vh'>
 		<svelte:component this={ControlContainer} position='topright'>
 			<MapToolbar bind:eye bind:lines={showLines} on:click-reset={resetMapView} />
-			<!--			<svelte:component this={MapToolbarContainer} bind:eye bind:lines={showLines} on:click-reset={resetMapView} />-->
+			&lt;!&ndash;			<svelte:component this={MapToolbarContainer} bind:eye bind:lines={showLines} on:click-reset={resetMapView} />&ndash;&gt;
 		</svelte:component>
 
 		{#if eye}
@@ -83,17 +84,17 @@
 						<path d='M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z'></path>
 					</svg>
 
-					<!--									<Popup>A popup!</Popup>-->
-					<!--					<Pane></Pane>-->
+					&lt;!&ndash;									<Popup>A popup!</Popup>&ndash;&gt;
+					&lt;!&ndash;					<Pane></Pane>&ndash;&gt;
 				</svelte:component>
 			{/each}
 		{/if}
 
-		<!--{#if showLines}
+		&lt;!&ndash;{#if showLines}
 			{#each lines as {latLngs, color}}
 				<Polyline {latLngs} {color} opacity={0.5} />
 			{/each}
-		{/if}-->
+		{/if}&ndash;&gt;
 	</svelte:component>
 {/if}
 </div>
@@ -108,4 +109,41 @@
   {
 		margin: 0 5% 5% 5%;
 	}
+</style>-->
+
+<script>
+	import { Map } from 'maplibre-gl';
+	import 'maplibre-gl/dist/maplibre-gl.css';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		var map = new Map({
+			container: 'map', // container id
+			style: 'https://api.maptiler.com/maps/88a6d569-375b-4462-9822-28efe9b4d495/style.json?key=ckEbtTT6c4cfnEt7nJl6', // style URL
+			// style: 'https://demotiles.maplibre.org/style.json', // style URL
+			center: [0, 0], // starting position [lng, lat]
+			zoom: 1 // starting zoom
+		});
+	});
+</script>
+<div class='top'>
+	<h3>hbd subaru</h3>
+	<div>&lt;insert video here&gt;</div>
+</div>
+<div id='map'></div>
+
+<style lang='scss'>
+  .top  {
+    display: flex;
+    text-align: center;
+		justify-content: center;
+  }
+
+  #map {
+    position: absolute;
+    margin: 5% 5%;
+    width: 90%;
+    height: 80%;
+  }
+
 </style>

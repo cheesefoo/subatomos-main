@@ -35,10 +35,11 @@
 
 
 		L.tileLayer(
-			'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+			// 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+			'https://tilehost.subatomos.com/static/assets/images/tiles/{z}/{x}/{y}.png',
 			{
 				attribution: '© OpenStreetMap',
-				subdomains:'abc',
+				// subdomains:'abc',
 				minZoom:3,
 				maxZoom: 14,
 			}

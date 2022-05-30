@@ -1,5 +1,5 @@
 import faker from 'faker';
-import { Birthday22Msg } from '$lib/Birthday22Msg.js';
+import { Birthday22Msg } from '$lib/Birthday22Msg';
 
 
 

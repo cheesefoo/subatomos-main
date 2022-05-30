@@ -1,4 +1,4 @@
-export interface Birthday22Msg
+export class Birthday22Msg
 {
 	name: string;
 	text: string;
