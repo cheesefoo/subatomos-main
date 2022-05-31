@@ -57,7 +57,7 @@
 	}
 
 	function resetMapView() {
-		map.setView(initialView, 5);
+		map.setView(initialView, 3);
 	}
 
 </script>
@@ -68,7 +68,7 @@
 </div>
 <div class='msg-map'>
 {#if browser}
-	<svelte:component this={LeafletContainer} bind:map view={initialView} zoom={4} height='65vh'>
+	<svelte:component this={LeafletContainer} bind:map view={initialView} zoom={3} height='65vh'>
 		<svelte:component this={ControlContainer} position='topright'>
 			<MapToolbar bind:eye bind:lines={showLines} on:click-reset={resetMapView} />
 			<!--			<svelte:component this={MapToolbarContainer} bind:eye bind:lines={showLines} on:click-reset={resetMapView} />-->

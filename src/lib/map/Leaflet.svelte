@@ -3,6 +3,7 @@
 	import { createEventDispatcher, setContext } from 'svelte';
 	import L from 'leaflet';
 	import 'leaflet/dist/leaflet.css';
+
 	export let height = '80vh';
 	export let width = '100%';
 
@@ -26,7 +27,12 @@
 	setContext('map', getMap);
 
 	function createLeaflet(node) {
-		map = L.map(node).on('zoom', (e) => dispatch('zoom', e));
+		map = L.map(node,{
+			center: [40, 70],
+			zoomDelta:3,
+			zoomSnap:3,
+			scrollWheelZoom:false,
+		}).on('zoom', (e) => dispatch('zoom', e));
 		if(bounds) {
 			map.fitBounds(bounds)
 		} else {
@@ -35,12 +41,12 @@
 
 
 		L.tileLayer(
-			'/images/map/{z}/{x}/{y}.png',
+			'assets/images/map/{z}/{x}/{y}.png',
 			{
 				attribution: '© OpenStreetMap',
 				subdomains:'abc',
 				minZoom:3,
-				maxZoom: 14,
+				maxZoom: 6,
 			}
 		).addTo(map);
 
