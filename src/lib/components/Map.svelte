@@ -1,3 +1,4 @@
+<!--
 <script>
 	import { onDestroy, setContext } from 'svelte';
 	import { key, mapbox } from './mapbox.js';
@@ -17,8 +18,11 @@
 		console.log('sdafikjasdf');
 		map = new mapbox.Map({
 			container,
-			style: 'mapbox://styles/mapbox/streets-v11',
+			// style: 'mapbox://styles/mapbox/streets-v11',
 			center: [lon, lat],
+			zoomDelta:3,
+			zoomSnap:6,
+			scrollWheelZoom:false,
 			zoom
 		});
 	}
@@ -31,7 +35,7 @@
 	});
 </script>
 
-<!-- this special element will be explained in a later section -->
+&lt;!&ndash; this special element will be explained in a later section &ndash;&gt;
 <svelte:head>
 	<link
 		rel='stylesheet'
@@ -52,3 +56,4 @@
         height: 100vh;
     }
 </style>
+-->

@@ -1,5 +1,5 @@
 import faker from 'faker';
-import { Birthday22Msg } from '$lib/Birthday22Msg.js';
+
 
 
 
@@ -19,7 +19,7 @@ const generateLorem = () =>
 		let lat = faker.datatype.number(100);
 		let long = faker.datatype.number(100);
 
-		return new Birthday22Msg(name, lorem, pic, art, lat, long);
+		return  {name, lorem, pic, art, lat, long};
 	});
 
 export async function get() {
