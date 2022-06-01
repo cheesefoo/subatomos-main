@@ -29,9 +29,9 @@
 	function createLeaflet(node) {
 		map = L.map(node,{
 			center: [40, 70],
-			zoomDelta:3,
-			zoomSnap:3,
-			scrollWheelZoom:false,
+			zoomDelta:1,
+			// zoomSnap:2,
+			scrollWheelZoom:true,
 		}).on('zoom', (e) => dispatch('zoom', e));
 		if(bounds) {
 			map.fitBounds(bounds)
@@ -41,12 +41,11 @@
 
 
 		L.tileLayer(
-			'assets/images/map/{z}/{x}/{y}.png',
+			'assets/images/GSatellite/{z}/{x}/{y}.jpg',
 			{
-				attribution: '© OpenStreetMap',
-				subdomains:'abc',
-				minZoom:3,
-				maxZoom: 6,
+				attribution: '© Google,INEGI',
+				minZoom:2,
+				maxZoom: 5,
 			}
 		).addTo(map);
 
