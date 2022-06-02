@@ -31,8 +31,10 @@
 			center: [40, 70],
 			zoomDelta:1,
 			// zoomSnap:2,
+			noWrap:true,
 			scrollWheelZoom:true,
-		}).on('zoom', (e) => dispatch('zoom', e));
+		}).on('zoom', (e) => dispatch('zoom', e))
+			// .setMaxBounds(map.getBounds());
 		if(bounds) {
 			map.fitBounds(bounds)
 		} else {
@@ -45,7 +47,7 @@
 			{
 				attribution: '© Google,INEGI',
 				minZoom:2,
-				maxZoom: 5,
+				maxZoom: 4,
 			}
 		).addTo(map);
 

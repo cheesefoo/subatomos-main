@@ -6,7 +6,7 @@ import faker from 'faker';
 
 const generateLorem = () =>
 	[...Array(50)].map(() => {
-		const lorem = faker.lorem.paragraph();
+		const msg = faker.lorem.paragraph();
 		const name = faker.name.lastName();
 		let art =
 			faker.datatype.number(10) > 1
@@ -16,10 +16,13 @@ const generateLorem = () =>
 			faker.datatype.number(10) > 1
 				? undefined
 				: `https://avatars.dicebear.com/api/human/${name}.svg`;
-		let lat = faker.datatype.number(100);
-		let long = faker.datatype.number(100);
+		let lat=faker.address.latitude()
+			let lng =  faker.address.longitude()
 
-		return  {name, lorem, pic, art, lat, long};
+		// let lat = faker.datatype.number(100);
+		// let long = faker.datatype.number(100);
+
+		return  {name, msg, pic, art, lat,lng};
 	});
 
 export async function get() {
