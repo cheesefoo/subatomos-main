@@ -25,8 +25,10 @@ export async function get() {
 import faker from 'faker';
 
 const generateLorem = () =>
-	[...Array(50)].map(() => {
-		const lorem = faker.lorem.paragraph();
+	[...Array(50)].map(() =>
+	{
+		faker.setLocale('en_US')
+		const msg = faker.lorem.paragraph();
 		const name = faker.name.lastName();
 		const art =
 			faker.datatype.number(10) > 1
@@ -35,21 +37,18 @@ const generateLorem = () =>
 		const pic =
 			faker.datatype.number(10) > 1
 				? undefined
-				: `https://avatars.dicebear.com/api/human/${name}.svg`;
-		const lat = faker.address.latitude();
-		const long = faker.address.longitude();
+				: `https://avatars.dicebear.com/api/bottts/${name}.svg`;
+		let lat: Number = Number(faker.address.latitude());
+		let lng: Number = Number(faker.address.longitude());
 
-		return {
-			name: name,
-			message:lorem,
-			picture: pic,
-			fanart: art,
-			lat: lat,
-			long: long
-		};
+		// let lat = faker.datatype.number(100);
+		// let long = faker.datatype.number(100);
+
+		return { name, msg, pic, art, lat, lng };
 	});
 
-export async function get() {
+export async function get()
+{
 	return {
 		body: generateLorem()
 	};
