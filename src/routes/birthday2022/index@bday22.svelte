@@ -39,7 +39,7 @@
 			PopupContainer = (await import('$lib/map/Popup.svelte')).default;
 		}
 	});
-	const initialView = [39.8283, -98.5795];
+	const initialView = [0,0];
 
 	const bothIcon = 'assets/images/holos/yuzuki_choco_thumb.png';
 	const artIcon = 'assets/images/holos/himemori_luna_thumb.png';
@@ -68,7 +68,7 @@
 </div>
 <div class='msg-map'>
 	{#if browser}
-		<svelte:component this={LeafletContainer} bind:map view={initialView} zoom={3} height='65vh'>
+		<svelte:component this={LeafletContainer} bind:map view={initialView} zoom={2} height='65vh'>
 			<svelte:component this={ControlContainer} position='topright'>
 				<MapToolbar bind:eye bind:lines={showLines} on:click-reset={resetMapView} />
 				<!--			<svelte:component this={MapToolbarContainer} bind:eye bind:lines={showLines} on:click-reset={resetMapView} />-->

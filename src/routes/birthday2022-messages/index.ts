@@ -31,11 +31,11 @@ const generateLorem = () =>
 		const msg = faker.lorem.paragraph();
 		const name = faker.name.lastName();
 		const art =
-			faker.datatype.number(10) > 1
+			faker.datatype.number(10) > 5
 				? undefined
 				: `https://avatars.dicebear.com/api/human/${name}.svg`;
 		const pic =
-			faker.datatype.number(10) > 1
+			faker.datatype.number(10) > 5
 				? undefined
 				: `https://avatars.dicebear.com/api/bottts/${name}.svg`;
 		let lat: Number = Number(faker.address.latitude());

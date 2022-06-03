@@ -37,11 +37,12 @@
   }
 
   .overlay-image {
-    min-width: 30%;
-    height: auto;
+
+    width:100%;
   }
 
-/*  .overlay-images {
+  .overlay-images {
     display: flex;
-  }*/
+
+  }
 </style>
