@@ -51,6 +51,16 @@ let options = {};
 			</td>
 		</tr>
 		<tr>
+			<td>Smoky Coffin</td>
+			<td></td>
+			<td>
+				<TooltipLoader slug='oozora-keisatsu' text='Oozora Police' /> Mini</td>
+			<td></td>
+			<td>
+				<Youtube videoId='sRl_GIwqSqw' />
+			</td>
+		</tr>
+		<tr>
 			<td>3:03 PM</td>
 			<td></td>
 			<td>Marshmallow Q&A 20220420</td>
