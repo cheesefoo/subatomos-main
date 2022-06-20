@@ -7,8 +7,8 @@
 	export let height = '80vh';
 	export let width = '100%';
 	// Must set either bounds, or view and zoom.
-	const corner1 = L.latLng(-90, -180);
-	const corner2 = L.latLng(90, 180);
+	const corner1 = L.latLng(-66, -180);
+	const corner2 = L.latLng(79, 180);
 	export let bounds = L.latLngBounds(corner1, corner2);
 	export let view = undefined;
 	export let zoom = undefined;
@@ -46,7 +46,7 @@
 				minZoom: 3,
 				maxZoom: 4,
 				noWrap: true,
-				// maxBounds: maxBounds,
+				bounds,
 				maxBoundsViscosity: 1.0
 			}
 		).addTo(map);

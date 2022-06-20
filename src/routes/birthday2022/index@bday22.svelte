@@ -1,4 +1,6 @@
 <script lang='ts' context='module'>
+
+
 	export async function load({ fetch })
 	{
 		const res = await fetch('/birthday2022-messages');
@@ -12,6 +14,8 @@
 			error: new Error()
 		};
 	}
+
+
 </script>
 <script>
 
@@ -21,6 +25,20 @@
 	// import Control from '$lib/map/Control.svelte';
 	import MapToolbar from '$lib/map/MapToolbar.svelte';
 	import MapOverlayContainer from '$lib/components/MapOverlayContainer.svelte';
+	import { baseURL } from '$lib/variables.ts';
+
+	import { fly, scale } from 'svelte/transition';
+	import { quadOut } from 'svelte/easing';
+	import { Hamburger } from 'svelte-hamburgers';
+	import { media } from '$lib/stores/stores';
+	import metaimg from '/static/assets/images/3rdanniversarylogo.jpg';
+	import metatwi from '/static/assets/images/meta3rd.jpg';
+	import arrow from '/static/assets/images/scrolldown.png';
+	import LL from '../../i18n/i18n-svelte.js';
+	import Youtube from '$lib/components/YouTube.svelte';
+
+
+	let open = false;
 
 	export let msgs;
 
@@ -62,9 +80,64 @@
 
 </script>
 
+<svelte:head>
+	<!-- Primary Meta Tags -->
+	<title>{$LL.THIRD.TITLE()}</title>
+	<meta name="title" content="Oozora Subaru, congratulations on your 3rd anniversary!" />
+	<meta
+		name="description"
+		content="スバル3周年おめでとう！！！
+We made a video for you to celebrate!!!"
+	/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://subatomos.com/3rd-anniversary" />
+	<meta property="og:title" content="Happy 17.4th birthday Subaru!" />
+	<meta
+		property="og:description"
+		content="スバルちゃん、17.4歳のお誕生日おめでとうございます！！！"
+	/>
+	<meta property="og:image" content={metaimg} />
+
+	<meta property="twitter:card" content="summary_large_image" />
+	<!--//TODO: meta tags-->
+	<meta property="twitter:url" content="https://subatomos.com/birthday17-4" />
+	<meta
+		property="twitter:title"
+		content="Oozora Subaru, congratulations on your 3rd anniversary!"
+	/>
+	<meta
+		property="twitter:description"
+		content="スバルちゃん、17.4歳のお誕生日おめでとうございます！！！"
+	/>
+	<meta property="twitter:image" content={`${baseURL}${metatwi}`} />
+</svelte:head>
+
+{#if $media.small}
+	<div class='hamburger'>
+	<Hamburger
+		--layer-width='30px'
+						 bind:open />
+	</div>
+	{#if open}
+		<div class="burger-menu">
+			{#each ['link 1', 'link 2', 'link 3'] as link, i}
+				<p transition:fly={{ y: -15, delay: 50 * i }}>
+					{link}
+				</p>
+			{/each}
+		</div>
+
+		<div class="bar" transition:scale={{ duration: 750, easing: quadOut, opacity: 1 }} />
+	{/if}
+	<div class="arrow">
+	<img src={arrow} alt="scroll down" />
+</div>
+{/if}
 <!--<svelte:window on:resize={resizeMap} />-->
 <div class='top'>
-	insert youtube video here
+	<Youtube videoId='AwLO-pisoVA' width='852' height='480'/>
 </div>
 <div class='msg-map'>
 	{#if browser}
@@ -112,6 +185,27 @@
 	{/if}
 </div>
 <style lang='scss'>
+
+  .arrow {
+    //position: relative;
+
+    //text-align: center;
+    //flex: 1 1 100%;
+    //flex: 1 1 20%;
+    animation: bounce 2s infinite;
+    margin-top: 10vh;
+
+    img {
+      width: 100%;
+    }
+  }
+
+	.hamburger{
+		position:absolute;
+
+		right:0px;
+	}
+
   .top {
 
     text-align: center;
@@ -121,5 +215,20 @@
 
   .msg-map {
     margin: 0 5% 5% 5%;
+  }
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
   }
 </style>
