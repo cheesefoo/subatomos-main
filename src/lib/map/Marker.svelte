@@ -9,8 +9,14 @@
 
 	export let width = 30;
 	export let height = 30;
+	export let latlng;
 	export let lat = 0;
 	export let lng = 0;
+
+	if(latlng){
+		lat = latlng[0]
+		lng = latlng[1]
+	}
 
 	const layerGroup = getContext('layerGroup')();
 	setContext('layer', () => marker);

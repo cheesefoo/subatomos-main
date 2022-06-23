@@ -59,10 +59,16 @@
 	});
 	const initialView = [0,0];
 
+/*
 	const bothIcon = 'assets/images/holos/yuzuki_choco_thumb.png';
 	const artIcon = 'assets/images/holos/himemori_luna_thumb.png';
 	const picIcon = 'assets/images/holos/shishiro_botan_thumb.png';
 	const noneIcon = 'assets/images/holos/oozora_subaru_thumb.png';
+*/
+	let bothIcon, artIcon, picIcon,noneIcon;
+	// picIcon=noneIcon	= 'assets/images/subaru_waypoint_gr.png';
+	picIcon=noneIcon	= 'assets/images/subaru_waypoint_duck_alt_2_scale10.png';
+	 bothIcon= artIcon=     'assets/images/subaru_waypoint_duck_alt_2_scale20.png';
 
 	let eye = true;
 	let showLines = false;
@@ -137,7 +143,16 @@ We made a video for you to celebrate!!!"
 {/if}
 <!--<svelte:window on:resize={resizeMap} />-->
 <div class='top'>
-	<Youtube videoId='AwLO-pisoVA' width='852' height='480'/>
+	<div class='video-container'>
+
+			<iframe
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+				frameborder="0"
+				src="https://www.youtube.com/embed/AwLO-pisoVA"
+				title="YouTube video player"
+			/>
+	</div>
 </div>
 <div class='msg-map'>
 	{#if browser}
@@ -149,9 +164,9 @@ We made a video for you to celebrate!!!"
 
 			{#if eye}
 
-				{#each msgs as { name, msg, pic, art, lat, lng }}
+				{#each msgs as { name, message, pic, art, latlng }}
 					<!--{@debug lat, lng}-->
-					<svelte:component this={MarkerContainer} {lat} {lng} width={30} height={30}>
+					<svelte:component this={MarkerContainer} {latlng} width={30} height={30}>
 						{#if (pic !== undefined && art !== undefined)}
 							<img src={bothIcon} width='30' height='30' />
 						{:else if pic }
@@ -169,7 +184,7 @@ We made a video for you to celebrate!!!"
 						<svelte:component this={PopupContainer}>
 
 
-							<MapOverlayContainer name={name} message={msg} picture={pic} fanart={art} />
+							<MapOverlayContainer {name} {message} {pic} {art} />
 						</svelte:component>
 						<!--					<Pane></Pane>-->
 					</svelte:component>
@@ -216,6 +231,17 @@ We made a video for you to celebrate!!!"
   .msg-map {
     margin: 0 5% 5% 5%;
   }
+  @media screen and (max-width: 849px) {
+
+    .video-container {
+      //position: absolute;
+      //bottom: 12%;
+      //left: 12%;
+      width: 65vw;
+      height: 40vw;
+    }
+  }
+
   @keyframes bounce {
     0%,
     20%,
