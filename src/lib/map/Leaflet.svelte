@@ -1,8 +1,21 @@
 <script>
 	//from https://imfeld.dev/writing/svelte_domless_components
-	import { createEventDispatcher, setContext } from 'svelte';
+	import { createEventDispatcher, onMount, setContext } from 'svelte';
 	import L from 'leaflet';
 	import 'leaflet/dist/leaflet.css';
+	import 'leaflet.markercluster/dist/MarkerCluster.css';
+	import { browser } from '$app/env';
+	import 'leaflet.markercluster/dist/leaflet.markercluster-src.js';
+
+	onMount(async () => {
+		if (browser) {
+			var markers = L.markerClusterGroup({
+				iconCreateFunction: function(cluster) {
+					return L.divIcon({ html: '<b>' + cluster.getChildCount() + '</b>' });
+				}
+			});
+		}
+	});
 
 	export let height = '80vh';
 	export let width = '100%';

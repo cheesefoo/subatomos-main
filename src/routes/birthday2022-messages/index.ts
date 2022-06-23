@@ -11,7 +11,7 @@ function getMessages()
 		x.latlng = latlng;
 		messages[i] = x;
 	}
-	console.log(messages);
+
 
 	return messages;
 }

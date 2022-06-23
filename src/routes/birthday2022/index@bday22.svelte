@@ -164,7 +164,7 @@ We made a video for you to celebrate!!!"
 
 			{#if eye}
 
-				{#each msgs as { name, message, pic, art, latlng }}
+				{#each msgs as { name, twitter, message, pic, art, latlng }}
 					<!--{@debug lat, lng}-->
 					<svelte:component this={MarkerContainer} {latlng} width={30} height={30}>
 						{#if (pic !== undefined && art !== undefined)}
@@ -184,7 +184,7 @@ We made a video for you to celebrate!!!"
 						<svelte:component this={PopupContainer}>
 
 
-							<MapOverlayContainer {name} {message} {pic} {art} />
+							<MapOverlayContainer {name} {twitter} {message} {pic} {art} />
 						</svelte:component>
 						<!--					<Pane></Pane>-->
 					</svelte:component>
