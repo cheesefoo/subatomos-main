@@ -13,6 +13,9 @@
 	<br>
 	<p class='overlay-text'>{message}</p>
 	<br>
+	{#if pic || art}
+	<span>Tap to enlarge タップで拡大</span>
+		{/if}
 	<div class='overlay-images'>
 		{#if pic}
 			<Lightbox clickToClose={true} thumbnail imagePreset={'fullscreen'} protect={true}>
@@ -35,7 +38,9 @@
     max-width: 36em;
     width: 100%;
   }
-
+span{
+	text-align: center;
+}
   .overlay-image {
 
     width:100%;
