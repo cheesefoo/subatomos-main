@@ -3,8 +3,8 @@
 
 	export let name;
 	export let message;
-	export let picture = undefined;
-	export let fanart = undefined;
+	export let pic = undefined;
+	export let art = undefined;
 </script>
 
 <div class='overlay-container'>
@@ -14,16 +14,16 @@
 	<p class='overlay-text'>{message}</p>
 	<br>
 	<div class='overlay-images'>
-		{#if picture}
+		{#if pic}
 			<Lightbox clickToClose={true} thumbnail imagePreset={'fullscreen'} protect={true}>
-				<img slot="thumbnail" class='overlay-image' src={picture} alt='duck' />
-				<img slot="image" class='overlay-image' src={picture} alt='duck' />
+				<img slot="thumbnail" class='overlay-image' src={pic} alt='duck' />
+				<img slot="image" class='overlay-image' src={pic} alt='duck' />
 			</Lightbox>
 		{/if}
-		{#if fanart}
+		{#if art}
 			<Lightbox clickToClose={true} thumbnail  imagePreset={'fullscreen'} protect={true}>
-				<img slot="image" class='overlay-image' src={fanart} alt='fanart' />
-				<img slot="thumbnail" class='overlay-image' src={fanart} alt='fanart' />
+				<img slot="image" class='overlay-image' src={art} alt='fanart' />
+				<img slot="thumbnail" class='overlay-image' src={art} alt='fanart' />
 			</Lightbox>
 		{/if}
 	</div>

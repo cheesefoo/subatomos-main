@@ -1,27 +1,29 @@
-/*
 import messages from './_messages';
-import fanart from './_fanart';
 
-function getMessages(): Array<object> {
-	const numOfMsgs = messages.length + fanart.length;
-	const artInterval = Math.ceil(numOfMsgs / fanart.length);
 
-	const copy = [].concat(messages);
-	let index = 0;
-	fanart.forEach((x) => {
-		copy.splice(index, 0, x);
-		index += artInterval;
-	});
+function getMessages()
+{
+	for (let i = 0; i < messages.length; i++)
+	{
+		let x = messages[i];
+		let ll = typeof x.latlng === 'string' ? x.latlng.split(',') : x.latlng;
+		let latlng = ll.map(s => parseFloat(s));
+		x.latlng = latlng;
+		messages[i] = x;
+	}
+	console.log(messages);
 
-	return copy;
+	return messages;
 }
 
-export async function get() {
+export async function get()
+{
 	return {
 		body: getMessages()
 	};
 }
-*/
+
+/*
 import faker from 'faker';
 
 const generateLorem = () =>
@@ -53,3 +55,4 @@ export async function get()
 		body: generateLorem()
 	};
 }
+*/
