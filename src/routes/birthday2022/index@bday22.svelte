@@ -67,8 +67,8 @@
 */
 	let bothIcon, artIcon, picIcon,noneIcon;
 	// picIcon=noneIcon	= 'assets/images/subaru_waypoint_gr.png';
-	picIcon=noneIcon	= 'assets/images/subaru_waypoint_duck_alt_2_scale10.png';
-	 bothIcon= artIcon=     'assets/images/subaru_waypoint_duck_alt_2_scale20.png';
+	noneIcon	= 'assets/images/subaru_waypoint_blue.png';
+	picIcon= bothIcon= artIcon=     'assets/images/subaru_waypoint_red.png';
 
 	let eye = true;
 	let showLines = false;
@@ -167,7 +167,7 @@ We made a video for you to celebrate!!!"
 				{#each msgs as { name, message, pic, art, latlng }}
 					<!--{@debug lat, lng}-->
 					<svelte:component this={MarkerContainer} {latlng} width={30} height={30}>
-						{#if (pic !== undefined && art !== undefined)}
+						{#if (pic !== '' && art !== '')}
 							<img src={bothIcon} width='30' height='30' />
 						{:else if pic }
 							<img src={picIcon} width='30' height='30' />
