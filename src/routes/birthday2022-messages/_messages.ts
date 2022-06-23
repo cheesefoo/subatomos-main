@@ -812,7 +812,32 @@ let messages = [
 		pic: '',
 		art: '',
 		latlng: '2.08,103.36'
+	},
+	{
+		name: '@vora902',
+		twitter: '@vora903',
+		message: 'Happy Birthday Subaru. You have always been an amazing person who isn\'t afraid to show interest in and form connections with others. Your English has improved significantly and all of us are proud of your efforts to learn it. Keep being the wonderful joy upon our lives and here\'s to another year of Shuba.',
+		pic: 'Subarudo_duck_picture.jpg',
+		art: '',
+		latlng: '37.83,-84.27'
+	},
+	{
+		name: 'Jin',
+		twitter: '',
+		message: 'Thank you for so much joy and appreciation for games and in life you have given me, I love your streams and they bring me so much joy to watch you live, or later through your stream uploads.',
+		pic: '',
+		art: '',
+		latlng: '51.31,-0.55'
+	},
+	{
+		name: 'Kenney - ケニー',
+		twitter: '',
+		message: 'Thank you Subaru for sharing your bright energy with us again this year. I wish you another year of health and happiness, and look forward to being in your care for another year. よろしくお願いします。',
+		pic: 'qdSO0s0.jpeg',
+		art: '',
+		latlng: '49.19,-122.84'
 	}
+
 ];
 messages.forEach(msg =>
 {
