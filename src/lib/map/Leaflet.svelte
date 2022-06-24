@@ -5,7 +5,10 @@
 	import 'leaflet/dist/leaflet.css';
 	import 'leaflet.markercluster/dist/leaflet.markercluster-src.js';
 	import 'leaflet.markercluster/dist/MarkerCluster.css';
-	import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
+	// import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
+
+	import clusterIcon from '/static/assets/images/subaru_waypoint_gr.png';
+
 
 	export let height = '80vh';
 	export let width = '100%';
@@ -27,16 +30,31 @@
 	$: mapProp = map;
 	export const getMap = () => map;
 
-	let markers = L.markerClusterGroup();
-	/*let markers = L.markerClusterGroup({
+	// let markers = L.markerClusterGroup();
+	let markers;
+	/*	function createClusterGroupFunc(htmlelement) {
+			markers = L.markerClusterGroup({
+			iconCreateFunction: function(cluster) {
+				return L.divIcon({
+					className: 'marker-cluster',
+					html:htmlelement
+				});
+			}
+		});}*/
+
+	markers = L.markerClusterGroup({
 		iconCreateFunction: function(cluster) {
-			return L.divIcon({ html: '<b>' + cluster.getChildCount() + '</b>' });
+			return L.divIcon({
+				className: 'marker-cluster',
+				html: "<div><img src="+clusterIcon+" width='45' height='45' /><b>"+cluster.getChildCount()+"</b></div>"
+
+			});
 		}
-	});*/
+	});
 	$: markersProp = markers;
 	export const getMarkers = () => markers;
 
-	setContext('markers',getMarkers);
+	setContext('markers', getMarkers);
 	setContext('layerGroup', getMap);
 	setContext('layer', getMap);
 	setContext('map', getMap);
@@ -97,8 +115,16 @@
 		<slot {map} />
 	{/if}
 </div>
-<style>
+<style lang='scss'>
     :global(.leaflet-control-container) {
         position: static;
     }
+		:global(.marker-cluster div b) {
+			font-family: "keifont";
+			color:$youtubered;
+      position: absolute;
+			left:10px;
+			top:10px;
+
+		}
 </style>
