@@ -34,7 +34,7 @@
 	const markers = getContext('markers')();
 	setContext('layer', () => marker);
 
-	console.log(markers);
+	// console.log(markers);
 
 	function createMarker(markerElement) {
 		let icon = L.divIcon({
