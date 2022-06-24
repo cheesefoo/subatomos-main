@@ -229,7 +229,7 @@ let messages = [
 	},
 	{
 		name: '@mikachu051',
-		twitter: '@mikachu052',
+		twitter: '@mikachu051',
 		message: 'Happy birthday!!! I wish you a wonderful birthday. Everyone in the UK is celebrating with you! Thank you for making me smile and laugh everyday!!!',
 		pic: 'Duck.png',
 		art: 'Subaru birthday.png',
@@ -237,7 +237,7 @@ let messages = [
 	},
 	{
 		name: '@MrJunior717',
-		twitter: '@MrJunior718',
+		twitter: '@MrJunior717',
 		message: 'Dancing Shuba was my introduction into VTubers and hololive, now I take Shuba with me to remind me I can do anything I set my mind to! Keep it up!',
 		pic: '0BEwHbv.jpeg',
 		art: '',
@@ -583,7 +583,7 @@ let messages = [
 	},
 	{
 		name: '@duckcrusader208',
-		twitter: '@duckcrusader209',
+		twitter: '@duckcrusader208',
 		message: 'Happy birthday Subaru!!!',
 		pic: 'DSC02829.JPG',
 		art: '',
@@ -623,7 +623,7 @@ let messages = [
 	},
 	{
 		name: '@Blazignite5',
-		twitter: '@Blazignite6',
+		twitter: '@Blazignite5',
 		message: 'Happy Birthday Subaru! Watching you has always lifted me up whenever I\'m down that day. Thank you for being there for the Subatomos. Also, remember to keep taking breaks whenever you need it. We can handle a couple of days without Shuba.',
 		pic: '',
 		art: '',
@@ -743,7 +743,7 @@ let messages = [
 	},
 	{
 		name: '@ren_ydn810',
-		twitter: '@ren_ydn811',
+		twitter: '@ren_ydn810',
 		message: 'スバルちゃん誕生日おめでとう！チャージ チャレンジ 全力アクセル 頑張るキミへ一番乗りのエールを贈るそんなスバ友でありたい！これからも応援してます！',
 		pic: '',
 		art: '',
@@ -767,7 +767,7 @@ let messages = [
 	},
 	{
 		name: '@WokeButLazy23',
-		twitter: '@WokeButLazy24',
+		twitter: '@WokeButLazy23',
 		message: 'Hi Subaru, I love your content and my favorite work of yours is your Officer Subaru segments! I think your English skills are improving very nicely and I believe you brighten every collab you are apart of! I\'m proud to have you as my oshi!',
 		pic: '',
 		art: '',
@@ -807,12 +807,99 @@ let messages = [
 	},
 	{
 		name: '@itsyoboibrent',
-		twitter: '',
+		twitter: '@itsyoboibrent',
 		message: 'スバルちゃんお誕生日おめでとう！スバルの配信はめっちゃめっちゃ楽しかったよ！ありがとうよ！',
 		pic: '',
 		art: '',
 		latlng: '2.08,103.36'
+	},
+	{
+		name: '@vora902',
+		twitter: '@vora902',
+		message: 'Happy Birthday Subaru. You have always been an amazing person who isn\'t afraid to show interest in and form connections with others. Your English has improved significantly and all of us are proud of your efforts to learn it. Keep being the wonderful joy upon our lives and here\'s to another year of Shuba.',
+		pic: 'Subarudo_duck_picture.jpg',
+		art: '',
+		latlng: '37.83,-84.27'
+	},
+	{
+		name: 'Jin',
+		twitter: '',
+		message: 'Thank you for so much joy and appreciation for games and in life you have given me, I love your streams and they bring me so much joy to watch you live, or later through your stream uploads.',
+		pic: '',
+		art: '',
+		latlng: '51.31,-0.55'
+	},
+	{
+		name: 'Kenney - ケニー',
+		twitter: '',
+		message: 'Thank you Subaru for sharing your bright energy with us again this year. I wish you another year of health and happiness, and look forward to being in your care for another year. よろしくお願いします。',
+		pic: 'qdSO0s0.jpeg',
+		art: '',
+		latlng: '49.19,-122.84'
+	},
+	{
+		name: '@f2ai2',
+		twitter: '@f2ai2',
+		message: 'スバルちゃんの元気さは最高です！海外ニキからありがとうございます！',
+		pic: 'LdgnmQD.jpeg',
+		art: '',
+		latlng: '40.05,-74.4'
+	},
+	{
+		name: '@Ti11192916',
+		twitter: '@Ti11192916', message: 'お誕生日おめでとう！日々をコツコツ頑張って積み重ねていき、大きく成し遂げ皆を喜ばせてくれるあなたが大好きです。',
+		pic: '', art: '',
+		latlng: '34.41,132.45'
+	},
+	{
+		name: 'KenTo',
+		twitter: '',
+		message: 'スバルちゃん！！お誕生日おめでとう！！君に出会ってから２回目のお誕生日、この1年間本当に楽しい日々を貰っています。とても言葉だけじゃ感謝を伝えきれません。本当にありがとう！！ジョイポリスで直接お話出来たことは一生の宝物です！！また1年よろしくね！！最後に、スバルちゃんいい一年にしてくれよな！！ 大好きだ！！',
+		pic: '',
+		art: '',
+		latlng: '32.72,129.89'
+	},
+	{
+		name: 'Logus325',
+		twitter: '',
+		message: 'Miss Subaru, it has already been 2 years since I started watching your streams. You cheered me up in sad moments and keep me wanting to do my best. Thank you for being so bright. I\'ll keep supporting you all the time you stay with us and beyond.',
+		pic: '',
+		art: '',
+		latlng: '19.54,-96.91'
+	},
+	{
+		name: '@KaeSSRB',
+		twitter: '@KaeSSRB',
+		message: 'Happy Birthday Subaru-Chan! Thank you for all the laughter and comical moments! Your content always ends up brightening my day. I drew a picture of you at the Potato Chip Trail! ',
+		pic: '',
+		art: 'J7HUe.png',
+		latlng: '33,-116.97'
+	},
+	{
+		name: 'Knox',
+		twitter: '',
+		message: 'Happy Birthday! I wish for you to always be a bright and sunny girl, that warmed the hearts of so many people. ',
+		pic: 'AnLBtW1.jpeg',
+		art: '',
+		latlng: '53.12,18'
+	},
+	{
+		name: 'Mikhil',
+		twitter: '',
+		message: 'お誕生日おめでとうございます。Wishing you good health and a very Happy Birthday Subaru! May your day be a great one and every year to come be even better than the last! Thank you for continuing to be a shinning light and source of joy in the world.',
+		pic: '',
+		art: '',
+		latlng: '4.86,-58.93'
+	},
+	{
+		name: 'Jl Cogito',
+		twitter: '',
+		message: 'I pray for our favorite MMA duck, Subaru, to have good health and more energy to face the future ahead. We look forward again for many happy memories with Subaru playing with both the Holomems and us fans. Thank you for your hard work.',
+		pic: '',
+		art: '',
+		latlng: '10.72,122.56'
 	}
+
 ];
 messages.forEach(msg =>
 {
