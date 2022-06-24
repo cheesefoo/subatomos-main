@@ -75,7 +75,7 @@
 			{
 				attribution: '© Google,INEGI',
 				minZoom: 3,
-				maxZoom: 4,
+				maxZoom: 6,
 				noWrap: true,
 				bounds,
 				maxBoundsViscosity: 1.0
