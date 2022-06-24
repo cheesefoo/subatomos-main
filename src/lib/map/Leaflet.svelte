@@ -1,21 +1,11 @@
 <script>
 	//from https://imfeld.dev/writing/svelte_domless_components
-	import { createEventDispatcher, onMount, setContext } from 'svelte';
+	import { createEventDispatcher, setContext } from 'svelte';
 	import L from 'leaflet';
 	import 'leaflet/dist/leaflet.css';
-	import 'leaflet.markercluster/dist/MarkerCluster.css';
-	import { browser } from '$app/env';
 	import 'leaflet.markercluster/dist/leaflet.markercluster-src.js';
-
-	onMount(async () => {
-		if (browser) {
-			var markers = L.markerClusterGroup({
-				iconCreateFunction: function(cluster) {
-					return L.divIcon({ html: '<b>' + cluster.getChildCount() + '</b>' });
-				}
-			});
-		}
-	});
+	import 'leaflet.markercluster/dist/MarkerCluster.css';
+	import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
 
 	export let height = '80vh';
 	export let width = '100%';
@@ -35,8 +25,18 @@
 	// export let bounds = L.latLngBounds(corner1, corner2);
 	let map;
 	$: mapProp = map;
-
 	export const getMap = () => map;
+
+	let markers = L.markerClusterGroup();
+	/*let markers = L.markerClusterGroup({
+		iconCreateFunction: function(cluster) {
+			return L.divIcon({ html: '<b>' + cluster.getChildCount() + '</b>' });
+		}
+	});*/
+	$: markersProp = markers;
+	export const getMarkers = () => markers;
+
+	setContext('markers',getMarkers);
 	setContext('layerGroup', getMap);
 	setContext('layer', getMap);
 	setContext('map', getMap);
@@ -72,6 +72,7 @@
 		} else {
 			map.setView(view, zoom);
 		}
+		map.addLayer(markers);
 
 		return {
 			destroy() {
