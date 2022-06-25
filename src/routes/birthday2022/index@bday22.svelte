@@ -57,18 +57,14 @@
 			PopupContainer = (await import('$lib/map/Popup.svelte')).default;
 		}
 	});
-	const initialView = [0,0];
+	const initialView = [0, 0];
 
-/*
-	const bothIcon = 'assets/images/holos/yuzuki_choco_thumb.png';
-	const artIcon = 'assets/images/holos/himemori_luna_thumb.png';
-	const picIcon = 'assets/images/holos/shishiro_botan_thumb.png';
-	const noneIcon = 'assets/images/holos/oozora_subaru_thumb.png';
-*/
-	let bothIcon, artIcon, picIcon,noneIcon;
-	// picIcon=noneIcon	= 'assets/images/subaru_waypoint_gr.png';
-	noneIcon	= 'assets/images/subaru_waypoint_blue.png';
-	picIcon= bothIcon= artIcon=     'assets/images/subaru_waypoint_red.png';
+
+
+	let bothIcon, artIcon, picIcon, noneIcon;
+
+	noneIcon = 'assets/images/subaru_waypoint_blue.png';
+	picIcon = bothIcon = artIcon = 'assets/images/subaru_waypoint_red.png';
 
 	let eye = true;
 	let showLines = false;
@@ -89,78 +85,84 @@
 <svelte:head>
 	<!-- Primary Meta Tags -->
 	<title>{$LL.THIRD.TITLE()}</title>
-	<meta name="title" content="Oozora Subaru, congratulations on your 3rd anniversary!" />
+	<meta name='title' content='Oozora Subaru, congratulations on your 3rd anniversary!' />
 	<meta
-		name="description"
-		content="スバル3周年おめでとう！！！
-We made a video for you to celebrate!!!"
+		name='description'
+		content='スバル3周年おめでとう！！！
+We made a video for you to celebrate!!!'
 	/>
 
 	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://subatomos.com/3rd-anniversary" />
-	<meta property="og:title" content="Happy 17.4th birthday Subaru!" />
+	<meta property='og:type' content='website' />
+	<meta property='og:url' content='https://subatomos.com/3rd-anniversary' />
+	<meta property='og:title' content='Happy 17.4th birthday Subaru!' />
 	<meta
-		property="og:description"
-		content="スバルちゃん、17.4歳のお誕生日おめでとうございます！！！"
+		property='og:description'
+		content='スバルちゃん、17.4歳のお誕生日おめでとうございます！！！'
 	/>
-	<meta property="og:image" content={metaimg} />
+	<meta property='og:image' content={metaimg} />
 
-	<meta property="twitter:card" content="summary_large_image" />
+	<meta property='twitter:card' content='summary_large_image' />
 	<!--//TODO: meta tags-->
-	<meta property="twitter:url" content="https://subatomos.com/birthday17-4" />
+	<meta property='twitter:url' content='https://subatomos.com/birthday17-4' />
 	<meta
-		property="twitter:title"
-		content="Oozora Subaru, congratulations on your 3rd anniversary!"
+		property='twitter:title'
+		content='Oozora Subaru, congratulations on your 3rd anniversary!'
 	/>
 	<meta
-		property="twitter:description"
-		content="スバルちゃん、17.4歳のお誕生日おめでとうございます！！！"
+		property='twitter:description'
+		content='スバルちゃん、17.4歳のお誕生日おめでとうございます！！！'
 	/>
-	<meta property="twitter:image" content={`${baseURL}${metatwi}`} />
+	<meta property='twitter:image' content={`${baseURL}${metatwi}`} />
 </svelte:head>
+<main>
+	{#if $media.small}
+		<div class='hamburger'>
+			<Hamburger
+				--layer-width='30px'
+				bind:open />
+		</div>
+		{#if open}
+			<div class='burger-menu'>
+				{#each ['link 1', 'link 2', 'link 3'] as link, i}
+					<p transition:fly={{ y: -15, delay: 50 * i }}>
+						{link}
+					</p>
+				{/each}
+			</div>
 
-{#if $media.small}
-	<div class='hamburger'>
-	<Hamburger
-		--layer-width='30px'
-						 bind:open />
-	</div>
-	{#if open}
-		<div class="burger-menu">
-			{#each ['link 1', 'link 2', 'link 3'] as link, i}
-				<p transition:fly={{ y: -15, delay: 50 * i }}>
-					{link}
-				</p>
-			{/each}
+			<div class='bar' transition:scale={{ duration: 750, easing: quadOut, opacity: 1 }} />
+		{/if}
+		<div class='arrow'>
+			<img src={arrow} alt='scroll down' />
+		</div>
+	{/if}
+	<!--<svelte:window on:resize={resizeMap} />-->
+	<div class='top'>
+		<div class='background'>
+			<div class='instruments-1'></div>
+			<div class='instruments-2'></div>
+				<div class='video-container'>
+					<iframe
+						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+						allowfullscreen
+						frameborder='0'
+						height="480"
+						src="https://www.youtube.com/embed/AwLO-pisoVA"
+						title="YouTube video player"
+						width="852"
+					/>
+				</div>
 		</div>
 
-		<div class="bar" transition:scale={{ duration: 750, easing: quadOut, opacity: 1 }} />
-	{/if}
-	<div class="arrow">
-	<img src={arrow} alt="scroll down" />
-</div>
-{/if}
-<!--<svelte:window on:resize={resizeMap} />-->
-<div class='top'>
-	<div class='video-container'>
-
-			<iframe
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen
-				frameborder="0"
-				src="https://www.youtube.com/embed/AwLO-pisoVA"
-				title="YouTube video player"
-			/>
 	</div>
-</div>
-<div class='msg-map'>
-	{#if browser}
-		<svelte:component this={LeafletContainer} bind:map view={initialView} zoom={2} width='100vw' height='100vh'>
-<!--			<svelte:component this={ControlContainer} position='topright'>
-				<MapToolbar bind:eye bind:lines={showLines} on:click-reset={resetMapView} />
-				&lt;!&ndash;			<svelte:component this={MapToolbarContainer} bind:eye bind:lines={showLines} on:click-reset={resetMapView} />&ndash;&gt;
-			</svelte:component>-->
+	<div class='msg-map'>
+		{#if browser}
+			<svelte:component this={LeafletContainer} bind:map view={initialView} zoom={2} width='100vw' height='100vh'>
+				<!--			<svelte:component this={ControlContainer} position='topright'>
+								<MapToolbar bind:eye bind:lines={showLines} on:click-reset={resetMapView} />
+								&lt;!&ndash;			<svelte:component this={MapToolbarContainer} bind:eye bind:lines={showLines} on:click-reset={resetMapView} />&ndash;&gt;
+							</svelte:component>-->
 
 
 				{#each msgs as { name, twitter, message, pic, art, latlng }}
@@ -189,15 +191,26 @@ We made a video for you to celebrate!!!"
 					</svelte:component>
 				{/each}
 
-			<!--{#if showLines}
-				{#each lines as {latLngs, color}}
-					<Polyline {latLngs} {color} opacity={0.5} />
-				{/each}
-			{/if}-->
-		</svelte:component>
-	{/if}
-</div>
+				<!--{#if showLines}
+					{#each lines as {latLngs, color}}
+						<Polyline {latLngs} {color} opacity={0.5} />
+					{/each}
+				{/if}-->
+			</svelte:component>
+		{/if}
+	</div>
+</main>
 <style lang='scss'>
+  main {
+    background: url(/static/assets/images/bgseamless.webp) no-repeat center center fixed;
+    background-size: cover;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-items: center;
+    display: flex;
+    overflow: hidden;
+  }
 
   .arrow {
     //position: relative;
@@ -213,22 +226,33 @@ We made a video for you to celebrate!!!"
     }
   }
 
-	.hamburger{
-		position:absolute;
 
-		right:0px;
-	}
+  .hamburger {
+    position: absolute;
+
+    right: 0px;
+  }
 
   .top {
-
-    text-align: center;
-    padding: 5%;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    background: #c7c2b6 url(/static/assets/images/instruments/music_sheet_bg.png) no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    height: 80vh;
+    padding-top: 50vh;
+    //padding-right: 50vw;
+    * {
+      box-sizing: border-box;
+    }
   }
 
   .msg-map {
     //margin: 0 5% 5% 5%;
   }
+
   @media screen and (max-width: 849px) {
 
     .video-container {
