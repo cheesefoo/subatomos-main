@@ -18,56 +18,50 @@
 
 </script>
 <script>
-
 	import { onMount } from 'svelte';
 	import { browser } from '$app/env';
-	import 'leaflet/dist/leaflet.css';
+	import { fly, scale } from 'svelte/transition';
+	import { quadOut } from 'svelte/easing';
+	import { baseURL } from '$lib/variables.ts';
 	// import Control from '$lib/map/Control.svelte';
 	import MapToolbar from '$lib/map/MapToolbar.svelte';
 	import MapOverlayContainer from '$lib/components/MapOverlayContainer.svelte';
-	import { baseURL } from '$lib/variables.ts';
-
-	import { fly, scale } from 'svelte/transition';
-	import { quadOut } from 'svelte/easing';
 	import { Hamburger } from 'svelte-hamburgers';
 	import { media } from '$lib/stores/stores';
 	import metaimg from '/static/assets/images/3rdanniversarylogo.jpg';
 	import metatwi from '/static/assets/images/meta3rd.jpg';
 	import arrow from '/static/assets/images/scrolldown.png';
 	import LL from '../../i18n/i18n-svelte.js';
-	import Youtube from '$lib/components/YouTube.svelte';
+	import 'leaflet/dist/leaflet.css';
 
-
-	let open = false;
-
-	export let msgs;
-
-	let map;
-
+	//required for importing modules that need clientside for sveltekit
 	let LeafletContainer;
 	let ControlContainer;
 	let MarkerContainer;
 	let PopupContainer;
-
+	let CarouselContainer;
 	onMount(async () => {
 		if (browser) {
 			LeafletContainer = (await import('$lib/map/Leaflet.svelte')).default;
 			ControlContainer = (await import('$lib/map/Control.svelte')).default;
 			MarkerContainer = (await import('$lib/map/Marker.svelte')).default;
 			PopupContainer = (await import('$lib/map/Popup.svelte')).default;
+			CarouselContainer = (await import('svelte-carousel')).default;
+
 		}
 	});
-	const initialView = [0, 0];
-
-
+	export let msgs;
 
 	let bothIcon, artIcon, picIcon, noneIcon;
-
 	noneIcon = 'assets/images/subaru_waypoint_blue.png';
 	picIcon = bothIcon = artIcon = 'assets/images/subaru_waypoint_red.png';
-
+	const initialView = [0, 0];
+	let map;
 	let eye = true;
 	let showLines = false;
+	let open = false;
+	let Carousel;
+	let carousel;
 
 	function resizeMap() {
 		if (map) {
@@ -78,7 +72,6 @@
 	function resetMapView() {
 		map.setView(initialView, 3);
 	}
-
 
 </script>
 
@@ -140,19 +133,28 @@ We made a video for you to celebrate!!!'
 	<!--<svelte:window on:resize={resizeMap} />-->
 	<div class='top'>
 		<div class='background'>
-			<div class='instruments-1'></div>
+			<div class='instruments-1'>
+				<svelte:component
+					this={CarouselContainer}
+					bind:this={carousel}
+				>
+					<div>1</div>
+					<div>2</div>
+					<div>3</div>
+				</svelte:component>
+			</div>
 			<div class='instruments-2'></div>
-				<div class='video-container'>
-					<iframe
-						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-						allowfullscreen
-						frameborder='0'
-						height="480"
-						src="https://www.youtube.com/embed/AwLO-pisoVA"
-						title="YouTube video player"
-						width="852"
-					/>
-				</div>
+			<div class='video-container'>
+				<iframe
+					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+					allowfullscreen
+					frameborder='0'
+					height='480'
+					src='https://www.youtube.com/embed/AwLO-pisoVA'
+					title='YouTube video player'
+					width='852'
+				/>
+			</div>
 		</div>
 
 	</div>
