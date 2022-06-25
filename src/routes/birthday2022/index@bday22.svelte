@@ -23,15 +23,22 @@
 	import { fly, scale } from 'svelte/transition';
 	import { quadOut } from 'svelte/easing';
 	import { baseURL } from '$lib/variables.ts';
-	// import Control from '$lib/map/Control.svelte';
 	import MapToolbar from '$lib/map/MapToolbar.svelte';
 	import MapOverlayContainer from '$lib/components/MapOverlayContainer.svelte';
 	import { Hamburger } from 'svelte-hamburgers';
+	import LL from '../../i18n/i18n-svelte.js';
 	import { media } from '$lib/stores/stores';
 	import metaimg from '/static/assets/images/3rdanniversarylogo.jpg';
 	import metatwi from '/static/assets/images/meta3rd.jpg';
 	import arrow from '/static/assets/images/scrolldown.png';
-	import LL from '../../i18n/i18n-svelte.js';
+	import piano from '/static/assets/images/instruments/piano.png';
+	import accordion from '/static/assets/images/instruments/accordion.png';
+	import flute from '/static/assets/images/instruments/flute.png';
+	import drums from '/static/assets/images/instruments/drums.png';
+	import guitar from '/static/assets/images/instruments/guitar.png';
+	import saxophone from '/static/assets/images/instruments/saxophone.png';
+	import glock from '/static/assets/images/instruments/glockenspiel.png';
+
 	import 'leaflet/dist/leaflet.css';
 
 	//required for importing modules that need clientside for sveltekit
@@ -60,7 +67,6 @@
 	let eye = true;
 	let showLines = false;
 	let open = false;
-	let Carousel;
 	let carousel;
 
 	function resizeMap() {
@@ -126,37 +132,59 @@ We made a video for you to celebrate!!!'
 
 			<div class='bar' transition:scale={{ duration: 750, easing: quadOut, opacity: 1 }} />
 		{/if}
+		{:else}
 		<div class='arrow'>
 			<img src={arrow} alt='scroll down' />
 		</div>
 	{/if}
 	<!--<svelte:window on:resize={resizeMap} />-->
+	<p class='hbd-text'>Happy 17.4th Birthday, Subaru!!!
+		<br>
+		スバルちゃん、17.4歳のお誕生日おめでとうございます！！！
+	</p>
 	<div class='top'>
-		<div class='background'>
-			<div class='instruments-1'>
-				<svelte:component
-					this={CarouselContainer}
-					bind:this={carousel}
-				>
-					<div>1</div>
-					<div>2</div>
-					<div>3</div>
-				</svelte:component>
-			</div>
-			<div class='instruments-2'></div>
-			<div class='video-container'>
-				<iframe
-					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-					allowfullscreen
-					frameborder='0'
-					height='480'
-					src='https://www.youtube.com/embed/AwLO-pisoVA'
-					title='YouTube video player'
-					width='852'
-				/>
-			</div>
+		<div class='instruments instruments-1'>
+			<svelte:component
+				this={CarouselContainer}
+				bind:this={carousel}
+				autoplay
+				autoplayDuration={5000}
+				dots={false}
+				arrows={false}
+				swiping={false}
+			>
+				<img src={piano} alt='piano' />
+				<img src={accordion} alt='accordion' />
+				<img src={flute} alt='flute' />
+			</svelte:component>
 		</div>
 
+		<div class='video-container'>
+			<iframe
+				allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+				allowfullscreen
+				frameborder='0'
+				height='480'
+				src='https://www.youtube.com/embed/AwLO-pisoVA'
+				title='YouTube video player'
+				width='852'
+			/>
+		</div>
+		<div class='instruments instruments-2'>
+			<svelte:component
+				this={CarouselContainer}
+				autoplay
+				autoplayDuration={6000}
+				dots={false}
+				arrows={false}
+				swiping={false}
+			>
+				<img src={saxophone} alt='saxophone' />
+				<img src={guitar} alt='guitar' />
+				<img src={drums} alt='drums' />
+
+			</svelte:component>
+		</div>
 	</div>
 	<div class='msg-map'>
 		{#if browser}
@@ -170,14 +198,12 @@ We made a video for you to celebrate!!!'
 				{#each msgs as { name, twitter, message, pic, art, latlng }}
 					<!--{@debug lat, lng}-->
 					<svelte:component this={MarkerContainer} {latlng} width={30} height={30}>
-						{#if (pic !== '' && art !== '')}
-							<img src={bothIcon} width='30' height='30' />
-						{:else if pic }
-							<img src={picIcon} width='30' height='30' />
-						{:else if art }
-							<img src={artIcon} width='30' height='30' />
+						{#if (pic === '' && art === '')}
+							<img src={noneIcon} width='30' height='30' alt='message for Subaru' />
+
 						{:else}
-							<img src={noneIcon} width='30' height='30' />
+							<img src={bothIcon} width='30' height='30' alt='picture for Subaru' />
+
 						{/if}
 						<!--						<svg style='width:30px;height:30px' fill='none' stroke-linecap='round' stroke-linejoin='round'
 														 stroke-width='2' viewBox='0 0 24 24' stroke='currentColor'>
@@ -215,16 +241,12 @@ We made a video for you to celebrate!!!'
   }
 
   .arrow {
-    //position: relative;
-
-    //text-align: center;
-    //flex: 1 1 100%;
-    //flex: 1 1 20%;
+		position:absolute;
     animation: bounce 2s infinite;
-    margin-top: 10vh;
+    bottom:0;
 
     img {
-      width: 100%;
+      width: 90%;
     }
   }
 
@@ -235,20 +257,46 @@ We made a video for you to celebrate!!!'
     right: 0px;
   }
 
+  .hbd-text {
+    position: absolute;
+		text-align: center;
+    font-family: klee, sans-serif;
+    font-size: 2em;
+		font-weight: bolder;
+    color: salmon;
+  }
+
+  .instruments {
+    display: block;
+    position: relative;
+    width: 15vw;
+  }
+
+  .instruments-1 {
+    top: 35%;
+    animation: bounce 5s infinite;
+  }
+
+  .instruments-2 {
+    bottom: 15%;
+    animation: bounce 6s infinite;
+  }
+
   .top {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-    background: #c7c2b6 url(/static/assets/images/instruments/music_sheet_bg.png) no-repeat;
+    background: #c7c2b6 url(/static/assets/images/instruments/music_sheet_bg.png) no-repeat 0% 20vh;
     background-size: 100%;
     width: 100vw;
     height: 80vh;
-    padding-top: 50vh;
+    padding-top: 20vh;
     //padding-right: 50vw;
     * {
       box-sizing: border-box;
     }
+
   }
 
   .msg-map {
