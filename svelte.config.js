@@ -37,7 +37,7 @@ const config = {
 			})],*/
 			// plugins: [isoImport()],
 			optimizeDeps: {
-				include: ['fuzzy','@carbon/charts']
+				include: ['fuzzy','@carbon/charts','lodash.get', 'lodash.isequal', 'lodash.clonedeep']
 			},
 			server: {
 				fs: {
