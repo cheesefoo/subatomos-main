@@ -45,7 +45,7 @@ let messages = [
 	},
 	{
 		name: '@KumaStarlight',
-		twitter: '',
+		twitter: '@kumastarlight',
 		message: 'Subaru Happy birthday!! Wish you good luck and stay healthy!! you are amazing!!!',
 		pic: '',
 		art: '',
@@ -93,7 +93,7 @@ let messages = [
 	},
 	{
 		name: '@Erendon0',
-		twitter: '',
+		twitter: '@erondon0',
 		message: 'Happy birthday Subaru! I started watching you in 2020. You and your streams have gotten me through many tough times. I have been learning Japanese for 2 years so I can watch your streams without subtitles. You always make us happy! Be safe Subaru and take as many days off as you can! Thank you Subaru! OOZORA SUBARU, OOOOTAAAAAAANNNJOOOOUBIIIIIIIIIIIII OOOOOOOOOOOOOOMMMMMMMMMEEEEEEEEEDEEEEEEEEEEEEEETOOOOOOOOOOOOOUUUUUU!!!!',
 		pic: '',
 		art: '',
@@ -125,7 +125,7 @@ let messages = [
 	},
 	{
 		name: '@ace_highwind',
-		twitter: '',
+		twitter: '@ace_highwind',
 		message: 'Hello Subaru. First of all, HAPPY BIRTHDAY!! How are you feeling? Another year went by.  Do you think that you managed to grow up as a person or achieved something meaningful? It\'s great to look back and check what you have done the previous years and compare how much we have changed, the photo I added is a place that I have visited a lot and besides the castle that hasn\'t changed that much, the surroundings have changed a lot. If you want to check it, the place it\'s called: El parc de la Mar.',
 		pic: 'Subarudo_in_Majorca_edited2.jpg',
 		art: '',
@@ -133,7 +133,7 @@ let messages = [
 	},
 	{
 		name: '@gegeji4',
-		twitter: '',
+		twitter: '@gegeji4',
 		message: 'Your streams and personality always make my day! I like how you are funny and it\'s very entertaining to watch you! I really loved your performance of Pleiades, the song and your dance is great! So Happy Birthday and I wish you further success for the future and beyond!',
 		pic: '',
 		art: '',
@@ -149,7 +149,7 @@ let messages = [
 	},
 	{
 		name: '@nezotempest',
-		twitter: '',
+		twitter: '@nezotempest',
 		message: 'Subaru I hope you have a wonderful and awesome birthday!!!! I\'ve been following you since your debut stream and gosh you sure have changed a lot but I still love watching your streams!!! I hope for another wonderful year of subaru!!! Happy birthday my favorite duck!!!',
 		pic: '',
 		art: '',
@@ -157,7 +157,7 @@ let messages = [
 	},
 	{
 		name: '@Kohiru_Aam',
-		twitter: '',
+		twitter: '@kohiru_aam',
 		message: 'Subaru! I\'ve been watching you for about 2 years now. You always make my day better every time I tune in your stream or watch your clips. You give me motivation to continue doing my best even when I\'m feeling down . Please continue to be the sun of Hololive for all of us! Your brightest smile is like our morning cup of coffee and I will continue to support you till the end of the road!  From your truly, Subatomo.',
 		pic: '',
 		art: '',
@@ -181,7 +181,7 @@ let messages = [
 	},
 	{
 		name: '@Linajabba',
-		twitter: '',
+		twitter: '@linajabba',
 		message: 'Hello Subaru,  I have watched you for over 1 and a half years now and I really respect your hard work and how you handle other people (you seem like a great friend and support to other Holomems) anyways I really like you and will keep supporting you. Greetings from Germany, Linajabba',
 		pic: '',
 		art: '',
@@ -189,7 +189,7 @@ let messages = [
 	},
 	{
 		name: '@hanaz__kambing',
-		twitter: '',
+		twitter: '@hanaz__kambing',
 		message: '  Shuba!! Subaru is cute! Before knowing Subaru, I\'ve never know that Hololive- no, VTuber was a thing. I thought that there\'s just HoloMyth because I don\'t remember seeing such an interesting concept of streaming. But then I realized that VTuber are kinda my childhood 😅  But anyway, Subaru is the one who made me more interested in Hololive. Subaru changed my life and I am glad that I discover her! Everytime I feel empty or lonely, I get me some Subaru 😌  So, thank you Subaru!! Love ya!! 😊💖',
 		pic: '',
 		art: '',
@@ -898,6 +898,71 @@ let messages = [
 		pic: '',
 		art: '',
 		latlng: '10.72,122.56'
+	},
+	{
+		name: 'ヤン Swee Chiang ',
+		twitter: '',
+		message: 'Remember to rest well and not to overwork yourself Subaru-chan. Subatomos will always be here waiting for you. いつも応援してから、ゆっくりしてね。',
+		pic: '',
+		art: '',
+		latlng: '2.4,103.01'
+	},
+	{
+		name: '@Etto2054',
+		twitter: '@Etto2054',
+		message: 'Happy birthday Subaru!! I just wanted to thank you for all you do to entertain us. I truly admire the way you keep being positive and how you reflect that in your streams and interacting with other holomembers. Also I want to thank to all the subatomos for making this a possibility to send a message.  Hope you have a wonderful day, you deserve all good things and I really really really admire you. Greetings from Argentina.',
+		pic: '',
+		art: '',
+		latlng: '-38.41,-63.61'
+	},
+	{ name: 'ムネくん', twitter: '', message: 'いつも元気もらってます', pic: '', art: '', latlng: '36.22,140.18' },
+	{
+		name: '@brontidepng',
+		twitter: '@brontidepng',
+		message: 'Happy birthday, Subaru!! Another year, another birthday to celebrate! You deserve happiness and I hope you enjoy your special day!',
+		pic: 'VXiJ9et.jpeg',
+		art: 'V4ogPwM.png',
+		latlng: '-37.81,144.94'
+	},
+	{
+		name: '@Asriiiel',
+		twitter: '@Asriiiel',
+		message: 'Thank you Subaru so much for always being so entertaining and nice to watch, whether a watchalong or game, I appreciate so much all the company over the last 4 years. It helped me go through tough times when COVID hit the world. Thank you my favourite duck of Hololive.',
+		pic: '',
+		art: '',
+		latlng: '40.46,-3.74'
+	},
+	{
+		name: '@confused_alif',
+		twitter: '@confused_alif',
+		message: 'Ever since meeting Subaru and hololive in general, my college life has been a lot brighter and I don\'t feel as alone as I would be. Subaru truly is the sun of hololive!!',
+		pic: '',
+		art: 'birthday doodle.png',
+		latlng: '2.19,102.25'
+	},
+	{
+		name: '@RoyTayWeiXuan',
+		twitter: '@RoyTayWeiXuan',
+		message: 'I\'m very glad you enjoy the Final Fantasy games so much and have fun playing them on stream! I don\'t know a lot of friends who enjoy FFVII and Crisis Core, so watching your FF streams made me happy since I love seeing other people enjoy the games I enjoy! I hope you get to stream FF10 in the future too, as well as the other FF games. Please continue streaming at your own pace and having fun while also taking good care of your health, and have a happy birthday Shuba! :D',
+		pic: '',
+		art: '',
+		latlng: '1.35,103.82'
+	},
+	{
+		name: 'Placek#3208',
+		twitter: '',
+		message: 'Happy Birthday Subaru! Thank you for being our sun for four years already! In this day I wish you that you can fulfill your dreams, that you can spend time on things you love and most importantly that you will stay healthy! Know that I and other Subatomos love your smile and how cheerful you are! Let\'s hope you can spend this day not only with us but also with your friends and family! Once more Happy Birthday Subaru-chan! (On the photo Subarudo with friends, I like collecting plushies!)',
+		pic: '20220625_174425.jpg',
+		art: '',
+		latlng: '51.91,19.14'
+	},
+	{
+		name: '김률현 Kim, Ryulhyeon',
+		twitter: '@rimkyul',
+		message: 'Hello Subaru! I just want you to know that you bring so much happiness to so much people including me everyday with your hard work and simply being Subaru! You\'re forever special in our hearts and I personally will never forget you even though I have memory problems. Keep up the great work and know that we\'re always here for you and will support you until the end of time!! ',
+		pic: '',
+		art: '',
+		latlng: '35.18,129.07'
 	}
 
 ];
