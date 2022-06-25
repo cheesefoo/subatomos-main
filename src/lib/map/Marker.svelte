@@ -2,6 +2,18 @@
 	import L from 'leaflet';
 	import { getContext, setContext } from 'svelte';
 
+
+/*	onMount(async () => {
+		if (browser) {
+			var markers = L.markerClusterGroup({
+				iconCreateFunction: function(cluster) {
+					return L.divIcon({ html: '<b>' + cluster.getChildCount() + '</b>' });
+				}
+			});
+		}
+	});*/
+
+
 	let classNames = undefined;
 	export { classNames as class };
 
@@ -19,7 +31,10 @@
 	}
 
 	const layerGroup = getContext('layerGroup')();
+	const markers = getContext('markers')();
 	setContext('layer', () => marker);
+
+	// console.log(markers);
 
 	function createMarker(markerElement) {
 		let icon = L.divIcon({
@@ -27,8 +42,10 @@
 			className: 'map-marker',
 			iconSize: L.point(width, height)
 		});
-		marker = L.marker([lat,lng], { icon }).addTo(layerGroup);
-
+		// marker = L.marker([lat,lng], { icon }).addTo(layerGroup);
+		marker = L.marker([lat,lng], { icon })//.addTo(markers);
+		markers.addLayer(marker);
+		// markers.refreshClusters();
 		return {
 			destroy() {
 				if (marker) {
