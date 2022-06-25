@@ -156,15 +156,14 @@ We made a video for you to celebrate!!!"
 </div>
 <div class='msg-map'>
 	{#if browser}
-		<svelte:component this={LeafletContainer} bind:map view={initialView} zoom={2} height='65vh'>
-			<svelte:component this={ControlContainer} position='topright'>
+		<svelte:component this={LeafletContainer} bind:map view={initialView} zoom={2} width='100vw' height='100vh'>
+<!--			<svelte:component this={ControlContainer} position='topright'>
 				<MapToolbar bind:eye bind:lines={showLines} on:click-reset={resetMapView} />
-				<!--			<svelte:component this={MapToolbarContainer} bind:eye bind:lines={showLines} on:click-reset={resetMapView} />-->
-			</svelte:component>
+				&lt;!&ndash;			<svelte:component this={MapToolbarContainer} bind:eye bind:lines={showLines} on:click-reset={resetMapView} />&ndash;&gt;
+			</svelte:component>-->
 
-			{#if eye}
 
-				{#each msgs as { name, message, pic, art, latlng }}
+				{#each msgs as { name, twitter, message, pic, art, latlng }}
 					<!--{@debug lat, lng}-->
 					<svelte:component this={MarkerContainer} {latlng} width={30} height={30}>
 						{#if (pic !== '' && art !== '')}
@@ -184,12 +183,11 @@ We made a video for you to celebrate!!!"
 						<svelte:component this={PopupContainer}>
 
 
-							<MapOverlayContainer {name} {message} {pic} {art} />
+							<MapOverlayContainer {name} {twitter} {message} {pic} {art} />
 						</svelte:component>
 						<!--					<Pane></Pane>-->
 					</svelte:component>
 				{/each}
-			{/if}
 
 			<!--{#if showLines}
 				{#each lines as {latLngs, color}}
@@ -229,7 +227,7 @@ We made a video for you to celebrate!!!"
   }
 
   .msg-map {
-    margin: 0 5% 5% 5%;
+    //margin: 0 5% 5% 5%;
   }
   @media screen and (max-width: 849px) {
 
