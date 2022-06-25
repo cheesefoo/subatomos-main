@@ -40,7 +40,7 @@
 				<br>
 				{#if pic || art}
 					<hr className='art-divider' />
-					<span>Tap to enlarge タップで拡大</span>
+					<span id='tap-to-enlarge'>Tap to enlarge タップで拡大</span>
 					<div class='pics-art-section'>
 						{#if pic}
 							<div class='fanart'>
@@ -113,16 +113,14 @@
 
     &.yellow {
       background: #fff9e9 url('/static/assets/images/Star_bg_yellow.png') no-repeat right top;
-      background-image: url('/static/assets/images/namebanner.webp'),
-      url(/static/assets/images/Star_bg_yellow.png);
+      background-image: url('/static/assets/images/namebanner.webp'), url(/static/assets/images/Star_bg_yellow.png);
       background-position: 0 20px, right top;
       background-size: 100% 2.5em, 40% auto;
     }
 
     &.pink {
       background: #fdebe7 url('/static/assets/images/Star_bg_pink.png') no-repeat right top;
-      background-image: url('/static/assets/images/namebanner.webp'),
-      url(/static/assets/images/Star_bg_pink.png);
+      background-image: url('/static/assets/images/namebanner.webp'), url(/static/assets/images/Star_bg_pink.png);
       background-position: 0 20px, right top;
       background-size: 100% 2.5em, 40% auto;
     }
@@ -174,12 +172,20 @@
   .art-divider {
     width: 100%;
     margin: 0 $hrmargin;
-
     max-width: 40ch;
   }
 
   .fanart {
     padding-bottom: 2em;
+  }
+
+  .overlay-image {
+    width: 100%;
+    max-height: 60%;
+  }
+
+  .pics-art-section {
+    display: flex;
   }
 
   .stars {
@@ -190,15 +196,10 @@
     zoom: 0.5;
   }
 
-  .pics-art-section {
-    display: flex;
+  #tap-to-enlarge {
+    font-size: 0.9em;
   }
 
-  .overlay-image {
-
-    width: 100%;
-    max-height: 60%;
-  }
 
   @media screen and (max-width: 849px) {
   }
