@@ -14,18 +14,23 @@
 		<div class="credits-section">
 			<h4>{$LL.BDAY22.PERFORMERS()}</h4>
 		</div>
-		
+
 		<div class="credits-section">
+			<h4>{$LL.BDAY22.COMPOSITION()}</h4>
+			<Credit desc={$LL.BDAY22.MEDLEY()} {...creditsList.jeremy}/>
+			<Credit desc={$LL.BDAY22.SCORE()} {...creditsList.spaghetti }/>
 			<h4>{$LL.BDAY22.EDITING()}</h4>
-			<Credit {...creditsList.gundam} />
-			<h4>{$LL.BDAY22.TRANSLATION()}</h4>
-			<Credit {...creditsList.gundam} />
+			<Credit desc='Video' {...creditsList.gundam} />
+			<Credit desc={$LL.BDAY22.MIXING()} {...creditsList.hiki }/>
+
 		</div>
 		<div class="credits-section">
 			<h4>{$LL.BDAY22.DIRECTION()}</h4>
 
 			<Credit desc={$LL.BDAY22.WEBSITE()} {...creditsList.venn} />
 			<Credit {...creditsList.udarash} />
+			<h4>{$LL.BDAY22.TRANSLATION()}</h4>
+			<Credit {...creditsList.gundam} />
 		</div>
 <!--		{#if $media.mobile || $media.tablet}
 			<div class="credits-section">
@@ -68,7 +73,7 @@
 	.credits-grid {
 		display: grid;
 		padding: 0 5% 0 5%;
-		grid-template-columns: repeat(5, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		column-gap: 1em;
 		row-gap: 1em;
 	}
