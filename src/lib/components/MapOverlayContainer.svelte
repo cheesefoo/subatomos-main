@@ -85,7 +85,7 @@
   }
 
   :global(.leaflet-popup-content) {
-    margin: 0;
+    margin: 0 !important;
   }
 
   .box-border { //,:global(.leaflet-popup-content-wrapper) {

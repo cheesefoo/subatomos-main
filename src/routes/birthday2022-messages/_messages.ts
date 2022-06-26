@@ -739,7 +739,7 @@ let messages = [
 		message: 'Selamat Hari Jadi to Subaru!!! Happy birthday, eat well, sleep a lot and keep shining to brighten up people\'s lives with your smile!!! Love how you fly in Alternative!!',
 		pic: '',
 		art: '',
-		latlng: '4.53,144.72'
+		latlng: '4.53,114.72'
 	},
 	{
 		name: '@ren_ydn810',
