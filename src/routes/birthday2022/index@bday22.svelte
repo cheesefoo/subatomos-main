@@ -208,7 +208,8 @@ We made a video for you to celebrate!!!'
 				title='YouTube video player'
 				width='852'
 			/>
-			<div class='show-map'>Tap to see messages from Subatomos!<br>タップするとスバ友からのメッセージが表示されます!
+			<div class='show-map'>
+				<p>Tap to see messages from Subatomos!<br>タップするとスバ友からのメッセージが表示されます!</p>
 				<input type='image' src={showMapIcon} class:show-map-button={!eye} on:click={showMap} alt='show map' />
 
 			</div>
@@ -324,6 +325,8 @@ We made a video for you to celebrate!!!'
     font-size: 2em;
     font-weight: bolder;
     color: salmon;
+    text-shadow: 2px 2px black;
+
   }
 
   .instruments {
@@ -356,6 +359,14 @@ We made a video for you to celebrate!!!'
     position: absolute;
     bottom: 0;
 
+		p{
+			position:absolute;
+			font-weight:bold;
+			font-family:klee, sans-serif;
+			font-size:2em;
+			color: salmon;
+      text-shadow: 2px 2px black;
+		}
     input {
       width: 30%;
     }
