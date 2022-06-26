@@ -12,6 +12,7 @@
 	if (twitter !== '') {
 		twitter = 'https://twitter.com/' + twitter.replace('@', '');
 	}
+	let msg = message.replaceAll('œ', '\n');
 	let yellow = true;
 
 	let size = '0.9x';
@@ -36,8 +37,7 @@
 					{name}
 				</span>
 				<br>
-				<p class='overlay-text'>{message}</p>
-				<br>
+				<p class='overlay-text'>{msg}</p>
 				{#if pic || art}
 					<hr className='art-divider' />
 					<span id='tap-to-enlarge'>Tap to enlarge タップで拡大</span>
@@ -182,6 +182,11 @@
   .overlay-image {
     width: 100%;
     max-height: 60%;
+  }
+
+  .overlay-text {
+    white-space: pre-line;
+    font-size: 1em;
   }
 
   .pics-art-section {
