@@ -1,1 +1,4 @@
-export let SNS: 'twitter' | 'yt' | 'ig' | 'www' | string;
+export enum SNSType
+{
+	TWITTER = 'twitter', YOUTUBE = 'yt', GITHUB = 'github', DISCORD = 'discord', INSTAGRAM = 'ig', WEBSITE = 'www'
+}

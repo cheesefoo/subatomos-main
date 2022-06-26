@@ -4,12 +4,16 @@
 
 	export let name = undefined;
 
-	export let avatar = `https://avatars.dicebear.com/api/human/${name}.svg`;
+	export let avatar;
+	export let useDummyAvatars = false;
+	if(useDummyAvatars && avatar===undefined)
+		avatar= `https://avatars.dicebear.com/api/human/${name}.svg`;
 	export let sns = undefined;
 	export let sns2 = undefined;
 	export let url = undefined;
 	export let url2 = undefined;
 	export let desc = '';
+	export let instrument = undefined;
 	let size = '';
 	if ($media.small) {
 		size = '2x';

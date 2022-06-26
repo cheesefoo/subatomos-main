@@ -205,6 +205,150 @@ export type Translation = {
 		 */
 		'THANKS': string
 	}
+	'BDAY22': {	
+		/**
+		 * Subatomos' project to celebrate Subaru's 17.4th birthday, with an online concert of her favorite songs, and Subatomos taking pictures of their Subarudo duck!
+		 */
+		'META_DESC': string
+		/**
+		 * Subaru's 17.4th birthday!
+		 */
+		'TITLE': string
+		/**
+		 * Happy 17.4th birthday, Subaru!
+		 */
+		'CONGRATS': string
+		/**
+		 * Credits
+		 */
+		'CREDITS': string
+		/**
+		 * Concert
+		 */
+		'Concert': string
+		/**
+		 * Tap to see messages from Subatomos!
+		 */
+		'SHOW_MAP': string
+		/**
+		 * Hide Map
+		 */
+		'HIDE_MAP': string
+		/**
+		 * Performers
+		 */
+		'PERFORMERS': string
+		'INSTRUMENTS': {	
+			/**
+			 * Alto
+			 */
+			'ALTO': string
+			/**
+			 * Baritone
+			 */
+			'BARITONE': string
+			/**
+			 * Soprano
+			 */
+			'SOPRANO': string
+			/**
+			 * Tenor
+			 */
+			'TENOR': string
+			/**
+			 * Accordion
+			 */
+			'ACCORDION': string
+			/**
+			 * Cello
+			 */
+			'CELLO': string
+			/**
+			 * Clarinet
+			 */
+			'CLARINET': string
+			/**
+			 * Drums
+			 */
+			'DRUMS': string
+			/**
+			 * Euphonium
+			 */
+			'EUPHONIUM': string
+			/**
+			 * Flute
+			 */
+			'FLUTE': string
+			/**
+			 * Guitar
+			 */
+			'GUITAR': string
+			/**
+			 * Horn
+			 */
+			'HORN': string
+			/**
+			 * Piano
+			 */
+			'PIANO': string
+			/**
+			 * Piccolo
+			 */
+			'PICCOLO': string
+			/**
+			 * Sax
+			 */
+			'SAX': string
+			/**
+			 * Trumpet
+			 */
+			'TRUMPET': string
+			/**
+			 * Violin
+			 */
+			'VIOLIN': string
+			/**
+			 * Western Percussion
+			 */
+			'WESTERN_PERCUSSION': string
+		}
+		/**
+		 * Music
+		 */
+		'MUSIC': string
+		/**
+		 * Medley Arrangement
+		 */
+		'MEDLEY': string
+		/**
+		 * Website Design
+		 */
+		'DESIGN': string
+		/**
+		 * Editing
+		 */
+		'EDITING': string
+		/**
+		 * Score Composition
+		 */
+		'SCORE': string
+		/**
+		 * Audio Mixing
+		 */
+		'MIXING': string
+		/**
+		 * Translation
+		 */
+		'TRANSLATION': string
+		/**
+		 * Direction
+		 */
+		'DIRECTION': string
+		/**
+		 * Special Thanks
+		 */
+		'THANKS': string
+	}
 	'PONDS': {	
 		/**
 		 * Subatomos' project to celebrate Subaru's birthday & 1M subscribers milestone, with over 2000 duck submissions from fans!
@@ -443,6 +587,150 @@ export type TranslationFunctions = {
 		 * Project Logo
 		 */
 		'LOGO_PROJ': () => LocalizedString
+		/**
+		 * Special Thanks
+		 */
+		'THANKS': () => LocalizedString
+	}
+	'BDAY22': {	
+		/**
+		 * Subatomos' project to celebrate Subaru's 17.4th birthday, with an online concert of her favorite songs, and Subatomos taking pictures of their Subarudo duck!
+		 */
+		'META_DESC': () => LocalizedString
+		/**
+		 * Subaru's 17.4th birthday!
+		 */
+		'TITLE': () => LocalizedString
+		/**
+		 * Happy 17.4th birthday, Subaru!
+		 */
+		'CONGRATS': () => LocalizedString
+		/**
+		 * Credits
+		 */
+		'CREDITS': () => LocalizedString
+		/**
+		 * Concert
+		 */
+		'Concert': () => LocalizedString
+		/**
+		 * Tap to see messages from Subatomos!
+		 */
+		'SHOW_MAP': () => LocalizedString
+		/**
+		 * Hide Map
+		 */
+		'HIDE_MAP': () => LocalizedString
+		/**
+		 * Performers
+		 */
+		'PERFORMERS': () => LocalizedString
+		'INSTRUMENTS': {	
+			/**
+			 * Alto
+			 */
+			'ALTO': () => LocalizedString
+			/**
+			 * Baritone
+			 */
+			'BARITONE': () => LocalizedString
+			/**
+			 * Soprano
+			 */
+			'SOPRANO': () => LocalizedString
+			/**
+			 * Tenor
+			 */
+			'TENOR': () => LocalizedString
+			/**
+			 * Accordion
+			 */
+			'ACCORDION': () => LocalizedString
+			/**
+			 * Cello
+			 */
+			'CELLO': () => LocalizedString
+			/**
+			 * Clarinet
+			 */
+			'CLARINET': () => LocalizedString
+			/**
+			 * Drums
+			 */
+			'DRUMS': () => LocalizedString
+			/**
+			 * Euphonium
+			 */
+			'EUPHONIUM': () => LocalizedString
+			/**
+			 * Flute
+			 */
+			'FLUTE': () => LocalizedString
+			/**
+			 * Guitar
+			 */
+			'GUITAR': () => LocalizedString
+			/**
+			 * Horn
+			 */
+			'HORN': () => LocalizedString
+			/**
+			 * Piano
+			 */
+			'PIANO': () => LocalizedString
+			/**
+			 * Piccolo
+			 */
+			'PICCOLO': () => LocalizedString
+			/**
+			 * Sax
+			 */
+			'SAX': () => LocalizedString
+			/**
+			 * Trumpet
+			 */
+			'TRUMPET': () => LocalizedString
+			/**
+			 * Violin
+			 */
+			'VIOLIN': () => LocalizedString
+			/**
+			 * Western Percussion
+			 */
+			'WESTERN_PERCUSSION': () => LocalizedString
+		}
+		/**
+		 * Music
+		 */
+		'MUSIC': () => LocalizedString
+		/**
+		 * Medley Arrangement
+		 */
+		'MEDLEY': () => LocalizedString
+		/**
+		 * Website Design
+		 */
+		'DESIGN': () => LocalizedString
+		/**
+		 * Editing
+		 */
+		'EDITING': () => LocalizedString
+		/**
+		 * Score Composition
+		 */
+		'SCORE': () => LocalizedString
+		/**
+		 * Audio Mixing
+		 */
+		'MIXING': () => LocalizedString
+		/**
+		 * Translation
+		 */
+		'TRANSLATION': () => LocalizedString
+		/**
+		 * Direction
+		 */
+		'DIRECTION': () => LocalizedString
 		/**
 		 * Special Thanks
 		 */
