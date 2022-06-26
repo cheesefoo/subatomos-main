@@ -963,6 +963,38 @@ let messages = [
 		pic: '',
 		art: '',
 		latlng: '35.18,129.07'
+	},
+	{
+		name: '@Ryu01661172',
+		twitter: '@Ryu01661172',
+		message: 'Happy birthday to the best idol Subaru! You helped me in difficult moments of my life and always made me smile. Therefore, I decided that I would start a community in the Russian social network for the same fans as me. I try to convey to as many people as possible about how wonderful you are. Watching clips, tweets and streams with you, I rejoiced and cried with you, stay as cheerful as you are! I will continue to support you, know that in Russia they also love you very much! Sorryforbad english',
+		pic: 'Subaru.png',
+		art: '',
+		latlng: '61.77,34.36'
+	},
+	{
+		name: 'Clov',
+		twitter: '',
+		message: 'Hi Subaru, hope you\'re having an awesome day! I\'ve been enjoying your streams a lot regardless of not understanding much Japanese, but I\'m learning the language so I slowly understand more and more each day. Keep doing an awesome job, your English is getting very good and I really appreciate your efforts to make us, overseas viewers, understand your content. お誕生日おめでとう！',
+		pic: 'duck_edited.jpg',
+		art: '',
+		latlng: '40.41,-3.7'
+	},
+	{
+		name: 'GurenSan',
+		twitter: '',
+		message: 'Happy Birthday Subaru! I\'ve been watching you for around 2 years now, and everyday you just keep making us happier and happier. I wish you the best and a lot of success from now on!',
+		pic: '',
+		art: '',
+		latlng: '-14.23,-51.92'
+	},
+	{
+		name: 'まろやか男',
+		twitter: '',
+		message: 'スバルちゃん誕生日おめでとう！ スバルちゃんのおかげでイラストを描くことにも出会えたし、毎日が充実してる！ これからも頑張って！！！ 応援してる！！！',
+		pic: '',
+		art: '',
+		latlng: '36.2,138.25'
 	}
 
 ];
