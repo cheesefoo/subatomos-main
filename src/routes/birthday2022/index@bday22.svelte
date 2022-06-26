@@ -54,7 +54,7 @@
 			MarkerContainer = (await import('$lib/map/Marker.svelte')).default;
 			PopupContainer = (await import('$lib/map/Popup.svelte')).default;
 			CarouselContainer = (await import('svelte-carousel')).default;
-
+			hideMap();
 		}
 	});
 	export let msgs;
@@ -68,6 +68,36 @@
 	let showLines = false;
 	let open = false;
 	let carousel;
+
+
+	function showMap() {
+		const elems = document.querySelectorAll('main > *');
+		let index = 0;
+		const length = elems.length;
+		for (; index < length; index++) {
+			elems[index].style.transition = 'opacity 0.5s linear 0s';
+			elems[index].style.opacity = 0;
+		}
+
+		document.querySelector('.msg-map').style.zIndex = '2';
+		document.querySelector('.msg-map').style.opacity = '1';
+	}
+
+	function hideMap() {
+		const elems = document.querySelectorAll('main > *');
+		let i = 0;
+		const length = elems.length;
+		for (; i < length; i++) {
+			elems[i].style.transition = 'opacity 0.5s linear 0s';
+			elems[i].style.opacity = 1;
+		}
+
+
+		document.querySelector('.msg-map').style.opacity = '0';
+		setTimeout(function() {
+			document.querySelector('.msg-map').style.zIndex = '-1';
+		}, (1000));
+	}
 
 	function resizeMap() {
 		if (map) {
@@ -132,11 +162,12 @@ We made a video for you to celebrate!!!'
 
 			<div class='bar' transition:scale={{ duration: 750, easing: quadOut, opacity: 1 }} />
 		{/if}
-		{:else}
-		<div class='arrow'>
+	{:else}
+		<!--<div class='arrow'>
 			<img src={arrow} alt='scroll down' />
-		</div>
+		</div>-->
 	{/if}
+	<button class:show-map-button={!eye} type='button' on:click={showMap} style='position:absolute; bottom:5vh;'>im a button or something lol</button>
 	<!--<svelte:window on:resize={resizeMap} />-->
 	<p class='hbd-text'>Happy 17.4th Birthday, Subaru!!!
 		<br>
@@ -189,10 +220,11 @@ We made a video for you to celebrate!!!'
 	<div class='msg-map'>
 		{#if browser}
 			<svelte:component this={LeafletContainer} bind:map view={initialView} zoom={2} width='100vw' height='100vh'>
-				<!--			<svelte:component this={ControlContainer} position='topright'>
-								<MapToolbar bind:eye bind:lines={showLines} on:click-reset={resetMapView} />
-								&lt;!&ndash;			<svelte:component this={MapToolbarContainer} bind:eye bind:lines={showLines} on:click-reset={resetMapView} />&ndash;&gt;
-							</svelte:component>-->
+				<svelte:component this={ControlContainer} position='topright'>
+					<!--								<MapToolbar bind:eye bind:lines={showLines} on:click-reset={resetMapView} />-->
+					<MapToolbar bind:eye on:click-hide-map={hideMap} />
+					<!--			<svelte:component this={MapToolbarContainer} bind:eye bind:lines={showLines} on:click-reset={resetMapView} />-->
+				</svelte:component>
 
 
 				{#each msgs as { name, twitter, message, pic, art, latlng }}
@@ -241,9 +273,9 @@ We made a video for you to celebrate!!!'
   }
 
   .arrow {
-		position:absolute;
+    position: absolute;
     animation: bounce 2s infinite;
-    bottom:0;
+    bottom: 0;
 
     img {
       width: 90%;
@@ -259,10 +291,10 @@ We made a video for you to celebrate!!!'
 
   .hbd-text {
     position: absolute;
-		text-align: center;
+    text-align: center;
     font-family: klee, sans-serif;
     font-size: 2em;
-		font-weight: bolder;
+    font-weight: bolder;
     color: salmon;
   }
 
@@ -282,6 +314,15 @@ We made a video for you to celebrate!!!'
     animation: bounce 6s infinite;
   }
 
+
+  .msg-map {
+    position: absolute;
+  }
+
+  .show-map-button {
+    display: none;
+  }
+
   .top {
     display: flex;
     flex-wrap: wrap;
@@ -299,9 +340,6 @@ We made a video for you to celebrate!!!'
 
   }
 
-  .msg-map {
-    //margin: 0 5% 5% 5%;
-  }
 
   @media screen and (max-width: 849px) {
 
