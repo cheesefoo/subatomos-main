@@ -38,6 +38,7 @@
 	import guitar from '/static/assets/images/instruments/guitar.png';
 	import saxophone from '/static/assets/images/instruments/saxophone.png';
 	import glock from '/static/assets/images/instruments/glockenspiel.png';
+	import showMapIcon from '/static/assets/images/subatomos_around_world.png';
 
 	import 'leaflet/dist/leaflet.css';
 
@@ -62,6 +63,7 @@
 	let bothIcon, artIcon, picIcon, noneIcon;
 	noneIcon = 'assets/images/subaru_waypoint_blue.png';
 	picIcon = bothIcon = artIcon = 'assets/images/subaru_waypoint_red.png';
+
 	const initialView = [0, 0];
 	let map;
 	let eye = true;
@@ -69,33 +71,35 @@
 	let open = false;
 	let carousel;
 
+	let mapElem;
 
 	function showMap() {
 		const elems = document.querySelectorAll('main > *');
-		let index = 0;
-		const length = elems.length;
-		for (; index < length; index++) {
-			elems[index].style.transition = 'opacity 0.5s linear 0s';
-			elems[index].style.opacity = 0;
+
+		for (let i = 0; i < elems.length; i++) {
+			elems[i].style.transition = 'opacity 0.5s linear 0s';
+			elems[i].style.opacity = 0;
 		}
 
-		document.querySelector('.msg-map').style.zIndex = '2';
-		document.querySelector('.msg-map').style.opacity = '1';
+		if (mapElem === undefined) mapElem = document.querySelector('.msg-map');
+		mapElem.style.zIndex = '2';
+		mapElem.style.opacity = '1';
 	}
 
 	function hideMap() {
 		const elems = document.querySelectorAll('main > *');
-		let i = 0;
-		const length = elems.length;
-		for (; i < length; i++) {
+
+
+		for (let i = 0; i < elems.length; i++) {
 			elems[i].style.transition = 'opacity 0.5s linear 0s';
 			elems[i].style.opacity = 1;
 		}
 
+		if (mapElem === undefined) mapElem = document.querySelector('.msg-map');
 
-		document.querySelector('.msg-map').style.opacity = '0';
+		mapElem.style.opacity = '0';
 		setTimeout(function() {
-			document.querySelector('.msg-map').style.zIndex = '-1';
+			mapElem.style.zIndex = '-1';
 		}, (1000));
 	}
 
@@ -108,6 +112,7 @@
 	function resetMapView() {
 		map.setView(initialView, 3);
 	}
+
 
 </script>
 
@@ -167,7 +172,7 @@ We made a video for you to celebrate!!!'
 			<img src={arrow} alt='scroll down' />
 		</div>-->
 	{/if}
-	<button class:show-map-button={!eye} type='button' on:click={showMap} style='position:absolute; bottom:5vh;'>im a button or something lol</button>
+
 	<!--<svelte:window on:resize={resizeMap} />-->
 	<p class='hbd-text'>Happy 17.4th Birthday, Subaru!!!
 		<br>
@@ -200,6 +205,10 @@ We made a video for you to celebrate!!!'
 				title='YouTube video player'
 				width='852'
 			/>
+			<div class='show-map'>Tap to see messages from Subatomos!<br>タップするとスバ友からのメッセージが表示されます!
+				<input type="image" src={showMapIcon}  class:show-map-button={!eye}  on:click={showMap} alt='show map'/>
+				 
+			</div>
 		</div>
 		<div class='instruments instruments-2'>
 			<svelte:component
@@ -319,9 +328,23 @@ We made a video for you to celebrate!!!'
     position: absolute;
   }
 
+  .show-map {
+		display:flex;
+		flex-direction: column;
+    justify-content: center;align-items: center;
+		text-align: center;
+    position: absolute;
+    bottom: 0;
+
+    input {
+      width: 30%;
+    }
+  }
+
   .show-map-button {
     display: none;
   }
+
 
   .top {
     display: flex;
@@ -340,6 +363,11 @@ We made a video for you to celebrate!!!'
 
   }
 
+	.video-container{
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
   @media screen and (max-width: 849px) {
 
