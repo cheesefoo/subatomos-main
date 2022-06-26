@@ -9,6 +9,18 @@ const credits  = {
 		sns2:'yt',
 		url2: 'https://www.youtube.com/c/JeremyRobson',
 	},
+	spaghetti: {
+		name: 'Spaghetti-san',
+		url: 'https://twitter.com/spaghettisan',
+		sns2:'yt',
+		url2: 'https://www.youtube.com/channel/UCFLYGQlClioiRHOoxncDlqQ',
+	},
+	hiki: {
+		name: 'HiKi',
+		url: 'https://twitter.com/hikimusic_',
+		sns2:'yt',
+		url2: 'https://www.youtube.com/channel/UC0TxKF6kNirEKaL9cam-lfA',
+	},
 	light: {
 		name: 'LightMask',
 		url: 'https://twitter.com/Light_Mask_1905',
@@ -24,9 +36,7 @@ const credits  = {
 	udarash: { name: '00：獣医の卵', url: 'https://twitter.com/subatomona00' },
 
 };
-for (const [key, value] of Object.entries(credits)) {
-	if (value.avatar) {
-		value.avatar = `${dir}/${value.avatar}`;
-	}
-}
+
+
+
 export default credits;

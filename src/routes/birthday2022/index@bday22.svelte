@@ -18,7 +18,7 @@
 
 </script>
 <script>
-	import { onMount } from 'svelte';
+	import { getContext, onMount } from 'svelte';
 	import { browser } from '$app/env';
 	import { fly, scale } from 'svelte/transition';
 	import { quadOut } from 'svelte/easing';
@@ -41,6 +41,10 @@
 	import showMapIcon from '/static/assets/images/subatomos_around_world.png';
 
 	import 'leaflet/dist/leaflet.css';
+	import { Modal } from 'svelte-simple-modal';
+	import Birthday2022Credits from '$lib/components/Birthday2022Credits.svelte';
+	import Birthday2022CreditsButton from '$lib/components/Birthday2022CreditsButton.svelte';
+
 
 	//required for importing modules that need clientside for sveltekit
 	let LeafletContainer;
@@ -68,7 +72,7 @@
 	let map;
 	let eye = true;
 	let showLines = false;
-	let open = false;
+	let hamburgerOpen = false;
 	let carousel;
 
 	let mapElem;
@@ -113,7 +117,6 @@
 		map.setView(initialView, 3);
 	}
 
-
 </script>
 
 <svelte:head>
@@ -154,9 +157,9 @@ We made a video for you to celebrate!!!'
 		<div class='hamburger'>
 			<Hamburger
 				--layer-width='30px'
-				bind:open />
+				bind:hamburgerOpen />
 		</div>
-		{#if open}
+		{#if hamburgerOpen}
 			<div class='burger-menu'>
 				{#each ['link 1', 'link 2', 'link 3'] as link, i}
 					<p transition:fly={{ y: -15, delay: 50 * i }}>
@@ -206,8 +209,8 @@ We made a video for you to celebrate!!!'
 				width='852'
 			/>
 			<div class='show-map'>Tap to see messages from Subatomos!<br>タップするとスバ友からのメッセージが表示されます!
-				<input type="image" src={showMapIcon}  class:show-map-button={!eye}  on:click={showMap} alt='show map'/>
-				 
+				<input type='image' src={showMapIcon} class:show-map-button={!eye} on:click={showMap} alt='show map' />
+
 			</div>
 		</div>
 		<div class='instruments instruments-2'>
@@ -224,50 +227,60 @@ We made a video for you to celebrate!!!'
 				<img src={drums} alt='drums' />
 
 			</svelte:component>
+
 		</div>
-	</div>
-	<div class='msg-map'>
 		{#if browser}
-			<svelte:component this={LeafletContainer} bind:map view={initialView} zoom={2} width='100vw' height='100vh'>
-				<svelte:component this={ControlContainer} position='topright'>
-					<!--								<MapToolbar bind:eye bind:lines={showLines} on:click-reset={resetMapView} />-->
-					<MapToolbar bind:eye on:click-hide-map={hideMap} />
-					<!--			<svelte:component this={MapToolbarContainer} bind:eye bind:lines={showLines} on:click-reset={resetMapView} />-->
-				</svelte:component>
-
-
-				{#each msgs as { name, twitter, message, pic, art, latlng }}
-					<!--{@debug lat, lng}-->
-					<svelte:component this={MarkerContainer} {latlng} width={30} height={30}>
-						{#if (pic === '' && art === '')}
-							<img src={noneIcon} width='30' height='30' alt='message for Subaru' />
-
-						{:else}
-							<img src={bothIcon} width='30' height='30' alt='picture for Subaru' />
-
-						{/if}
-						<!--						<svg style='width:30px;height:30px' fill='none' stroke-linecap='round' stroke-linejoin='round'
-														 stroke-width='2' viewBox='0 0 24 24' stroke='currentColor'>
-													<path d='M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z'></path>
-												</svg>-->
-
-						<svelte:component this={PopupContainer}>
-
-
-							<MapOverlayContainer {name} {twitter} {message} {pic} {art} />
-						</svelte:component>
-						<!--					<Pane></Pane>-->
-					</svelte:component>
-				{/each}
-
-				<!--{#if showLines}
-					{#each lines as {latLngs, color}}
-						<Polyline {latLngs} {color} opacity={0.5} />
-					{/each}
-				{/if}-->
-			</svelte:component>
+			<div class='credits-btn'>
+				<Modal  styleWindow={{width:'auto'}}>
+					<Birthday2022CreditsButton />
+				</Modal>
+			</div>
 		{/if}
 	</div>
+	{#if browser}
+		<div class='msg-map'>
+			{#if browser}
+				<svelte:component this={LeafletContainer} bind:map view={initialView} zoom={2} width='100vw' height='100vh'>
+					<svelte:component this={ControlContainer} position='topright'>
+						<!--								<MapToolbar bind:eye bind:lines={showLines} on:click-reset={resetMapView} />-->
+						<MapToolbar bind:eye on:click-hide-map={hideMap} />
+						<!--			<svelte:component this={MapToolbarContainer} bind:eye bind:lines={showLines} on:click-reset={resetMapView} />-->
+					</svelte:component>
+
+
+					{#each msgs as { name, twitter, message, pic, art, latlng }}
+						<!--{@debug lat, lng}-->
+						<svelte:component this={MarkerContainer} {latlng} width={30} height={30}>
+							{#if (pic === '' && art === '')}
+								<img src={noneIcon} width='30' height='30' alt='message for Subaru' />
+
+							{:else}
+								<img src={bothIcon} width='30' height='30' alt='picture for Subaru' />
+
+							{/if}
+							<!--						<svg style='width:30px;height:30px' fill='none' stroke-linecap='round' stroke-linejoin='round'
+															 stroke-width='2' viewBox='0 0 24 24' stroke='currentColor'>
+														<path d='M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z'></path>
+													</svg>-->
+
+							<svelte:component this={PopupContainer}>
+
+
+								<MapOverlayContainer {name} {twitter} {message} {pic} {art} />
+							</svelte:component>
+							<!--					<Pane></Pane>-->
+						</svelte:component>
+					{/each}
+
+					<!--{#if showLines}
+						{#each lines as {latLngs, color}}
+							<Polyline {latLngs} {color} opacity={0.5} />
+						{/each}
+					{/if}-->
+				</svelte:component>
+			{/if}
+		</div>
+	{/if}
 </main>
 <style lang='scss'>
   main {
@@ -291,6 +304,12 @@ We made a video for you to celebrate!!!'
     }
   }
 
+  .credits-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 25%;
+  }
 
   .hamburger {
     position: absolute;
@@ -329,10 +348,11 @@ We made a video for you to celebrate!!!'
   }
 
   .show-map {
-		display:flex;
-		flex-direction: column;
-    justify-content: center;align-items: center;
-		text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     position: absolute;
     bottom: 0;
 
@@ -363,11 +383,11 @@ We made a video for you to celebrate!!!'
 
   }
 
-	.video-container{
-		display:flex;
-		flex-direction: column;
-		align-items: center;
-	}
+  .video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   @media screen and (max-width: 849px) {
 

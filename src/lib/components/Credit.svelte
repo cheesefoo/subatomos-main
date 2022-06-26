@@ -23,7 +23,7 @@
 	}
 </script>
 
-<div class="credit">
+<div class="credit" class:no-avatar={avatar===undefined}>
 	{#if avatar !== undefined}
 		<img class="avatar" src={avatar} alt="avatar" />
 	{/if}
@@ -62,6 +62,9 @@
 		grid-template-columns: $creditheight 1fr;
 		//border-bottom: solid black 0.1rem;
 		padding-bottom: 1rem;
+	}
+	.no-avatar{
+		grid-template-columns: 1fr;
 	}
 
 	img {

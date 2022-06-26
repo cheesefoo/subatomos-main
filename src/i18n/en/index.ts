@@ -93,6 +93,7 @@ const en: BaseTranslation = {
 			VIOLIN: 'Violin',
 			WESTERN_PERCUSSION: 'Western Percussion'
 		},
+		COMPOSITION:'Composition',
 		MUSIC: 'Music',
 		MEDLEY: 'Medley Arrangement',
 		DESIGN: 'Website Design',
