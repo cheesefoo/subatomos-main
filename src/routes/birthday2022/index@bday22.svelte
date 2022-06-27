@@ -45,6 +45,7 @@
 	import Birthday2022Credits from '$lib/components/Birthday2022Credits.svelte';
 	import Birthday2022CreditsButton from '$lib/components/Birthday2022CreditsButton.svelte';
 	import Fa from 'svelte-fa';
+	import { MetaTags } from 'svelte-meta-tags';
 
 	//required for importing modules that need clientside for sveltekit
 	let LeafletContainer;
@@ -126,19 +127,32 @@
 		map.setView(initialView, 3);
 	}
 
-</script>
+</script><!--	openGraph={{
+		images:[{
+			url:post.feature_image
+		}]
+	}}-->
+<MetaTags
+	title={`Happy 17.4th birthday Subaru!`}
+	description='スバルちゃん、17.4歳のお誕生日おめでとうございます！！！'
+	canonical={`https://subatomos.com/birthday2022`},
+	openGraph={metaimg},
 
-<svelte:head>
-	<!-- Primary Meta Tags -->
+	twitter={{
+    handle: '@subatomos',
+    cardType: 'summary_large_image'
+  }} />
+<!--<svelte:head>
+	&lt;!&ndash; Primary Meta Tags &ndash;&gt;
 	<title>{$LL.THIRD.TITLE()}</title>
-	<meta name='title' content='Oozora Subaru, congratulations on your 3rd anniversary!' />
+	<meta name='title' content='' />
 	<meta
 		name='description'
 		content='スバル3周年おめでとう！！！
 We made a video for you to celebrate!!!'
 	/>
 
-	<!-- Open Graph / Facebook -->
+	&lt;!&ndash; Open Graph / Facebook &ndash;&gt;
 	<meta property='og:type' content='website' />
 	<meta property='og:url' content='https://subatomos.com/3rd-anniversary' />
 	<meta property='og:title' content='Happy 17.4th birthday Subaru!' />
@@ -149,7 +163,7 @@ We made a video for you to celebrate!!!'
 	<meta property='og:image' content={metaimg} />
 
 	<meta property='twitter:card' content='summary_large_image' />
-	<!--//TODO: meta tags-->
+	&lt;!&ndash;//TODO: meta tags&ndash;&gt;
 	<meta property='twitter:url' content='https://subatomos.com/birthday17-4' />
 	<meta
 		property='twitter:title'
@@ -160,7 +174,7 @@ We made a video for you to celebrate!!!'
 		content='スバルちゃん、17.4歳のお誕生日おめでとうございます！！！'
 	/>
 	<meta property='twitter:image' content={`${baseURL}${metatwi}`} />
-</svelte:head>
+</svelte:head>-->
 <!--<svelte:window bind:innerWidth={vidWidth} bind:innerHeight={vidHeight} />-->
 <div class='back-btn'>
 	<a sveltekit:prefetch href='/'>
@@ -250,14 +264,15 @@ We made a video for you to celebrate!!!'
 			</svelte:component>
 
 		</div>
-		{#if browser && !$media.small}
-			<div class='credits-btn'>
-				<Modal styleWindow={{width:'auto'}}>
-					<Birthday2022CreditsButton />
-				</Modal>
-			</div>
-		{/if}
+
 	</div>
+	{#if browser && !$media.small}
+		<div class='credits-btn'>
+			<Modal styleWindow={{width:'auto'}}>
+				<Birthday2022CreditsButton />
+			</Modal>
+		</div>
+	{/if}
 	{#if browser}
 		<div class='msg-map'>
 			{#if browser}
@@ -340,7 +355,7 @@ We made a video for you to celebrate!!!'
   .credits-btn {
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 0;
     width: 25%;
   }
 
