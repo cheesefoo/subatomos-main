@@ -8,14 +8,18 @@
 
 	import { faGlobe } from '@fortawesome/free-solid-svg-icons/faGlobe';
 
-	export let icon = 'twitter';
-	export let url = '#';
+	export let icon;
+	export let url;
+	if (icon === undefined && url !== undefined)
+	{
+		icon = 'twitter';
+	}
 	export let size = '';
 </script>
 
 <span
 ><a href={url} target='_blank' rel='noopener'>
-		{#if icon === undefined || icon === 'twitter'}
+		{#if icon === 'twitter'}
 			<Fa icon={faTwitter} fw color='#1DA1F2' {size} />
 		{:else if icon === 'yt'}
 			<Fa icon={faYoutube} fw color='red' {size} />

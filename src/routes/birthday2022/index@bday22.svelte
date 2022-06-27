@@ -468,6 +468,7 @@ We made a video for you to celebrate!!!'
 
       input {
         width: 100%;
+				bottom:0;
       }
     }
     //.top {
