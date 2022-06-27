@@ -45,9 +45,6 @@
 	import Birthday2022Credits from '$lib/components/Birthday2022Credits.svelte';
 	import Birthday2022CreditsButton from '$lib/components/Birthday2022CreditsButton.svelte';
 	import Fa from 'svelte-fa';
-	import { faArrowLeft } from '@fortawesome/free-solid-svg-icons/faArrowLeft';
-
-
 
 	//required for importing modules that need clientside for sveltekit
 	let LeafletContainer;
@@ -167,27 +164,30 @@ We made a video for you to celebrate!!!'
 <!--<svelte:window bind:innerWidth={vidWidth} bind:innerHeight={vidHeight} />-->
 <div class='back-btn'>
 	<a sveltekit:prefetch href='/'>
-		<Fa icon={faArrowLeft} />
+		<span><svg class='w-6 h-6' data-darkreader-inline-stroke='' fill='none' stroke='currentColor'
+				 style='--darkreader-inline-stroke:currentColor;' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+			<path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M10 19l-7-7m0 0l7-7m-7 7h18'></path>
+		</svg></span>
 	</a>
 </div>
 <main>
 	{#if $media.small}
-<!--		<div class='hamburger'>
-			<Hamburger
-				&#45;&#45;layer-width='30px'
-				bind:hamburgerOpen />
-		</div>
-		{#if hamburgerOpen}
-			<div class='burger-menu'>
-				{#each ['link 1', 'link 2', 'link 3'] as link, i}
-					<p transition:fly={{ y: -15, delay: 50 * i }}>
-						{link}
-					</p>
-				{/each}
-			</div>
+		<!--		<div class='hamburger'>
+					<Hamburger
+						&#45;&#45;layer-width='30px'
+						bind:hamburgerOpen />
+				</div>
+				{#if hamburgerOpen}
+					<div class='burger-menu'>
+						{#each ['link 1', 'link 2', 'link 3'] as link, i}
+							<p transition:fly={{ y: -15, delay: 50 * i }}>
+								{link}
+							</p>
+						{/each}
+					</div>
 
-			<div class='bar' transition:scale={{ duration: 750, easing: quadOut, opacity: 1 }} />
-		{/if}-->
+					<div class='bar' transition:scale={{ duration: 750, easing: quadOut, opacity: 1 }} />
+				{/if}-->
 	{:else}
 		<!--<div class='arrow'>
 			<img src={arrow} alt='scroll down' />
@@ -309,6 +309,7 @@ We made a video for you to celebrate!!!'
     position: absolute;
     left: 3vw;
     top: 0;
+		width:1em;
 
     a {
       color: black;
