@@ -61,7 +61,8 @@
 
 	function createLeaflet(node) {
 		map = L.map(node, {
-			center: [40, 70],
+			center: view,
+			// center: [40, 70],
 			zoomDelta: 1,
 			// zoomSnap:2,
 			// worldCopyJump:true,

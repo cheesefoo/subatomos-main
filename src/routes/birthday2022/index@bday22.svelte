@@ -70,7 +70,8 @@
 	noneIcon = 'assets/images/subaru_waypoint_blue.png';
 	picIcon = bothIcon = artIcon = 'assets/images/subaru_waypoint_red.png';
 
-	const initialView = [0, 0];
+	let initialView;
+	initialView = $media.small ? [40, -70] : [0, 0];
 	let map;
 	let eye = true;
 	let showLines = false;
@@ -81,7 +82,7 @@
 	if (!$media.small) {
 		vidWidth = '852';
 		vidHeight = '480';
-	}else{
+	} else {
 
 	}
 
@@ -163,16 +164,16 @@ We made a video for you to celebrate!!!'
 	<meta property='twitter:image' content={`${baseURL}${metatwi}`} />
 </svelte:head>
 <!--<svelte:window bind:innerWidth={vidWidth} bind:innerHeight={vidHeight} />-->
-<div class="back-btn">
-	<a sveltekit:prefetch href="/">
+<div class='back-btn'>
+	<a sveltekit:prefetch href='/'>
 		<Fa icon={faArrowLeft} />
 	</a>
 </div>
 <main>
 	{#if $media.small}
-		<div class='hamburger'>
+<!--		<div class='hamburger'>
 			<Hamburger
-				--layer-width='30px'
+				&#45;&#45;layer-width='30px'
 				bind:hamburgerOpen />
 		</div>
 		{#if hamburgerOpen}
@@ -185,7 +186,7 @@ We made a video for you to celebrate!!!'
 			</div>
 
 			<div class='bar' transition:scale={{ duration: 750, easing: quadOut, opacity: 1 }} />
-		{/if}
+		{/if}-->
 	{:else}
 		<!--<div class='arrow'>
 			<img src={arrow} alt='scroll down' />
@@ -307,8 +308,12 @@ We made a video for you to celebrate!!!'
     position: absolute;
     left: 3vw;
     top: 0;
-    a{color: black;}
+
+    a {
+      color: black;
+    }
   }
+
   main {
     background: url(/static/assets/images/bgseamless.webp) no-repeat center center fixed;
     background-size: cover;
@@ -443,16 +448,16 @@ We made a video for you to celebrate!!!'
   @media screen and (max-width: 849px) {
 
     .hbd-text {
-			top:5%;
+      top: 5%;
       font-size: 1.5em;
     }
 
-		.instruments-1{
-			top:10%
-		}
-		.instruments-2{
-			bottom:0%;
-		}
+    .instruments-1 {
+      top: 10%
+    }
+    .instruments-2 {
+      bottom: 0%;
+    }
     .show-map {
       p {
         font-size: 1em;
@@ -478,8 +483,8 @@ We made a video for you to celebrate!!!'
         position: absolute;
         bottom: 30%;
         left: 0%;
-				width:100%;
-				height:25%;
+        width: 100%;
+        height: 25%;
       }
     }
   }
