@@ -44,6 +44,8 @@
 	import { Modal } from 'svelte-simple-modal';
 	import Birthday2022Credits from '$lib/components/Birthday2022Credits.svelte';
 	import Birthday2022CreditsButton from '$lib/components/Birthday2022CreditsButton.svelte';
+	import Fa from 'svelte-fa';
+	import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 
 	//required for importing modules that need clientside for sveltekit
@@ -74,6 +76,14 @@
 	let showLines = false;
 	let hamburgerOpen = false;
 	let carousel;
+
+	let vidWidth, vidHeight;
+	if (!$media.small) {
+		vidWidth = '852';
+		vidHeight = '480';
+	}else{
+
+	}
 
 	let mapElem;
 
@@ -152,6 +162,12 @@ We made a video for you to celebrate!!!'
 	/>
 	<meta property='twitter:image' content={`${baseURL}${metatwi}`} />
 </svelte:head>
+<!--<svelte:window bind:innerWidth={vidWidth} bind:innerHeight={vidHeight} />-->
+<div class="back-btn">
+	<a sveltekit:prefetch href="/">
+		<Fa icon={faArrowLeft} />
+	</a>
+</div>
 <main>
 	{#if $media.small}
 		<div class='hamburger'>
@@ -198,16 +214,18 @@ We made a video for you to celebrate!!!'
 			</svelte:component>
 		</div>
 
-		<div class='video-container'>
-			<iframe
-				allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-				allowfullscreen
-				frameborder='0'
-				height='480'
-				src='https://www.youtube.com/embed/AwLO-pisoVA'
-				title='YouTube video player'
-				width='852'
-			/>
+		<div class='middle'>
+			<div class='video-container'>
+				<iframe
+					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+					allowfullscreen
+					frameborder='0'
+					height={vidHeight}
+					width={vidWidth}
+					src='https://www.youtube.com/embed/AwLO-pisoVA'
+					title='YouTube video player'
+				/>
+			</div>
 			<div class='show-map'>
 				<p>Tap to see messages from Subatomos!<br>タップするとスバ友からのメッセージが表示されます!</p>
 				<input type='image' src={showMapIcon} class:show-map-button={!eye} on:click={showMap} alt='show map' />
@@ -230,9 +248,9 @@ We made a video for you to celebrate!!!'
 			</svelte:component>
 
 		</div>
-		{#if browser}
+		{#if browser && !$media.small}
 			<div class='credits-btn'>
-				<Modal  styleWindow={{width:'auto'}}>
+				<Modal styleWindow={{width:'auto'}}>
 					<Birthday2022CreditsButton />
 				</Modal>
 			</div>
@@ -284,6 +302,13 @@ We made a video for you to celebrate!!!'
 	{/if}
 </main>
 <style lang='scss'>
+  .back-btn {
+    font-size: 3em;
+    position: absolute;
+    left: 3vw;
+    top: 0;
+    a{color: black;}
+  }
   main {
     background: url(/static/assets/images/bgseamless.webp) no-repeat center center fixed;
     background-size: cover;
@@ -314,7 +339,6 @@ We made a video for you to celebrate!!!'
 
   .hamburger {
     position: absolute;
-
     right: 0px;
   }
 
@@ -326,7 +350,6 @@ We made a video for you to celebrate!!!'
     font-weight: bolder;
     color: salmon;
     text-shadow: 2px 2px black;
-
   }
 
   .instruments {
@@ -359,14 +382,15 @@ We made a video for you to celebrate!!!'
     position: absolute;
     bottom: 0;
 
-		p{
-			position:absolute;
-			font-weight:bold;
-			font-family:klee, sans-serif;
-			font-size:2em;
-			color: salmon;
+    p {
+      position: absolute;
+      font-weight: bold;
+      font-family: klee, sans-serif;
+      font-size: 2em;
+      color: salmon;
       text-shadow: 2px 2px black;
-		}
+    }
+
     input {
       width: 30%;
     }
@@ -394,13 +418,54 @@ We made a video for you to celebrate!!!'
 
   }
 
-  .video-container {
+  .middle {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
+  /*  .video-container {
+			position: relative;
+			padding-bottom: 56.25%; !* 16:9 *!
+			height: 0;
+
+
+	iframe{
+
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				 }
+		}*/
+
   @media screen and (max-width: 849px) {
+
+    .hbd-text {
+			top:5%;
+      font-size: 1.5em;
+    }
+
+		.instruments-1{
+			top:10%
+		}
+		.instruments-2{
+			bottom:0%;
+		}
+    .show-map {
+      p {
+        font-size: 1em;
+        bottom: 13vh;
+      }
+
+      input {
+        width: 100%;
+      }
+    }
+    //.top {
+    //  background: #c7c2b6 url(/static/assets/images/instruments/music_sheet_bg.png) no-repeat 0 20vh;
+    //}
 
     .video-container {
       //position: absolute;
@@ -408,6 +473,14 @@ We made a video for you to celebrate!!!'
       //left: 12%;
       width: 65vw;
       height: 40vw;
+
+      iframe {
+        position: absolute;
+        bottom: 30%;
+        left: 0%;
+				width:100%;
+				height:25%;
+      }
     }
   }
 
