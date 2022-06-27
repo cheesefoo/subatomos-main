@@ -45,7 +45,8 @@
 	import Birthday2022Credits from '$lib/components/Birthday2022Credits.svelte';
 	import Birthday2022CreditsButton from '$lib/components/Birthday2022CreditsButton.svelte';
 	import Fa from 'svelte-fa';
-	import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+	import { faArrowLeft } from '@fortawesome/free-solid-svg-icons/faArrowLeft';
+
 
 
 	//required for importing modules that need clientside for sveltekit
