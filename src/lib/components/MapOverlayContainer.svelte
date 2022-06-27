@@ -207,6 +207,9 @@
 
 
   @media screen and (max-width: 849px) {
+    :global(.leaflet-popup) {
+      width: 90vw !important;
+    }
   }
 
   /*
