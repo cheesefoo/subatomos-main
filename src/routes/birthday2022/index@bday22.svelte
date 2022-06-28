@@ -127,17 +127,16 @@
 		map.setView(initialView, 3);
 	}
 
-</script><!--	openGraph={{
-		images:[{
-			url:post.feature_image
-		}]
-	}}-->
+</script>
 <MetaTags
 	title={`Happy 17.4th birthday Subaru!`}
 	description='スバルちゃん、17.4歳のお誕生日おめでとうございます！！！'
 	canonical={`https://subatomos.com/birthday2022`},
-	openGraph={metaimg},
-
+	openGraph={{
+		images:[{
+			url:{metatwi}
+		}]
+	}}
 	twitter={{
     handle: '@subatomos',
     cardType: 'summary_large_image'
@@ -213,7 +212,8 @@ We made a video for you to celebrate!!!'
 		<br>
 		スバルちゃん、17.4歳のお誕生日おめでとうございます！！！
 	</p>
-	<div class='top'>
+	<div class='top top-color-picker'>
+
 		<div class='instruments instruments-1'>
 			<svelte:component
 				this={CarouselContainer}
@@ -268,7 +268,8 @@ We made a video for you to celebrate!!!'
 	</div>
 	{#if browser && !$media.small}
 		<div class='credits-btn'>
-			<Modal styleWindow={{width:'auto'}}>
+			<Modal styleWindow={{width:'auto',backgroundColor: '#f1bd65'}}
+						 styleBg={{ backgroundColor: '#f1bd65' }}>
 				<Birthday2022CreditsButton />
 			</Modal>
 		</div>
@@ -318,6 +319,7 @@ We made a video for you to celebrate!!!'
 		</div>
 	{/if}
 </main>
+
 <style lang='scss'>
   .back-btn {
     font-size: 3em;
@@ -367,11 +369,11 @@ We made a video for you to celebrate!!!'
   .hbd-text {
     position: absolute;
     text-align: center;
-    font-family: klee, sans-serif;
+    font-family: keifont, sans-serif;
     font-size: 2em;
     font-weight: bolder;
     color: salmon;
-    text-shadow: 2px 2px black;
+		-webkit-text-stroke: 1px white;
   }
 
   .instruments {
@@ -407,10 +409,12 @@ We made a video for you to celebrate!!!'
     p {
       position: absolute;
       font-weight: bold;
-      font-family: klee, sans-serif;
-      font-size: 2em;
+      font-family: keifont, sans-serif;
+      font-size: 2rem;
       color: salmon;
-      text-shadow: 2px 2px black;
+      -webkit-text-stroke: 1px white;
+			pointer-events: none;
+			top:-1em;
     }
 
     input {
@@ -439,6 +443,9 @@ We made a video for you to celebrate!!!'
     }
 
   }
+	.top-color-picker{
+		background-color:$chromeblue;
+	}
 
   .middle {
     display: flex;
