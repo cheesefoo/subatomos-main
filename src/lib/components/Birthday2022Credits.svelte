@@ -76,7 +76,7 @@
 			<Credit desc='Video Editing' {descSameLine} {...creditsList.gundam} />
 			<Credit desc='Translation' {descSameLine} {...creditsList.udarash} />
 			<Credit desc='Website Design' {descSameLine} name="ぴんころ#0031" />
-			<Credit desc='Art -Video, Website, & SNS' {descSameLine} {...creditsList.hakimen} />
+			<Credit desc='Art - Video, Website, & SNS' {descSameLine} {...creditsList.hakimen} />
 
 
 		</div>
