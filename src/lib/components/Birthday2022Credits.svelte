@@ -149,18 +149,22 @@
 
   @media screen and (max-width: 849px) {
     .credits-grid {
-      padding: 0 0 0 5%;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 1em;
+      padding: 0 0 0 0%;
+      grid-template-columns: 1fr;
+      column-gap: 0em;
     }
 
+    .performers, .composition {
+      column-count: 1;
+      font-size:1em;
+    }
     .thanks {
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
   }
 
-  @media screen and (min-width: 850px) and (max-width: 1024px) {
+ /* @media screen and (min-width: 850px) and (max-width: 1024px) {
     h3,
     h4 {
       font-size: 1.4em;
@@ -177,6 +181,6 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
-  }
+  }*/
 
 </style>

@@ -20,4 +20,13 @@
   .credits-btn:hover {
     background: $salmon;
   }
+
+  @media screen and (max-width: 849px) {
+		.credits-btn {
+      font-size: 1em;
+      padding: 1.25em 0.75em;
+			background-color: $salmon;
+      clip-path: circle(40% at 50% 50%);
+    }
+  }
 </style>

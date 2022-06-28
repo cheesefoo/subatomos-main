@@ -130,51 +130,21 @@
 </script>
 <MetaTags
 	title={`Happy 17.4th birthday Subaru!`}
-	description='スバルちゃん、17.4歳のお誕生日おめでとうございます！！！'
+	description='
+	Check out our celebration site for a video concert & messages from your Subatomos!
+	お祝いサイトではビデオコンサートやスバトモたちからのメッセージをご紹介しています！！！'
 	canonical={`https://subatomos.com/birthday2022`},
 	openGraph={{
 		images:[{
-			url:{metatwi}
+			url:{metaimg}
 		}]
 	}}
 	twitter={{
     handle: '@subatomos',
-    cardType: 'summary_large_image'
+    cardType: 'summary_large_image',
+    image:`${baseURL}${metatwi}`
   }} />
-<!--<svelte:head>
-	&lt;!&ndash; Primary Meta Tags &ndash;&gt;
-	<title>{$LL.THIRD.TITLE()}</title>
-	<meta name='title' content='' />
-	<meta
-		name='description'
-		content='スバル3周年おめでとう！！！
-We made a video for you to celebrate!!!'
-	/>
 
-	&lt;!&ndash; Open Graph / Facebook &ndash;&gt;
-	<meta property='og:type' content='website' />
-	<meta property='og:url' content='https://subatomos.com/3rd-anniversary' />
-	<meta property='og:title' content='Happy 17.4th birthday Subaru!' />
-	<meta
-		property='og:description'
-		content='スバルちゃん、17.4歳のお誕生日おめでとうございます！！！'
-	/>
-	<meta property='og:image' content={metaimg} />
-
-	<meta property='twitter:card' content='summary_large_image' />
-	&lt;!&ndash;//TODO: meta tags&ndash;&gt;
-	<meta property='twitter:url' content='https://subatomos.com/birthday17-4' />
-	<meta
-		property='twitter:title'
-		content='Oozora Subaru, congratulations on your 3rd anniversary!'
-	/>
-	<meta
-		property='twitter:description'
-		content='スバルちゃん、17.4歳のお誕生日おめでとうございます！！！'
-	/>
-	<meta property='twitter:image' content={`${baseURL}${metatwi}`} />
-</svelte:head>-->
-<!--<svelte:window bind:innerWidth={vidWidth} bind:innerHeight={vidHeight} />-->
 <div class='back-btn'>
 	<a sveltekit:prefetch href='/'>
 		<span><svg class='w-6 h-6' data-darkreader-inline-stroke='' fill='none' stroke='currentColor'
@@ -266,14 +236,14 @@ We made a video for you to celebrate!!!'
 		</div>
 
 	</div>
-	{#if browser && !$media.small}
+	<!--{#if browser && !$media.small}-->
 		<div class='credits-btn'>
 			<Modal styleWindow={{width:'auto',backgroundColor: '#f1bd65'}}
-						 styleBg={{ backgroundColor: '#f1bd65' }}>
+						}>
 				<Birthday2022CreditsButton />
 			</Modal>
 		</div>
-	{/if}
+	<!--{/if}-->
 	{#if browser}
 		<div class='msg-map'>
 			{#if browser}
@@ -471,6 +441,13 @@ We made a video for you to celebrate!!!'
 
   @media screen and (max-width: 849px) {
 
+    .credits-btn {
+      position: absolute;
+      bottom: 20%;
+      left: 0;
+      width: 5%;
+    }
+
     .hbd-text {
       top: 5%;
       font-size: 1.5em;
@@ -506,7 +483,7 @@ We made a video for you to celebrate!!!'
 
       iframe {
         position: absolute;
-        bottom: 30%;
+        bottom: 35%;
         left: 0%;
         width: 100%;
         height: 25%;

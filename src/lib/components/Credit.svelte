@@ -39,8 +39,8 @@
 			<SNSLink icon={sns2} url={url2} {size} />
 		{/if}
 		{#if $media.small || $media.tablet}
-			<br />
-			<a href={url}>{name}</a>
+<!--			<br />-->
+			<a href={url} target='_blank'>{name}</a>
 		{:else}
 			{name}
 		{/if}
@@ -87,7 +87,7 @@
   @media screen and (max-width: 849px) {
     a {
       color: $chromeblue;
-      font-size: 0.9em;
+      font-size: 1em;
     }
     .credit {
       width: 95%;

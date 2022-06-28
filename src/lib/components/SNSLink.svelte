@@ -17,8 +17,8 @@
 	export let size = '';
 </script>
 
-<span
-><a href={url} target='_blank' rel='noopener'>
+<span>
+	<a href={url} target='_blank' rel='noopener'>
 		{#if icon === 'twitter'}
 			<Fa icon={faTwitter} fw color='#1DA1F2' {size} />
 		{:else if icon === 'yt'}
