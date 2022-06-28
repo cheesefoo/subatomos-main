@@ -19,6 +19,28 @@
 	if ($media.small) {
 		size = '0.9x';
 	}
+
+	const dir = dev ? '/assets/images/subarudoducks/' : '/assets/images/subarudoducks/';
+	// const thumbsDir = $media.small ?  'thumbs/mobile/' :  'thumbs/';
+	const thumbsDir =  dir + 'thumbs/';
+	// const thumbsDir = $media.small ? dir + 'thumbs/mobile/' : dir + 'thumbs/';
+
+	function getThumbnail(src) {
+		let thumbnail;
+		if (src !== undefined) {
+			src = decodeURI(src);
+			if (src.endsWith('.png') || src.endsWith('.mp4') || src.endsWith('.jpg')) {
+				thumbnail = src.slice(0, -4) + '.webp';
+			} else if (src.endsWith('.jpeg' || src.endsWith('.webp'))) {
+				thumbnail = src.slice(0, -5) + '.webp';
+			} else {
+				thumbnail = src;
+			}
+
+			// console.log('src: ' + src + '\nthumb: ' + thumbnail + '\nsrc.slice(0,-4) : ' + src.slice(0, -4));
+		}
+		return thumbsDir + thumbnail;
+	}
 </script>
 
 
@@ -45,8 +67,8 @@
 						{#if pic}
 							<div class='fanart'>
 								<Lightbox clickToClose={true} thumbnail imagePreset={'fullscreen'} protect={true}>
-									<img slot='thumbnail' class='overlay-image' src={pic} alt='duck' />
-									<img slot='image' class='overlay-image' src={pic} alt='duck' />
+									<img slot='thumbnail' class='overlay-image' src={getThumbnail(pic)} alt='duck' />
+									<img slot='image' class='overlay-image' src={dir+pic} alt='duck' />
 								</Lightbox>
 							</div>
 						{/if}
@@ -54,8 +76,8 @@
 							<div class='fanart'>
 
 								<Lightbox clickToClose={true} thumbnail imagePreset={'fullscreen'} protect={true}>
-									<img slot='image' class='overlay-image' src={art} alt='fanart' />
-									<img slot='thumbnail' class='overlay-image' src={art} alt='fanart' />
+									<img slot='image' class='overlay-image' src={getThumbnail(art)} alt='fanart' />
+									<img slot='thumbnail' class='overlay-image' src={dir+art} alt='fanart' />
 								</Lightbox>
 							</div>
 						{/if}

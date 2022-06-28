@@ -70,6 +70,7 @@
 		}).on('zoom', (e) => dispatch('zoom', e));
 		// .setMaxBounds(map.getBounds());
 
+		map.attributionControl.setPrefix('Leaflet');
 
 		L.tileLayer(
 			'assets/images/GSatellite/{z}/{x}/{y}.jpg',
