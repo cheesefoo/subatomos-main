@@ -20,31 +20,29 @@
 <script>
 	import { getContext, onMount } from 'svelte';
 	import { browser } from '$app/env';
-	import { fly, scale } from 'svelte/transition';
-	import { quadOut } from 'svelte/easing';
+
 	import { baseURL } from '$lib/variables.ts';
 	import MapToolbar from '$lib/map/MapToolbar.svelte';
 	import MapOverlayContainer from '$lib/components/MapOverlayContainer.svelte';
-	import { Hamburger } from 'svelte-hamburgers';
-	import LL from '../../i18n/i18n-svelte.js';
+
 	import { media } from '$lib/stores/stores';
 	import metaimg from '/static/assets/images/3rdanniversarylogo.jpg';
 	import metatwi from '/static/assets/images/meta3rd.jpg';
-	import arrow from '/static/assets/images/scrolldown.png';
+
 	import piano from '/static/assets/images/instruments/piano.png';
 	import accordion from '/static/assets/images/instruments/accordion.png';
 	import flute from '/static/assets/images/instruments/flute.png';
 	import drums from '/static/assets/images/instruments/drums.png';
 	import guitar from '/static/assets/images/instruments/guitar.png';
 	import saxophone from '/static/assets/images/instruments/saxophone.png';
-	import glock from '/static/assets/images/instruments/glockenspiel.png';
+
 	import showMapIcon from '/static/assets/images/subatomos_around_world.png';
 
 	import 'leaflet/dist/leaflet.css';
 	import { Modal } from 'svelte-simple-modal';
-	import Birthday2022Credits from '$lib/components/Birthday2022Credits.svelte';
+
 	import Birthday2022CreditsButton from '$lib/components/Birthday2022CreditsButton.svelte';
-	import Fa from 'svelte-fa';
+
 	import { MetaTags } from 'svelte-meta-tags';
 
 	//required for importing modules that need clientside for sveltekit
