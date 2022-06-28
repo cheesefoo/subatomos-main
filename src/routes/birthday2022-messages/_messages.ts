@@ -192,9 +192,9 @@ let messages = [
 	{name:"Joshuwah",twitter:"",message:"HAPPY BIRTHDAY! ! ! 2 years ago I learned that a certain dancing duck girl meme streams. Your bright and fun personality attracted me, even though I don't understand Japanese. I hope you continue to be healthy and shine brighter in the coming years!",pic:"",art:"",latlng:"14.6,120.98"},
 	{name:"@Fatenshi39",twitter:"@Fatenshi39",message:"Happy birthday Subaru! I can't believe how long ago the first time I watched your videos was and you're still one of my favorites. I wish you a very good birthday and wish you all the best, always!",pic:"",art:"1656344034223.jpg",latlng:"-0.79,113.92"},
 ];
-messages.forEach(msg =>
+/*messages.forEach(msg =>
 {
 	if (msg.pic != '') msg.pic = dir + msg.pic;
 	if (msg.art != '') msg.art = dir + msg.art;
-});
+});*/
 export default messages;
