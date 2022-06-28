@@ -4,6 +4,8 @@
 	import SNSLink from '$lib/components/SNSLink.svelte';
 	import { media } from '$lib/stores/stores.ts';
 
+	import { dev } from '$app/env';
+
 	export let name;
 	export let twitter = undefined;
 	export let message;
@@ -185,7 +187,7 @@
 
     p {
       font-family: setofont, sans-serif;
-      font-size: 1em;
+      font-size: 1rem;
       padding: 1.5em 0;
       color: #51b1c4;
     }
@@ -213,6 +215,10 @@
 
   .pics-art-section {
     display: flex;
+		.fanart {
+      flex-basis: 0;
+      flex-grow: 1;
+    }
   }
 
   .stars {
