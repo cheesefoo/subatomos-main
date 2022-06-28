@@ -9,7 +9,7 @@
 	import { detectLocale, localStorageDetector } from 'typesafe-i18n/detectors';
 	import { onMount } from 'svelte';
 
-	export async function load({ fetch, session, context }) {
+	export async function load({ fetch, context }) {
 		// detect locale of user (see https://github.com/ivanhofer/typesafe-i18n#locale-detection)
 		let locale: Locales = 'en';
 		if (browser) {

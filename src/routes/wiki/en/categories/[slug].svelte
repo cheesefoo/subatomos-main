@@ -6,7 +6,7 @@
 	/**
 	 * @type {import('@sveltejs/kit').Load}
 	 */
-	export async function load({ params, fetch, session, context }) {
+	export async function load({ params, fetch,  context }) {
 		const api = new GhostContentAPI({
 			url: `${ghostURL}`,
 			key: `${ghostAPI}`,

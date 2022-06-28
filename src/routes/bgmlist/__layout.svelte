@@ -10,7 +10,7 @@
 	import { onMount } from 'svelte';
 	import { Breadcrumb, BreadcrumbItem } from '$lib/components/Breadcrumb';
 
-	export async function load({ fetch, session, context }) {
+	export async function load({ fetch, context }) {
 		// detect locale of user (see https://github.com/ivanhofer/typesafe-i18n#locale-detection)
 		let locale: Locales = 'en';
 		if (browser) {
