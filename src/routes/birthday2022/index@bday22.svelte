@@ -126,22 +126,42 @@
 	}
 
 </script>
-<MetaTags
-	title={`Happy 17.4th birthday Subaru!`}
-	description='
-	Check out our celebration site for a video concert & messages from your Subatomos!
-	お祝いサイトではビデオコンサートやスバトモたちからのメッセージをご紹介しています！！！'
-	canonical={`https://subatomos.com/birthday2022`},
-	openGraph={{
-		url:baseURL,
-		images:[
-			{url:{metaimg}}]
-	}}
-	twitter={{
-    handle: '@subatomos',
-    cardType: 'summary_large_image',
-    image:`${baseURL}${metatwi}`
-	}} />
+
+<svelte:head>
+	<!-- Primary Meta Tags -->
+	<title>Happy 17.4th birthday Subaru!</title>
+	<meta name="title" content="Happy 17.4th birthday Subaru!" />
+	<meta
+		name="description"
+		content="Check out our celebration site for a video concert & messages from your Subatomos!
+お祝いサイトではビデオコンサートやスバトモたちからのメッセージをご紹介しています！！！"
+	/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://subatomos.com/birthday2022" />
+	<meta property="og:title" content="Happy 17.4th birthday Subaru!" />
+	<meta
+		property="og:description"
+		content="Check out our celebration site for a video concert & messages from your Subatomos!
+お祝いサイトではビデオコンサートやスバトモたちからのメッセージをご紹介しています！！！"
+	/>
+	<meta property="og:image" content={metaimg} />
+
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://subatomos.com/birthday2022" />
+	<meta
+		property="twitter:title"
+		content="Check out our celebration site for a video concert & messages from your Subatomos!
+お祝いサイトではビデオコンサートやスバトモたちからのメッセージをご紹介しています！！！"
+	/>
+	<meta
+		property="twitter:description"
+		content="Check out our celebration site for a video concert & messages from your Subatomos!
+お祝いサイトではビデオコンサートやスバトモたちからのメッセージをご紹介しています！！！"
+	/>
+	<meta property="twitter:image" content={`${baseURL}${metatwi}`} />
+</svelte:head>
 
 <div class='back-btn'>
 	<a sveltekit:prefetch href='/'>
