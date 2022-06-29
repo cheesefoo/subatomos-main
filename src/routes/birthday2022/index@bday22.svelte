@@ -367,7 +367,7 @@
 
     .instruments-1 {
       top: 35%;
-      animation: bounce 5s infinite;
+      animation: bounce 0s 5s infinite;
       img:nth-child(1){
         left:120px;
         top:-30px;
@@ -391,7 +391,7 @@
 
     .instruments-2 {
       bottom: 15%;
-      animation: bounce 6s infinite;
+      animation: bounce 0.5s 5s infinite;
       img:nth-child(1){
         right:120px;
         top:-30px;
