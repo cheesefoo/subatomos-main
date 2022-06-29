@@ -134,14 +134,13 @@
 	canonical={`https://subatomos.com/birthday2022`},
 	openGraph={{
 		url:baseURL,
-		images:[{
-			url:metaimg
-		}]
+		images:[
+			{url:{metaimg}}]
 	}}
 	twitter={{
     handle: '@subatomos',
     cardType: 'summary_large_image',
-    image:baseURL+metatwi
+    image:{${baseURL}${metatwi}}
   }} />
 
 <div class='back-btn'>
