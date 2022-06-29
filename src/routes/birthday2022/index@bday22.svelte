@@ -313,8 +313,8 @@
   }
 
   main {
-    background: url(/static/assets/images/bgseamless.webp) no-repeat center center fixed;
-    background-size: cover;
+    background: url(/static/assets/images/instruments/stand.png) no-repeat center center fixed,url(/static/assets/images/bgseamless.webp) no-repeat center center fixed;
+    background-size:cover;
     width: 100vw;
     flex-wrap: wrap;
     justify-content: space-around;
