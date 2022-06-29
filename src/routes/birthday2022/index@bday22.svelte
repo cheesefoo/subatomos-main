@@ -29,12 +29,12 @@
 	import metaimg from '/static/assets/images/subaru_birthday_thumbnail.png';
 	import metatwi from '/static/assets/images/subaru_birthday_thumbnail.jpg';
 
-	import piano from '/static/assets/images/instruments/piano.png';
-	import accordion from '/static/assets/images/instruments/accordion.png';
-	import flute from '/static/assets/images/instruments/flute.png';
-	import drums from '/static/assets/images/instruments/drums.png';
-	import guitar from '/static/assets/images/instruments/guitar.png';
-	import saxophone from '/static/assets/images/instruments/saxophone.png';
+	import piano from '/static/assets/images/instruments/piano.webp';
+	import accordion from '/static/assets/images/instruments/accordion.webp';
+	import flute from '/static/assets/images/instruments/flute.webp';
+	import drums from '/static/assets/images/instruments/drums.webp';
+	import guitar from '/static/assets/images/instruments/guitar.webp';
+	import saxophone from '/static/assets/images/instruments/saxophone.webp';
 	import showMapIcon from '/static/assets/images/subatomos_around_world.png';
 	import loading from '/static/assets/images/instruments/loading-suba-music.gif';
 	import 'leaflet/dist/leaflet.css';
@@ -316,7 +316,7 @@
 
   main {
     background: url(/static/assets/images/bgseamless.webp) no-repeat center center fixed;
-    background-size:cover;
+    background-size: cover;
     width: 100vw;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -353,6 +353,7 @@
     font-family: keifont, sans-serif;
     font-size: 2em;
     font-weight: bolder;
+top:-3vh;
 
     color: #D7B377;
     -webkit-text-stroke: 1px white;
@@ -489,7 +490,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-    background: url(/static/assets/images/instruments/stand.png) no-repeat center center fixed, url(/static/assets/images/instruments/music_sheet_bg.png) no-repeat 0% 20vh;
+    background: #c7c2b6 url(/static/assets/images/instruments/music_sheet_bg.png) no-repeat 0% 20vh;
     background-size: 100%;
     width: 100vw;
     height: 80vh;
@@ -502,12 +503,9 @@
   }
 
   .top-color-picker {
-    background-color: #2B4162;
-    //background-image: url(/static/assets/images/instruments/stand.png);// no-repeat center center fixed;
-    //background-image: url(/static/assets/images/instruments/music_sheet_bg_white.png);
-    //background-image: url(/static/assets/images/instruments/music_sheet_bg_border.png);
-    background: url(/static/assets/images/instruments/stand.png) no-repeat center center fixed, url(/static/assets/images/instruments/music_sheet_bg_border.png) no-repeat 0% 20vh;
 
+    background: url(/static/assets/images/instruments/stand.webp) no-repeat center -20vh fixed, #2B4162 url(/static/assets/images/instruments/music_sheet_bg_border.webp) no-repeat 0% 20vh;
+    background-size: cover, contain;
   }
 
   .middle {
