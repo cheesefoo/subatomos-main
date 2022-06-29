@@ -202,17 +202,18 @@
 	<div class='top top-color-picker'>
 
 		<div class='instruments instruments-1'>
-			<img src={drums}	alt='drums' >
+			<img src={drums} alt='drums'>
 			<img src={saxophone} alt='saxophone'
 			>
 			<img src={guitar}
-																															alt='guitar'
-																															></div>
+					 alt='guitar'
+			></div>
 
 
 		<div class='middle'>
 			<div class='video-container'>
-				<iframe
+				<img src='https://cdn.discordapp.com/attachments/984694080258842654/991692329964548126/subaru_birthday_thumbnail.png' height={vidHeight} width={vidWidth}/>
+				<!--<iframe
 					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
 					allowfullscreen
 					frameborder='0'
@@ -220,7 +221,7 @@
 					width={vidWidth}
 					src='https://www.youtube.com/embed/AwLO-pisoVA'
 					title='YouTube video player'
-				/>
+				/>-->
 			</div>
 			<div class='show-map'>
 				<p>Tap to see messages from Subatomos!<br>タップするとスバ友からのメッセージが表示されます!</p>
@@ -229,12 +230,12 @@
 			</div>
 		</div>
 		<div class='instruments instruments-2 '><img src={flute}
-																															alt='flute'
-																															><img
+																								 alt='flute'
+		><img
 			src={piano} alt='piano'
-			> <img src={accordion}
-																															alt='accordion'
-																															></div>
+		> <img src={accordion}
+					 alt='accordion'
+		></div>
 
 	</div>
 	<!--{#if browser && !$media.small}-->
@@ -355,209 +356,227 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-		width:20vw;
+    width: 20vw;
 
     img {
-			position:relative;
+      position: relative;
       width: 100%;
       height: 20vh;
       object-fit: contain;
+      box-sizing: border-box;
+      transition: padding 0.2s;
+      padding: 0;
+			:hover{
+        padding: 10px;
+
+      }
+
     }
   }
 
+  .instruments-1 {
+    top: 35%;
+    animation: bounce  5s 0s infinite;
+
+    img:nth-child(1) {
+      left: 120px;
+      top: -30px;
+      -webkit-animation: wobble-hor-bottom 5s 1s infinite both;
+      animation: wobble-hor-bottom 5s 1s infinite both;
+    }
+
+    img:nth-child(2) {
+
+      -webkit-animation: wobble-hor-bottom 5s 1.5s infinite both;
+      animation: wobble-hor-bottom 5s 1.5s infinite both;
+    }
+
+    img:nth-child(3) {
+      left: 120px;
+      bottom: -30px;
+      -webkit-animation: wobble-hor-bottom 5s 2s infinite both;
+      animation: wobble-hor-bottom 5s 2s infinite both;
+    }
+
+  }
+
+  .instruments-2 {
+    bottom: 15%;
+    animation: bounce 5s 0.5s  infinite;
+
+    img:nth-child(1) {
+      right: 120px;
+      top: -30px;
+      -webkit-animation: wobble-hor-bottom 5s 1s infinite both;
+      animation: wobble-hor-bottom 5s 1s infinite both;
+    }
+
+    img:nth-child(2) {
+
+      -webkit-animation: wobble-hor-bottom 5s 1.5s infinite both;
+      animation: wobble-hor-bottom 5s 1.5s infinite both;
+    }
+
+    img:nth-child(3) {
+      right: 120px;
+      bottom: -30px;
+      -webkit-animation: wobble-hor-bottom 5s 2s infinite both;
+      animation: wobble-hor-bottom 5s 2s infinite both;
+    }
+  }
+
+
+  .msg-map {
+    position: absolute;
+  }
+
+  .show-map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+
+    p {
+      position: absolute;
+      font-weight: bold;
+      font-family: keifont, sans-serif;
+      font-size: 2rem;
+      color: #D7B377;
+      -webkit-text-stroke: 1px white;
+      pointer-events: none;
+      top: -1em;
+      z-index: 1;
+      -webkit-animation: pulsate-fwd 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite both;
+      animation: pulsate-fwd 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite both;
+    }
+
+    input {
+      width: 30%;
+
+    }
+  }
+
+  .show-map-button {
+    display: none;
+  }
+
+
+  .top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    background: #c7c2b6 url(/static/assets/images/instruments/music_sheet_bg.png) no-repeat 0% 20vh;
+    background-size: 100%;
+    width: 100vw;
+    height: 80vh;
+    padding-top: 20vh;
+    //padding-right: 50vw;
+    * {
+      box-sizing: border-box;
+    }
+
+  }
+
+  .top-color-picker {
+    background-color: #2B4162;
+    background-image: url(/static/assets/images/instruments/music_sheet_bg_white.png);
+    background-image: url(/static/assets/images/instruments/music_sheet_bg_border.png);
+  }
+
+  .middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*  .video-container {
+			position: relative;
+			padding-bottom: 56.25%; !* 16:9 *!
+			height: 0;
+
+
+	iframe{
+
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				 }
+		}*/
+
+  @media screen and (max-width: 849px) {
+
+    .credits-btn {
+      position: absolute;
+      bottom: 20%;
+      left: 0;
+      width: 5%;
+    }
+
+    .hbd-text {
+      top: 5%;
+      font-size: 1.5em;
+    }
+
     .instruments-1 {
-      top: 35%;
-      animation: bounce 0s 5s infinite;
-      img:nth-child(1){
-        left:120px;
-        top:-30px;
-        -webkit-animation: wobble-hor-bottom 5s 1s infinite both;
-        animation: wobble-hor-bottom 5s 1s infinite both;
-      }
-
-      img:nth-child(2){
-
-        -webkit-animation: wobble-hor-bottom 5s 2s infinite both;
-        animation: wobble-hor-bottom 5s 2s infinite both;
-      }
-      img:nth-child(3){
-        left:120px;
-        bottom:-30px;
-        -webkit-animation: wobble-hor-bottom 5s 3s infinite both;
-        animation: wobble-hor-bottom 5s 3s infinite both;
-      }
-
+      top: 10%
     }
-
     .instruments-2 {
-      bottom: 15%;
-      animation: bounce 0.5s 5s infinite;
-      img:nth-child(1){
-        right:120px;
-        top:-30px;
-        -webkit-animation: wobble-hor-bottom 5s 1s infinite both;
-        animation: wobble-hor-bottom 5s 1s infinite both;
-      }
-      img:nth-child(2){
-
-        -webkit-animation: wobble-hor-bottom 5s 2s infinite both;
-        animation: wobble-hor-bottom 5s 2s infinite both;
-      }
-      img:nth-child(3){
-        right:120px;
-        bottom:-30px;
-        -webkit-animation: wobble-hor-bottom 5s 3s infinite both;
-        animation: wobble-hor-bottom 5s 3s infinite both;
-      }
+      bottom: 0%;
     }
-
-
-    .msg-map {
-      position: absolute;
-    }
-
     .show-map {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      position: absolute;
-      bottom: 0;
-
       p {
-        position: absolute;
-        font-weight: bold;
-        font-family: keifont, sans-serif;
-        font-size: 2rem;
-        color: #D7B377;
-        -webkit-text-stroke: 1px white;
-        pointer-events: none;
-        top: -1em;
+        font-size: 1em;
+        bottom: 13vh;
       }
 
       input {
-        width: 30%;
+        width: 100%;
+        bottom: 0;
       }
     }
+    //.top {
+    //  background: #c7c2b6 url(/static/assets/images/instruments/music_sheet_bg.png) no-repeat 0 20vh;
+    //}
 
-    .show-map-button {
-      display: none;
-    }
+    .video-container {
+      //position: absolute;
+      //bottom: 12%;
+      //left: 12%;
+      width: 65vw;
+      height: 40vw;
 
-
-    .top {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: flex-start;
-      background: #c7c2b6 url(/static/assets/images/instruments/music_sheet_bg.png) no-repeat 0% 20vh;
-      background-size: 100%;
-      width: 100vw;
-      height: 80vh;
-      padding-top: 20vh;
-      //padding-right: 50vw;
-      * {
-        box-sizing: border-box;
-      }
-
-    }
-
-    .top-color-picker {
-      background-color: #2B4162;
-      background-image: url(/static/assets/images/instruments/music_sheet_bg_white.png);
-      background-image: url(/static/assets/images/instruments/music_sheet_bg_border.png);
-    }
-
-    .middle {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    /*  .video-container {
-				position: relative;
-				padding-bottom: 56.25%; !* 16:9 *!
-				height: 0;
-
-
-		iframe{
-
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
-					 }
-			}*/
-
-    @media screen and (max-width: 849px) {
-
-      .credits-btn {
+      iframe,img {
         position: absolute;
-        bottom: 20%;
-        left: 0;
-        width: 5%;
-      }
-
-      .hbd-text {
-        top: 5%;
-        font-size: 1.5em;
-      }
-
-      .instruments-1 {
-        top: 10%
-      }
-      .instruments-2 {
-        bottom: 0%;
-      }
-      .show-map {
-        p {
-          font-size: 1em;
-          bottom: 13vh;
-        }
-
-        input {
-          width: 100%;
-          bottom: 0;
-        }
-      }
-      //.top {
-      //  background: #c7c2b6 url(/static/assets/images/instruments/music_sheet_bg.png) no-repeat 0 20vh;
-      //}
-
-      .video-container {
-        //position: absolute;
-        //bottom: 12%;
-        //left: 12%;
-        width: 65vw;
-        height: 40vw;
-
-        iframe {
-          position: absolute;
-          bottom: 35%;
-          left: 0%;
-          width: 100%;
-          height: 25%;
-        }
+        bottom: 35%;
+        left: 0%;
+        width: 100%;
+        height: 25%;
       }
     }
+  }
 
-    @keyframes bounce {
-      0%,
-      20%,
-      50%,
-      80%,
-      100% {
-        transform: translateY(0);
-      }
-      40% {
-        transform: translateY(-30px);
-      }
-      60% {
-        transform: translateY(-15px);
-      }
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
     }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
   @-webkit-keyframes wobble-hor-bottom {
     0%,
     100% {
@@ -593,6 +612,7 @@
       transform-origin: 50% 50%;
     }
   }
+
   @keyframes wobble-hor-bottom {
     0%,
     100% {
@@ -624,6 +644,35 @@
     12% {
       -webkit-transform: translateX(-6px) rotate(-1.2deg);
       transform: translateX(-6px) rotate(-1.2deg);
+    }
+  }
+
+  @-webkit-keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  @keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
     }
   }
 </style>
