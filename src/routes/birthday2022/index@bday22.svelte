@@ -58,6 +58,8 @@
 			PopupContainer = (await import('$lib/map/Popup.svelte')).default;
 			CarouselContainer = (await import('svelte-carousel')).default;
 			hideMap();
+			document.getElementById('loading').style.transition = 'opacity 0.5s linear 0s';
+			document.getElementById('loading').style.opacity = 0;
 			setTimeout(() =>
 					document.getElementById('loading').style.display = 'none'
 				, (500));
@@ -313,7 +315,7 @@
   }
 
   main {
-    background: url(/static/assets/images/instruments/stand.png) no-repeat center center fixed,url(/static/assets/images/bgseamless.webp) no-repeat center center fixed;
+    background: url(/static/assets/images/bgseamless.webp) no-repeat center center fixed;
     background-size:cover;
     width: 100vw;
     flex-wrap: wrap;
@@ -487,7 +489,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-    background: #c7c2b6 url(/static/assets/images/instruments/music_sheet_bg.png) no-repeat 0% 20vh;
+    background: url(/static/assets/images/instruments/stand.png) no-repeat center center fixed, url(/static/assets/images/instruments/music_sheet_bg.png) no-repeat 0% 20vh;
     background-size: 100%;
     width: 100vw;
     height: 80vh;
@@ -501,6 +503,7 @@
 
   .top-color-picker {
     background-color: #2B4162;
+    background-image: url(/static/assets/images/instruments/stand.png);// no-repeat center center fixed;
     background-image: url(/static/assets/images/instruments/music_sheet_bg_white.png);
     background-image: url(/static/assets/images/instruments/music_sheet_bg_border.png);
   }
