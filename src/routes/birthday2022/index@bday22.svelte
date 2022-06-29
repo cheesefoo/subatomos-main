@@ -133,15 +133,15 @@
 	お祝いサイトではビデオコンサートやスバトモたちからのメッセージをご紹介しています！！！'
 	canonical={`https://subatomos.com/birthday2022`},
 	openGraph={{
-		url:`${baseURL}`,
+		url:baseURL,
 		images:[{
-			url:`${metaimg}`
+			url:metaimg
 		}]
 	}}
 	twitter={{
     handle: '@subatomos',
     cardType: 'summary_large_image',
-    image:`${baseURL}${metatwi}`
+    image:baseURL+metatwi
   }} />
 
 <div class='back-btn'>
