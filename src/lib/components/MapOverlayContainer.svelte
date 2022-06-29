@@ -188,7 +188,7 @@
     p {
       font-family: setofont, sans-serif;
       font-size: 1rem;
-      padding: 1.5em 0;
+      padding: 0em 0;
       color: #51b1c4;
     }
   }
@@ -238,6 +238,11 @@
     :global(.leaflet-popup) {
       width: 90vw !important;
     }
+		.box-inner{
+			p{
+				padding:0;
+			}
+		}
   }
 
   /*
