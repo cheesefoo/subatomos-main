@@ -30,7 +30,9 @@
 
 				<Credit {...creditsList.ragin} {descSameLine}><small>Piano</small></Credit>
 				<span>BigThiccVic<small>Piano</small></span>
-				<Credit {...creditsList.light} {descSameLine}><small>Piano</small></Credit>
+				<br/>
+				<span>LightMask<small>Piano</small></span>
+
 				<Credit {...creditsList.pong} {descSameLine}><small>Piano</small></Credit>
 				<span>shrimp<small>Clarinet, Bass Clarinet, & Tenor Saxophone</small></span>
 				<br />

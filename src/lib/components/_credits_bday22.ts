@@ -21,10 +21,8 @@ const credits = {
 		sns2: 'yt',
 		url2: 'https://www.youtube.com/channel/UC0TxKF6kNirEKaL9cam-lfA'
 	},
-	light: {
-		name: 'LightMask',
-		url: 'https://twitter.com/Light_Mask_1905'
-	},
+
+
 	ragin: {
 		name: 'Ragin\' Canadian',
 		url: 'https://twitter.com/canadian_ragin'
