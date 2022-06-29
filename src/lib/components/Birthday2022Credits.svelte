@@ -75,6 +75,7 @@
 						<h4>etc.</h4>
 
 			<Credit desc='Direction & Website' {descSameLine} {...creditsList.venn} />
+			<Credit desc='Website' {descSameLine} {...creditsList.fran} />
 			<Credit desc='Video Editing' {descSameLine} {...creditsList.gundam} />
 			<Credit desc='Translation' {descSameLine} {...creditsList.udarash} />
 			<Credit desc='Website Design' {descSameLine} name="ぴんころ#0031" />

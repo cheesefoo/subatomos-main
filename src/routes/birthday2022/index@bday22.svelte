@@ -35,9 +35,8 @@
 	import drums from '/static/assets/images/instruments/drums.png';
 	import guitar from '/static/assets/images/instruments/guitar.png';
 	import saxophone from '/static/assets/images/instruments/saxophone.png';
-
 	import showMapIcon from '/static/assets/images/subatomos_around_world.png';
-
+	import loading from '/static/assets/images/instruments/loading-suba-music.gif';
 	import 'leaflet/dist/leaflet.css';
 	import { Modal } from 'svelte-simple-modal';
 
@@ -59,8 +58,13 @@
 			PopupContainer = (await import('$lib/map/Popup.svelte')).default;
 			CarouselContainer = (await import('svelte-carousel')).default;
 			hideMap();
+			setTimeout(() =>
+					document.getElementById('loading').style.display = 'none'
+				, (500));
 		}
 	});
+
+
 	export let msgs;
 
 	let bothIcon, artIcon, picIcon, noneIcon;
@@ -112,7 +116,7 @@
 		mapElem.style.opacity = '0';
 		setTimeout(function() {
 			mapElem.style.zIndex = '-1';
-		}, (1000));
+		}, (500));
 	}
 
 	function resizeMap() {
@@ -170,6 +174,9 @@
 		</svg></span>
 	</a>
 </div>
+<div id='loading'>
+	<img src={loading} />
+</div>
 <main>
 	{#if $media.small}
 		<!--		<div class='hamburger'>
@@ -212,7 +219,7 @@
 
 		<div class='middle'>
 			<div class='video-container'>
-				<img src={metaimg} height={vidHeight} width={vidWidth}/>
+				<img src={metaimg} height={vidHeight} width={vidWidth} />
 				<!--<iframe
 					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
 					allowfullscreen
@@ -369,14 +376,15 @@
 
 
     }
-		img:hover{
+
+    img:hover {
       padding: 10px;
     }
   }
 
   .instruments-1 {
     top: 35%;
-    animation: bounce  5s 0s infinite;
+    animation: bounce 5s 0s infinite;
 
     img:nth-child(1) {
       left: 120px;
@@ -402,7 +410,7 @@
 
   .instruments-2 {
     bottom: 15%;
-    animation: bounce 5s 0.5s  infinite;
+    animation: bounce 5s 0.5s infinite;
 
     img:nth-child(1) {
       right: 120px;
@@ -425,6 +433,16 @@
     }
   }
 
+  #loading {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 9999;
+    background-color: #2B4162;
+    width: 100vw;
+    height: 100vh;
+
+  }
 
   .msg-map {
     position: absolute;
@@ -551,7 +569,7 @@
       width: 65vw;
       height: 40vw;
 
-      iframe,img {
+      iframe, img {
         position: absolute;
         bottom: 35%;
         left: 0%;
@@ -661,6 +679,7 @@
       transform: scale(1);
     }
   }
+
   @keyframes pulsate-fwd {
     0% {
       -webkit-transform: scale(1);
