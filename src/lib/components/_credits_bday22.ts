@@ -22,6 +22,7 @@ const credits = {
 		url2: 'https://www.youtube.com/channel/UC0TxKF6kNirEKaL9cam-lfA'
 	},
 
+	fran: { name: 'Eruben', url: 'https://twitter.com/eruben_thillior', sns2:'twitch',url2:'https://www.twitch.tv/eruben_thillior' },
 
 	ragin: {
 		name: 'Ragin\' Canadian',
@@ -75,7 +76,6 @@ const credits = {
 		sns: 'yt'
 	},
 	venn: { name: 'cheesefoo', url: 'https://twitter.com/cheesefoo2' },
-	fran: { name: 'Eruben', url: 'https://twitter.com/eruben_thillior' },
 	udarash: { name: '00：獣医の卵', url: 'https://twitter.com/subatomona00' }
 
 };
