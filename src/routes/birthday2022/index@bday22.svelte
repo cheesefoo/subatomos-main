@@ -140,8 +140,8 @@
 	twitter={{
     handle: '@subatomos',
     cardType: 'summary_large_image',
-    image:{${baseURL}${metatwi}}
-  }} />
+    image:`${baseURL}${metatwi}`
+	}} />
 
 <div class='back-btn'>
 	<a sveltekit:prefetch href='/'>
