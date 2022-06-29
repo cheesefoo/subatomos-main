@@ -503,9 +503,11 @@
 
   .top-color-picker {
     background-color: #2B4162;
-    background-image: url(/static/assets/images/instruments/stand.png);// no-repeat center center fixed;
-    background-image: url(/static/assets/images/instruments/music_sheet_bg_white.png);
-    background-image: url(/static/assets/images/instruments/music_sheet_bg_border.png);
+    //background-image: url(/static/assets/images/instruments/stand.png);// no-repeat center center fixed;
+    //background-image: url(/static/assets/images/instruments/music_sheet_bg_white.png);
+    //background-image: url(/static/assets/images/instruments/music_sheet_bg_border.png);
+    background: url(/static/assets/images/instruments/stand.png) no-repeat center center fixed, url(/static/assets/images/instruments/music_sheet_bg_border.png) no-repeat 0% 20vh;
+
   }
 
   .middle {
