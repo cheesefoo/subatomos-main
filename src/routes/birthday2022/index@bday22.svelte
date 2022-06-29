@@ -26,8 +26,8 @@
 	import MapOverlayContainer from '$lib/components/MapOverlayContainer.svelte';
 
 	import { media } from '$lib/stores/stores';
-	import metaimg from '/static/assets/images/3rdanniversarylogo.jpg';
-	import metatwi from '/static/assets/images/meta3rd.jpg';
+	import metaimg from '/static/assets/images/subaru_birthday_thumbnail.png';
+	import metatwi from '/static/assets/images/subaru_birthday_thumbnail.jpg';
 
 	import piano from '/static/assets/images/instruments/piano.png';
 	import accordion from '/static/assets/images/instruments/accordion.png';
@@ -212,7 +212,7 @@
 
 		<div class='middle'>
 			<div class='video-container'>
-				<img src='https://cdn.discordapp.com/attachments/984694080258842654/991692329964548126/subaru_birthday_thumbnail.png' height={vidHeight} width={vidWidth}/>
+				<img src={metaimg} height={vidHeight} width={vidWidth}/>
 				<!--<iframe
 					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
 					allowfullscreen
@@ -366,11 +366,11 @@
       box-sizing: border-box;
       transition: padding 0.2s;
       padding: 0;
-			:hover{
-        padding: 10px;
 
-      }
 
+    }
+		img:hover{
+      padding: 10px;
     }
   }
 
