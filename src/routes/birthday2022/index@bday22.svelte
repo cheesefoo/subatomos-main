@@ -237,13 +237,9 @@
 					<div class='instruments instruments-2 '>
 						<img src={flute} alt='flute'>
 						<img src={piano} alt='piano'>
+						<img src={accordion} alt='accordion' style='visibility:hidden'>
 
-						<div class='credits-btn'>
-							<Modal styleWindow={{width:'auto',backgroundColor: '#f1bd65'}}
-										 }>
-								<Birthday2022CreditsButton />
-							</Modal>
-						</div>
+
 					</div>
 				{/if}
 				<p>Tap to see messages from Subatomos!<br>タップするとスバ友からのメッセージが表示されます!</p>
@@ -258,7 +254,7 @@
 				<img src={accordion} alt='accordion'></div>
 		{/if}
 	</div>
-	{#if browser && !$media.small}
+	{#if browser }
 		<div class='credits-btn'>
 			<Modal styleWindow={{width:'auto',backgroundColor: '#f1bd65'}}
 						 }>
@@ -442,7 +438,7 @@
     bottom: 0;
     left: 0;
     position: absolute;
-    width: 25%;
+    width: 5vw;
   }
 
   .hamburger {
@@ -650,14 +646,14 @@
 
   @media screen and (max-width: 849px) {
     .credits-btn {
-      bottom: 20%;
-      left: 0;
+      bottom: 23vh;
+			left:initial;
+			right:5%;
       position: absolute;
-      width: 5%;
+      width: 25vw;
     }
     .hbd-text {
-      font-size: 1.5em;
-      top: 5%;
+
       -webkit-text-stroke: 1px #fff;
       background-color: #2b4162;
       color: #d7b377;
@@ -678,7 +674,7 @@
     .show-map {
       p {
         font-size: 1em;
-        bottom: 5vh;
+        bottom: 10vh;
         top: initial;
       }
 
@@ -725,6 +721,7 @@
       text-align: center;
       top: 3px;
       width: 100%;
+      margin-top: 5vh;
 
       iframe {
         bottom: 35%;
@@ -788,12 +785,16 @@
       padding: 0 10px !important;
       width: 100% !important;
 
-      img {
+      img,div {
         display: block;
         height: 100%;
         position: initial;
         width: 30%;
       }
+			div{
+				width:25%;
+
+			}
 
       .instruments-1 {
         z-index: 1;
@@ -806,11 +807,11 @@
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: flex-start;
+      flex:1 1 20%;
     }
     .middle {
       align-content: space-around;
       align-items: flex-start;
-      display: block;
       flex: 1 1 60%;
       flex-direction: column;
       height: auto;
