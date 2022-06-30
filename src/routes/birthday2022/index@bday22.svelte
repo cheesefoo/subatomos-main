@@ -234,13 +234,17 @@
 			</div>
 			<div class='show-map'>
 				{#if $media.small}
-					<div class='instruments instruments-2 '><img src={flute}
-																											 alt='flute'
-					><img
-						src={piano} alt='piano'
-					> <img src={accordion}
-								 alt='accordion'
-					></div>
+					<div class='instruments instruments-2 '>
+						<img src={flute} alt='flute'>
+						<img src={piano} alt='piano'>
+
+							<div class='credits-btn'>
+								<Modal styleWindow={{width:'auto',backgroundColor: '#f1bd65'}}
+											 }>
+									<Birthday2022CreditsButton />
+								</Modal>
+							</div>
+					</div>
 				{/if}
 				<p>Tap to see messages from Subatomos!<br>タップするとスバ友からのメッセージが表示されます!</p>
 				<input type='image' src={showMapIcon} class:show-map-button={!eye} on:click={showMap} alt='show map' />
@@ -248,23 +252,20 @@
 			</div>
 		</div>
 		{#if !$media.small}
-			<div class='instruments instruments-2 '><img src={flute}
-																									 alt='flute'
-			><img
-				src={piano} alt='piano'
-			> <img src={accordion}
-						 alt='accordion'
-			></div>
+			<div class='instruments instruments-2 '>
+				<img src={flute} alt='flute'>
+				<img src={piano} alt='piano'>
+				<img src={accordion} alt='accordion'></div>
 		{/if}
 	</div>
-	<!--{#if browser && !$media.small}-->
-	<div class='credits-btn'>
-		<Modal styleWindow={{width:'auto',backgroundColor: '#f1bd65'}}
-					 }>
-			<Birthday2022CreditsButton />
-		</Modal>
-	</div>
-	<!--{/if}-->
+	{#if browser && !$media.small}
+		<div class='credits-btn'>
+			<Modal styleWindow={{width:'auto',backgroundColor: '#f1bd65'}}
+						 }>
+				<Birthday2022CreditsButton />
+			</Modal>
+		</div>
+	{/if}
 	{#if browser}
 		<div class='msg-map'>
 			{#if browser}
@@ -811,10 +812,15 @@
   }
 
   @media screen and (max-width: 849px) {
-main{
+    main {
 
-  min-height:100vh;
-}
+      min-height: 100vh;
+			justify-content: flex-start;
+      justify-items: center;
+      display: flex;
+      overflow: hidden;
+      flex-direction: column;
+    }
 
     .instruments .instruments-2 {
       margin-top: 0;
@@ -822,18 +828,16 @@ main{
       position: relative;
     }
     .hbd-text {
-      position: absolute;
       text-align: center;
-      font-family: keifont, sans-serif;
-      font-size: 2em;
+      font-family: keifont,sans-serif;
       font-weight: bolder;
       top: -3vh;
       color: #d7b377;
       -webkit-text-stroke: 1px white;
-      z-index: 1 !important;
+      z-index: 1!important;
       position: initial;
       font-size: 1.5em;
-      padding-top: 0.5em;
+      padding-top: .5em;
       background-color: #2b4162;
       margin: 0;
     }
@@ -850,49 +854,44 @@ main{
     }
 
     .instruments {
-      height: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      width: 200px;
-      flex: 1 1 10%;
-      padding: 10vh 0;
-      width: 100%;
-      flex-direction: row;
-      height: 10vh;
-      padding: 0;
-      margin-top: 5vh;
+
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      width: 100% !important;
+      flex-direction: row !important;
+      height: 10px !important;
+      margin-top: 5vh !important;
+      flex: 0 1 10vh !important;
+      margin-bottom: -5vh !important;
+      padding: 0 10px !important;
     }
 
     .instruments img {
-      width: 50%;
       width: 30%;
       height: 100%;
       position: initial;
-    }
-
-
-    .middle {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex: 1 1 60%;
-      height: 100vh;
-      height: auto;
-      align-items: center;
-      align-content: center;
-      justify-content: center;
       display: block;
     }
+
+
+		.instruments .instruments-1{
+			z-index: 1;
+		}
+
+    .middle {
+      flex-direction: column;
+      flex: 1 1 60%;
+      height: auto;
+			align-items: flex-start;
+      align-content: space-around;
+      justify-content: space-between;
+      display: block;
+    }
+
     .video-container {
-      background-image: url('/static/assets/images/instruments/stand.png');
-      background-size: contain;
-      background-position: bottom center;
       background-repeat: no-repeat;
-      height: 70vh;
-      display: flex;
       align-content: center;
       flex-direction: column;
       flex-wrap: wrap;
@@ -908,7 +907,7 @@ main{
       background-size: contain;
       background-position: bottom center;
       padding-top: 80px;
-      background-image: url('/static/assets/images/instruments/stand_mobile.png');
+      background-image: url('/static/assets/images/instruments/stand_mobile.png') !important;;
     }
 
 
@@ -919,19 +918,19 @@ main{
       text-align: center;
     }
 
-    .video-container img {
-      position: absolute;
+    .video-container img,  .video-container iframe {
       bottom: 35%;
       left: 0%;
-      width: 100%;
-      height: 25%;
       position: initial;
       text-align: center;
       margin: auto;
       width: 75%;
       height: 100%;
+      -o-object-fit: contain;
       object-fit: contain;
+      -o-object-position: bottom center;
       object-position: bottom center;
+      width: 75% !important;
     }
 
     .show-map {
@@ -950,6 +949,18 @@ main{
       background-repeat: no-repeat;
       padding-top: 0;
     }
+		.show-map p {
+			top:initial;
+			bottom:5vh;
+		}
+		.show-map input{
+			width: 100%;
+			flex: 1 1 50%;
+      -o-object-fit: contain;
+      object-fit: contain;
+      -o-object-position: bottom;
+      object-position: bottom;
+		}
 
     #loading img {
       width: 100vw;

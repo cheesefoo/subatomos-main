@@ -1,11 +1,12 @@
 <script>
 	import { getContext } from 'svelte';
 	import Birthday2022Credits from '$lib/components/Birthday2022Credits.svelte';
+	import credits from '/static/assets/images/credits_duck.webp';
 
 	const { open } = getContext('simple-modal');
 	const openModal = () => open(Birthday2022Credits);
 </script>
-<button class='credits-btn' on:click={openModal}>Credits</button>
+<input class='credits-btn' type='image' src={credits} on:click={openModal}  alt='credits'/>
 
 <style lang='scss'>
   .credits-btn {
@@ -21,12 +22,12 @@
     background: $salmon;
   }
 
-  @media screen and (max-width: 849px) {
-		.credits-btn {
+/*  @media screen and (max-width: 849px) {
+    .credits-btn {
       font-size: 1em;
       padding: 1.25em 0.75em;
-			background-color: $salmon;
+      background-color: $salmon;
       clip-path: circle(40% at 50% 50%);
     }
-  }
+  }*/
 </style>
