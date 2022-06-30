@@ -233,11 +233,21 @@
 				/>-->
 			</div>
 			<div class='show-map'>
+				{#if $media.small}
+					<div class='instruments instruments-2 '><img src={flute}
+																											 alt='flute'
+					><img
+						src={piano} alt='piano'
+					> <img src={accordion}
+								 alt='accordion'
+					></div>
+				{/if}
 				<p>Tap to see messages from Subatomos!<br>タップするとスバ友からのメッセージが表示されます!</p>
 				<input type='image' src={showMapIcon} class:show-map-button={!eye} on:click={showMap} alt='show map' />
 
 			</div>
 		</div>
+		{#if !$media.small}
 		<div class='instruments instruments-2 '><img src={flute}
 																								 alt='flute'
 		><img
@@ -245,7 +255,7 @@
 		> <img src={accordion}
 					 alt='accordion'
 		></div>
-
+		{/if}
 	</div>
 	<!--{#if browser && !$media.small}-->
 	<div class='credits-btn'>
@@ -796,5 +806,158 @@ top:-3vh;
     color: #d7b377;
     -webkit-text-stroke: 1px white;
     z-index: 1;
+  }
+  @media screen and (max-width: 849px) {
+		.show-map{
+			border-bottom: 10px solid white;
+
+		}
+		.instruments .instruments-2{
+		margin-top:0;
+			top:-5vh;
+			position:relative;
+		}
+    .hbd-text {
+      position: absolute;
+      text-align: center;
+      font-family: keifont,sans-serif;
+      font-size: 2em;
+      font-weight: bolder;
+      top: -3vh ;
+      color: #d7b377;
+      -webkit-text-stroke: 1px white;
+      z-index: 1 !important;
+      position: initial;
+      font-size: 1.5em;
+      padding-top: 0.5em ;
+      background-color: #2b4162;
+      margin: 0;
+    }
+
+
+    .top.top-color-picker {
+      display: flex ;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: flex-start ;
+      align-items: center t;
+      flex-direction: column ;
+      display: block;
+    }
+
+    .instruments {
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 200px;
+      flex: 1 1 10%;
+      padding: 10vh 0;
+      width: 100% ;
+      flex-direction: row ;
+      height: 10vh ;
+      padding: 0 ;
+      margin-top: 5vh;
+    }
+
+    .instruments img {
+      width: 50%;
+      width: 30%;
+      height: 100%;
+      position: initial;
+    }
+
+
+    .middle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1 1 60%;
+      height: 100vh;
+      height: auto ;
+      align-items: center ;
+      align-content: center ;
+      justify-content: center;
+      display: block ;
+    }
+    .video-container {
+      background-image: url('/static/assets/images/instruments/stand.png');
+      background-size: contain;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      height: 70vh;
+      display: flex;
+      align-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+      position: relative;
+      top: 3px;
+      display: block;
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      height: 30vh;
+      background-size: contain;
+      background-position: bottom center;
+      padding-top: 80px;
+      background-image: url('/static/assets/images/instruments/stand_mobile.png');
+    }
+
+
+    .video-container>* {
+      width: 64%;
+      height: auto;
+      display: block;
+      text-align: center;
+    }
+
+    .video-container img {
+      position: absolute;
+      bottom: 35% ;
+      left: 0% ;
+      width: 100%;
+      height: 25%;
+      position: initial ;
+      text-align: center;
+      margin: auto ;
+      width: 75% ;
+      height: 100%;
+      object-fit: contain;
+      object-position: bottom center;
+    }
+
+    .show-map {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center ;
+      text-align: center;
+      bottom: 0 ;
+      background-image: url('/static/assets/images/instruments/stand_pole_mobile.png');
+      background-size: 100% auto;
+      width: 100% ;
+      flex: 1 1 20%;
+      position: relative;
+      flex-wrap: wrap;
+      background-repeat: no-repeat;
+      padding-top:0;
+    }
+
+    #loading img{
+      width:100vw;
+      height: 100vw;
+      object-fit: contain;
+      object-position: center;;
+    }
+
+
+    .top{
+      height:initial;
+    }
+
   }
 </style>
