@@ -302,11 +302,6 @@
 </main>
 
 <style lang='scss'>
-  body {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
   .back-btn {
     font-size: 3em;
     position: absolute;
@@ -353,32 +348,34 @@
   }
 
   .hbd-text {
-
     position: absolute;
     text-align: center;
     font-family: keifont, sans-serif;
     font-size: 2em;
     font-weight: bolder;
-    top: -3vh;
-    color: #d7b377;
+top:-3vh;
+
+    color: #D7B377;
     -webkit-text-stroke: 1px white;
-    z-index: 1;
   }
 
   .instruments {
-
-    height: 100% !important;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    flex-direction: column !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    width: 200px !important;
-    flex: 1 1 10% !important;
-    padding: 10vh 0 !important;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 20vw;
 
     img {
-      width: 50%
+      position: relative;
+      width: 100%;
+      height: 20vh;
+      object-fit: contain;
+      box-sizing: border-box;
+      transition: padding 0.2s;
+      padding: 0;
 
 
     }
@@ -457,27 +454,29 @@
   .show-map {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    /* position: absolute; */
+    position: absolute;
     bottom: 0;
-    background-image: url('/static/assets/images/instruments/stand_pole.png');
-    background-size: 100% auto;
-    width: 100%;
-    flex: 1 1 20%;
-    position: relative;
-    flex-wrap: wrap;
 
     p {
-      top: 1em;
+      position: absolute;
+      font-weight: bold;
+      font-family: keifont, sans-serif;
+      font-size: 2rem;
+      color: #D7B377;
+      -webkit-text-stroke: 1px white;
+      pointer-events: none;
+      top: -1em;
+      z-index: 1;
+      -webkit-animation: pulsate-fwd 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite both;
+      animation: pulsate-fwd 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite both;
     }
 
     input {
-      width: 60%;
-      flex: 1 1 30%;
-      object-fit: contain;
-      object-position: bottom;
+      width: 30%;
+
     }
   }
 
@@ -494,9 +493,8 @@
     background: #c7c2b6 url(/static/assets/images/instruments/music_sheet_bg.png) no-repeat 0% 20vh;
     background-size: 100%;
     width: 100vw;
-
-    padding-top: 0;
-    height: 100vh;
+    height: 80vh;
+    padding-top: 20vh;
     //padding-right: 50vw;
     * {
       box-sizing: border-box;
@@ -506,54 +504,31 @@
 
   .top-color-picker {
 
-    background: #2B4162 url(/static/assets/images/instruments/music_sheet_bg_border.webp) no-repeat 0 20vh;
-    background-size: contain;
+    background: url(/static/assets/images/instruments/stand.webp) no-repeat center -20vh fixed, #2B4162 url(/static/assets/images/instruments/music_sheet_bg_border.webp) no-repeat 0% 20vh;
+    background-size: cover, contain;
   }
 
   .middle {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    flex: 1 1 60% !important;
-    height: 100vh !important;
-  }
-
-  .video-container {
-
-    background-image: url('static/assets/images/instruments/stand.png') !important;
-    background-size: contain;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    height: 70vh;
     display: flex;
-    align-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-end;
-    position: relative;
-    top: 3px;
-
-    iframe {
-
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-
   }
 
-  .video-container > * {
+  /*  .video-container {
+			position: relative;
+			padding-bottom: 56.25%; !* 16:9 *!
+			height: 0;
 
-    width: 64% !important;
-    height: auto !important;
-    display: block !important;
-    text-align: center !important;
 
-  }
+	iframe{
+
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				 }
+		}*/
 
   @media screen and (max-width: 849px) {
 
@@ -721,5 +696,105 @@
       -webkit-transform: scale(1);
       transform: scale(1);
     }
+  }
+  body{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .instruments img {
+    width:50%
+  }
+
+  .top-color-picker  {
+    background: #2B4162 url(/static/assets/images/instruments/music_sheet_bg_border.webp) no-repeat 0% 20vh;
+    background-size: contain;
+  }
+
+  .video-container {
+    background-image: url('/static/assets/images/instruments/stand.webp') !important;
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    top:3px;
+  }
+
+  .video-container > * {
+    width: 64% !important;
+    height: auto !important;
+    display: block !important;
+    text-align: center !important;
+    /* margin: auto !important; */
+  }
+
+  .middle  {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    flex: 1 1 60% !important;
+    height: 100vh !important;
+  }
+
+  .instruments {
+    height: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 200px !important;
+    flex: 1 1 10% !important;
+    padding: 10vh 0 !important;
+  }
+
+  .show-map  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    /* position: absolute; */
+    bottom: 0;
+    background-image: url('/static/assets/images/instruments/stand_pole.png');
+    background-size: 100% auto;
+    width: 100%;
+    flex: 1 1 20%;
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  .show-map  input  {
+    width: 60%;
+    flex: 1 1 30%;
+    object-fit: contain;
+    object-position: bottom;
+  }
+
+  .show-map p {
+    top:1em;
+  }
+
+  .top {
+    padding-top:0;
+    height: 100vh;
+  }
+  .hbd-text {
+    position: absolute;
+    text-align: center;
+    font-family: keifont,sans-serif;
+    font-size: 2em;
+    font-weight: bolder;
+    top: -3vh;
+    color: #d7b377;
+    -webkit-text-stroke: 1px white;
+    z-index: 1;
   }
 </style>
