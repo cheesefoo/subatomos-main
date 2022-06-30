@@ -742,13 +742,13 @@
         left: 0;
         -o-object-fit: contain;
         -o-object-position: bottom center;
-        height: 100%;
         margin: auto;
         object-fit: contain;
         object-position: bottom center;
         position: initial;
         text-align: center;
-        width: 75% !important;
+        width: 100% !important;
+        height:auto !important;
       }
 
       img {
