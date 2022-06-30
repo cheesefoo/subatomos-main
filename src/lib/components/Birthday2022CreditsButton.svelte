@@ -12,10 +12,9 @@
   .credits-btn {
     border: none;
     background-color: inherit;
-    padding: 1em 2em;
-    font-size: 1.5em;
     cursor: pointer;
     display: inline-block;
+		width:100%;
   }
 
   .credits-btn:hover {
