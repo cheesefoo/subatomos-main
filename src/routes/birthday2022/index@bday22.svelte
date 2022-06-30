@@ -736,23 +736,23 @@ top:-3vh;
   }
 
   .middle  {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    flex: 1 1 60% !important;
-    height: 100vh !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 60%;
+    height: 100vh;
   }
 
   .instruments {
-    height: 100% !important;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    flex-direction: column !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    width: 200px !important;
-    flex: 1 1 10% !important;
-    padding: 10vh 0 !important;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    flex: 1 1 10%;
+    padding: 10vh 0;
   }
 
   .show-map  {
