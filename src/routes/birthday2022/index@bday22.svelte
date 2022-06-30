@@ -238,12 +238,12 @@
 						<img src={flute} alt='flute'>
 						<img src={piano} alt='piano'>
 
-							<div class='credits-btn'>
-								<Modal styleWindow={{width:'auto',backgroundColor: '#f1bd65'}}
-											 }>
-									<Birthday2022CreditsButton />
-								</Modal>
-							</div>
+						<div class='credits-btn'>
+							<Modal styleWindow={{width:'auto',backgroundColor: '#f1bd65'}}
+										 }>
+								<Birthday2022CreditsButton />
+							</Modal>
+						</div>
 					</div>
 				{/if}
 				<p>Tap to see messages from Subatomos!<br>タップするとスバ友からのメッセージが表示されます!</p>
@@ -313,292 +313,8 @@
 </main>
 
 <style lang='scss'>
-  .back-btn {
-    font-size: 3em;
-    position: absolute;
-    left: 3vw;
-    top: 0;
-    width: 1em;
-
-    a {
-      color: black;
-    }
-  }
-
-  main {
-    background: url(/static/assets/images/bgseamless.webp) no-repeat center center fixed;
-    background-size: cover;
-    width: 100vw;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    justify-items: center;
-    display: flex;
-    overflow: hidden;
-  }
-
-  .arrow {
-    position: absolute;
-    animation: bounce 2s infinite;
-    bottom: 0;
-
-    img {
-      width: 90%;
-    }
-  }
-
-  .credits-btn {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 25%;
-  }
-
-  .hamburger {
-    position: absolute;
-    right: 0px;
-  }
-
-  .hbd-text {
-    position: absolute;
-    text-align: center;
-    font-family: keifont, sans-serif;
-    font-size: 2em;
-    font-weight: bolder;
-    top: -3vh;
-
-    color: #D7B377;
-    -webkit-text-stroke: 1px white;
-  }
-
-  .instruments {
-    height: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 20vw;
-
-    img {
-      position: relative;
-      width: 100%;
-      height: 20vh;
-      object-fit: contain;
-      box-sizing: border-box;
-      transition: padding 0.2s;
-      padding: 0;
-
-
-    }
-
-    img:hover {
-      padding: 10px;
-    }
-  }
-
-  .instruments-1 {
-    top: 35%;
-    animation: bounce 5s 0s infinite;
-
-    img:nth-child(1) {
-      left: 120px;
-      top: -30px;
-      -webkit-animation: wobble-hor-bottom 5s 1s infinite both;
-      animation: wobble-hor-bottom 5s 1s infinite both;
-    }
-
-    img:nth-child(2) {
-
-      -webkit-animation: wobble-hor-bottom 5s 1.5s infinite both;
-      animation: wobble-hor-bottom 5s 1.5s infinite both;
-    }
-
-    img:nth-child(3) {
-      left: 120px;
-      bottom: -30px;
-      -webkit-animation: wobble-hor-bottom 5s 2s infinite both;
-      animation: wobble-hor-bottom 5s 2s infinite both;
-    }
-
-  }
-
-  .instruments-2 {
-    bottom: 15%;
-    animation: bounce 5s 0.5s infinite;
-
-    img:nth-child(1) {
-      right: 120px;
-      top: -30px;
-      -webkit-animation: wobble-hor-bottom 5s 1s infinite both;
-      animation: wobble-hor-bottom 5s 1s infinite both;
-    }
-
-    img:nth-child(2) {
-
-      -webkit-animation: wobble-hor-bottom 5s 1.5s infinite both;
-      animation: wobble-hor-bottom 5s 1.5s infinite both;
-    }
-
-    img:nth-child(3) {
-      right: 120px;
-      bottom: -30px;
-      -webkit-animation: wobble-hor-bottom 5s 2s infinite both;
-      animation: wobble-hor-bottom 5s 2s infinite both;
-    }
-  }
-
-  #loading {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    z-index: 9999;
-    background-color: #2B4162;
-    width: 100vw;
-    height: 100vh;
-
-  }
-
-  .msg-map {
-    position: absolute;
-  }
-
-  .show-map {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-
-    p {
-      position: absolute;
-      font-weight: bold;
-      font-family: keifont, sans-serif;
-      font-size: 2rem;
-      color: #D7B377;
-      -webkit-text-stroke: 1px white;
-      pointer-events: none;
-      top: -1em;
-      z-index: 1;
-      -webkit-animation: pulsate-fwd 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite both;
-      animation: pulsate-fwd 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite both;
-    }
-
-    input {
-      width: 30%;
-
-    }
-  }
-
-  .show-map-button {
-    display: none;
-  }
-
-
-  .top {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    background: #c7c2b6 url(/static/assets/images/instruments/music_sheet_bg.png) no-repeat 0% 20vh;
-    background-size: 100%;
-    width: 100vw;
-    height: 80vh;
-    padding-top: 20vh;
-    //padding-right: 50vw;
-    * {
-      box-sizing: border-box;
-    }
-
-  }
-
-  .top-color-picker {
-
-    background: url(/static/assets/images/instruments/stand.webp) no-repeat center -20vh fixed, #2B4162 url(/static/assets/images/instruments/music_sheet_bg_border.webp) no-repeat 0% 20vh;
-    background-size: cover, contain;
-  }
-
-  .middle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /*  .video-container {
-			position: relative;
-			padding-bottom: 56.25%; !* 16:9 *!
-			height: 0;
-
-
-	iframe{
-
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				 }
-		}*/
-
-  @media screen and (max-width: 849px) {
-
-    .credits-btn {
-      position: absolute;
-      bottom: 20%;
-      left: 0;
-      width: 5%;
-    }
-
-    .hbd-text {
-      top: 5%;
-      font-size: 1.5em;
-    }
-
-    .instruments-1 {
-      top: 10%
-    }
-    .instruments-2 {
-      bottom: 0%;
-    }
-    .show-map {
-      p {
-        font-size: 1em;
-        bottom: 13vh;
-      }
-
-      input {
-        width: 100%;
-        bottom: 0;
-      }
-    }
-    //.top {
-    //  background: #c7c2b6 url(/static/assets/images/instruments/music_sheet_bg.png) no-repeat 0 20vh;
-    //}
-
-    .video-container {
-      //position: absolute;
-      //bottom: 12%;
-      //left: 12%;
-      width: 65vw;
-      height: 40vw;
-
-      iframe, img {
-        position: absolute;
-        bottom: 35%;
-        left: 0%;
-        width: 100%;
-        height: 25%;
-      }
-    }
-  }
-
   @keyframes bounce {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
+    0%, 20%, 50%, 80%, 100% {
       transform: translateY(0);
     }
     40% {
@@ -610,13 +326,6 @@
   }
 
   @-webkit-keyframes wobble-hor-bottom {
-    0%,
-    100% {
-      -webkit-transform: translateX(0%);
-      transform: translateX(0%);
-      -webkit-transform-origin: 50% 50%;
-      transform-origin: 50% 50%;
-    }
     2% {
       -webkit-transform: translateX(-30px) rotate(-6deg);
       transform: translateX(-30px) rotate(-6deg);
@@ -637,20 +346,19 @@
       -webkit-transform: translateX(-6px) rotate(-1.2deg);
       transform: translateX(-6px) rotate(-1.2deg);
     }
-    12% {
+    0%, 100%, 12% {
       -webkit-transform: translateX(0%);
-      transform: translateX(0%);
       -webkit-transform-origin: 50% 50%;
+      transform: translateX(0%);
       transform-origin: 50% 50%;
     }
   }
 
   @keyframes wobble-hor-bottom {
-    0%,
-    100% {
+    0%, 100% {
       -webkit-transform: translateX(0%);
-      transform: translateX(0%);
       -webkit-transform-origin: 50% 50%;
+      transform: translateX(0%);
       transform-origin: 50% 50%;
     }
     2% {
@@ -669,44 +377,247 @@
       -webkit-transform: translateX(9px) rotate(2.4deg);
       transform: translateX(9px) rotate(2.4deg);
     }
-    10% {
-      -webkit-transform: translateX(-6px) rotate(-1.2deg);
-      transform: translateX(-6px) rotate(-1.2deg);
-    }
-    12% {
+    10%, 12% {
       -webkit-transform: translateX(-6px) rotate(-1.2deg);
       transform: translateX(-6px) rotate(-1.2deg);
     }
   }
 
   @-webkit-keyframes pulsate-fwd {
-    0% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-    }
     50% {
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }
-    100% {
+    0%, 100% {
       -webkit-transform: scale(1);
       transform: scale(1);
     }
   }
 
   @keyframes pulsate-fwd {
-    0% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-    }
     50% {
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }
-    100% {
+    0%, 100% {
       -webkit-transform: scale(1);
       transform: scale(1);
     }
+  }
+
+  .back-btn {
+    font-size: 3em;
+    left: 3vw;
+    position: absolute;
+    top: 0;
+    width: 1em;
+
+    a {
+      color: #000;
+    }
+  }
+
+  main {
+    background: url(/static/assets/images/bgseamless.webp) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-items: center;
+    overflow: hidden;
+    width: 100vw;
+  }
+
+  .arrow {
+    animation: bounce 2s infinite;
+    bottom: 0;
+    position: absolute;
+
+    img {
+      width: 90%;
+    }
+  }
+
+  .credits-btn {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 25%;
+  }
+
+  .hamburger {
+    position: absolute;
+    right: 0;
+  }
+
+  .hbd-text {
+    -webkit-text-stroke: 1px #fff;
+    color: #D7B377;
+    font: bolder 2em keifont, sans-serif;
+    position: absolute;
+    text-align: center;
+    top: -3vh;
+    z-index: 1;
+  }
+
+  .instruments {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1 1 10%;
+    height: 100%;
+    padding: 10vh 0;
+    width: 200px;
+
+    img {
+      box-sizing: border-box;
+      height: 20vh;
+      object-fit: contain;
+      padding: 0;
+      position: relative;
+      transition: padding .2s;
+      width: 50%;
+
+      &:hover {
+        padding: 10px;
+      }
+    }
+  }
+
+  .instruments-1 {
+    animation: bounce 5s 0s infinite;
+    top: 35%;
+
+    img {
+      &:nth-child(1) {
+        -webkit-animation: wobble-hor-bottom 5s 1s infinite both;
+        animation: wobble-hor-bottom 5s 1s infinite both;
+        left: 120px;
+        top: -30px;
+      }
+
+      &:nth-child(3) {
+        -webkit-animation: wobble-hor-bottom 5s 2s infinite both;
+        animation: wobble-hor-bottom 5s 2s infinite both;
+        bottom: -30px;
+        left: 120px;
+      }
+
+      &:nth-child(2) {
+        -webkit-animation: wobble-hor-bottom 5s 1.5s infinite both;
+        animation: wobble-hor-bottom 5s 1.5s infinite both;
+      }
+    }
+  }
+
+  .instruments-2 {
+    animation: bounce 5s .5s infinite;
+    bottom: 15%;
+
+    img {
+      &:nth-child(1) {
+        -webkit-animation: wobble-hor-bottom 5s 1s infinite both;
+        animation: wobble-hor-bottom 5s 1s infinite both;
+        right: 120px;
+        top: -30px;
+      }
+
+      &:nth-child(3) {
+        -webkit-animation: wobble-hor-bottom 5s 2s infinite both;
+        animation: wobble-hor-bottom 5s 2s infinite both;
+        bottom: -30px;
+        right: 120px;
+      }
+
+      &:nth-child(2) {
+        -webkit-animation: wobble-hor-bottom 5s 1.5s infinite both;
+        animation: wobble-hor-bottom 5s 1.5s infinite both;
+      }
+    }
+  }
+
+  #loading {
+    background-color: #2B4162;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    z-index: 9999;
+  }
+
+  .msg-map {
+    position: absolute;
+  }
+
+  .show-map {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(/static/assets/images/instruments/stand_pole.png);
+    background-size: 100% auto;
+    flex: 1 1 20%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+
+    p {
+      -webkit-animation: pulsate-fwd 5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite both;
+      -webkit-text-stroke: 1px #fff;
+      animation: pulsate-fwd 5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite both;
+      color: #D7B377;
+      font: 700 2rem keifont, sans-serif;
+      pointer-events: none;
+      position: absolute;
+      z-index: 1;
+      top: 1em;
+    }
+
+    input {
+      flex: 1 1 30%;
+      object-fit: contain;
+      object-position: bottom;
+      width: 60%;
+    }
+  }
+
+  .show-map-button {
+    display: none;
+  }
+
+  .top {
+    align-items: flex-start;
+    background: #c7c2b6 url(/static/assets/images/instruments/music_sheet_bg.png) no-repeat 0 20vh;
+    background-size: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 0;
+
+    * {
+      box-sizing: border-box;
+    }
+  }
+
+  .top-color-picker {
+    background-size: cover, contain;
+    background: #2B4162 url(/static/assets/images/instruments/music_sheet_bg_border.webp) no-repeat 0 20vh;
+    background-size: contain;
+  }
+
+  .middle {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 60%;
+    height: 100vh;
   }
 
   body {
@@ -714,265 +625,208 @@
     overflow-x: hidden;
   }
 
-  .instruments img {
-    width: 50%
-  }
-
-  .top-color-picker {
-    background: #2B4162 url(/static/assets/images/instruments/music_sheet_bg_border.webp) no-repeat 0% 20vh;
-    background-size: contain;
-  }
-
   .video-container {
-    background-image: url('/static/assets/images/instruments/stand.webp') !important;
-    background-size: contain;
+    align-content: center;
+    align-items: center;
+    background-image: url(/static/assets/images/instruments/stand.webp) !important;
     background-position: bottom center;
     background-repeat: no-repeat;
-    height: 70vh;
+    background-size: contain;
     display: flex;
-    align-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
+    height: 70vh;
     justify-content: flex-end;
     position: relative;
     top: 3px;
-  }
 
-  .video-container > * {
-    width: 64% !important;
-    height: auto !important;
-    display: block !important;
-    text-align: center !important;
-    /* margin: auto !important; */
-  }
-
-  .middle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1 1 60%;
-    height: 100vh;
-  }
-
-  .instruments {
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 200px;
-    flex: 1 1 10%;
-    padding: 10vh 0;
-  }
-
-  .show-map {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    text-align: center;
-    /* position: absolute; */
-    bottom: 0;
-    background-image: url('/static/assets/images/instruments/stand_pole.png');
-    background-size: 100% auto;
-    width: 100%;
-    flex: 1 1 20%;
-    position: relative;
-    flex-wrap: wrap;
-  }
-
-  .show-map input {
-    width: 60%;
-    flex: 1 1 30%;
-    object-fit: contain;
-    object-position: bottom;
-  }
-
-  .show-map p {
-    top: 1em;
-  }
-
-  .top {
-    padding-top: 0;
-    height: 100vh;
-  }
-
-  .hbd-text {
-    position: absolute;
-    text-align: center;
-    font-family: keifont, sans-serif;
-    font-size: 2em;
-    font-weight: bolder;
-    top: -3vh;
-    color: #d7b377;
-    -webkit-text-stroke: 1px white;
-    z-index: 1;
+    > * {
+      display: block !important;
+      height: auto !important;
+      text-align: center !important;
+      width: 64% !important;
+    }
   }
 
   @media screen and (max-width: 849px) {
-    main {
-
-      min-height: 100vh;
-			justify-content: flex-start;
-      justify-items: center;
-      display: flex;
-      overflow: hidden;
-      flex-direction: column;
-    }
-
-    .instruments .instruments-2 {
-      margin-top: 0;
-      top: -5vh;
-      position: relative;
+    .credits-btn {
+      bottom: 20%;
+      left: 0;
+      position: absolute;
+      width: 5%;
     }
     .hbd-text {
-      text-align: center;
-      font-family: keifont,sans-serif;
-      font-weight: bolder;
-      top: -3vh;
-      color: #d7b377;
-      -webkit-text-stroke: 1px white;
-      z-index: 1!important;
-      position: initial;
       font-size: 1.5em;
-      padding-top: .5em;
+      top: 5%;
+      -webkit-text-stroke: 1px #fff;
       background-color: #2b4162;
+      color: #d7b377;
+      font: bolder 1.5em keifont, sans-serif;
       margin: 0;
-    }
-
-
-    .top.top-color-picker {
-      display: flex;
-      flex-wrap: wrap;
-      align-content: center;
-      justify-content: flex-start;
-      align-items: center t;
-      flex-direction: column;
-
-    }
-
-    .instruments {
-
-      display: flex !important;
-      flex-wrap: wrap !important;
-      justify-content: space-between !important;
-      align-items: center !important;
-      width: 100% !important;
-      flex-direction: row !important;
-      height: 10px !important;
-      margin-top: 5vh !important;
-      flex: 0 1 10vh !important;
-      margin-bottom: -5vh !important;
-      padding: 0 10px !important;
-    }
-
-    .instruments img {
-      width: 30%;
-      height: 100%;
-      position: initial;
-      display: block;
-    }
-
-
-		.instruments .instruments-1{
-			z-index: 1;
-		}
-
-    .middle {
-      flex-direction: column;
-      flex: 1 1 60%;
-      height: auto;
-			align-items: flex-start;
-      align-content: space-around;
-      justify-content: space-between;
-      display: block;
-    }
-
-    .video-container {
-      background-repeat: no-repeat;
-      align-content: center;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: flex-end;
-      position: relative;
-      top: 3px;
-      display: block;
-      width: 100%;
-      margin: auto;
-      text-align: center;
-      height: 30vh;
-      background-size: contain;
-      background-position: bottom center;
-      padding-top: 80px;
-      background-image: url('/static/assets/images/instruments/stand_mobile.png') !important;;
-    }
-
-
-    .video-container > * {
-      width: 64%;
-      height: auto;
-      display: block;
-      text-align: center;
-    }
-
-    .video-container img,  .video-container iframe {
-      bottom: 35%;
-      left: 0%;
+      padding-top: .5em;
       position: initial;
       text-align: center;
-      margin: auto;
-      width: 75%;
-      height: 100%;
-      -o-object-fit: contain;
-      object-fit: contain;
-      -o-object-position: bottom center;
-      object-position: bottom center;
-      width: 75% !important;
+      top: -3vh;
+      z-index: 1 !important;
     }
-
-    .show-map {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      text-align: center;
+    .instruments-1 {
+      top: 10%;
+    }
+    .instruments-2 {
       bottom: 0;
-      background-image: url('/static/assets/images/instruments/stand_pole_mobile.png');
-      background-size: 100% auto;
-      width: 100%;
-      flex: 1 1 20%;
-      position: relative;
-      flex-wrap: wrap;
+    }
+    .show-map {
+      p {
+        font-size: 1em;
+        bottom: 5vh;
+        top: initial;
+      }
+
+      input {
+        bottom: 0;
+        width: 100%;
+        -o-object-fit: contain;
+        -o-object-position: bottom;
+        flex: 1 1 50%;
+        object-fit: contain;
+        object-position: bottom;
+      }
+
+      align-items: center;
+      background-image: url(/static/assets/images/instruments/stand_pole_mobile.png);
       background-repeat: no-repeat;
+      background-size: 100% auto;
+      bottom: 0;
+      display: flex;
+      flex: 1 1 20%;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-end;
       padding-top: 0;
+      position: relative;
+      text-align: center;
+      width: 100%;
     }
-		.show-map p {
-			top:initial;
-			bottom:5vh;
-		}
-		.show-map input{
-			width: 100%;
-			flex: 1 1 50%;
-      -o-object-fit: contain;
-      object-fit: contain;
-      -o-object-position: bottom;
-      object-position: bottom;
-		}
+    .video-container {
+      align-content: center;
+      align-items: center;
+      background-image: url(/static/assets/images/instruments/stand_mobile.png) !important;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: block;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 30vh;
+      justify-content: flex-end;
+      margin: auto;
+      padding-top: 80px;
+      position: relative;
+      text-align: center;
+      top: 3px;
+      width: 100%;
 
-    #loading img {
-      width: 100vw;
-      height: 100vw;
-      object-fit: contain;
-      object-position: center;;
+      iframe {
+        bottom: 35%;
+        left: 0;
+        -o-object-fit: contain;
+        -o-object-position: bottom center;
+        height: 100%;
+        margin: auto;
+        object-fit: contain;
+        object-position: bottom center;
+        position: initial;
+        text-align: center;
+        width: 75% !important;
+      }
+
+      img {
+        bottom: 35%;
+        left: 0;
+        -o-object-fit: contain;
+        -o-object-position: bottom center;
+        height: 100%;
+        margin: auto;
+        object-fit: contain;
+        object-position: bottom center;
+        position: initial;
+        text-align: center;
+        width: 75% !important;
+      }
+
+      > * {
+        display: block;
+        height: auto;
+        text-align: center;
+        width: 64%;
+      }
     }
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      justify-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+    .instruments {
+      .instruments-2 {
+        margin-top: 0;
+        position: relative;
+        top: -5vh;
+      }
 
+      align-items: center !important;
+      display: flex !important;
+      flex: 0 1 10vh !important;
+      flex-direction: row !important;
+      flex-wrap: wrap !important;
+      height: 10px !important;
+      justify-content: space-between !important;
+      margin-bottom: -5vh !important;
+      margin-top: 5vh !important;
+      padding: 0 10px !important;
+      width: 100% !important;
 
+      img {
+        display: block;
+        height: 100%;
+        position: initial;
+        width: 30%;
+      }
+
+      .instruments-1 {
+        z-index: 1;
+      }
+    }
+    .top.top-color-picker {
+      align-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    .middle {
+      align-content: space-around;
+      align-items: flex-start;
+      display: block;
+      flex: 1 1 60%;
+      flex-direction: column;
+      height: auto;
+      justify-content: space-between;
+    }
+    #loading {
+      img {
+        height: 100vw;
+        object-fit: contain;
+        object-position: center;
+        width: 100vw;
+      }
+    }
     .top {
       height: initial;
     }
-
   }
+
 </style>
