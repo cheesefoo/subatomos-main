@@ -636,20 +636,33 @@
     justify-content: flex-end;
     position: relative;
     top: 3px;
+    padding:14vw 13vw 0;
 
     > * {
-      display: block !important;
-      height: auto !important;
       text-align: center !important;
-      width: 64% !important;
+    }
+
+    iframe {
+      bottom: 35%;
+      left: 0;
+      -o-object-fit: contain;
+      -o-object-position: bottom center;
+      height: 100%;
+      margin: auto;
+      object-fit: contain;
+      object-position: bottom center;
+      position: initial;
+      text-align: center;
+      width: 40vw;
+      height:calc(40vw / 1.7)!important;
     }
   }
 
   @media screen and (max-width: 849px) {
     .credits-btn {
       bottom: 23vh;
-			left:initial;
-			right:5%;
+      left:initial;
+      right:5%;
       position: absolute;
       width: 25vw;
     }
@@ -792,10 +805,10 @@
         position: initial;
         width: 30%;
       }
-			div{
-				width:25%;
+      div{
+        width:25%;
 
-			}
+      }
 
       .instruments-1 {
         z-index: 1;
