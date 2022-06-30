@@ -221,16 +221,17 @@
 
 		<div class='middle'>
 			<div class='video-container'>
-				<img src={metaimg} height={vidHeight} width={vidWidth} />
-				<!--<iframe
+<!--				<img style='visibility:hidden' src={metaimg} height={vidHeight} width={vidWidth} />-->
+<!--				height={vidHeight}-->
+<!--				width={vidWidth}-->
+				<iframe
 					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
 					allowfullscreen
 					frameborder='0'
-					height={vidHeight}
-					width={vidWidth}
+
 					src='https://www.youtube.com/embed/AwLO-pisoVA'
 					title='YouTube video player'
-				/>-->
+				/>
 			</div>
 			<div class='show-map'>
 				{#if $media.small}
