@@ -248,13 +248,13 @@
 			</div>
 		</div>
 		{#if !$media.small}
-		<div class='instruments instruments-2 '><img src={flute}
-																								 alt='flute'
-		><img
-			src={piano} alt='piano'
-		> <img src={accordion}
-					 alt='accordion'
-		></div>
+			<div class='instruments instruments-2 '><img src={flute}
+																									 alt='flute'
+			><img
+				src={piano} alt='piano'
+			> <img src={accordion}
+						 alt='accordion'
+			></div>
 		{/if}
 	</div>
 	<!--{#if browser && !$media.small}-->
@@ -363,7 +363,7 @@
     font-family: keifont, sans-serif;
     font-size: 2em;
     font-weight: bolder;
-top:-3vh;
+    top: -3vh;
 
     color: #D7B377;
     -webkit-text-stroke: 1px white;
@@ -707,16 +707,17 @@ top:-3vh;
       transform: scale(1);
     }
   }
-  body{
+
+  body {
     max-width: 100%;
     overflow-x: hidden;
   }
 
   .instruments img {
-    width:50%
+    width: 50%
   }
 
-  .top-color-picker  {
+  .top-color-picker {
     background: #2B4162 url(/static/assets/images/instruments/music_sheet_bg_border.webp) no-repeat 0% 20vh;
     background-size: contain;
   }
@@ -734,7 +735,7 @@ top:-3vh;
     align-items: center;
     justify-content: flex-end;
     position: relative;
-    top:3px;
+    top: 3px;
   }
 
   .video-container > * {
@@ -745,7 +746,7 @@ top:-3vh;
     /* margin: auto !important; */
   }
 
-  .middle  {
+  .middle {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -765,7 +766,7 @@ top:-3vh;
     padding: 10vh 0;
   }
 
-  .show-map  {
+  .show-map {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -781,7 +782,7 @@ top:-3vh;
     flex-wrap: wrap;
   }
 
-  .show-map  input  {
+  .show-map input {
     width: 60%;
     flex: 1 1 30%;
     object-fit: contain;
@@ -789,17 +790,18 @@ top:-3vh;
   }
 
   .show-map p {
-    top:1em;
+    top: 1em;
   }
 
   .top {
-    padding-top:0;
+    padding-top: 0;
     height: 100vh;
   }
+
   .hbd-text {
     position: absolute;
     text-align: center;
-    font-family: keifont,sans-serif;
+    font-family: keifont, sans-serif;
     font-size: 2em;
     font-weight: bolder;
     top: -3vh;
@@ -807,42 +809,44 @@ top:-3vh;
     -webkit-text-stroke: 1px white;
     z-index: 1;
   }
-  @media screen and (max-width: 849px) {
-		.show-map{
-			border-bottom: 10px solid white;
 
-		}
-		.instruments .instruments-2{
-		margin-top:0;
-			top:-5vh;
-			position:relative;
-		}
+  @media screen and (max-width: 849px) {
+main{
+
+  min-height:100vh;
+}
+
+    .instruments .instruments-2 {
+      margin-top: 0;
+      top: -5vh;
+      position: relative;
+    }
     .hbd-text {
       position: absolute;
       text-align: center;
-      font-family: keifont,sans-serif;
+      font-family: keifont, sans-serif;
       font-size: 2em;
       font-weight: bolder;
-      top: -3vh ;
+      top: -3vh;
       color: #d7b377;
       -webkit-text-stroke: 1px white;
       z-index: 1 !important;
       position: initial;
       font-size: 1.5em;
-      padding-top: 0.5em ;
+      padding-top: 0.5em;
       background-color: #2b4162;
       margin: 0;
     }
 
 
     .top.top-color-picker {
-      display: flex ;
+      display: flex;
       flex-wrap: wrap;
       align-content: center;
-      justify-content: flex-start ;
+      justify-content: flex-start;
       align-items: center t;
-      flex-direction: column ;
-      display: block;
+      flex-direction: column;
+
     }
 
     .instruments {
@@ -855,10 +859,10 @@ top:-3vh;
       width: 200px;
       flex: 1 1 10%;
       padding: 10vh 0;
-      width: 100% ;
-      flex-direction: row ;
-      height: 10vh ;
-      padding: 0 ;
+      width: 100%;
+      flex-direction: row;
+      height: 10vh;
+      padding: 0;
       margin-top: 5vh;
     }
 
@@ -876,11 +880,11 @@ top:-3vh;
       align-items: center;
       flex: 1 1 60%;
       height: 100vh;
-      height: auto ;
-      align-items: center ;
-      align-content: center ;
+      height: auto;
+      align-items: center;
+      align-content: center;
       justify-content: center;
-      display: block ;
+      display: block;
     }
     .video-container {
       background-image: url('/static/assets/images/instruments/stand.png');
@@ -908,7 +912,7 @@ top:-3vh;
     }
 
 
-    .video-container>* {
+    .video-container > * {
       width: 64%;
       height: auto;
       display: block;
@@ -917,14 +921,14 @@ top:-3vh;
 
     .video-container img {
       position: absolute;
-      bottom: 35% ;
-      left: 0% ;
+      bottom: 35%;
+      left: 0%;
       width: 100%;
       height: 25%;
-      position: initial ;
+      position: initial;
       text-align: center;
-      margin: auto ;
-      width: 75% ;
+      margin: auto;
+      width: 75%;
       height: 100%;
       object-fit: contain;
       object-position: bottom center;
@@ -934,29 +938,29 @@ top:-3vh;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      align-items: center ;
+      align-items: center;
       text-align: center;
-      bottom: 0 ;
+      bottom: 0;
       background-image: url('/static/assets/images/instruments/stand_pole_mobile.png');
       background-size: 100% auto;
-      width: 100% ;
+      width: 100%;
       flex: 1 1 20%;
       position: relative;
       flex-wrap: wrap;
       background-repeat: no-repeat;
-      padding-top:0;
+      padding-top: 0;
     }
 
-    #loading img{
-      width:100vw;
+    #loading img {
+      width: 100vw;
       height: 100vw;
       object-fit: contain;
       object-position: center;;
     }
 
 
-    .top{
-      height:initial;
+    .top {
+      height: initial;
     }
 
   }
