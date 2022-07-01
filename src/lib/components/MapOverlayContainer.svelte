@@ -33,7 +33,7 @@
 			src = decodeURI(src);
 			if (src.endsWith('.png') || src.endsWith('.mp4') || src.endsWith('.jpg')) {
 				thumbnail = src.slice(0, -4) + '.webp';
-			} else if (src.endsWith('.jpeg' || src.endsWith('.webp'))) {
+			} else if (src.endsWith('.jpeg'||src.endsWith('.JPEG') || src.endsWith('.webp'))) {
 				thumbnail = src.slice(0, -5) + '.webp';
 			} else {
 				thumbnail = src;
@@ -201,6 +201,14 @@
 
   .fanart {
     padding-bottom: 2em;
+		img{
+
+      width: 100%;
+      max-height: 200px;
+      object-fit: contain;
+      object-position: center;
+		}
+
   }
 
   .overlay-image {
