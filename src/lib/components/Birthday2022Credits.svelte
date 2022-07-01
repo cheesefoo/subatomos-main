@@ -234,9 +234,8 @@
 
   @media screen and (max-width: 849px) {
     .credits-grid {
-      padding: 0 0 0 0%;
-      grid-template-columns: 1fr;
-      column-gap: 0em;
+      display: flex;
+      flex-wrap: wrap;
     }
 
     .performers, .composition {

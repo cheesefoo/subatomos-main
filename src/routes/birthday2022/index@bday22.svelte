@@ -221,9 +221,9 @@
 
 		<div class='middle'>
 			<div class='video-container'>
-<!--				<img style='visibility:hidden' src={metaimg} height={vidHeight} width={vidWidth} />-->
-<!--				height={vidHeight}-->
-<!--				width={vidWidth}-->
+				<!--				<img style='visibility:hidden' src={metaimg} height={vidHeight} width={vidWidth} />-->
+				<!--				height={vidHeight}-->
+				<!--				width={vidWidth}-->
 				<iframe
 					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
 					allowfullscreen
@@ -257,10 +257,18 @@
 	</div>
 	{#if browser }
 		<div class='credits-btn'>
-			<Modal styleWindow={{width:'auto',backgroundColor: '#f1bd65'}}
-						 styleContent={{paddingBottom:'2rem',overflow:'hidden'}}>
-				<Birthday2022CreditsButton />
-			</Modal>
+			{#if !$media.small}
+				<Modal styleWindow={{width:'auto',backgroundColor: '#f1bd65'}}
+							 styleContent={{paddingBottom:'2rem',overflow:'hidden'}}>
+					<Birthday2022CreditsButton />
+				</Modal>
+			{:else}
+
+				<Modal styleWindow={{width:'auto',backgroundColor: '#f1bd65'}}
+							 styleContent={{paddingBottom:'2rem',overflow:'auto'}}>
+					<Birthday2022CreditsButton />
+				</Modal>
+			{/if}
 		</div>
 	{/if}
 	{#if browser}
@@ -636,7 +644,7 @@
     justify-content: flex-end;
     position: relative;
     top: 3px;
-    padding:14vw 13vw 0;
+    padding: 14vw 13vw 0;
 
     > * {
       text-align: center !important;
@@ -654,15 +662,15 @@
       position: initial;
       text-align: center;
       width: 40vw;
-      height:calc(40vw / 1.7)!important;
+      height: calc(40vw / 1.7) !important;
     }
   }
 
   @media screen and (max-width: 849px) {
     .credits-btn {
       bottom: 23vh;
-      left:initial;
-      right:5%;
+      left: initial;
+      right: 5%;
       position: absolute;
       width: 25vw;
     }
@@ -748,7 +756,7 @@
         position: initial;
         text-align: center;
         width: 100% !important;
-        height:auto !important;
+        height: auto !important;
       }
 
       img {
@@ -799,14 +807,15 @@
       padding: 0 10px !important;
       width: 100% !important;
 
-      img,div {
+      img, div {
         display: block;
         height: 100%;
         position: initial;
         width: 30%;
       }
-      div{
-        width:25%;
+
+      div {
+        width: 25%;
 
       }
 
@@ -821,7 +830,7 @@
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: flex-start;
-      flex:1 1 20%;
+      flex: 1 1 20%;
     }
     .middle {
       align-content: space-around;
