@@ -30,7 +30,7 @@
 
 				<Credit {...creditsList.ragin} {descSameLine}><small>Piano</small></Credit>
 				<span>BigThiccVic<small>Piano</small></span>
-				<br/>
+				<br />
 				<span>LightMask<small>Piano</small></span>
 
 				<Credit {...creditsList.pong} {descSameLine}><small>Piano</small></Credit>
@@ -72,13 +72,13 @@
 		</div>
 		<div class='credits-section'>
 
-						<h4>etc.</h4>
+			<h4>etc.</h4>
 
 			<Credit desc='Direction & Website' {descSameLine} {...creditsList.venn} />
 			<Credit desc='Website' {descSameLine} {...creditsList.fran} />
 			<Credit desc='Video Editing' {descSameLine} {...creditsList.gundam} />
 			<Credit desc='Translation' {descSameLine} {...creditsList.udarash} />
-			<Credit desc='Website Design' {descSameLine} name="ぴんころ#0031" />
+			<Credit desc='Website Design' {descSameLine} name='ぴんころ#0031' />
 			<Credit desc='Art - Video, Website, & SNS' {descSameLine} {...creditsList.hakimen} />
 
 
@@ -133,22 +133,92 @@
 
   }
 
+  .window .content{
+    padding-bottom:2rem;
+    overflow:hidden;
+  }
+
   .credits {
     background-color: #f1bd65;
     width: 100%;
   }
 
+  .credits br{
+    display:none;
+  }
+
   .credits-grid {
     display: grid;
-    padding: 0 5% 0 5%;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 1em;
+    padding: 0 5%;
     row-gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    font-weight: bold !important;
+    column-gap: 100px;
+    height: 100%;
+  }
+
+  .credits-section:nth-child(1) {
+    grid-area: 1 / 1 / 6 / 3;
   }
 
   .performers, .composition {
     column-count: 2;
+    column-gap: 50px;
   }
+
+  .performers > * {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 100%;
+  }
+
+  .performers small {
+    font-size: inherit;
+  }
+
+  .performers > div > div {
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 100% !important;
+  }
+
+  .credits-section:nth-child(2) {
+    grid-area: 1 / 3 / 2 / 5;
+  }
+
+
+
+  .credits-section:nth-child(3) {
+    grid-area: 2 / 3 / 3 / 5;
+  }
+
+
+
+  .performers, .composition {
+    column-count: 2;
+  }
+
+  .composition {
+    column-count: 1;
+  }
+
+  .credits-section .credit {
+    padding: 10px 0;
+  }
+
+  .credits-section .credit{
+    padding:10px 0;
+  }
+
+  .credits br{
+    display:none;
+  }
+
+  .window h4{margin-top:0;}
 
   @media screen and (max-width: 849px) {
     .credits-grid {
@@ -159,31 +229,30 @@
 
     .performers, .composition {
       column-count: 1;
-      font-size:1em;
+      font-size: 1em;
     }
     .thanks {
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
   }
+  /* @media screen and (min-width: 850px) and (max-width: 1024px) {
+		 h3,
+		  {
+			 font-size: 1.4em;
+		 }
+		 .credits-grid {
+			 display: grid;
+			 padding: 0 5% 0 5%;
+			 grid-template-columns: repeat(3, 1fr);
+			 column-gap: 1em;
+			 row-gap: 1em;
+		 }
 
- /* @media screen and (min-width: 850px) and (max-width: 1024px) {
-    h3,
-    h4 {
-      font-size: 1.4em;
-    }
-    .credits-grid {
-      display: grid;
-      padding: 0 5% 0 5%;
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 1em;
-      row-gap: 1em;
-    }
-
-    .thanks {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-  }*/
+		 .thanks {
+			 display: grid;
+			 grid-template-columns: 1fr 1fr;
+		 }
+	 }*/
 
 </style>
