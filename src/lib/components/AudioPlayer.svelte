@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { Howl } from 'howler';
-	import oozoraken from '/static/assets/sound/oozora_kensetsu_by_jeremy_robson.mp3';
 	import { dev } from '$app/env';
 	import { onMount } from 'svelte';
 
+
+	export let audio = '/static/assets/sound/oozora_kensetsu_by_jeremy_robson.mp3';
 	const howl = new Howl({
-		src: oozoraken,
+		src: audio,
 		loop: true,
 		html5: true
 	});
@@ -17,7 +18,7 @@
 		? 'background-image: url(/static/assets/images/volume_mute.png)'
 		: 'background-image: url(/assets/images/volume_mute.png)';
 
-	export let paused: boolean = true;
+	export let paused = true;
 	$: img = paused ? mut : vol;
 
 	$: {

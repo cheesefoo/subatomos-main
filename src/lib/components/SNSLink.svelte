@@ -1,21 +1,22 @@
 <script lang='ts'>
 	import Fa from 'svelte-fa/src/fa.svelte';
-	import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
-	import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
-	import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
-	import { faYoutube } from '@fortawesome/free-brands-svg-icons/faYoutube';
-	import { faDiscord } from '@fortawesome/free-brands-svg-icons/faDiscord';
+	import { faGithub,faTwitter,faInstagram,faYoutube,faDiscord,faTwitch } from '@fortawesome/free-brands-svg-icons/index.es';
 
-	import { faGlobe } from '@fortawesome/free-solid-svg-icons/faGlobe';
 
-	export let icon = 'twitter';
-	export let url = '#';
+	import { faGlobe } from '@fortawesome/free-solid-svg-icons/index.es';
+
+	export let icon;
+	export let url;
+	if (icon === undefined && url !== undefined)
+	{
+		icon = 'twitter';
+	}
 	export let size = '';
 </script>
 
-<span
-><a href={url} target='_blank' rel='noopener'>
-		{#if icon === undefined || icon === 'twitter'}
+<span>
+	<a href={url} target='_blank' rel='noopener'>
+		{#if icon === 'twitter'}
 			<Fa icon={faTwitter} fw color='#1DA1F2' {size} />
 		{:else if icon === 'yt'}
 			<Fa icon={faYoutube} fw color='red' {size} />
@@ -23,6 +24,8 @@
 			<Fa icon={faInstagram} fw color='purple' {size} />
 		{:else if icon === 'github'}
 			<Fa icon={faGithub} fw color='#171515' {size} />
+		{:else if icon === 'twitch'}
+			<Fa icon={faTwitch} fw color='#9146FF' {size} />
 		{:else if icon === 'discord'}
 			<Fa icon={faDiscord} {size} color='#5865F2' />
 		{:else if icon === 'www'}

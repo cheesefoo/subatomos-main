@@ -3,7 +3,7 @@
 
 	import { ghostAPI, ghostURL } from '$lib/variables';
 
-	export async function load({ fetch, session, context }) {
+	export async function load({ fetch, context }) {
 		const api = new GhostContentAPI({
 			url: `${ghostURL}`,
 			key: `${ghostAPI}`,

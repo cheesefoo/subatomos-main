@@ -1,7 +1,7 @@
 <script>
 	import LL from '/src/i18n/i18n-svelte';
 	import Credit from '$lib/components/Credit.svelte';
-	import credits from './_credits';
+	import credits from './_credits_3rdanni';
 	import { media } from '$lib/stores/stores';
 	import Footer from '$lib/components/Footer.svelte';
 

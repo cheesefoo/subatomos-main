@@ -3,13 +3,13 @@
 
 	export let en: string;
 	export let jp: string;
-	export let href: string = '';
+	export let href = '';
 
 	const dir = dev ? '/static/assets/images/holos/' : '/assets/images/holos/';
 	export let image: string = dir + en.toLowerCase().replace(' ', '_') + '_thumb.png';
 	export let grayscale: boolean = href == '';
-	export let width: number = 24;
-	export let text: string = 'sm';
+	export let width = 24;
+	export let text = 'sm';
 	let w = `w-${width}`;
 	let txt = `text-${text}`;
 
