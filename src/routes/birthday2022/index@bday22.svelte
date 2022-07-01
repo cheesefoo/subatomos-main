@@ -100,7 +100,7 @@
 		}
 
 		if (mapElem === undefined) mapElem = document.querySelector('.msg-map');
-		mapElem.style.zIndex = '2';
+		mapElem.style.zIndex = '3';
 		mapElem.style.opacity = '1';
 	}
 
@@ -416,6 +416,7 @@
     position: absolute;
     top: 0;
     width: 1em;
+		z-index:2;
 
     a {
       color: #000;
