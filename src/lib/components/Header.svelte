@@ -27,6 +27,9 @@
 					<li>
 						<a sveltekit:prefetch href="/wiki/{$locale}">WIKI</a>
 					</li>
+					<li class:active={$page.url.pathname.endsWith('/birthday2022')}>
+						<a sveltekit:prefetch href="/birthday2022">17.4th Birthday</a>
+					</li>
 					<li class:active={$page.url.pathname.endsWith('/3rd-anniversary')}>
 						<a sveltekit:prefetch href="/3rd-anniversary">{$LL.HEADER.THIRD_ANNIVERSARY()}</a>
 					</li>

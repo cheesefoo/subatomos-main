@@ -15,7 +15,7 @@
 	import bottomseparator from '/static/assets/images/bottom_credits.webp';
 	import videoframe from '/static/assets/images/videoframe.png';
 	import metaimg from '/static/assets/images/3rdanniversarylogo.jpg';
-	import metatwi from '/static/assets/images/meta.jpg';
+	import metatwi from '/static/assets/images/meta3rd.jpg';
 
 	import { baseURL } from '$lib/variables.ts';
 

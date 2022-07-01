@@ -8,8 +8,9 @@ const en: BaseTranslation = {
 			'A website by overseas fans showcasing community projects celebrating Oozora Subaru!',
 		PROJECTS: 'Subatomos Projects',
 		THIRD_ANNIVERSARY: '3rd anniversary',
-		BIRTHDAY: '1 million subscribers & birthday',
-		BIRTHDAY_SM: '1M subscribers & birthday',
+		BIRTHDAY: '1 million subscribers & birthday 2021',
+		BIRTHDAY22: 'Birthday 2022',
+		BIRTHDAY_SM: '1M subs & bday \'21',
 		SECOND_ANNIVERSARY: '2nd anniversary',
 		SOUNDBOARD: 'Soundboard'
 	},
@@ -22,9 +23,9 @@ const en: BaseTranslation = {
 	},
 	THIRD: {
 		META_DESC:
-			"Subatomos' project to celebrate Subaru's 3rd debut anniversary! Featuring an animated video with remixes and cover songs created by the community.",
+			'Subatomos\' project to celebrate Subaru\'s 3rd debut anniversary! Featuring an animated video with remixes and cover songs created by the community.',
 
-		TITLE: "Subaru's 3rd anniversary!",
+		TITLE: 'Subaru\'s 3rd anniversary!',
 		CONGRATS: 'Congratulations on your third anniversary, Subaru!',
 		CREDITS: 'Credits',
 		ANIMATION: 'Animation',
@@ -35,7 +36,7 @@ const en: BaseTranslation = {
 			ONE: 'Original Outfit',
 			TWO: 'School Uniform Style Idol',
 			THREE: 'Swimsuit',
-			FOUR: "New Year's Kimono",
+			FOUR: 'New Year\'s Kimono',
 			FIVE: '3D LIVE Idol',
 			SIX: 'Girly Outfit'
 		},
@@ -59,9 +60,54 @@ const en: BaseTranslation = {
 		LOGO_PROJ: 'Project Logo',
 		THANKS: 'Special Thanks'
 	},
+	BDAY22: {
+		META_DESC:
+			'Subatomos\' project to celebrate Subaru\'s 17.4th birthday, with an online concert of her favorite songs, and Subatomos taking pictures of their Subarudo duck!',
+
+		TITLE: 'Subaru\'s 17.4th birthday!',
+		CONGRATS: 'Happy 17.4th birthday, Subaru!',
+		CREDITS: 'Credits',
+		Concert: 'Concert',
+		SHOW_MAP: 'Tap to see messages from Subatomos!',
+
+		HIDE_MAP: 'Hide Map',
+		PERFORMERS: 'Performers',
+		INSTRUMENTS: {
+			ALTO: 'Alto',
+			BARITONE: 'Baritone',
+			SOPRANO: 'Soprano',
+			TENOR: 'Tenor',
+
+			ACCORDION: 'Accordion',
+			CELLO: 'Cello',
+			CLARINET: 'Clarinet',
+			DRUMS: 'Drums',
+			EUPHONIUM: 'Euphonium',
+			FLUTE: 'Flute',
+			GUITAR: 'Guitar',
+			HORN: 'Horn',
+			PIANO: 'Piano',
+			PICCOLO: 'Piccolo',
+			SAX: 'Sax',
+			TRUMPET: 'Trumpet',
+			VIOLIN: 'Violin',
+			WESTERN_PERCUSSION: 'Western Percussion'
+		},
+		COMPOSITION:'Composition',
+		MUSIC: 'Music',
+		MEDLEY: 'Medley Arrangement',
+		DESIGN: 'Website Design',
+		EDITING: 'Editing',
+		SCORE: 'Score Composition',
+		MIXING: 'Audio Mixing',
+		TRANSLATION: 'Translation',
+		DIRECTION: 'Direction',
+		THANKS: 'Special Thanks',
+		WEBSITE:'Website'
+	},
 	PONDS: {
 		META_DESC:
-			"Subatomos' project to celebrate Subaru's birthday & 1M subscribers milestone, with over 2000 duck submissions from fans!",
+			'Subatomos\' project to celebrate Subaru\'s birthday & 1M subscribers milestone, with over 2000 duck submissions from fans!',
 		TITLE: 'Subatomo Ponds',
 		SUBTITLE: '1 million subscribers & birthday project',
 		VISIT: 'Visit the site here!',
