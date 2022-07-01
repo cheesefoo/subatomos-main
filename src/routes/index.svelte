@@ -4,6 +4,8 @@
 	import { faDiscord } from '@fortawesome/free-brands-svg-icons/faDiscord';
 
 	import official from '/static/assets/images/subaru-logo-official.png';
+	// import bday22 from '/static/assets/images/bday22-logo-sm.png';
+	import bday22 from '/static/assets/images/cake-sm.png';
 	import third from '/static/assets/images/3rdanniversarylogo-transparent-sm.png';
 	import second from '/static/assets/images/second-sm.png';
 	import subatomo from '/static/assets/images/subatomo-wh.png';
@@ -142,6 +144,7 @@
 			<a sveltekit:prefetch href='/wiki/en'><h4>WIKI (WIP)</h4></a>
 		</div>
 		<div class='bday22'>
+			<img src={bday22} alt='17.4th birthday' />
 
 			<a sveltekit:prefetch href='/birthday2022'><h4>{$LL.HOME.BIRTHDAY22()}</h4></a>
 
@@ -254,12 +257,14 @@
     top: 40%;
   }
 
+	.bday22,
   .third,
   .ponds,
   .second,
   .soundboard {
     //display: block;
     //position: relative;
+    //padding:1em 0;
 
     img {
       position: absolute;
