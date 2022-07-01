@@ -23,6 +23,7 @@
 				<span>AnotherJay#9961<small>Flute</small></span>
 				<br />
 				<span>皐月イヴ#6508<small>Trumpet</small></span>
+				<Credit {...creditsList.aq} {descSameLine}><small>BB Trumpet</small></Credit>
 				<Credit {...creditsList.jahn} {descSameLine}><small>Guitar</small></Credit>
 				<span>smoile<small>Guitar</small></span>
 				<Credit {...creditsList.spekular} {descSameLine}><small>Guitar</small></Credit>
@@ -32,6 +33,9 @@
 				<span>BigThiccVic<small>Piano</small></span>
 				<br />
 				<span>LightMask<small>Piano</small></span>
+				<br />
+				<Credit {...creditsList.snow} {descSameLine}><small>Piccolo</small></Credit>
+
 
 				<Credit {...creditsList.pong} {descSameLine}><small>Piano</small></Credit>
 				<span>shrimp<small>Clarinet, Bass Clarinet, & Tenor Saxophone</small></span>
