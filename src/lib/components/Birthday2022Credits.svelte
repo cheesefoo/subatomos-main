@@ -54,19 +54,19 @@
 		<div class='credits-section'>
 			<h4>{$LL.BDAY22.COMPOSITION()}</h4>
 			<div class='composition'>
-				<Credit  {descSameLine} desc='Medley Arrangement' {...creditsList.jeremy} />
+				<Credit  {descSameLine} desc=' - Medley Arrangement' {...creditsList.jeremy} />
 				<br />
-				<Credit  {descSameLine} desc='Score Composition' {...creditsList.spaghetti } />
-				<br />
-
-				<Credit  {descSameLine} desc='Score Composition' name='✰caac✰#4606' />
-				<Credit  {descSameLine} desc='Score Composition' name='shrimp' />
+				<Credit  {descSameLine} desc=' - Score Composition' {...creditsList.spaghetti } />
 				<br />
 
-				<Credit  {descSameLine} desc='Audio Mixing' {...creditsList.hiki } />
+				<Credit  {descSameLine} desc=' - Score Composition' name='✰caac✰#4606' />
+				<Credit  {descSameLine} desc=' - Score Composition' name='shrimp' />
 				<br />
 
-				<Credit  {descSameLine} desc='Guitar Tabs' {...creditsList.jahn}></Credit>
+				<Credit  {descSameLine} desc=' - Audio Mixing' {...creditsList.hiki } />
+				<br />
+
+				<Credit  {descSameLine} desc=' - Guitar Tabs' {...creditsList.jahn}></Credit>
 			</div>
 
 		</div>
@@ -74,12 +74,12 @@
 
 			<h4>etc.</h4>
 
-			<Credit desc='Direction & Website' {descSameLine} {...creditsList.venn} />
-			<Credit desc='Website' {descSameLine} {...creditsList.fran} />
-			<Credit desc='Video Editing' {descSameLine} {...creditsList.gundam} />
-			<Credit desc='Translation' {descSameLine} {...creditsList.udarash} />
-			<Credit desc='Website Design' {descSameLine} name='ぴんころ#0031' />
-			<Credit desc='Art - Video, Website, & SNS' {descSameLine} {...creditsList.hakimen} />
+			<Credit desc=' - Direction & Website' {descSameLine} {...creditsList.venn} />
+			<Credit desc=' - Website' {descSameLine} {...creditsList.fran} />
+			<Credit desc=' - Video Editing' {descSameLine} {...creditsList.gundam} />
+			<Credit desc=' - Translation' {descSameLine} {...creditsList.udarash} />
+			<Credit desc=' - Website Design' {descSameLine} name='ぴんころ#0031' />
+			<Credit desc=' - Art - Video, Website, & SNS' {descSameLine} {...creditsList.hakimen} />
 
 
 		</div>
