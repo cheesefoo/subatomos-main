@@ -60,6 +60,13 @@
     color: $chromeblue;
   }
 
+	div>div{
+    padding: 10px 0;
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 100% !important;
+	}
+
   span {
     font-weight: 400;
     font-size: 1em;

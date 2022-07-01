@@ -54,19 +54,19 @@
 		<div class='credits-section'>
 			<h4>{$LL.BDAY22.COMPOSITION()}</h4>
 			<div class='composition'>
-				<Credit desc={$LL.BDAY22.MEDLEY()} {...creditsList.jeremy} />
+				<Credit  {descSameLine} desc='Medley Arrangement' {...creditsList.jeremy} />
 				<br />
-				<Credit desc={$LL.BDAY22.SCORE()} {...creditsList.spaghetti } />
-				<br />
-
-				<Credit desc={$LL.BDAY22.SCORE()} name='✰caac✰#4606' />
-				<Credit desc={$LL.BDAY22.SCORE()} name='shrimp' />
+				<Credit  {descSameLine} desc='Score Composition' {...creditsList.spaghetti } />
 				<br />
 
-				<Credit desc={$LL.BDAY22.MIXING()} {...creditsList.hiki } />
+				<Credit  {descSameLine} desc='Score Composition' name='✰caac✰#4606' />
+				<Credit  {descSameLine} desc='Score Composition' name='shrimp' />
 				<br />
 
-				<Credit desc='Guitar Tabs' {...creditsList.jahn}></Credit>
+				<Credit  {descSameLine} desc='Audio Mixing' {...creditsList.hiki } />
+				<br />
+
+				<Credit  {descSameLine} desc='Guitar Tabs' {...creditsList.jahn}></Credit>
 			</div>
 
 		</div>
@@ -116,6 +116,10 @@
     text-align: center;
   }
 
+  h4 {
+    margin-top: 0;
+  }
+
   span {
     color: $chromeblue;
 
@@ -127,15 +131,19 @@
   }
 
   small::before {
-    content: "...";
+    content: " - ";
     color: grey;
     font-size: 0.9rem;
 
   }
 
-  .window .content{
-    padding-bottom:2rem;
-    overflow:hidden;
+  .credits-section .credit span:last-child::before {
+    content: " - ";
+  }
+
+  .window .content {
+    padding-bottom: 2rem;
+    overflow: hidden;
   }
 
   .credits {
@@ -143,8 +151,8 @@
     width: 100%;
   }
 
-  .credits br{
-    display:none;
+  .credits br {
+    display: none;
   }
 
   .credits-grid {
@@ -180,10 +188,14 @@
     font-size: inherit;
   }
 
-  .performers > div > div {
+  .comp {
     display: flex !important;
     flex-wrap: wrap;
     width: 100% !important;
+  }
+
+  .composition > div > div, .credits-section > div > div {
+    padding: 10px 0;
   }
 
   .credits-section:nth-child(2) {
@@ -191,11 +203,9 @@
   }
 
 
-
   .credits-section:nth-child(3) {
     grid-area: 2 / 3 / 3 / 5;
   }
-
 
 
   .performers, .composition {
@@ -210,15 +220,17 @@
     padding: 10px 0;
   }
 
-  .credits-section .credit{
-    padding:10px 0;
+  .credits-section .credit {
+    padding: 10px 0;
   }
 
-  .credits br{
-    display:none;
+  .credits br {
+    display: none;
   }
 
-  .window h4{margin-top:0;}
+  .window h4 {
+    margin-top: 0;
+  }
 
   @media screen and (max-width: 849px) {
     .credits-grid {
@@ -236,6 +248,7 @@
       grid-template-columns: 1fr 1fr;
     }
   }
+
   /* @media screen and (min-width: 850px) and (max-width: 1024px) {
 		 h3,
 		  {
