@@ -663,7 +663,7 @@
       position: initial;
       text-align: center;
       width: 40vw;
-      height: calc(40vw / 1.7) !important;
+      height:calc(40vw / 1.7777777)!important;
     }
   }
 
