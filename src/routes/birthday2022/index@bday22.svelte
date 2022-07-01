@@ -258,7 +258,7 @@
 	{#if browser }
 		<div class='credits-btn'>
 			<Modal styleWindow={{width:'auto',backgroundColor: '#f1bd65'}}
-						 }>
+						 styleContent={{paddingBottom:'2rem',overflow:'hidden'}}>
 				<Birthday2022CreditsButton />
 			</Modal>
 		</div>
