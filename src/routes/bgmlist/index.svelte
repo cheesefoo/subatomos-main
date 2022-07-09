@@ -51,6 +51,24 @@ let options = {};
 			</td>
 		</tr>
 		<tr>
+			<td>決死の闘いに挑む者たち</td>
+			<td>Those Who Fight To The Death</td>
+			<td>Towa bonding quiz 20220706</td>
+			<td></td>
+			<td>
+				<Youtube videoId='pPLWU7mbBsE' />
+			</td>
+		</tr>
+		<tr>
+			<td>聳え立つ白き峰</td>
+			<td>Towering White Peak</td>
+			<td>Towa bonding quiz (opening) 20220706</td>
+			<td></td>
+			<td>
+				<Youtube videoId='pPLWU7mbBsE' />
+			</td>
+		</tr>
+		<tr>
 			<td>Harvest</td>
 			<td></td>
 			<td>
