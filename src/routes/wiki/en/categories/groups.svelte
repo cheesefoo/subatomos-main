@@ -187,7 +187,8 @@
 				<tbody class='bg-white'>
 				<tr>
 					<td>
-						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch href='/wiki/{$locale}/posts/holobirds'>
+<!--						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch href='/wiki/{$locale}/posts/holobirds'>-->
+						<a class='flex flex-col lg:flex-row text-xs'>
 							<HoloLink en='Oozora Subaru' jp='大空スバル' width='6' text='xs' grayscale={false} />
 							<HoloLink en='Takanashi Kiara' jp='小鳥遊キアラ' width='6' text='xs' grayscale={false} />
 							<HoloLink en='Pavolia Reine' jp='パボリアレイネ' width='6' text='xs' grayscale={false} />

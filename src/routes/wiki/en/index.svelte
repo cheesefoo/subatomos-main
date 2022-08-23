@@ -5,7 +5,7 @@
 
 	let promise = Promise.resolve([]);
 
-	export async function load({ fetch, session, context })
+	export async function load( )
 	{
 		const api = new GhostContentAPI({
 			url: `${ghostURL}`,
