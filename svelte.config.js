@@ -1,8 +1,8 @@
 import preprocess from 'svelte-preprocess';
 import path from 'path';
-// import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-static';
 import { optimizeImports } from 'carbon-preprocess-svelte';
-import adapter from '@sveltejs/adapter-cloudflare';
+// import adapter from '@sveltejs/adapter-cloudflare';
 
 const production = process.env.NODE_ENV === 'production';
 import { isoImport } from 'vite-plugin-iso-import'
@@ -22,13 +22,13 @@ const config = {
 	],
 
 	kit: {
-		adapter:adapter(),
-/*		adapter: adapter({
+		// adapter:adapter(),
+		adapter: adapter({
 			// default options are shown
 			pages: 'build',
 			assets: 'build',
 			fallback: null
-		}),*/
+		}),
 		prerender: {
 			default: true,
 			onError: 'continue'

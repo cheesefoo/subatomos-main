@@ -4,8 +4,8 @@ declare namespace App {
 
 	  interface Platform {
 					env?: {
-							YOUR_KV_NAMESPACE: KVNamespace;
-							YOUR_DURABLE_OBJECT_NAMESPACE: DurableObjectNamespace;
+/*							YOUR_KV_NAMESPACE: KVNamespace;
+							YOUR_DURABLE_OBJECT_NAMESPACE: DurableObjectNamespace;*/
 						};
 		      context: {
 			          waitUntil(promise: Promise<any>): void;
