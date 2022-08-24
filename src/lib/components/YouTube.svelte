@@ -4,5 +4,5 @@
 	export let height = '';
 </script>
 
-<iframe src='https://www.youtube.com/embed/{videoId}' allowfullscreen width={width} height={height}
+<iframe loading="lazy" src='https://www.youtube.com/embed/{videoId}' allowfullscreen width={width} height={height}
 ></iframe>
