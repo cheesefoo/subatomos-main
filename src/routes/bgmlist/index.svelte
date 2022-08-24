@@ -42,9 +42,18 @@ let options = {};
 			</td>
 		</tr>
 		<tr>
+			<td>SUMMER TRIANGLE</td>
+			<td></td>
+			<td>Freetalk</td>
+			<td></td>
+			<td>
+				<Youtube videoId='djl6znXfyMk' />
+			</td>
+		</tr>
+		<tr>
 			<td>You and Me</td>
 			<td></td>
-			<td>Freetalk (current)</td>
+			<td>Freetalk</td>
 			<td></td>
 			<td>
 				<Youtube videoId='gkvz6l1W0g8' />
