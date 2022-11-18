@@ -124,5 +124,68 @@ export const romaji = [['Chokotto yancha de nikotto genkina',
 	'Sono te totte hashire',
 	'tsurete iku yo min’na de!',
 	'Kimi to kakeru Subaru!']];
+export const en = [[
+	"A bit mischievous, smiley, lively",
+"with a sparkly smile I・D・O・L!",
+"I want to have more fun every day,",
+"Indulgent with adventure"],
 
+["A fluttery skirt",
+"I can wear it stylishly ya know",
+"That's why more and more",
+"it's okay to fall in love",
+"Together, let's take off to the heavens1"]
+	,
+["Shine! Starlight in all its luster",
+"An intense sparkle",
+"Am I reaching you?",
+	"Even if it's only 1mm, let me tell you \"Fight oh\"!"],
+
+["Charge! Challenge! Full throttle!",
+"To you, giving their all",
+"The first one to give you a smile, Subaru channel!",
+"Every day, night and day, with everyone!"],
+
+	["Blue feelings? {I'll}2 Come running without hesitation",
+"\"I'll help you,\" a hero!",
+		"Because a weak heart won't do",
+	"Let's get stronger",],
+
+	["An exciting swimsuit",
+	"Heart-thumping time?",
+		"Come any time, it's an all year round paradise",
+"	Let's blow away the cloudy sky with a bang"],
+
+	["Rise up! A Starmine3 no matter the darkness2",
+	"A dazzling shine!",
+		"I'll find you! Got you!",
+	"That alone is already destiny!",],
+
+		["The road continues on and on",
+	"towards a dream",
+	"Will you come with me?",
+		"Take that hand and run",
+	"Let's go, with everyone"],
+
+	["Whispering (words) although it's embarrassing",
+	"(Secretly, hey...) The feelings I want to convey",
+"I can say them now (You know... my heart is pounding)"],
+
+["Your cheers become my power",
+"You always share your energy",
+"I can give it my all and spend my time laughing",
+"Truly, \"thank you\" is the feeling"],
+
+["Sing! Starlight in all its luster",
+"An intense sparkle",
+"Am I reaching you?",
+	"Even if it's only 1mm, let me tell you \"Fight oh\"!"],
+
+["The road continues on and on",
+"towards a dream",
+"Will you come with me?",
+	"Take that hand and run",
+"Let's go, with everyone",
+"Running with you, Subaru!"]
+]
 export default { jp, romaji };

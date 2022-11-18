@@ -1,5 +1,5 @@
 <script lang='ts'>
-	import { jp, romaji } from './_lyrics_pleiades.ts';
+	import { jp, romaji,en } from './_lyrics_pleiades.ts';
 	import { media } from '$lib/stores/stores';
 	import Tabs from '$lib/components/Tabs/Tabs.svelte';
 	import TabList from '$lib/components/Tabs/TabList.svelte';
@@ -46,7 +46,12 @@
 			{/each}
 		</TabPanel>
 		<TabPanel>
-			<h2>Third panel</h2>
+			<h2>			{#each en as paragraphs}
+				{#each paragraphs as line}
+					<div>{line}</div>
+				{/each}
+				<br />
+			{/each}</h2>
 		</TabPanel>
 	</Tabs>
 {/if}
