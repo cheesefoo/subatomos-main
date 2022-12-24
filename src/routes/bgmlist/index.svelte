@@ -20,6 +20,7 @@ let options = {};
 	description='List of BGM used in streams with links'
 	canonical={`https://subatomos.com/bgmlist`}
 />
+Last Updated: 11/29/22
 <div class='overflow-x-auto text-xxs break-words lg:text-base'>
 	<table class='table-auto border border-sky border-collapse '>
 		<tr>
@@ -42,6 +43,14 @@ let options = {};
 			</td>
 		</tr>
 		<tr>
+			<td>Happy Christmas</td>
+			<td></td>
+			<td>Freetalk 20221223</td>
+			<td></td>
+			<td>
+				<Youtube videoId='g7sN3Vfb6ck' />
+			</td>
+		</tr>		<tr>
 			<td>SUMMER TRIANGLE</td>
 			<td></td>
 			<td>Freetalk</td>
@@ -57,6 +66,15 @@ let options = {};
 			<td></td>
 			<td>
 				<Youtube videoId='gkvz6l1W0g8' />
+			</td>
+		</tr>
+		<tr>
+			<td>Menuet</td>
+			<td></td>
+			<td>St. Hololive Girls' High School Freedom Chat 20221129</td>
+			<td></td>
+			<td>
+				<Youtube videoId='gKAP0GIyA9E' />
 			</td>
 		</tr>
 		<tr>
