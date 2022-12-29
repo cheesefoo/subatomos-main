@@ -43,14 +43,26 @@ Last Updated: 11/29/22
 			</td>
 		</tr>
 		<tr>
+			<td>ジタバタ、パニック！</td>
+			<td>Flail, Panic!</td>
+			<td><a href='https://www.youtube.com/watch?v=qyOXwlUspHg' target='_blank'>Subaru's Small Room w/ Sora 20221228</a>
+			</td>
+			<td></td>
+			<td>
+				<Youtube videoId='MBD4VQE8jPg' />
+			</td>
+		</tr>
+		<tr>
 			<td>Happy Christmas</td>
 			<td></td>
-			<td>Freetalk 20221223</td>
+			<td><a href='https://www.youtube.com/watch?v=Um9HWsNr6Qk' target='_blank'>Freetalk 20221223</a></td>
+
 			<td></td>
 			<td>
 				<Youtube videoId='g7sN3Vfb6ck' />
 			</td>
-		</tr>		<tr>
+		</tr>
+		<tr>
 			<td>SUMMER TRIANGLE</td>
 			<td></td>
 			<td>Freetalk</td>
@@ -71,7 +83,8 @@ Last Updated: 11/29/22
 		<tr>
 			<td>Menuet</td>
 			<td></td>
-			<td>St. Hololive Girls' High School Freedom Chat 20221129</td>
+			<td><a href='https://www.youtube.com/watch?v=3kQpOdzRR-c' target='_blank'>St. Hololive Girls' High School Freedom
+				Chat 20221129</a></td>
 			<td></td>
 			<td>
 				<Youtube videoId='gKAP0GIyA9E' />
@@ -89,7 +102,8 @@ Last Updated: 11/29/22
 		<tr>
 			<td>聳え立つ白き峰</td>
 			<td>Towering White Peak</td>
-			<td>Towa bonding quiz (opening) 20220706</td>
+			<td><a href='https://www.youtube.com/watch?v=t-iW-81JaKU' target='_blank'>Towa bonding quiz (opening) 20220706</a>
+			</td>
 			<td></td>
 			<td>
 				<Youtube videoId='pPLWU7mbBsE' />
@@ -99,7 +113,7 @@ Last Updated: 11/29/22
 			<td>Harvest</td>
 			<td></td>
 			<td>
-				Marshmallow Q&A 20220611
+				<a href='https://www.youtube.com/watch?v=FjgnOvSFiTA' target='_blank'>Marshmallow Q&A 20220611</a>
 			</td>
 			<td></td>
 			<td>
@@ -110,7 +124,9 @@ Last Updated: 11/29/22
 			<td>Smoky Coffin</td>
 			<td></td>
 			<td>
-				<TooltipLoader slug='oozora-keisatsu' text='Oozora Police' /> Mini</td>
+				<TooltipLoader slug='oozora-keisatsu' text='Oozora Police' />
+				Mini
+			</td>
 			<td></td>
 			<td>
 				<Youtube videoId='sRl_GIwqSqw' />
