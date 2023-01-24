@@ -33,10 +33,10 @@ const config = {
 			default: true,
 			onError: 'continue'
 		},
-		vite: {
-			/*			plugins:[    replace({
+		/*vite: {
+			/!*			plugins:[    replace({
 				"process.env.NODE_ENV": JSON.stringify("production")
-			})],*/
+			})],*!/
 			// plugins: [isoImport()],
 			optimizeDeps: {
 				include: ['fuzzy','@carbon/charts','lodash.get', 'lodash.isequal', 'lodash.clonedeep']
@@ -50,9 +50,9 @@ const config = {
 			build: {
 				commonjsOptions: {},
 			},
-/*			ssr: {
+/!*			ssr: {
 				noExternal: [production && '@carbon/charts' && "fuzzy"].filter(Boolean)
-			},*/
+			},*!/
 			resolve: {
 				alias: {
 					// these are the aliases and paths to them
@@ -60,7 +60,7 @@ const config = {
 					$images: path.resolve('static/assets/images')
 				}
 			}
-		}
+		}*/
 	}
 };
 
