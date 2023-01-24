@@ -2,7 +2,7 @@
   "name": "subatomos",
   "version": "0.0.1",
   "scripts": {
-    "dev": "set NODE_ENV=development && svelte-kit dev",
+    "dev": "set NODE_ENV=development && vite dev",
     "build": "svelte-kit build",
     "preview": "svelte-kit preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
@@ -11,9 +11,6 @@
     "format": "eslint --fix --ignore-path .gitignore .",
     "typesafe-i18n": "typesafe-i18n"
   },
-  "engines": {
-    "node": ">=17"
-  },
   "devDependencies": {
     "@carbon/charts": "^0.57.1",
     "@carbon/charts-svelte": "^0.57.1",
@@ -21,7 +18,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@sveltejs/adapter-static": "next",
-    "@sveltejs/kit": "next",
+    "@sveltejs/kit": "1.0.0-next.405",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tryghost/content-api": "^1.11.1",
     "@tryghost/helpers": "^1.1.72",
@@ -68,6 +65,7 @@
     "tslib": "^2.4.0",
     "typesafe-i18n": "^2.60.2",
     "typescript": "^4.7.4",
+    "vite": "^3.2.5",
     "vite-plugin-iso-import": "^0.1.3"
   },
   "type": "module",
