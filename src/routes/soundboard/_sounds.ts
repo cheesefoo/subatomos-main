@@ -1,8 +1,8 @@
 import type { SubaSound } from '$lib/SubaSound';
 //directory with sounds
-import { dev } from '$app/env';
+import { dev } from '$app/environment';
 
-const dir = dev ? '../static/assets/sound' : '/assets/sound';
+const dir = dev ? '/assets/sound' : '/assets/sound';
 const sounds: Array<SubaSound> = [
 	{ name: 'ack ack ack', file: 'Ack_Ack_Ack.mp3' },
 

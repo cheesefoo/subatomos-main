@@ -1,7 +1,7 @@
 <script>
 	import { onDestroy, onMount } from 'svelte';
 	import lottie from 'lottie-web';
-	import { browser } from '$app/env';
+	import { browser } from '$app/environment';
 
 	import Controls from './Controls.svelte';
 

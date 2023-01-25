@@ -1,8 +1,8 @@
 <script>
 	export const hydrate = false;
-	import thirdlogo from '/static/assets/images/3rdanniversarylogo-transparent.png';
-	import pondslogo from '/static/assets/images/subatomopondslogo.png';
-	import secondpic from '/static/assets/images/2020anniversary.jpg';
+	import thirdlogo from '/src/assets/images/3rdanniversarylogo-transparent.png';
+	import pondslogo from '/src/assets/images/subatomopondslogo.png';
+	import secondpic from '/src/assets/images/2020anniversary.jpg';
 </script>
 
 <main>

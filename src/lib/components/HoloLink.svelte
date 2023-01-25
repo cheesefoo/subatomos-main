@@ -1,11 +1,11 @@
 <script lang='ts'>
-	import { dev } from '$app/env';
+	import { dev } from '$app/environment';
 
 	export let en: string;
 	export let jp: string;
 	export let href = '';
 
-	const dir = dev ? '/static/assets/images/holos/' : '/assets/images/holos/';
+	const dir = dev ? '/src/assets/images/holos/' : '/assets/images/holos/';
 	export let image: string = dir + en.toLowerCase().replace(' ', '_') + '_thumb.png';
 	export let grayscale: boolean = href == '';
 	export let width = 24;

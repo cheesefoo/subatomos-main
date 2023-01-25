@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { Howl } from 'howler';
-	import { dev } from '$app/env';
+	import { dev } from '$app/environment';
 	import { onMount } from 'svelte';
 
 
-	export let audio = '/static/assets/sound/oozora_kensetsu_by_jeremy_robson.mp3';
+	export let audio = '/assets/sound/oozora_kensetsu_by_jeremy_robson.mp3';
 	const howl = new Howl({
 		src: audio,
 		loop: true,
@@ -12,10 +12,10 @@
 	});
 
 	let vol = dev
-		? 'background-image: url(/static/assets/images/volume.png)'
+		? 'background-image: url(/src/assets/images/volume.png)'
 		: 'background-image: url(/assets/images/volume.png)';
 	let mut = dev
-		? 'background-image: url(/static/assets/images/volume_mute.png)'
+		? 'background-image: url(/src/assets/images/volume_mute.png)'
 		: 'background-image: url(/assets/images/volume_mute.png)';
 
 	export let paused = true;

@@ -12,7 +12,7 @@
 			"id": "image_0",
 			"w": 43,
 			"h": 30,
-			"u": "/static/assets/images/logo/",
+			"u": "/src/assets/images/logo/",
 			"p": "img_0.png",
 			"e": 0
 		},
@@ -20,7 +20,7 @@
 			"id": "image_1",
 			"w": 39,
 			"h": 32,
-			"u": "/static/assets/images/logo/",
+			"u": "/src/assets/images/logo/",
 			"p": "img_1.png",
 			"e": 0
 		},
@@ -28,7 +28,7 @@
 			"id": "image_2",
 			"w": 27,
 			"h": 23,
-			"u": "/static/assets/images/logo/",
+			"u": "/src/assets/images/logo/",
 			"p": "img_2.png",
 			"e": 0
 		},
@@ -36,7 +36,7 @@
 			"id": "image_3",
 			"w": 19,
 			"h": 21,
-			"u": "/static/assets/images/logo/",
+			"u": "/src/assets/images/logo/",
 			"p": "img_3.png",
 			"e": 0
 		},
@@ -44,7 +44,7 @@
 			"id": "image_4",
 			"w": 32,
 			"h": 28,
-			"u": "/static/assets/images/logo/",
+			"u": "/src/assets/images/logo/",
 			"p": "img_4.png",
 			"e": 0
 		},
@@ -52,7 +52,7 @@
 			"id": "image_5",
 			"w": 117,
 			"h": 31,
-			"u": "/static/assets/images/logo/",
+			"u": "/src/assets/images/logo/",
 			"p": "img_5.png",
 			"e": 0
 		},
@@ -60,7 +60,7 @@
 			"id": "image_6",
 			"w": 114,
 			"h": 34,
-			"u": "/static/assets/images/logo/",
+			"u": "/src/assets/images/logo/",
 			"p": "img_6.png",
 			"e": 0
 		},
@@ -68,7 +68,7 @@
 			"id": "image_7",
 			"w": 110,
 			"h": 37,
-			"u": "/static/assets/images/logo/",
+			"u": "/src/assets/images/logo/",
 			"p": "img_7.png",
 			"e": 0
 		},
@@ -76,7 +76,7 @@
 			"id": "image_8",
 			"w": 235,
 			"h": 72,
-			"u": "/static/assets/images/logo/",
+			"u": "/src/assets/images/logo/",
 			"p": "img_8.png",
 			"e": 0
 		},
@@ -84,7 +84,7 @@
 			"id": "image_9",
 			"w": 115,
 			"h": 65,
-			"u": "/static/assets/images/logo/",
+			"u": "/src/assets/images/logo/",
 			"p": "img_9.png",
 			"e": 0
 		},
@@ -92,7 +92,7 @@
 			"id": "image_10",
 			"w": 366,
 			"h": 128,
-			"u": "/static/assets/images/logo/",
+			"u": "/src/assets/images/logo/",
 			"p": "img_10.png",
 			"e": 0
 		},
@@ -100,7 +100,7 @@
 			"id": "image_11",
 			"w": 17,
 			"h": 17,
-			"u": "/static/assets/images/logo/",
+			"u": "/src/assets/images/logo/",
 			"p": "img_11.png",
 			"e": 0
 		},
@@ -108,7 +108,7 @@
 			"id": "image_12",
 			"w": 17,
 			"h": 17,
-			"u": "/static/assets/images/logo/",
+			"u": "/src/assets/images/logo/",
 			"p": "img_12.png",
 			"e": 0
 		},
@@ -116,7 +116,7 @@
 			"id": "image_13",
 			"w": 28,
 			"h": 25,
-			"u": "/static/assets/images/logo/",
+			"u": "/src/assets/images/logo/",
 			"p": "img_13.png",
 			"e": 0
 		},
@@ -124,7 +124,7 @@
 			"id": "image_14",
 			"w": 190,
 			"h": 148,
-			"u": "/static/assets/images/logo/",
+			"u": "/src/assets/images/logo/",
 			"p": "img_14.png",
 			"e": 0
 		},
@@ -132,7 +132,7 @@
 			"id": "image_15",
 			"w": 138,
 			"h": 133,
-			"u": "/static/assets/images/logo/",
+			"u": "/src/assets/images/logo/",
 			"p": "img_15.png",
 			"e": 0
 		},
@@ -140,7 +140,7 @@
 			"id": "image_16",
 			"w": 219,
 			"h": 266,
-			"u": "/static/assets/images/logo/",
+			"u": "/src/assets/images/logo/",
 			"p": "img_16.png",
 			"e": 0
 		},
@@ -148,7 +148,7 @@
 			"id": "image_17",
 			"w": 34,
 			"h": 21,
-			"u": "/static/assets/images/logo/",
+			"u": "/src/assets/images/logo/",
 			"p": "img_17.png",
 			"e": 0
 		},
@@ -156,7 +156,7 @@
 			"id": "image_18",
 			"w": 256,
 			"h": 305,
-			"u": "/static/assets/images/logo/",
+			"u": "/src/assets/images/logo/",
 			"p": "img_18.png",
 			"e": 0
 		},
@@ -164,7 +164,7 @@
 			"id": "image_19",
 			"w": 327,
 			"h": 329,
-			"u": "/static/assets/images/logo/",
+			"u": "/src/assets/images/logo/",
 			"p": "img_19.png",
 			"e": 0
 		},

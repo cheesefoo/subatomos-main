@@ -1,6 +1,6 @@
 <script>
 	import { locale, setLocale } from '/src/i18n/i18n-svelte';
-	import { browser } from '$app/env';
+	import { browser } from '$app/environment';
 
 	// onMount(async () => {
 	// 	console.log($locale)

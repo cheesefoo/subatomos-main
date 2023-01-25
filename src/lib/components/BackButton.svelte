@@ -1,5 +1,5 @@
 <script>
-	import { browser } from '$app/env';
+	import { browser } from '$app/environment';
 	import { goto } from '$app/navigation';
 	function goBack(defaultRoute = '/wiki/en') {
 		if (browser) {

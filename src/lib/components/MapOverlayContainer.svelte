@@ -4,7 +4,7 @@
 	import SNSLink from '$lib/components/SNSLink.svelte';
 	import { media } from '$lib/stores/stores.ts';
 
-	import { dev } from '$app/env';
+	import { dev } from '$app/environment';
 
 	export let name;
 	export let twitter = undefined;
@@ -130,21 +130,21 @@
     border-image-width: 20px 20px 20px 20px;
     border-image-outset: 0 0 0 0;
     border-image-repeat: stretch stretch;
-    border-image-source: url('/static/assets/images/Cross.png');
+    border-image-source: url('/src/assets/images/Cross.png');
     background-size: contain;
     background-clip: border-box;
     background-origin: border-box;
 
     &.yellow {
-      background: #fff9e9 url('/static/assets/images/Star_bg_yellow.png') no-repeat right top;
-      background-image: url('/static/assets/images/namebanner.webp'), url(/static/assets/images/Star_bg_yellow.png);
+      background: #fff9e9 url('/src/assets/images/Star_bg_yellow.png') no-repeat right top;
+      background-image: url('/src/assets/images/namebanner.webp'), url(/src/assets/images/Star_bg_yellow.png);
       background-position: 0 20px, right top;
       background-size: 100% 2.5em, 40% auto;
     }
 
     &.pink {
-      background: #fdebe7 url('/static/assets/images/Star_bg_pink.png') no-repeat right top;
-      background-image: url('/static/assets/images/namebanner.webp'), url(/static/assets/images/Star_bg_pink.png);
+      background: #fdebe7 url('/src/assets/images/Star_bg_pink.png') no-repeat right top;
+      background-image: url('/src/assets/images/namebanner.webp'), url(/src/assets/images/Star_bg_pink.png);
       background-position: 0 20px, right top;
       background-size: 100% 2.5em, 40% auto;
     }

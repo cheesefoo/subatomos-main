@@ -6,16 +6,17 @@
 	import { tooltip } from '$lib/components/Tooltip';
 	// import { tooltip, popover } from 'svelte-ktippy'
 	import WikiTooltip from '$lib/components/WikiTooltip.svelte';
-	import { dev } from '$app/env';
+	import { dev } from '$app/environment';
 
 	export let slug;
 	export let text;
 	let excerpt;
-	export let url = (dev ? 'http://localhost:3000' : baseURL) + '/wiki/en/posts';
+	export let url = (dev ? 'http://localhost:5173' : baseURL) + '/wiki/en/posts';
 
 	// onMount(getExcerpt);
 	async function getExcerpt()
 	{
+		// console.log("??")
 		const api = new GhostContentAPI({
 			url: `${ghostURL}`,
 			key: `${ghostAPI}`,
@@ -25,6 +26,7 @@
 		{
 			const post = await api.posts.read({ slug }, { formats: ['html'], include: 'tags' });
 			let txt = `${post.title}: ${post.excerpt}`;
+			// let excerpt = post.excerpt
 			// console.log(excerpt)
 
 			return { props: { excerpt: txt } };
@@ -52,6 +54,7 @@
 		>
 			{text}
 		</a>
+
 		<!--		<WikiTooltip slug={slug} text={text} hoverText={res.props.excerpt}/>-->
 	{/if}
 {:catch err}

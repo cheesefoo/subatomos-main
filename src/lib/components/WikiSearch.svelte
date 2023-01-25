@@ -4,7 +4,7 @@
 	import { baseURL, ghostAPI, ghostURL } from '$lib/variables';
 	import Typeahead from 'svelte-typeahead';
 	import { goto } from '$app/navigation';
-	import { dev } from '$app/env';
+	import { dev } from '$app/environment';
 
 	let url = (dev ? 'http://localhost:3000' : baseURL) + '/wiki/en/posts';
 
