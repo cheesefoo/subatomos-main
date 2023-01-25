@@ -1,9 +1,9 @@
 <script lang='ts'>
 	import Fa from 'svelte-fa/src/fa.svelte';
-	import { faGithub,faTwitter,faInstagram,faYoutube,faDiscord,faTwitch } from '@fortawesome/free-brands-svg-icons/index.es';
+	import { faGithub,faTwitter,faInstagram,faYoutube,faDiscord,faTwitch } from '@fortawesome/free-brands-svg-icons/index.js';
 
 
-	import { faGlobe } from '@fortawesome/free-solid-svg-icons/index.es';
+	import { faGlobe } from '@fortawesome/free-solid-svg-icons/index.js';
 
 	export let icon;
 	export let url;

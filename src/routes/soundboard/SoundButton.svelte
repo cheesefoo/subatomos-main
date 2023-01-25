@@ -1,4 +1,5 @@
 <script lang="ts">
+
 	import Slider from './Slider.svelte';
 	import { fade } from 'svelte/transition';
 	import { Howl } from 'howler';
@@ -7,9 +8,9 @@
 	let paused = true;
 	let volume = 0.5;
 	export let name;
-	export let description = '';
+/*	export let description = '';
 	export let category = undefined;
-	export let source = '';
+	export let source = '';*/
 	export let file;
 	const howl = new Howl({
 		src: [file]

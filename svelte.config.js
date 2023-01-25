@@ -1,8 +1,8 @@
 import preprocess from 'svelte-preprocess';
 import path from 'path';
-import adapter from '@sveltejs/adapter-static';
+// import adapter from '@sveltejs/adapter-static';
 import { optimizeImports } from 'carbon-preprocess-svelte';
-// import adapter from '@sveltejs/adapter-cloudflare';
+import adapter from '@sveltejs/adapter-cloudflare';
 
 const production = process.env.NODE_ENV === 'production';
 import { isoImport } from 'vite-plugin-iso-import'
@@ -20,7 +20,13 @@ const config = {
 		}),
 		optimizeImports()
 	],
+	onwarn: (warning, handler) => {
+		const { code, frame } = warning;
+		if (code === "css-unused-selector")
+			return;
 
+		handler(warning);
+	},
 	kit: {
 		// adapter:adapter(),
 		adapter: adapter({
@@ -29,10 +35,6 @@ const config = {
 			assets: 'build',
 			fallback: null
 		}),
-		prerender: {
-			default: true,
-			onError: 'continue'
-		},
 		/*vite: {
 			/!*			plugins:[    replace({
 				"process.env.NODE_ENV": JSON.stringify("production")

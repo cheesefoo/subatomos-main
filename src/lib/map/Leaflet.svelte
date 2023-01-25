@@ -7,7 +7,7 @@
 	import 'leaflet.markercluster/dist/MarkerCluster.css';
 	// import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
 
-	import clusterIcon from '/static/assets/images/subaru_waypoint_gr.png';
+	import clusterIcon from '/src/assets/images/subaru_waypoint_gr.png';
 
 
 	export let height = '80vh';
@@ -73,7 +73,7 @@
 		map.attributionControl.setPrefix('Leaflet');
 
 		L.tileLayer(
-			'assets/images/GSatellite/{z}/{x}/{y}.jpg',
+			'/assets/images/GSatellite/{z}/{x}/{y}.jpg',
 			{
 				attribution: '© Google,INEGI',
 				minZoom: 3,

@@ -3,7 +3,7 @@
 	import StarsSVG from '$lib/components/StarsSVG.svelte';
 	import SNSLink from '$lib/components/SNSLink.svelte';
 	import { Lightbox } from 'svelte-lightbox';
-	import { dev } from '$app/env';
+	import { dev } from '$app/environment';
 	import { media } from '$lib/stores/stores.ts';
 
 	const dir = dev ? '/assets/images/fanart/' : '/assets/images/fanart/';
@@ -70,7 +70,7 @@
 						{#if src.endsWith('.mp4')}
 							<Lightbox clickToClose={true} thumbnail protect={true}>
 								<img slot="thumbnail" src={getThumbnail()} alt={name} />
-								<video slot="image" autoplay loop src={dir + src} />
+								<video slot="image" autoplay loop src={dir + src} ><track kind='captions'/></video>
 							</Lightbox>
 						{:else}
 							<Lightbox clickToClose={true} thumbnail imagePreset={'fullscreen'} protect={true}>
@@ -97,7 +97,7 @@
 	}*/
 	@font-face {
 		// This is parsed as a normal function call that takes a quoted string.
-		src: url('/static/Corporate-Logo-Bold-ver2.woff2') format('woff2');
+		src: url('/assets/Corporate-Logo-Bold-ver2.woff2') format('woff2');
 		font-family: 'Corporate-Logo-Bold-ver2';
 		font-weight: normal bold;
 	}
@@ -120,23 +120,23 @@
 		border-image-width: 20px 20px 20px 20px;
 		border-image-outset: 0 0 0 0;
 		border-image-repeat: stretch stretch;
-		border-image-source: url('/static/assets/images/Cross.png');
+		border-image-source: url('/src/assets/images/Cross.png');
 		background-size: contain;
 		background-clip: border-box;
 		background-origin: border-box;
 
 		&.yellow {
-			background: #fff9e9 url('/static/assets/images/Star_bg_yellow.png') no-repeat right top;
-			background-image: url('/static/assets/images/namebanner.webp'),
-				url(/static/assets/images/Star_bg_yellow.png);
+			background: #fff9e9 url('/src/assets/images/Star_bg_yellow.png') no-repeat right top;
+			background-image: url('/src/assets/images/namebanner.webp'),
+				url(/src/assets/images/Star_bg_yellow.png);
 			background-position: 0 20px, right top;
 			background-size: 100% 2.5em, 40% auto;
 		}
 
 		&.pink {
-			background: #fdebe7 url('/static/assets/images/Star_bg_pink.png') no-repeat right top;
-			background-image: url('/static/assets/images/namebanner.webp'),
-				url(/static/assets/images/Star_bg_pink.png);
+			background: #fdebe7 url('/src/assets/images/Star_bg_pink.png') no-repeat right top;
+			background-image: url('/src/assets/images/namebanner.webp'),
+				url(/src/assets/images/Star_bg_pink.png);
 			background-position: 0 20px, right top;
 			background-size: 100% 2.5em, 40% auto;
 		}

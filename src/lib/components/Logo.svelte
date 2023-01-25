@@ -1,6 +1,6 @@
 <script>
-	import video from '/static/assets/Suba_Logo_60fps.webm';
 	import { fade } from 'svelte/transition';
+	let vid= '/assets/video/Suba_Logo_60fps.webm';
 
 	let logoFinished = false;
 
@@ -11,7 +11,7 @@
 
 {#if !logoFinished}
 	<div class="logo-container" out:fade={{ delay: 0, duration: 1000 }}>
-		<video src={video} autoplay muted playsinline playbackRate={2} on:ended={finish} />
+		<video src={vid} autoplay muted playsinline on:ended={finish} />
 	</div>
 {/if}
 

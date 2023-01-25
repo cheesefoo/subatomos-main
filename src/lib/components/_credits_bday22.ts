@@ -1,4 +1,4 @@
-// const dir = dev ? '/static/assets/images/credits' : '/assets/images/credits';
+// const dir = dev ? '/src/assets/images/credits' : '/assets/images/credits';
 
 
 const dir = '/assets/images/credits';

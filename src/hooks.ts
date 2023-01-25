@@ -1,4 +1,4 @@
-import cookie from 'cookie';
+/*import cookie from 'cookie';
 
 import type { Handle } from '@sveltejs/kit';
 export async function  handle({ event, resolve })
@@ -6,7 +6,7 @@ export async function  handle({ event, resolve })
 	const response = await resolve(event);
 	return response;
 
-}
+}*/
 /*
 export const handle: Handle = async ({ request, resolve }) => {
 	const cookies = cookie.parse(request.headers.cookie || '');
