@@ -97,7 +97,7 @@
 	}*/
 	@font-face {
 		// This is parsed as a normal function call that takes a quoted string.
-		src: url('/assets/Corporate-Logo-Bold-ver2.woff2') format('woff2');
+		src: url('/src/assets/Corporate-Logo-Bold-ver2.woff2') format('woff2');
 		font-family: 'Corporate-Logo-Bold-ver2';
 		font-weight: normal bold;
 	}
