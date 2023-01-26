@@ -1,3 +1,4 @@
+<!--
 <script lang='ts'>
 	function myFunction(){
 		// Declare variables
@@ -6332,7 +6333,7 @@
 		<tr>
 			<td>2021/05/04</td>
 			<td>01:25:01</td>
-			<td><a href='https://youtu.be/VSLp--YmgPQ' target='_blank' class='outlink' rel='nofollow'>【】歯の痛みをモンスターにぶつけるモンハンゲリラしゅばああああああああああああああ【】</a>
+			<td><a href='https://youtu.be/VSLp&#45;&#45;YmgPQ' target='_blank' class='outlink' rel='nofollow'>【】歯の痛みをモンスターにぶつけるモンハンゲリラしゅばああああああああああああああ【】</a>
 			</td>
 
 
@@ -8356,7 +8357,7 @@
 		<tr>
 			<td>2022/03/12</td>
 			<td>01:03:01</td>
-			<td><a href='https://youtu.be/ABZ--Z-rdc4' target='_blank' class='outlink' rel='nofollow'>【#生スバル】復活のおはすば！スバル：FREE
+			<td><a href='https://youtu.be/ABZ&#45;&#45;Z-rdc4' target='_blank' class='outlink' rel='nofollow'>【#生スバル】復活のおはすば！スバル：FREE
 				TALK【ホロライブ/大空スバル】</a></td>
 
 
@@ -8683,4 +8684,4 @@
 		</tr>
 		</tbody>
 	</table>
-</div>
+</div>-->
