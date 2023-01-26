@@ -197,7 +197,7 @@
 				<tbody class='bg-white'>
 				<tr class='flex flex-col lg:flex-row text-xs'>
 					<td>
-						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch href='/wiki/{$locale}/posts/gen2'>
+						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch href='/wiki/{$locale}/posts/holoexodia'>
 
 							<HoloLink en='Minato Aqua' jp='湊あくあ' width='6' text='xs' grayscale={false} />
 							<HoloLink en='Murasaki Shion' jp='紫咲シオン' width='6' text='xs' grayscale={false} />
@@ -320,7 +320,7 @@
 			<HoloLink en='Amane Kanata' jp='天音かなた' text='xs' />
 			<HoloLink en='Kiryu Coco' jp='桐生ココ' text='xs' />
 			<HoloLink en='Tsunomaki Watame' jp='角巻わため' text='xs' />
-			<HoloLink en='Tokoyami Towa' jp='常闇トワ' href='../groups/icarus-jet-coaster' text='xs' />
+			<HoloLink en='Tokoyami Towa' jp='常闇トワ' href='/wiki/{$locale}/posts/icarus-jet-coaster' text='xs' />
 			<HoloLink en='Himemori Luna' jp='姫森ルーナ' text='xs' />
 		</tr>
 		</tbody>

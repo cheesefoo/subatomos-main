@@ -4,11 +4,12 @@
   "scripts": {
     "dev": "set NODE_ENV=development && vite dev",
     "build": "vite build",
-    "preview": "svelte-kit preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "eslint --ignore-path .gitignore .",
-    "format": "eslint --fix --ignore-path .gitignore .",
+    "preview": "vite preview",
+    "test": "playwright test",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "test:unit": "vitest",
+    "lint": "eslint .",
     "typesafe-i18n": "typesafe-i18n"
   },
   "devDependencies": {
