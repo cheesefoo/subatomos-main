@@ -203,12 +203,12 @@
 
 			<table class='border-collapse table-fixed w-full lg:w-11/12 text-sm grayscale'>
 				<thead class='border-b text-lg p-4 pl-8 pb-3 text-sky whitespace-nowrap text-center'>
-				The Bonds of Gen 2
+				Holo Exodia
 				</thead>
 				<tbody class='bg-white'>
 				<tr class='flex flex-col lg:flex-row text-xs'>
 					<td>
-						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch href='/wiki/{$locale}/posts/gen2'>
+						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch href='/wiki/{$locale}/posts/holoexodia'>
 
 							<HoloLink en='Minato Aqua' jp='湊あくあ' width='6' text='xs' grayscale={false} />
 							<HoloLink en='Murasaki Shion' jp='紫咲シオン' width='6' text='xs' grayscale={false} />

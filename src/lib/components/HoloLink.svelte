@@ -5,7 +5,7 @@
 	export let jp: string;
 	export let href = '';
 
-	const dir = dev ? '/src/assets/images/holos/' : '/assets/images/holos/';
+	const dir = '/assets/images/holos/';
 	export let image: string = dir + en.toLowerCase().replace(' ', '_') + '_thumb.png';
 	export let grayscale: boolean = href == '';
 	export let width = 24;
