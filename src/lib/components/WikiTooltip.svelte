@@ -4,7 +4,6 @@
 
 <!--{#if hoverText!==undefined}-->
 <i>{hoverText}</i>
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 <!--
 
 <script>
