@@ -24,9 +24,9 @@
 			<li class:active={$page.url.pathname.endsWith('')}>
 				<a sveltekit:prefetch href="https://subatomos.com">{$LL.HEADER.PROJECTS()}</a>
 				<ul class="nav-dropdown">
-					<li>
-						<a sveltekit:prefetch href="/wiki/{$locale}">WIKI</a>
-					</li>
+<!--					<li>
+						<a sveltekit:prefetch href="/wiki/en">WIKI</a>
+					</li>-->
 					<li class:active={$page.url.pathname.endsWith('/birthday2022')}>
 						<a sveltekit:prefetch href="/birthday2022">17.4th Birthday</a>
 					</li>
