@@ -97,7 +97,7 @@
 	}*/
 	@font-face {
 		// This is parsed as a normal function call that takes a quoted string.
-		src: url('/src/assets/Corporate-Logo-Bold-ver2.woff2') format('woff2');
+		src: url('/assets/Corporate-Logo-Bold-ver2.woff2') format('woff2');
 		font-family: 'Corporate-Logo-Bold-ver2';
 		font-weight: normal bold;
 	}
@@ -120,23 +120,23 @@
 		border-image-width: 20px 20px 20px 20px;
 		border-image-outset: 0 0 0 0;
 		border-image-repeat: stretch stretch;
-		border-image-source: url('/src/assets/images/Cross.png');
+		border-image-source: url('/assets/images/Cross.png');
 		background-size: contain;
 		background-clip: border-box;
 		background-origin: border-box;
 
 		&.yellow {
-			background: #fff9e9 url('/src/assets/images/Star_bg_yellow.png') no-repeat right top;
-			background-image: url('/src/assets/images/namebanner.webp'),
-				url(/src/assets/images/Star_bg_yellow.png);
+			background: #fff9e9 url('/assets/images/Star_bg_yellow.png') no-repeat right top;
+			background-image: url('/assets/images/namebanner.webp'),
+				url(/assets/images/Star_bg_yellow.png);
 			background-position: 0 20px, right top;
 			background-size: 100% 2.5em, 40% auto;
 		}
 
 		&.pink {
-			background: #fdebe7 url('/src/assets/images/Star_bg_pink.png') no-repeat right top;
-			background-image: url('/src/assets/images/namebanner.webp'),
-				url(/src/assets/images/Star_bg_pink.png);
+			background: #fdebe7 url('/assets/images/Star_bg_pink.png') no-repeat right top;
+			background-image: url('/assets/images/namebanner.webp'),
+				url(/assets/images/Star_bg_pink.png);
 			background-position: 0 20px, right top;
 			background-size: 100% 2.5em, 40% auto;
 		}

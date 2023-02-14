@@ -1,13 +1,13 @@
 <script>
 	const carouselPhotos = [
-		'/src/assets/images/loadingduck/Timeline_1_0000.png',
-		'/src/assets/images/loadingduck/Timeline_1_0001.png',
-		'/src/assets/images/loadingduck/Timeline_1_0002.png',
-		'/src/assets/images/loadingduck/Timeline_1_0003.png',
-		'/src/assets/images/loadingduck/Timeline_1_0004.png',
-		'/src/assets/images/loadingduck/Timeline_1_0005.png',
-		'/src/assets/images/loadingduck/Timeline_1_0006.png',
-		'/src/assets/images/loadingduck/Timeline_1_0007.png'
+		'/assets/images/loadingduck/Timeline_1_0000.png',
+		'/assets/images/loadingduck/Timeline_1_0001.png',
+		'/assets/images/loadingduck/Timeline_1_0002.png',
+		'/assets/images/loadingduck/Timeline_1_0003.png',
+		'/assets/images/loadingduck/Timeline_1_0004.png',
+		'/assets/images/loadingduck/Timeline_1_0005.png',
+		'/assets/images/loadingduck/Timeline_1_0006.png',
+		'/assets/images/loadingduck/Timeline_1_0007.png'
 	];
 
 	let index = 0;
@@ -41,7 +41,7 @@
 		//position:absolute;
 		width: 50px;
 		height: 50px;
-		background: url('/src/assets/images/loadingduck/duck-sm.png');
+		background: url('/assets/images/loadingduck/duck-sm.png');
 	}
 
 	/*img {*/

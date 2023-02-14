@@ -8,7 +8,7 @@
 	import LL from '/src/i18n/i18n-svelte';
 	import SNSLink from '$lib/components/SNSLink.svelte';
 	import { baseURL } from '$lib/variables.ts';
-	import metatwi from '/src/assets/images/soundboardthumb.jpg';
+	let metatwi = '/assets/images/soundboardthumb.jpg';
 	import LanguageSelect from '$lib/components/LanguageSelect.svelte';
 
 	let duration;
