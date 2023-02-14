@@ -10,17 +10,6 @@
 	import { onMount } from 'svelte';
 	import { Breadcrumb, BreadcrumbItem } from '$lib/components/Breadcrumb';
 
-	export async function load({ fetch, context }) {
-		// detect locale of user (see https://github.com/ivanhofer/typesafe-i18n#locale-detection)
-		let locale: Locales = 'en';
-		if (browser) {
-			setLocale(detectLocale('en', ['en', 'ja'], localStorageDetector));
-		}
-		await initI18n(locale);
-
-		return {};
-	}
-
 	onMount(async () => {
 		const detectedLocale = detectLocale('en', ['en', 'ja'], localStorageDetector);
 		await initI18n(detectedLocale);
@@ -45,7 +34,7 @@
 		margin: 0;
 		overflow: hidden;
 
-		background: url(/src/assets/images/sky.webp) no-repeat center center fixed;
+		background: url(/assets/images/sky.webp) no-repeat center center fixed;
 		background-size: cover;
 	}
   .content {

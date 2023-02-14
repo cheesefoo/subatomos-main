@@ -1,5 +1,6 @@
-<script lang='ts'>  import TooltipLoader from '$lib/components/TooltipLoader.svelte';
-import '../wiki/tw.scss';
+<script lang='ts'>
+	// import TooltipLoader from '$lib/components/TooltipLoader.svelte';
+import './tw.scss';
 import { dev } from '$app/environment';
 import Youtube from '$lib/components/YouTube.svelte';
 import { MetaTags } from 'svelte-meta-tags';
@@ -124,8 +125,8 @@ Last Updated: 11/29/22
 			<td>Smoky Coffin</td>
 			<td></td>
 			<td>
-				<TooltipLoader slug='oozora-keisatsu' text='Oozora Police' />
-				Mini
+<!--				<TooltipLoader slug='oozora-keisatsu' text='Oozora Police' />-->
+				Oozora Police	Mini
 			</td>
 			<td></td>
 			<td>
@@ -244,7 +245,8 @@ Last Updated: 11/29/22
 			<td>シャーロック～捜査、記憶と記録を辿って～</td>
 			<td>Sherlock~Investigation, Memories and Records~</td>
 			<td>
-				<TooltipLoader slug='oozora-keisatsu' text='Oozora Police' />
+<!--				<TooltipLoader slug='oozora-keisatsu' text='Oozora Police' />-->
+				Oozora Police
 			</td>
 			<td></td>
 			<td>
@@ -255,7 +257,8 @@ Last Updated: 11/29/22
 			<td>まるでサスペンスドラマ～犯人は語る～</td>
 			<td>Like a Suspense Drama~The Culprit Speaks~</td>
 			<td>
-				<TooltipLoader slug='oozora-keisatsu' text='Oozora Police' />
+<!--				<TooltipLoader slug='oozora-keisatsu' text='Oozora Police' />-->
+				Oozora Police
 			</td>
 			<td></td>
 			<td>

@@ -12,10 +12,10 @@
 	});
 
 	let vol = dev
-		? 'background-image: url(/src/assets/images/volume.png)'
+		? 'background-image: url(/assets/images/volume.png)'
 		: 'background-image: url(/assets/images/volume.png)';
 	let mut = dev
-		? 'background-image: url(/src/assets/images/volume_mute.png)'
+		? 'background-image: url(/assets/images/volume_mute.png)'
 		: 'background-image: url(/assets/images/volume_mute.png)';
 
 	export let paused = true;
