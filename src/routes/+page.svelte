@@ -3,14 +3,13 @@
 	import { faYoutube } from '@fortawesome/free-brands-svg-icons/faYoutube';
 	import { faDiscord } from '@fortawesome/free-brands-svg-icons/faDiscord';
 
-	import official from '/src/assets/images/subaru-logo-official.png';
-	// import bday22 from '/src/assets/images/bday22-logo-sm.png';
-	import bday22 from '/src/assets/images/cake-sm.png';
-	import third from '/src/assets/images/3rdanniversarylogo-transparent-sm.png';
-	import second from '/src/assets/images/second-sm.png';
-	import subatomo from '/src/assets/images/subatomo-wh.png';
-	import subaru from '/src/assets/images/subaru3rd_outfit_long_full_1080.png';
-	import megaphone from '/src/assets/images/megaphone_resized.svg';
+	let official = '/assets/images/subaru-logo-official.png';
+	let bday22 = '/assets/images/cake-sm.png';
+	let third = '/assets/images/3rdanniversarylogo-transparent-sm.png';
+	let second = '/assets/images/second-sm.png';
+	let subatomo = '/assets/images/subatomo-wh.png';
+	let subaru = '/assets/images/subaru3rd_outfit_long_full_1080.png';
+	let megaphone = '/assets/images/megaphone_resized.svg';
 	import Fa from 'svelte-fa';
 	import Sakura from '$lib/components/sakura/sakura.js';
 	import { onMount } from 'svelte';
@@ -141,7 +140,7 @@
 	<div class='nav' on:click={onHamburger}>
 		<!--	<div class='nav' class:active={dropdownActive} on:click={onHamburger}>-->
 		<div class='wiki'>
-			<a sveltekit:prefetch href='/wiki/en'><h4>WIKI (WIP)</h4></a>
+			<a  href='/wiki/en'><h4>WIKI (WIP)</h4></a>
 		</div>
 		<div class='bday22'>
 			<img src={bday22} alt='17.4th birthday' />
@@ -202,7 +201,6 @@
 	<small>Main hub still in development</small>
 </main>
 
-<!--<LanguageSelect/>-->
 <style lang='scss'>
   @import '$lib/components/sakura/sakura.min.css';
 
@@ -300,7 +298,7 @@
     //position:absolute;
     width: 50px;
     height: 50px;
-    background: url('/src/assets/images/loadingduck/duck-sm.png');
+    background: url('/assets/images/loadingduck/duck-sm.png');
     //transform: translate(0, 35%);
   }
 
@@ -326,7 +324,7 @@
     bottom: 0;
     object-fit: cover;
     overflow: hidden;
-    background: url('/src/assets/images/subaru3rd_outfit_long_full_1080.png') no-repeat bottom center;
+    background: url('/assets/images/subaru3rd_outfit_long_full_1080.png') no-repeat bottom center;
     background-size: contain;
 
     img {

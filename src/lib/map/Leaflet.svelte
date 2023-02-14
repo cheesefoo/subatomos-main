@@ -7,7 +7,7 @@
 	import 'leaflet.markercluster/dist/MarkerCluster.css';
 	// import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
 
-	import clusterIcon from '/src/assets/images/subaru_waypoint_gr.png';
+	let clusterIcon = '/assets/images/subaru_waypoint_gr.png';
 
 
 	export let height = '80vh';
