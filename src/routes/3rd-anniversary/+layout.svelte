@@ -18,26 +18,11 @@
 			// localeToSelect = $locale
 		});*/
 
-	export async function load() {
-		// detect locale of user (see https://github.com/ivanhofer/typesafe-i18n#locale-detection)
-		let locale: Locales = 'en';
-		if (browser) {
-			setLocale(detectLocale('en', ['en', 'ja'], localStorageDetector));
-			console.log('browser');
-		}
-		await initI18n(locale);
 
-		return {};
-	}
 
-	onMount(async () => {
-		const detectedLocale = detectLocale('en', ['en', 'ja'], localStorageDetector);
-		await initI18n(detectedLocale);
-		setLocale($locale);
-	});
-	if (browser) {
-		$: $locale && localStorage.setItem('lang', $locale);
-	}
+
+
+
 </script>
 
 <main>

@@ -9,18 +9,18 @@
 
 	import Saos from 'saos';
 
-	import logoStatic from '/src/assets/images/logo.png';
-	import separator from '/src/assets/images/separator.webp';
-	import messagebanner from '/src/assets/images/border_messages.png';
-	import messagebannermobile from '/src/assets/images/border_messages_mobile.png';
-	import bottomseparator from '/src/assets/images/bottom_credits.webp';
-	import videoframe from '/src/assets/images/videoframe.png';
-	import metaimg from '/src/assets/images/3rdanniversarylogo.jpg';
-	import metatwi from '/src/assets/images/meta3rd.jpg';
+	let logoStatic = '/assets/images/logo.png';
+	let separator = '/assets/images/separator.webp';
+	let messagebanner = '/assets/images/border_messages.png';
+	let messagebannermobile = '/assets/images/border_messages_mobile.png';
+	let bottomseparator = '/assets/images/bottom_credits.webp';
+	let videoframe = '/assets/images/videoframe.png';
+	// let metaimg = '/assets/images/3rdanniversarylogo.jpg';
+	let metatwi = '/assets/images/meta3rd.jpg';
+	let arrow = '/assets/images/scrolldown.png';
 
 	import { baseURL } from '$lib/variables.ts';
 
-	import arrow from '/src/assets/images/scrolldown.png';
 
 	import LanguageSelect from '$lib/components/LanguageSelect3rdAnniversary.svelte';
 	import ThirdAnniversaryCredits from '$lib/components/ThirdAnniversaryCredits.svelte';
@@ -69,7 +69,7 @@ We made a video for you to celebrate!!!"
 		content="スバル3周年おめでとう！！！
 We made a video for you to celebrate!!!"
 	/>
-	<meta property="og:image" content={metaimg} />
+	<meta property="og:image" content='/assets/images/3rdanniversarylogo.jpg' />
 
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:url" content="https://subatomos.com/3rd-anniversary" />
@@ -132,7 +132,7 @@ We made a video for you to celebrate!!!"
 				<label><input type='checkbox' bind:checked={hideMessages} /> {$LL.THIRD.FANART_ONLY()}</label>
 			</div>-->
 		</div>
-		<img src={separator} alt="separator" />
+		<img src='/assets/images/separator.webp' alt="separator" />
 		{#if $media.small}
 			<img src={messagebannermobile} alt="messages banner" class:filtered={hideMessages} />
 		{:else}
@@ -198,7 +198,7 @@ We made a video for you to celebrate!!!"
 
 <style lang="scss">
 	main {
-		background: url(/src/assets/images/bgseamless.webp) no-repeat center center fixed;
+		background: url(/assets/images/bgseamless.webp) no-repeat center center fixed;
 		background-size: cover;
 		width: 100vw;
 		flex-wrap: wrap;
@@ -218,7 +218,7 @@ We made a video for you to celebrate!!!"
 		justify-content: space-around;
 		align-items: flex-start;
 		padding-top: 10vh;
-		background: #373c62 url(/src/assets/images/top_bg.webp) no-repeat;
+		background: #373c62 url(/assets/images/top_bg.webp) no-repeat;
 		background-size: 100%;
 		width: 100vw;
 		height: 100vh;
@@ -290,7 +290,7 @@ We made a video for you to celebrate!!!"
 	}
 
 	.video-frame {
-		background: url(/src/assets/images/videoframe.webp) no-repeat;
+		background: url(/assets/images/videoframe.webp) no-repeat;
 		background-size: auto 95%;
 		flex: 1 1 60%;
 		position: relative;
@@ -363,7 +363,7 @@ We made a video for you to celebrate!!!"
 	}
 
 	.content-bg {
-		background: url(/src/assets/images/bgseamless.webp) no-repeat center center fixed;
+		background: url(/assets/images/bgseamless.webp) no-repeat center center fixed;
 		background-size: cover;
 		width: 100%;
 	}
@@ -466,7 +466,7 @@ We made a video for you to celebrate!!!"
 			flex-wrap: wrap;
 			justify-content: space-around;
 			align-items: flex-start;
-			background: #373c62 url(/src/assets/images/top_bg.webp) no-repeat;
+			background: #373c62 url(/assets/images/top_bg.webp) no-repeat;
 			background-size: cover;
 			width: 100vw;
 			height: auto;
