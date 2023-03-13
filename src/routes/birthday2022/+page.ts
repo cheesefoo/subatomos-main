@@ -1,8 +1,10 @@
 import { error } from '@sveltejs/kit';
+export const prerender = true
 
 
 
 
+/*
 export async function load({ fetch })
 {
 	const res = await fetch('/birthday2022-messages');
@@ -13,5 +15,6 @@ export async function load({ fetch })
 	}
 	throw error(500);
 }
+*/
 
 

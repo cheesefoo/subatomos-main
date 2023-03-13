@@ -1,7 +1,7 @@
 <script>
 	import { getContext } from 'svelte';
 	import Birthday2022Credits from '$lib/components/Birthday2022Credits.svelte';
-	import credits from '/src/assets/images/credits_duck.webp';
+	let credits = '/assets/images/credits_duck.webp';
 
 	const { open } = getContext('simple-modal');
 	const openModal = () => open(Birthday2022Credits);

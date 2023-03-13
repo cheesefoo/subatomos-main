@@ -12,7 +12,7 @@
 	/**
 	 * @type {import('@sveltejs/kit').Load}
 	 */
-	export async function load({ fetch, context }) {
+/*	export async function load({ fetch, context }) {
 		// detect locale of user (see https://github.com/ivanhofer/typesafe-i18n#locale-detection)
 		let locale: Locales = 'en';
 		if (browser) {
@@ -22,7 +22,7 @@
 		await initI18n(locale);
 
 		return {};
-	}
+	}*/
 
 	onMount(async () => {
 		const detectedLocale = detectLocale('en', ['en', 'ja'], localStorageDetector);
@@ -48,7 +48,7 @@
 		margin: 0;
 		overflow: hidden;
 
-		background: url(/src/assets/images/sky.webp) no-repeat center center fixed;
+		background: url(/assets/images/sky.webp) no-repeat center center fixed;
 		background-size: cover;
 	}
 </style>
