@@ -31,7 +31,7 @@ const config = {
 
 			routes: {
 				include: ['/*'],
-				exclude: ['assets/*','wiki/*']
+				exclude: ['/assets/*','/wiki/*']
 			},
 			pages: 'build',
 			assets: 'build',
