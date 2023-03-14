@@ -1,6 +1,5 @@
 
 <script>
-	// import LL from '/src/i18n/i18n-svelte';
 	import CongratsMessageBox from '$lib/components/CongratsMessageBox.svelte';
 	import Fa from 'svelte-fa/src/fa.svelte';
 
@@ -52,7 +51,6 @@
 <svelte:head>
 	<!-- Primary Meta Tags -->
 	<title>Subaru's 3rd Anniversary!</title>
-<!--	<title>{$LL.THIRD.TITLE()}</title>-->
 	<meta name="title" content="Oozora Subaru, congratulations on your 3rd anniversary!" />
 	<meta
 		name="description"
@@ -127,10 +125,7 @@ We made a video for you to celebrate!!!"
 	<div class="separator">
 		<div class="msg-banner-container">
 			<div class="fanart-filter-area" on:click={filterFanarts} />
-			<!--<h1>{$LL.THIRD.MESSAGES()}</h1>
-			<div class='fanart-filter' >
-				<label><input type='checkbox' bind:checked={hideMessages} /> {$LL.THIRD.FANART_ONLY()}</label>
-			</div>-->
+
 		</div>
 		<img src='/assets/images/separator.webp' alt="separator" />
 		{#if $media.small}
@@ -142,7 +137,6 @@ We made a video for you to celebrate!!!"
 
 	<!--	<div class='content-bg'>-->
 	<div class="content">
-		<!--		<h3>{$LL.THIRD.CONGRATS()}</h3>-->
 
 		<div class="messages-container">
 			{#each texts as { name, url, message, src }, i}
@@ -183,7 +177,6 @@ We made a video for you to celebrate!!!"
 		>
 	</div>-->
 	{#if showBackToTop}
-<!--		<a class="back-to-top-btn" href={'#'} on:click={backToTop}>{$LL.THIRD.BACK_TO_TOP()}</a>-->
 		<a class="back-to-top-btn" href={'#'} on:click={backToTop}>Back to top</a>
 	{/if}
 

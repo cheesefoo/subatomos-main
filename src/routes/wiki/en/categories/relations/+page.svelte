@@ -2,7 +2,7 @@
 	import HoloLink from '$lib/components/HoloLink.svelte';
 	import '/src/routes/wiki/tw.scss';
 
-	import { locale } from '/src/i18n/i18n-svelte';
+
 
 	/*
 		let gens = [...new Set(hololive.map((x) => x.details?.group))];
@@ -30,7 +30,7 @@
 				<tbody class='bg-white'>
 				<tr>
 					<td>
-						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch href='/wiki/{$locale}/posts/negiu'>
+						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch href='/wiki/en/posts/negiu'>
 							<HoloLink en='Oozora Subaru' jp='大空スバル' width='6' text='xs' grayscale={false} />
 							<HoloLink en='Minato Aqua' jp='湊あくあ' width='6' text='xs' grayscale={false} />
 							<HoloLink en='Momosuzu Nene' jp='桃鈴ねね' width='6' text='xs' grayscale={false} />
@@ -47,7 +47,7 @@
 				<tbody class='bg-white'>
 				<tr>
 					<td>
-						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch href='/wiki/{$locale}/posts/curry-meshi'>
+						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch href='/wiki/en/posts/curry-meshi'>
 							<HoloLink en='Minato Aqua' jp='湊あくあ' width='6' text='xs' grayscale={false} />
 							<HoloLink en='Oozora Subaru' jp='大空スバル' width='6' text='xs' grayscale={false} />
 							<HoloLink en='Usada Pekora' jp='兎田ぺこら' width='6' text='xs' grayscale={false} />
@@ -63,7 +63,7 @@
 				<tbody>
 				<tr>
 					<td>
-						<!--						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch href='/wiki/{$locale}/posts/oozora-family'>-->
+						<!--						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch href='/wiki/en/posts/oozora-family'>-->
 						<div class='flex flex-col lg:flex-row text-xs'>
 							<HoloLink en='Oozora Subaru' jp='大空スバル' width='6' text='xs' grayscale={false} />
 							<HoloLink en='Shigure Ui' jp='しぐれうい' width='6' text='xs' grayscale={false} />
@@ -86,7 +86,7 @@
 				<tr>
 					<td>
 						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch
-							 href='/wiki/{$locale}/posts/subachocolunatan'>
+							 href='/wiki/en/posts/subachocolunatan'>
 							<HoloLink en='Oozora Subaru' jp='大空スバル' width='6' text='xs' grayscale={false} />
 							<HoloLink en='Yuzuki Choco' jp='癒月ちょこ' width='6' text='xs' grayscale={false} />
 							<HoloLink en='Himemori Luna' jp='姫森ルーナ' width='6' text='xs' grayscale={false} />
@@ -122,7 +122,7 @@
 				<tbody class='bg-white'>
 				<tr>
 					<td>
-						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch href='/wiki/{$locale}/posts/smok'>
+						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch href='/wiki/en/posts/smok'>
 							<HoloLink en='Oozora Subaru' jp='大空スバル' width='6' text='xs' grayscale={false} />
 							<HoloLink en='Ookami Mio' jp='大神ミオ' width='6' text='xs' grayscale={false} />
 							<HoloLink en='Nekomata Okayu' jp='猫又おかゆ' width='6' text='xs' grayscale={false} />
@@ -139,7 +139,7 @@
 				<tbody class='bg-white'>
 				<tr>
 					<td>
-						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch href='/wiki/{$locale}/posts/fams'>
+						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch href='/wiki/en/posts/fams'>
 							<HoloLink en='Shirakami Fubuki' jp='白上フブキ' width='6' text='xs' grayscale={false} />
 							<HoloLink en='Nakiri Ayame' jp='百鬼あやめ' width='6' text='xs' grayscale={false} />
 							<HoloLink en='Ookami Mio' jp='大神ミオ' width='6' text='xs' grayscale={false} />
@@ -157,7 +157,7 @@
 				<tr>
 					<td>
 						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch
-							 href='/wiki/{$locale}/posts/oozora-kensetsu'>
+							 href='/wiki/en/posts/oozora-kensetsu'>
 							<HoloLink en='Oozora Subaru' jp='大空スバル' width='6' text='xs' grayscale={false} />
 							<HoloLink en='Himemori Luna' jp='姫森ルーナ' width='6' text='xs' grayscale={false} />
 							<HoloLink en='Natsuiro Matsuri' jp='夏色まつり' width='6' text='xs' grayscale={false} />
@@ -177,7 +177,7 @@
 				<tbody class='bg-white'>
 				<tr>
 					<td>
-						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch href='/wiki/{$locale}/posts/holobirds'>
+						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch href='/wiki/en/posts/holobirds'>
 							<HoloLink en='Oozora Subaru' jp='大空スバル' width='6' text='xs' grayscale={false} />
 							<HoloLink en='Takanashi Kiara' jp='小鳥遊キアラ' width='6' text='xs' grayscale={false} />
 							<HoloLink en='Pavolia Reine' jp='パボリアレイネ' width='6' text='xs' grayscale={false} />
@@ -197,7 +197,7 @@
 				<tbody class='bg-white'>
 				<tr class='flex flex-col lg:flex-row text-xs'>
 					<td>
-						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch href='/wiki/{$locale}/posts/holoexodia'>
+						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch href='/wiki/en/posts/holoexodia'>
 
 							<HoloLink en='Minato Aqua' jp='湊あくあ' width='6' text='xs' grayscale={false} />
 							<HoloLink en='Murasaki Shion' jp='紫咲シオン' width='6' text='xs' grayscale={false} />
@@ -221,7 +221,7 @@
 				<tbody class='bg-white'>
 				<tr>
 					<td>
-						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch href='/wiki/{$locale}/posts/okfams'>
+						<a class='flex flex-col lg:flex-row text-xs' sveltekit:prefetch href='/wiki/en/posts/okfams'>
 							<HoloLink en='Nekomata Okayu' jp='猫又おかゆ' width='6' text='xs' grayscale={false} />
 							<HoloLink en='Inugami Korone' jp='戌神ころね' width='6' text='xs' grayscale={false} />
 							<HoloLink en='Shirakami Fubuki' jp='白上フブキ' width='6' text='xs' grayscale={false} />
@@ -291,7 +291,7 @@
 			<tbody class='bg-white'>
 			<tr class='flex flex-col lg:flex-row text-xs'>
 				<HoloLink en='Ookami Mio' jp='大神ミオ' text='xs' />
-				<HoloLink en='Nekomata Okayu' jp='猫又おかゆ' href='/wiki/{$locale}/posts/subaokappi' text='xs' />
+				<HoloLink en='Nekomata Okayu' jp='猫又おかゆ' href='/wiki/en/posts/subaokappi' text='xs' />
 				<HoloLink en='Inugami Korone' jp='戌神ころね' text='xs' />
 			</tr>
 			</tbody>
@@ -307,7 +307,7 @@
 			<HoloLink en='Uruha Rushia' jp='潤羽るしあ' text='xs' />
 			<HoloLink en='Shiranui Flare' jp='不知火フレア' text='xs' />
 			<HoloLink en='Shirogane Noel' jp='白銀ノエル' text='xs' />
-			<HoloLink en='Houshou Marine' jp='宝鐘マリン' sveltekit:prefetch href='/wiki/{$locale}/posts/babadonna' text='xs' />
+			<HoloLink en='Houshou Marine' jp='宝鐘マリン' sveltekit:prefetch href='/wiki/en/posts/babadonna' text='xs' />
 		</tr>
 		</tbody>
 	</table>
@@ -320,7 +320,7 @@
 			<HoloLink en='Amane Kanata' jp='天音かなた' text='xs' />
 			<HoloLink en='Kiryu Coco' jp='桐生ココ' text='xs' />
 			<HoloLink en='Tsunomaki Watame' jp='角巻わため' text='xs' />
-			<HoloLink en='Tokoyami Towa' jp='常闇トワ' href='/wiki/{$locale}/posts/icarus-jet-coaster' text='xs' />
+			<HoloLink en='Tokoyami Towa' jp='常闇トワ' href='/wiki/en/posts/icarus-jet-coaster' text='xs' />
 			<HoloLink en='Himemori Luna' jp='姫森ルーナ' text='xs' />
 		</tr>
 		</tbody>
@@ -422,7 +422,7 @@
 			<tr class='flex flex-col lg:flex-row text-xs'>
 				<HoloLink en='Kureiji Ollie' jp='クレイジーオリー' text='xs' />
 				<HoloLink en='Anya Melfissa' jp='アーニャメルフィッサ' text='xs' />
-				<HoloLink en='Pavolia Reine' jp='パボリアレイネ' sveltekit:prefetch href='/wiki/{$locale}/posts/holobirds' text='xs' />
+				<HoloLink en='Pavolia Reine' jp='パボリアレイネ' sveltekit:prefetch href='/wiki/en/posts/holobirds' text='xs' />
 			</tr>
 			</tbody>
 		</table>

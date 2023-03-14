@@ -1,5 +1,5 @@
 <script>
-	import { locale, setLocale } from '/src/i18n/i18n-svelte';
+
 	import { browser } from '$app/environment';
 
 	// onMount(async () => {
@@ -10,37 +10,8 @@
 	// 	}
 	// 	// localeToSelect = $locale
 	// });
-	if (browser) {
-		$: $locale && localStorage.setItem('lang', $locale);
-	}
+
 </script>
-
-<ul class="corner">
-	<li>
-		<span
-			class="flag-icon"
-			class:flag-icon-us={$locale === 'en'}
-			class:flag-icon-jp={$locale === 'ja'}
-			id="lang-flag"
-		/>
-		<span id="lang-header-text">{$locale === 'en' ? 'EN' : '日本語'}</span>
-
-		<ul class="nav-dropdown">
-			<li>
-				<a class="dropdown-item selectLang" href="#" lang="EN" on:click={() => setLocale('en')}>
-					<div class="flag-icon flag-icon-us" />
-					EN</a
-				>
-			</li>
-			<li>
-				<a class="dropdown-item selectLang" href="#" lang="JA" on:click={() => setLocale('ja')}>
-					<div class="flag-icon flag-icon-jp" />
-					日本語</a
-				>
-			</li>
-		</ul>
-	</li>
-</ul>
 
 <style lang="scss">
 	//@import url(https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css);

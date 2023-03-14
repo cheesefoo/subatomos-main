@@ -1,6 +1,5 @@
 <script>
 	import { page } from '$app/stores';
-	import LL, { locale } from '/src/i18n/i18n-svelte';
 	import LanguageSelect from '$lib/components/LanguageSelect.svelte';
 
 	export let lang = false;
@@ -22,7 +21,7 @@
 	<nav>
 		<ul>
 			<li class:active={$page.url.pathname.endsWith('')}>
-				<a sveltekit:prefetch href="https://subatomos.com">{$LL.HEADER.PROJECTS()}</a>
+				<a sveltekit:prefetch href="https://subatomos.com">Projects</a>
 				<ul class="nav-dropdown">
 <!--					<li>
 						<a sveltekit:prefetch href="/wiki/en">WIKI</a>
@@ -31,15 +30,15 @@
 						<a sveltekit:prefetch href="/birthday2022">17.4th Birthday</a>
 					</li>
 					<li class:active={$page.url.pathname.endsWith('/3rd-anniversary')}>
-						<a sveltekit:prefetch href="/3rd-anniversary">{$LL.HEADER.THIRD_ANNIVERSARY()}</a>
+						<a sveltekit:prefetch href="/3rd-anniversary">Third Anniversary</a>
 					</li>
 					<li class:active={$page.url.pathname.endsWith('/ponds')}>
 						<a sveltekit:prefetch href="/ponds"
-							>{$LL.HEADER.PONDS()}</a
+							>17.3rd Birthday</a
 						>
 					</li>
 					<li class:active={$page.url.pathname.endsWith('/soundboard')}>
-						<a sveltekit:prefetch href="/soundboard">{$LL.HEADER.SOUNDBOARD()}</a>
+						<a sveltekit:prefetch href="/soundboard">Soundboard</a>
 					</li>
 
 					<!--					<li class:active={$page.url.pathname.endsWith("/tbd'")}>-->

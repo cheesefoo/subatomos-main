@@ -3,7 +3,7 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import Panel from '$lib/components/Panel.svelte';
 	import '/src/app.scss';
-	import { initI18n, locale, setLocale } from '/src/i18n/i18n-svelte';
+
 	import type { Locales } from '$i18n/i18n-types';
 
 	import { browser } from '$app/environment';
@@ -24,14 +24,7 @@
 		return {};
 	}*/
 
-	onMount(async () => {
-		const detectedLocale = detectLocale('en', ['en', 'ja'], localStorageDetector);
-		await initI18n(detectedLocale);
-		setLocale($locale);
-	});
-	if (browser) {
-		$: $locale && localStorage.setItem('lang', $locale);
-	}
+
 </script>
 
 <main>

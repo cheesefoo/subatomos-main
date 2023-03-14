@@ -5,7 +5,7 @@
 	import SoundButton from './SoundButton.svelte';
 
 	import Lazy from 'svelte-lazy';
-	import LL from '/src/i18n/i18n-svelte';
+
 	import SNSLink from '$lib/components/SNSLink.svelte';
 	import { baseURL } from '$lib/variables.ts';
 	let metatwi = '/assets/images/soundboardthumb.jpg';
@@ -70,7 +70,7 @@
 <div class='soundboard-container'>
 	<div>
 	<h4>
-		{$LL.SOUNDBOARD.SUGGEST()}
+		Suggest a sound:
 		<SNSLink icon='github' url='https://github.com/cheesefoo/subatomos-main' />
 		<SNSLink icon='discord' url='https://discord.gg/subatomos' />
 		<SNSLink icon='twitter' url='https://twitter.com/subatomos' />
