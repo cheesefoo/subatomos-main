@@ -47,7 +47,7 @@
 				</ul>
 			</li>
 			<li>
-				<a href="https://subatomos.com/discord" target="_blank">
+				<a href="https://subatomos.com/discord" target="_blank" rel="noreferrer">
 					<svg
 						fill="none"
 						height="55"
@@ -71,7 +71,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="https://twitter.com/subatomos" target="_blank">
+				<a href="https://twitter.com/subatomos" target="_blank" rel="noreferrer">
 					<svg
 						height="62"
 						id="header-twitter"
