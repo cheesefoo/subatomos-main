@@ -7,7 +7,7 @@
 	import type { Locales } from '$i18n/i18n-types';
 
 	import { browser } from '$app/environment';
-	import { detectLocale, localStorageDetector } from 'typesafe-i18n/detectors';
+
 	import { onMount } from 'svelte';
 	/**
 	 * @type {import('@sveltejs/kit').Load}

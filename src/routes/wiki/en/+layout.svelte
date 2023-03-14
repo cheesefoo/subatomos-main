@@ -4,7 +4,7 @@
 	import Panel from '$lib/components/Panel.svelte';
 	// import '/src/app.scss';
 	import { browser } from '$app/environment';
-	import { detectLocale, localStorageDetector } from 'typesafe-i18n/detectors';
+
 	import { onMount } from 'svelte';
 	import { Breadcrumb, BreadcrumbItem } from '$lib/components/Breadcrumb';
 
