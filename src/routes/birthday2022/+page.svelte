@@ -50,7 +50,7 @@
 	});
 
 
-	export let data;
+
 
 	function getMessages()
 	{
@@ -257,9 +257,8 @@
 		{name:"laky", twitter:"", message:"誕生日おめでとう！こうやってお祝いするのも4回目だけど今年も祝うことができて本当に嬉しいよー！œこの1年はオリ曲出してライブに出てとアイドル力を磨いた1年だったけど、次は磨いたアイドル力をどんどん見せつけていくスバルが見られるかな？とひっそり楽しみにしてるね！œ次の1年もスバルにとって良き1年になることを祈っています！", pic:"", art:"", latlng:"35.33,140.18"},
 		{name:"Eruben", twitter:"@eruben_thillior", message:"Your positivity, energy, and the effort you put in everything you do is an inspiration to me. Watching Subaru giving her best on streams and concerts pushes me forward to do my best too as a vtuber!", pic:"IMG-20220627-WA0011.jpg", art:"", latlng:"-34.60,-58.38"},
 	];
-	let d = getMessages()
-	let { msgs } = d;
-	$: ({ msgs } = d);
+	let data = getMessages()
+	let msgs = data;
 
 	let bothIcon, artIcon, picIcon, noneIcon;
 	noneIcon = '/assets/images/subaru_waypoint_blue.png';

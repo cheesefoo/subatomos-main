@@ -201,17 +201,7 @@
 				width="1280"
 			/>
 	</div>
-<!--	<p>{$LL.PONDS.GRAPHS()}</p>
-	<div class="charts">
-		<canvas id="hairstyle" />
-		<canvas id="submissions" />
-	</div>
-	<div class="charts-bar">
-		<canvas id="loc" />
-	</div>
-	<div class="charts-referer">
-		<canvas id="referer" />
-	</div>-->
+
 </main>
 
 <style lang="scss">

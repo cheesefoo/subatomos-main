@@ -13,7 +13,6 @@
 	import Fa from 'svelte-fa';
 	import Sakura from '$lib/components/sakura/sakura.js';
 	import { onMount } from 'svelte';
-	import LL from '/src/i18n/i18n-svelte';
 	import Hoverable from '$lib/components/Hoverable.svelte';
 	import { media } from '$lib/stores/stores.ts';
 
@@ -91,9 +90,9 @@
 </script>
 
 <svelte:head>
-	<title>{$LL.TITLE()}</title>
+	<title>Oozora Subaru Fansite</title>
 
-	<meta name='description' content={$LL.HOME.META_DESC()} />
+	<meta name='description' content="Unofficial fan website for Hololive VTuber Oozora Subaru" />
 </svelte:head>
 
 <main id='main' class:active={dropdownActive}>
@@ -145,22 +144,18 @@
 		<div class='bday22'>
 			<img src={bday22} alt='17.4th birthday' />
 
-			<a sveltekit:prefetch href='/birthday2022'><h4>{$LL.HOME.BIRTHDAY22()}</h4></a>
+			<a sveltekit:prefetch href='/birthday2022'><h4>17.4th Birthday</h4></a>
 
 		</div>
 		<div class='third'>
 			<img src={third} alt='3rd anniversary' />
 
-			<a sveltekit:prefetch href='/3rd-anniversary'><h4>{$LL.HOME.THIRD_ANNIVERSARY()}</h4></a>
+			<a sveltekit:prefetch href='/3rd-anniversary'><h4>3rd Anniversary</h4></a>
 		</div>
 		<div class='ponds'>
 			<div class='loading-duck' />
 			<a sveltekit:prefetch href='/ponds'>
-				{#if $media.small || $media.tablet}
-					<h4>{$LL.HOME.BIRTHDAY_SM()}</h4>
-				{:else}
-					<h4>{$LL.HOME.BIRTHDAY()}</h4>
-				{/if}
+					<h4>17.3rd Birthday/1M Subs</h4>
 			</a>
 			<!--			<a sveltekit:prefetch href='/projects/ponds'>-->
 
@@ -170,13 +165,13 @@
 			<img src={second} alt='2nd anniversary' />
 
 			<a href='https://twitter.com/SubatomoFan/status/1306244299995017217' target='_blank'>
-				<h4>{$LL.HOME.SECOND_ANNIVERSARY()}</h4>
+				<h4>2nd Anniversary</h4>
 			</a>
 		</div>
 		<div class='soundboard'>
 			<img src={megaphone} alt='soundboard' />
 
-			<a sveltekit:prefetch href='/soundboard'><h4>{$LL.HOME.SOUNDBOARD()}</h4></a>
+			<a sveltekit:prefetch href='/soundboard'><h4>Soundboard</h4></a>
 		</div>
 	</div>
 	<div class='subatomo-logo-group'>

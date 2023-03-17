@@ -1,11 +1,11 @@
 <script lang="ts">
 	import Footer from '$lib/components/Footer.svelte';
-	import { initI18n, locale, setLocale } from '/src/i18n/i18n-svelte';
+
 	import { onMount } from 'svelte';
 	import '/src/app.scss';
 	import { browser } from '$app/environment';
 
-	import { detectLocale, localStorageDetector } from 'typesafe-i18n/detectors';
+
 	import type { Locales } from '$i18n/i18n-types';
 
 	/*	onMount(async () => {

@@ -1,5 +1,5 @@
 <script>
-	import LL from '/src/i18n/i18n-svelte';
+
 	import Credit from '$lib/components/Credit.svelte';
 	// import credits from './_credits_3rdanni';
 	import { media } from '$lib/stores/stores';
@@ -107,64 +107,64 @@
 </script>
 
 <div class="credits">
-	<h3>{$LL.THIRD.CREDITS()}</h3>
+	<h3>Credits</h3>
 	<div class="credits-grid">
 		<div class="credits-section">
-			<h4>{$LL.THIRD.ANIMATION()}</h4>
-			<Credit desc={$LL.THIRD.A.ONE()} {...creditsList.eleos} />
-			<Credit desc={$LL.THIRD.A.TWO()} {...creditsList.ani} />
-			<Credit desc={$LL.THIRD.A.THREE()} {...creditsList.ray} />
-			<Credit desc={$LL.THIRD.A.FOUR()} {...creditsList.cryo} />
-			<Credit desc={$LL.THIRD.A.FIVE()} {...creditsList.alled} />
-			<Credit desc={$LL.THIRD.A.SIX()} {...creditsList.simon} />
+			<h4>Animation</h4>
+			<Credit desc="OG Outfit" {...creditsList.eleos} />
+			<Credit desc="School Uniform Style Idol" {...creditsList.ani} />
+			<Credit desc="Swimsuit" {...creditsList.ray} />
+			<Credit desc="New Year's Kimono" {...creditsList.cryo} />
+			<Credit desc="3D LIVE Idol" {...creditsList.alled} />
+			<Credit desc="Girly Outfit" {...creditsList.simon} />
 		</div>
 		<div class="credits-section">
 			<h4>Music</h4>
-			<Credit desc={$LL.THIRD.M.DD()} {...creditsList.wei} />
+			<Credit desc="Daily Diary" {...creditsList.wei} />
 			<Credit
-				desc="{$LL.THIRD.M.NA()}, {$LL.THIRD.M.KENSETSU()}, {$LL.THIRD.M.TS()}"
+				desc="Natsu Aji!!, Oozora Kensetsu Theme, Taiyou Shoujo"
 				{...creditsList.jeremy}
 			/>
-			<Credit desc={$LL.THIRD.M.TS()} {...creditsList.vintage} />
+			<Credit desc="Taiyou Shoujo" {...creditsList.vintage} />
 			<Credit
-				desc="{$LL.THIRD.M.DrD()}, {$LL.THIRD.M.KNM()}, {$LL.THIRD.M.KR()}"
+				desc="Dreaming Days, Koi no Mahou, Kirameki Rider"
 				{...creditsList.hko}
 			/>
-			<Credit desc={$LL.THIRD.M.DMB()} {...creditsList.light} />
+			<Credit desc="Do my Best!" {...creditsList.light} />
 		</div>
 		<div class="credits-section">
-			<h4>{$LL.THIRD.EDITING()}</h4>
+			<h4>Editing</h4>
 			<Credit {...creditsList.cynic} />
 			<Credit {...creditsList.furo} />
-			<h4>{$LL.THIRD.TRANSLATION()}</h4>
+			<h4>Translation</h4>
 			<Credit {...creditsList.neil} />
 			<Credit {...creditsList.gundam} />
 			<Credit {...creditsList.vee} />
 		</div>
 		<div class="credits-section">
-			<h4>{$LL.THIRD.DIRECTION()}</h4>
-			<Credit desc={$LL.THIRD.STORYBOARD()} {...creditsList.rinne} />
+			<h4>Direction</h4>
+			<Credit desc="Storyboard" {...creditsList.rinne} />
 			<Credit {...creditsList.venn} />
 			<Credit {...creditsList.fran} />
 			<Credit {...creditsList.udarash} />
 		</div>
 		{#if $media.mobile || $media.tablet}
 			<div class="credits-section">
-				<h4>{$LL.THIRD.THANKS()}</h4>
+				<h4>Special Thanks</h4>
 				<div class="thanks">
 					<Credit {...creditsList.ato} />
-					<Credit desc={$LL.THIRD.LOGO_SUBA()} {...creditsList.ano} />
-					<Credit desc={$LL.THIRD.LOGO_PROJ()} {...creditsList.ebi} />
+					<Credit desc="Subatomo Logo" {...creditsList.ano} />
+					<Credit desc="Project Logo" {...creditsList.ebi} />
 					<Credit {...creditsList.ryu} />
 					<Credit {...creditsList.sakino} />
 				</div>
 			</div>
 		{:else}
 			<div class="credits-section">
-				<h4>{$LL.THIRD.THANKS()}</h4>
+				<h4>Special Thanks</h4>
 				<Credit {...creditsList.ato} />
-				<Credit desc={$LL.THIRD.LOGO_SUBA()} {...creditsList.ano} />
-				<Credit desc={$LL.THIRD.LOGO_PROJ()} {...creditsList.ebi} />
+				<Credit desc="Subatomo Logo" {...creditsList.ano} />
+				<Credit desc="Project Logo" {...creditsList.ebi} />
 				<Credit {...creditsList.ryu} />
 				<Credit {...creditsList.sakino} />
 			</div>

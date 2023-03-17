@@ -1,5 +1,4 @@
 <script>
-	import LL from '/src/i18n/i18n-svelte';
 	import Credit from '$lib/components/Credit.svelte';
 	// import credits from './_credits_bday22';
 	const credits = {
@@ -85,10 +84,10 @@
 </script>
 
 <div class='credits'>
-	<h3>{$LL.BDAY22.CREDITS()}</h3>
+	<h3>Credits</h3>
 	<div class='credits-grid'>
 		<div class='credits-section'>
-			<h4>{$LL.BDAY22.PERFORMERS()}</h4>
+			<h4>Performers</h4>
 			<div class='performers'>
 				<span>Historian<small>Accordion</small></span>
 				<Credit {...creditsList.kfc} {descSameLine}><small>Euphonium</small></Credit>
@@ -133,7 +132,7 @@
 		</div>
 
 		<div class='credits-section'>
-			<h4>{$LL.BDAY22.COMPOSITION()}</h4>
+			<h4>Composition</h4>
 			<div class='composition'>
 				<Credit  {descSameLine} desc=' - Medley Arrangement' {...creditsList.jeremy} />
 				<br />
@@ -164,22 +163,7 @@
 
 
 		</div>
-		<!--		{#if $media.mobile || $media.tablet}
-					<div class="credits-section">
-						<h4>{$LL.BDAY22.THANKS()}</h4>
-						<div class="thanks">
-						</div>
-					</div>
-				{:else}
-					<div class="credits-section">
-						<h4>{$LL.BDAY22.THANKS()}</h4>
-						<Credit {...creditsList.ato} />
-						<Credit desc={$LL.BDAY22.LOGO_SUBA()} {...creditsList.ano} />
-						<Credit desc={$LL.BDAY22.LOGO_PROJ()} {...creditsList.ebi} />
-						<Credit {...creditsList.ryu} />
-						<Credit {...creditsList.sakino} />
-					</div>
-				{/if}-->
+
 	</div>
 </div>
 
