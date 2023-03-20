@@ -77,8 +77,8 @@
 			This section of the website's goal is to improve readers' impressions of Subaru, as
 			well as to provide more
 			information on references that newer fans may not know about. The content here is specific to Subaru and is likely
-			unfit to be on the unofficial <a href='https://hololive.wiki/wiki/Oozora_Subaru' target='_blank'>hololive wiki</a>
-			or the <a href='https://virtualyoutuber.fandom.com/wiki/Oozora_Subaru' target='_blank'>virtual YouTuber wiki</a>.
+			unfit to be on the unofficial <a href='https://hololive.wiki/wiki/Oozora_Subaru' target="_blank" rel="noreferrer">hololive wiki</a>
+			or the <a href='https://virtualyoutuber.fandom.com/wiki/Oozora_Subaru' target="_blank" rel="noreferrer">virtual YouTuber wiki</a>.
 		</p>
 		<blockquote class='lg:text-base text-justify pl-4 lg:ml-8 lg:pl-8 border-l border-l-salmon'>
 			Subaru has the unyielding spirit of a true protagonist that allows her to "work hard for the sake of

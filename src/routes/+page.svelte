@@ -101,12 +101,12 @@
 			<img src={official} alt='oozora subaru' />
 		</div>
 		<div class='subaru-socials'>
-			<a href='https://www.youtube.com/channel/UCvzGlP9oQwU--Y0r9id_jnA' target='_blank'>
+			<a href='https://www.youtube.com/channel/UCvzGlP9oQwU--Y0r9id_jnA' target="_blank" rel="noreferrer">
 				<Hoverable let:hovering={active}>
 					<Fa icon={faYoutube} size={sizeSuba} color={youtubered} fw />
 				</Hoverable>
 			</a>
-			<a href='https://twitter.com/oozorasubaru' target='_blank'>
+			<a href='https://twitter.com/oozorasubaru' target="_blank" rel="noreferrer">
 				<Fa icon={faTwitter} size={sizeSuba} color={twitterblue} fw />
 			</a>
 		</div>
@@ -164,7 +164,7 @@
 		<div class='second'>
 			<img src={second} alt='2nd anniversary' />
 
-			<a href='https://twitter.com/SubatomoFan/status/1306244299995017217' target='_blank'>
+			<a href='https://twitter.com/SubatomoFan/status/1306244299995017217' target="_blank" rel="noreferrer">
 				<h4>2nd Anniversary</h4>
 			</a>
 		</div>
@@ -179,13 +179,13 @@
 			<img src={subatomo} alt='oozora subaru' />
 		</div>
 		<div class='subatomo-socials'>
-			<a href='https://discord.gg/subatomos' target='_blank'>
+			<a href='https://discord.gg/subatomos' target="_blank" rel="noreferrer">
 				<Fa icon={faDiscord} size={sizeSubatomo} color={discordblurple} />
 			</a>
-			<a href='https://www.youtube.com/channel/UCHs7wgimVZHIp5sfNUkQTHA' target='_blank'>
+			<a href='https://www.youtube.com/channel/UCHs7wgimVZHIp5sfNUkQTHA' target="_blank" rel="noreferrer">
 				<Fa icon={faYoutube} size={sizeSubatomo} color={youtubered} />
 			</a>
-			<a href='https://twitter.com/subatomos' target='_blank'>
+			<a href='https://twitter.com/subatomos' target="_blank" rel="noreferrer">
 				<Fa icon={faTwitter} size={sizeSubatomo} color={twitterblue} />
 			</a>
 		</div>

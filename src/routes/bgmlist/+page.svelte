@@ -36,7 +36,7 @@ Last Updated: 11/29/22
 			<td>Natsu Aji!!!</td>
 			<td>Opening, "Subaru's BGM"</td>
 			<td class='break-words'><a class='text-salmon' href='https://twitter.com/creofuga/status/1136831249497018368'
-																 target='_blank'>Contest
+																 target="_blank" rel="noreferrer">Contest
 				winner</a>, link is a mirror
 			</td>
 			<td>
@@ -46,7 +46,7 @@ Last Updated: 11/29/22
 		<tr>
 			<td>ジタバタ、パニック！</td>
 			<td>Flail, Panic!</td>
-			<td><a href='https://www.youtube.com/watch?v=qyOXwlUspHg' target='_blank'>Subaru's Small Room w/ Sora 20221228</a>
+			<td><a href='https://www.youtube.com/watch?v=qyOXwlUspHg' target="_blank" rel="noreferrer">Subaru's Small Room w/ Sora 20221228</a>
 			</td>
 			<td></td>
 			<td>
@@ -56,7 +56,7 @@ Last Updated: 11/29/22
 		<tr>
 			<td>Happy Christmas</td>
 			<td></td>
-			<td><a href='https://www.youtube.com/watch?v=Um9HWsNr6Qk' target='_blank'>Freetalk 20221223</a></td>
+			<td><a href='https://www.youtube.com/watch?v=Um9HWsNr6Qk' target="_blank" rel="noreferrer">Freetalk 20221223</a></td>
 
 			<td></td>
 			<td>
@@ -84,7 +84,7 @@ Last Updated: 11/29/22
 		<tr>
 			<td>Menuet</td>
 			<td></td>
-			<td><a href='https://www.youtube.com/watch?v=3kQpOdzRR-c' target='_blank'>St. Hololive Girls' High School Freedom
+			<td><a href='https://www.youtube.com/watch?v=3kQpOdzRR-c' target="_blank" rel="noreferrer">St. Hololive Girls' High School Freedom
 				Chat 20221129</a></td>
 			<td></td>
 			<td>
@@ -103,7 +103,7 @@ Last Updated: 11/29/22
 		<tr>
 			<td>聳え立つ白き峰</td>
 			<td>Towering White Peak</td>
-			<td><a href='https://www.youtube.com/watch?v=t-iW-81JaKU' target='_blank'>Towa bonding quiz (opening) 20220706</a>
+			<td><a href='https://www.youtube.com/watch?v=t-iW-81JaKU' target="_blank" rel="noreferrer">Towa bonding quiz (opening) 20220706</a>
 			</td>
 			<td></td>
 			<td>
@@ -114,7 +114,7 @@ Last Updated: 11/29/22
 			<td>Harvest</td>
 			<td></td>
 			<td>
-				<a href='https://www.youtube.com/watch?v=FjgnOvSFiTA' target='_blank'>Marshmallow Q&A 20220611</a>
+				<a href='https://www.youtube.com/watch?v=FjgnOvSFiTA' target="_blank" rel="noreferrer">Marshmallow Q&A 20220611</a>
 			</td>
 			<td></td>
 			<td>
@@ -312,7 +312,7 @@ Last Updated: 11/29/22
 		</tr>
 		<tr>
 			<td>男の魂めんそーれ</td>
-			<td>Man's Soul, <a href='https://okinawahai.com/japanese-corn-2-2/' target='_blank'>Mensore</a></td>
+			<td>Man's Soul, <a href='https://okinawahai.com/japanese-corn-2-2/' target="_blank" rel="noreferrer">Mensore</a></td>
 			<td>Sushi Making</td>
 			<td>Mensore is Okinawan for "Welcome"</td>
 			<td>
@@ -398,7 +398,7 @@ Last Updated: 11/29/22
 			<td>Oozora Kensetsu Company Song</td>
 			<td>Minecraft</td>
 			<td class='break-words'><a class='text-salmon'
-																 href='https://twitter.com/asobibavbeacon/status/1321775023879671809' target='_blank'>Source</a>
+																 href='https://twitter.com/asobibavbeacon/status/1321775023879671809' target="_blank" rel="noreferrer">Source</a>
 				- Embedded
 				audio is a clean version ripped from streams
 			</td>

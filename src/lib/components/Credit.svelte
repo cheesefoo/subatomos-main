@@ -40,7 +40,7 @@
 		{/if}
 		{#if $media.small || $media.tablet}
 <!--			<br />-->
-			<a href={url} target='_blank'>{name}</a>
+			<a href={url} target="_blank" rel="noreferrer">{name}</a>
 		{:else}
 			{name}
 		{/if}
