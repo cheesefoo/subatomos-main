@@ -56,7 +56,7 @@
 		property="og:description"
 		content="Happy 17.5th birthday Subaru!"
 	/>
-	<meta property="og:image" content='/assets/images/stamp_12.png' />
+	<meta property="og:image" content={'/assets/images/stamp_12.png'} />
 
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:url" content="https://subatomos.com/birthday2023" />
@@ -74,11 +74,11 @@
 <svelte:window bind:innerHeight bind:scrollY={y} />
 
 <!--<Logo />-->
-<div class="back-btn">
+<!--<div class="back-btn">
 	<a sveltekit:prefetch href="/">
 		<Fa icon={faArrowLeft} />
 	</a>
-</div>
+</div>-->
 <!--
 <div class='language-select'>
 	<LanguageSelect />
@@ -87,7 +87,7 @@
 
 <main>
 
-	<div class="separator">
+	<!--<div class="separator">
 		<div class="msg-banner-container">
 			<div class="fanart-filter-area" on:click={filterFanarts} />
 
@@ -98,11 +98,14 @@
 		{:else}
 			<img src={messagebanner} alt="messages banner" class:filtered={hideMessages} />
 		{/if}
-	</div>
+	</div>-->
 
 	<!--	<div class='content-bg'>-->
 	<div class="content">
-
+		<p class='hbd-text'>Happy 17.5th Birthday, Subaru!!!
+			<br>
+			スバルちゃん、17.5歳のお誕生日おめでとうございます！！！
+		</p>
 		<div class="messages-container">
 			{#each texts as { name, url, message, src }, i}
 				{#if (hideMessages && src !== undefined) || !hideMessages}
@@ -156,6 +159,8 @@
 		justify-content: space-around;
 		justify-items: center;
 		display: flex;
+
+    max-width: 100%;
 		overflow: hidden;
 	}
 
@@ -411,7 +416,9 @@
 			cursor: pointer;
 			z-index: 9999;
 		}
-
+    .separator {
+      position: relative;
+      bottom: 0; margin-top:0em;}
 		.top {
 			display: flex;
 			flex-wrap: wrap;
@@ -469,4 +476,16 @@
 			column-count: 2;
 		}
 	}
+  .hbd-text {
+    -webkit-text-stroke: 1px #fff;
+    color: #D7B377;
+    font: bolder 2em keifont, sans-serif;
+    position: absolute;
+    text-align: center;
+    top: -3vh;
+    z-index: 1;
+  }
+	.content {
+    margin-top: 50%;
+  }
 </style>
