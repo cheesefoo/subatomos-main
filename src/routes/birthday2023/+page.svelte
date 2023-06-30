@@ -12,6 +12,7 @@
 	let messagebanner = '/assets/images/border_messages.png';
 	let messagebannermobile = '/assets/images/border_messages_mobile.png';
 	let metatwi = '/assets/images/stamp_12.png';
+	let metaimg = '/assets/images/stamp_12.png';
 	let arrow = '/assets/images/scrolldown.png';
 
 	import { baseURL } from '$lib/variables.ts';
@@ -56,7 +57,7 @@
 		property="og:description"
 		content="Happy 17.5th birthday Subaru!"
 	/>
-	<meta property="og:image" content={'https://subatomos.com/birthday2023/stamp_12.png'} />
+	<meta property="og:image" content={metaimg}/>
 
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:url" content="https://subatomos.com/birthday2023" />
