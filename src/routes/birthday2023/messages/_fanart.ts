@@ -82,7 +82,8 @@ const fanart: Array<SubaFanart> = [
 		message: 'Happy Birthday Subaru! I hope your day is filled with love and health! Excited for another year of Duck supremacy!',
 		src: 'ascapade.png'
 	},
-	{ name: 'Sylstern', message: 'Happy Birthday Subaru!!! <3 / スバルお誕生日おめでとう！！！<3', src: 'Sylstern.png'}
+	{ name: 'Sylstern', message: 'Happy Birthday Subaru!!! <3 / スバルお誕生日おめでとう！！！<3', src: 'Sylstern.png'},
+	{ name: 'josh', message: ' Happy Birthday!! Congratulations on your 17.5th birthday. As the self-appointed sun of Hololive, a ball of energy. I wish that u stay healthy, energetic and strong. Take breaks when you need. Always to take care of yourself. Subaru is very cute', src: 'josh.png'}
 
 ];
 // fanart.forEach((f) =>
