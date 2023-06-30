@@ -6,7 +6,7 @@
 	import { dev } from '$app/environment';
 	import { media } from '$lib/stores/stores.ts';
 
-	const dir = dev ? '/assets/images/fanart/' : '/assets/images/fanart/';
+	export let dir = dev ? '/assets/images/fanart/' : '/assets/images/fanart/';
 	const thumbsDir = $media.small ? dir + 'thumbs/mobile/' : dir + 'thumbs/';
 
 	export let name: string;
@@ -65,7 +65,7 @@
 
 				<p>{message}</p>
 				{#if src !== undefined}
-					<hr class="art-divider" />
+<!--					<hr class="art-divider" />-->
 					<div class="fanart">
 						{#if src.endsWith('.mp4')}
 							<Lightbox clickToClose={true} thumbnail protect={true}>
@@ -194,6 +194,8 @@
 
 	.fanart {
 		padding-bottom: 2em;
+		display:flex;
+		justify-content:center;
 	}
 
 	.stars {
