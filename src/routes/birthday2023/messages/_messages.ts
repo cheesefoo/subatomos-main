@@ -26,10 +26,8 @@ const messages = [
 		name: 'Ahide',
 		message: 'Happy 5th birthday to my savior, i have been saved when my days were worst. Everytime i heard your laugh and voice, and everytime i knew about your activities i feel blessed because you still stay with us and still be as oozora subaru we know. I wish you all the best, may we can be your savior someday. Thank you for you and all of subatomos	'
 	},
-	{
-		name: 'Counter',
-		message: 'Hello/Kon\'nichiwa (only word i know from my brain without looking it up but still don\'t know how to write it) Subaru, (i hope you understand because i don\'t undertand japanese but still watches japanese) a fan from sweden who is lonely, deaf and have autism want to wish you a happy birthday and thanks for entertaining me even through just got back to hololive thanks to you via youtube recommendation. Also imma try catch some stream but as im in sweden. timezones yikes anyhow, again Happy birthday and continue to do what you enjoy	'
-	},
+
+
 	{ name: 'Marshall', message: 'スバル神様🙏	' },
 	{
 		name: 'SilverScizor',
@@ -68,7 +66,17 @@ const messages = [
 		name: 'ミレニアム',
 		message: 'A wonderful birthday to you Subaru ! Thank you for everything you\'ve done, and everything you do.  You shine so brightly whatever you do, and whether it be your singing, dancing, your streams; zatsudan or gaming, you never fail to bring us a smile. You genuinly make us happier and I don\'t think we\'ll ever be able to thank you enough for it !  I\'m sure you might have seen us kaigai niki call you "the sun of Hololive", and it is no exaggeration when talking about how much you brighten your surrounding, and our lives as well.  Once again, a happy birthday to you, and I cannot wait to see what the future holds for you and for us all !	'
 	},
-	{name: "shub bass", message: "Happy birthday Subaru! It's crazy how you've been with hololive for almost 5 years! You've grown up so much and learned so much these past years, I can't wait to see what you do next!"},
-	{ name: 'callmelordy', message: 'Hbd yo. I love yo.' }
+	{
+		name: 'shub bass',
+		message: 'Happy birthday Subaru! It\'s crazy how you\'ve been with hololive for almost 5 years! You\'ve grown up so much and learned so much these past years, I can\'t wait to see what you do next!'
+	},
+	{ name: 'callmelordy', message: 'Hbd yo. I love yo.' },
+	{
+		name: 'walls',
+		message: 'Happy Birthday Subaru! Thank you for all the joy and happiness you have brought to me through out the years and I hope I can continue to support you! You will always be my beloved cute duck idol!'
+	},
+	{ name: 'Andrew', message: 'Happy Birthday and have a fun time' },
+	{ name: 'sayu', message: 'Suba-chan, happy birthday! I\'ll keep this message concise so that it doesn\'t take up too much of your time, considering the numerous messages you\'ll be receiving from other subatomos! First of all, I sincerely hope you have a fantastic celebration today! It has been quite a journey for Suba-chan, and I\'m glad you\'ve persevered through it all. You truly deserve the best, more than anyone I know (although I must admit I\'m quite introverted, so I don\'t know many people). I also want to take this opportunity to express my gratitude for being there for me during a difficult phase in my life. Hololive has become a special community for me, where I truly feel like I belong. If possible, I would love to continue being part of Suba-chan\'s journey and celebrate every milestone, anniversary, birthday, and future event together. I wish you nothing but the absolute best! Lastly, please make sure to get enough rest whenever possible. I can only imagine how tough it must be to manage your schedule, and I genuinely worry about your well-being. That\'s all from me. I hope this message reaches you just like how you reached out to me! \n' },
+	{ name: 'butter', message: 'To the most energetic, cheerful, brightest vtuber out there. Happiest Birthday to Subaru, I was bless to have a oshi that shines not only as an "comedian", but also as an entertainer, most specially as an idol. I might not be the biggest fan, I don\'t always catch up to all the streams however, I\'ll be there to support Subaru. Cheers to more Birthdays to come!' }
 ];
 export default messages;

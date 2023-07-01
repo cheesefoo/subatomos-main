@@ -24,7 +24,7 @@ const fanart: Array<SubaFanart> = [
 	},
 	{
 		name: 'FallenTenshi!',
-		message: 'Happy 5th anniversery Suba-san! Even after all these years, you\'re the one who has been inspiring me until this day. The day when I found your channel, I knew that you\'re someone that can bring joy and hapiness to everyone. Although you got into many troubles in your vtuber journey, yet you never give up and always shine through even the darkest sky you could imagine. You\'re always be the brightest star that shines on the blue sky, Oozora Subaru.   My advise as a subatomo is I hope you can keep your health at a good level. It\'s no good to push yourself too hard, okay! I also put you on my M4WD as my gift to you, also to remind me there\'s always a joy in my every moments  Shine bright FallenTenshi!',
+		message: 'Happy 5th anniversery Suba-san! Even after all these years, you\'re the one who has been inspiring me until this day. The day when I found your channel, I knew that you\'re someone that can bring joy and hapiness to everyone. Although you got into many troubles in your vtuber journey, yet you never give up and always shine through even the darkest sky you could imagine. You\'re always be the brightest star that shines on the blue sky, Oozora Subaru.   My advise as a subatomo is I hope you can keep your health at a good level. It\'s no good to push yourself too hard, okay! I also put you on my M4WD as my gift to you, also to remind me there\'s always a joy in my every moments  Shine bright -FallenTenshi!',
 		src: 'FallenTenshi.jpg'
 	},
 	{ name: 'Kostiw', message: 'Happy Birthday! Wishing you luck in your future growth!', src: 'Kostiw.jpg'},
@@ -83,7 +83,10 @@ const fanart: Array<SubaFanart> = [
 		src: 'ascapade.png'
 	},
 	{ name: 'Sylstern', message: 'Happy Birthday Subaru!!! <3 / スバルお誕生日おめでとう！！！<3', src: 'Sylstern.png'},
-	{ name: 'josh', message: ' Happy Birthday!! Congratulations on your 17.5th birthday. As the self-appointed sun of Hololive, a ball of energy. I wish that u stay healthy, energetic and strong. Take breaks when you need. Always to take care of yourself. Subaru is very cute', src: 'josh.png'}
+	{ name: 'josh', message: ' Happy Birthday!! Congratulations on your 17.5th birthday. As the self-appointed sun of Hololive, a ball of energy. I wish that u stay healthy, energetic and strong. Take breaks when you need. Always to take care of yourself. Subaru is very cute', src: 'josh.jpg'},
+	{ name: "Ragin' Canadian", message: '', src: 'ragin.png'},
+	{ name: "Cipher", message: 'Happy Birthday Subaru! You\'ve really inspired me to work hard and continue drawing! You got me through hard times, and I wish you all the best and even more happiness to come!', src: 'cipher.png'},
+	{ name: "Stealter", message:			'Happy Birthday and Buon Compleanno Subaru!! from Naples, Italy', src: 'stealter.jpg'}
 
 ];
 // fanart.forEach((f) =>
