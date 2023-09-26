@@ -21,7 +21,7 @@ let options = {};
 	description='List of BGM used in streams with links'
 	canonical={`https://subatomos.com/bgmlist`}
 />
-Last Updated: 11/29/22
+Last Updated: 09/26/2023
 <div class='overflow-x-auto text-xxs break-words lg:text-base'>
 	<table class='table-auto border border-sky border-collapse '>
 		<tr>
@@ -41,6 +41,16 @@ Last Updated: 11/29/22
 			</td>
 			<td>
 				<Youtube videoId='BsmGeNIW8K4' />
+			</td>
+		</tr>
+		<tr>
+			<td>戦いの旅路を征く</td>
+			<td>A Journey of Battles</td>
+			<td><a href='https://www.youtube.com/watch?v=jvA-L51yi30' target="_blank" rel="noreferrer">Minecraft 20230926</a>
+			</td>
+			<td></td>
+			<td>
+				<Youtube videoId='t5tuOh6pMtk' />
 			</td>
 		</tr>
 		<tr>
